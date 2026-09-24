@@ -147,6 +147,10 @@ _C.RL_TOPO.PPO_CLIP = 0.2
 _C.RL_TOPO.VALUE_COEF = 0.5
 _C.RL_TOPO.ENTROPY_COEF = 0.01
 _C.RL_TOPO.PPO_EPOCHS = 1
+_C.RL_TOPO.RESIDUAL_ALPHA = 0.1
+_C.RL_TOPO.ACTOR_LR = 1e-5
+_C.RL_TOPO.CRITIC_LR = 1e-4
+_C.RL_TOPO.MAX_GRAD_NORM = 0.5
 
 # -----------------------------------------------------------------------------
 # MODELING CONFIG

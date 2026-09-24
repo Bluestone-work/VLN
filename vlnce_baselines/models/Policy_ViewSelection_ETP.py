@@ -77,6 +77,19 @@ class Critic(nn.Module):
         # Preserve shape [B] when B == 1.
         return self.state2value(state).squeeze(-1)
 
+
+class ResidualActionHead(nn.Module):
+    """Zero-initialized per-node logit correction for residual PPO."""
+
+    def __init__(self, hidden_size=768):
+        super().__init__()
+        self.proj = nn.Linear(hidden_size, 1)
+        nn.init.zeros_(self.proj.weight)
+        nn.init.zeros_(self.proj.bias)
+
+    def forward(self, gmap_embeds):
+        return self.proj(gmap_embeds).squeeze(-1)
+
 class ETP(Net):
     def __init__(
         self, observation_space: Space, model_config: Config, num_actions,
@@ -107,6 +120,9 @@ class ETP(Net):
         # navigation encoder.  It does not receive goal distance or any
         # other privileged environment signal.
         self.critic = Critic()
+        # The IL SAP head remains the reference policy.  PPO starts with an
+        # exactly zero residual so the initial RL policy is identical to IL.
+        self.residual_sap_head = ResidualActionHead(768)
 
         # self.pos_encoder = nn.Sequential(
         #     nn.Linear(6, 768),
@@ -169,7 +185,8 @@ class ETP(Net):
                 gmap_vp_ids=None, gmap_step_ids=None,
                 gmap_img_fts=None, gmap_pos_fts=None,
                 gmap_masks=None, gmap_visited_masks=None, gmap_pair_dists=None,
-                gmap_embeds=None, rl_topo_debug=False):
+                gmap_embeds=None, rl_topo_debug=False,
+                residual_alpha=0.0, valid_action_mask=None):
 
         if mode == 'language':
             encoded_sentence = self.vln_bert.forward_txt(
@@ -377,6 +394,16 @@ class ETP(Net):
             gmap_embeds = outs['gmap_embeds']
             state_embed = gmap_embeds[:, 0, :]
             outs['value'] = self.critic(state_embed)
+            residual_logits = self.residual_sap_head(gmap_embeds)
+            outs['residual_logits'] = residual_logits
+            # Keep invalid actions at the exact IL -inf value, but detach
+            # those entries so -inf never enters residual PPO autograd.
+            il_logits = outs['global_logits']
+            valid_logits = torch.isfinite(il_logits)
+            policy_logits = il_logits + residual_alpha * residual_logits
+            outs['policy_logits'] = torch.where(
+                valid_logits, policy_logits, il_logits.detach()
+            )
             if rl_topo_debug:
                 assert state_embed.shape == (gmap_embeds.shape[0], 768)
                 assert outs['value'].shape == (gmap_embeds.shape[0],)
@@ -389,10 +416,25 @@ class ETP(Net):
             # synchronized in multi-GPU PPO training.
             assert gmap_embeds is not None
             state_embed = gmap_embeds[:, 0, :]
+            il_logits = self.vln_bert.global_sap_head(gmap_embeds).squeeze(2)
+            residual_logits = self.residual_sap_head(gmap_embeds)
+            if valid_action_mask is not None:
+                il_logits = il_logits.masked_fill(
+                    valid_action_mask.logical_not(), -float('inf')
+                )
+            valid_logits = torch.isfinite(il_logits)
+            policy_logits = il_logits + residual_alpha * residual_logits
+            policy_logits = torch.where(
+                valid_logits, policy_logits, il_logits.detach()
+            )
+            if valid_action_mask is not None:
+                policy_logits = policy_logits.masked_fill(
+                    valid_action_mask.logical_not(), -float('inf')
+                )
             return {
-                'global_logits': self.vln_bert.global_sap_head(
-                    gmap_embeds
-                ).squeeze(2),
+                'global_logits': il_logits,
+                'residual_logits': residual_logits,
+                'policy_logits': policy_logits,
                 'value': self.critic(state_embed),
             }
 

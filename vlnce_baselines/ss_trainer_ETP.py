@@ -199,11 +199,14 @@ class RLTrainer(BaseVLNCETrainer):
         return net.critic
 
     def _actor_head_module(self):
-        """Return ETP's existing global action head.
+        """Return the trainable residual actor head."""
+        net = self.policy.net
+        if isinstance(net, DDP):
+            net = net.module
+        return net.residual_sap_head
 
-        PPO reuses this head directly; no second actor or residual head is
-        introduced.
-        """
+    def _il_actor_head_module(self):
+        """Return the frozen IL reference SAP head."""
         net = self.policy.net
         if isinstance(net, DDP):
             net = net.module
@@ -237,13 +240,13 @@ class RLTrainer(BaseVLNCETrainer):
 
         rl_topo_enabled = bool(self.config.RL_TOPO.ENABLED)
         if rl_topo_enabled:
-            # Keep the ETP encoder frozen so replayed graph embeddings remain
-            # exact.  PPO updates ETP's existing global action head and the
-            # critic; no new actor network is added.
+            # Keep the ETP encoder and IL SAP head frozen so replayed graph
+            # embeddings remain exact. PPO learns only a zero-initialized
+            # residual actor and the critic.
             for name, param in self.policy.named_parameters():
                 param.requires_grad_(
                     "net.critic." in name
-                    or "net.vln_bert.global_sap_head." in name
+                    or "net.residual_sap_head." in name
                 )
         else:
             # The critic output is not part of the original IL loss.  Keep it
@@ -265,17 +268,28 @@ class RLTrainer(BaseVLNCETrainer):
         if rl_topo_enabled:
             critic = self._critic_module()
             actor_head = self._actor_head_module()
-            ppo_parameters = list(critic.parameters()) + list(actor_head.parameters())
+            ppo_parameters = [
+                {
+                    "params": list(actor_head.parameters()),
+                    "lr": float(self.config.RL_TOPO.ACTOR_LR),
+                },
+                {
+                    "params": list(critic.parameters()),
+                    "lr": float(self.config.RL_TOPO.CRITIC_LR),
+                },
+            ]
             self.critic_optimizer = torch.optim.AdamW(
-                ppo_parameters, lr=self.config.IL.lr
+                ppo_parameters
             )
             # Keep the legacy attribute for checkpoint compatibility.  The
             # training loop selects this PPO optimizer explicitly.
             self.optimizer = self.critic_optimizer
             logger.info(
-                "RL_TOPO PPO parameters: critic=%d, existing_global_head=%d",
+                "RL_TOPO residual PPO parameters: critic=%d, residual_head=%d, "
+                "IL_head=frozen, alpha=%.3f",
                 sum(p.numel() for p in critic.parameters()),
                 sum(p.numel() for p in actor_head.parameters()),
+                float(self.config.RL_TOPO.RESIDUAL_ALPHA),
             )
         else:
             self.critic_optimizer = None
@@ -303,15 +317,28 @@ class RLTrainer(BaseVLNCETrainer):
                     device_ids=[self.device], output_device=self.device)
             else:
                 self.policy.load_state_dict(ckpt_dict["state_dict"], strict=False)
-            if config.IL.is_requeue:
-                if rl_topo_enabled:
+            if rl_topo_enabled:
+                if config.IL.is_requeue:
                     ppo_optim_state = ckpt_dict.get("ppo_optim_state")
                     if ppo_optim_state is None:
                         ppo_optim_state = ckpt_dict.get("critic_optim_state")
                     if ppo_optim_state is not None:
-                        self.critic_optimizer.load_state_dict(ppo_optim_state)
-                else:
-                    self.optimizer.load_state_dict(ckpt_dict["optim_state"])
+                        try:
+                            self.critic_optimizer.load_state_dict(ppo_optim_state)
+                        except (ValueError, RuntimeError) as exc:
+                            logger.warning(
+                                "Skipping incompatible PPO optimizer state: %s",
+                                exc,
+                            )
+            elif not config.IL.is_requeue:
+                self.optimizer.load_state_dict(ckpt_dict["optim_state"])
+        if rl_topo_enabled:
+            # Snapshot the frozen IL reference for diagnostics.  This is
+            # intentionally taken after checkpoint loading.
+            self._initial_il_actor_params = {
+                name: param.detach().float().cpu().clone()
+                for name, param in self._il_actor_head_module().named_parameters()
+            }
             logger.info(f"Loaded weights from checkpoint: {ckpt_path}, iteration: {start_iter}")
 			
         params = sum(param.numel() for param in self.policy.parameters())
@@ -590,11 +617,44 @@ class RLTrainer(BaseVLNCETrainer):
                     raise ValueError("RL_TOPO.PPO_EPOCHS must be >= 1")
                 for _ in range(ppo_epochs):
                     self.critic_optimizer.zero_grad()
-                    with autocast():
+                    # PPO replay is intentionally kept in FP32.  The critic
+                    # can otherwise produce non-finite gradients under the
+                    # legacy CUDA AMP stack even when the scalar loss is
+                    # finite.
+                    with autocast(enabled=False):
                         ppo_loss = self._compute_ppo_loss()
                     self.scaler.scale(ppo_loss).backward()
+                    self.scaler.unscale_(self.critic_optimizer)
+                    actor_grad_norm = torch.sqrt(sum(
+                        param.grad.detach().float().pow(2).sum()
+                        for param in self._actor_head_module().parameters()
+                        if param.grad is not None
+                    )).item()
+                    if not np.isfinite(actor_grad_norm):
+                        for name, param in self._actor_head_module().named_parameters():
+                            if param.grad is not None:
+                                logger.warning(
+                                    "RL_TOPO actor grad %s finite=%s min=%s max=%s",
+                                    name,
+                                    bool(torch.isfinite(param.grad).all()),
+                                    float(torch.nan_to_num(param.grad.detach()).min()),
+                                    float(torch.nan_to_num(param.grad.detach()).max()),
+                                )
+                    critic_grad_norm = torch.sqrt(sum(
+                        param.grad.detach().float().pow(2).sum()
+                        for param in self._critic_module().parameters()
+                        if param.grad is not None
+                    )).item()
+                    self.logs['ppo/actor_grad_norm'].append(float(actor_grad_norm))
+                    self.logs['ppo/critic_grad_norm'].append(float(critic_grad_norm))
+                    torch.nn.utils.clip_grad_norm_(
+                        self.critic_optimizer.param_groups[0]['params']
+                        + self.critic_optimizer.param_groups[1]['params'],
+                        float(self.config.RL_TOPO.MAX_GRAD_NORM),
+                    )
                     self.scaler.step(self.critic_optimizer)
                     self.scaler.update()
+                    self._record_ppo_parameter_diagnostics()
             else:
                 self.optimizer.zero_grad()
                 self.loss = 0.
@@ -877,6 +937,9 @@ class RLTrainer(BaseVLNCETrainer):
         gmap_visited_masks,
         dist_before,
         dist_after,
+        il_rl_kl=0.0,
+        argmax_action_changed=False,
+        forced_stop=False,
     ):
         graph_length = int(gmap_masks.sum().item())
         candidate_ids = [
@@ -911,6 +974,10 @@ class RLTrainer(BaseVLNCETrainer):
             "graph_length": graph_length,
             "dist_before": float(dist_before),
             "dist_after": float(dist_after),
+            "il_rl_kl": float(il_rl_kl),
+            "argmax_action_changed": bool(argmax_action_changed),
+            "policy_stop": bool(int(action_index) == 0),
+            "forced_stop": bool(forced_stop),
         }
         self.rl_topo_transitions.append(transition)
 
@@ -963,6 +1030,7 @@ class RLTrainer(BaseVLNCETrainer):
 
         advantages = np.zeros(len(transitions), dtype=np.float32)
         returns = np.zeros(len(transitions), dtype=np.float32)
+        missing_bootstrap_count = 0
 
         for indices in grouped.values():
             gae = 0.0
@@ -976,9 +1044,12 @@ class RLTrainer(BaseVLNCETrainer):
                 else:
                     next_value = transition.get("next_value_t")
                     if next_value is None:
-                        # The final transition of a truncated rollout segment
-                        # has no following observation.  Treat the segment
-                        # boundary as a bootstrap boundary.
+                        # The extra value-only pass should provide this value
+                        # for every non-terminal tail. Keep an explicit
+                        # diagnostic if an environment disappears before it
+                        # can be bootstrapped.
+                        if not done:
+                            missing_bootstrap_count += 1
                         next_value = 0.0
 
                 delta = (
@@ -1010,6 +1081,24 @@ class RLTrainer(BaseVLNCETrainer):
             float(np.mean([t["reward_t"] for t in transitions]))
         )
         self.logs["ppo/mean_return"].append(return_mean)
+        self.logs["ppo/missing_bootstrap_count"].append(
+            float(missing_bootstrap_count)
+        )
+        self.logs["ppo/stop_selection_rate"].append(
+            float(np.mean([t["policy_stop"] for t in transitions]))
+        )
+        self.logs["ppo/forced_stop_rate"].append(
+            float(np.mean([t["forced_stop"] for t in transitions]))
+        )
+        self.logs["ppo/mean_high_level_actions"].append(
+            float(np.mean([len(indices) for indices in grouped.values()]))
+        )
+        self.logs["ppo/il_rl_kl"].append(
+            float(np.mean([t["il_rl_kl"] for t in transitions]))
+        )
+        self.logs["ppo/argmax_action_change_rate"].append(
+            float(np.mean([t["argmax_action_changed"] for t in transitions]))
+        )
         self._rl_topo_gae_ready = True
         if self.config.RL_TOPO.DEBUG:
             logger.info(
@@ -1029,7 +1118,7 @@ class RLTrainer(BaseVLNCETrainer):
         candidate ordering used to collect each old log probability.
         """
         if not getattr(self, "_rl_topo_gae_ready", False):
-            return self._actor_head_module().net[-1].weight.sum() * 0.0
+            return self._actor_head_module().proj.weight.sum() * 0.0
 
         transitions = self.rl_topo_transitions
         critic = self._critic_module()
@@ -1042,6 +1131,12 @@ class RLTrainer(BaseVLNCETrainer):
                 self.policy.net(
                     mode="ppo_snapshot",
                     gmap_embeds=graph_embeds.unsqueeze(0),
+                    residual_alpha=float(self.config.RL_TOPO.RESIDUAL_ALPHA),
+                    valid_action_mask=torch.as_tensor(
+                        transition["valid_action_mask"],
+                        dtype=torch.bool,
+                        device=device,
+                    ).unsqueeze(0),
                 )
             )
 
@@ -1064,17 +1159,21 @@ class RLTrainer(BaseVLNCETrainer):
         entropies = []
         old_log_probs = []
         for transition, output in zip(transitions, replay_outputs):
-            logits = output["global_logits"].squeeze(0)
+            logits = output["policy_logits"].squeeze(0)
             valid_mask = torch.as_tensor(
                 transition["valid_action_mask"], dtype=torch.bool, device=device
             )
-            logits = logits.masked_fill(valid_mask.logical_not(), -float("inf"))
-            distribution = torch.distributions.Categorical(logits=logits)
             action = torch.tensor(
                 transition["action_index"], dtype=torch.long, device=device
             )
-            new_log_probs.append(distribution.log_prob(action))
-            entropies.append(distribution.entropy())
+            masked_logits = logits.masked_fill(valid_mask.logical_not(), -float("inf"))
+            log_probs = F.log_softmax(masked_logits.float(), dim=-1)
+            probs = log_probs.exp()
+            new_log_probs.append(log_probs[action])
+            safe_log_probs = torch.where(
+                torch.isfinite(log_probs), log_probs, torch.zeros_like(log_probs)
+            )
+            entropies.append(-(probs * safe_log_probs).sum())
             old_log_probs.append(transition["old_log_prob"])
 
         new_log_probs = torch.stack(new_log_probs)
@@ -1082,6 +1181,26 @@ class RLTrainer(BaseVLNCETrainer):
         old_log_probs = torch.as_tensor(
             old_log_probs, dtype=new_log_probs.dtype, device=device
         )
+        if self.config.RL_TOPO.DEBUG:
+            logger.info(
+                "RL_TOPO PPO tensors: old_lp_finite=%s new_lp_finite=%s "
+                "ratio_finite=%s adv_finite=%s",
+                bool(torch.isfinite(old_log_probs).all()),
+                bool(torch.isfinite(new_log_probs).all()),
+                bool(torch.isfinite(new_log_probs - old_log_probs).all()),
+                bool(torch.isfinite(advantages).all()),
+            )
+        if self.config.RL_TOPO.DEBUG and (
+            not torch.isfinite(new_log_probs).all()
+            or not torch.isfinite(entropies).all()
+            or not torch.isfinite(advantages).all()
+        ):
+            logger.warning(
+                "RL_TOPO non-finite PPO inputs: new_log_prob=%s entropy=%s advantage=%s",
+                bool(torch.isfinite(new_log_probs).all()),
+                bool(torch.isfinite(entropies).all()),
+                bool(torch.isfinite(advantages).all()),
+            )
         ratios = torch.exp(new_log_probs - old_log_probs)
         clip_eps = float(self.config.RL_TOPO.PPO_CLIP)
         unclipped = ratios * advantages
@@ -1103,6 +1222,14 @@ class RLTrainer(BaseVLNCETrainer):
         self.logs["ppo/entropy"].append(float(entropy.detach().item()))
         self.logs["ppo/approx_kl"].append(float(approx_kl))
         self.logs["ppo/clip_fraction"].append(float(clip_fraction))
+        # These are pre-update diagnostics. The post-update values are logged
+        # by _record_ppo_parameter_diagnostics after optimizer.step().
+        self.logs["ppo/residual_l2_before"].append(
+            float(self._residual_l2())
+        )
+        self.logs["ppo/il_head_l2_change_before"].append(
+            float(self._il_head_l2_change())
+        )
         if self.config.RL_TOPO.DEBUG:
             logger.info(
                 "RL_TOPO PPO: policy_loss %.6f, value_loss %.6f, entropy %.6f, "
@@ -1114,6 +1241,22 @@ class RLTrainer(BaseVLNCETrainer):
                 float(clip_fraction),
             )
         return total_loss
+
+    def _residual_l2(self):
+        return float(torch.sqrt(sum(
+            param.detach().float().pow(2).sum()
+            for param in self._actor_head_module().parameters()
+        )).item())
+
+    def _il_head_l2_change(self):
+        return float(torch.sqrt(sum(
+            (param.detach().float().cpu() - self._initial_il_actor_params[name]).pow(2).sum()
+            for name, param in self._il_actor_head_module().named_parameters()
+        )).item())
+
+    def _record_ppo_parameter_diagnostics(self):
+        self.logs["ppo/residual_l2"].append(self._residual_l2())
+        self.logs["ppo/il_head_l2_change"].append(self._il_head_l2_change())
 
     def rollout(self, mode, ml_weight=None, sample_ratio=None):
         if mode == 'train':
@@ -1197,7 +1340,8 @@ class RLTrainer(BaseVLNCETrainer):
                 for episode in self.envs.current_episodes()
             }
 
-        for stepk in range(self.max_len):
+        # One extra value-only pass bootstraps a non-terminal rollout tail.
+        for stepk in range(self.max_len + 1):
             total_actions += self.envs.num_envs
             txt_masks = all_txt_masks[not_done_index]
             txt_embeds = all_txt_embeds[not_done_index]
@@ -1257,14 +1401,29 @@ class RLTrainer(BaseVLNCETrainer):
                 'rl_topo_debug': bool(
                     self.config.RL_TOPO.ENABLED and self.config.RL_TOPO.DEBUG
                 ),
+                'residual_alpha': float(self.config.RL_TOPO.RESIDUAL_ALPHA)
+                if self.config.RL_TOPO.ENABLED else 0.0,
             })
             no_vp_left = nav_inputs.pop('no_vp_left')
             nav_outs = self.policy.net(**nav_inputs)
-            nav_logits = nav_outs['global_logits']
+            il_logits = nav_outs['global_logits']
+            nav_logits = (
+                nav_outs['policy_logits']
+                if rl_topo_enabled else il_logits
+            )
             nav_values = nav_outs['value']
             nav_probs = F.softmax(nav_logits, 1)
+            il_rl_kl = None
+            argmax_action_changed = None
+            if rl_topo_enabled:
+                il_dist = torch.distributions.Categorical(logits=il_logits)
+                rl_dist = torch.distributions.Categorical(logits=nav_logits)
+                il_rl_kl = torch.distributions.kl_divergence(il_dist, rl_dist)
+                argmax_action_changed = il_logits.argmax(dim=-1) != nav_logits.argmax(dim=-1)
             if collect_rl_topo:
                 self._link_rl_topo_next_values(trajectory_ids, nav_values)
+            if collect_rl_topo and stepk == self.max_len:
+                break
             for i, gmap in enumerate(self.gmaps):
                 gmap.node_stop_scores[cur_vp[i]] = nav_probs[i, 0].data.item()
 
@@ -1419,6 +1578,18 @@ class RLTrainer(BaseVLNCETrainer):
                         gmap_visited_masks=nav_inputs['gmap_visited_masks'][i],
                         dist_before=dist_before,
                         dist_after=dist_after,
+                        il_rl_kl=(
+                            il_rl_kl[i].detach().item()
+                            if il_rl_kl is not None else 0.0
+                        ),
+                        argmax_action_changed=(
+                            argmax_action_changed[i].detach().item()
+                            if argmax_action_changed is not None else False
+                        ),
+                        forced_stop=(
+                            int(cpu_a_t[i]) != 0
+                            and (stepk == self.max_len - 1 or no_vp_left[i])
+                        ),
                     )
                     current_index = len(self.rl_topo_transitions) - 1
                     if dones[i]:
