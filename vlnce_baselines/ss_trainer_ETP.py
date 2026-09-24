@@ -1184,6 +1184,18 @@ class RLTrainer(BaseVLNCETrainer):
                                self.config.MODEL.merge_ghost,
                                ghost_aug) for _ in range(self.envs.num_envs)]
         prev_vp = [None] * self.envs.num_envs
+        eval_action_stats = {}
+        if mode == 'eval':
+            eval_action_stats = {
+                episode.episode_id: {
+                    'high_level_steps': 0,
+                    'policy_stop_count': 0,
+                    'forced_stop_count': 0,
+                    'forced_stop_max_len_count': 0,
+                    'forced_stop_no_vp_count': 0,
+                }
+                for episode in self.envs.current_episodes()
+            }
 
         for stepk in range(self.max_len):
             total_actions += self.envs.num_envs
@@ -1289,7 +1301,20 @@ class RLTrainer(BaseVLNCETrainer):
             env_actions = []
             use_tryout = (self.config.IL.tryout and not self.config.TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING)
             for i, gmap in enumerate(self.gmaps):
-                if cpu_a_t[i] == 0 or stepk == self.max_len - 1 or no_vp_left[i]:
+                policy_stop = int(cpu_a_t[i]) == 0
+                forced_by_max_len = (not policy_stop) and stepk == self.max_len - 1
+                forced_by_no_vp = (not policy_stop) and bool(no_vp_left[i])
+                forced_stop = forced_by_max_len or forced_by_no_vp
+                if mode == 'eval':
+                    episode_id = self.envs.current_episodes()[i].episode_id
+                    action_stats = eval_action_stats[episode_id]
+                    action_stats['high_level_steps'] += 1
+                    action_stats['policy_stop_count'] += int(policy_stop)
+                    action_stats['forced_stop_count'] += int(forced_stop)
+                    action_stats['forced_stop_max_len_count'] += int(forced_by_max_len)
+                    action_stats['forced_stop_no_vp_count'] += int(forced_by_no_vp)
+
+                if policy_stop or forced_stop:
                     # stop at node with max stop_prob
                     vp_stop_scores = [(vp, stop_score) for vp, stop_score in gmap.node_stop_scores.items()]
                     stop_scores = [s[1] for s in vp_stop_scores]
@@ -1426,6 +1451,23 @@ class RLTrainer(BaseVLNCETrainer):
                     metric['ndtw'] = np.exp(-dtw_distance / (len(gt_path) * 3.))
                     metric['sdtw'] = metric['ndtw'] * metric['success']
                     metric['ghost_cnt'] = self.gmaps[i].ghost_cnt
+                    action_stats = eval_action_stats[ep_id]
+                    high_level_steps = max(1, action_stats['high_level_steps'])
+                    metric['high_level_steps'] = action_stats['high_level_steps']
+                    metric['policy_stop_count'] = action_stats['policy_stop_count']
+                    metric['forced_stop_count'] = action_stats['forced_stop_count']
+                    metric['forced_stop_max_len_count'] = action_stats['forced_stop_max_len_count']
+                    metric['forced_stop_no_vp_count'] = action_stats['forced_stop_no_vp_count']
+                    metric['policy_stop_rate'] = (
+                        action_stats['policy_stop_count'] / high_level_steps
+                    )
+                    metric['forced_stop_rate'] = (
+                        action_stats['forced_stop_count'] / high_level_steps
+                    )
+                    metric['actual_stop_rate'] = (
+                        (action_stats['policy_stop_count'] + action_stats['forced_stop_count'])
+                        / high_level_steps
+                    )
                     self.stat_eps[ep_id] = metric
                     self.pbar.update()
 
