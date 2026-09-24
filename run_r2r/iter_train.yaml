@@ -47,12 +47,28 @@ IL:
   # back_algo: control
   tryout: True
 
+RL_TOPO:
+  ENABLED: True
+  DEBUG: True
+  DEBUG_TRANSITIONS: True
+
+  PROGRESS_WEIGHT: 1.0
+  SUCCESS_REWARD: 5.0
+  WRONG_STOP_PENALTY: 2.0
+
+  GAMMA: 0.99
+  GAE_LAMBDA: 0.95
+  PPO_CLIP: 0.2
+  VALUE_COEF: 0.5
+  ENTROPY_COEF: 0.01
+  PPO_EPOCHS: 1
+
 MODEL:
   task_type: r2r
 
   policy_name: PolicyViewSelectionETP
   NUM_ANGLES: 12
-  pretrained_path: pretrained/ETP/mlm.sap_r2r/ckpts/model_step_82500.pt
+  pretrained_path: data/pretrained/ETP/mlm.sap_r2r/ckpts/model_step_82500.pt
   fix_lang_embedding: False
   fix_pano_embedding: False
   use_depth_embedding: True
@@ -70,4 +86,3 @@ MODEL:
     directional: 128
   INSTRUCTION_ENCODER:
     bidirectional: True
-

@@ -1,0 +1,18 @@
+2026-09-24 11:07:48,662 checkpoint_path: data/logs/checkpoints/stage3_long_r2r/ckpt.iter200.pth
+2026-09-24 11:07:48,662 Initializing dataset VLN-CE-v1
+2026-09-24 11:07:48,705 SPLTI: val_unseen, NUMBER OF SCENES: 11
+2026-09-24 11:07:56,809 RL_TOPO PPO parameters: critic=394241, existing_global_head=592897
+2026-09-24 11:07:57,346 Loaded weights from checkpoint: data/logs/checkpoints/stage3_long_r2r/ckpt.iter200.pth, iteration: 200
+2026-09-24 11:07:57,347 Agent parameters: 299.54 MB. Trainable: 0.99 MB.
+2026-09-24 11:07:57,347 Finished setting up policy.
+2026-09-24 11:15:49,406 Episodes evaluated: 1839
+2026-09-24 11:15:49,407 Average episode steps_taken: 45.000000
+2026-09-24 11:15:49,407 Average episode distance_to_goal: 8.147552
+2026-09-24 11:15:49,407 Average episode success: 0.154432
+2026-09-24 11:15:49,407 Average episode oracle_success: 0.178902
+2026-09-24 11:15:49,407 Average episode path_length: 6.446091
+2026-09-24 11:15:49,408 Average episode collisions: 0.119974
+2026-09-24 11:15:49,408 Average episode spl: 0.145143
+2026-09-24 11:15:49,408 Average episode ndtw: 0.460951
+2026-09-24 11:15:49,408 Average episode sdtw: 0.130389
+2026-09-24 11:15:49,409 Average episode ghost_cnt: 16.305057

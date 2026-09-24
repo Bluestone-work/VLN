@@ -51,6 +51,9 @@ class VLNCEDaggerEnv(habitat.RLEnv):
         self.video_dir = config.VIDEO_DIR
         self.video_frames = []
         self.plan_frames = []
+        self.rl_topo_enabled = (
+            hasattr(config, "RL_TOPO") and bool(config.RL_TOPO.ENABLED)
+        )
 
     def get_reward_range(self) -> Tuple[float, float]:
         # We don't use a reward for DAgger, but the baseline_registry requires
@@ -435,6 +438,7 @@ class VLNCEDaggerEnv(habitat.RLEnv):
 
     def step(self, action, vis_info, *args, **kwargs):
         act = action['act']
+        dist_before = self.current_dist_to_goal() if self.rl_topo_enabled else None
 
         if act == 4: # high to low
             if self.video_option:
@@ -482,6 +486,12 @@ class VLNCEDaggerEnv(habitat.RLEnv):
         reward = self.get_reward(observations)
         done = self.get_done(observations)
         info = self.get_info(observations)
+        if self.rl_topo_enabled:
+            dist_after = self.current_dist_to_goal()
+            info["rl_high_level"] = {
+                "dist_before": float(dist_before),
+                "dist_after": float(dist_after),
+            }
 
         if self.video_option and done:
             # if 0 < info["spl"] <= 0.6:  #TODO backtrack

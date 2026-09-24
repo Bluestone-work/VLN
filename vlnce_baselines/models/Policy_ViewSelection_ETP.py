@@ -63,17 +63,19 @@ class PolicyViewSelectionETP(ILPolicy):
         )
 
 class Critic(nn.Module):
-    def __init__(self, drop_ratio):
-        super(Critic, self).__init__()
+    """High-level state-value head for the topology policy."""
+
+    def __init__(self):
+        super().__init__()
         self.state2value = nn.Sequential(
             nn.Linear(768, 512),
             nn.ReLU(),
-            nn.Dropout(drop_ratio),
             nn.Linear(512, 1),
         )
 
     def forward(self, state):
-        return self.state2value(state).squeeze()
+        # Preserve shape [B] when B == 1.
+        return self.state2value(state).squeeze(-1)
 
 class ETP(Net):
     def __init__(
@@ -100,6 +102,11 @@ class ETP(Net):
         # else:
         #     self.rgb_projection = None
         self.drop_env = nn.Dropout(p=0.4)
+
+        # The critic reads only the global graph token produced by the
+        # navigation encoder.  It does not receive goal distance or any
+        # other privileged environment signal.
+        self.critic = Critic()
 
         # self.pos_encoder = nn.Sequential(
         #     nn.Linear(6, 768),
@@ -160,8 +167,9 @@ class ETP(Net):
                 rgb_fts=None, dep_fts=None, loc_fts=None, 
                 nav_types=None, view_lens=None,
                 gmap_vp_ids=None, gmap_step_ids=None,
-                gmap_img_fts=None, gmap_pos_fts=None, 
-                gmap_masks=None, gmap_visited_masks=None, gmap_pair_dists=None):
+                gmap_img_fts=None, gmap_pos_fts=None,
+                gmap_masks=None, gmap_visited_masks=None, gmap_pair_dists=None,
+                gmap_embeds=None, rl_topo_debug=False):
 
         if mode == 'language':
             encoded_sentence = self.vln_bert.forward_txt(
@@ -350,12 +358,43 @@ class ETP(Net):
 
         elif mode == 'navigation':
             outs = self.vln_bert.forward_navigation(
-                txt_embeds, txt_masks, 
+                txt_embeds, txt_masks,
                 gmap_vp_ids, gmap_step_ids,
                 gmap_img_fts, gmap_pos_fts, 
                 gmap_masks, gmap_visited_masks, gmap_pair_dists,
             )
+
+            # Keep the navigation dictionary and logits untouched; only
+            # validate the graph-embedding contract in debug mode.
+            if rl_topo_debug:
+                global_logits = outs['global_logits']
+                gmap_embeds = outs['gmap_embeds']
+                assert global_logits.ndim == 2
+                assert gmap_embeds.ndim == 3
+                assert gmap_embeds.shape[:2] == global_logits.shape
+                assert gmap_embeds.shape[-1] == 768
+
+            gmap_embeds = outs['gmap_embeds']
+            state_embed = gmap_embeds[:, 0, :]
+            outs['value'] = self.critic(state_embed)
+            if rl_topo_debug:
+                assert state_embed.shape == (gmap_embeds.shape[0], 768)
+                assert outs['value'].shape == (gmap_embeds.shape[0],)
+
             return outs
+
+        elif mode == 'ppo_snapshot':
+            # Replay exactly the saved graph embedding sequence.  This path
+            # is also used through DDP so actor and critic gradients are
+            # synchronized in multi-GPU PPO training.
+            assert gmap_embeds is not None
+            state_embed = gmap_embeds[:, 0, :]
+            return {
+                'global_logits': self.vln_bert.global_sap_head(
+                    gmap_embeds
+                ).squeeze(2),
+                'value': self.critic(state_embed),
+            }
 
 class BertLayerNorm(nn.Module):
     def __init__(self, hidden_size, eps=1e-12):

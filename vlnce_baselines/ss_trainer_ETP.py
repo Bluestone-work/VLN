@@ -63,6 +63,8 @@ class RLTrainer(BaseVLNCETrainer):
     def __init__(self, config=None):
         super().__init__(config)
         self.max_len = int(config.IL.max_traj_len) #  * 0.97 transfered gt path got 0.96 spl
+        self._rl_topo_debug_transition_count = 0
+        self._rl_topo_rollout_id = 0
 
     def _make_dirs(self):
         if self.config.local_rank == 0:
@@ -77,6 +79,16 @@ class RLTrainer(BaseVLNCETrainer):
                 "state_dict": self.policy.state_dict(),
                 "config": self.config,
                 "optim_state": self.optimizer.state_dict(),
+                "critic_optim_state": (
+                    self.critic_optimizer.state_dict()
+                    if getattr(self, "critic_optimizer", None) is not None
+                    else None
+                ),
+                "ppo_optim_state": (
+                    self.critic_optimizer.state_dict()
+                    if getattr(self, "critic_optimizer", None) is not None
+                    else None
+                ),
                 "iteration": iteration,
             },
             f=os.path.join(self.config.CHECKPOINT_FOLDER, f"ckpt.iter{iteration}.pth"),
@@ -179,6 +191,24 @@ class RLTrainer(BaseVLNCETrainer):
 
         return observation_space, action_space
 
+    def _critic_module(self):
+        """Return the critic independently of whether ETP is DDP-wrapped."""
+        net = self.policy.net
+        if isinstance(net, DDP):
+            net = net.module
+        return net.critic
+
+    def _actor_head_module(self):
+        """Return ETP's existing global action head.
+
+        PPO reuses this head directly; no second actor or residual head is
+        introduced.
+        """
+        net = self.policy.net
+        if isinstance(net, DDP):
+            net = net.module
+        return net.vln_bert.global_sap_head
+
     def _initialize_policy(
         self,
         config: Config,
@@ -205,12 +235,53 @@ class RLTrainer(BaseVLNCETrainer):
         self.waypoint_predictor.to(self.device)
         self.num_recurrent_layers = self.policy.net.num_recurrent_layers
 
+        rl_topo_enabled = bool(self.config.RL_TOPO.ENABLED)
+        if rl_topo_enabled:
+            # Keep the ETP encoder frozen so replayed graph embeddings remain
+            # exact.  PPO updates ETP's existing global action head and the
+            # critic; no new actor network is added.
+            for name, param in self.policy.named_parameters():
+                param.requires_grad_(
+                    "net.critic." in name
+                    or "net.vln_bert.global_sap_head." in name
+                )
+        else:
+            # The critic output is not part of the original IL loss.  Keep it
+            # frozen in the compatibility path so baseline DDP sees no
+            # unused trainable parameters.
+            for name, param in self.policy.named_parameters():
+                if "net.critic." in name:
+                    param.requires_grad_(False)
+
         if self.config.GPU_NUMBERS > 1:
             print('Using', self.config.GPU_NUMBERS,'GPU!')
-            # find_unused_parameters=False fix ddp bug
+            # PPO replays each snapshot through both trainable heads, so all
+            # parameters that require gradients participate in the update.
             self.policy.net = DDP(self.policy.net.to(self.device), device_ids=[self.device],
-                output_device=self.device, find_unused_parameters=False, broadcast_buffers=False)
-        self.optimizer = torch.optim.AdamW(self.policy.parameters(), lr=self.config.IL.lr)
+                output_device=self.device,
+                find_unused_parameters=False,
+                broadcast_buffers=False)
+
+        if rl_topo_enabled:
+            critic = self._critic_module()
+            actor_head = self._actor_head_module()
+            ppo_parameters = list(critic.parameters()) + list(actor_head.parameters())
+            self.critic_optimizer = torch.optim.AdamW(
+                ppo_parameters, lr=self.config.IL.lr
+            )
+            # Keep the legacy attribute for checkpoint compatibility.  The
+            # training loop selects this PPO optimizer explicitly.
+            self.optimizer = self.critic_optimizer
+            logger.info(
+                "RL_TOPO PPO parameters: critic=%d, existing_global_head=%d",
+                sum(p.numel() for p in critic.parameters()),
+                sum(p.numel() for p in actor_head.parameters()),
+            )
+        else:
+            self.critic_optimizer = None
+            self.optimizer = torch.optim.AdamW(
+                self.policy.parameters(), lr=self.config.IL.lr
+            )
 
         if load_from_ckpt:
             if config.IL.is_requeue:
@@ -233,7 +304,14 @@ class RLTrainer(BaseVLNCETrainer):
             else:
                 self.policy.load_state_dict(ckpt_dict["state_dict"], strict=False)
             if config.IL.is_requeue:
-                self.optimizer.load_state_dict(ckpt_dict["optim_state"])
+                if rl_topo_enabled:
+                    ppo_optim_state = ckpt_dict.get("ppo_optim_state")
+                    if ppo_optim_state is None:
+                        ppo_optim_state = ckpt_dict.get("critic_optim_state")
+                    if ppo_optim_state is not None:
+                        self.critic_optimizer.load_state_dict(ppo_optim_state)
+                else:
+                    self.optimizer.load_state_dict(ckpt_dict["optim_state"])
             logger.info(f"Loaded weights from checkpoint: {ckpt_path}, iteration: {start_iter}")
 			
         params = sum(param.numel() for param in self.policy.parameters())
@@ -481,6 +559,13 @@ class RLTrainer(BaseVLNCETrainer):
         
     def _train_interval(self, interval, ml_weight, sample_ratio):
         self.policy.train()
+        if bool(self.config.RL_TOPO.ENABLED):
+            # Keep the frozen actor deterministic while leaving the critic in
+            # training mode.
+            self.policy.eval()
+            self._critic_module().train()
+            # The exact old distribution was collected with dropout disabled.
+            self._actor_head_module().eval()
         if self.world_size > 1:
             self.policy.net.module.rgb_encoder.eval()
             self.policy.net.module.depth_encoder.eval()
@@ -496,14 +581,28 @@ class RLTrainer(BaseVLNCETrainer):
         self.logs = defaultdict(list)
 
         for idx in pbar:
-            self.optimizer.zero_grad()
-            self.loss = 0.
+            if bool(self.config.RL_TOPO.ENABLED):
+                with autocast():
+                    self.rollout('train', ml_weight, sample_ratio)
 
-            with autocast():
-                self.rollout('train', ml_weight, sample_ratio)
-            self.scaler.scale(self.loss).backward() # self.loss.backward()
-            self.scaler.step(self.optimizer)        # self.optimizer.step()
-            self.scaler.update()
+                ppo_epochs = int(self.config.RL_TOPO.PPO_EPOCHS)
+                if ppo_epochs < 1:
+                    raise ValueError("RL_TOPO.PPO_EPOCHS must be >= 1")
+                for _ in range(ppo_epochs):
+                    self.critic_optimizer.zero_grad()
+                    with autocast():
+                        ppo_loss = self._compute_ppo_loss()
+                    self.scaler.scale(ppo_loss).backward()
+                    self.scaler.step(self.critic_optimizer)
+                    self.scaler.update()
+            else:
+                self.optimizer.zero_grad()
+                self.loss = 0.
+                with autocast():
+                    self.rollout('train', ml_weight, sample_ratio)
+                self.scaler.scale(self.loss).backward() # self.loss.backward()
+                self.scaler.step(self.optimizer)         # optimizer.step()
+                self.scaler.update()
 
             if self.local_rank < 1:
                 pbar.set_postfix({'iter': f'{idx+1}/{interval}'})
@@ -761,6 +860,261 @@ class RLTrainer(BaseVLNCETrainer):
         ori = [x[1] for x in pos_ori]
         return pos, ori
 
+    def _record_rl_topo_transition(
+        self,
+        env_index,
+        trajectory_id,
+        stepk,
+        action_index,
+        old_log_prob,
+        entropy,
+        value_t,
+        gmap_embeds,
+        reward,
+        done,
+        gmap_vp_ids,
+        gmap_masks,
+        gmap_visited_masks,
+        dist_before,
+        dist_after,
+    ):
+        graph_length = int(gmap_masks.sum().item())
+        candidate_ids = [
+            "STOP" if vp_id is None else vp_id
+            for vp_id in gmap_vp_ids[:graph_length]
+        ]
+        valid_action_mask = (
+            gmap_masks & gmap_visited_masks.logical_not()
+        ).detach().cpu().tolist()[:graph_length]
+        graph_embed_snapshot = gmap_embeds[:graph_length].detach().float().clone()
+        selected_graph_id = candidate_ids[action_index]
+
+        transition = {
+            "environment_index": int(env_index),
+            "trajectory_id": trajectory_id,
+            "high_level_step": int(stepk),
+            "action_index": int(action_index),
+            "selected_graph_id": selected_graph_id,
+            "old_log_prob": float(old_log_prob),
+            "entropy": float(entropy),
+            "value_t": float(value_t),
+            "reward_t": float(reward),
+            "done_t": bool(done),
+            "reward": float(reward),
+            "done": bool(done),
+            # Exact replay snapshot.  The candidate order is the first
+            # dimension of this tensor and is paired with valid_action_mask.
+            "gmap_embeds": graph_embed_snapshot,
+            "state_embed": graph_embed_snapshot[0].clone(),
+            "candidate_ids": candidate_ids,
+            "valid_action_mask": valid_action_mask,
+            "graph_length": graph_length,
+            "dist_before": float(dist_before),
+            "dist_after": float(dist_after),
+        }
+        self.rl_topo_transitions.append(transition)
+
+        if (
+            self.config.RL_TOPO.DEBUG_TRANSITIONS
+            and self._rl_topo_debug_transition_count < 20
+        ):
+            print(
+                f"Env {env_index} | Step {stepk}\n"
+                f"Candidates: {candidate_ids}\n"
+                f"Action index: {action_index}\n"
+                f"Selected: {selected_graph_id}\n"
+                f"log_prob: {old_log_prob:.6f}\n"
+                f"distance_before: {dist_before:.6f}\n"
+                f"distance_after: {dist_after:.6f}\n"
+                f"reward: {reward:.6f}\n"
+                f"done: {bool(done)}"
+            )
+            self._rl_topo_debug_transition_count += 1
+
+        return len(self.rl_topo_transitions) - 1
+
+    def _link_rl_topo_next_values(self, trajectory_ids, values):
+        """Attach V(s_{t+1}) to the preceding transition in each env slot."""
+        for env_index, trajectory_id in enumerate(trajectory_ids):
+            previous_index = self._rl_topo_last_transition.get(trajectory_id)
+            if previous_index is None:
+                continue
+            previous = self.rl_topo_transitions[previous_index]
+            if not previous["done_t"]:
+                previous["next_value_t"] = float(values[env_index].detach().item())
+
+    def _compute_rl_topo_gae(self):
+        """Compute episode-safe GAE targets for the PPO replay snapshot.
+
+        Transitions are interleaved by vectorized environment.  Grouping by a
+        stable trajectory id prevents a paused environment slot from joining
+        another episode's bootstrapping chain.
+        """
+        transitions = self.rl_topo_transitions
+        if not transitions:
+            self._rl_topo_gae_ready = False
+            return
+
+        gamma = float(self.config.RL_TOPO.GAMMA)
+        gae_lambda = float(self.config.RL_TOPO.GAE_LAMBDA)
+        grouped = defaultdict(list)
+        for index, transition in enumerate(transitions):
+            grouped[transition["trajectory_id"]].append(index)
+
+        advantages = np.zeros(len(transitions), dtype=np.float32)
+        returns = np.zeros(len(transitions), dtype=np.float32)
+
+        for indices in grouped.values():
+            gae = 0.0
+            for position in reversed(range(len(indices))):
+                index = indices[position]
+                transition = transitions[index]
+                done = bool(transition["done_t"])
+
+                if done:
+                    next_value = 0.0
+                else:
+                    next_value = transition.get("next_value_t")
+                    if next_value is None:
+                        # The final transition of a truncated rollout segment
+                        # has no following observation.  Treat the segment
+                        # boundary as a bootstrap boundary.
+                        next_value = 0.0
+
+                delta = (
+                    float(transition["reward_t"])
+                    + gamma * float(next_value) * (1.0 - float(done))
+                    - float(transition["value_t"])
+                )
+                has_next_transition = position + 1 < len(indices)
+                continuation = (1.0 - float(done)) * float(has_next_transition)
+                gae = delta + gamma * gae_lambda * continuation * gae
+                advantages[index] = gae
+                returns[index] = gae + float(transition["value_t"])
+
+        adv_mean = float(advantages.mean())
+        adv_std = float(advantages.std())
+        normalized_advantages = (advantages - adv_mean) / max(adv_std, 1e-8)
+        for index, transition in enumerate(transitions):
+            transition["advantage_t"] = float(normalized_advantages[index])
+            transition["return_t"] = float(returns[index])
+            transition["returns_t"] = float(returns[index])
+
+        value_mean = float(np.mean([t["value_t"] for t in transitions]))
+        return_mean = float(np.mean(returns))
+        self.logs["ppo/value_mean"].append(value_mean)
+        self.logs["ppo/return_mean"].append(return_mean)
+        self.logs["ppo/advantage_mean"].append(float(normalized_advantages.mean()))
+        self.logs["ppo/advantage_std"].append(float(normalized_advantages.std()))
+        self.logs["ppo/mean_reward"].append(
+            float(np.mean([t["reward_t"] for t in transitions]))
+        )
+        self.logs["ppo/mean_return"].append(return_mean)
+        self._rl_topo_gae_ready = True
+        if self.config.RL_TOPO.DEBUG:
+            logger.info(
+                "RL_TOPO GAE: value mean %.6f, return mean %.6f, "
+                "advantage mean %.6f/std %.6f",
+                value_mean,
+                return_mean,
+                float(normalized_advantages.mean()),
+                float(normalized_advantages.std()),
+            )
+
+    def _compute_ppo_loss(self):
+        """Recompute PPO on exact graph snapshots from one rollout.
+
+        Only ETP's existing global_sap_head and the critic are trainable in
+        this stage.  Replaying the saved embeddings and masks preserves the
+        candidate ordering used to collect each old log probability.
+        """
+        if not getattr(self, "_rl_topo_gae_ready", False):
+            return self._actor_head_module().net[-1].weight.sum() * 0.0
+
+        transitions = self.rl_topo_transitions
+        critic = self._critic_module()
+        device = next(critic.parameters()).device
+
+        replay_outputs = []
+        for transition in transitions:
+            graph_embeds = transition["gmap_embeds"].to(device)
+            replay_outputs.append(
+                self.policy.net(
+                    mode="ppo_snapshot",
+                    gmap_embeds=graph_embeds.unsqueeze(0),
+                )
+            )
+
+        values = torch.cat(
+            [output["value"].reshape(-1) for output in replay_outputs]
+        ).float()
+        return_targets = torch.as_tensor(
+            [transition["returns_t"] for transition in transitions],
+            dtype=values.dtype,
+            device=device,
+        )
+        advantages = torch.as_tensor(
+            [transition["advantage_t"] for transition in transitions],
+            dtype=values.dtype,
+            device=device,
+        )
+        value_loss = F.mse_loss(values, return_targets)
+
+        new_log_probs = []
+        entropies = []
+        old_log_probs = []
+        for transition, output in zip(transitions, replay_outputs):
+            logits = output["global_logits"].squeeze(0)
+            valid_mask = torch.as_tensor(
+                transition["valid_action_mask"], dtype=torch.bool, device=device
+            )
+            logits = logits.masked_fill(valid_mask.logical_not(), -float("inf"))
+            distribution = torch.distributions.Categorical(logits=logits)
+            action = torch.tensor(
+                transition["action_index"], dtype=torch.long, device=device
+            )
+            new_log_probs.append(distribution.log_prob(action))
+            entropies.append(distribution.entropy())
+            old_log_probs.append(transition["old_log_prob"])
+
+        new_log_probs = torch.stack(new_log_probs)
+        entropies = torch.stack(entropies)
+        old_log_probs = torch.as_tensor(
+            old_log_probs, dtype=new_log_probs.dtype, device=device
+        )
+        ratios = torch.exp(new_log_probs - old_log_probs)
+        clip_eps = float(self.config.RL_TOPO.PPO_CLIP)
+        unclipped = ratios * advantages
+        clipped = torch.clamp(ratios, 1.0 - clip_eps, 1.0 + clip_eps) * advantages
+        policy_loss = -torch.minimum(unclipped, clipped).mean()
+        entropy = entropies.mean()
+        total_loss = (
+            policy_loss
+            + float(self.config.RL_TOPO.VALUE_COEF) * value_loss
+            - float(self.config.RL_TOPO.ENTROPY_COEF) * entropy
+        )
+
+        approx_kl = (old_log_probs - new_log_probs).mean().detach().item()
+        clip_fraction = (
+            (torch.abs(ratios.detach() - 1.0) > clip_eps).float().mean().item()
+        )
+        self.logs["ppo/policy_loss"].append(float(policy_loss.detach().item()))
+        self.logs["ppo/value_loss"].append(float(value_loss.detach().item()))
+        self.logs["ppo/entropy"].append(float(entropy.detach().item()))
+        self.logs["ppo/approx_kl"].append(float(approx_kl))
+        self.logs["ppo/clip_fraction"].append(float(clip_fraction))
+        if self.config.RL_TOPO.DEBUG:
+            logger.info(
+                "RL_TOPO PPO: policy_loss %.6f, value_loss %.6f, entropy %.6f, "
+                "approx_kl %.6f, clip_fraction %.6f",
+                float(policy_loss.detach().item()),
+                float(value_loss.detach().item()),
+                float(entropy.detach().item()),
+                float(approx_kl),
+                float(clip_fraction),
+            )
+        return total_loss
+
     def rollout(self, mode, ml_weight=None, sample_ratio=None):
         if mode == 'train':
             feedback = 'sample'
@@ -769,8 +1123,23 @@ class RLTrainer(BaseVLNCETrainer):
         else:
             raise NotImplementedError
 
+        rl_topo_enabled = bool(self.config.RL_TOPO.ENABLED)
+        collect_rl_topo = rl_topo_enabled and mode == 'train'
+        if collect_rl_topo:
+            self.rl_topo_transitions = []
+            self._rl_topo_last_transition = {}
+            self._rl_topo_rollout_id += 1
+
         self.envs.resume_all()
         observations = self.envs.reset()
+        if collect_rl_topo:
+            trajectory_ids = [
+                f"{self.local_rank}:{self._rl_topo_rollout_id}:{slot}:"
+                f"{episode.episode_id}"
+                for slot, episode in enumerate(self.envs.current_episodes())
+            ]
+        else:
+            trajectory_ids = []
         instr_max_len = self.config.IL.max_text_len # r2r 80, rxr 200
         instr_pad_id = 1 if self.config.MODEL.task_type == 'rxr' else 0
         observations = extract_instruction_tokens(observations, self.config.TASK_CONFIG.TASK.INSTRUCTION_SENSOR_UUID,
@@ -873,11 +1242,17 @@ class RLTrainer(BaseVLNCETrainer):
                 'mode': 'navigation',
                 'txt_embeds': txt_embeds,
                 'txt_masks': txt_masks,
+                'rl_topo_debug': bool(
+                    self.config.RL_TOPO.ENABLED and self.config.RL_TOPO.DEBUG
+                ),
             })
             no_vp_left = nav_inputs.pop('no_vp_left')
             nav_outs = self.policy.net(**nav_inputs)
             nav_logits = nav_outs['global_logits']
+            nav_values = nav_outs['value']
             nav_probs = F.softmax(nav_logits, 1)
+            if collect_rl_topo:
+                self._link_rl_topo_next_values(trajectory_ids, nav_values)
             for i, gmap in enumerate(self.gmaps):
                 gmap.node_stop_scores[cur_vp[i]] = nav_probs[i, 0].data.item()
 
@@ -888,14 +1263,22 @@ class RLTrainer(BaseVLNCETrainer):
 
             if mode == 'train' or self.config.VIDEO_OPTION:
                 teacher_actions = self._teacher_action_new(nav_inputs['gmap_vp_ids'], no_vp_left)
-            if mode == 'train':
+            if mode == 'train' and not rl_topo_enabled:
                 loss += F.cross_entropy(nav_logits, teacher_actions, reduction='sum', ignore_index=-100)
 
             # determine action
+            old_log_probs = None
+            entropies = None
             if feedback == 'sample':
-                c = torch.distributions.Categorical(nav_probs)
-                a_t = c.sample().detach()
-                a_t = torch.where(torch.rand_like(a_t, dtype=torch.float)<=sample_ratio, teacher_actions, a_t)
+                if rl_topo_enabled:
+                    dist = torch.distributions.Categorical(logits=nav_logits)
+                    a_t = dist.sample()
+                    old_log_probs = dist.log_prob(a_t)
+                    entropies = dist.entropy()
+                else:
+                    c = torch.distributions.Categorical(nav_probs)
+                    a_t = c.sample().detach()
+                    a_t = torch.where(torch.rand_like(a_t, dtype=torch.float)<=sample_ratio, teacher_actions, a_t)
             elif feedback == 'argmax':
                 a_t = nav_logits.argmax(dim=-1)
             else:
@@ -979,6 +1362,46 @@ class RLTrainer(BaseVLNCETrainer):
             outputs = self.envs.step(env_actions)
             observations, _, dones, infos = [list(x) for x in zip(*outputs)]
 
+            if collect_rl_topo:
+                # Match RLTrainer's existing evaluation criterion exactly.
+                success_distance = 3.0
+                for i in range(self.envs.num_envs):
+                    high_level_info = infos[i]["rl_high_level"]
+                    dist_before = float(high_level_info["dist_before"])
+                    dist_after = float(high_level_info["dist_after"])
+                    action_index = int(cpu_a_t[i])
+                    reward = float(self.config.RL_TOPO.PROGRESS_WEIGHT) * (
+                        dist_before - dist_after
+                    )
+                    if dones[i] and dist_after <= success_distance:
+                        reward += float(self.config.RL_TOPO.SUCCESS_REWARD)
+                    if action_index == 0 and dist_after > success_distance:
+                        reward -= float(self.config.RL_TOPO.WRONG_STOP_PENALTY)
+
+                    self._record_rl_topo_transition(
+                        env_index=i,
+                        trajectory_id=trajectory_ids[i],
+                        stepk=stepk,
+                        action_index=action_index,
+                        old_log_prob=old_log_probs[i].detach().item(),
+                        entropy=entropies[i].detach().item(),
+                        value_t=nav_values[i].detach().item(),
+                        gmap_embeds=nav_outs['gmap_embeds'][i],
+                        reward=reward,
+                        done=dones[i],
+                        gmap_vp_ids=nav_inputs['gmap_vp_ids'][i],
+                        gmap_masks=nav_inputs['gmap_masks'][i],
+                        gmap_visited_masks=nav_inputs['gmap_visited_masks'][i],
+                        dist_before=dist_before,
+                        dist_after=dist_after,
+                    )
+                    current_index = len(self.rl_topo_transitions) - 1
+                    if dones[i]:
+                        self.rl_topo_transitions[current_index]["next_value_t"] = 0.0
+                        self._rl_topo_last_transition.pop(trajectory_ids[i], None)
+                    else:
+                        self._rl_topo_last_transition[trajectory_ids[i]] = current_index
+
             # calculate metric
             if mode == 'eval':
                 curr_eps = self.envs.current_episodes()
@@ -1042,6 +1465,8 @@ class RLTrainer(BaseVLNCETrainer):
                         # graph stop
                         self.gmaps.pop(i)
                         prev_vp.pop(i)
+                        if collect_rl_topo:
+                            trajectory_ids.pop(i)
 
             if self.envs.num_envs == 0:
                 break
@@ -1051,7 +1476,14 @@ class RLTrainer(BaseVLNCETrainer):
             batch = batch_obs(observations, self.device)
             batch = apply_obs_transforms_batch(batch, self.obs_transforms)
 
-        if mode == 'train':
+        if mode == 'train' and collect_rl_topo:
+            # Any transition without a following state belongs to a rollout
+            # segment boundary.  Its GAE recursion is therefore terminated
+            # without crossing into the next vectorized episode/rollout.
+            for transition in self.rl_topo_transitions:
+                transition.setdefault("next_value_t", None)
+            self._compute_rl_topo_gae()
+        elif mode == 'train':
             loss = ml_weight * loss / total_actions
             self.loss += loss
             self.logs['IL_loss'].append(loss.item())

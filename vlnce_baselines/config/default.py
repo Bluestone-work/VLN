@@ -128,6 +128,26 @@ _C.RL.POLICY.OBS_TRANSFORMS.RESIZER_PER_SENSOR.SIZES = [
     ("rgb", (224, 298)),
     ("depth", (256, 341)),
 ]
+
+# -----------------------------------------------------------------------------
+# HIGH-LEVEL TOPOLOGICAL RL CONFIG
+# -----------------------------------------------------------------------------
+# The feature is intentionally disabled by default; these values do not
+# affect the existing ETPNav training path unless RL_TOPO.ENABLED is set.
+_C.RL_TOPO = CN()
+_C.RL_TOPO.ENABLED = False
+_C.RL_TOPO.DEBUG = False
+_C.RL_TOPO.DEBUG_TRANSITIONS = False
+_C.RL_TOPO.PROGRESS_WEIGHT = 1.0
+_C.RL_TOPO.SUCCESS_REWARD = 5.0
+_C.RL_TOPO.WRONG_STOP_PENALTY = 2.0
+_C.RL_TOPO.GAMMA = 0.99
+_C.RL_TOPO.GAE_LAMBDA = 0.95
+_C.RL_TOPO.PPO_CLIP = 0.2
+_C.RL_TOPO.VALUE_COEF = 0.5
+_C.RL_TOPO.ENTROPY_COEF = 0.01
+_C.RL_TOPO.PPO_EPOCHS = 1
+
 # -----------------------------------------------------------------------------
 # MODELING CONFIG
 # -----------------------------------------------------------------------------
