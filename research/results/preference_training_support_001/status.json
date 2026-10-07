@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-10-07T18:23:09.484231+00:00",
+  "execution_git_commit": "6100821e0dddb045c50940ce3498dc4b48f496d9",
+  "registered_files_still_match": true,
+  "states": 47,
+  "actions": 996,
+  "strict_pairs": 5668,
+  "tests_passed": 6,
+  "pair_checks": 12159,
+  "choice_checks": 47,
+  "return_component_checks": 564,
+  "new_simulator_rollouts": 0,
+  "model_refitted": false,
+  "replication_outcomes_read": false,
+  "decision": "NO-GO unchanged; retire all-pair accuracy as a sufficient gate"
+}

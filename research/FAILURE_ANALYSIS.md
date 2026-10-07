@@ -398,3 +398,34 @@ native-relative decisions, retaining mixed/tied returns and STOP distinctions.
 It has not run and cannot overturn the prospective gate using in-sample data.
 Report: `PREFERENCE_CONTINUATION_MECHANISM_REPORT.md`; next specification:
 `PREFERENCE_TRAINING_SUPPORT_PROTOCOL.md`.
+
+
+## 2026-10-08 — training-support audit completed: metric mismatch
+
+**NO-GO remains for the frozen strict-pair linear scorer plus first-disagreement
+recipe.** On its own 47-state / 996-action fitting census, all-pair accuracy is
+94.34% versus native logit 85.20%, but native-versus-move accuracy is
+403/418 = 96.41%, below logit's 404/418 = 96.65%. The 518 extra correct pairs
+come from +404 between non-native moves and +115 involving STOP, offset by −1
+in native-relative moves. Only 7.37% of strict fitting pairs are native-move pairs.
+
+A post hoc directional split finds 404 native-better and 14 alternative-better
+strict move comparisons. The model recognizes **0/14** native improvements,
+even in-sample. Ten protected STOP states remain unchanged; among 37 movable
+states it abstains 35 times and overrides twice. One override strictly degrades
+return (+59 primitives); the other rescues SR but loses 9.175 nDTW points and
+adds 13 primitives. All 47 native continuations are failures, so this fitting
+population cannot estimate override harm on already successful native routes.
+
+47 states, 996 actions and 5,668 strict pairs reproduce exactly. Six tests pass;
+an independent computational verifier passes 12,159 pair labels, 47 masked
+choices and 564 metric components. No model was refit, no new rollout occurred,
+and prospective replication outcomes were not read. This is an in-sample,
+correlated-state postmortem, not held-out or episode-policy performance.
+
+Retire all-pair accuracy as a sufficient gate. A future proposal needs native-
+relative full-return decision evidence, abstention and successful-route controls;
+these observations alone do not authorize a new loss, RL/VLM, interrupt policy
+or waypoint predictor. Report: `PREFERENCE_TRAINING_SUPPORT_REPORT.md`.
+Earlier protocol/config status remains the immutable pre-run specification;
+`results/preference_training_support_001/status.json` records completion.

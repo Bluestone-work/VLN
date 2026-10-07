@@ -137,3 +137,10 @@ NO-GO; see `CONTINUATION_LABEL_REPORT.md`.
 | PREFERENCE-CONTINUATION-MECHANISM-001 | 27 + 29 FULL events; 97 overlapping COST events | retrospective exact-prefix decomposition, no rollout | unchanged | unchanged | unchanged | 153 checks pass; FULL reversals 10/27 and 14/29, immediate symptoms 2/10 and 2/14 | `PREFERENCE_CONTINUATION_MECHANISM_REPORT.md` |
 | PREFERENCE-SCORE-ATTRIBUTION-001 | all 56 FULL choices | exact frozen score decomposition, no ablation | unchanged | unchanged | unchanged | geometry largest positive group in 49/56 choices and 23/24 cost reversals; no policy fitted | `results/preference_continuation_mechanism_001/attribution_001/summary.json` |
 | PREFERENCE-TRAINING-SUPPORT-001 | old 47-state / 996-action development census | specified only, not run | — | — | — | planned in-sample postmortem; cannot grant training GO | `PREFERENCE_TRAINING_SUPPORT_PROTOCOL.md` |
+
+
+| Experiment | Population | Change | SR | SPL | nDTW | Result | Artifact |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| PREFERENCE-TRAINING-SUPPORT-001 (completed) | 47 old fitting states / 996 actions / 10 failure routes | frozen model and native-relative full-return audit; no fit | not episode-policy metrics | — | — | strict all-pair 94.34% vs 85.20%, native-move 403/418 vs 404/418; two overrides: strict harm and mixed return | `PREFERENCE_TRAINING_SUPPORT_REPORT.md` |
+| PREFERENCE-NATIVE-DIRECTION-001 | 418 audited strict native-move pairs | post hoc direction/class-balance split | — | — | — | native preferred 404, alternative preferred 14; model identifies 0/14 native improvements | `results/preference_training_support_001/directional_support_001/summary.json` |
+| PREFERENCE-SUPPORT-VERIFICATION-001 | same archived fitting data | independent vector inequalities and masked sorting | — | — | — | 12,159 labels, 47 choices, 564 metrics all pass; six unit tests pass | `results/preference_training_support_001/verification_001/summary.json` |

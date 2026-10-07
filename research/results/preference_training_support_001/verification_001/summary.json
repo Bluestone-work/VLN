@@ -1,0 +1,16 @@
+{
+  "all_checks_passed": true,
+  "pair_label_checks": 12159,
+  "masked_choice_checks": 47,
+  "return_component_checks": 564,
+  "independence": "Independent vector inequality labels and masked sorting; shared frozen feature extraction. No separate simulator reproduction.",
+  "hashes": {
+    "research/configs/PREFERENCE_TRAINING_SUPPORT_001.json": "c21047dfcfd804566a5dc96682f10f39856738cc4e5d5d2f67ef706afe308678",
+    "research/tools/verify_training_support_results.py": "d3fd763ff61b822ec4e74a0835bcf29b10ac2fcd57c2dd1710e7493b4cf6a199",
+    "research/results/preference_training_support_001/analysis_001/pairs.csv": "9dde3e37c894f5fc8493d9c91fa03904edc73f13da05a28ae379cea4865e5ed0",
+    "research/results/preference_training_support_001/analysis_001/states.json": "e3724947d3c67fdc64d0b7b5f3aad85cbe54e025d2c35dcc233b5fab7db46abf",
+    "research/results/graph_value_fresh_train64_retry/capture_001/graph_options/graph_options.jsonl": "2cf5c05176df79b5f30843e4488766a4623d27667148d25ba16a042f3b571c0c",
+    "research/results/critical_graph_value_fresh/full_002/results.jsonl": "00bd46126dad15c441d45bbe3f9f5cd536998e67c8974fd470d61e376c5ff60b",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/frozen_ranker_fresh.json": "18cf29c67222ab884b87154df332fc6c006f4e85eee007f11d310263d7d3353f"
+  }
+}

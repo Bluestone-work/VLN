@@ -1,0 +1,27 @@
+{
+  "analysis": "Post hoc directional split of registered native-relative strict pairs; no new fitting or gate.",
+  "groups": {
+    "native_better": {
+      "pairs": 404,
+      "states": 33,
+      "routes": 10,
+      "scenes": 6,
+      "frozen_correct": 403,
+      "logit_correct": 404
+    },
+    "alternative_better": {
+      "pairs": 14,
+      "states": 12,
+      "routes": 6,
+      "scenes": 4,
+      "frozen_correct": 0,
+      "logit_correct": 0
+    }
+  },
+  "limits": "In-sample and state-correlated. A strict improvement need not rescue success.",
+  "hashes": {
+    "research/tools/describe_native_pair_support.py": "06fa18e09b3ca7f34b14c5dc9f228299f428d6665402a863cbca32a4dc8162aa",
+    "research/results/preference_training_support_001/analysis_001/pairs.csv": "9dde3e37c894f5fc8493d9c91fa03904edc73f13da05a28ae379cea4865e5ed0",
+    "research/results/preference_training_support_001/analysis_001/states.json": "e3724947d3c67fdc64d0b7b5f3aad85cbe54e025d2c35dcc233b5fab7db46abf"
+  }
+}

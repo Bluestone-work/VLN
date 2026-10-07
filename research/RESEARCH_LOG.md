@@ -1170,3 +1170,49 @@ The specified development-only training-support audit compares strict-pair
 accuracy with native-relative full-return choices on the old 47-state archive,
 including mixed/tied and STOP-involving pairs; no fit or new labels. It has not
 run. In-sample results cannot overturn the failed prospective navigation gate.
+
+
+## 2026-10-08 / PREFERENCE-TRAINING-SUPPORT-001 — completed
+
+Question:
+Does strict all-pair accuracy support the actual native-versus-chosen decisions,
+or is the apparent success concentrated in comparisons irrelevant to the frozen
+override rule?
+
+Change:
+Execute the previously specified postmortem on the old 47-state/996-action
+fitting archive. Classify all pairs, preserve STOP/masks/abstention, and extract
+selected full returns. Add an explicitly post hoc native-preferred versus
+alternative-preferred direction split of the audited strict move pairs.
+
+Control:
+No fitting, new labels, simulator episodes or replication-outcome reads.
+Unchanged frozen FULL weights/normalization and original action tie-break.
+Executable/input hashes registered at analysis HEAD 6100821. Original simulation
+seed 100, checkpoint, sensors/controller, STOP and horizon are preserved in the
+source provenance. All 47 native returns match baseline; six tests pass.
+Independent vector-label/masked-sort verification passes 12,159 pairs, 47
+choices and 564 return components, sharing only frozen feature extraction.
+
+Result:
+12,159 unordered pairs: 5,668 strict, 6,491 mixed, zero ties. All-pair accuracy
+94.34% vs logit 85.20%; native-move 403/418 vs logit 404/418. All-pair net +518
+correct comparisons = +404 non-native move pairs +115 STOP pairs −1 native-move
+pair. Only 14 native-move pairs prefer the alternative; frozen model identifies
+0/14, across 12 states / six routes / four scenes. Choices: 10 protected STOP,
+35 native abstentions, two overrides. One is strictly worse (+59 primitives),
+the other mixed (SR rescued, nDTW −9.175 pp, primitives +13). No successful
+native continuation appears in this failure-selected fitting population.
+
+Interpretation:
+NO-GO remains for this recipe. Retire all-pair accuracy as a sufficient development
+gate. Its improvement is not evidence of detecting native-relative benefits;
+53.38% mixed comparisons are not learned strict pairs, including one actual
+override. These in-sample correlated-state counts are not new navigation metrics
+or held-out prediction performance, and cannot establish the remedy.
+
+Next:
+Close this recipe as an unsupported method candidate. Before any new training,
+require an independently justified mechanism and a native-relative full-return
+evaluation with abstention and successful-route controls. Do not launch new
+labels, losses, RL/VLM, interrupt or proposal training on this audit alone.

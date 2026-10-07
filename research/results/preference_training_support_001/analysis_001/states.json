@@ -1,0 +1,1694 @@
+[
+  {
+    "episode_id": "10506",
+    "step": 8,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 33,
+    "chosen_index": 33,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "10506",
+    "step": 9,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 36,
+    "chosen_index": 36,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "10506",
+    "step": 10,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 38,
+    "chosen_index": 39,
+    "selection_reason": "changed",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12174822374726661,
+      "distance_to_goal": 22.44367027282715,
+      "path_length": 20.672279357910156,
+      "primitive_action_count": 174
+    },
+    "chosen_vs_native": "strict_degradation",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": -0.0022475676085335072,
+      "distance_to_goal": 0.4954853057861328,
+      "path_length": 4.394802093505859,
+      "primitive_action_count": 59
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "10506",
+    "step": 11,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 40,
+    "chosen_index": 40,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "10506",
+    "step": 12,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 41,
+    "chosen_index": 41,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "10506",
+    "step": 13,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 42,
+    "chosen_index": 42,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "10506",
+    "step": 14,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.12399579135580012,
+      "distance_to_goal": 21.948184967041016,
+      "path_length": 16.277477264404297,
+      "primitive_action_count": 115
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "10754",
+    "step": 5,
+    "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+    "native_index": 18,
+    "chosen_index": 18,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.28157792257266256,
+      "distance_to_goal": 7.546504974365234,
+      "path_length": 22.251529693603516,
+      "primitive_action_count": 137
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.28157792257266256,
+      "distance_to_goal": 7.546504974365234,
+      "path_length": 22.251529693603516,
+      "primitive_action_count": 137
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "10754",
+    "step": 12,
+    "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+    "native_index": 39,
+    "chosen_index": 39,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.28157792257266256,
+      "distance_to_goal": 7.546504974365234,
+      "path_length": 22.251529693603516,
+      "primitive_action_count": 137
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.28157792257266256,
+      "distance_to_goal": 7.546504974365234,
+      "path_length": 22.251529693603516,
+      "primitive_action_count": 137
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "10754",
+    "step": 13,
+    "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.28157792257266256,
+      "distance_to_goal": 7.546504974365234,
+      "path_length": 22.251529693603516,
+      "primitive_action_count": 137
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.28157792257266256,
+      "distance_to_goal": 7.546504974365234,
+      "path_length": 22.251529693603516,
+      "primitive_action_count": 137
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "3865",
+    "step": 9,
+    "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+    "native_index": 24,
+    "chosen_index": 20,
+    "selection_reason": "changed",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7422384267838281,
+      "distance_to_goal": 3.168818712234497,
+      "path_length": 15.136246681213379,
+      "primitive_action_count": 135
+    },
+    "chosen_metrics": {
+      "success": 1.0,
+      "spl": 0.41674491124398744,
+      "ndtw": 0.6504897673596517,
+      "distance_to_goal": 1.1056240797042847,
+      "path_length": 18.349599838256836,
+      "primitive_action_count": 148
+    },
+    "chosen_vs_native": "mixed",
+    "delta": {
+      "success": 1.0,
+      "spl": 0.41674491124398744,
+      "ndtw": -0.09174865942417643,
+      "distance_to_goal": -2.0631946325302124,
+      "path_length": 3.213353157043457,
+      "primitive_action_count": 13
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "3865",
+    "step": 10,
+    "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7422384267838281,
+      "distance_to_goal": 3.168818712234497,
+      "path_length": 15.136246681213379,
+      "primitive_action_count": 135
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7422384267838281,
+      "distance_to_goal": 3.168818712234497,
+      "path_length": 15.136246681213379,
+      "primitive_action_count": 135
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "4702",
+    "step": 7,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 32,
+    "chosen_index": 32,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "4702",
+    "step": 8,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 36,
+    "chosen_index": 36,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "4702",
+    "step": 9,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 39,
+    "chosen_index": 39,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "4702",
+    "step": 10,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 42,
+    "chosen_index": 42,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "4702",
+    "step": 11,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 43,
+    "chosen_index": 43,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "4702",
+    "step": 12,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 44,
+    "chosen_index": 44,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "4702",
+    "step": 13,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 45,
+    "chosen_index": 45,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "4702",
+    "step": 14,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.43772301329758856,
+      "distance_to_goal": 3.0063986778259277,
+      "path_length": 18.25592613220215,
+      "primitive_action_count": 130
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5247",
+    "step": 0,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 6,
+    "chosen_index": 6,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6857057848490092,
+      "distance_to_goal": 4.113415241241455,
+      "path_length": 24.651443481445312,
+      "primitive_action_count": 131
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6857057848490092,
+      "distance_to_goal": 4.113415241241455,
+      "path_length": 24.651443481445312,
+      "primitive_action_count": 131
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "5247",
+    "step": 2,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 11,
+    "chosen_index": 11,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6857057848490092,
+      "distance_to_goal": 4.113415241241455,
+      "path_length": 24.651443481445312,
+      "primitive_action_count": 131
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6857057848490092,
+      "distance_to_goal": 4.113415241241455,
+      "path_length": 24.651443481445312,
+      "primitive_action_count": 131
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "5247",
+    "step": 11,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 39,
+    "chosen_index": 39,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6857057848490092,
+      "distance_to_goal": 4.113415241241455,
+      "path_length": 24.651443481445312,
+      "primitive_action_count": 131
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6857057848490092,
+      "distance_to_goal": 4.113415241241455,
+      "path_length": 24.651443481445312,
+      "primitive_action_count": 131
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5247",
+    "step": 12,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6857057848490092,
+      "distance_to_goal": 4.113415241241455,
+      "path_length": 24.651443481445312,
+      "primitive_action_count": 131
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6857057848490092,
+      "distance_to_goal": 4.113415241241455,
+      "path_length": 24.651443481445312,
+      "primitive_action_count": 131
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5475",
+    "step": 4,
+    "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+    "native_index": 14,
+    "chosen_index": 14,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7387998465118053,
+      "distance_to_goal": 4.209898948669434,
+      "path_length": 7.500000476837158,
+      "primitive_action_count": 67
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7387998465118053,
+      "distance_to_goal": 4.209898948669434,
+      "path_length": 7.500000476837158,
+      "primitive_action_count": 67
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "5475",
+    "step": 5,
+    "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7387998465118053,
+      "distance_to_goal": 4.209898948669434,
+      "path_length": 7.500000476837158,
+      "primitive_action_count": 67
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7387998465118053,
+      "distance_to_goal": 4.209898948669434,
+      "path_length": 7.500000476837158,
+      "primitive_action_count": 67
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 3,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 14,
+    "chosen_index": 14,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 4,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 21,
+    "chosen_index": 21,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 5,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 22,
+    "chosen_index": 22,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 6,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 24,
+    "chosen_index": 24,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 7,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 26,
+    "chosen_index": 26,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 8,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 27,
+    "chosen_index": 27,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 9,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 29,
+    "chosen_index": 29,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 10,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 30,
+    "chosen_index": 30,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 11,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 32,
+    "chosen_index": 32,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 12,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 33,
+    "chosen_index": 33,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 13,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 34,
+    "chosen_index": 34,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "5648",
+    "step": 14,
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.1868355591565263,
+      "distance_to_goal": 6.859588623046875,
+      "path_length": 10.307474136352539,
+      "primitive_action_count": 107
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "7362",
+    "step": 0,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 4,
+    "chosen_index": 4,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "7362",
+    "step": 1,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 7,
+    "chosen_index": 7,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "7362",
+    "step": 4,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 15,
+    "chosen_index": 15,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "7362",
+    "step": 8,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 28,
+    "chosen_index": 28,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "7362",
+    "step": 9,
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.6511578390326987,
+      "distance_to_goal": 3.2797939777374268,
+      "path_length": 16.433279037475586,
+      "primitive_action_count": 108
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "8008",
+    "step": 8,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 31,
+    "chosen_index": 31,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7792398121327077,
+      "distance_to_goal": 3.609515905380249,
+      "path_length": 14.598520278930664,
+      "primitive_action_count": 76
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7792398121327077,
+      "distance_to_goal": 3.609515905380249,
+      "path_length": 14.598520278930664,
+      "primitive_action_count": 76
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "8008",
+    "step": 9,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7792398121327077,
+      "distance_to_goal": 3.609515905380249,
+      "path_length": 14.598520278930664,
+      "primitive_action_count": 76
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.7792398121327077,
+      "distance_to_goal": 3.609515905380249,
+      "path_length": 14.598520278930664,
+      "primitive_action_count": 76
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  },
+  {
+    "episode_id": "9916",
+    "step": 12,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 41,
+    "chosen_index": 41,
+    "selection_reason": "native_abstention",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.25969381286928106,
+      "distance_to_goal": 8.757865905761719,
+      "path_length": 26.18719482421875,
+      "primitive_action_count": 140
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.25969381286928106,
+      "distance_to_goal": 8.757865905761719,
+      "path_length": 26.18719482421875,
+      "primitive_action_count": 140
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": true,
+    "chosen_dominated_by_move": true
+  },
+  {
+    "episode_id": "9916",
+    "step": 13,
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "native_index": 0,
+    "chosen_index": 0,
+    "selection_reason": "protected_stop_or_budget",
+    "supported": true,
+    "native_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.25969381286928106,
+      "distance_to_goal": 8.757865905761719,
+      "path_length": 26.18719482421875,
+      "primitive_action_count": 140
+    },
+    "chosen_metrics": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.25969381286928106,
+      "distance_to_goal": 8.757865905761719,
+      "path_length": 26.18719482421875,
+      "primitive_action_count": 140
+    },
+    "chosen_vs_native": "tie",
+    "delta": {
+      "success": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "distance_to_goal": 0.0,
+      "path_length": 0.0,
+      "primitive_action_count": 0
+    },
+    "native_dominated_by_move": false,
+    "chosen_dominated_by_move": false
+  }
+]

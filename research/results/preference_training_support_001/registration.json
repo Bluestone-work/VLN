@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-10-07T18:08:31.458471+00:00",
+  "git_commit": "6100821e0dddb045c50940ce3498dc4b48f496d9",
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "config": {
+    "experiment_id": "PREFERENCE-TRAINING-SUPPORT-001",
+    "status": "specified_not_run",
+    "protocol": "research/PREFERENCE_TRAINING_SUPPORT_PROTOCOL.md",
+    "training_plan": "research/results/critical_graph_value_fresh/plan_001.json",
+    "training_returns": "research/results/critical_graph_value_fresh/full_002/results.jsonl",
+    "frozen_model": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/frozen_ranker_fresh.json",
+    "expected_states": 47,
+    "expected_actions": 996,
+    "expected_strict_pairs": 5668,
+    "metric_tolerance": 1e-06,
+    "fit_model": false,
+    "use_replication_outcomes": false,
+    "allow_simulator_rollout": false,
+    "interpretation": "in-sample development postmortem; no training GO or navigation-performance claim"
+  },
+  "scope": "In-sample development postmortem. Navigation outcomes already exist; not prospective confirmation.",
+  "original_simulator_config": {
+    "experiment_id": "CRITICAL-GRAPH-VALUE-FRESH-001",
+    "source_root": "research/results/graph_value_fresh_train64_retry",
+    "failure_subset_dataset": "research/results/critical_graph_value_fresh/failure_routes_10.json.gz",
+    "probe": "probe_full001",
+    "noninterference": "noninterference_001",
+    "protocol": "research/GRAPH_VALUE_NEXT_GATE.md",
+    "seed": 100,
+    "max_interrupt_routes": 4,
+    "collision_min": 1,
+    "endpoint_deviation_m": 0.5,
+    "stall_primitives_min": 3,
+    "stall_path_m_max": 0.1,
+    "success_distance_m": 3.0,
+    "max_high_level_decisions": 15,
+    "training": true,
+    "oracle_analysis_only": true
+  },
+  "hashes": {
+    "research/configs/PREFERENCE_TRAINING_SUPPORT_001.json": "c21047dfcfd804566a5dc96682f10f39856738cc4e5d5d2f67ef706afe308678",
+    "research/PREFERENCE_TRAINING_SUPPORT_PROTOCOL.md": "d4d9d185ee1c53129d5c85627f93ffc191d476f4bab7050661320daa18976ca0",
+    "research/results/critical_graph_value_fresh/plan_001.json": "78e12f23274993e360102e34e241a93be55049a9eeb826c605b29fc749d9f9db",
+    "research/results/critical_graph_value_fresh/full_002/results.jsonl": "00bd46126dad15c441d45bbe3f9f5cd536998e67c8974fd470d61e376c5ff60b",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/frozen_ranker_fresh.json": "18cf29c67222ab884b87154df332fc6c006f4e85eee007f11d310263d7d3353f",
+    "research/results/graph_value_fresh_train64_retry/capture_001/graph_options/graph_options.jsonl": "2cf5c05176df79b5f30843e4488766a4623d27667148d25ba16a042f3b571c0c",
+    "research/tools/audit_preference_training_support.py": "632bb0ccefa56ddbff6521c6e733a8830c1a288fc590043604ee831d49aca9d8",
+    "research/tools/graph_value_feasibility.py": "3154f554eb4e4e0500051440aeb326b480a978000cbd5c0784ba428fb5d12c97",
+    "research/tools/prepare_ranker_intervention_schedule.py": "8bf7951555788dd90880661b7bd1b9d46d4cb65140342d79b227564fb512ac53",
+    "research/results/critical_graph_value_fresh/independent_audit_001/summary.json": "8407290d3440449f75e776bd1f9178533d119364ebe8644e6b612dad3454f2b3"
+  }
+}

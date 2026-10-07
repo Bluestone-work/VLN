@@ -1,0 +1,89 @@
+{
+  "original_full_return_manifest": "research/results/critical_graph_value_fresh/full_002/manifest.json",
+  "original_full_return_manifest_sha256": "c5a3cbee449c4946cea14778902697221d5f7f6cc1783fad052c87baebe11710",
+  "original_simulation_commit": "746a99a8c6c31542114567a0877e4b9b14e4ad43",
+  "original_hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "original_python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "original_seed": 100,
+  "capture_manifest": "research/results/graph_value_fresh_train64_retry/capture_001/manifest.json",
+  "capture_manifest_sha256": "15981d030b7ad758ce7e291040909ba16a1444c6c16e63efa682865f509aa389",
+  "capture_config": {
+    "experiment_id": "GRAPH-VALUE-FRESH-TRAIN64-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 64,
+    "seed": 100,
+    "dataset_path": "research/results/graph_value_fresh_train64/sampling_001/train64_bertidx.json.gz",
+    "sampling_manifest": "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261008,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Native graph capture and exact controls before failure-only full-return census",
+      "no_outcome_sampling": true,
+      "bootstrap_seed": 20261008,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "A fresh training scene cohort for prospective graph-value confirmation; no fitting during capture.",
+    "limits": "64 routes in 16 scenes selected by metadata only, one simulator seed; validation and prior diagnostic scenes excluded.",
+    "sampling": {
+      "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+      "exclude_sources": [
+        "research/results/graph_option_pilot/train8_sampling/manifest.json",
+        "research/results/graph_option_train64/sampling_001/manifest.json",
+        "research/results/continuation_label_train64/sampling_001/manifest.json",
+        "research/results/full_return_label_train16/sampling_001/manifest.json",
+        "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl"
+      ],
+      "scenes": 16,
+      "routes_per_scene": 4,
+      "seed": 20261008
+    },
+    "protocol": "research/GRAPH_VALUE_NEXT_GATE.md",
+    "continuation_protocol": "research/GRAPH_VALUE_NEXT_GATE.md",
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md"
+  },
+  "capture_overrides": {
+    "TRAINER_NAME": "SS-ETP-OptionCapture",
+    "ENV_NAME": "VLNCEOptionTraceEnv",
+    "SIMULATOR_GPU_IDS": "[0]",
+    "TORCH_GPU_IDS": "[0]",
+    "GPU_NUMBERS": "1",
+    "NUM_ENVIRONMENTS": "1",
+    "EVAL.SPLIT": "train",
+    "EVAL.EPISODE_COUNT": "64",
+    "TASK_CONFIG.SEED": "100",
+    "EVAL.CKPT_PATH_DIR": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "IL.back_algo": "control",
+    "RL_TOPO.ENABLED": "False",
+    "ACTION_ABSTRACTION.LEVEL": "default",
+    "ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED": "False",
+    "ACTION_ABSTRACTION.ORACLE_ENABLED": "False",
+    "ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED": "False",
+    "ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS": "False",
+    "TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING": "True",
+    "TASK_CONFIG.DATASET.DATA_PATH": "research/results/graph_value_fresh_train64/sampling_001/train64_bertidx.json.gz"
+  },
+  "limits": "Historical simulation metadata; this audit performs deterministic offline arithmetic only."
+}

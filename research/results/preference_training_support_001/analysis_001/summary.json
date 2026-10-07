@@ -1,0 +1,484 @@
+{
+  "experiment_id": "PREFERENCE-TRAINING-SUPPORT-001",
+  "coverage_and_normalization_passed": true,
+  "states": 47,
+  "actions": 996,
+  "pairs": 12159,
+  "strict_pairs": 5668,
+  "native_return_checks": 47,
+  "pair_groups": {
+    "all_pairs": {
+      "pairs": 12159,
+      "relations": {
+        "mixed": 6491,
+        "strict": 5668
+      },
+      "strict_pairs": 5668,
+      "frozen_correct": 5347,
+      "logit_correct": 4829,
+      "frozen_accuracy": 0.9433662667607622,
+      "logit_accuracy": 0.8519760056457304
+    },
+    "stop_involving": {
+      "pairs": 949,
+      "relations": {
+        "mixed": 525,
+        "strict": 424
+      },
+      "strict_pairs": 424,
+      "frozen_correct": 411,
+      "logit_correct": 296,
+      "frozen_accuracy": 0.9693396226415094,
+      "logit_accuracy": 0.6981132075471698
+    },
+    "native_move": {
+      "pairs": 739,
+      "relations": {
+        "strict": 418,
+        "mixed": 321
+      },
+      "strict_pairs": 418,
+      "frozen_correct": 403,
+      "logit_correct": 404,
+      "frozen_accuracy": 0.9641148325358851,
+      "logit_accuracy": 0.9665071770334929
+    },
+    "two_non_native_moves": {
+      "pairs": 10471,
+      "relations": {
+        "strict": 4826,
+        "mixed": 5645
+      },
+      "strict_pairs": 4826,
+      "frozen_correct": 4533,
+      "logit_correct": 4129,
+      "frozen_accuracy": 0.9392871943638624,
+      "logit_accuracy": 0.8555739743058434
+    },
+    "all_native_involving": {
+      "pairs": 949,
+      "relations": {
+        "mixed": 424,
+        "strict": 525
+      },
+      "strict_pairs": 525,
+      "frozen_correct": 509,
+      "logit_correct": 499,
+      "frozen_accuracy": 0.9695238095238096,
+      "logit_accuracy": 0.9504761904761905
+    }
+  },
+  "state_choices": {
+    "states": 47,
+    "supported_states": 47,
+    "routes": 10,
+    "changed_states": 2,
+    "protected_states": 10,
+    "native_abstentions": 35,
+    "native_successful_states": 0,
+    "chosen_successful_states": 1,
+    "changed_relations": {
+      "strict_degradation": 1,
+      "mixed": 1
+    },
+    "native_dominated_by_move_states": 12,
+    "chosen_dominated_by_move_states": 12,
+    "chosen_has_any_component_harm": 2,
+    "component_harm_counts": {
+      "success": 0,
+      "spl": 0,
+      "ndtw": 2,
+      "distance_to_goal": 1,
+      "path_length": 2,
+      "primitive_action_count": 2
+    },
+    "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+  },
+  "by_route": {
+    "10506": {
+      "states": 7,
+      "supported_states": 7,
+      "routes": 1,
+      "changed_states": 1,
+      "protected_states": 1,
+      "native_abstentions": 5,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {
+        "strict_degradation": 1
+      },
+      "native_dominated_by_move_states": 4,
+      "chosen_dominated_by_move_states": 4,
+      "chosen_has_any_component_harm": 1,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 1,
+        "distance_to_goal": 1,
+        "path_length": 1,
+        "primitive_action_count": 1
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "10754": {
+      "states": 3,
+      "supported_states": 3,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 2,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 1,
+      "chosen_dominated_by_move_states": 1,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "3865": {
+      "states": 2,
+      "supported_states": 2,
+      "routes": 1,
+      "changed_states": 1,
+      "protected_states": 1,
+      "native_abstentions": 0,
+      "native_successful_states": 0,
+      "chosen_successful_states": 1,
+      "changed_relations": {
+        "mixed": 1
+      },
+      "native_dominated_by_move_states": 0,
+      "chosen_dominated_by_move_states": 0,
+      "chosen_has_any_component_harm": 1,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 1,
+        "distance_to_goal": 0,
+        "path_length": 1,
+        "primitive_action_count": 1
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "4702": {
+      "states": 8,
+      "supported_states": 8,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 7,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 0,
+      "chosen_dominated_by_move_states": 0,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "5247": {
+      "states": 4,
+      "supported_states": 4,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 3,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 2,
+      "chosen_dominated_by_move_states": 2,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "5475": {
+      "states": 2,
+      "supported_states": 2,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 1,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 1,
+      "chosen_dominated_by_move_states": 1,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "5648": {
+      "states": 12,
+      "supported_states": 12,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 11,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 0,
+      "chosen_dominated_by_move_states": 0,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "7362": {
+      "states": 5,
+      "supported_states": 5,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 4,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 3,
+      "chosen_dominated_by_move_states": 3,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "8008": {
+      "states": 2,
+      "supported_states": 2,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 1,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 0,
+      "chosen_dominated_by_move_states": 0,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "9916": {
+      "states": 2,
+      "supported_states": 2,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 1,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 1,
+      "chosen_dominated_by_move_states": 1,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    }
+  },
+  "by_scene": {
+    "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb": {
+      "states": 2,
+      "supported_states": 2,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 1,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 1,
+      "chosen_dominated_by_move_states": 1,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb": {
+      "states": 16,
+      "supported_states": 16,
+      "routes": 3,
+      "changed_states": 1,
+      "protected_states": 3,
+      "native_abstentions": 12,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {
+        "strict_degradation": 1
+      },
+      "native_dominated_by_move_states": 9,
+      "chosen_dominated_by_move_states": 9,
+      "chosen_has_any_component_harm": 1,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 1,
+        "distance_to_goal": 1,
+        "path_length": 1,
+        "primitive_action_count": 1
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb": {
+      "states": 2,
+      "supported_states": 2,
+      "routes": 1,
+      "changed_states": 1,
+      "protected_states": 1,
+      "native_abstentions": 0,
+      "native_successful_states": 0,
+      "chosen_successful_states": 1,
+      "changed_relations": {
+        "mixed": 1
+      },
+      "native_dominated_by_move_states": 0,
+      "chosen_dominated_by_move_states": 0,
+      "chosen_has_any_component_harm": 1,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 1,
+        "distance_to_goal": 0,
+        "path_length": 1,
+        "primitive_action_count": 1
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb": {
+      "states": 3,
+      "supported_states": 3,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 2,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 1,
+      "chosen_dominated_by_move_states": 1,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb": {
+      "states": 12,
+      "supported_states": 12,
+      "routes": 3,
+      "changed_states": 0,
+      "protected_states": 3,
+      "native_abstentions": 9,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 1,
+      "chosen_dominated_by_move_states": 1,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    },
+    "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb": {
+      "states": 12,
+      "supported_states": 12,
+      "routes": 1,
+      "changed_states": 0,
+      "protected_states": 1,
+      "native_abstentions": 11,
+      "native_successful_states": 0,
+      "chosen_successful_states": 0,
+      "changed_relations": {},
+      "native_dominated_by_move_states": 0,
+      "chosen_dominated_by_move_states": 0,
+      "chosen_has_any_component_harm": 0,
+      "component_harm_counts": {
+        "success": 0,
+        "spl": 0,
+        "ndtw": 0,
+        "distance_to_goal": 0,
+        "path_length": 0,
+        "primitive_action_count": 0
+      },
+      "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+    }
+  },
+  "in_sample_only": true,
+  "model_refitted": false,
+  "replication_outcomes_read": false,
+  "decision": "NO-GO unchanged; this diagnostic cannot authorize training",
+  "support_diagnosis": "Retire all-pair accuracy as a sufficient gate: native-relative choices include mixed or harmful returns.",
+  "limits": "Frozen fitting corpus, failure-selected and correlated critical states. Not held-out accuracy or an executed episode-policy aggregate.",
+  "registration_sha256": "47e2affb34185e59efebc7aae20015eafeffe4b02e2ba3fcf7f7e992477de349"
+}

@@ -1,0 +1,125 @@
+{
+  "description": "Offline support-audit outputs and source hashes; original large input traces remain at registration-pinned paths. This manifest does not self-hash.",
+  "files": [
+    {
+      "path": "research/PREFERENCE_TRAINING_SUPPORT_REPORT.md",
+      "sha256": "77d58f61a445cd8e190292a16aa940a5e64dd447cd4c253668f02a9c1461fa33",
+      "bytes": 8977
+    },
+    {
+      "path": "research/results/preference_training_support_001/analysis.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/results/preference_training_support_001/analysis.stdout.log",
+      "sha256": "9821d25db29e91eef94d5254910c046cfe580e47d7651d8686f62e73b942379c",
+      "bytes": 2258
+    },
+    {
+      "path": "research/results/preference_training_support_001/analysis_001/pairs.csv",
+      "sha256": "9dde3e37c894f5fc8493d9c91fa03904edc73f13da05a28ae379cea4865e5ed0",
+      "bytes": 1384440
+    },
+    {
+      "path": "research/results/preference_training_support_001/analysis_001/states.json",
+      "sha256": "e3724947d3c67fdc64d0b7b5f3aad85cbe54e025d2c35dcc233b5fab7db46abf",
+      "bytes": 45913
+    },
+    {
+      "path": "research/results/preference_training_support_001/analysis_001/summary.json",
+      "sha256": "b58d4e6e220f1b443ea9270d2e606c2056296cadef76a9c877b42efc0acc6d9d",
+      "bytes": 14771
+    },
+    {
+      "path": "research/results/preference_training_support_001/directional.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/results/preference_training_support_001/directional.stdout.log",
+      "sha256": "78f7d5d74c675e96ca7174e3b2aa7282f0fd9925750f1b9a71c6572abec9a428",
+      "bytes": 300
+    },
+    {
+      "path": "research/results/preference_training_support_001/directional_support_001/native_improvement_pairs.json",
+      "sha256": "18eb360cde50b2e3a94f745a8339ed476714a6d3968dc65f128aa5b87454a2f5",
+      "bytes": 5269
+    },
+    {
+      "path": "research/results/preference_training_support_001/directional_support_001/summary.json",
+      "sha256": "62e4a95a0958abda5bc7dd441d68f3b4c43f8a1e8c3a150b89f1b1433f2a2690",
+      "bytes": 991
+    },
+    {
+      "path": "research/results/preference_training_support_001/registration.json",
+      "sha256": "47e2affb34185e59efebc7aae20015eafeffe4b02e2ba3fcf7f7e992477de349",
+      "bytes": 3236
+    },
+    {
+      "path": "research/results/preference_training_support_001/source_provenance.json",
+      "sha256": "42b59b53c0b316bc614f45e65faadc7fba5908c447df16c9ca0f0a9d0e4465cd",
+      "bytes": 4436
+    },
+    {
+      "path": "research/results/preference_training_support_001/status.json",
+      "sha256": "aaec269dc67cc40f647c2cefeb91fc79083261a8a84734fc71a763d189765b7a",
+      "bytes": 528
+    },
+    {
+      "path": "research/results/preference_training_support_001/tests.stderr.log",
+      "sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
+      "bytes": 104
+    },
+    {
+      "path": "research/results/preference_training_support_001/tests.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/results/preference_training_support_001/verification.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/results/preference_training_support_001/verification.stdout.log",
+      "sha256": "f8da3dbfebc971635dda11c3edc1fd93bbdd68c4b7ce20997c7be7b31fe9b728",
+      "bytes": 1336
+    },
+    {
+      "path": "research/results/preference_training_support_001/verification_001/summary.json",
+      "sha256": "f8da3dbfebc971635dda11c3edc1fd93bbdd68c4b7ce20997c7be7b31fe9b728",
+      "bytes": 1336
+    },
+    {
+      "path": "research/results/preference_training_support_001_registration.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/results/preference_training_support_001_registration.stdout.log",
+      "sha256": "36234b8e845e4c5c2246c8ca426d5f48062d9c580c0c5bc008fc01f52c5ddfec",
+      "bytes": 102
+    },
+    {
+      "path": "research/tools/audit_preference_training_support.py",
+      "sha256": "632bb0ccefa56ddbff6521c6e733a8830c1a288fc590043604ee831d49aca9d8",
+      "bytes": 14521
+    },
+    {
+      "path": "research/tools/describe_native_pair_support.py",
+      "sha256": "06fa18e09b3ca7f34b14c5dc9f228299f428d6665402a863cbca32a4dc8162aa",
+      "bytes": 2158
+    },
+    {
+      "path": "research/tools/test_preference_training_support.py",
+      "sha256": "2f70f6a240ccb5a4f18d6b1829dcb67d02589120f36e62bcaa037abb4a798618",
+      "bytes": 3211
+    },
+    {
+      "path": "research/tools/verify_training_support_results.py",
+      "sha256": "d3fd763ff61b822ec4e74a0835bcf29b10ac2fcd57c2dd1710e7493b4cf6a199",
+      "bytes": 4758
+    }
+  ]
+}

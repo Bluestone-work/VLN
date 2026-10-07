@@ -1,0 +1,90 @@
+{
+  "pair_groups": {
+    "all_pairs": {
+      "pairs": 12159,
+      "relations": {
+        "mixed": 6491,
+        "strict": 5668
+      },
+      "strict_pairs": 5668,
+      "frozen_correct": 5347,
+      "logit_correct": 4829,
+      "frozen_accuracy": 0.9433662667607622,
+      "logit_accuracy": 0.8519760056457304
+    },
+    "stop_involving": {
+      "pairs": 949,
+      "relations": {
+        "mixed": 525,
+        "strict": 424
+      },
+      "strict_pairs": 424,
+      "frozen_correct": 411,
+      "logit_correct": 296,
+      "frozen_accuracy": 0.9693396226415094,
+      "logit_accuracy": 0.6981132075471698
+    },
+    "native_move": {
+      "pairs": 739,
+      "relations": {
+        "strict": 418,
+        "mixed": 321
+      },
+      "strict_pairs": 418,
+      "frozen_correct": 403,
+      "logit_correct": 404,
+      "frozen_accuracy": 0.9641148325358851,
+      "logit_accuracy": 0.9665071770334929
+    },
+    "two_non_native_moves": {
+      "pairs": 10471,
+      "relations": {
+        "strict": 4826,
+        "mixed": 5645
+      },
+      "strict_pairs": 4826,
+      "frozen_correct": 4533,
+      "logit_correct": 4129,
+      "frozen_accuracy": 0.9392871943638624,
+      "logit_accuracy": 0.8555739743058434
+    },
+    "all_native_involving": {
+      "pairs": 949,
+      "relations": {
+        "mixed": 424,
+        "strict": 525
+      },
+      "strict_pairs": 525,
+      "frozen_correct": 509,
+      "logit_correct": 499,
+      "frozen_accuracy": 0.9695238095238096,
+      "logit_accuracy": 0.9504761904761905
+    }
+  },
+  "state_choices": {
+    "states": 47,
+    "supported_states": 47,
+    "routes": 10,
+    "changed_states": 2,
+    "protected_states": 10,
+    "native_abstentions": 35,
+    "native_successful_states": 0,
+    "chosen_successful_states": 1,
+    "changed_relations": {
+      "strict_degradation": 1,
+      "mixed": 1
+    },
+    "native_dominated_by_move_states": 12,
+    "chosen_dominated_by_move_states": 12,
+    "chosen_has_any_component_harm": 2,
+    "component_harm_counts": {
+      "success": 0,
+      "spl": 0,
+      "ndtw": 2,
+      "distance_to_goal": 1,
+      "path_length": 2,
+      "primitive_action_count": 2
+    },
+    "note": "Counts over correlated frozen states, not executed multi-step policy episode metrics."
+  }
+}
