@@ -1,0 +1,333 @@
+{
+  "experiment_id": "FAILURE-CRITICAL-CENSUS-002",
+  "status": "complete",
+  "post_hoc": true,
+  "no_new_rollout": true,
+  "no_model_trained": true,
+  "privileged_analysis_only": true,
+  "controls": {
+    "failed_routes_only": true,
+    "all_decisions_on_failed_routes": true,
+    "all_admissible_graph_actions": true,
+    "no_normal_state_sampling": true,
+    "no_model_training": true,
+    "no_new_rollout": true,
+    "privileged_analysis_only": true
+  },
+  "cohorts": [
+    {
+      "name": "train64",
+      "episodes_total": 64,
+      "failed_episodes": 9,
+      "failed_episode_ids": [
+        "3208",
+        "6068",
+        "6962",
+        "7221",
+        "8219",
+        "8343",
+        "875",
+        "9045",
+        "9747"
+      ],
+      "captured_failed_route_decisions": 94,
+      "captured_failed_route_options": 991,
+      "counts": {
+        "terminal_critical_decisions": 9,
+        "local_cost_capped_alternative": 20,
+        "collision": 30,
+        "any_execution_symptom": 31,
+        "states_without_alternative_forward_action": 3,
+        "large_endpoint_deviation": 25,
+        "stall": 24
+      },
+      "route_counts": {
+        "3208": {
+          "scene_id": "data/scene_datasets/mp3d/ac26ZMwG7aT/ac26ZMwG7aT.glb",
+          "decisions": 9,
+          "critical_decisions": 1,
+          "forward_options": 60,
+          "states_without_alternative_forward_action": 0
+        },
+        "6068": {
+          "scene_id": "data/scene_datasets/mp3d/759xd9YjKW5/759xd9YjKW5.glb",
+          "decisions": 9,
+          "critical_decisions": 1,
+          "forward_options": 87,
+          "states_without_alternative_forward_action": 0
+        },
+        "6962": {
+          "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+          "decisions": 15,
+          "critical_decisions": 4,
+          "forward_options": 174,
+          "states_without_alternative_forward_action": 1
+        },
+        "7221": {
+          "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+          "decisions": 15,
+          "critical_decisions": 14,
+          "forward_options": 77,
+          "states_without_alternative_forward_action": 1
+        },
+        "8219": {
+          "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "decisions": 15,
+          "critical_decisions": 14,
+          "forward_options": 83,
+          "states_without_alternative_forward_action": 1
+        },
+        "8343": {
+          "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+          "decisions": 8,
+          "critical_decisions": 2,
+          "forward_options": 75,
+          "states_without_alternative_forward_action": 0
+        },
+        "875": {
+          "scene_id": "data/scene_datasets/mp3d/r1Q1Z4BcV1o/r1Q1Z4BcV1o.glb",
+          "decisions": 8,
+          "critical_decisions": 1,
+          "forward_options": 108,
+          "states_without_alternative_forward_action": 0
+        },
+        "9045": {
+          "scene_id": "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+          "decisions": 9,
+          "critical_decisions": 1,
+          "forward_options": 113,
+          "states_without_alternative_forward_action": 0
+        },
+        "9747": {
+          "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+          "decisions": 6,
+          "critical_decisions": 1,
+          "forward_options": 35,
+          "states_without_alternative_forward_action": 0
+        }
+      },
+      "source_hashes": {
+        "research/results/graph_option_train64/capture_001/manifest.json": "83410401b55b71114941f43f2ff6aaf008f1a9598e43b70b7f7999cfb3169a76",
+        "research/results/graph_option_train64/capture_001/graph_options/graph_options.jsonl": "f94b89f67d17bc813aaf3b7291352018cf7456ff4ea623c8b944e696c1d13a09",
+        "research/results/graph_option_train64/probe_full001/summary.json": "13c29fd95088cbab7f85b7c52c1c4db68323d0eaf60dba347a83ef91d553d693",
+        "research/results/graph_option_train64/probe_full001/decisions.jsonl": "3b2b662ad9d014790bb5a75c5eb393f88a02ceb98bb59979c3ea0f0c5e51a4f3",
+        "research/results/graph_option_train64/noninterference_001/summary.json": "e1350a3d6106f9044afe6b1ba5a92cc598240102bcb76d7ed80d2e452e9d9e3e",
+        "research/results/graph_option_train64/noninterference_001/capture_episodes.json": "b11921013fa49e907041fa9cec1cac3f5fe6037cf5d80f5c47690e4b261b9e98"
+      }
+    },
+    {
+      "name": "unseen66",
+      "episodes_total": 66,
+      "failed_episodes": 22,
+      "failed_episode_ids": [
+        "1052",
+        "1126",
+        "1151",
+        "1238",
+        "1305",
+        "131",
+        "1496",
+        "1584",
+        "1593",
+        "1702",
+        "1793",
+        "221",
+        "350",
+        "397",
+        "429",
+        "442",
+        "540",
+        "548",
+        "603",
+        "724",
+        "73",
+        "793"
+      ],
+      "captured_failed_route_decisions": 227,
+      "captured_failed_route_options": 2862,
+      "counts": {
+        "terminal_critical_decisions": 22,
+        "local_cost_capped_alternative": 58,
+        "collision": 34,
+        "large_endpoint_deviation": 18,
+        "any_execution_symptom": 35,
+        "states_without_alternative_forward_action": 7,
+        "stall": 8
+      },
+      "route_counts": {
+        "1052": {
+          "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+          "decisions": 8,
+          "critical_decisions": 1,
+          "forward_options": 76,
+          "states_without_alternative_forward_action": 0
+        },
+        "1126": {
+          "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+          "decisions": 15,
+          "critical_decisions": 5,
+          "forward_options": 199,
+          "states_without_alternative_forward_action": 1
+        },
+        "1151": {
+          "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+          "decisions": 5,
+          "critical_decisions": 2,
+          "forward_options": 27,
+          "states_without_alternative_forward_action": 0
+        },
+        "1238": {
+          "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+          "decisions": 11,
+          "critical_decisions": 1,
+          "forward_options": 171,
+          "states_without_alternative_forward_action": 0
+        },
+        "1305": {
+          "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+          "decisions": 8,
+          "critical_decisions": 1,
+          "forward_options": 78,
+          "states_without_alternative_forward_action": 0
+        },
+        "131": {
+          "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+          "decisions": 15,
+          "critical_decisions": 11,
+          "forward_options": 90,
+          "states_without_alternative_forward_action": 1
+        },
+        "1496": {
+          "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+          "decisions": 10,
+          "critical_decisions": 1,
+          "forward_options": 129,
+          "states_without_alternative_forward_action": 0
+        },
+        "1584": {
+          "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+          "decisions": 6,
+          "critical_decisions": 5,
+          "forward_options": 37,
+          "states_without_alternative_forward_action": 0
+        },
+        "1593": {
+          "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+          "decisions": 6,
+          "critical_decisions": 1,
+          "forward_options": 56,
+          "states_without_alternative_forward_action": 0
+        },
+        "1702": {
+          "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+          "decisions": 15,
+          "critical_decisions": 1,
+          "forward_options": 108,
+          "states_without_alternative_forward_action": 1
+        },
+        "1793": {
+          "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+          "decisions": 15,
+          "critical_decisions": 2,
+          "forward_options": 219,
+          "states_without_alternative_forward_action": 1
+        },
+        "221": {
+          "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+          "decisions": 15,
+          "critical_decisions": 5,
+          "forward_options": 165,
+          "states_without_alternative_forward_action": 1
+        },
+        "350": {
+          "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+          "decisions": 13,
+          "critical_decisions": 2,
+          "forward_options": 219,
+          "states_without_alternative_forward_action": 0
+        },
+        "397": {
+          "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+          "decisions": 8,
+          "critical_decisions": 1,
+          "forward_options": 93,
+          "states_without_alternative_forward_action": 0
+        },
+        "429": {
+          "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+          "decisions": 9,
+          "critical_decisions": 2,
+          "forward_options": 77,
+          "states_without_alternative_forward_action": 0
+        },
+        "442": {
+          "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+          "decisions": 13,
+          "critical_decisions": 1,
+          "forward_options": 192,
+          "states_without_alternative_forward_action": 0
+        },
+        "540": {
+          "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+          "decisions": 5,
+          "critical_decisions": 1,
+          "forward_options": 30,
+          "states_without_alternative_forward_action": 0
+        },
+        "548": {
+          "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+          "decisions": 7,
+          "critical_decisions": 1,
+          "forward_options": 81,
+          "states_without_alternative_forward_action": 0
+        },
+        "603": {
+          "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+          "decisions": 8,
+          "critical_decisions": 1,
+          "forward_options": 51,
+          "states_without_alternative_forward_action": 0
+        },
+        "724": {
+          "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+          "decisions": 5,
+          "critical_decisions": 2,
+          "forward_options": 37,
+          "states_without_alternative_forward_action": 0
+        },
+        "73": {
+          "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+          "decisions": 15,
+          "critical_decisions": 1,
+          "forward_options": 179,
+          "states_without_alternative_forward_action": 1
+        },
+        "793": {
+          "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+          "decisions": 15,
+          "critical_decisions": 6,
+          "forward_options": 116,
+          "states_without_alternative_forward_action": 1
+        }
+      },
+      "source_hashes": {
+        "research/results/graph_option_unseen/capture_001/manifest.json": "20e70cb3b6323450a26bac45a38f2bf5c16e25e64a329241b4e17931b3dd45b5",
+        "research/results/graph_option_unseen/capture_001/graph_options/graph_options.jsonl": "0022d5ad52bc954574e77d3b5f88b4d7ebff85b92b50c354a37957d3a994a632",
+        "research/results/graph_option_unseen/probe_full002/summary.json": "a739af5ca5754e00d60210f41ecd6cdd7735bb432be9b4b8fc616956fb0e3fde",
+        "research/results/graph_option_unseen/probe_full002/decisions.jsonl": "879db4641f9d716e4ba1f067a93243458eb734aa19a2a7181bad1e5cf24f25fc",
+        "research/results/graph_option_unseen/noninterference_002/summary.json": "53e121a51ada7cf7378437d0522b544b82b5ba94bc45d542770db40fae984f99",
+        "research/results/graph_option_unseen/noninterference_002/capture_episodes.json": "51400aa404c1128a4d4899bf1088db49ed445463612b61ebc30b57efa3f038fa"
+      }
+    }
+  ],
+  "total_failed_route_decisions": 321,
+  "total_failed_route_options": 3853,
+  "limits": [
+    "Complete captured option execution is exhaustive over the retained graph action set.",
+    "These are one-option outcomes from native states, not complete episode-return counterfactuals.",
+    "Execution symptoms and local alternatives are diagnostic evidence, not causal failure labels.",
+    "Proposal coverage is measured only over exposed graph actions; unseen waypoints are not tested."
+  ],
+  "git_commit": "670a2fa183499c5270c3141cb98770147ae3b628",
+  "config_sha256": "73d22f320752098980cf0078e2ca05596fca4e51900d7eed5122461152604e09"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "controls": 22,
+  "interrupt_events": [
+    {
+      "episode_id": "1126",
+      "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "high_level_step": 10,
+      "cut_primitive": 8,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 9
+    },
+    {
+      "episode_id": "1151",
+      "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "high_level_step": 0,
+      "cut_primitive": 9,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 17
+    },
+    {
+      "episode_id": "131",
+      "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "high_level_step": 4,
+      "cut_primitive": 7,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 8
+    },
+    {
+      "episode_id": "1584",
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 8,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 12
+    }
+  ],
+  "native_cases_planned": 985,
+  "native_cases_completed": 985,
+  "all_validity_checks_passed": true,
+  "no_model_trained": true,
+  "oracle_analysis_only": true,
+  "elapsed_seconds": 740.9664941409137,
+  "scope": "all registered critical states, exhaustive admissible native actions; single replacement then full native continuation"
+}

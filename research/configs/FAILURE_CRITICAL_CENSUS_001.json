@@ -1,0 +1,38 @@
+{
+  "experiment_id": "FAILURE-CRITICAL-CENSUS-001",
+  "type": "failure-critical exhaustive graph-option census",
+  "cohorts": [
+    {
+      "name": "train64",
+      "capture_dir": "research/results/graph_option_train64/capture_001",
+      "probe_dir": "research/results/graph_option_train64/probe_full001",
+      "noninterference": "research/results/graph_option_train64/noninterference_001",
+      "analysis": "research/results/graph_option_train64/analysis_001/summary.json"
+    },
+    {
+      "name": "unseen66",
+      "capture_dir": "research/results/graph_option_unseen/capture_001",
+      "probe_dir": "research/results/graph_option_unseen/probe_full002",
+      "noninterference": "research/results/graph_option_unseen/noninterference_002",
+      "analysis": "research/results/graph_option_unseen/analysis_001/summary.json"
+    }
+  ],
+  "critical_rules": {
+    "collision_events_min": 1,
+    "target_error_horizontal_m_min": 0.5,
+    "stall_primitive_events_min": 3,
+    "stall_motion_path_m_max": 0.1,
+    "material_gain_m": 0.25,
+    "cost_tolerance_m": 1e-6
+  },
+  "controls": {
+    "failed_routes_only": true,
+    "all_decisions_on_failed_routes": true,
+    "all_admissible_graph_actions": true,
+    "no_normal_state_sampling": true,
+    "no_model_training": true,
+    "no_new_rollout": true,
+    "privileged_analysis_only": true
+  },
+  "output_dir": "research/results/failure_critical_census/analysis_001"
+}

@@ -2,6 +2,10 @@
 
 本分支保存截至 2026-10-07 的研究报告、配置、诊断脚本和轻量结果。当前没有得到可部署的导航提升；原始 NMS 粒度切换、短窗口标签蒸馏和当前数据上的 selector 训练均未通过开发门槛。具体证据与各项结论的适用范围见下列报告。
 
+## 2026-10-07 后续主线已调整
+
+按用户最新指令停止 coarse/default/fine selector 训练，保留原实验为 negative diagnostics。新的研究门是 failure-critical exhaustive full-return census 与小规模 interrupt oracle；先确定 graph ranking、termination 或 execution 的可恢复机制，再决定是否学习。参见 [关键状态因果诊断](CRITICAL_CAUSAL_REPORT.md)及[冻结实验协议](CRITICAL_CAUSAL_PROTOCOL.md)。早期报告中的 NO-GO 指具体旧设计或当时的数据，不代表禁止新的受控诊断。
+
 建议阅读顺序：
 
 1. [中文进展](RESEARCH_STATUS_CN.md)：已完成工作及当前判断。
@@ -10,6 +14,7 @@
 4. [失败分析](FAILURE_ANALYSIS.md)：历史代理指标的纠正，以及尚不能因果归类的问题。
 5. [完整回报实验](FULL_RETURN_LABEL_REPORT.md)、[原生 STOP 诊断](NATIVE_STOP_FEASIBILITY_REPORT.md)及[中途执行审计](INTERRUPTIBLE_EXECUTION_AUDIT.md)。
 6. [研究日志](RESEARCH_LOG.md)：实验过程、失败尝试和下一步条件。
+7. [Graph value 下一门槛](GRAPH_VALUE_NEXT_GATE.md)：在严格多数不足时，如何决定是否值得做训练集可行性研究。
 
 ## 本分支包含什么
 
@@ -23,4 +28,4 @@
 
 原始 JSONL 轨迹、数据集、模型权重、缓存论文 HTML、大部分 stdout/stderr、图件及部分源快照未上传，仍在原实验机器。报告和 manifest 中指向这些文件的路径、哈希保持原样；路径出现在清单中不代表文件已经上传。原始实验记录中的 commit 是运行时基准 commit，不能替代工作树补丁和源文件哈希。
 
-本次发布不新增导航评测，不重新解释旧结果为模型增益。静态源字符串检查也不等于动态仿真测试。
+本次发布新增的是失败关键状态的完整回报诊断与中断 oracle 记录，不是新的可部署导航模型或 benchmark 增益。静态源字符串检查也不等于动态仿真测试。

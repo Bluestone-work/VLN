@@ -311,3 +311,17 @@ The three training failed routes with successful native STOP branches are
 remain unclassified causally. No candidate, controller or STOP rule was changed.
 
 See `NATIVE_STOP_FEASIBILITY_REPORT.md` and its saved cross-tabs/primitive traces.
+
+
+## Failure-critical exhaustive full-return intervention (2026-10-07)
+
+The new user-directed census tests all 509 admissible native actions at 46
+critical states from the nine training failures. Non-STOP replacement rescues
+6/9 failures; only 4/9 preserve or improve nDTW as well. Native termination
+replacement rescues 2/9 (overlapping); four ghost-segment collision interrupts
+rescue 0/4 in both consumption and pending-ghost-restoration arms. Matched sensing
+controls exactly reproduce native rollouts. This is full-return evidence,
+stronger than raw waypoint probes or one-option progress labels. It still does
+not assign mutually exclusive causes: three routes are unresolved, and failure
+under all tested choices cannot prove missing proposals. See
+`CRITICAL_CAUSAL_REPORT.md` for route-level records and fidelity checks.

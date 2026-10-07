@@ -1,0 +1,204 @@
+{
+  "experiment_id": "CRITICAL-CAUSAL-COMBINED-001",
+  "created_utc": "2026-10-07T11:15:54.976076+00:00",
+  "cohorts": {
+    "train": {
+      "experiment_id": "CRITICAL-FULL-RETURN-TRAIN64-001",
+      "status": "complete",
+      "cohort": "nine training failures / eight scenes from frozen train64",
+      "critical_states": 46,
+      "native_full_returns": 509,
+      "control_routes": 9,
+      "all_coverage_and_validity_gates_passed": true,
+      "metric_reconstruction_comparisons": 4240,
+      "ranking_opportunity": {
+        "episodes": [
+          "6068",
+          "6962",
+          "7221",
+          "8219",
+          "9045",
+          "9747"
+        ],
+        "count": 6,
+        "scenes": 5,
+        "denominator": 9
+      },
+      "ranking_sr_and_ndtw_opportunity": {
+        "episodes": [
+          "6962",
+          "7221",
+          "8219",
+          "9747"
+        ],
+        "count": 4,
+        "scenes": 3,
+        "denominator": 9
+      },
+      "termination_opportunity": {
+        "episodes": [
+          "6068",
+          "9747"
+        ],
+        "count": 2,
+        "scenes": 2,
+        "denominator": 9
+      },
+      "interrupt_opportunity": {
+        "episodes": [],
+        "count": 0,
+        "scenes": 0,
+        "denominator": 4,
+        "tested_episodes": [
+          "6962",
+          "7221",
+          "8219",
+          "8343"
+        ],
+        "cohort_routes": 9,
+        "denominator_scope": "routes with an executed interrupt arm"
+      },
+      "unresolved": {
+        "episodes": [
+          "3208",
+          "8343",
+          "875"
+        ],
+        "count": 3,
+        "scenes": 3,
+        "denominator": 9
+      },
+      "ranking_majority_supported": false,
+      "interrupt_majority_supported": false,
+      "decision": "CONDITIONAL GO for a separately registered long-horizon graph-value/preference diagnostic; not permission to train on validation or claim a learned gain",
+      "limits": [
+        "Outcome-conditioned retrospective training census; not unbiased benchmark performance or deployable oracle.",
+        "One-step native choice replaced; future policy is native, not an exhaustive policy tree.",
+        "Ranking, termination and execution are coupled; rescue sets overlap, no forced causal partition.",
+        "No native rescue does not prove proposal coverage failure.",
+        "Interrupt oracle uses four frozen first-event cuts, not an optimal cut-time upper bound.",
+        "Fixed seed 100; no multi-seed learned claim."
+      ]
+    },
+    "unseen": {
+      "experiment_id": "CRITICAL-FULL-RETURN-UNSEEN66-001",
+      "status": "complete",
+      "cohort": "research/results/graph_option_unseen",
+      "critical_states": 71,
+      "native_full_returns": 985,
+      "control_routes": 22,
+      "all_coverage_and_validity_gates_passed": true,
+      "metric_reconstruction_comparisons": 8152,
+      "ranking_opportunity": {
+        "episodes": [
+          "131",
+          "1593",
+          "350",
+          "429",
+          "603",
+          "73",
+          "793"
+        ],
+        "count": 7,
+        "scenes": 5,
+        "denominator": 22
+      },
+      "ranking_sr_and_ndtw_opportunity": {
+        "episodes": [
+          "131",
+          "1593",
+          "350",
+          "429",
+          "603",
+          "793"
+        ],
+        "count": 6,
+        "scenes": 4,
+        "denominator": 22
+      },
+      "termination_opportunity": {
+        "episodes": [
+          "1052",
+          "1593",
+          "350",
+          "429",
+          "603",
+          "73"
+        ],
+        "count": 6,
+        "scenes": 5,
+        "denominator": 22
+      },
+      "interrupt_opportunity": {
+        "episodes": [],
+        "count": 0,
+        "scenes": 0,
+        "denominator": 4,
+        "tested_episodes": [
+          "1126",
+          "1151",
+          "131",
+          "1584"
+        ],
+        "cohort_routes": 22,
+        "denominator_scope": "routes with an executed interrupt arm"
+      },
+      "unresolved": {
+        "episodes": [
+          "1126",
+          "1151",
+          "1238",
+          "1305",
+          "1496",
+          "1584",
+          "1702",
+          "1793",
+          "221",
+          "397",
+          "442",
+          "540",
+          "548",
+          "724"
+        ],
+        "count": 14,
+        "scenes": 7,
+        "denominator": 22
+      },
+      "ranking_majority_supported": false,
+      "sr_only_ranking_majority_supported": false,
+      "interrupt_majority_supported": false,
+      "decision": "CONDITIONAL GO for a separately registered long-horizon graph-value/preference diagnostic; not permission to train on validation or claim a learned gain",
+      "limits": [
+        "Outcome-conditioned retrospective census; not unbiased benchmark performance or deployable oracle. Validation data must never become fitting labels.",
+        "One-step native choice replaced; future policy is native, not an exhaustive policy tree.",
+        "Ranking, termination and execution are coupled; rescue sets overlap, no forced causal partition.",
+        "No native rescue does not prove proposal coverage failure.",
+        "Interrupt oracle uses four frozen first-event cuts, not an optimal cut-time upper bound.",
+        "Fixed seed 100; no multi-seed learned claim."
+      ]
+    }
+  },
+  "route_denominator": 31,
+  "route_quality_ranking_opportunities": 10,
+  "sr_only_ranking_opportunities": 13,
+  "termination_opportunities": 8,
+  "interrupt_opportunities": 0,
+  "unresolved_routes": 17,
+  "overlap_warning": true,
+  "strict_majority": false,
+  "decision": "CONDITIONAL GO for training-only, outcome-blind long-horizon graph value/preference feasibility study; NO-GO for interrupt-policy learning and no use of unseen outcomes as labels",
+  "limits": [
+    "Cohorts are retrospective diagnostic populations; unseen66 was previously inspected.",
+    "Rescue sets overlap and are not a causal partition.",
+    "Single action replacement followed by native continuation, not a full future policy tree.",
+    "No deployable method or benchmark gain is claimed.",
+    "Interrupt denominator is eight routes with executed arms (four per cohort), not all 31 failures."
+  ],
+  "interrupt_tested_routes": 8,
+  "interrupt_tested_by_cohort": {
+    "train": 4,
+    "unseen": 4
+  },
+  "interrupt_rescue_routes": 0,
+  "interrupt_rescue_rate_on_tested": 0.0
+}

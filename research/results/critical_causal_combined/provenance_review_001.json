@@ -1,0 +1,103 @@
+{
+  "provenance_id": "CRITICAL-CAUSAL-COMBined-REVIEW-001",
+  "created_utc": "2026-10-07",
+  "purpose": "Reviewable hashes for accepted critical-state full-return and interrupt-oracle artifacts; raw traces and licensed episode excerpts remain local.",
+  "git": {
+    "branch": "research/adaptive-action-audit-20261007",
+    "head_before_commit": "670a2fa183499c5270c3141cb98770147ae3b628",
+    "dirty_core_paths": [
+      "pretrain_src/run_pt/r2r_model_config_dep.json",
+      "run_r2r/iter_train.yaml",
+      "vlnce_baselines/common/environments.py",
+      "vlnce_baselines/config/default.py",
+      "vlnce_baselines/models/Policy_ViewSelection_ETP.py",
+      "vlnce_baselines/models/graph_utils.py",
+      "vlnce_baselines/ss_trainer_ETP.py"
+    ]
+  },
+  "artifacts": {
+    "research/CRITICAL_CAUSAL_REPORT.md": {
+      "bytes": 8595,
+      "sha256": "a43e299528047c7cc9c23eb6aff48be59b807e0eb02cfb13b7032a8a38738536"
+    },
+    "research/CRITICAL_CAUSAL_UNSEEN_PROTOCOL.md": {
+      "bytes": 2000,
+      "sha256": "697aae3693cb4e4c7042ea9b040d3e99085851930e3717dbbfe201cc0c39fdc6"
+    },
+    "research/GRAPH_VALUE_NEXT_GATE.md": {
+      "bytes": 3142,
+      "sha256": "111d8d15c9259cb922ded7bcfc9111b09ea09d4f1cdbe8922dc947d71bbbe985"
+    },
+    "research/README.md": {
+      "bytes": 3302,
+      "sha256": "92595ea818f2647dbc05f74cf99c14a974a4c82bcbab2a7db980e29ef217727a"
+    },
+    "research/REPORT.md": {
+      "bytes": 34847,
+      "sha256": "5d4f4436f86fe9376095bb9b39cc0548b1954a9d72b9305cbf8b772146ee6620"
+    },
+    "research/EXPERIMENT_TABLE.md": {
+      "bytes": 15937,
+      "sha256": "d0895d176daf1244ff4591fa2752500d1f215cd903057bac189dac3276322923"
+    },
+    "research/RESEARCH_LOG.md": {
+      "bytes": 73213,
+      "sha256": "918a42cb39064b64b13442ea69cbbad09bb5e1039d6e3dc2717e349b39f9579f"
+    },
+    "research/RESEARCH_STATUS_CN.md": {
+      "bytes": 20320,
+      "sha256": "ef767e7df51fe648aeb84ea14eefeac0da11840205a858b01ff77ee6bb9c4ef0"
+    },
+    "research/results/critical_causal_train64/full_001/manifest.json": {
+      "bytes": 1085770,
+      "sha256": "f6ff2028db4459b603b26270e76215297f2f4558c11043ac12ab619bccf92921"
+    },
+    "research/results/critical_causal_train64/full_001/summary.json": {
+      "bytes": 1364,
+      "sha256": "b1ce08897ce85fd7305a60bb758903196780d94fa56e5c9b459e1ce652aa3e62"
+    },
+    "research/results/critical_causal_train64/full_001/results.jsonl": {
+      "bytes": 1438235,
+      "sha256": "388f4bf3eaebb0b84c6bdfbfd0031e9739304ea049f74ba40042bf9af9d59940"
+    },
+    "research/results/critical_causal_unseen/full_001/manifest.json": {
+      "bytes": 2010225,
+      "sha256": "99ee200af592618c1e395b378b56e4caea139416ff73071bb41bebd07c1f6768"
+    },
+    "research/results/critical_causal_unseen/full_001/summary.json": {
+      "bytes": 1362,
+      "sha256": "59ae323e4207f1e8d10335fe2c77e58576065140249dace53348d2d9fd31879e"
+    },
+    "research/results/critical_causal_unseen/full_001/results.jsonl": {
+      "bytes": 2735598,
+      "sha256": "d924e0c74171de8c4c585aaa8bfaf69136466be53bca3dcb64dc48a452166df6"
+    },
+    "research/results/critical_causal_train64/analysis_002/summary.json": {
+      "bytes": 47435,
+      "sha256": "63710d6ea7931e2ac724fca196b7142e334c69aad37cd13c98908f693d307012"
+    },
+    "research/results/critical_causal_unseen/analysis_002/summary.json": {
+      "bytes": 63774,
+      "sha256": "68f44605accf4b6854e02d158cd9c6764de9e0e2af37fff927c3ab584c1c2ec4"
+    }
+  },
+  "accepted_runs": {
+    "train64": {
+      "states": 46,
+      "native_full_returns": 509,
+      "interrupt_tested_routes": 4,
+      "interrupt_rescues": 0
+    },
+    "unseen66_diagnostic": {
+      "states": 71,
+      "native_full_returns": 985,
+      "interrupt_tested_routes": 4,
+      "interrupt_rescues": 0
+    }
+  },
+  "limits": [
+    "unseen66 was previously inspected and is diagnostic only, not untouched held-out data.",
+    "Counterfactual action cases are full native continuations from registered states, not a future-policy tree.",
+    "No learned selector, RL, VLM or deployable benchmark gain is claimed."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "all_checks_passed": true,
+  "subset_episode_and_vocab_identity": true,
+  "exact_full_option_or_prefix_checks": 9688,
+  "exact_primitive_records": 127881,
+  "interrupt_prefix_and_cost_checks": 8,
+  "cut_rows": [
+    {
+      "case_id": "sense_only_1126_s10",
+      "cut": 8,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_consume_1126_s10",
+      "cut": 8,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_retain_1126_s10",
+      "cut": 8,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "sense_only_1151_s0",
+      "cut": 9,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_consume_1151_s0",
+      "cut": 9,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_retain_1151_s0",
+      "cut": 9,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "sense_only_131_s4",
+      "cut": 7,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_consume_131_s4",
+      "cut": 7,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_retain_131_s4",
+      "cut": 7,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "sense_only_1584_s1",
+      "cut": 8,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_consume_1584_s1",
+      "cut": 8,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_retain_1584_s1",
+      "cut": 8,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    }
+  ],
+  "result_sha256": "d924e0c74171de8c4c585aaa8bfaf69136466be53bca3dcb64dc48a452166df6",
+  "script_sha256": "67128db6000e9ac29a367ea7c76aae3145152afcad68f97bb2cb1e7e947eef9a"
+}

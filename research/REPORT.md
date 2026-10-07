@@ -490,3 +490,32 @@ budget. Beyond Waypoints has a related but distinct pre-execution trajectory
 truncation mechanism; no novelty claim is made. The static audit passes 13
 source-anchor checks, which are not dynamic tests, and is documented in
 `INTERRUPTIBLE_EXECUTION_AUDIT.md`.
+
+
+### User-directed pivot: failure-critical complete returns
+
+Coarse/default/fine selector development is closed; earlier results remain
+negative diagnostics. New controlled interventions enumerate 509 native actions
+at all 46 registered critical states in nine training failures. Six routes have
+a native non-STOP rescue; four also avoid nDTW loss. Two termination rescues
+overlap. The four matched collision-interruption trials rescue none. Baseline,
+physical prefix/RNG, cost and independent final-metric checks pass. This supports
+a CONDITIONAL GO for long-horizon graph choice investigation, not a deployable
+method or a complete failure partition. Three routes remain unresolved.
+Details and explicit scope limits: `CRITICAL_CAUSAL_REPORT.md`.
+
+### Cross-scene failure-critical confirmation
+
+Applying the frozen critical-state protocol to 22 failures in the previously
+inspected unseen66 diagnostic subset covers 71 states and 985 full native action
+returns. Seven routes are rescued by a non-STOP replacement; six also preserve
+nDTW. Six termination replacements rescue, overlapping the graph-choice set.
+Four collision interruptions again rescue none, while sensing-only controls are
+exact. Combined route-quality-aware graph-choice evidence is 10/31, termination
+8/31, and interrupt 0/8; unresolved cases remain in the denominator. This is
+cross-scene confirmation, not an untouched held-out benchmark. No unseen result
+is used for training.
+
+The next gate is a training-only, scene-grouped graph-value/preference feasibility
+study with unseen labels held out, defined in `GRAPH_VALUE_NEXT_GATE.md`. It does
+not authorize selector training from the current retrospective outcomes.

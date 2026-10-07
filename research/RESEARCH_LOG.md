@@ -886,3 +886,33 @@ this cycle. See `SINGLE_INTERVENTION_REPORT.md` and
 **Interpretation:** The interior-arrival symptom identifies an implementation constraint, not a validated research contribution. A mid-option STOP head would be an incomplete and potentially unfair redesign under the current graph transaction. The checker is static evidence only; it does not prove dynamic semantics.
 
 **Next:** Keep interruptible execution NO-GO. If revisited, first specify the transaction and sensing budget, then perform a literature/action-identity audit before any prototype or training.
+
+
+## 2026-10-07 / CRITICAL-FULL-RETURN-TRAIN64-001 (completed)
+
+**Question:** At failure-critical states, can any existing native graph action rescue complete-episode return, and can event-triggered re-observation/replanning rescue execution symptoms?
+
+**Change:** User-directed pivot: stop coarse/default/fine learning. Enumerate all 509 admissible native actions at 46 registered critical states in all nine train64 failures (eight scenes). Replay from reset, substitute one action, then run native continuation. Four collision cuts use sensing-only and two graph-consumption semantics.
+
+**Control:** Same checkpoint, sensors, seed100, sliding=true, effective tryout=false, native STOP and 15-decision horizon. Nine source-identical dataset records; every prefix, selected-action control and final metric audited. No fitted model, RL or VLM.
+
+**Result:** SR rescue by non-STOP replacement on 6/9 routes; 4/9 in three scenes also avoid nDTW loss. Termination replacement rescues 2/9, overlapping the six. Four interruption events rescue 0/4 under either ghost semantic. Sensing-only exactly matches baseline. 530 actual rollouts; 4,240 reconstructed metrics, 4,709 exact option/prefix checks and 52,012 exact primitive records; five boundary tests pass.
+
+**Interpretation:** CONDITIONAL GO for registered long-horizon graph-choice investigation; not yet a route-quality-aware majority or learned gain. NO-GO for interrupt-policy training from four fixed cuts. Three routes remain unresolved, not proven proposal failures. The retired legacy schedule adapter failed cohort validation before rollout; its attempts are marked SUPERSEDED. Smoke001 had a metric-key serialization mismatch, smoke002 was manually interrupted, smoke003 passed.
+
+**Next:** Apply the identical state/choice/interrupt rules to the previously inspected unseen66 diagnostic failures, keeping their results separate and forbidding use as fitting labels. Protocol: CRITICAL_CAUSAL_UNSEEN_PROTOCOL.md.
+
+
+## 2026-10-07 / CRITICAL-FULL-RETURN-UNSEEN66-001 (completed)
+
+**Question:** Does the failure-critical graph-choice/interruption evidence survive across the previously inspected 11-scene unseen66 diagnostic cohort?
+
+**Change:** Applied the frozen train protocol to all 22 baseline failures: 71 critical states, 985 admissible actions, one replacement followed by native continuation, and four first collision cuts with sensing-only/consume/retain arms.
+
+**Control:** Same checkpoint, seed100, sensors, native STOP, 15-decision horizon, collision accounting and source-identical subset records. No labels entered training and no benchmark aggregate was changed.
+
+**Result:** 7/22 SR rescues by native non-STOP replacement; 6/22 also avoid nDTW degradation. Termination replacement rescues 6/22 (overlapping). Four interrupt cuts rescue 0/4; sensing-only exact. 8,152 metric reconstructions, 9,688 option/prefix checks and 127,881 primitive records pass independently.
+
+**Interpretation:** Cross-scene confirmation makes graph-choice opportunity the leading observed mechanism, but 6/22 is not a majority and 14 routes remain unresolved. Interrupt remains NO-GO for learning. The subset was previously inspected and is not an untouched held-out benchmark.
+
+**Next:** Keep coarse/default/fine and interrupt-policy training stopped. Register a training-only, route-quality-aware long-horizon graph value/preference feasibility study only after fixing outcome-blind features, continuation-cost accounting and a genuinely held-out scene protocol. Do not use unseen results as labels.

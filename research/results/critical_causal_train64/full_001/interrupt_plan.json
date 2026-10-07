@@ -1,0 +1,38 @@
+{
+  "events": [
+    {
+      "episode_id": "6962",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 10,
+      "cut_primitive": 28,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 31
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 7,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 12
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 1,
+      "cut_primitive": 8,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 9
+    },
+    {
+      "episode_id": "8343",
+      "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+      "high_level_step": 1,
+      "cut_primitive": 5,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 12
+    }
+  ],
+  "frozen_before_intervention": true,
+  "rule": "research/CRITICAL_CAUSAL_PROTOCOL.md"
+}

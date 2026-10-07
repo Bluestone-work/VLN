@@ -1,0 +1,1695 @@
+{
+  "experiment_id": "CRITICAL-FULL-RETURN-TRAIN64-001",
+  "status": "complete",
+  "cohort": "nine training failures / eight scenes from frozen train64",
+  "critical_states": 46,
+  "native_full_returns": 509,
+  "control_routes": 9,
+  "all_coverage_and_validity_gates_passed": true,
+  "metric_reconstruction_comparisons": 4240,
+  "ranking_opportunity": {
+    "episodes": [
+      "6068",
+      "6962",
+      "7221",
+      "8219",
+      "9045",
+      "9747"
+    ],
+    "count": 6,
+    "scenes": 5,
+    "denominator": 9
+  },
+  "ranking_sr_and_ndtw_opportunity": {
+    "episodes": [
+      "6962",
+      "7221",
+      "8219",
+      "9747"
+    ],
+    "count": 4,
+    "scenes": 3,
+    "denominator": 9
+  },
+  "termination_opportunity": {
+    "episodes": [
+      "6068",
+      "9747"
+    ],
+    "count": 2,
+    "scenes": 2,
+    "denominator": 9
+  },
+  "interrupt_opportunity": {
+    "episodes": [],
+    "count": 0,
+    "scenes": 0,
+    "denominator": 9
+  },
+  "unresolved": {
+    "episodes": [
+      "3208",
+      "8343",
+      "875"
+    ],
+    "count": 3,
+    "scenes": 3,
+    "denominator": 9
+  },
+  "ranking_majority_supported": false,
+  "interrupt_majority_supported": false,
+  "routes": {
+    "3208": {
+      "scene_id": "data/scene_datasets/mp3d/ac26ZMwG7aT/ac26ZMwG7aT.glb",
+      "critical_states": 2,
+      "native_actions": 28,
+      "native_rescue_count": 0,
+      "ranking_rescue_cases": [],
+      "termination_rescue_cases": [],
+      "ranking_ndtw_nondegrading_cases": [],
+      "interrupt_rescue_cases": [],
+      "unresolved_after_tested_interventions": true
+    },
+    "6068": {
+      "scene_id": "data/scene_datasets/mp3d/759xd9YjKW5/759xd9YjKW5.glb",
+      "critical_states": 2,
+      "native_actions": 40,
+      "native_rescue_count": 4,
+      "ranking_rescue_cases": [
+        "e6068_s07_a017",
+        "e6068_s07_a022"
+      ],
+      "termination_rescue_cases": [
+        "e6068_s08_a018",
+        "e6068_s08_a023"
+      ],
+      "ranking_ndtw_nondegrading_cases": [],
+      "interrupt_rescue_cases": [],
+      "unresolved_after_tested_interventions": false
+    },
+    "6962": {
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "critical_states": 5,
+      "native_actions": 83,
+      "native_rescue_count": 6,
+      "ranking_rescue_cases": [
+        "e6962_s07_a013",
+        "e6962_s07_a014",
+        "e6962_s07_a015",
+        "e6962_s10_a018",
+        "e6962_s10_a019",
+        "e6962_s11_a017"
+      ],
+      "termination_rescue_cases": [],
+      "ranking_ndtw_nondegrading_cases": [
+        "e6962_s07_a013",
+        "e6962_s07_a014",
+        "e6962_s07_a015",
+        "e6962_s10_a018",
+        "e6962_s10_a019",
+        "e6962_s11_a017"
+      ],
+      "interrupt_rescue_cases": [],
+      "unresolved_after_tested_interventions": false
+    },
+    "7221": {
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "critical_states": 14,
+      "native_actions": 102,
+      "native_rescue_count": 10,
+      "ranking_rescue_cases": [
+        "e7221_s02_a006",
+        "e7221_s02_a008",
+        "e7221_s03_a007",
+        "e7221_s04_a008",
+        "e7221_s05_a009",
+        "e7221_s06_a010",
+        "e7221_s07_a011",
+        "e7221_s08_a012",
+        "e7221_s09_a013",
+        "e7221_s10_a014"
+      ],
+      "termination_rescue_cases": [],
+      "ranking_ndtw_nondegrading_cases": [
+        "e7221_s02_a006",
+        "e7221_s02_a008",
+        "e7221_s03_a007",
+        "e7221_s04_a008",
+        "e7221_s05_a009",
+        "e7221_s06_a010",
+        "e7221_s07_a011",
+        "e7221_s08_a012",
+        "e7221_s09_a013",
+        "e7221_s10_a014"
+      ],
+      "interrupt_rescue_cases": [],
+      "unresolved_after_tested_interventions": false
+    },
+    "8219": {
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "critical_states": 14,
+      "native_actions": 107,
+      "native_rescue_count": 17,
+      "ranking_rescue_cases": [
+        "e8219_s01_a003",
+        "e8219_s01_a004",
+        "e8219_s01_a005",
+        "e8219_s01_a006",
+        "e8219_s01_a007",
+        "e8219_s01_a009",
+        "e8219_s02_a007",
+        "e8219_s02_a008",
+        "e8219_s03_a008",
+        "e8219_s03_a009",
+        "e8219_s04_a008",
+        "e8219_s04_a009",
+        "e8219_s04_a010",
+        "e8219_s05_a010",
+        "e8219_s05_a011",
+        "e8219_s06_a011",
+        "e8219_s06_a012"
+      ],
+      "termination_rescue_cases": [],
+      "ranking_ndtw_nondegrading_cases": [
+        "e8219_s01_a003",
+        "e8219_s01_a004",
+        "e8219_s01_a005",
+        "e8219_s01_a006",
+        "e8219_s01_a007",
+        "e8219_s01_a009",
+        "e8219_s02_a007",
+        "e8219_s02_a008",
+        "e8219_s03_a008",
+        "e8219_s03_a009",
+        "e8219_s04_a008",
+        "e8219_s04_a009",
+        "e8219_s04_a010",
+        "e8219_s05_a010",
+        "e8219_s05_a011",
+        "e8219_s06_a011",
+        "e8219_s06_a012"
+      ],
+      "interrupt_rescue_cases": [],
+      "unresolved_after_tested_interventions": false
+    },
+    "8343": {
+      "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+      "critical_states": 3,
+      "native_actions": 40,
+      "native_rescue_count": 0,
+      "ranking_rescue_cases": [],
+      "termination_rescue_cases": [],
+      "ranking_ndtw_nondegrading_cases": [],
+      "interrupt_rescue_cases": [],
+      "unresolved_after_tested_interventions": true
+    },
+    "875": {
+      "scene_id": "data/scene_datasets/mp3d/r1Q1Z4BcV1o/r1Q1Z4BcV1o.glb",
+      "critical_states": 2,
+      "native_actions": 44,
+      "native_rescue_count": 0,
+      "ranking_rescue_cases": [],
+      "termination_rescue_cases": [],
+      "ranking_ndtw_nondegrading_cases": [],
+      "interrupt_rescue_cases": [],
+      "unresolved_after_tested_interventions": true
+    },
+    "9045": {
+      "scene_id": "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "critical_states": 2,
+      "native_actions": 44,
+      "native_rescue_count": 1,
+      "ranking_rescue_cases": [
+        "e9045_s07_a023"
+      ],
+      "termination_rescue_cases": [],
+      "ranking_ndtw_nondegrading_cases": [],
+      "interrupt_rescue_cases": [],
+      "unresolved_after_tested_interventions": false
+    },
+    "9747": {
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "critical_states": 2,
+      "native_actions": 21,
+      "native_rescue_count": 3,
+      "ranking_rescue_cases": [
+        "e9747_s04_a007",
+        "e9747_s04_a013"
+      ],
+      "termination_rescue_cases": [
+        "e9747_s05_a014"
+      ],
+      "ranking_ndtw_nondegrading_cases": [
+        "e9747_s04_a013"
+      ],
+      "interrupt_rescue_cases": [],
+      "unresolved_after_tested_interventions": false
+    }
+  },
+  "states": [
+    {
+      "episode_id": "3208",
+      "scene_id": "data/scene_datasets/mp3d/ac26ZMwG7aT/ac26ZMwG7aT.glb",
+      "high_level_step": 7,
+      "reasons": [
+        "last_nonstop"
+      ],
+      "effective_index": 19,
+      "actions": 13,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.19954752689081412
+    },
+    {
+      "episode_id": "3208",
+      "scene_id": "data/scene_datasets/mp3d/ac26ZMwG7aT/ac26ZMwG7aT.glb",
+      "high_level_step": 8,
+      "reasons": [
+        "terminal"
+      ],
+      "effective_index": 0,
+      "actions": 15,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.19954752689081412
+    },
+    {
+      "episode_id": "6068",
+      "scene_id": "data/scene_datasets/mp3d/759xd9YjKW5/759xd9YjKW5.glb",
+      "high_level_step": 7,
+      "reasons": [
+        "last_nonstop"
+      ],
+      "effective_index": 26,
+      "actions": 19,
+      "successful_actions": [
+        17,
+        22
+      ],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.5550092445876453
+    },
+    {
+      "episode_id": "6068",
+      "scene_id": "data/scene_datasets/mp3d/759xd9YjKW5/759xd9YjKW5.glb",
+      "high_level_step": 8,
+      "reasons": [
+        "terminal"
+      ],
+      "effective_index": 0,
+      "actions": 21,
+      "successful_actions": [
+        18,
+        23
+      ],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.48443370959588894
+    },
+    {
+      "episode_id": "6962",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 7,
+      "reasons": [
+        "collision"
+      ],
+      "effective_index": 25,
+      "actions": 18,
+      "successful_actions": [
+        13,
+        14,
+        15
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        13,
+        14,
+        15
+      ],
+      "best_ndtw": 0.3355983019822967
+    },
+    {
+      "episode_id": "6962",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 10,
+      "reasons": [
+        "collision"
+      ],
+      "effective_index": 26,
+      "actions": 21,
+      "successful_actions": [
+        18,
+        19
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        18,
+        19
+      ],
+      "best_ndtw": 0.08738861770825444
+    },
+    {
+      "episode_id": "6962",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 11,
+      "reasons": [
+        "collision"
+      ],
+      "effective_index": 31,
+      "actions": 21,
+      "successful_actions": [
+        17
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        17
+      ],
+      "best_ndtw": 0.06690241805503624
+    },
+    {
+      "episode_id": "6962",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 13,
+      "reasons": [
+        "last_nonstop"
+      ],
+      "effective_index": 34,
+      "actions": 22,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.014281520364778259
+    },
+    {
+      "episode_id": "6962",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 14,
+      "reasons": [
+        "terminal"
+      ],
+      "effective_index": 0,
+      "actions": 1,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.014281520364778259
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 1,
+      "reasons": [
+        "collision",
+        "deviation"
+      ],
+      "effective_index": 6,
+      "actions": 5,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.6775524129992113
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 2,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 10,
+      "actions": 8,
+      "successful_actions": [
+        6,
+        8
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        6,
+        8
+      ],
+      "best_ndtw": 0.8555629552954703
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 3,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 11,
+      "actions": 8,
+      "successful_actions": [
+        7
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        7
+      ],
+      "best_ndtw": 0.848333472741711
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 4,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 12,
+      "actions": 8,
+      "successful_actions": [
+        8
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        8
+      ],
+      "best_ndtw": 0.848333472741711
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 5,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 13,
+      "actions": 8,
+      "successful_actions": [
+        9
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        9
+      ],
+      "best_ndtw": 0.848333472741711
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 6,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 14,
+      "actions": 8,
+      "successful_actions": [
+        10
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        10
+      ],
+      "best_ndtw": 0.848333472741711
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 7,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 15,
+      "actions": 8,
+      "successful_actions": [
+        11
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        11
+      ],
+      "best_ndtw": 0.848333472741711
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 8,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 16,
+      "actions": 8,
+      "successful_actions": [
+        12
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        12
+      ],
+      "best_ndtw": 0.848333472741711
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 9,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 17,
+      "actions": 8,
+      "successful_actions": [
+        13
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        13
+      ],
+      "best_ndtw": 0.8523166225135763
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 10,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 18,
+      "actions": 8,
+      "successful_actions": [
+        14
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        14
+      ],
+      "best_ndtw": 0.7473258805188157
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 11,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 19,
+      "actions": 8,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.6703873184804078
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 12,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 20,
+      "actions": 8,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.6703873184804078
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 13,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall",
+        "last_nonstop"
+      ],
+      "effective_index": 21,
+      "actions": 8,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.6703873184804078
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "high_level_step": 14,
+      "reasons": [
+        "terminal"
+      ],
+      "effective_index": 0,
+      "actions": 1,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.6703873184804078
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 1,
+      "reasons": [
+        "collision"
+      ],
+      "effective_index": 8,
+      "actions": 8,
+      "successful_actions": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "best_ndtw": 0.9337198393554339
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 2,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 10,
+      "actions": 8,
+      "successful_actions": [
+        7,
+        8
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        7,
+        8
+      ],
+      "best_ndtw": 0.9203069465153082
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 3,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 11,
+      "actions": 8,
+      "successful_actions": [
+        8,
+        9
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        8,
+        9
+      ],
+      "best_ndtw": 0.9244985341964288
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 4,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 12,
+      "actions": 8,
+      "successful_actions": [
+        8,
+        9,
+        10
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        8,
+        9,
+        10
+      ],
+      "best_ndtw": 0.9219467609479681
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 5,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 13,
+      "actions": 8,
+      "successful_actions": [
+        10,
+        11
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        10,
+        11
+      ],
+      "best_ndtw": 0.9219467609479681
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 6,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 14,
+      "actions": 8,
+      "successful_actions": [
+        11,
+        12
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        11,
+        12
+      ],
+      "best_ndtw": 0.9118170821838764
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 7,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 15,
+      "actions": 8,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.85183170720402
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 8,
+      "reasons": [
+        "collision",
+        "deviation"
+      ],
+      "effective_index": 14,
+      "actions": 7,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.8081324664336822
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 9,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 16,
+      "actions": 7,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.5110464849993326
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 10,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 17,
+      "actions": 9,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.5539542181249545
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 11,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 20,
+      "actions": 9,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.5163345997874351
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 12,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall"
+      ],
+      "effective_index": 21,
+      "actions": 9,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.4669341096782448
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 13,
+      "reasons": [
+        "collision",
+        "deviation",
+        "stall",
+        "last_nonstop"
+      ],
+      "effective_index": 22,
+      "actions": 9,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.3693707325425559
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 14,
+      "reasons": [
+        "terminal"
+      ],
+      "effective_index": 0,
+      "actions": 1,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.35044728056389296
+    },
+    {
+      "episode_id": "8343",
+      "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+      "high_level_step": 1,
+      "reasons": [
+        "collision"
+      ],
+      "effective_index": 7,
+      "actions": 8,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.7402287504294053
+    },
+    {
+      "episode_id": "8343",
+      "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+      "high_level_step": 6,
+      "reasons": [
+        "last_nonstop"
+      ],
+      "effective_index": 22,
+      "actions": 16,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.7493505549166486
+    },
+    {
+      "episode_id": "8343",
+      "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+      "high_level_step": 7,
+      "reasons": [
+        "terminal"
+      ],
+      "effective_index": 0,
+      "actions": 16,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.716561281275777
+    },
+    {
+      "episode_id": "875",
+      "scene_id": "data/scene_datasets/mp3d/r1Q1Z4BcV1o/r1Q1Z4BcV1o.glb",
+      "high_level_step": 6,
+      "reasons": [
+        "last_nonstop"
+      ],
+      "effective_index": 24,
+      "actions": 21,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.7920560952684503
+    },
+    {
+      "episode_id": "875",
+      "scene_id": "data/scene_datasets/mp3d/r1Q1Z4BcV1o/r1Q1Z4BcV1o.glb",
+      "high_level_step": 7,
+      "reasons": [
+        "terminal"
+      ],
+      "effective_index": 0,
+      "actions": 23,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.715195149937455
+    },
+    {
+      "episode_id": "9045",
+      "scene_id": "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "high_level_step": 7,
+      "reasons": [
+        "last_nonstop"
+      ],
+      "effective_index": 28,
+      "actions": 21,
+      "successful_actions": [
+        23
+      ],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.5059359259886124
+    },
+    {
+      "episode_id": "9045",
+      "scene_id": "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "high_level_step": 8,
+      "reasons": [
+        "terminal"
+      ],
+      "effective_index": 0,
+      "actions": 23,
+      "successful_actions": [],
+      "ndtw_nondegrading_successful_actions": [],
+      "best_ndtw": 0.496151671983277
+    },
+    {
+      "episode_id": "9747",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 4,
+      "reasons": [
+        "last_nonstop"
+      ],
+      "effective_index": 12,
+      "actions": 10,
+      "successful_actions": [
+        7,
+        13
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        13
+      ],
+      "best_ndtw": 0.9367046345942827
+    },
+    {
+      "episode_id": "9747",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 5,
+      "reasons": [
+        "terminal"
+      ],
+      "effective_index": 0,
+      "actions": 11,
+      "successful_actions": [
+        14
+      ],
+      "ndtw_nondegrading_successful_actions": [
+        14
+      ],
+      "best_ndtw": 0.8026674641919903
+    }
+  ],
+  "interrupt_results": [
+    {
+      "case": {
+        "episode_id": "6962",
+        "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+        "high_level_step": 10,
+        "cut_primitive": 28,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 31,
+        "mode": "sense_only",
+        "case_id": "sense_only_6962_s10"
+      },
+      "metrics": {
+        "steps_taken": 226.0,
+        "distance_to_goal": 3.522998809814453,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 29.877731323242188,
+        "collisions": 0.03305785123966942,
+        "spl": 0.0,
+        "ndtw": 0.014281520364778259,
+        "sdtw": 0.0,
+        "ghost_cnt": 37,
+        "high_level_steps": 15,
+        "policy_stop_count": 0,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": 0.06666666666666667
+      },
+      "delta": {
+        "steps_taken": 0.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.0,
+        "collisions": 0.0,
+        "spl": 0.0,
+        "ndtw": 0.0,
+        "sdtw": 0.0,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 29,
+      "extra_sensing_calls": 1,
+      "policy_calls": 15
+    },
+    {
+      "case": {
+        "episode_id": "6962",
+        "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+        "high_level_step": 10,
+        "cut_primitive": 28,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 31,
+        "mode": "interrupt_consume",
+        "case_id": "interrupt_consume_6962_s10"
+      },
+      "metrics": {
+        "steps_taken": 307.0,
+        "distance_to_goal": 8.406952857971191,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 32.706085205078125,
+        "collisions": 0.015151515151515152,
+        "spl": 0.0,
+        "ndtw": 0.002428629916347958,
+        "sdtw": 0.0,
+        "ghost_cnt": 36,
+        "high_level_steps": 15,
+        "policy_stop_count": 0,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": 0.06666666666666667
+      },
+      "delta": {
+        "steps_taken": 81.0,
+        "distance_to_goal": 4.883954048156738,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 2.8283538818359375,
+        "collisions": -0.01790633608815427,
+        "spl": 0.0,
+        "ndtw": -0.011852890448430301,
+        "sdtw": 0.0,
+        "ghost_cnt": -1,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 29,
+      "extra_sensing_calls": 1,
+      "policy_calls": 15
+    },
+    {
+      "case": {
+        "episode_id": "6962",
+        "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+        "high_level_step": 10,
+        "cut_primitive": 28,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 31,
+        "mode": "interrupt_retain",
+        "case_id": "interrupt_retain_6962_s10"
+      },
+      "metrics": {
+        "steps_taken": 266.0,
+        "distance_to_goal": 9.081771850585938,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 29.955842971801758,
+        "collisions": 0.01652892561983471,
+        "spl": 0.0,
+        "ndtw": 0.004090720234917484,
+        "sdtw": 0.0,
+        "ghost_cnt": 36,
+        "high_level_steps": 15,
+        "policy_stop_count": 0,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": 0.06666666666666667
+      },
+      "delta": {
+        "steps_taken": 40.0,
+        "distance_to_goal": 5.558773040771484,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.07811164855957031,
+        "collisions": -0.01652892561983471,
+        "spl": 0.0,
+        "ndtw": -0.010190800129860775,
+        "sdtw": 0.0,
+        "ghost_cnt": -1,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 29,
+      "extra_sensing_calls": 1,
+      "policy_calls": 15
+    },
+    {
+      "case": {
+        "episode_id": "7221",
+        "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+        "high_level_step": 1,
+        "cut_primitive": 7,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 12,
+        "mode": "sense_only",
+        "case_id": "sense_only_7221_s1"
+      },
+      "metrics": {
+        "steps_taken": 72.0,
+        "distance_to_goal": 5.028805732727051,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 2.404815673828125,
+        "collisions": 4.5,
+        "spl": 0.0,
+        "ndtw": 0.6703873184804078,
+        "sdtw": 0.0,
+        "ghost_cnt": 21,
+        "high_level_steps": 15,
+        "policy_stop_count": 0,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": 0.06666666666666667
+      },
+      "delta": {
+        "steps_taken": 0.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.0,
+        "collisions": 0.0,
+        "spl": 0.0,
+        "ndtw": 0.0,
+        "sdtw": 0.0,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 29,
+      "extra_sensing_calls": 1,
+      "policy_calls": 15
+    },
+    {
+      "case": {
+        "episode_id": "7221",
+        "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+        "high_level_step": 1,
+        "cut_primitive": 7,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 12,
+        "mode": "interrupt_consume",
+        "case_id": "interrupt_consume_7221_s1"
+      },
+      "metrics": {
+        "steps_taken": 65.0,
+        "distance_to_goal": 5.028805732727051,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 2.404815673828125,
+        "collisions": 4.363636363636363,
+        "spl": 0.0,
+        "ndtw": 0.6704106923817802,
+        "sdtw": 0.0,
+        "ghost_cnt": 21,
+        "high_level_steps": 15,
+        "policy_stop_count": 0,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": 0.06666666666666667
+      },
+      "delta": {
+        "steps_taken": -7.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.0,
+        "collisions": -0.1363636363636367,
+        "spl": 0.0,
+        "ndtw": 2.3373901372414352e-05,
+        "sdtw": 0.0,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 29,
+      "extra_sensing_calls": 1,
+      "policy_calls": 15
+    },
+    {
+      "case": {
+        "episode_id": "7221",
+        "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+        "high_level_step": 1,
+        "cut_primitive": 7,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 12,
+        "mode": "interrupt_retain",
+        "case_id": "interrupt_retain_7221_s1"
+      },
+      "metrics": {
+        "steps_taken": 100.0,
+        "distance_to_goal": 5.028805732727051,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 5.3553924560546875,
+        "collisions": 2.227272727272727,
+        "spl": 0.0,
+        "ndtw": 0.6246825364676468,
+        "sdtw": 0.0,
+        "ghost_cnt": 20,
+        "high_level_steps": 15,
+        "policy_stop_count": 0,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": 0.06666666666666667
+      },
+      "delta": {
+        "steps_taken": 28.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 2.9505767822265625,
+        "collisions": -2.272727272727273,
+        "spl": 0.0,
+        "ndtw": -0.04570478201276096,
+        "sdtw": 0.0,
+        "ghost_cnt": -1,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 29,
+      "extra_sensing_calls": 1,
+      "policy_calls": 15
+    },
+    {
+      "case": {
+        "episode_id": "8219",
+        "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+        "high_level_step": 1,
+        "cut_primitive": 8,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 9,
+        "mode": "sense_only",
+        "case_id": "sense_only_8219_s1"
+      },
+      "metrics": {
+        "steps_taken": 86.0,
+        "distance_to_goal": 10.391020774841309,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 2.2934446334838867,
+        "collisions": 2.4375,
+        "spl": 0.0,
+        "ndtw": 0.35044728056389296,
+        "sdtw": 0.0,
+        "ghost_cnt": 22,
+        "high_level_steps": 15,
+        "policy_stop_count": 0,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": 0.06666666666666667
+      },
+      "delta": {
+        "steps_taken": 0.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.0,
+        "collisions": 0.0,
+        "spl": 0.0,
+        "ndtw": 0.0,
+        "sdtw": 0.0,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 29,
+      "extra_sensing_calls": 1,
+      "policy_calls": 15
+    },
+    {
+      "case": {
+        "episode_id": "8219",
+        "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+        "high_level_step": 1,
+        "cut_primitive": 8,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 9,
+        "mode": "interrupt_consume",
+        "case_id": "interrupt_consume_8219_s1"
+      },
+      "metrics": {
+        "steps_taken": 93.0,
+        "distance_to_goal": 9.665484428405762,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 8.34145736694336,
+        "collisions": 0.6285714285714286,
+        "spl": 0.0,
+        "ndtw": 0.4815174561321324,
+        "sdtw": 0.0,
+        "ghost_cnt": 29,
+        "high_level_steps": 15,
+        "policy_stop_count": 0,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": 0.06666666666666667
+      },
+      "delta": {
+        "steps_taken": 7.0,
+        "distance_to_goal": -0.7255363464355469,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 6.048012733459473,
+        "collisions": -1.8089285714285714,
+        "spl": 0.0,
+        "ndtw": 0.13107017556823947,
+        "sdtw": 0.0,
+        "ghost_cnt": 7,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 29,
+      "extra_sensing_calls": 1,
+      "policy_calls": 15
+    },
+    {
+      "case": {
+        "episode_id": "8219",
+        "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+        "high_level_step": 1,
+        "cut_primitive": 8,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 9,
+        "mode": "interrupt_retain",
+        "case_id": "interrupt_retain_8219_s1"
+      },
+      "metrics": {
+        "steps_taken": 101.0,
+        "distance_to_goal": 10.343628883361816,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 4.2020111083984375,
+        "collisions": 2.0,
+        "spl": 0.0,
+        "ndtw": 0.347083382601377,
+        "sdtw": 0.0,
+        "ghost_cnt": 21,
+        "high_level_steps": 15,
+        "policy_stop_count": 0,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": 0.06666666666666667
+      },
+      "delta": {
+        "steps_taken": 15.0,
+        "distance_to_goal": -0.04739189147949219,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 1.9085664749145508,
+        "collisions": -0.4375,
+        "spl": 0.0,
+        "ndtw": -0.0033638979625159604,
+        "sdtw": 0.0,
+        "ghost_cnt": -1,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 29,
+      "extra_sensing_calls": 1,
+      "policy_calls": 15
+    },
+    {
+      "case": {
+        "episode_id": "8343",
+        "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+        "high_level_step": 1,
+        "cut_primitive": 5,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 12,
+        "mode": "sense_only",
+        "case_id": "sense_only_8343_s1"
+      },
+      "metrics": {
+        "steps_taken": 59.0,
+        "distance_to_goal": 7.394178867340088,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 10.991535186767578,
+        "collisions": 0.022222222222222223,
+        "spl": 0.0,
+        "ndtw": 0.716561281275777,
+        "sdtw": 0.0,
+        "ghost_cnt": 22,
+        "high_level_steps": 8,
+        "policy_stop_count": 1,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.125,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.125
+      },
+      "delta": {
+        "steps_taken": 0.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.0,
+        "collisions": 0.0,
+        "spl": 0.0,
+        "ndtw": 0.0,
+        "sdtw": 0.0,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "observation_at_calls": 15,
+      "extra_sensing_calls": 1,
+      "policy_calls": 8
+    },
+    {
+      "case": {
+        "episode_id": "8343",
+        "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+        "high_level_step": 1,
+        "cut_primitive": 5,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 12,
+        "mode": "interrupt_consume",
+        "case_id": "interrupt_consume_8343_s1"
+      },
+      "metrics": {
+        "steps_taken": 59.0,
+        "distance_to_goal": 7.394178867340088,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 10.991535186767578,
+        "collisions": 0.022222222222222223,
+        "spl": 0.0,
+        "ndtw": 0.716561281275777,
+        "sdtw": 0.0,
+        "ghost_cnt": 24,
+        "high_level_steps": 9,
+        "policy_stop_count": 1,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.1111111111111111,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.1111111111111111
+      },
+      "delta": {
+        "steps_taken": 0.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.0,
+        "collisions": 0.0,
+        "spl": 0.0,
+        "ndtw": 0.0,
+        "sdtw": 0.0,
+        "ghost_cnt": 2,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.013888888888888895,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.013888888888888895
+      },
+      "observation_at_calls": 17,
+      "extra_sensing_calls": 1,
+      "policy_calls": 9
+    },
+    {
+      "case": {
+        "episode_id": "8343",
+        "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+        "high_level_step": 1,
+        "cut_primitive": 5,
+        "cut_reason": "collision",
+        "baseline_primitive_count": 12,
+        "mode": "interrupt_retain",
+        "case_id": "interrupt_retain_8343_s1"
+      },
+      "metrics": {
+        "steps_taken": 59.0,
+        "distance_to_goal": 7.394178867340088,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 10.991535186767578,
+        "collisions": 0.022222222222222223,
+        "spl": 0.0,
+        "ndtw": 0.716561281275777,
+        "sdtw": 0.0,
+        "ghost_cnt": 23,
+        "high_level_steps": 9,
+        "policy_stop_count": 1,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.1111111111111111,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.1111111111111111
+      },
+      "delta": {
+        "steps_taken": 0.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.0,
+        "collisions": 0.0,
+        "spl": 0.0,
+        "ndtw": 0.0,
+        "sdtw": 0.0,
+        "ghost_cnt": 1,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.013888888888888895,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.013888888888888895
+      },
+      "observation_at_calls": 17,
+      "extra_sensing_calls": 1,
+      "policy_calls": 9
+    }
+  ],
+  "decision": "CONDITIONAL GO for a separately registered long-horizon graph-value/preference diagnostic; not permission to train on validation or claim a learned gain",
+  "limits": [
+    "Outcome-conditioned retrospective training census; not unbiased benchmark performance or deployable oracle.",
+    "One-step native choice replaced; future policy is native, not an exhaustive policy tree.",
+    "Ranking, termination and execution are coupled; rescue sets overlap, no forced causal partition.",
+    "No native rescue does not prove proposal coverage failure.",
+    "Interrupt oracle uses four frozen first-event cuts, not an optimal cut-time upper bound.",
+    "Fixed seed 100; no multi-seed learned claim."
+  ],
+  "hashes": {
+    "research/results/critical_causal_train64/full_001/manifest.json": "f6ff2028db4459b603b26270e76215297f2f4558c11043ac12ab619bccf92921",
+    "research/results/critical_causal_train64/full_001/summary.json": "b1ce08897ce85fd7305a60bb758903196780d94fa56e5c9b459e1ce652aa3e62",
+    "research/results/critical_causal_train64/full_001/results.jsonl": "388f4bf3eaebb0b84c6bdfbfd0031e9739304ea049f74ba40042bf9af9d59940",
+    "research/tools/summarize_critical_census.py": "8cf087a5df6c676940e7a498170bdd4ba78f1d2fcba2a1072dab02ebddaf2197"
+  }
+}

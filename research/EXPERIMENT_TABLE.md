@@ -54,6 +54,14 @@ released R2R IL checkpoint, two RTX 4090 GPUs, eight environments per process,
 | PRIMITIVE-ARRIVAL-LOCALIZATION-001 | five oracle-arrival baseline failures, cohorts separate | archived primitive poses and original navmeshes | — | — | — | 84 endpoint distances exact; unseen1593 has only three interior near-goal primitives | `research/results/native_stop_feasibility/primitive_arrival_001/` |
 | INTERRUPTIBLE-EXECUTION-AUDIT-001 | released ETPNav code / existing cohorts | read-only execution/observability and literature audit | — | — | — | 13 static source anchors pass; front-node render is overwritten before high-level return; graph transaction required; NO-GO prototype | `research/INTERRUPTIBLE_EXECUTION_AUDIT.md`, `research/results/interruptible_execution_audit/analysis_002/`, `archive_001/` |
 
+
+| CRITICAL-FULL-RETURN-TRAIN64-001 | train64 / all 9 failures / 8 scenes | exhaustive 509 native actions at 46 critical states, full native continuation | — | — | — | 6/9 SR rescues; 4/9 also preserve nDTW; termination rescue 2/9 overlaps; 3 unresolved | `research/CRITICAL_CAUSAL_REPORT.md`, `research/results/critical_causal_train64/analysis_001/` |
+| CRITICAL-INTERRUPT-TRAIN4-001 | four failed training routes | matched sensing + ghost consume/retain interruption at frozen collision cuts | — | — | — | 0/4 rescued in both arms; matched sensing exact; no learned model | `research/results/critical_causal_train64/full_001/interrupt_plan.json` |
+
+
+| CRITICAL-FULL-RETURN-UNSEEN66-001 | val_unseen diagnostic / 22 failures in 10 scenes (parent cohort: 11 scenes) | exhaustive 985 native actions at 71 critical states, full native continuation | — | — | — | 7/22 SR rescues; 6/22 also preserve nDTW; termination 6/22 overlaps; 14 unresolved | `research/CRITICAL_CAUSAL_REPORT.md`, `research/results/critical_causal_unseen/analysis_001/` |
+| CRITICAL-INTERRUPT-UNSEEN4-001 | four unseen diagnostic failures | matched sensing + ghost consume/retain interruption at frozen collision cuts | — | — | — | 0/4 rescued; sensing exact; no labels/training | `research/results/critical_causal_unseen/full_001/interrupt_plan.json` |
+
 The full comparison and paired scene-bootstrap intervals are in
 `research/results/action_abstraction/full_comparison_summary.json` and
 `research/REPORT.md`.
