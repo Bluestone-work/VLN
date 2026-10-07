@@ -1,5 +1,37 @@
 # Long-horizon graph value / preference next gate
 
+## 2026-10-08 — prospective replication: NO-GO for scaling this recipe
+
+The preregistered 96-route / 8-scene follow-up is complete. FULL changes 29
+routes, rescues four and loses one: SR/SPL/nDTW changes are
+**+3.125/+1.771/+0.938 pp**, but primitives increase **+1.260/route**.
+This fails the frozen no-cost-increase gate. All four primary scene-bootstrap
+intervals include zero (SR: −2.083 to +8.333 pp). The conclusion is **NO-GO
+for scaling the frozen first-disagreement recipe**, not rejection of all graph
+value research or evidence of proposal/execution failure dominance.
+
+COST-own matches FULL SR with only graph logit/rank and execution-distance
+features, but costs +3.427 primitives/route. At FULL's timing, COST-matched
+achieves +2.083 pp SR; FULL's extra +1.042 pp has CI [0, +3.125], lower mean
+nDTW and higher cost. The added-feature gate fails. Random SR changes are
+0/−1.042/−1.042 pp, with worse SPL/nDTW/cost. Beating random is insufficient.
+
+Post hoc accounting: FULL's changed options save 133 primitives, but remaining
+continuations add 254, leaving +121. Fourteen routes have a cheaper option and
+a more expensive complete episode. All six arm fidelity/metric audits pass;
+838 identical-action cross-arm comparisons agree exactly. A pre-episode worker
+startup failure was preserved and retried under a versioned operational amendment.
+
+The sample is disjoint from declared prior research routes, with overlapping
+baseline-training scenes, one simulator seed and an offline one-action harness.
+Do not retune on this cohort, pool it with the exploratory positive cohort to
+claim a passed gate, or expand RL/VLM/interrupt/waypoint-density training.
+Next diagnostic question: can pre-action evidence distinguish harmful early
+substitutions when the target includes full continuation cost? Include native
+success routes and abstention; register separately before any further learning.
+Full report: `GRAPH_VALUE_PROSPECTIVE_REPLICATION_REPORT.md`.
+Earlier decisions below are chronological evidence, superseded for this recipe.
+
 ## 2026-10-07 — route-disjoint execution update
 
 **CONDITIONAL GO for a prospective replication**, not a benchmark improvement.

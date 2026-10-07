@@ -232,3 +232,15 @@ new prospectively frozen route sample; no adaptive density, RL, VLM or interrupt
 policy training. Full evidence: `GRAPH_VALUE_ROUTE_EXECUTION_REPORT.md`;
 protocol: `GRAPH_VALUE_ROUTE_INTERVENTION_PROTOCOL.md`; next gate:
 `GRAPH_VALUE_ROUTE_NEXT_GATE.md`.
+
+
+## 2026-10-08 — prospective replication native control
+
+New registered 96-route / 8-scene training sample (seed 100): native
+SR/SPL/nDTW = 91.6667/84.4428/84.8572%, SDTW 81.1936%, final goal error
+1.49785 m, path 9.12015 m, primitives 56.3125, high-level decisions 7.54167,
+and 1.92708 primitive collision events per route. This sample is not a benchmark
+and does not replace the original val_unseen baseline. Capture/control match
+1,728 per-episode and 18 aggregate metrics. All six disabled hooks match native.
+The learned FULL follow-up fails its prospective cost gate (+1.260 primitives
+per route); see `GRAPH_VALUE_PROSPECTIVE_REPLICATION_REPORT.md`.

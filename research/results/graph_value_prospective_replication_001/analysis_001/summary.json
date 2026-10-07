@@ -1,0 +1,360 @@
+{
+  "experiment_id": "GRAPH-VALUE-PROSPECTIVE-REPLICATION-001",
+  "probe_dir": "research/results/graph_value_prospective_replication_001/probe_full001",
+  "episodes": 96,
+  "scenes": 8,
+  "total_decisions": 724,
+  "eligible_nonstop_states": 628,
+  "stop_states_excluded": 96,
+  "masked_budget_options_skipped": 101,
+  "mean_selected_progress_m": 1.0478923871140382,
+  "mean_best_progress_m": 1.2691028518542933,
+  "cost_controls_include_selected": true,
+  "metrics": {
+    "gain_m": {
+      "mean": 0.22121046474025508,
+      "median": 0.0,
+      "p90": 0.2572327256202701,
+      "max": 11.962669372558594,
+      "positive_states": 86,
+      "states_at_least_025m": 64,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.22121046474025508,
+        "equal_cluster_mean_m": 0.16026389020315482,
+        "ci95_m": [
+          0.08481898683118509,
+          0.43858392380081185
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.22121046474025508,
+        "equal_cluster_mean_m": 0.2204029508600167,
+        "ci95_m": [
+          0.0799544917973169,
+          0.41284955774202936
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "primitive_capped_gain_m": {
+      "mean": 0.05467373652348093,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 4.247763276100159,
+      "positive_states": 40,
+      "states_at_least_025m": 29,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.05467373652348093,
+        "equal_cluster_mean_m": 0.04681743942499036,
+        "ci95_m": [
+          0.027725466433009473,
+          0.08869693953448653
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.05467373652348093,
+        "equal_cluster_mean_m": 0.053940234660687314,
+        "ci95_m": [
+          0.022491368900511656,
+          0.09265891721168996
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "path_capped_gain_m": {
+      "mean": 0.06998208829551746,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 4.247763276100159,
+      "positive_states": 38,
+      "states_at_least_025m": 35,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.06998208829551746,
+        "equal_cluster_mean_m": 0.057177082033798336,
+        "ci95_m": [
+          0.030313251239799225,
+          0.12654320389230064
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.06998208829551746,
+        "equal_cluster_mean_m": 0.07050975225038217,
+        "ci95_m": [
+          0.02964433358480293,
+          0.12855891588946095
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "both_costs_capped_gain_m": {
+      "mean": 0.04188689712885838,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 4.247763276100159,
+      "positive_states": 27,
+      "states_at_least_025m": 23,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.04188689712885838,
+        "equal_cluster_mean_m": 0.03518873470534802,
+        "ci95_m": [
+          0.016254894549809655,
+          0.07500284533658814
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.04188689712885838,
+        "equal_cluster_mean_m": 0.042239755951324454,
+        "ci95_m": [
+          0.015977742570119666,
+          0.07856213401367025
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "current_plus_selected_gain_m": {
+      "mean": 0.12134845220264356,
+      "median": 0.0,
+      "p90": 0.1540274620056171,
+      "max": 4.247763276100159,
+      "positive_states": 80,
+      "states_at_least_025m": 57,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.12134845220264356,
+        "equal_cluster_mean_m": 0.09393927410180884,
+        "ci95_m": [
+          0.06707171289885316,
+          0.192615591754558
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.12134845220264356,
+        "equal_cluster_mean_m": 0.11742332596306673,
+        "ci95_m": [
+          0.06036533033112427,
+          0.185107436468306
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "historical_extra_gain_m": {
+      "mean": 0.09986201253761152,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 11.13797378540039,
+      "positive_states": 25,
+      "states_at_least_025m": 23,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.09986201253761152,
+        "equal_cluster_mean_m": 0.06632461610134599,
+        "ci95_m": [
+          0.0112581592286996,
+          0.2550299043244081
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.09986201253761152,
+        "equal_cluster_mean_m": 0.10297962489694996,
+        "ci95_m": [
+          0.014266476118325124,
+          0.23391350347871068
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    }
+  },
+  "by_scene": {
+    "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb": {
+      "states": 73,
+      "episodes": 12,
+      "gain_m": 0.8689040664124162,
+      "both_costs_capped_gain_m": 0.16518841867577538
+    },
+    "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb": {
+      "states": 86,
+      "episodes": 12,
+      "gain_m": 0.15276092429493748,
+      "both_costs_capped_gain_m": 0.024377608022024464
+    },
+    "data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb": {
+      "states": 77,
+      "episodes": 12,
+      "gain_m": 0.024139594722103763,
+      "both_costs_capped_gain_m": 0.004246482601413479
+    },
+    "data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb": {
+      "states": 97,
+      "episodes": 12,
+      "gain_m": 0.23267041914856312,
+      "both_costs_capped_gain_m": 0.0590179350572763
+    },
+    "data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb": {
+      "states": 86,
+      "episodes": 12,
+      "gain_m": 0.12106957598481068,
+      "both_costs_capped_gain_m": 0.031297603665396224
+    },
+    "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb": {
+      "states": 78,
+      "episodes": 12,
+      "gain_m": 0.31482029801759964,
+      "both_costs_capped_gain_m": 0.016423366008660734
+    },
+    "data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb": {
+      "states": 52,
+      "episodes": 12,
+      "gain_m": 0.03343889804986807,
+      "both_costs_capped_gain_m": 0.03061321607002845
+    },
+    "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb": {
+      "states": 79,
+      "episodes": 12,
+      "gain_m": 0.015419830249834664,
+      "both_costs_capped_gain_m": 0.006753417510020582
+    }
+  },
+  "best_uses_more_primitives_states": 57,
+  "best_uses_longer_path_states": 62,
+  "examples_by_largest_raw_gain": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "episode_id": "4790",
+      "trajectory_id": "3168",
+      "high_level_step": 7,
+      "nonstop_options": 16,
+      "selected_index": 24,
+      "best_index": 13,
+      "selected_progress_m": -2.4754791259765625,
+      "best_progress_m": 9.487190246582031,
+      "gain_m": 11.962669372558594,
+      "primitive_capped_gain_m": 2.326892852783203,
+      "path_capped_gain_m": 3.2934837341308594,
+      "both_costs_capped_gain_m": 2.326892852783203,
+      "current_plus_selected_gain_m": 2.326892852783203,
+      "historical_extra_gain_m": 9.63577651977539,
+      "selected_collisions": 0,
+      "selected_primitives": 13,
+      "best_primitives": 57,
+      "selected_path_m": 2.5267528347515023,
+      "best_path_m": 10.074811760304122,
+      "best_historical": true,
+      "selected_target_error_horizontal_m": 0.2552998819287019
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "episode_id": "4790",
+      "trajectory_id": "3168",
+      "high_level_step": 8,
+      "nonstop_options": 18,
+      "selected_index": 25,
+      "best_index": 14,
+      "selected_progress_m": 0.3664741516113281,
+      "best_progress_m": 11.89739990234375,
+      "gain_m": 11.530925750732422,
+      "primitive_capped_gain_m": 0.0,
+      "path_capped_gain_m": 0.39295196533203125,
+      "both_costs_capped_gain_m": 0.0,
+      "current_plus_selected_gain_m": 0.39295196533203125,
+      "historical_extra_gain_m": 11.13797378540039,
+      "selected_collisions": 0,
+      "selected_primitives": 12,
+      "best_primitives": 67,
+      "selected_path_m": 0.7830251057420738,
+      "best_path_m": 12.271882246419315,
+      "best_historical": true,
+      "selected_target_error_horizontal_m": 0.23768846672656843
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "episode_id": "4790",
+      "trajectory_id": "3168",
+      "high_level_step": 6,
+      "nonstop_options": 15,
+      "selected_index": 20,
+      "best_index": 12,
+      "selected_progress_m": -0.8357315063476562,
+      "best_progress_m": 8.62247371673584,
+      "gain_m": 9.458205223083496,
+      "primitive_capped_gain_m": 0.0,
+      "path_capped_gain_m": 0.9415779113769531,
+      "both_costs_capped_gain_m": 0.0,
+      "current_plus_selected_gain_m": 1.9564552307128906,
+      "historical_extra_gain_m": 7.5017499923706055,
+      "selected_collisions": 0,
+      "selected_primitives": 6,
+      "best_primitives": 51,
+      "selected_path_m": 0.9999995822675297,
+      "best_path_m": 9.045837952894553,
+      "best_historical": true,
+      "selected_target_error_horizontal_m": 0.05235343392140781
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "episode_id": "4790",
+      "trajectory_id": "3168",
+      "high_level_step": 5,
+      "nonstop_options": 13,
+      "selected_index": 18,
+      "best_index": 11,
+      "selected_progress_m": -1.8409652709960938,
+      "best_progress_m": 6.754169464111328,
+      "gain_m": 8.595134735107422,
+      "primitive_capped_gain_m": 0.8680992126464844,
+      "path_capped_gain_m": 0.8680992126464844,
+      "both_costs_capped_gain_m": 0.8680992126464844,
+      "current_plus_selected_gain_m": 2.1250057220458984,
+      "historical_extra_gain_m": 6.470129013061523,
+      "selected_collisions": 0,
+      "selected_primitives": 9,
+      "best_primitives": 42,
+      "selected_path_m": 2.0315375242905236,
+      "best_path_m": 7.023892675569753,
+      "best_historical": true,
+      "selected_target_error_horizontal_m": 5.365674867646527e-07
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "episode_id": "4790",
+      "trajectory_id": "3168",
+      "high_level_step": 4,
+      "nonstop_options": 12,
+      "selected_index": 15,
+      "best_index": 10,
+      "selected_progress_m": -2.083576202392578,
+      "best_progress_m": 4.866324424743652,
+      "gain_m": 6.9499006271362305,
+      "primitive_capped_gain_m": 0.4625682830810547,
+      "path_capped_gain_m": 2.1851634979248047,
+      "both_costs_capped_gain_m": 0.4625682830810547,
+      "current_plus_selected_gain_m": 2.1851634979248047,
+      "historical_extra_gain_m": 4.764737129211426,
+      "selected_collisions": 0,
+      "selected_primitives": 11,
+      "best_primitives": 33,
+      "selected_path_m": 2.260552384172051,
+      "best_path_m": 5.026089203013601,
+      "best_historical": true,
+      "selected_target_error_horizontal_m": 5.241938832900919e-07
+    }
+  ],
+  "privileged_analysis_only": true,
+  "learned_model_evaluated": false,
+  "limits": "Local goal-progress comparisons, not episode success improvement or a certified optimal bound; bootstrap is descriptive, not independent training seeds.",
+  "hashes": {
+    "research/tools/analyze_graph_options.py": "54d3fd7177777699bd2c7d989b583c50dc5bba26403adf2f52023348cd255d41",
+    "research/results/graph_value_prospective_replication_001/probe_full001/manifest.json": "6e08e91b72c10edf1fd323c3494faf6ce36b63c667c58d908df68850bbfffd72",
+    "research/results/graph_value_prospective_replication_001/probe_full001/summary.json": "1663399c51cb8a2d66a178a343b0526fb0262ffee999dd9128315d2c7650e169",
+    "research/results/graph_value_prospective_replication_001/probe_full001/decisions.jsonl": "f6cb4e8d8254eca3552443c081263a5cd8917b38bcf67270f2be45d426c6668b"
+  }
+}

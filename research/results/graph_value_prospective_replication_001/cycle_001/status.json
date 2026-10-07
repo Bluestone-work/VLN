@@ -1,0 +1,207 @@
+{
+  "created_utc": "2026-10-07T15:32:09.804177+00:00",
+  "config": {
+    "experiment_id": "GRAPH-VALUE-PROSPECTIVE-REPLICATION-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 96,
+    "seed": 100,
+    "dataset_path": "research/results/graph_value_prospective_replication_001/sampling_001/train96_bertidx.json.gz",
+    "sampling_manifest": "research/results/graph_value_prospective_replication_001/sampling_001/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261025,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Prospective full vs reduced scorer replication",
+      "no_outcome_sampling": true,
+      "bootstrap_seed": 20261025,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "Prospectively frozen route-disjoint replication and reduced execution-distance feature control",
+    "limits": "96 train routes / 8 scenes; research-route holdout, scene overlap allowed; checkpoint trained on train; seed 100; not benchmark.",
+    "sampling": {
+      "experiment_id": "GRAPH-VALUE-PROSPECTIVE-REPLICATION-001",
+      "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+      "scenes": 8,
+      "routes_per_scene": 12,
+      "selection_seed": 20261024,
+      "output_dir": "research/results/graph_value_prospective_replication_001/sampling_001",
+      "dataset_filename": "train96_bertidx.json.gz",
+      "exclude_sources": [
+        "research/results/graph_option_pilot/train8_sampling/manifest.json",
+        "research/results/graph_option_train64/sampling_001/manifest.json",
+        "research/results/continuation_label_train64/sampling_001/manifest.json",
+        "research/results/full_return_label_train16/sampling_001/manifest.json",
+        "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+        "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/manifest.json",
+        "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+        "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_seen/val_seen_bertidx.json.gz",
+        "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_unseen/val_unseen_bertidx.json.gz",
+        "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/manifest.json"
+      ]
+    },
+    "protocol": "research/GRAPH_VALUE_PROSPECTIVE_REPLICATION_PROTOCOL.md",
+    "continuation_protocol": "research/GRAPH_VALUE_PROSPECTIVE_REPLICATION_PROTOCOL.md",
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+    "replication": {
+      "root": "research/results/graph_value_prospective_replication_001",
+      "full_model": "research/results/graph_value_prospective_replication_001/models/full.json",
+      "cost_model": "research/results/graph_value_prospective_replication_001/models/cost.json",
+      "random_seeds": [
+        20261031,
+        20261032,
+        20261033
+      ],
+      "arms": [
+        "full",
+        "cost_own",
+        "cost_matched",
+        "random_20261031",
+        "random_20261032",
+        "random_20261033"
+      ]
+    }
+  },
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "argv": [
+    "research/tools/run_graph_option_cycle.py",
+    "--config",
+    "research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json",
+    "--root",
+    "research/results/graph_value_prospective_replication_001",
+    "--exp-prefix",
+    "aaa_gv_prospective001"
+  ],
+  "git_commit": "6fb04822b81c5a08003b11271d6d9b9ecbaf763c",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "hashes": {
+    "research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json": "3cf19a00e3425bb534eb00b3317d0622c15da22e77faae4a6a525bbb723f8b33",
+    "research/results/graph_value_prospective_replication_001/sampling_001/manifest.json": "007e93651d058d921b6b2fd9d271686d5148729586cfec5aa96e5a27742f1617",
+    "research/ROUTE_COMPATIBILITY_PROTOCOL.md": "376b871ebbcbfa716a76d723727d19d2cea826b189ccf22626178b86b62d12ed",
+    "research/tools/run_graph_option_cycle.py": "bbaa5aa56861c2f641909715d42e14d8695e03140afaaa7c91273c6873b2ddba"
+  },
+  "stages": [
+    {
+      "name": "capture",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--exp-name",
+        "aaa_gv_prospective001_capture",
+        "--trace"
+      ],
+      "started_utc": "2026-10-07T15:32:09.842974+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:33:26.468183+00:00"
+    },
+    {
+      "name": "control",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/control_001",
+        "--exp-name",
+        "aaa_gv_prospective001_control"
+      ],
+      "started_utc": "2026-10-07T15:33:26.469753+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:34:35.052804+00:00"
+    },
+    {
+      "name": "noninterference",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/check_option_noninterference.py",
+        "--capture-dir",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--control-dir",
+        "research/results/graph_value_prospective_replication_001/control_001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/noninterference_001"
+      ],
+      "started_utc": "2026-10-07T15:34:35.054344+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:34:35.086386+00:00"
+    },
+    {
+      "name": "probe",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/probe_graph_options.py",
+        "--capture-dir",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--noninterference-dir",
+        "research/results/graph_value_prospective_replication_001/noninterference_001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/probe_full001"
+      ],
+      "started_utc": "2026-10-07T15:34:35.086869+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:46:12.272393+00:00"
+    },
+    {
+      "name": "integrity",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_graph_option_probe.py",
+        "--probe-dir",
+        "research/results/graph_value_prospective_replication_001/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/integrity_001"
+      ],
+      "started_utc": "2026-10-07T15:46:12.272956+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:46:19.521225+00:00"
+    },
+    {
+      "name": "analysis",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/analyze_graph_options.py",
+        "--probe-dir",
+        "research/results/graph_value_prospective_replication_001/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/analysis_001"
+      ],
+      "started_utc": "2026-10-07T15:46:19.521876+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:46:19.679986+00:00"
+    }
+  ],
+  "status": "complete",
+  "finished_utc": "2026-10-07T15:46:19.680414+00:00"
+}

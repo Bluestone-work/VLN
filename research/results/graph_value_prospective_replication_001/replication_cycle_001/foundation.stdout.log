@@ -1,0 +1,13 @@
+START capture
+PASS capture
+START control
+PASS control
+START noninterference
+PASS noninterference
+START probe
+PASS probe
+START integrity
+PASS integrity
+START analysis
+PASS analysis
+COMPLETE GRAPH-VALUE-PROSPECTIVE-REPLICATION-001

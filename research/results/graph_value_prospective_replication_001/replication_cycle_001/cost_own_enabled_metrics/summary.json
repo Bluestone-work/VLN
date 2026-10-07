@@ -1,0 +1,13 @@
+{
+  "episodes": 96,
+  "metric_comparisons": 576,
+  "all_required_gates_passed": true,
+  "max_absolute_delta": 0.0,
+  "unchanged_native_success_distance_m": 3.0,
+  "hashes": {
+    "research/tools/verify_intervention_metrics.py": "141fa04916be8c79afa0dfe5a78c98ea3b55f1ed0bdec93a51ddbe81720843a9",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled/traces/worker_seed100.jsonl": "4eaf51a1c2ee40282bfb7ad7b6596b07456709ee7f7d263fefaf384569171028",
+    "data/logs/eval_results/aaa_gv_prospective001_cost_own_enabled/stats_ep_ckpt_59_train_r0_w1.json": "7d9a965cf95ce8514386f941cf3c0b0e15ebfbc146fa5497bd9d3759b0cb7a1c",
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed/train/train_gt.json.gz": "e1f380f83e898dc50383f2fae5fbefac1a9c62a766dde1c30b254db47e93b0ac"
+  }
+}

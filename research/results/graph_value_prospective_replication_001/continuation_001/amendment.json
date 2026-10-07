@@ -1,0 +1,11 @@
+{
+  "registered_utc": "2026-10-07T15:56:26.194269+00:00",
+  "reason": "BrokenPipeError starting Habitat forkserver worker before any episode decision.",
+  "changes": "Retry random_20261031 disabled under a new run/experiment ID, then complete remaining unchanged arms.",
+  "no_scientific_protocol_change": true,
+  "original_status_sha256": "2cb97b30e8c4fae74c29c6803b3d09191b64d4dc865a449b4783e22d9f5862f2",
+  "failure_stderr_sha256": "b308a936c9ec0fcc6ace8c1b227f746fa58fda981b0fc2fc0a40365bba193dea",
+  "continuation_source_sha256": "4cc572fea20208ba19183a802e0b9ade9c18377d57531cff457eeeff7aaf955b",
+  "registration_sha256": "dde12551d6f22adf4517bf41ee22878ad418b4d2d66329ba423cb1b9df73668f",
+  "original_failed_run": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled"
+}

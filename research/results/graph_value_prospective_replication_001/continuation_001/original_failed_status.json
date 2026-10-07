@@ -1,0 +1,320 @@
+{
+  "status": "failed",
+  "git_commit": "6fb04822b81c5a08003b11271d6d9b9ecbaf763c",
+  "registration_sha256": "dde12551d6f22adf4517bf41ee22878ad418b4d2d66329ba423cb1b9df73668f",
+  "stages": [
+    {
+      "name": "foundation",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_graph_option_cycle.py",
+        "--config",
+        "research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json",
+        "--root",
+        "research/results/graph_value_prospective_replication_001",
+        "--exp-prefix",
+        "aaa_gv_prospective001"
+      ],
+      "started_utc": "2026-10-07T15:32:09.564338+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:46:19.685044+00:00"
+    },
+    {
+      "name": "schedules",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/prepare_preference_replication_schedules.py",
+        "--config",
+        "research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json"
+      ],
+      "started_utc": "2026-10-07T15:46:19.685310+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:46:22.598485+00:00"
+    },
+    {
+      "name": "full_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_prospective_replication_001/schedules_001/full.json",
+        "--source-capture",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled",
+        "--exp-name",
+        "aaa_gv_prospective001_full_disabled"
+      ],
+      "started_utc": "2026-10-07T15:46:22.599292+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:47:38.535159+00:00"
+    },
+    {
+      "name": "full_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled",
+        "--source-noninterference",
+        "research/results/graph_value_prospective_replication_001/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_prospective_replication_001/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:47:38.535502+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:47:42.691581+00:00"
+    },
+    {
+      "name": "full_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_prospective_replication_001/schedules_001/full.json",
+        "--source-capture",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled",
+        "--exp-name",
+        "aaa_gv_prospective001_full_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled_audit/summary.json"
+      ],
+      "started_utc": "2026-10-07T15:47:42.691961+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:48:56.582677+00:00"
+    },
+    {
+      "name": "full_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled",
+        "--source-noninterference",
+        "research/results/graph_value_prospective_replication_001/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_prospective_replication_001/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:48:56.583009+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:49:02.249404+00:00"
+    },
+    {
+      "name": "full_enabled_metrics",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_metrics"
+      ],
+      "started_utc": "2026-10-07T15:49:02.249775+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:49:06.773515+00:00"
+    },
+    {
+      "name": "cost_own_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_prospective_replication_001/schedules_001/cost_own.json",
+        "--source-capture",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled",
+        "--exp-name",
+        "aaa_gv_prospective001_cost_own_disabled"
+      ],
+      "started_utc": "2026-10-07T15:49:06.775672+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:50:20.572049+00:00"
+    },
+    {
+      "name": "cost_own_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled",
+        "--source-noninterference",
+        "research/results/graph_value_prospective_replication_001/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_prospective_replication_001/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:50:20.572413+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:50:25.231859+00:00"
+    },
+    {
+      "name": "cost_own_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_prospective_replication_001/schedules_001/cost_own.json",
+        "--source-capture",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled",
+        "--exp-name",
+        "aaa_gv_prospective001_cost_own_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled_audit/summary.json"
+      ],
+      "started_utc": "2026-10-07T15:50:25.232246+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:51:42.092648+00:00"
+    },
+    {
+      "name": "cost_own_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled",
+        "--source-noninterference",
+        "research/results/graph_value_prospective_replication_001/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_prospective_replication_001/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:51:42.093095+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:51:48.255552+00:00"
+    },
+    {
+      "name": "cost_own_enabled_metrics",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_metrics"
+      ],
+      "started_utc": "2026-10-07T15:51:48.256527+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:51:51.595175+00:00"
+    },
+    {
+      "name": "cost_matched_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_prospective_replication_001/schedules_001/cost_matched.json",
+        "--source-capture",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled",
+        "--exp-name",
+        "aaa_gv_prospective001_cost_matched_disabled"
+      ],
+      "started_utc": "2026-10-07T15:51:51.596041+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:53:06.523347+00:00"
+    },
+    {
+      "name": "cost_matched_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled",
+        "--source-noninterference",
+        "research/results/graph_value_prospective_replication_001/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_prospective_replication_001/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:53:06.524371+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:53:10.559123+00:00"
+    },
+    {
+      "name": "cost_matched_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_prospective_replication_001/schedules_001/cost_matched.json",
+        "--source-capture",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled",
+        "--exp-name",
+        "aaa_gv_prospective001_cost_matched_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled_audit/summary.json"
+      ],
+      "started_utc": "2026-10-07T15:53:10.559605+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:54:25.371453+00:00"
+    },
+    {
+      "name": "cost_matched_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled",
+        "--source-noninterference",
+        "research/results/graph_value_prospective_replication_001/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_prospective_replication_001/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:54:25.372805+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:54:30.105254+00:00"
+    },
+    {
+      "name": "cost_matched_enabled_metrics",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_metrics"
+      ],
+      "started_utc": "2026-10-07T15:54:30.105779+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:54:33.538362+00:00"
+    },
+    {
+      "name": "random_20261031_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_prospective_replication_001/schedules_001/random_20261031.json",
+        "--source-capture",
+        "research/results/graph_value_prospective_replication_001/capture_001",
+        "--output-dir",
+        "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled",
+        "--exp-name",
+        "aaa_gv_prospective001_random_20261031_disabled"
+      ],
+      "started_utc": "2026-10-07T15:54:33.539468+00:00",
+      "returncode": 1,
+      "finished_utc": "2026-10-07T15:54:41.124331+00:00"
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "experiment_id": "GRAPH-VALUE-PROSPECTIVE-REPLICATION-001",
+  "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+  "source_sha256": "b43db098cbf6bdf05fdccd9992b87a9aee58eef5c74adc62d92cfe636baf2f4d",
+  "dataset_path": "research/results/graph_value_prospective_replication_001/sampling_001/train96_bertidx.json.gz",
+  "dataset_sha256": "fc25a07d34aee09a167078a943712c3f6119d0c774b986172c25ed191cbfb80b",
+  "selection_seed": 20261024,
+  "scenes": [
+    "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+    "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+    "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+    "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+    "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+    "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+    "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+    "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb"
+  ],
+  "routes_per_scene": 12,
+  "selected_routes": 96,
+  "selected_episodes": 96,
+  "excluded_routes": 1584,
+  "selection_rule": "metadata-only seeded route order after exact prior-route exclusion; no outcomes used",
+  "scene_overlap_allowed": true,
+  "route_overlap": 0,
+  "scene_counts": {
+    "mp3d/ZMojNkEp431/ZMojNkEp431.glb": 12,
+    "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb": 12,
+    "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb": 12,
+    "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb": 12,
+    "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb": 12,
+    "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb": 12,
+    "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb": 12,
+    "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb": 12
+  },
+  "episodes": [
+    {
+      "episode_id": "3203",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "2102"
+    },
+    {
+      "episode_id": "4616",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "3060"
+    },
+    {
+      "episode_id": "2024",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "1306"
+    },
+    {
+      "episode_id": "6179",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "4083"
+    },
+    {
+      "episode_id": "10583",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "7142"
+    },
+    {
+      "episode_id": "527",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "344"
+    },
+    {
+      "episode_id": "6680",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "4409"
+    },
+    {
+      "episode_id": "10667",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "7195"
+    },
+    {
+      "episode_id": "4067",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "2670"
+    },
+    {
+      "episode_id": "10085",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "6781"
+    },
+    {
+      "episode_id": "2288",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "1467"
+    },
+    {
+      "episode_id": "5396",
+      "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "trajectory_id": "3572"
+    },
+    {
+      "episode_id": "6173",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "4077"
+    },
+    {
+      "episode_id": "10430",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "7021"
+    },
+    {
+      "episode_id": "2882",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "1897"
+    },
+    {
+      "episode_id": "7661",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "5109"
+    },
+    {
+      "episode_id": "4922",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "3238"
+    },
+    {
+      "episode_id": "4790",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "3168"
+    },
+    {
+      "episode_id": "8822",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "5900"
+    },
+    {
+      "episode_id": "275",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "181"
+    },
+    {
+      "episode_id": "2378",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "1533"
+    },
+    {
+      "episode_id": "6509",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "4291"
+    },
+    {
+      "episode_id": "1943",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "1248"
+    },
+    {
+      "episode_id": "8963",
+      "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "trajectory_id": "5987"
+    },
+    {
+      "episode_id": "3131",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "2063"
+    },
+    {
+      "episode_id": "6752",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "4461"
+    },
+    {
+      "episode_id": "493",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "328"
+    },
+    {
+      "episode_id": "1742",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "1115"
+    },
+    {
+      "episode_id": "2477",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "1601"
+    },
+    {
+      "episode_id": "6884",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "4562"
+    },
+    {
+      "episode_id": "3353",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "2214"
+    },
+    {
+      "episode_id": "6344",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "4188"
+    },
+    {
+      "episode_id": "5141",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "3394"
+    },
+    {
+      "episode_id": "1153",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "726"
+    },
+    {
+      "episode_id": "4841",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "3192"
+    },
+    {
+      "episode_id": "7295",
+      "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "trajectory_id": "4849"
+    },
+    {
+      "episode_id": "1625",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "1031"
+    },
+    {
+      "episode_id": "2228",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "1437"
+    },
+    {
+      "episode_id": "6098",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "4014"
+    },
+    {
+      "episode_id": "10490",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "7063"
+    },
+    {
+      "episode_id": "5891",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "3874"
+    },
+    {
+      "episode_id": "5285",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "3495"
+    },
+    {
+      "episode_id": "5192",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "3426"
+    },
+    {
+      "episode_id": "8057",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "5377"
+    },
+    {
+      "episode_id": "1583",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "1004"
+    },
+    {
+      "episode_id": "2762",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "1817"
+    },
+    {
+      "episode_id": "8582",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "5744"
+    },
+    {
+      "episode_id": "3776",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "trajectory_id": "2506"
+    },
+    {
+      "episode_id": "6113",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "4025"
+    },
+    {
+      "episode_id": "5990",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "3941"
+    },
+    {
+      "episode_id": "418",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "282"
+    },
+    {
+      "episode_id": "2786",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "1834"
+    },
+    {
+      "episode_id": "370",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "248"
+    },
+    {
+      "episode_id": "8153",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "5450"
+    },
+    {
+      "episode_id": "1397",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "874"
+    },
+    {
+      "episode_id": "10175",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "6847"
+    },
+    {
+      "episode_id": "2069",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "1342"
+    },
+    {
+      "episode_id": "9092",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "6085"
+    },
+    {
+      "episode_id": "4904",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "3229"
+    },
+    {
+      "episode_id": "8537",
+      "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+      "trajectory_id": "5709"
+    },
+    {
+      "episode_id": "8708",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "5823"
+    },
+    {
+      "episode_id": "6644",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "4389"
+    },
+    {
+      "episode_id": "6596",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "4353"
+    },
+    {
+      "episode_id": "10295",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "6932"
+    },
+    {
+      "episode_id": "2519",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "1626"
+    },
+    {
+      "episode_id": "7094",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "4716"
+    },
+    {
+      "episode_id": "4310",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "2860"
+    },
+    {
+      "episode_id": "7352",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "4888"
+    },
+    {
+      "episode_id": "5462",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "3616"
+    },
+    {
+      "episode_id": "3326",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "2192"
+    },
+    {
+      "episode_id": "9299",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "6228"
+    },
+    {
+      "episode_id": "7676",
+      "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "trajectory_id": "5122"
+    },
+    {
+      "episode_id": "8504",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "5692"
+    },
+    {
+      "episode_id": "3899",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "2571"
+    },
+    {
+      "episode_id": "575",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "378"
+    },
+    {
+      "episode_id": "5795",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "3827"
+    },
+    {
+      "episode_id": "10154",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "6833"
+    },
+    {
+      "episode_id": "5150",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "3399"
+    },
+    {
+      "episode_id": "10355",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "6967"
+    },
+    {
+      "episode_id": "5573",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "3693"
+    },
+    {
+      "episode_id": "1074",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "681"
+    },
+    {
+      "episode_id": "9524",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "6380"
+    },
+    {
+      "episode_id": "3605",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "2403"
+    },
+    {
+      "episode_id": "1116",
+      "scene_id": "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "trajectory_id": "706"
+    },
+    {
+      "episode_id": "563",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "371"
+    },
+    {
+      "episode_id": "4010",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "2633"
+    },
+    {
+      "episode_id": "4280",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "2829"
+    },
+    {
+      "episode_id": "6020",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "3960"
+    },
+    {
+      "episode_id": "7370",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "4896"
+    },
+    {
+      "episode_id": "1712",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "1093"
+    },
+    {
+      "episode_id": "7478",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "4994"
+    },
+    {
+      "episode_id": "7187",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "4781"
+    },
+    {
+      "episode_id": "10826",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "7317"
+    },
+    {
+      "episode_id": "7091",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "4713"
+    },
+    {
+      "episode_id": "2078",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "1346"
+    },
+    {
+      "episode_id": "178",
+      "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "trajectory_id": "120"
+    }
+  ],
+  "excluded_sources": {
+    "research/results/graph_option_pilot/train8_sampling/manifest.json": {
+      "records": 8,
+      "routes": 8,
+      "sha256": "4558c98cbb2628a4dfdc310d61d7ee95869fcfedd8e93acba3df7941564bf780"
+    },
+    "research/results/graph_option_train64/sampling_001/manifest.json": {
+      "records": 64,
+      "routes": 64,
+      "sha256": "add89444e76a5aff6e8535416b6995b1c300f56c437112aa147759258d5bacf2"
+    },
+    "research/results/continuation_label_train64/sampling_001/manifest.json": {
+      "records": 64,
+      "routes": 64,
+      "sha256": "d6380b5d04f12d4f5a0ba207e593254a64719ad16533f17ac6cabfbf2eb187d4"
+    },
+    "research/results/full_return_label_train16/sampling_001/manifest.json": {
+      "records": 16,
+      "routes": 16,
+      "sha256": "a6326b56df738feb18bbf4b0058d27583e867198a1a893a0a503e7590880b2d2"
+    },
+    "research/results/graph_value_fresh_train64/sampling_001/manifest.json": {
+      "records": 64,
+      "routes": 64,
+      "sha256": "c04f69c57626a187c2401b1b5b8cb6ba5c6720d8a3de0555082520d56bda2dd2"
+    },
+    "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/manifest.json": {
+      "records": 96,
+      "routes": 96,
+      "sha256": "1e569e8b395c1c5e0cb8c4a0c4c173efe95a8a6a6cd447ddbb94c02f1142662d"
+    },
+    "research/results/action_abstraction/ranker_train64_oracle.jsonl": {
+      "records": 489,
+      "routes": 41,
+      "sha256": "20017ce953b9defd543ef20f28e3888818ec0a0d7af39ce22bb29eeeb586f86b"
+    },
+    "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl": {
+      "records": 489,
+      "routes": 41,
+      "sha256": "20017ce953b9defd543ef20f28e3888818ec0a0d7af39ce22bb29eeeb586f86b"
+    },
+    "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl": {
+      "records": 2928,
+      "routes": 118,
+      "sha256": "532d8b461d5166d248a9363c9e1c4b9a14b83fe959de97c05e922004d5c1892c"
+    },
+    "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl": {
+      "records": 7813,
+      "routes": 328,
+      "sha256": "6000a51c1cb264e4e4658c8b869129e32f7bf47158db4724ba3ac9d38e129513"
+    },
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_seen/val_seen_bertidx.json.gz": {
+      "records": 778,
+      "routes": 259,
+      "sha256": "83b231674ae3a18cb02b3d65847377e978f45cc35682f807c03becc38b09410c"
+    },
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_unseen/val_unseen_bertidx.json.gz": {
+      "records": 1839,
+      "routes": 613,
+      "sha256": "7db0a39bef374cf5ce986473f8b35c9721f962c6c1a9af069257aa710df16365"
+    },
+    "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/manifest.json": {
+      "records": 96,
+      "routes": 96,
+      "sha256": "341628153102ab5bf6f91bbd5e0f88901ddad06c16d1747fea64a621824a2db6"
+    }
+  },
+  "source_script_sha256": "a194ac6c8f08f711f5b66451997835029a5386e3e707f470277e86481bdc9a78",
+  "config_sha256": "5e465c0ac1ff81ef3deb7201f3c68b5522d109ebbd72a777961923479d9db3fb"
+}

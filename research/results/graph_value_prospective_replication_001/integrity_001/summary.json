@@ -1,0 +1,19 @@
+{
+  "experiment_id": "GRAPH-VALUE-PROSPECTIVE-REPLICATION-001",
+  "integrity_gate_passed": true,
+  "branches": 10026,
+  "forward_branches": 7994,
+  "reverse_branches": 2032,
+  "max_start_position_error_m": 0.0,
+  "max_start_rotation_error_rad": 4.2146848510894035e-08,
+  "max_start_goal_distance_error_m": 0.0,
+  "all_action_dictionaries_exact": true,
+  "all_start_rng_exact": true,
+  "all_admissibility_and_coverage_checks_passed": true,
+  "stop_branches": 916,
+  "branches_with_back_path": 6565,
+  "primitive_events_including_repeats": 314839,
+  "collision_events_including_repeats": 7356,
+  "raw_trace_sha256": "28bf125ce02ace1e72c0651f31a5146623a509efe611173460bec5f0cc77bf70",
+  "audit_source_sha256": "4dbbafc0f6a79336900d2c155ff95ac52881f1985354ddbb6f32b8ebbb04ba7a"
+}

@@ -1,0 +1,1130 @@
+{
+  "post_hoc_descriptive_only": true,
+  "no_policy_fitting": true,
+  "route_arm_rows": 576,
+  "arms": {
+    "full": {
+      "primitive_cost_increased_routes": [
+        "10430",
+        "7661",
+        "4616",
+        "2024",
+        "3203",
+        "9092",
+        "418",
+        "4904",
+        "6020",
+        "7676",
+        "2519",
+        "2228",
+        "1583",
+        "8582",
+        "5192",
+        "10490",
+        "6098",
+        "5573"
+      ],
+      "total_primitive_delta": 121,
+      "changed_options_total_primitive_delta": -133,
+      "remaining_continuations_total_primitive_delta": 254,
+      "cheaper_option_but_more_expensive_episode": [
+        "10430",
+        "7661",
+        "4616",
+        "2024",
+        "3203",
+        "418",
+        "6020",
+        "7676",
+        "2519",
+        "2228",
+        "1583",
+        "10490",
+        "6098",
+        "5573"
+      ],
+      "primitive_delta_by_success_outcome": {
+        "rescued": {
+          "routes": 4,
+          "total_primitive_delta": -25
+        },
+        "lost": {
+          "routes": 1,
+          "total_primitive_delta": -16
+        },
+        "success_unchanged": {
+          "routes": 91,
+          "total_primitive_delta": 162
+        }
+      },
+      "top_absolute_primitive_changes": [
+        {
+          "episode_id": "1943",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 1.0,
+            "spl": 0.7752431687793634,
+            "ndtw": 0.44415281381578825,
+            "sdtw": 0.7814916142584637,
+            "distance_to_goal": -4.415550112724304,
+            "primitive_action_count": -50,
+            "path_length": -8.26896047592163,
+            "high_level_steps": -1,
+            "collision_events": -3
+          }
+        },
+        {
+          "episode_id": "10430",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.10257058246373918,
+            "ndtw": 0.0222325248601547,
+            "sdtw": 0.0222325248601547,
+            "distance_to_goal": -0.9791098833084106,
+            "primitive_action_count": 47,
+            "path_length": 1.2357797622680664,
+            "high_level_steps": 5,
+            "collision_events": 17
+          }
+        },
+        {
+          "episode_id": "6098",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 1.0,
+            "spl": 0.2844098792176789,
+            "ndtw": -0.15687813391748479,
+            "sdtw": 0.23003795380394138,
+            "distance_to_goal": -4.665310561656952,
+            "primitive_action_count": 44,
+            "path_length": 4.355423927307129,
+            "high_level_steps": 0,
+            "collision_events": 1
+          }
+        },
+        {
+          "episode_id": "8582",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.16692323068736736,
+            "ndtw": -0.040036250538246554,
+            "sdtw": -0.040036250538246554,
+            "distance_to_goal": 0.15749260783195496,
+            "primitive_action_count": 31,
+            "path_length": 1.7498846054077148,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "4280",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": 0.29522563723480744,
+            "ndtw": 0.036684861926035595,
+            "sdtw": 0.036684861926035595,
+            "distance_to_goal": 1.353266328573227,
+            "primitive_action_count": -29,
+            "path_length": -2.499999523162842,
+            "high_level_steps": -1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "5192",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.1437294451805745,
+            "ndtw": -0.02066802424626102,
+            "sdtw": -0.02066802424626102,
+            "distance_to_goal": 5.364418029785156e-07,
+            "primitive_action_count": 28,
+            "path_length": 1.8109369277954102,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "418",
+          "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.12026322963373681,
+            "ndtw": -0.017200303497631464,
+            "sdtw": -0.017200303497631464,
+            "distance_to_goal": 0.003384530544281006,
+            "primitive_action_count": 24,
+            "path_length": 1.494898796081543,
+            "high_level_steps": 2,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "9092",
+          "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.05386398565121708,
+            "ndtw": 0.057026019133944894,
+            "sdtw": 0.057026019133944894,
+            "distance_to_goal": -0.727104902267456,
+            "primitive_action_count": 21,
+            "path_length": 0.7281827926635742,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        }
+      ]
+    },
+    "cost_own": {
+      "primitive_cost_increased_routes": [
+        "8963",
+        "10430",
+        "4922",
+        "7661",
+        "6509",
+        "6173",
+        "10667",
+        "4616",
+        "6680",
+        "2288",
+        "418",
+        "2069",
+        "2786",
+        "8153",
+        "7370",
+        "563",
+        "7478",
+        "2078",
+        "10826",
+        "6020",
+        "4010",
+        "10295",
+        "7352",
+        "3326",
+        "7676",
+        "2519",
+        "6644",
+        "6596",
+        "7094",
+        "3776",
+        "2228",
+        "8057",
+        "1583",
+        "8582",
+        "5192",
+        "1625",
+        "2762",
+        "6098",
+        "10154",
+        "1074",
+        "1116",
+        "9524",
+        "3131",
+        "6884",
+        "2477",
+        "4841",
+        "6344",
+        "1742"
+      ],
+      "total_primitive_delta": 329,
+      "changed_options_total_primitive_delta": -238,
+      "remaining_continuations_total_primitive_delta": 567,
+      "cheaper_option_but_more_expensive_episode": [
+        "8963",
+        "10430",
+        "4922",
+        "7661",
+        "6509",
+        "6173",
+        "10667",
+        "4616",
+        "6680",
+        "2288",
+        "418",
+        "2069",
+        "563",
+        "7478",
+        "2078",
+        "10826",
+        "4010",
+        "7352",
+        "3326",
+        "7676",
+        "2519",
+        "6644",
+        "6596",
+        "3776",
+        "2228",
+        "8057",
+        "1583",
+        "8582",
+        "1625",
+        "2762",
+        "6098",
+        "1074",
+        "1116",
+        "9524",
+        "3131",
+        "6884",
+        "2477",
+        "4841",
+        "6344",
+        "1742"
+      ],
+      "primitive_delta_by_success_outcome": {
+        "rescued": {
+          "routes": 4,
+          "total_primitive_delta": -63
+        },
+        "lost": {
+          "routes": 1,
+          "total_primitive_delta": 11
+        },
+        "success_unchanged": {
+          "routes": 91,
+          "total_primitive_delta": 381
+        }
+      },
+      "top_absolute_primitive_changes": [
+        {
+          "episode_id": "1943",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 1.0,
+            "spl": 1.0,
+            "ndtw": 0.6201639655137312,
+            "sdtw": 0.9575027659564067,
+            "distance_to_goal": -4.763790160417557,
+            "primitive_action_count": -75,
+            "path_length": -10.013324737548828,
+            "high_level_steps": -2,
+            "collision_events": -8
+          }
+        },
+        {
+          "episode_id": "10430",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.10257058246373918,
+            "ndtw": 0.0222325248601547,
+            "sdtw": 0.0222325248601547,
+            "distance_to_goal": -0.9791098833084106,
+            "primitive_action_count": 47,
+            "path_length": 1.2357797622680664,
+            "high_level_steps": 5,
+            "collision_events": 17
+          }
+        },
+        {
+          "episode_id": "6098",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 1.0,
+            "spl": 0.2844098792176789,
+            "ndtw": -0.15687813391748479,
+            "sdtw": 0.23003795380394138,
+            "distance_to_goal": -4.665310561656952,
+            "primitive_action_count": 44,
+            "path_length": 4.355423927307129,
+            "high_level_steps": 0,
+            "collision_events": 1
+          }
+        },
+        {
+          "episode_id": "7094",
+          "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.23233117820669913,
+            "ndtw": -0.03508451925014089,
+            "sdtw": -0.03508451925014089,
+            "distance_to_goal": -1.176448032259941,
+            "primitive_action_count": 43,
+            "path_length": 3.499999523162842,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "10826",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.17437110852148874,
+            "ndtw": -0.04077101310113329,
+            "sdtw": -0.04077101310113329,
+            "distance_to_goal": -0.020263969898223877,
+            "primitive_action_count": 40,
+            "path_length": 2.753607749938965,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "563",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.18207933337407,
+            "ndtw": -0.09344186858391312,
+            "sdtw": -0.09344186858391312,
+            "distance_to_goal": 0.4135533273220062,
+            "primitive_action_count": 36,
+            "path_length": 3.5,
+            "high_level_steps": 2,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "2786",
+          "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.17004523544442707,
+            "ndtw": -0.030354480509431014,
+            "sdtw": -0.030354480509431014,
+            "distance_to_goal": -9.5367431640625e-07,
+            "primitive_action_count": 34,
+            "path_length": 2.5000038146972656,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "4280",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": 0.3088841451244805,
+            "ndtw": 0.01915754268700598,
+            "sdtw": 0.01915754268700598,
+            "distance_to_goal": 1.5374101102352142,
+            "primitive_action_count": -32,
+            "path_length": -2.7473068237304688,
+            "high_level_steps": -1,
+            "collision_events": 0
+          }
+        }
+      ]
+    },
+    "cost_matched": {
+      "primitive_cost_increased_routes": [
+        "10430",
+        "7661",
+        "4616",
+        "2024",
+        "9092",
+        "418",
+        "6020",
+        "7676",
+        "2519",
+        "2228",
+        "1583",
+        "8582",
+        "5192",
+        "10490",
+        "6098"
+      ],
+      "total_primitive_delta": 98,
+      "changed_options_total_primitive_delta": -79,
+      "remaining_continuations_total_primitive_delta": 177,
+      "cheaper_option_but_more_expensive_episode": [
+        "10430",
+        "7661",
+        "4616",
+        "2024",
+        "418",
+        "6020",
+        "7676",
+        "2519",
+        "2228",
+        "1583",
+        "10490",
+        "6098"
+      ],
+      "primitive_delta_by_success_outcome": {
+        "rescued": {
+          "routes": 3,
+          "total_primitive_delta": -25
+        },
+        "lost": {
+          "routes": 1,
+          "total_primitive_delta": -16
+        },
+        "success_unchanged": {
+          "routes": 92,
+          "total_primitive_delta": 139
+        }
+      },
+      "top_absolute_primitive_changes": [
+        {
+          "episode_id": "1943",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 1.0,
+            "spl": 0.7752431687793634,
+            "ndtw": 0.44415281381578825,
+            "sdtw": 0.7814916142584637,
+            "distance_to_goal": -4.415550112724304,
+            "primitive_action_count": -50,
+            "path_length": -8.26896047592163,
+            "high_level_steps": -1,
+            "collision_events": -3
+          }
+        },
+        {
+          "episode_id": "10430",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.10257058246373918,
+            "ndtw": 0.0222325248601547,
+            "sdtw": 0.0222325248601547,
+            "distance_to_goal": -0.9791098833084106,
+            "primitive_action_count": 47,
+            "path_length": 1.2357797622680664,
+            "high_level_steps": 5,
+            "collision_events": 17
+          }
+        },
+        {
+          "episode_id": "6098",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 1.0,
+            "spl": 0.2844098792176789,
+            "ndtw": -0.15687813391748479,
+            "sdtw": 0.23003795380394138,
+            "distance_to_goal": -4.665310561656952,
+            "primitive_action_count": 44,
+            "path_length": 4.355423927307129,
+            "high_level_steps": 0,
+            "collision_events": 1
+          }
+        },
+        {
+          "episode_id": "8582",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.16692323068736736,
+            "ndtw": -0.040036250538246554,
+            "sdtw": -0.040036250538246554,
+            "distance_to_goal": 0.15749260783195496,
+            "primitive_action_count": 31,
+            "path_length": 1.7498846054077148,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "4280",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": 0.29522563723480744,
+            "ndtw": 0.036684861926035595,
+            "sdtw": 0.036684861926035595,
+            "distance_to_goal": 1.353266328573227,
+            "primitive_action_count": -29,
+            "path_length": -2.499999523162842,
+            "high_level_steps": -1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "5192",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.1437294451805745,
+            "ndtw": -0.02066802424626102,
+            "sdtw": -0.02066802424626102,
+            "distance_to_goal": 5.364418029785156e-07,
+            "primitive_action_count": 28,
+            "path_length": 1.8109369277954102,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "9092",
+          "scene_id": "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.05386398565121708,
+            "ndtw": 0.057026019133944894,
+            "sdtw": 0.057026019133944894,
+            "distance_to_goal": -0.727104902267456,
+            "primitive_action_count": 21,
+            "path_length": 0.7281827926635742,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "4790",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 1.0,
+            "spl": 0.9394735464701447,
+            "ndtw": 0.8309288247854019,
+            "sdtw": 0.9069160070154227,
+            "distance_to_goal": -20.236367762088776,
+            "primitive_action_count": -19,
+            "path_length": -2.3144073486328125,
+            "high_level_steps": 1,
+            "collision_events": 3
+          }
+        }
+      ]
+    },
+    "random_20261031": {
+      "primitive_cost_increased_routes": [
+        "10430",
+        "2378",
+        "7661",
+        "4790",
+        "4067",
+        "4616",
+        "2024",
+        "3203",
+        "9092",
+        "418",
+        "4904",
+        "7478",
+        "7091",
+        "6020",
+        "4280",
+        "4010",
+        "7676",
+        "2519",
+        "2228",
+        "8057",
+        "1583",
+        "8582",
+        "5192",
+        "10490",
+        "6098",
+        "2477",
+        "4841"
+      ],
+      "total_primitive_delta": 1852,
+      "changed_options_total_primitive_delta": 681,
+      "remaining_continuations_total_primitive_delta": 1171,
+      "cheaper_option_but_more_expensive_episode": [
+        "10430",
+        "2378",
+        "4790",
+        "2228",
+        "8057"
+      ],
+      "primitive_delta_by_success_outcome": {
+        "rescued": {
+          "routes": 3,
+          "total_primitive_delta": 96
+        },
+        "lost": {
+          "routes": 3,
+          "total_primitive_delta": 380
+        },
+        "success_unchanged": {
+          "routes": 90,
+          "total_primitive_delta": 1376
+        }
+      },
+      "top_absolute_primitive_changes": [
+        {
+          "episode_id": "2024",
+          "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.5312891872356951,
+            "ndtw": -0.7878328592343928,
+            "sdtw": -0.7878328592343928,
+            "distance_to_goal": -0.4955326318740845,
+            "primitive_action_count": 192,
+            "path_length": 26.99999713897705,
+            "high_level_steps": 4,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "10490",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": -1.0,
+            "spl": -0.8380708076607792,
+            "ndtw": -0.6028801973835187,
+            "sdtw": -0.8863422157345437,
+            "distance_to_goal": 1.7701075077056885,
+            "primitive_action_count": 186,
+            "path_length": 18.08570384979248,
+            "high_level_steps": 3,
+            "collision_events": 12
+          }
+        },
+        {
+          "episode_id": "7091",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.5516975149331105,
+            "ndtw": -0.6873420462977371,
+            "sdtw": -0.6873420462977371,
+            "distance_to_goal": 1.878003641963005,
+            "primitive_action_count": 146,
+            "path_length": 22.511326789855957,
+            "high_level_steps": 1,
+            "collision_events": 1
+          }
+        },
+        {
+          "episode_id": "6020",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.23621276986662268,
+            "sdtw": 0.0,
+            "distance_to_goal": 0.0,
+            "primitive_action_count": 124,
+            "path_length": 11.38694953918457,
+            "high_level_steps": 0,
+            "collision_events": -1
+          }
+        },
+        {
+          "episode_id": "6098",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 1.0,
+            "spl": 0.17693619938038269,
+            "ndtw": -0.2656737001915707,
+            "sdtw": 0.12124238752985546,
+            "distance_to_goal": -4.71514755487442,
+            "primitive_action_count": 115,
+            "path_length": 14.681378364562988,
+            "high_level_steps": 0,
+            "collision_events": 4
+          }
+        },
+        {
+          "episode_id": "7661",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.4761990055718152,
+            "ndtw": -0.45342607410258906,
+            "sdtw": -0.45342607410258906,
+            "distance_to_goal": 1.0710758492350578,
+            "primitive_action_count": 114,
+            "path_length": 16.07448673248291,
+            "high_level_steps": 0,
+            "collision_events": 3
+          }
+        },
+        {
+          "episode_id": "3203",
+          "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+          "delta": {
+            "success": -1.0,
+            "spl": -0.7617737242627598,
+            "ndtw": -0.4014650949085667,
+            "sdtw": -0.4816051813991139,
+            "distance_to_goal": 2.0844311714172363,
+            "primitive_action_count": 106,
+            "path_length": 16.25217056274414,
+            "high_level_steps": 3,
+            "collision_events": 1
+          }
+        },
+        {
+          "episode_id": "2477",
+          "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.46557177730186006,
+            "sdtw": 0.0,
+            "distance_to_goal": 0.3705587387084961,
+            "primitive_action_count": 98,
+            "path_length": 16.006972312927246,
+            "high_level_steps": 1,
+            "collision_events": 4
+          }
+        }
+      ]
+    },
+    "random_20261032": {
+      "primitive_cost_increased_routes": [
+        "10430",
+        "1943",
+        "2378",
+        "7661",
+        "4616",
+        "2024",
+        "3203",
+        "9092",
+        "418",
+        "4904",
+        "7478",
+        "7091",
+        "6020",
+        "4280",
+        "4010",
+        "7676",
+        "2519",
+        "2228",
+        "8057",
+        "8582",
+        "5192",
+        "10490",
+        "6098",
+        "5573",
+        "4841"
+      ],
+      "total_primitive_delta": 1674,
+      "changed_options_total_primitive_delta": 686,
+      "remaining_continuations_total_primitive_delta": 988,
+      "cheaper_option_but_more_expensive_episode": [
+        "2378"
+      ],
+      "primitive_delta_by_success_outcome": {
+        "rescued": {
+          "routes": 1,
+          "total_primitive_delta": 102
+        },
+        "lost": {
+          "routes": 2,
+          "total_primitive_delta": 143
+        },
+        "success_unchanged": {
+          "routes": 93,
+          "total_primitive_delta": 1429
+        }
+      },
+      "top_absolute_primitive_changes": [
+        {
+          "episode_id": "2519",
+          "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.5129831615177909,
+            "ndtw": -0.6820876241810059,
+            "sdtw": -0.6820876241810059,
+            "distance_to_goal": -0.20707669854164124,
+            "primitive_action_count": 146,
+            "path_length": 19.399658203125,
+            "high_level_steps": 1,
+            "collision_events": 3
+          }
+        },
+        {
+          "episode_id": "4010",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.1538069560857275,
+            "sdtw": 0.0,
+            "distance_to_goal": -1.3521356582641602,
+            "primitive_action_count": 128,
+            "path_length": 21.367359161376953,
+            "high_level_steps": 0,
+            "collision_events": 1
+          }
+        },
+        {
+          "episode_id": "7661",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.4726449940189227,
+            "ndtw": -0.41395184434006427,
+            "sdtw": -0.41395184434006427,
+            "distance_to_goal": 1.385604314506054,
+            "primitive_action_count": 124,
+            "path_length": 15.825501441955566,
+            "high_level_steps": 1,
+            "collision_events": -1
+          }
+        },
+        {
+          "episode_id": "7676",
+          "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.564822146593599,
+            "ndtw": -0.1897843032325387,
+            "sdtw": -0.1897843032325387,
+            "distance_to_goal": -0.33108168840408325,
+            "primitive_action_count": 110,
+            "path_length": 15.329764366149902,
+            "high_level_steps": 1,
+            "collision_events": 6
+          }
+        },
+        {
+          "episode_id": "7091",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.4821497542828628,
+            "ndtw": -0.5088736511679878,
+            "sdtw": -0.5088736511679878,
+            "distance_to_goal": 1.733505055308342,
+            "primitive_action_count": 106,
+            "path_length": 16.49917697906494,
+            "high_level_steps": 1,
+            "collision_events": 5
+          }
+        },
+        {
+          "episode_id": "10490",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": -1.0,
+            "spl": -0.8380708076607792,
+            "ndtw": -0.4385841977549384,
+            "sdtw": -0.8863422157345437,
+            "distance_to_goal": 1.614915132522583,
+            "primitive_action_count": 102,
+            "path_length": 10.125466346740723,
+            "high_level_steps": 3,
+            "collision_events": 3
+          }
+        },
+        {
+          "episode_id": "6098",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 1.0,
+            "spl": 0.19342098616725137,
+            "ndtw": -0.2381299888853302,
+            "sdtw": 0.14878609883609595,
+            "distance_to_goal": -4.63382413983345,
+            "primitive_action_count": 102,
+            "path_length": 12.352469444274902,
+            "high_level_steps": 0,
+            "collision_events": 2
+          }
+        },
+        {
+          "episode_id": "5192",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.47633713464091326,
+            "ndtw": -0.4227379194089606,
+            "sdtw": -0.4227379194089606,
+            "distance_to_goal": 0.019068419933319092,
+            "primitive_action_count": 90,
+            "path_length": 11.526163101196289,
+            "high_level_steps": 1,
+            "collision_events": 3
+          }
+        }
+      ]
+    },
+    "random_20261033": {
+      "primitive_cost_increased_routes": [
+        "10430",
+        "1943",
+        "7661",
+        "4616",
+        "2024",
+        "3203",
+        "9092",
+        "418",
+        "4904",
+        "7478",
+        "7091",
+        "6020",
+        "4010",
+        "7676",
+        "2519",
+        "8582",
+        "5192",
+        "10490",
+        "6098",
+        "5573",
+        "2477",
+        "4841"
+      ],
+      "total_primitive_delta": 1918,
+      "changed_options_total_primitive_delta": 671,
+      "remaining_continuations_total_primitive_delta": 1247,
+      "cheaper_option_but_more_expensive_episode": [
+        "10430",
+        "5573"
+      ],
+      "primitive_delta_by_success_outcome": {
+        "rescued": {
+          "routes": 2,
+          "total_primitive_delta": 56
+        },
+        "lost": {
+          "routes": 3,
+          "total_primitive_delta": 392
+        },
+        "success_unchanged": {
+          "routes": 91,
+          "total_primitive_delta": 1470
+        }
+      },
+      "top_absolute_primitive_changes": [
+        {
+          "episode_id": "10490",
+          "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+          "delta": {
+            "success": -1.0,
+            "spl": -0.8380708076607792,
+            "ndtw": -0.6439573735362276,
+            "sdtw": -0.8863422157345437,
+            "distance_to_goal": 1.5812819004058838,
+            "primitive_action_count": 208,
+            "path_length": 22.281947135925293,
+            "high_level_steps": 3,
+            "collision_events": 6
+          }
+        },
+        {
+          "episode_id": "2024",
+          "scene_id": "mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.5137236916132453,
+            "ndtw": -0.7640463649999073,
+            "sdtw": -0.7640463649999073,
+            "distance_to_goal": -0.5196484327316284,
+            "primitive_action_count": 169,
+            "path_length": 24.015782356262207,
+            "high_level_steps": 4,
+            "collision_events": 7
+          }
+        },
+        {
+          "episode_id": "7676",
+          "scene_id": "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.6540825294708388,
+            "ndtw": -0.19939940329340416,
+            "sdtw": -0.19939940329340416,
+            "distance_to_goal": -0.32176005840301514,
+            "primitive_action_count": 156,
+            "path_length": 22.294346809387207,
+            "high_level_steps": 2,
+            "collision_events": 12
+          }
+        },
+        {
+          "episode_id": "4841",
+          "scene_id": "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+          "delta": {
+            "success": -1.0,
+            "spl": -0.8241105947949026,
+            "ndtw": -0.46977391761830695,
+            "sdtw": -0.8631234972519132,
+            "distance_to_goal": 1.241041898727417,
+            "primitive_action_count": 140,
+            "path_length": 18.170677185058594,
+            "high_level_steps": 0,
+            "collision_events": 4
+          }
+        },
+        {
+          "episode_id": "4010",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.1538069560857275,
+            "sdtw": 0.0,
+            "distance_to_goal": -1.3521356582641602,
+            "primitive_action_count": 128,
+            "path_length": 21.367359161376953,
+            "high_level_steps": 0,
+            "collision_events": 1
+          }
+        },
+        {
+          "episode_id": "6020",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.23621276986662268,
+            "sdtw": 0.0,
+            "distance_to_goal": 0.0,
+            "primitive_action_count": 124,
+            "path_length": 11.38694953918457,
+            "high_level_steps": 0,
+            "collision_events": -1
+          }
+        },
+        {
+          "episode_id": "7091",
+          "scene_id": "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.4363887902958477,
+            "ndtw": -0.337121558804675,
+            "sdtw": -0.337121558804675,
+            "distance_to_goal": -0.07315459102392197,
+            "primitive_action_count": 112,
+            "path_length": 13.500000953674316,
+            "high_level_steps": 1,
+            "collision_events": 0
+          }
+        },
+        {
+          "episode_id": "7661",
+          "scene_id": "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+          "delta": {
+            "success": 0.0,
+            "spl": -0.4611836721990647,
+            "ndtw": -0.4022309991187035,
+            "sdtw": -0.4022309991187035,
+            "distance_to_goal": 0.2149205282330513,
+            "primitive_action_count": 111,
+            "path_length": 15.049284934997559,
+            "high_level_steps": 1,
+            "collision_events": 3
+          }
+        }
+      ]
+    }
+  },
+  "hashes": {
+    "research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json": "3cf19a00e3425bb534eb00b3317d0622c15da22e77faae4a6a525bbb723f8b33",
+    "research/tools/summarize_preference_replication_routes.py": "dcf86ecaba96e351fb864e47b68f8e27245de8c49c3bff6b847ec7665499b5b1",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/status.json": "6a5c6414e5f51e2da5cb5a61e9a8c229b9b559d86fc91772c8a77cf808e48b04",
+    "research/results/graph_value_prospective_replication_001/capture_001/traces/worker_seed100.jsonl": "96ab76cb022101d8bab39c91785d7c1f7f5a37a722f413e6f6ea62326f31af70",
+    "research/results/graph_value_prospective_replication_001/schedules_001/full.json": "14bd50c18340ac52399c35fff44e8f2b7eb4e43186a122926284db76672fe876",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/paired_episodes.json": "ecdde353462d1be48ac34c550565b543382a266627e3be40ae712b563c81b32c",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/summary.json": "b73b72094df69e3afb620b7abd47b4913c730b42b28c67d37ecbeb368bc2b9db",
+    "research/results/graph_value_prospective_replication_001/schedules_001/cost_own.json": "a0feb26cd9cbe5b008284a0765359f5afb69a762edefcceb0498ed6b13584dd6",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/paired_episodes.json": "d4c0778c06b744b1bd2e7844dba19367b101ca3ad0916c869ca25d9643f3df20",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/summary.json": "df30db790e25decff6f6abe71c69af6e7794196fbf766a3513893d5947d4230a",
+    "research/results/graph_value_prospective_replication_001/schedules_001/cost_matched.json": "e034ba062538ec927e84e06192c8bc61e86ec0ef3e934af5e85e695947599eae",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/paired_episodes.json": "b80c2d922e35e4b0535081ef6b8f92ae9ed8a0d60bbe38fd99acc83ead96b91e",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/summary.json": "a693e21ab275b5c9f92aa60abd92cb2de4f40139869da72c02a52b3640696657",
+    "research/results/graph_value_prospective_replication_001/schedules_001/random_20261031.json": "4fc7d1b5fcf36ceb1a0b0f4c6c7a60d697958f31df6528e009781bc80af2d6ac",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_audit/paired_episodes.json": "f02bc53c5e26a5f1e37549329a8860387dcc39a23f2e98abf73f6f2454369e01",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_audit/summary.json": "adb1ecd6815b26e073caae1adc5ffc0e17272fda59f04be2d571e978be53cf6c",
+    "research/results/graph_value_prospective_replication_001/schedules_001/random_20261032.json": "e959a48fb9c2f5a52b9f61a043b080ce18727fedde00d239bcd7a0c1a03f7973",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_audit/paired_episodes.json": "fce456f090df75262428aa7546aa2026461954cb8f379389f6396198083a2724",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_audit/summary.json": "0bb85c1b5985d9696651235ff853bc1d4810f4d4717cf04249ba3227c484882d",
+    "research/results/graph_value_prospective_replication_001/schedules_001/random_20261033.json": "e40ee45db6775492f33842cfab99042a8ce152125201fc05b47f0a4dd0d4db45",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_audit/paired_episodes.json": "e0ebd174f9f63cbb89e11b064cec68f73126db00da4e83bfc4d3c99c7022abab",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_audit/summary.json": "b993fb2587a3981c1ce8c84a787aa04a0525c34ce433340b5f3699b4285174d9"
+  }
+}

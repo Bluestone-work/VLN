@@ -1,0 +1,450 @@
+2026-10-08 00:03:12,437 checkpoint_path: data/logs/checkpoints/release_r2r/ckpt.iter12000.pth
+2026-10-08 00:03:12,437 Initializing dataset VLN-CE-v1
+2026-10-08 00:03:12,460 SPLTI: train, NUMBER OF SCENES: 8
+2026-10-08 00:03:14,371 Initializing dataset VLN-CE-v1
+2026-10-08 00:03:14,395 initializing sim Sim-v1
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I1008 00:03:14.402212 3117545 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I1008 00:03:14.402242 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I1008 00:03:14.402287 3117545 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I1008 00:03:14.402302 3117545 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I1008 00:03:14.402316 3117545 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I1008 00:03:14.402325 3117545 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I1008 00:03:14.402329 3117545 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I1008 00:03:14.402334 3117545 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I1008 00:03:14.402346 3117545 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I1008 00:03:14.402354 3117545 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I1008 00:03:14.402360 3117545 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I1008 00:03:14.402365 3117545 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I1008 00:03:14.402374 3117545 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I1008 00:03:14.402380 3117545 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I1008 00:03:14.402383 3117545 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I1008 00:03:14.402629 3117545 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I1008 00:03:14.402630 3117545 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I1008 00:03:14.404353 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I1008 00:03:14.404363 3117545 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I1008 00:03:14.404366 3117545 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb
+I1008 00:03:14.404369 3117545 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb changed to proposed JSON configuration filename : data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.stage_config.json
+I1008 00:03:14.404392 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.stage_config.json from original name : data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb | This file  does not exist.
+I1008 00:03:14.404419 3117545 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb
+I1008 00:03:14.404420 3117545 AbstractObjectAttributesManagerBase.h:188] File (data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I1008 00:03:14.404423 3117545 Simulator.cpp:156] Loading navmesh from data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.navmesh
+I1008 00:03:14.404660 3117545 Simulator.cpp:158] Loaded.
+I1008 00:03:14.404670 3117545 SceneGraph.h:93] Created DrawableGroup: 
+I1008 00:03:14.502579 3117545 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I1008 00:03:14.502592 3117545 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb.
+I1008 00:03:14.502593 3117545 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb 
+I1008 00:03:14.502688 3117545 ResourceManager.cpp:1119] Importing Basis files as BC7 for D7N2EKCX4Sj.glb
+W1008 00:03:18.359269 3117545 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I1008 00:03:18.463586 3117545 simulator.py:213] Loaded navmesh data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.navmesh
+2026-10-08 00:03:18,469 Initializing task VLN-v0
+You are using a model of type bert to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+Some weights of the model checkpoint at None were not used when initializing GlocalTextPathNavCMT: ['bert.global_encoder.encoder.x_layers.2.lang_self_att.self.value.bias', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.self.value.bias', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.self.key.bias', 'bert.global_encoder.encoder.x_layers.3.lang_output.LayerNorm.weight', 'bert.global_encoder.encoder.x_layers.1.lang_output.LayerNorm.bias', 'bert.global_encoder.encoder.x_layers.2.lang_output.dense.bias', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.self.key.weight', 'bert.global_encoder.encoder.x_layers.3.lang_output.dense.weight', 'bert.global_encoder.encoder.x_layers.0.lang_output.dense.weight', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.self.value.weight', 'bert.global_encoder.encoder.x_layers.2.lang_self_att.self.key.weight', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.output.LayerNorm.bias', 'mlm_head.predictions.transform.LayerNorm.weight', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.output.LayerNorm.bias', 'bert.global_encoder.encoder.x_layers.0.lang_inter.dense.weight', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.self.query.bias', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.output.dense.weight', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.self.key.weight', 'bert.global_encoder.encoder.x_layers.2.lang_self_att.output.LayerNorm.weight', 'bert.global_encoder.encoder.x_layers.2.lang_self_att.self.query.weight', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.output.LayerNorm.weight', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.output.dense.weight', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.output.dense.weight', 'bert.global_encoder.encoder.x_layers.2.lang_self_att.output.LayerNorm.bias', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.output.LayerNorm.bias', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.output.LayerNorm.weight', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.self.query.bias', 'bert.global_encoder.encoder.x_layers.2.lang_output.dense.weight', 'bert.global_encoder.encoder.x_layers.0.lang_inter.dense.bias', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.self.query.weight', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.output.dense.bias', 'bert.global_encoder.encoder.x_layers.1.lang_inter.dense.bias', 'bert.global_encoder.encoder.x_layers.3.lang_inter.dense.bias', 'bert.global_encoder.encoder.x_layers.1.lang_output.dense.bias', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.self.query.weight', 'bert.global_encoder.encoder.x_layers.2.lang_self_att.self.key.bias', 'mlm_head.predictions.transform.dense.weight', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.output.dense.bias', 'mlm_head.predictions.transform.LayerNorm.bias', 'bert.global_encoder.encoder.x_layers.3.lang_output.LayerNorm.bias', 'bert.global_encoder.encoder.x_layers.1.lang_inter.dense.weight', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.self.value.bias', 'bert.global_encoder.encoder.x_layers.2.lang_output.LayerNorm.weight', 'bert.global_encoder.encoder.x_layers.2.lang_inter.dense.bias', 'bert.global_encoder.encoder.x_layers.1.lang_output.dense.weight', 'bert.global_encoder.encoder.x_layers.2.lang_output.LayerNorm.bias', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.self.value.weight', 'bert.global_encoder.encoder.x_layers.0.lang_output.dense.bias', 'mlm_head.predictions.decoder.weight', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.self.query.bias', 'bert.global_encoder.encoder.x_layers.2.lang_self_att.output.dense.weight', 'bert.global_encoder.encoder.x_layers.3.lang_output.dense.bias', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.output.dense.bias', 'mlm_head.predictions.bias', 'bert.global_encoder.encoder.x_layers.0.lang_output.LayerNorm.bias', 'bert.global_encoder.encoder.x_layers.0.lang_output.LayerNorm.weight', 'mlm_head.predictions.transform.dense.bias', 'bert.global_encoder.encoder.x_layers.2.lang_self_att.self.query.bias', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.self.value.bias', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.self.value.weight', 'bert.global_encoder.encoder.x_layers.3.lang_inter.dense.weight', 'bert.global_encoder.encoder.x_layers.0.lang_self_att.self.key.weight', 'bert.global_encoder.encoder.x_layers.2.lang_self_att.output.dense.bias', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.self.key.bias', 'bert.global_encoder.encoder.x_layers.2.lang_self_att.self.value.weight', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.self.key.bias', 'bert.global_encoder.encoder.x_layers.1.lang_self_att.output.LayerNorm.weight', 'bert.global_encoder.encoder.x_layers.3.lang_self_att.self.query.weight', 'bert.global_encoder.encoder.x_layers.1.lang_output.LayerNorm.weight', 'bert.global_encoder.encoder.x_layers.2.lang_inter.dense.weight']
+- This IS expected if you are initializing GlocalTextPathNavCMT from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing GlocalTextPathNavCMT from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+2026-10-08 00:03:25,190 Agent parameters: 299.54 MB. Trainable: 140.79 MB.
+2026-10-08 00:03:25,190 Finished setting up policy.
+  0%|          | 0/96 [00:00<?, ?it/s]  1%|          | 1/96 [00:00<00:36,  2.60it/s]  2%|▏         | 2/96 [00:00<00:46,  2.01it/s]  3%|▎         | 3/96 [00:01<00:40,  2.31it/s]  4%|▍         | 4/96 [00:01<00:32,  2.87it/s]  5%|▌         | 5/96 [00:01<00:34,  2.63it/s]  6%|▋         | 6/96 [00:02<00:30,  2.94it/s]  7%|▋         | 7/96 [00:02<00:27,  3.18it/s]  8%|▊         | 8/96 [00:03<00:38,  2.28it/s]  9%|▉         | 9/96 [00:03<00:33,  2.59it/s] 10%|█         | 10/96 [00:03<00:35,  2.43it/s] 11%|█▏        | 11/96 [00:04<00:32,  2.61it/s] 12%|█▎        | 12/96 [00:04<00:38,  2.19it/s]I1008 00:03:30.082581 3117545 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I1008 00:03:30.082599 3117545 SemanticScene.h:41] Deconstructing SemanticScene
+I1008 00:03:30.086807 3117545 SceneManager.h:25] Deconstructing SceneManager
+I1008 00:03:30.086812 3117545 SceneGraph.h:26] Deconstructing SceneGraph
+I1008 00:03:30.087180 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.087370 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.087468 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.087568 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.087667 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.087762 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.087862 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.087954 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.088053 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.088148 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.088243 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.088340 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.088433 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.088551 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.088675 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.088795 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.088915 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.089030 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.089143 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.089263 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.089378 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.089489 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.089608 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.089682 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:30.096101 3117545 Renderer.cpp:34] Deconstructing Renderer
+I1008 00:03:30.096117 3117545 WindowlessContext.h:17] Deconstructing WindowlessContext
+I1008 00:03:30.102409 3117545 MetadataMediator.cpp:56] MetadataMediator::setActiveSceneDatasetName : Old active dataset default changed to default successfully.
+I1008 00:03:30.102571 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I1008 00:03:30.102591 3117545 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I1008 00:03:30.102595 3117545 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb
+I1008 00:03:30.102598 3117545 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb changed to proposed JSON configuration filename : data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.stage_config.json
+I1008 00:03:30.102614 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.stage_config.json from original name : data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb | This file  does not exist.
+I1008 00:03:30.102648 3117545 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb
+I1008 00:03:30.102649 3117545 AbstractObjectAttributesManagerBase.h:188] File (data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I1008 00:03:30.102661 3117545 Simulator.cpp:156] Loading navmesh from data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.navmesh
+I1008 00:03:30.102782 3117545 Simulator.cpp:158] Loaded.
+I1008 00:03:30.102787 3117545 SceneGraph.h:93] Created DrawableGroup: 
+I1008 00:03:30.105856 3117545 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I1008 00:03:30.105862 3117545 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb.
+I1008 00:03:30.105863 3117545 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb 
+I1008 00:03:30.105876 3117545 ResourceManager.cpp:1119] Importing Basis files as BC7 for ZMojNkEp431.glb
+W1008 00:03:31.281297 3117545 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I1008 00:03:31.317259 3117545 simulator.py:213] Loaded navmesh data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.navmesh
+ 14%|█▎        | 13/96 [00:06<01:11,  1.17it/s] 15%|█▍        | 14/96 [00:06<00:55,  1.49it/s] 16%|█▌        | 15/96 [00:07<00:49,  1.63it/s] 17%|█▋        | 16/96 [00:08<00:52,  1.53it/s] 18%|█▊        | 17/96 [00:08<00:50,  1.58it/s] 19%|█▉        | 18/96 [00:08<00:40,  1.93it/s] 20%|█▉        | 19/96 [00:09<00:34,  2.22it/s] 21%|██        | 20/96 [00:09<00:31,  2.39it/s] 22%|██▏       | 21/96 [00:10<00:36,  2.04it/s] 23%|██▎       | 22/96 [00:10<00:36,  2.04it/s] 24%|██▍       | 23/96 [00:10<00:30,  2.41it/s] 25%|██▌       | 24/96 [00:11<00:29,  2.45it/s]I1008 00:03:36.586686 3117545 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I1008 00:03:36.586707 3117545 SemanticScene.h:41] Deconstructing SemanticScene
+I1008 00:03:36.588133 3117545 SceneManager.h:25] Deconstructing SceneManager
+I1008 00:03:36.588136 3117545 SceneGraph.h:26] Deconstructing SceneGraph
+I1008 00:03:36.588455 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.588644 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.588748 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.588853 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.588953 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.589049 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.589150 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.589244 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.589393 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.589491 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.589596 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.589701 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.589800 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.589926 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.590056 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.590180 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.590305 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.590422 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.590543 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.590664 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.590787 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.590905 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.591030 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.591102 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:36.593451 3117545 Renderer.cpp:34] Deconstructing Renderer
+I1008 00:03:36.593457 3117545 WindowlessContext.h:17] Deconstructing WindowlessContext
+I1008 00:03:36.596563 3117545 MetadataMediator.cpp:56] MetadataMediator::setActiveSceneDatasetName : Old active dataset default changed to default successfully.
+I1008 00:03:36.596719 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I1008 00:03:36.596743 3117545 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I1008 00:03:36.596748 3117545 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb
+I1008 00:03:36.596751 3117545 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb changed to proposed JSON configuration filename : data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.stage_config.json
+I1008 00:03:36.596763 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.stage_config.json from original name : data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb | This file  does not exist.
+I1008 00:03:36.596797 3117545 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb
+I1008 00:03:36.596798 3117545 AbstractObjectAttributesManagerBase.h:188] File (data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I1008 00:03:36.596801 3117545 Simulator.cpp:156] Loading navmesh from data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.navmesh
+I1008 00:03:36.596892 3117545 Simulator.cpp:158] Loaded.
+I1008 00:03:36.596896 3117545 SceneGraph.h:93] Created DrawableGroup: 
+I1008 00:03:36.599751 3117545 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I1008 00:03:36.599756 3117545 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb.
+I1008 00:03:36.599757 3117545 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb 
+I1008 00:03:36.599767 3117545 ResourceManager.cpp:1119] Importing Basis files as BC7 for sKLMLpTHeUy.glb
+W1008 00:03:37.808943 3117545 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I1008 00:03:37.852877 3117545 simulator.py:213] Loaded navmesh data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.navmesh
+ 26%|██▌       | 25/96 [00:13<00:54,  1.29it/s] 27%|██▋       | 26/96 [00:13<00:49,  1.43it/s] 28%|██▊       | 27/96 [00:13<00:41,  1.65it/s] 29%|██▉       | 28/96 [00:14<00:34,  1.99it/s] 30%|███       | 29/96 [00:14<00:31,  2.15it/s] 31%|███▏      | 30/96 [00:15<00:31,  2.09it/s] 32%|███▏      | 31/96 [00:15<00:29,  2.18it/s] 33%|███▎      | 32/96 [00:15<00:28,  2.21it/s] 34%|███▍      | 33/96 [00:16<00:25,  2.47it/s] 35%|███▌      | 34/96 [00:16<00:23,  2.68it/s] 36%|███▋      | 35/96 [00:16<00:22,  2.74it/s] 38%|███▊      | 36/96 [00:17<00:23,  2.58it/s]I1008 00:03:42.502893 3117545 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I1008 00:03:42.502916 3117545 SemanticScene.h:41] Deconstructing SemanticScene
+I1008 00:03:42.504693 3117545 SceneManager.h:25] Deconstructing SceneManager
+I1008 00:03:42.504698 3117545 SceneGraph.h:26] Deconstructing SceneGraph
+I1008 00:03:42.505065 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.505228 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.505327 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.505434 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.505532 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.505628 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.505733 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.505832 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.505944 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.506040 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.506136 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.506235 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.506333 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.506451 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.506583 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.506704 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.506826 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.506943 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.507061 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.507181 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.507299 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.507414 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.507537 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.507695 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:42.509944 3117545 Renderer.cpp:34] Deconstructing Renderer
+I1008 00:03:42.509949 3117545 WindowlessContext.h:17] Deconstructing WindowlessContext
+I1008 00:03:42.512976 3117545 MetadataMediator.cpp:56] MetadataMediator::setActiveSceneDatasetName : Old active dataset default changed to default successfully.
+I1008 00:03:42.513136 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I1008 00:03:42.513156 3117545 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I1008 00:03:42.513160 3117545 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb
+I1008 00:03:42.513163 3117545 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb changed to proposed JSON configuration filename : data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.stage_config.json
+I1008 00:03:42.513180 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.stage_config.json from original name : data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb | This file  does not exist.
+I1008 00:03:42.513212 3117545 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb
+I1008 00:03:42.513213 3117545 AbstractObjectAttributesManagerBase.h:188] File (data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I1008 00:03:42.513216 3117545 Simulator.cpp:156] Loading navmesh from data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.navmesh
+I1008 00:03:42.513388 3117545 Simulator.cpp:158] Loaded.
+I1008 00:03:42.513392 3117545 SceneGraph.h:93] Created DrawableGroup: 
+I1008 00:03:42.516278 3117545 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I1008 00:03:42.516283 3117545 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb.
+I1008 00:03:42.516283 3117545 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb 
+I1008 00:03:42.516294 3117545 ResourceManager.cpp:1119] Importing Basis files as BC7 for Vvot9Ly1tCj.glb
+W1008 00:03:44.284268 3117545 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I1008 00:03:44.332170 3117545 simulator.py:213] Loaded navmesh data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.navmesh
+ 39%|███▊      | 37/96 [00:19<00:54,  1.08it/s] 40%|███▉      | 38/96 [00:19<00:42,  1.36it/s] 41%|████      | 39/96 [00:20<00:37,  1.50it/s] 42%|████▏     | 40/96 [00:20<00:35,  1.56it/s] 43%|████▎     | 41/96 [00:21<00:29,  1.85it/s] 44%|████▍     | 42/96 [00:21<00:25,  2.14it/s] 45%|████▍     | 43/96 [00:22<00:27,  1.95it/s] 46%|████▌     | 44/96 [00:22<00:25,  2.04it/s] 47%|████▋     | 45/96 [00:23<00:25,  2.04it/s] 48%|████▊     | 46/96 [00:23<00:28,  1.74it/s] 49%|████▉     | 47/96 [00:24<00:24,  1.98it/s] 50%|█████     | 48/96 [00:24<00:28,  1.71it/s]I1008 00:03:50.103068 3117545 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I1008 00:03:50.103088 3117545 SemanticScene.h:41] Deconstructing SemanticScene
+I1008 00:03:50.105141 3117545 SceneManager.h:25] Deconstructing SceneManager
+I1008 00:03:50.105146 3117545 SceneGraph.h:26] Deconstructing SceneGraph
+I1008 00:03:50.105492 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.105652 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.105752 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.105856 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.105957 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106052 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106151 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106246 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106345 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106438 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106532 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106629 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106726 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106854 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.106977 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.107093 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.107216 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.107333 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.107453 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.107575 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.107693 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.107807 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.107928 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.108022 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:03:50.111006 3117545 Renderer.cpp:34] Deconstructing Renderer
+I1008 00:03:50.111012 3117545 WindowlessContext.h:17] Deconstructing WindowlessContext
+I1008 00:03:50.115224 3117545 MetadataMediator.cpp:56] MetadataMediator::setActiveSceneDatasetName : Old active dataset default changed to default successfully.
+I1008 00:03:50.115396 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I1008 00:03:50.115415 3117545 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I1008 00:03:50.115420 3117545 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb
+I1008 00:03:50.115422 3117545 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb changed to proposed JSON configuration filename : data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.stage_config.json
+I1008 00:03:50.115437 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.stage_config.json from original name : data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb | This file  does not exist.
+I1008 00:03:50.115475 3117545 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb
+I1008 00:03:50.115476 3117545 AbstractObjectAttributesManagerBase.h:188] File (data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I1008 00:03:50.115479 3117545 Simulator.cpp:156] Loading navmesh from data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.navmesh
+I1008 00:03:50.115551 3117545 Simulator.cpp:158] Loaded.
+I1008 00:03:50.115554 3117545 SceneGraph.h:93] Created DrawableGroup: 
+I1008 00:03:50.118410 3117545 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I1008 00:03:50.118415 3117545 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb.
+I1008 00:03:50.118417 3117545 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb 
+I1008 00:03:50.118423 3117545 ResourceManager.cpp:1119] Importing Basis files as BC7 for 8WUmhLawc2A.glb
+W1008 00:03:53.528801 3117545 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I1008 00:03:53.568887 3117545 simulator.py:213] Loaded navmesh data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.navmesh
+ 51%|█████     | 49/96 [00:29<01:18,  1.67s/it] 52%|█████▏    | 50/96 [00:30<01:12,  1.57s/it] 53%|█████▎    | 51/96 [00:31<01:02,  1.39s/it] 54%|█████▍    | 52/96 [00:32<00:51,  1.16s/it] 55%|█████▌    | 53/96 [00:32<00:44,  1.03s/it] 56%|█████▋    | 54/96 [00:34<00:50,  1.20s/it] 57%|█████▋    | 55/96 [00:35<00:45,  1.10s/it] 58%|█████▊    | 56/96 [00:36<00:42,  1.07s/it] 59%|█████▉    | 57/96 [00:37<00:43,  1.11s/it] 60%|██████    | 58/96 [00:38<00:47,  1.25s/it] 61%|██████▏   | 59/96 [00:39<00:41,  1.13s/it] 62%|██████▎   | 60/96 [00:40<00:37,  1.05s/it]I1008 00:04:05.901415 3117545 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I1008 00:04:05.901438 3117545 SemanticScene.h:41] Deconstructing SemanticScene
+I1008 00:04:05.904100 3117545 SceneManager.h:25] Deconstructing SceneManager
+I1008 00:04:05.904105 3117545 SceneGraph.h:26] Deconstructing SceneGraph
+I1008 00:04:05.904907 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.905146 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.905244 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.905349 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.905445 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.905540 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.905642 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.905742 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.905843 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.905937 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.906032 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.906131 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.906224 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.906344 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.906467 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.906584 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.906706 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.906821 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.906939 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.907055 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.907181 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.907292 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.907414 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.907514 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:05.917948 3117545 Renderer.cpp:34] Deconstructing Renderer
+I1008 00:04:05.917960 3117545 WindowlessContext.h:17] Deconstructing WindowlessContext
+I1008 00:04:05.920954 3117545 MetadataMediator.cpp:56] MetadataMediator::setActiveSceneDatasetName : Old active dataset default changed to default successfully.
+I1008 00:04:05.921170 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I1008 00:04:05.921191 3117545 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I1008 00:04:05.921195 3117545 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb
+I1008 00:04:05.921198 3117545 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb changed to proposed JSON configuration filename : data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.stage_config.json
+I1008 00:04:05.921211 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.stage_config.json from original name : data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb | This file  does not exist.
+I1008 00:04:05.921244 3117545 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb
+I1008 00:04:05.921245 3117545 AbstractObjectAttributesManagerBase.h:188] File (data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I1008 00:04:05.921248 3117545 Simulator.cpp:156] Loading navmesh from data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.navmesh
+I1008 00:04:05.921334 3117545 Simulator.cpp:158] Loaded.
+I1008 00:04:05.921339 3117545 SceneGraph.h:93] Created DrawableGroup: 
+I1008 00:04:05.924204 3117545 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I1008 00:04:05.924209 3117545 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb.
+I1008 00:04:05.924211 3117545 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb 
+I1008 00:04:05.924219 3117545 ResourceManager.cpp:1119] Importing Basis files as BC7 for pRbA3pwrgk9.glb
+W1008 00:04:06.966308 3117545 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I1008 00:04:07.012703 3117545 simulator.py:213] Loaded navmesh data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.navmesh
+ 64%|██████▎   | 61/96 [00:42<00:41,  1.17s/it] 65%|██████▍   | 62/96 [00:42<00:31,  1.06it/s] 66%|██████▌   | 63/96 [00:42<00:24,  1.33it/s] 67%|██████▋   | 64/96 [00:43<00:20,  1.60it/s] 68%|██████▊   | 65/96 [00:43<00:16,  1.90it/s] 69%|██████▉   | 66/96 [00:43<00:14,  2.09it/s] 70%|██████▉   | 67/96 [00:44<00:11,  2.54it/s] 71%|███████   | 68/96 [00:44<00:10,  2.58it/s] 72%|███████▏  | 69/96 [00:45<00:13,  1.96it/s] 73%|███████▎  | 70/96 [00:45<00:11,  2.23it/s] 74%|███████▍  | 71/96 [00:45<00:09,  2.57it/s] 75%|███████▌  | 72/96 [00:46<00:11,  2.03it/s]I1008 00:04:11.722966 3117545 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I1008 00:04:11.722983 3117545 SemanticScene.h:41] Deconstructing SemanticScene
+I1008 00:04:11.724846 3117545 SceneManager.h:25] Deconstructing SceneManager
+I1008 00:04:11.724852 3117545 SceneGraph.h:26] Deconstructing SceneGraph
+I1008 00:04:11.725214 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.725370 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.725466 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.725569 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.725668 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.725764 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.725862 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.725956 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.726055 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.726150 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.726243 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.726339 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.726432 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.726547 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.726668 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.726783 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.726904 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.727022 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.727144 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.727267 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.727382 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.727500 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.727631 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.727787 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:11.730342 3117545 Renderer.cpp:34] Deconstructing Renderer
+I1008 00:04:11.730350 3117545 WindowlessContext.h:17] Deconstructing WindowlessContext
+I1008 00:04:11.733150 3117545 MetadataMediator.cpp:56] MetadataMediator::setActiveSceneDatasetName : Old active dataset default changed to default successfully.
+I1008 00:04:11.733398 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I1008 00:04:11.733418 3117545 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I1008 00:04:11.733422 3117545 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb
+I1008 00:04:11.733425 3117545 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb changed to proposed JSON configuration filename : data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.stage_config.json
+I1008 00:04:11.733439 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.stage_config.json from original name : data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb | This file  does not exist.
+I1008 00:04:11.733474 3117545 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb
+I1008 00:04:11.733475 3117545 AbstractObjectAttributesManagerBase.h:188] File (data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I1008 00:04:11.733479 3117545 Simulator.cpp:156] Loading navmesh from data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.navmesh
+I1008 00:04:11.733527 3117545 Simulator.cpp:158] Loaded.
+I1008 00:04:11.733531 3117545 SceneGraph.h:93] Created DrawableGroup: 
+I1008 00:04:11.736524 3117545 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I1008 00:04:11.736537 3117545 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb.
+I1008 00:04:11.736538 3117545 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb 
+I1008 00:04:11.736547 3117545 ResourceManager.cpp:1119] Importing Basis files as BC7 for 17DRP5sb8fy.glb
+W1008 00:04:12.129779 3117545 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I1008 00:04:12.150871 3117545 simulator.py:213] Loaded navmesh data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.navmesh
+ 76%|███████▌  | 73/96 [00:47<00:12,  1.82it/s] 77%|███████▋  | 74/96 [00:47<00:10,  2.11it/s] 78%|███████▊  | 75/96 [00:47<00:08,  2.46it/s] 79%|███████▉  | 76/96 [00:47<00:06,  2.91it/s] 80%|████████  | 77/96 [00:48<00:06,  3.08it/s] 81%|████████▏ | 78/96 [00:48<00:05,  3.33it/s] 82%|████████▏ | 79/96 [00:48<00:04,  3.73it/s] 83%|████████▎ | 80/96 [00:48<00:04,  3.84it/s] 84%|████████▍ | 81/96 [00:49<00:04,  3.73it/s] 85%|████████▌ | 82/96 [00:49<00:04,  3.44it/s] 86%|████████▋ | 83/96 [00:49<00:03,  3.61it/s] 88%|████████▊ | 84/96 [00:50<00:03,  3.39it/s]I1008 00:04:15.321805 3117545 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I1008 00:04:15.321830 3117545 SemanticScene.h:41] Deconstructing SemanticScene
+I1008 00:04:15.323247 3117545 SceneManager.h:25] Deconstructing SceneManager
+I1008 00:04:15.323251 3117545 SceneGraph.h:26] Deconstructing SceneGraph
+I1008 00:04:15.323594 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.323735 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.323833 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.323935 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324033 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324128 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324226 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324319 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324415 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324507 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324599 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324698 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324797 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.324913 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.325037 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.325151 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.325270 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.325382 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.325497 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.325639 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.325757 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.325870 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.325989 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.326083 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:15.327338 3117545 Renderer.cpp:34] Deconstructing Renderer
+I1008 00:04:15.327342 3117545 WindowlessContext.h:17] Deconstructing WindowlessContext
+I1008 00:04:15.328830 3117545 MetadataMediator.cpp:56] MetadataMediator::setActiveSceneDatasetName : Old active dataset default changed to default successfully.
+I1008 00:04:15.328994 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I1008 00:04:15.329015 3117545 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I1008 00:04:15.329025 3117545 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb
+I1008 00:04:15.329028 3117545 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb changed to proposed JSON configuration filename : data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.stage_config.json
+I1008 00:04:15.329041 3117545 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.stage_config.json from original name : data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb | This file  does not exist.
+I1008 00:04:15.329074 3117545 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb
+I1008 00:04:15.329075 3117545 AbstractObjectAttributesManagerBase.h:188] File (data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I1008 00:04:15.329079 3117545 Simulator.cpp:156] Loading navmesh from data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.navmesh
+I1008 00:04:15.329195 3117545 Simulator.cpp:158] Loaded.
+I1008 00:04:15.329198 3117545 SceneGraph.h:93] Created DrawableGroup: 
+I1008 00:04:15.332000 3117545 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I1008 00:04:15.332007 3117545 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb.
+I1008 00:04:15.332008 3117545 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb 
+I1008 00:04:15.332018 3117545 ResourceManager.cpp:1119] Importing Basis files as BC7 for 1pXnuDYAj8r.glb
+W1008 00:04:17.465732 3117545 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I1008 00:04:17.530006 3117545 simulator.py:213] Loaded navmesh data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.navmesh
+ 89%|████████▊ | 85/96 [00:52<00:10,  1.02it/s] 90%|████████▉ | 86/96 [00:53<00:08,  1.18it/s] 91%|█████████ | 87/96 [00:53<00:06,  1.46it/s] 92%|█████████▏| 88/96 [00:53<00:04,  1.63it/s] 93%|█████████▎| 89/96 [00:54<00:04,  1.47it/s] 94%|█████████▍| 90/96 [00:55<00:03,  1.62it/s] 95%|█████████▍| 91/96 [00:55<00:02,  1.90it/s] 96%|█████████▌| 92/96 [00:55<00:01,  2.31it/s] 97%|█████████▋| 93/96 [00:56<00:01,  2.25it/s] 98%|█████████▊| 94/96 [00:56<00:00,  2.46it/s] 99%|█████████▉| 95/96 [00:56<00:00,  2.52it/s]100%|██████████| 96/96 [00:57<00:00,  2.79it/s]I1008 00:04:22.459282 3117545 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I1008 00:04:22.459303 3117545 SemanticScene.h:41] Deconstructing SemanticScene
+I1008 00:04:22.462436 3117545 SceneManager.h:25] Deconstructing SceneManager
+I1008 00:04:22.462445 3117545 SceneGraph.h:26] Deconstructing SceneGraph
+I1008 00:04:22.462864 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.463122 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.463219 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.463325 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.463423 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.463521 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.463622 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.463722 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.463826 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.463936 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.464030 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.464128 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.464223 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.464344 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.464474 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.464592 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.464718 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.464841 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.464967 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.465090 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.465205 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.465317 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.465440 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.465518 3117545 Sensor.h:87] Deconstructing Sensor
+I1008 00:04:22.469709 3117545 Renderer.cpp:34] Deconstructing Renderer
+I1008 00:04:22.469720 3117545 WindowlessContext.h:17] Deconstructing WindowlessContext
+I1008 00:04:22.474851 3117545 Simulator.cpp:49] Deconstructing Simulator
+2026-10-08 00:04:22,477 Episodes evaluated: 96
+2026-10-08 00:04:22,477 Average episode steps_taken: 76.291667
+2026-10-08 00:04:22,477 Average episode distance_to_goal: 1.261168
+2026-10-08 00:04:22,478 Average episode success: 0.906250
+2026-10-08 00:04:22,478 Average episode oracle_success: 0.968750
+2026-10-08 00:04:22,478 Average episode path_length: 11.715782
+2026-10-08 00:04:22,478 Average episode collisions: 0.046166
+2026-10-08 00:04:22,478 Average episode spl: 0.775448
+2026-10-08 00:04:22,478 Average episode ndtw: 0.787259
+2026-10-08 00:04:22,478 Average episode sdtw: 0.755811
+2026-10-08 00:04:22,478 Average episode ghost_cnt: 22.604167
+2026-10-08 00:04:22,478 Average episode high_level_steps: 7.875000
+2026-10-08 00:04:22,478 Average episode policy_stop_count: 0.947917
+2026-10-08 00:04:22,478 Average episode forced_stop_count: 0.052083
+2026-10-08 00:04:22,478 Average episode forced_stop_max_len_count: 0.052083
+2026-10-08 00:04:22,479 Average episode forced_stop_no_vp_count: 0.000000
+2026-10-08 00:04:22,479 Average episode policy_stop_rate: 0.139934
+2026-10-08 00:04:22,479 Average episode forced_stop_rate: 0.003472
+2026-10-08 00:04:22,479 Average episode actual_stop_rate: 0.143406
+100%|██████████| 96/96 [00:57<00:00,  1.67it/s]

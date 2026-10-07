@@ -1,0 +1,120 @@
+{
+  "decision": "NO-GO for scaling this frozen first-disagreement recipe",
+  "gates": {
+    "positive_sr": true,
+    "nondecreasing_spl": true,
+    "nondecreasing_ndtw": true,
+    "no_primitive_increase": false,
+    "quality_rescue_in_two_scenes": true,
+    "sr_beats_mean_random": true
+  },
+  "added_feature_value_gate_passed": false,
+  "arms": {
+    "full": {
+      "interventions": 29,
+      "rescued": [
+        "1943",
+        "4790",
+        "4010",
+        "6098"
+      ],
+      "lost": [
+        "4841"
+      ],
+      "deltas": {
+        "success": 0.03125,
+        "spl": 0.017709685315782545,
+        "ndtw": 0.009379355004419054,
+        "primitive_action_count": 1.2604166666666667
+      }
+    },
+    "cost_own": {
+      "interventions": 74,
+      "rescued": [
+        "1943",
+        "4790",
+        "4310",
+        "6098"
+      ],
+      "lost": [
+        "2078"
+      ],
+      "deltas": {
+        "success": 0.03125,
+        "spl": 0.021658482823862017,
+        "ndtw": 0.013408176017840535,
+        "primitive_action_count": 3.4270833333333335
+      }
+    },
+    "cost_matched": {
+      "interventions": 23,
+      "rescued": [
+        "1943",
+        "4790",
+        "6098"
+      ],
+      "lost": [
+        "4841"
+      ],
+      "deltas": {
+        "success": 0.020833333333333332,
+        "spl": 0.010291818364192877,
+        "ndtw": 0.010873689900632979,
+        "primitive_action_count": 1.0208333333333333
+      }
+    },
+    "random_20261031": {
+      "interventions": 28,
+      "rescued": [
+        "1943",
+        "4010",
+        "6098"
+      ],
+      "lost": [
+        "3203",
+        "10490",
+        "4841"
+      ],
+      "deltas": {
+        "success": 0.0,
+        "spl": -0.06114702654841028,
+        "ndtw": -0.05934922309544807,
+        "primitive_action_count": 19.291666666666668
+      }
+    },
+    "random_20261032": {
+      "interventions": 26,
+      "rescued": [
+        "6098"
+      ],
+      "lost": [
+        "10490",
+        "4841"
+      ],
+      "deltas": {
+        "success": -0.010416666666666666,
+        "spl": -0.08192646355919786,
+        "ndtw": -0.058078763181498634,
+        "primitive_action_count": 17.4375
+      }
+    },
+    "random_20261033": {
+      "interventions": 25,
+      "rescued": [
+        "4790",
+        "6098"
+      ],
+      "lost": [
+        "3203",
+        "10490",
+        "4841"
+      ],
+      "deltas": {
+        "success": -0.010416666666666666,
+        "spl": -0.06898072006530657,
+        "ndtw": -0.06131360747472342,
+        "primitive_action_count": 19.979166666666668
+      }
+    }
+  }
+}

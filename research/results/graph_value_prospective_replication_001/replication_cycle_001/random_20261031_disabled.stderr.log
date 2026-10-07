@@ -1,0 +1,35 @@
+2026-10-07 23:54:38,632 checkpoint_path: data/logs/checkpoints/release_r2r/ckpt.iter12000.pth
+2026-10-07 23:54:38,633 Initializing dataset VLN-CE-v1
+2026-10-07 23:54:38,656 SPLTI: train, NUMBER OF SCENES: 8
+Traceback (most recent call last):
+  File "research/tools/run_single_intervention.py", line 83, in <module>
+    main()
+  File "research/tools/run_single_intervention.py", line 79, in main
+    opts=[x for pair in overrides.items() for x in pair], local_rank=0)
+  File "/home/wj/VLN-CE/ETPNav/run.py", line 108, in run_exp
+    trainer.eval()
+  File "/home/wj/VLN-CE/ETPNav/vlnce_baselines/adaptive_action/single_intervention.py", line 184, in eval
+    super().eval()
+  File "/home/wj/VLN-CE/ETPNav/vlnce_baselines/common/base_il_trainer.py", line 870, in eval
+    checkpoint_index=self.get_ckpt_id(self.config.EVAL.CKPT_PATH_DIR),
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/wj/VLN-CE/ETPNav/vlnce_baselines/ss_trainer_ETP.py", line 776, in _eval_checkpoint
+    auto_reset_done=False, # unseen: 11006 
+  File "/home/wj/VLN-CE/ETPNav/vlnce_baselines/common/env_utils.py", line 122, in construct_envs
+    workers_ignore_signals=workers_ignore_signals,
+  File "/tmp/habitat-lab-v017-2/habitat/core/vector_env.py", line 186, in __init__
+    workers_ignore_signals=workers_ignore_signals,
+  File "/tmp/habitat-lab-v017-2/habitat/core/vector_env.py", line 329, in _spawn_workers
+    ps.start()
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/multiprocessing/process.py", line 105, in start
+    self._popen = self._Popen(self)
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/multiprocessing/context.py", line 291, in _Popen
+    return Popen(process_obj)
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/multiprocessing/popen_forkserver.py", line 54, in _launch
+    f.write(buf.getbuffer())
+BrokenPipeError: [Errno 32] Broken pipe

@@ -1,0 +1,1665 @@
+{
+  "experiment_id": "GRAPH-VALUE-PROSPECTIVE-REPLICATION-001",
+  "arms": {
+    "full": {
+      "episodes": 96,
+      "interventions": 29,
+      "eligible_states": 29,
+      "metrics": {
+        "success": {
+          "baseline": 0.9166666666666666,
+          "intervention": 0.9479166666666666,
+          "delta": 0.03125,
+          "scene_cluster_ci95": [
+            -0.020833333333333332,
+            0.08333333333333333
+          ]
+        },
+        "spl": {
+          "baseline": 0.8444283935940368,
+          "intervention": 0.8621380789098194,
+          "delta": 0.017709685315782545,
+          "scene_cluster_ci95": [
+            -0.022698649980488442,
+            0.06276060427723726
+          ]
+        },
+        "ndtw": {
+          "baseline": 0.8485722498767171,
+          "intervention": 0.8579516048811362,
+          "delta": 0.009379355004419054,
+          "scene_cluster_ci95": [
+            -0.009242548005980896,
+            0.039783644767993114
+          ]
+        },
+        "sdtw": {
+          "baseline": 0.8119359200727662,
+          "intervention": 0.8229765179561973,
+          "delta": 0.011040597883431112,
+          "scene_cluster_ci95": [
+            -0.024780638284432104,
+            0.054638075656486366
+          ]
+        },
+        "distance_to_goal": {
+          "baseline": 1.4978453343889366,
+          "intervention": 1.1854223251963656,
+          "delta": -0.31242300919257104,
+          "scene_cluster_ci95": [
+            -0.8611539151364316,
+            0.04663404489401725
+          ]
+        },
+        "path_length": {
+          "baseline": 9.120150337616602,
+          "intervention": 9.064098969101906,
+          "delta": -0.056051368514696755,
+          "scene_cluster_ci95": [
+            -0.34464893626670046,
+            0.21383210519949597
+          ]
+        },
+        "primitive_action_count": {
+          "baseline": 56.3125,
+          "intervention": 57.572916666666664,
+          "delta": 1.2604166666666667,
+          "scene_cluster_ci95": [
+            -1.21875,
+            4.302343749999997
+          ]
+        },
+        "high_level_steps": {
+          "baseline": 7.541666666666667,
+          "intervention": 7.760416666666667,
+          "delta": 0.21875,
+          "scene_cluster_ci95": [
+            0.08333333333333334,
+            0.35416666666666663
+          ]
+        },
+        "collision_events": {
+          "baseline": 1.9270833333333333,
+          "intervention": 2.1041666666666665,
+          "delta": 0.17708333333333334,
+          "scene_cluster_ci95": [
+            -0.07291666666666669,
+            0.4583333333333333
+          ]
+        }
+      },
+      "success_rescued": [
+        "1943",
+        "4790",
+        "4010",
+        "6098"
+      ],
+      "success_lost": [
+        "4841"
+      ],
+      "quality_rescued": [
+        "1943",
+        "4790",
+        "4010"
+      ],
+      "quality_rescue_scenes": [
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+        "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb"
+      ],
+      "ndtw_harmed": [
+        "4067",
+        "2024",
+        "418",
+        "4904",
+        "7091",
+        "6020",
+        "7676",
+        "2519",
+        "1583",
+        "8582",
+        "5192",
+        "10490",
+        "6098",
+        "5573",
+        "4841"
+      ],
+      "spl_harmed": [
+        "10430",
+        "7661",
+        "2024",
+        "3203",
+        "9092",
+        "418",
+        "7676",
+        "2519",
+        "8582",
+        "5192",
+        "5573",
+        "4841"
+      ],
+      "by_scene": {
+        "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb": {
+          "success": 0.0,
+          "spl": -0.01238075134270153,
+          "ndtw": -0.01036189105134037,
+          "sdtw": -0.01036189105134037,
+          "distance_to_goal": 0.0,
+          "path_length": 0.16666682561238608,
+          "primitive_action_count": 0.8333333333333334,
+          "high_level_steps": 0.08333333333333333,
+          "collision_events": 0.0
+        },
+        "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb": {
+          "success": -0.08333333333333333,
+          "spl": -0.06867588289957521,
+          "ndtw": -0.003160072271726183,
+          "sdtw": -0.0719269581043261,
+          "distance_to_goal": 0.12638489405314127,
+          "path_length": -0.20694915453592935,
+          "primitive_action_count": -1.5,
+          "high_level_steps": 0.0,
+          "collision_events": 0.0
+        },
+        "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb": {
+          "success": 0.0,
+          "spl": -0.011794985973870298,
+          "ndtw": -0.0015986999288430577,
+          "sdtw": -0.0015986999288430577,
+          "distance_to_goal": -0.07969504843155543,
+          "path_length": 0.16666690508524576,
+          "primitive_action_count": 1.6666666666666667,
+          "high_level_steps": 0.25,
+          "collision_events": 0.0
+        },
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb": {
+          "success": 0.16666666666666666,
+          "spl": 0.1389337538431047,
+          "ndtw": 0.11077534678815225,
+          "sdtw": 0.1452191786775436,
+          "distance_to_goal": -2.131731176748872,
+          "path_length": -0.8338888088862101,
+          "primitive_action_count": -3.0833333333333335,
+          "high_level_steps": 0.4166666666666667,
+          "collision_events": 0.9166666666666666
+        },
+        "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb": {
+          "success": 0.08333333333333333,
+          "spl": 0.09313673837380006,
+          "ndtw": 0.006684987411289982,
+          "sdtw": 0.022054977076476173,
+          "distance_to_goal": 0.14347887163360915,
+          "path_length": -0.4554740985234578,
+          "primitive_action_count": -2.6666666666666665,
+          "high_level_steps": -0.08333333333333333,
+          "collision_events": -0.4166666666666667
+        },
+        "mp3d/ZMojNkEp431/ZMojNkEp431.glb": {
+          "success": 0.0,
+          "spl": 0.0004135450690989824,
+          "ndtw": -0.011321733480947593,
+          "sdtw": -0.011321733480947593,
+          "distance_to_goal": -0.007282773653666179,
+          "path_length": 0.005139589309692383,
+          "primitive_action_count": 0.75,
+          "high_level_steps": 0.3333333333333333,
+          "collision_events": 0.6666666666666666
+        },
+        "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb": {
+          "success": 0.08333333333333333,
+          "spl": 0.01649479193108806,
+          "ndtw": -0.01766552930424338,
+          "sdtw": 0.014577478005875466,
+          "distance_to_goal": -0.5097760433952013,
+          "path_length": 0.5246643622716268,
+          "primitive_action_count": 10.083333333333334,
+          "high_level_steps": 0.5,
+          "collision_events": 0.25
+        },
+        "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb": {
+          "success": 0.0,
+          "spl": -0.014449726474684418,
+          "ndtw": 0.001682431873010796,
+          "sdtw": 0.001682431873010796,
+          "distance_to_goal": -0.04076279699802399,
+          "path_length": 0.18476343154907227,
+          "primitive_action_count": 4.0,
+          "high_level_steps": 0.25,
+          "collision_events": 0.0
+        }
+      }
+    },
+    "cost_own": {
+      "episodes": 96,
+      "interventions": 74,
+      "eligible_states": 74,
+      "metrics": {
+        "success": {
+          "baseline": 0.9166666666666666,
+          "intervention": 0.9479166666666666,
+          "delta": 0.03125,
+          "scene_cluster_ci95": [
+            -0.020833333333333332,
+            0.08333333333333333
+          ]
+        },
+        "spl": {
+          "baseline": 0.8444283935940368,
+          "intervention": 0.8660868764178989,
+          "delta": 0.021658482823862017,
+          "scene_cluster_ci95": [
+            -0.01426154285898972,
+            0.05842007419227122
+          ]
+        },
+        "ndtw": {
+          "baseline": 0.8485722498767171,
+          "intervention": 0.8619804258945578,
+          "delta": 0.013408176017840535,
+          "scene_cluster_ci95": [
+            -0.004832552645373743,
+            0.041310239336818676
+          ]
+        },
+        "sdtw": {
+          "baseline": 0.8119359200727662,
+          "intervention": 0.832346162583708,
+          "delta": 0.02041024251094175,
+          "scene_cluster_ci95": [
+            -0.020730760212776395,
+            0.06301627653574166
+          ]
+        },
+        "distance_to_goal": {
+          "baseline": 1.4978453343889366,
+          "intervention": 1.136067005728061,
+          "delta": -0.36177832866087556,
+          "scene_cluster_ci95": [
+            -0.8820617549742261,
+            0.0685496886280202
+          ]
+        },
+        "path_length": {
+          "baseline": 9.120150337616602,
+          "intervention": 9.21731581290563,
+          "delta": 0.0971654752890269,
+          "scene_cluster_ci95": [
+            -0.2624769260485967,
+            0.42345176301896487
+          ]
+        },
+        "primitive_action_count": {
+          "baseline": 56.3125,
+          "intervention": 59.739583333333336,
+          "delta": 3.4270833333333335,
+          "scene_cluster_ci95": [
+            0.39583333333333337,
+            6.427083333333334
+          ]
+        },
+        "high_level_steps": {
+          "baseline": 7.541666666666667,
+          "intervention": 7.958333333333333,
+          "delta": 0.4166666666666667,
+          "scene_cluster_ci95": [
+            0.18750000000000003,
+            0.5833333333333333
+          ]
+        },
+        "collision_events": {
+          "baseline": 1.9270833333333333,
+          "intervention": 1.9583333333333333,
+          "delta": 0.03125,
+          "scene_cluster_ci95": [
+            -0.3125,
+            0.5104166666666666
+          ]
+        }
+      },
+      "success_rescued": [
+        "1943",
+        "4790",
+        "4310",
+        "6098"
+      ],
+      "success_lost": [
+        "2078"
+      ],
+      "quality_rescued": [
+        "1943",
+        "4790",
+        "4310"
+      ],
+      "quality_rescue_scenes": [
+        "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb"
+      ],
+      "ndtw_harmed": [
+        "8963",
+        "4922",
+        "6509",
+        "8822",
+        "6173",
+        "6680",
+        "10583",
+        "418",
+        "10175",
+        "2786",
+        "7370",
+        "563",
+        "7478",
+        "2078",
+        "7091",
+        "1712",
+        "10826",
+        "6020",
+        "10295",
+        "7352",
+        "7676",
+        "2519",
+        "6644",
+        "7094",
+        "3776",
+        "8057",
+        "1583",
+        "8582",
+        "5192",
+        "1625",
+        "6098",
+        "10154",
+        "1074",
+        "5150",
+        "6884",
+        "2477",
+        "6752"
+      ],
+      "spl_harmed": [
+        "8963",
+        "10430",
+        "4922",
+        "7661",
+        "6173",
+        "6680",
+        "2288",
+        "418",
+        "2786",
+        "7370",
+        "563",
+        "7478",
+        "2078",
+        "10826",
+        "7352",
+        "3326",
+        "7676",
+        "2519",
+        "6644",
+        "7094",
+        "3776",
+        "8057",
+        "5192",
+        "2762",
+        "10154",
+        "3131",
+        "4841",
+        "1742"
+      ],
+      "by_scene": {
+        "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb": {
+          "success": 0.0,
+          "spl": 0.006291586495400486,
+          "ndtw": 0.0032201115801892464,
+          "sdtw": 0.0032201115801892464,
+          "distance_to_goal": -0.12051476786533992,
+          "path_length": 0.046646952629089355,
+          "primitive_action_count": 1.0,
+          "high_level_steps": 0.5833333333333334,
+          "collision_events": -0.16666666666666666
+        },
+        "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb": {
+          "success": 0.0,
+          "spl": -0.0044041476496766985,
+          "ndtw": 0.0023435725557206613,
+          "sdtw": 0.003157920549653905,
+          "distance_to_goal": -0.13430936386187872,
+          "path_length": 0.3490188916524251,
+          "primitive_action_count": 2.3333333333333335,
+          "high_level_steps": 0.25,
+          "collision_events": 0.16666666666666666
+        },
+        "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb": {
+          "success": 0.08333333333333333,
+          "spl": 0.038339853583329864,
+          "ndtw": 0.007617451810089965,
+          "sdtw": 0.06588375605923559,
+          "distance_to_goal": -0.33395946957170963,
+          "path_length": 0.2801398038864136,
+          "primitive_action_count": 6.5,
+          "high_level_steps": 0.5,
+          "collision_events": -0.3333333333333333
+        },
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb": {
+          "success": 0.16666666666666666,
+          "spl": 0.1302676294416547,
+          "ndtw": 0.10632289985274519,
+          "sdtw": 0.14076673174213658,
+          "distance_to_goal": -1.9657732316603262,
+          "path_length": -0.6503495772679647,
+          "primitive_action_count": -1.1666666666666667,
+          "high_level_steps": 0.6666666666666666,
+          "collision_events": 1.5833333333333333
+        },
+        "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb": {
+          "success": -0.08333333333333333,
+          "spl": -0.07207773469194698,
+          "ndtw": -0.01818813083195304,
+          "sdtw": -0.08793909032973242,
+          "distance_to_goal": 0.701218823591868,
+          "path_length": 0.6500013669331869,
+          "primitive_action_count": 9.5,
+          "high_level_steps": 0.3333333333333333,
+          "collision_events": -0.5
+        },
+        "mp3d/ZMojNkEp431/ZMojNkEp431.glb": {
+          "success": 0.0,
+          "spl": 0.05553113878428898,
+          "ndtw": -0.0032507012810546465,
+          "sdtw": -0.0032507012810546465,
+          "distance_to_goal": -0.18136411160230637,
+          "path_length": -0.7913814783096313,
+          "primitive_action_count": -3.8333333333333335,
+          "high_level_steps": -0.25,
+          "collision_events": 0.0
+        },
+        "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb": {
+          "success": 0.08333333333333333,
+          "spl": 0.014891461108642404,
+          "ndtw": -0.003690013628605137,
+          "sdtw": 0.02855299368151371,
+          "distance_to_goal": -0.696062167485555,
+          "path_length": 0.6443748871485392,
+          "primitive_action_count": 8.833333333333334,
+          "high_level_steps": 0.6666666666666666,
+          "collision_events": 0.0
+        },
+        "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb": {
+          "success": 0.0,
+          "spl": 0.004428075519203332,
+          "ndtw": 0.012890218085592042,
+          "sdtw": 0.012890218085592042,
+          "distance_to_goal": -0.1634623408317566,
+          "path_length": 0.24887295564015707,
+          "primitive_action_count": 4.25,
+          "high_level_steps": 0.5833333333333334,
+          "collision_events": -0.5
+        }
+      }
+    },
+    "cost_matched": {
+      "episodes": 96,
+      "interventions": 23,
+      "eligible_states": 29,
+      "metrics": {
+        "success": {
+          "baseline": 0.9166666666666666,
+          "intervention": 0.9375,
+          "delta": 0.020833333333333332,
+          "scene_cluster_ci95": [
+            -0.020833333333333332,
+            0.07291666666666666
+          ]
+        },
+        "spl": {
+          "baseline": 0.8444283935940368,
+          "intervention": 0.8547202119582297,
+          "delta": 0.010291818364192877,
+          "scene_cluster_ci95": [
+            -0.0236219607801631,
+            0.05188399539243142
+          ]
+        },
+        "ndtw": {
+          "baseline": 0.8485722498767171,
+          "intervention": 0.8594459397773502,
+          "delta": 0.010873689900632979,
+          "scene_cluster_ci95": [
+            -0.008135963817945855,
+            0.040952745498580065
+          ]
+        },
+        "sdtw": {
+          "baseline": 0.8119359200727662,
+          "intervention": 0.8225818348440255,
+          "delta": 0.010645914771259169,
+          "scene_cluster_ci95": [
+            -0.025299007229595084,
+            0.05503742129098481
+          ]
+        },
+        "distance_to_goal": {
+          "baseline": 1.4978453343889366,
+          "intervention": 1.171254756084333,
+          "delta": -0.3265905783046037,
+          "scene_cluster_ci95": [
+            -0.865378681764317,
+            0.019762474112212658
+          ]
+        },
+        "path_length": {
+          "baseline": 9.120150337616602,
+          "intervention": 9.06704675157865,
+          "delta": -0.0531035860379537,
+          "scene_cluster_ci95": [
+            -0.32765004485845567,
+            0.22096175948778785
+          ]
+        },
+        "primitive_action_count": {
+          "baseline": 56.3125,
+          "intervention": 57.333333333333336,
+          "delta": 1.0208333333333333,
+          "scene_cluster_ci95": [
+            -1.3020833333333335,
+            4.166666666666666
+          ]
+        },
+        "high_level_steps": {
+          "baseline": 7.541666666666667,
+          "intervention": 7.71875,
+          "delta": 0.17708333333333334,
+          "scene_cluster_ci95": [
+            0.052083333333333336,
+            0.30208333333333337
+          ]
+        },
+        "collision_events": {
+          "baseline": 1.9270833333333333,
+          "intervention": 2.0833333333333335,
+          "delta": 0.15625,
+          "scene_cluster_ci95": [
+            -0.09375,
+            0.43749999999999994
+          ]
+        }
+      },
+      "success_rescued": [
+        "1943",
+        "4790",
+        "6098"
+      ],
+      "success_lost": [
+        "4841"
+      ],
+      "quality_rescued": [
+        "1943",
+        "4790"
+      ],
+      "quality_rescue_scenes": [
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb"
+      ],
+      "ndtw_harmed": [
+        "4067",
+        "2024",
+        "6020",
+        "7676",
+        "2519",
+        "1583",
+        "8582",
+        "5192",
+        "10490",
+        "6098",
+        "4841"
+      ],
+      "spl_harmed": [
+        "10430",
+        "7661",
+        "2024",
+        "9092",
+        "418",
+        "7676",
+        "2519",
+        "8582",
+        "5192",
+        "4841"
+      ],
+      "by_scene": {
+        "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb": {
+          "success": 0.0,
+          "spl": 0.0,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "distance_to_goal": 0.0,
+          "path_length": 0.0,
+          "primitive_action_count": 0.0,
+          "high_level_steps": 0.0,
+          "collision_events": 0.0
+        },
+        "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb": {
+          "success": -0.08333333333333333,
+          "spl": -0.06867588289957521,
+          "ndtw": -0.003160072271726183,
+          "sdtw": -0.0719269581043261,
+          "distance_to_goal": 0.12638489405314127,
+          "path_length": -0.20694915453592935,
+          "primitive_action_count": -1.5,
+          "high_level_steps": 0.0,
+          "collision_events": 0.0
+        },
+        "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb": {
+          "success": 0.0,
+          "spl": -0.011794985973870298,
+          "ndtw": -0.0015986999288430577,
+          "sdtw": -0.0015986999288430577,
+          "distance_to_goal": -0.07969504843155543,
+          "path_length": 0.16666690508524576,
+          "primitive_action_count": 1.6666666666666667,
+          "high_level_steps": 0.25,
+          "collision_events": 0.0
+        },
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb": {
+          "success": 0.16666666666666666,
+          "spl": 0.1389337538431047,
+          "ndtw": 0.11077534678815225,
+          "sdtw": 0.1452191786775436,
+          "distance_to_goal": -2.131731176748872,
+          "path_length": -0.8338888088862101,
+          "primitive_action_count": -3.0833333333333335,
+          "high_level_steps": 0.4166666666666667,
+          "collision_events": 0.9166666666666666
+        },
+        "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb": {
+          "success": 0.0,
+          "spl": 0.02862466198257173,
+          "ndtw": 0.007540310608335631,
+          "sdtw": 0.00779815620643486,
+          "distance_to_goal": 0.02791583041350047,
+          "path_length": -0.24957422415415445,
+          "primitive_action_count": -2.1666666666666665,
+          "high_level_steps": -0.08333333333333333,
+          "collision_events": -0.4166666666666667
+        },
+        "mp3d/ZMojNkEp431/ZMojNkEp431.glb": {
+          "success": 0.0,
+          "spl": 0.002037968794740219,
+          "ndtw": -0.011908238578583539,
+          "sdtw": -0.011908238578583539,
+          "distance_to_goal": 0.0013916492462158203,
+          "path_length": -0.03652707735697428,
+          "primitive_action_count": 0.4166666666666667,
+          "high_level_steps": 0.25,
+          "collision_events": 0.6666666666666666
+        },
+        "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb": {
+          "success": 0.08333333333333333,
+          "spl": -0.001007165857638002,
+          "ndtw": -0.019836105702709415,
+          "sdtw": 0.012406901607409431,
+          "distance_to_goal": -0.4847925181190173,
+          "path_length": 0.6543535391489664,
+          "primitive_action_count": 10.666666666666666,
+          "high_level_steps": 0.4166666666666667,
+          "collision_events": 0.08333333333333333
+        },
+        "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb": {
+          "success": 0.0,
+          "spl": -0.0057838029757901295,
+          "ndtw": 0.005176978290438163,
+          "sdtw": 0.005176978290438163,
+          "distance_to_goal": -0.07219825685024261,
+          "path_length": 0.08109013239542644,
+          "primitive_action_count": 2.1666666666666665,
+          "high_level_steps": 0.16666666666666666,
+          "collision_events": 0.0
+        }
+      }
+    },
+    "random_20261031": {
+      "episodes": 96,
+      "interventions": 28,
+      "eligible_states": 29,
+      "metrics": {
+        "success": {
+          "baseline": 0.9166666666666666,
+          "intervention": 0.9166666666666666,
+          "delta": 0.0,
+          "scene_cluster_ci95": [
+            -0.041666666666666664,
+            0.041666666666666664
+          ]
+        },
+        "spl": {
+          "baseline": 0.8444283935940368,
+          "intervention": 0.7832813670456266,
+          "delta": -0.06114702654841028,
+          "scene_cluster_ci95": [
+            -0.10272552625902663,
+            -0.024176978248731457
+          ]
+        },
+        "ndtw": {
+          "baseline": 0.8485722498767171,
+          "intervention": 0.7892230267812691,
+          "delta": -0.05934922309544807,
+          "scene_cluster_ci95": [
+            -0.09904202494029538,
+            -0.022929261578430164
+          ]
+        },
+        "sdtw": {
+          "baseline": 0.8119359200727662,
+          "intervention": 0.7606608089263509,
+          "delta": -0.05127511114641533,
+          "scene_cluster_ci95": [
+            -0.0935192183598172,
+            -0.013587356631479386
+          ]
+        },
+        "distance_to_goal": {
+          "baseline": 1.4978453343889366,
+          "intervention": 1.4974935832433403,
+          "delta": -0.00035175114559630555,
+          "scene_cluster_ci95": [
+            -0.18517751238929728,
+            0.2018782349575
+          ]
+        },
+        "path_length": {
+          "baseline": 9.120150337616602,
+          "intervention": 11.338920672734579,
+          "delta": 2.2187703351179757,
+          "scene_cluster_ci95": [
+            1.0759670426448185,
+            3.466639280319214
+          ]
+        },
+        "primitive_action_count": {
+          "baseline": 56.3125,
+          "intervention": 75.60416666666667,
+          "delta": 19.291666666666668,
+          "scene_cluster_ci95": [
+            9.874739583333334,
+            28.833333333333332
+          ]
+        },
+        "high_level_steps": {
+          "baseline": 7.541666666666667,
+          "intervention": 7.864583333333333,
+          "delta": 0.3229166666666667,
+          "scene_cluster_ci95": [
+            0.13541666666666669,
+            0.5210937499999962
+          ]
+        },
+        "collision_events": {
+          "baseline": 1.9270833333333333,
+          "intervention": 2.71875,
+          "delta": 0.7916666666666666,
+          "scene_cluster_ci95": [
+            0.19791666666666663,
+            1.6041666666666667
+          ]
+        }
+      },
+      "success_rescued": [
+        "1943",
+        "4010",
+        "6098"
+      ],
+      "success_lost": [
+        "3203",
+        "10490",
+        "4841"
+      ],
+      "quality_rescued": [
+        "1943"
+      ],
+      "quality_rescue_scenes": [
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb"
+      ],
+      "ndtw_harmed": [
+        "2378",
+        "7661",
+        "4067",
+        "4616",
+        "2024",
+        "3203",
+        "418",
+        "4904",
+        "7478",
+        "7091",
+        "6020",
+        "4280",
+        "4010",
+        "7676",
+        "2519",
+        "8057",
+        "1583",
+        "8582",
+        "5192",
+        "10490",
+        "6098",
+        "2477",
+        "4841"
+      ],
+      "spl_harmed": [
+        "10430",
+        "2378",
+        "7661",
+        "4067",
+        "4616",
+        "2024",
+        "3203",
+        "418",
+        "7478",
+        "7091",
+        "4280",
+        "7676",
+        "2519",
+        "8057",
+        "8582",
+        "5192",
+        "10490",
+        "4841"
+      ],
+      "by_scene": {
+        "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb": {
+          "success": 0.0,
+          "spl": 0.0,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "distance_to_goal": 0.0,
+          "path_length": 0.0,
+          "primitive_action_count": 0.0,
+          "high_level_steps": 0.0,
+          "collision_events": 0.0
+        },
+        "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb": {
+          "success": -0.08333333333333333,
+          "spl": -0.06867588289957521,
+          "ndtw": -0.07287261910951891,
+          "sdtw": -0.0719269581043261,
+          "distance_to_goal": 0.4684792757034302,
+          "path_length": 1.6717922687530518,
+          "primitive_action_count": 15.5,
+          "high_level_steps": 0.08333333333333333,
+          "collision_events": 0.9166666666666666
+        },
+        "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb": {
+          "success": 0.0,
+          "spl": -0.07064416999496637,
+          "ndtw": -0.03516094216902801,
+          "sdtw": -0.03516094216902801,
+          "distance_to_goal": -0.0211531197031339,
+          "path_length": 1.7083950837453206,
+          "primitive_action_count": 13.25,
+          "high_level_steps": 0.16666666666666666,
+          "collision_events": 0.08333333333333333
+        },
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb": {
+          "success": 0.08333333333333333,
+          "spl": 0.002477339445613088,
+          "ndtw": -0.00010038548811638325,
+          "sdtw": 0.026807475636326045,
+          "distance_to_goal": -0.3255149976660808,
+          "path_length": 0.9423317114512125,
+          "primitive_action_count": 11.666666666666666,
+          "high_level_steps": 0.6666666666666666,
+          "collision_events": 1.4166666666666667
+        },
+        "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb": {
+          "success": 0.08333333333333333,
+          "spl": -0.01975330509924103,
+          "ndtw": -0.08799688425524675,
+          "sdtw": -0.05320034269927457,
+          "distance_to_goal": 0.01899149641394615,
+          "path_length": 3.2494195302327475,
+          "primitive_action_count": 28.75,
+          "high_level_steps": 0.25,
+          "collision_events": 0.0
+        },
+        "mp3d/ZMojNkEp431/ZMojNkEp431.glb": {
+          "success": -0.08333333333333333,
+          "spl": -0.1641103464409005,
+          "ndtw": -0.16715033548056726,
+          "sdtw": -0.17382867602144622,
+          "distance_to_goal": 0.3401053225000699,
+          "path_length": 5.416777531305949,
+          "primitive_action_count": 37.583333333333336,
+          "high_level_steps": 0.5833333333333334,
+          "collision_events": 0.4166666666666667
+        },
+        "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb": {
+          "success": 0.0,
+          "spl": -0.13163731364777473,
+          "ndtw": -0.0990553417321543,
+          "sdtw": -0.09043416928462089,
+          "distance_to_goal": -0.396224911014239,
+          "path_length": 3.980581521987915,
+          "primitive_action_count": 40.166666666666664,
+          "high_level_steps": 0.75,
+          "collision_events": 3.25
+        },
+        "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb": {
+          "success": 0.0,
+          "spl": -0.03683253375043752,
+          "ndtw": -0.012457276528952899,
+          "sdtw": -0.012457276528952899,
+          "distance_to_goal": -0.08749707539876302,
+          "path_length": 0.7808650334676107,
+          "primitive_action_count": 7.416666666666667,
+          "high_level_steps": 0.08333333333333333,
+          "collision_events": 0.25
+        }
+      }
+    },
+    "random_20261032": {
+      "episodes": 96,
+      "interventions": 26,
+      "eligible_states": 29,
+      "metrics": {
+        "success": {
+          "baseline": 0.9166666666666666,
+          "intervention": 0.90625,
+          "delta": -0.010416666666666666,
+          "scene_cluster_ci95": [
+            -0.03125,
+            0.0
+          ]
+        },
+        "spl": {
+          "baseline": 0.8444283935940368,
+          "intervention": 0.7625019300348389,
+          "delta": -0.08192646355919786,
+          "scene_cluster_ci95": [
+            -0.11575001807719884,
+            -0.05407387758682347
+          ]
+        },
+        "ndtw": {
+          "baseline": 0.8485722498767171,
+          "intervention": 0.7904934866952186,
+          "delta": -0.058078763181498634,
+          "scene_cluster_ci95": [
+            -0.08644143923447645,
+            -0.034594156118639315
+          ]
+        },
+        "sdtw": {
+          "baseline": 0.8119359200727662,
+          "intervention": 0.7511590109129621,
+          "delta": -0.060776909159804084,
+          "scene_cluster_ci95": [
+            -0.08943183840435537,
+            -0.03633382478527197
+          ]
+        },
+        "distance_to_goal": {
+          "baseline": 1.4978453343889366,
+          "intervention": 1.4958967996450763,
+          "delta": -0.001948534743860364,
+          "scene_cluster_ci95": [
+            -0.16475113372628886,
+            0.18953539473974756
+          ]
+        },
+        "path_length": {
+          "baseline": 9.120150337616602,
+          "intervention": 11.304862603545189,
+          "delta": 2.1847122659285865,
+          "scene_cluster_ci95": [
+            1.152053584655126,
+            3.1362691074609756
+          ]
+        },
+        "primitive_action_count": {
+          "baseline": 56.3125,
+          "intervention": 73.75,
+          "delta": 17.4375,
+          "scene_cluster_ci95": [
+            10.176302083333333,
+            24.322916666666664
+          ]
+        },
+        "high_level_steps": {
+          "baseline": 7.541666666666667,
+          "intervention": 7.8125,
+          "delta": 0.2708333333333333,
+          "scene_cluster_ci95": [
+            0.13541666666666669,
+            0.41666666666666663
+          ]
+        },
+        "collision_events": {
+          "baseline": 1.9270833333333333,
+          "intervention": 2.3645833333333335,
+          "delta": 0.4375,
+          "scene_cluster_ci95": [
+            -0.04166666666666667,
+            1.0104166666666665
+          ]
+        }
+      },
+      "success_rescued": [
+        "6098"
+      ],
+      "success_lost": [
+        "10490",
+        "4841"
+      ],
+      "quality_rescued": [],
+      "quality_rescue_scenes": [],
+      "ndtw_harmed": [
+        "1943",
+        "2378",
+        "7661",
+        "4616",
+        "2024",
+        "3203",
+        "9092",
+        "418",
+        "4904",
+        "7091",
+        "6020",
+        "4010",
+        "7676",
+        "2519",
+        "2228",
+        "8057",
+        "8582",
+        "5192",
+        "10490",
+        "6098",
+        "5573",
+        "4841"
+      ],
+      "spl_harmed": [
+        "10430",
+        "2378",
+        "7661",
+        "4616",
+        "2024",
+        "3203",
+        "9092",
+        "418",
+        "4904",
+        "7478",
+        "7091",
+        "4280",
+        "7676",
+        "2519",
+        "2228",
+        "8057",
+        "8582",
+        "5192",
+        "10490",
+        "5573",
+        "4841"
+      ],
+      "by_scene": {
+        "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb": {
+          "success": 0.0,
+          "spl": -0.01434844185630669,
+          "ndtw": -0.005931900371289285,
+          "sdtw": -0.005931900371289285,
+          "distance_to_goal": 0.013831218083699545,
+          "path_length": 0.20121026039123535,
+          "primitive_action_count": 2.5,
+          "high_level_steps": 0.08333333333333333,
+          "collision_events": 0.3333333333333333
+        },
+        "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb": {
+          "success": -0.08333333333333333,
+          "spl": -0.06867588289957521,
+          "ndtw": -0.03021926959286764,
+          "sdtw": -0.0719269581043261,
+          "distance_to_goal": 0.5548199812571207,
+          "path_length": 0.055634260177612305,
+          "primitive_action_count": 3.25,
+          "high_level_steps": 0.0,
+          "collision_events": 0.75
+        },
+        "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb": {
+          "success": 0.0,
+          "spl": -0.08981710900928248,
+          "ndtw": -0.07265599395112872,
+          "sdtw": -0.07265599395112872,
+          "distance_to_goal": -0.04484653224547704,
+          "path_length": 2.894118547439575,
+          "primitive_action_count": 21.333333333333332,
+          "high_level_steps": 0.16666666666666666,
+          "collision_events": 0.75
+        },
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb": {
+          "success": 0.0,
+          "spl": -0.06659573120121938,
+          "ndtw": -0.04097464467518813,
+          "sdtw": -0.03376697433611431,
+          "distance_to_goal": 0.05682113207876682,
+          "path_length": 2.0997278292973838,
+          "primitive_action_count": 18.666666666666668,
+          "high_level_steps": 0.3333333333333333,
+          "collision_events": 0.0
+        },
+        "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb": {
+          "success": 0.0,
+          "spl": -0.0565708610053404,
+          "ndtw": -0.05632100223674833,
+          "sdtw": -0.03833599103595906,
+          "distance_to_goal": 0.04050111398100853,
+          "path_length": 3.593154033025106,
+          "primitive_action_count": 24.083333333333332,
+          "high_level_steps": 0.16666666666666666,
+          "collision_events": -0.5833333333333334
+        },
+        "mp3d/ZMojNkEp431/ZMojNkEp431.glb": {
+          "success": 0.0,
+          "spl": -0.07886705597531092,
+          "ndtw": -0.061448667611833686,
+          "sdtw": -0.061448667611833686,
+          "distance_to_goal": -0.1652116080125173,
+          "path_length": 2.541668176651001,
+          "primitive_action_count": 20.5,
+          "high_level_steps": 0.3333333333333333,
+          "collision_events": 0.0
+        },
+        "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb": {
+          "success": 0.0,
+          "spl": -0.18190186974396186,
+          "ndtw": -0.14159432281603482,
+          "sdtw": -0.14666448367088306,
+          "distance_to_goal": -0.38448770344257355,
+          "path_length": 4.2761452198028564,
+          "primitive_action_count": 34.916666666666664,
+          "high_level_steps": 0.6666666666666666,
+          "collision_events": 2.1666666666666665
+        },
+        "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb": {
+          "success": 0.0,
+          "spl": -0.09863475678258589,
+          "ndtw": -0.05548430419689849,
+          "sdtw": -0.05548430419689849,
+          "distance_to_goal": -0.08701587965091069,
+          "path_length": 1.816039800643921,
+          "primitive_action_count": 14.25,
+          "high_level_steps": 0.4166666666666667,
+          "collision_events": 0.08333333333333333
+        }
+      }
+    },
+    "random_20261033": {
+      "episodes": 96,
+      "interventions": 25,
+      "eligible_states": 29,
+      "metrics": {
+        "success": {
+          "baseline": 0.9166666666666666,
+          "intervention": 0.90625,
+          "delta": -0.010416666666666666,
+          "scene_cluster_ci95": [
+            -0.041666666666666664,
+            0.020833333333333332
+          ]
+        },
+        "spl": {
+          "baseline": 0.8444283935940368,
+          "intervention": 0.7754476735287303,
+          "delta": -0.06898072006530657,
+          "scene_cluster_ci95": [
+            -0.10332293210647166,
+            -0.029394000508125573
+          ]
+        },
+        "ndtw": {
+          "baseline": 0.8485722498767171,
+          "intervention": 0.7872586424019938,
+          "delta": -0.06131360747472342,
+          "scene_cluster_ci95": [
+            -0.09512604017097073,
+            -0.023301448247199565
+          ]
+        },
+        "sdtw": {
+          "baseline": 0.8119359200727662,
+          "intervention": 0.7558107451941541,
+          "delta": -0.05612517487861205,
+          "scene_cluster_ci95": [
+            -0.09164897695293546,
+            -0.017375990551512618
+          ]
+        },
+        "distance_to_goal": {
+          "baseline": 1.4978453343889366,
+          "intervention": 1.2611677825916559,
+          "delta": -0.2366775517972807,
+          "scene_cluster_ci95": [
+            -0.6844430359895342,
+            0.043110664080207535
+          ]
+        },
+        "path_length": {
+          "baseline": 9.120150337616602,
+          "intervention": 11.715781728426615,
+          "delta": 2.595631390810013,
+          "scene_cluster_ci95": [
+            1.6575238284965357,
+            3.4283498562872405
+          ]
+        },
+        "primitive_action_count": {
+          "baseline": 56.3125,
+          "intervention": 76.29166666666667,
+          "delta": 19.979166666666668,
+          "scene_cluster_ci95": [
+            12.3640625,
+            26.885416666666668
+          ]
+        },
+        "high_level_steps": {
+          "baseline": 7.541666666666667,
+          "intervention": 7.875,
+          "delta": 0.3333333333333333,
+          "scene_cluster_ci95": [
+            0.20833333333333331,
+            0.46875
+          ]
+        },
+        "collision_events": {
+          "baseline": 1.9270833333333333,
+          "intervention": 2.375,
+          "delta": 0.4479166666666667,
+          "scene_cluster_ci95": [
+            0.03125,
+            0.8541666666666667
+          ]
+        }
+      },
+      "success_rescued": [
+        "4790",
+        "6098"
+      ],
+      "success_lost": [
+        "3203",
+        "10490",
+        "4841"
+      ],
+      "quality_rescued": [
+        "4790"
+      ],
+      "quality_rescue_scenes": [
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb"
+      ],
+      "ndtw_harmed": [
+        "1943",
+        "7661",
+        "4616",
+        "2024",
+        "3203",
+        "9092",
+        "418",
+        "4904",
+        "7478",
+        "7091",
+        "6020",
+        "4010",
+        "7676",
+        "2519",
+        "8057",
+        "8582",
+        "5192",
+        "10490",
+        "6098",
+        "5573",
+        "2477",
+        "4841"
+      ],
+      "spl_harmed": [
+        "10430",
+        "7661",
+        "4616",
+        "2024",
+        "3203",
+        "9092",
+        "418",
+        "4904",
+        "7478",
+        "7091",
+        "7676",
+        "2519",
+        "8582",
+        "5192",
+        "10490",
+        "5573",
+        "4841"
+      ],
+      "by_scene": {
+        "mp3d/17DRP5sb8fy/17DRP5sb8fy.glb": {
+          "success": 0.0,
+          "spl": -0.01238075134270153,
+          "ndtw": -0.01036189105134037,
+          "sdtw": -0.01036189105134037,
+          "distance_to_goal": 0.0,
+          "path_length": 0.16666682561238608,
+          "primitive_action_count": 0.8333333333333334,
+          "high_level_steps": 0.08333333333333333,
+          "collision_events": 0.0
+        },
+        "mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb": {
+          "success": -0.08333333333333333,
+          "spl": -0.06867588289957521,
+          "ndtw": -0.07794547457668059,
+          "sdtw": -0.0719269581043261,
+          "distance_to_goal": 0.13430005311965942,
+          "path_length": 2.848137458165487,
+          "primitive_action_count": 19.833333333333332,
+          "high_level_steps": 0.08333333333333333,
+          "collision_events": 0.6666666666666666
+        },
+        "mp3d/8WUmhLawc2A/8WUmhLawc2A.glb": {
+          "success": 0.0,
+          "spl": -0.08138439310471672,
+          "ndtw": -0.03745350307122868,
+          "sdtw": -0.03745350307122868,
+          "distance_to_goal": -0.026813338200251263,
+          "path_length": 2.4828622341156006,
+          "primitive_action_count": 17.666666666666668,
+          "high_level_steps": 0.25,
+          "collision_events": 1.0
+        },
+        "mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb": {
+          "success": 0.08333333333333333,
+          "spl": 0.03683167533517974,
+          "ndtw": 0.03981099195579382,
+          "sdtw": 0.04716137340103451,
+          "distance_to_goal": -1.730964299912254,
+          "path_length": 1.3693564732869465,
+          "primitive_action_count": 11.416666666666666,
+          "high_level_steps": 0.5,
+          "collision_events": -0.6666666666666666
+        },
+        "mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb": {
+          "success": 0.0,
+          "spl": -0.07049415110044417,
+          "ndtw": -0.08919814113583589,
+          "sdtw": -0.056696497306473366,
+          "distance_to_goal": -0.12169337458908558,
+          "path_length": 4.601764917373657,
+          "primitive_action_count": 36.083333333333336,
+          "high_level_steps": 0.5,
+          "collision_events": 0.08333333333333333
+        },
+        "mp3d/ZMojNkEp431/ZMojNkEp431.glb": {
+          "success": -0.08333333333333333,
+          "spl": -0.12668467870946384,
+          "ndtw": -0.11955405515134294,
+          "sdtw": -0.1359614065896689,
+          "distance_to_goal": 0.13428614536921182,
+          "path_length": 3.0392754077911377,
+          "primitive_action_count": 22.083333333333332,
+          "high_level_steps": 0.6666666666666666,
+          "collision_events": 0.5833333333333334
+        },
+        "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb": {
+          "success": 0.0,
+          "spl": -0.10545548507335212,
+          "ndtw": -0.1148024527584226,
+          "sdtw": -0.10275818229816343,
+          "distance_to_goal": -0.23875522861878076,
+          "path_length": 3.4819107055664062,
+          "primitive_action_count": 31.416666666666668,
+          "high_level_steps": 0.25,
+          "collision_events": 1.4166666666666667
+        },
+        "mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb": {
+          "success": 0.0,
+          "spl": -0.12360209362737869,
+          "ndtw": -0.08100433400873013,
+          "sdtw": -0.08100433400873013,
+          "distance_to_goal": -0.0437803715467453,
+          "path_length": 2.7750771045684814,
+          "primitive_action_count": 20.5,
+          "high_level_steps": 0.3333333333333333,
+          "collision_events": 0.5
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "full_vs_cost_matched": {
+      "success": {
+        "delta": 0.010416666666666666,
+        "scene_cluster_ci95": [
+          0.0,
+          0.03125
+        ]
+      },
+      "spl": {
+        "delta": 0.007417866951589668,
+        "scene_cluster_ci95": [
+          -0.005464721676104108,
+          0.025093479967234444
+        ]
+      },
+      "ndtw": {
+        "delta": -0.0014943348962139253,
+        "scene_cluster_ci95": [
+          -0.004429442846061765,
+          0.0005426440996165091
+        ]
+      },
+      "sdtw": {
+        "delta": 0.0003946831121719446,
+        "scene_cluster_ci95": [
+          -0.003977892259418312,
+          0.0052541247110998186
+        ]
+      },
+      "distance_to_goal": {
+        "delta": 0.014167569112032652,
+        "scene_cluster_ci95": [
+          -0.00841448704401652,
+          0.046181270076582834
+        ]
+      },
+      "path_length": {
+        "delta": -0.0029477824767430625,
+        "scene_cluster_ci95": [
+          -0.0795741081237793,
+          0.07545922199885051
+        ]
+      },
+      "primitive_action_count": {
+        "delta": 0.23958333333333334,
+        "scene_cluster_ci95": [
+          -0.20833333333333337,
+          0.7708333333333333
+        ]
+      },
+      "high_level_steps": {
+        "delta": 0.041666666666666664,
+        "scene_cluster_ci95": [
+          0.010416666666666666,
+          0.07291666666666666
+        ]
+      },
+      "collision_events": {
+        "delta": 0.020833333333333332,
+        "scene_cluster_ci95": [
+          0.0,
+          0.0625
+        ]
+      }
+    },
+    "full_vs_cost_own": {
+      "success": {
+        "delta": 0.0,
+        "scene_cluster_ci95": [
+          -0.041666666666666664,
+          0.05208333333333333
+        ]
+      },
+      "spl": {
+        "delta": -0.003948797508079471,
+        "scene_cluster_ci95": [
+          -0.04254547771989494,
+          0.04863136211120612
+        ]
+      },
+      "ndtw": {
+        "delta": -0.004028821013421482,
+        "scene_cluster_ci95": [
+          -0.011112831460155077,
+          0.005386040157941123
+        ]
+      },
+      "sdtw": {
+        "delta": -0.009369644627510637,
+        "scene_cluster_ci95": [
+          -0.041758421032622166,
+          0.029657861983744142
+        ]
+      },
+      "distance_to_goal": {
+        "delta": 0.049355319468304515,
+        "scene_cluster_ci95": [
+          -0.14775368214274448,
+          0.201309099017332
+        ]
+      },
+      "path_length": {
+        "delta": -0.15321684380372366,
+        "scene_cluster_ci95": [
+          -0.498222624262174,
+          0.18414812522629875
+        ]
+      },
+      "primitive_action_count": {
+        "delta": -2.1666666666666665,
+        "scene_cluster_ci95": [
+          -5.583333333333333,
+          0.8135416666666513
+        ]
+      },
+      "high_level_steps": {
+        "delta": -0.19791666666666666,
+        "scene_cluster_ci95": [
+          -0.36458333333333337,
+          0.04166666666666669
+        ]
+      },
+      "collision_events": {
+        "delta": 0.14583333333333334,
+        "scene_cluster_ci95": [
+          -0.13541666666666663,
+          0.3958333333333333
+        ]
+      }
+    },
+    "full_vs_mean_random": {
+      "success": {
+        "delta": 0.03819444444444445,
+        "scene_cluster_ci95": [
+          0.010416666666666666,
+          0.06944444444444445
+        ]
+      },
+      "spl": {
+        "delta": 0.08839442204008745,
+        "scene_cluster_ci95": [
+          0.04430710267355628,
+          0.12803027455830182
+        ]
+      },
+      "ndtw": {
+        "delta": 0.06895988625497576,
+        "scene_cluster_ci95": [
+          0.042762736617805844,
+          0.0928338351266062
+        ]
+      },
+      "sdtw": {
+        "delta": 0.0670996629450416,
+        "scene_cluster_ci95": [
+          0.03223954576355386,
+          0.10217512162252596
+        ]
+      },
+      "distance_to_goal": {
+        "delta": -0.23276372996365854,
+        "scene_cluster_ci95": [
+          -0.602303789692491,
+          0.010220364201813922
+        ]
+      },
+      "path_length": {
+        "delta": -2.389089365800222,
+        "scene_cluster_ci95": [
+          -3.259348369803693,
+          -1.4344250063101451
+        ]
+      },
+      "primitive_action_count": {
+        "delta": -17.64236111111111,
+        "scene_cluster_ci95": [
+          -24.052083333333332,
+          -10.652256944444453
+        ]
+      },
+      "high_level_steps": {
+        "delta": -0.09027777777777779,
+        "scene_cluster_ci95": [
+          -0.19444444444444442,
+          -0.010416666666666678
+        ]
+      },
+      "collision_events": {
+        "delta": -0.3819444444444445,
+        "scene_cluster_ci95": [
+          -0.9306423611111111,
+          0.09374999999999992
+        ]
+      }
+    }
+  },
+  "replication_point_gates": {
+    "positive_sr": true,
+    "nondecreasing_spl": true,
+    "nondecreasing_ndtw": true,
+    "no_primitive_increase": false,
+    "quality_rescue_in_two_scenes": true,
+    "sr_beats_mean_random": true
+  },
+  "replication_point_gate_passed": false,
+  "added_feature_value_gate_passed": false,
+  "decision": "NO-GO for scaling this frozen first-disagreement recipe",
+  "scene_clusters": 8,
+  "bootstrap_seed": 20261025,
+  "bootstrap_samples": 5000,
+  "limits": [
+    "Prospective research-route holdout with overlapping scenes; not baseline-checkpoint holdout or benchmark.",
+    "One simulator seed; random choices are not training replications.",
+    "COST also uses old full-return labels; this tests feature sufficiency, not label-horizon necessity.",
+    "Failure of this policy does not prove proposal coverage failure or invalidate every graph value method."
+  ],
+  "hashes": {
+    "research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json": "3cf19a00e3425bb534eb00b3317d0622c15da22e77faae4a6a525bbb723f8b33",
+    "research/tools/analyze_preference_replication.py": "401e8e5b330f5214ccbcbb2cf5674c5db3567a54d0b24911e3260884b5a8fed0",
+    "research/results/graph_value_prospective_replication_001/registration_001.json": "dde12551d6f22adf4517bf41ee22878ad418b4d2d66329ba423cb1b9df73668f",
+    "research/results/graph_value_prospective_replication_001/sampling_001/route_audit_001.json": "4cb117a581037801f497efda561ce36b8abacb1e5dabf8557f0436a7329ac36e",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/paired_episodes.json": "ecdde353462d1be48ac34c550565b543382a266627e3be40ae712b563c81b32c",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/summary.json": "b73b72094df69e3afb620b7abd47b4913c730b42b28c67d37ecbeb368bc2b9db",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_metrics/summary.json": "5405412eaabf27d5b768a1531ca7c65a0e918e5b0ddb9e67ded10d1fd3432569",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/paired_episodes.json": "d4c0778c06b744b1bd2e7844dba19367b101ca3ad0916c869ca25d9643f3df20",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/summary.json": "df30db790e25decff6f6abe71c69af6e7794196fbf766a3513893d5947d4230a",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_metrics/summary.json": "18426ae656ca8bae7898ebfc363a4ab62ee788b442cef5508e35783a03bba806",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/paired_episodes.json": "b80c2d922e35e4b0535081ef6b8f92ae9ed8a0d60bbe38fd99acc83ead96b91e",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/summary.json": "a693e21ab275b5c9f92aa60abd92cb2de4f40139869da72c02a52b3640696657",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_metrics/summary.json": "2e7923d130c552817fb4bb69069d2ac20b9fdf711e41d675cd975d5b4bedfb1b",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_audit/paired_episodes.json": "f02bc53c5e26a5f1e37549329a8860387dcc39a23f2e98abf73f6f2454369e01",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_audit/summary.json": "adb1ecd6815b26e073caae1adc5ffc0e17272fda59f04be2d571e978be53cf6c",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_metrics/summary.json": "07f7805303a156cb8049142454b6264b1791afb26d90e95d05acba97e90ac767",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_audit/paired_episodes.json": "fce456f090df75262428aa7546aa2026461954cb8f379389f6396198083a2724",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_audit/summary.json": "0bb85c1b5985d9696651235ff853bc1d4810f4d4717cf04249ba3227c484882d",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_metrics/summary.json": "f69dab3295a98ff91ee4c23eaaf928f40edf673668ffb2baad5d35e56f4468e1",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_audit/paired_episodes.json": "e0ebd174f9f63cbb89e11b064cec68f73126db00da4e83bfc4d3c99c7022abab",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_audit/summary.json": "b993fb2587a3981c1ce8c84a787aa04a0525c34ce433340b5f3699b4285174d9",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_metrics/summary.json": "4e45f5aa284b5463a89fe8a7c932d2610580723a00d3b329ab2e39083daf81f5"
+  }
+}

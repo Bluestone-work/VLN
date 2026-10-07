@@ -1,0 +1,2064 @@
+{
+  "experiment_id": "GRAPH-VALUE-PROSPECTIVE-REPLICATION-001",
+  "execution_git_commit": "6fb04822b81c5a08003b11271d6d9b9ecbaf763c",
+  "all_registered_arms_complete": true,
+  "files": [
+    {
+      "path": "research/results/graph_value_prospective_replication_001/analysis_001/states.jsonl",
+      "bytes": 437934,
+      "sha256": "7e60930ea20b34053b4bfe183da5767632846c580642bcf0d549563d2f6dd999",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/analysis_001/summary.json",
+      "bytes": 12413,
+      "sha256": "4c1beeb475db3ed445d9762f8143283083af88f978f377b7cb736b7372a4df1a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/audit.stdout.log",
+      "bytes": 4369,
+      "sha256": "4cb117a581037801f497efda561ce36b8abacb1e5dabf8557f0436a7329ac36e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/capture_001/graph_options/graph_options.jsonl",
+      "bytes": 136668860,
+      "sha256": "9e6e0dbd246bdae8f3de0c2e7e40f2d0d6f80ff1d37b5da9a3fcda019d958f4b",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/capture_001/manifest.json",
+      "bytes": 63178,
+      "sha256": "4cf33898afa632fa68c8125f5290a259dee9b47f8ba864e34c65f08886b8d302",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/capture_001/traces/worker_seed100.jsonl",
+      "bytes": 24596542,
+      "sha256": "96ab76cb022101d8bab39c91785d7c1f7f5a37a722f413e6f6ea62326f31af70",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/capture_001/traces/worker_seed100.yaml",
+      "bytes": 162980,
+      "sha256": "63ec6f86c24f3d353fd2dc802b14d6f1a47c918e81decae5e4b989be05ec07db",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/amendment.json",
+      "bytes": 829,
+      "sha256": "7f011dae725cf231e2cf603ff2add887e710501f38db16fd9fc37ea158734b0d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/analysis.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/analysis.stdout.log",
+      "bytes": 2562,
+      "sha256": "78a9c6ad77fc7bdd42eb5d737833d1a18685a4cfaec13241e43c913df4530b21",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/original_failed_status.json",
+      "bytes": 13819,
+      "sha256": "2cb97b30e8c4fae74c29c6803b3d09191b64d4dc865a449b4783e22d9f5862f2",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_disabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_disabled_audit.stdout.log",
+      "bytes": 2049,
+      "sha256": "8b4905b134659787b1a5bfc395ca18e81d25d095e1deacfbf22247d866f72b50",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_disabled_retry001.stderr.log",
+      "bytes": 55774,
+      "sha256": "4cb2b331742e3fe2782c932bab274ae76e70d77b04e19ec5f82e20631b53f91e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_disabled_retry001.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_enabled.stderr.log",
+      "bytes": 55775,
+      "sha256": "1342cceeb656baebfae02dd9a3f6714dc130ce0a3757ed9d8c38c5e26deb6391",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_enabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_enabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_enabled_audit.stdout.log",
+      "bytes": 2327,
+      "sha256": "6eee52a233c9c510fcde90d0f65ff32690e2f3ce21f249ea0fe2098bde7d3992",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_enabled_metrics.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261031_enabled_metrics.stdout.log",
+      "bytes": 825,
+      "sha256": "07f7805303a156cb8049142454b6264b1791afb26d90e95d05acba97e90ac767",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_disabled.stderr.log",
+      "bytes": 55774,
+      "sha256": "a5146e266ca23862b22fa7beff5bbc6cb37ba5baffb43f1d8f662df1b5827054",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_disabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_disabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_disabled_audit.stdout.log",
+      "bytes": 2021,
+      "sha256": "1bb5818928e28a16e00df5f4c89d5cdc4667e05e4a034a797822b01838dbb00e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_enabled.stderr.log",
+      "bytes": 55775,
+      "sha256": "2d9b18e3a69e460dac34cba013c0dff95d81943eb36c34a9a02a98030d27ccb3",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_enabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_enabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_enabled_audit.stdout.log",
+      "bytes": 2271,
+      "sha256": "ca78fd90925c5b221c55e99049d3c42592f398ccf826fd3aa045abf30381aa49",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_enabled_metrics.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261032_enabled_metrics.stdout.log",
+      "bytes": 825,
+      "sha256": "f69dab3295a98ff91ee4c23eaaf928f40edf673668ffb2baad5d35e56f4468e1",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_disabled.stderr.log",
+      "bytes": 55774,
+      "sha256": "65d0e45c31800c7c2e1487b7a8c6b4520a73eabcf353507cd7c41485b21f374c",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_disabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_disabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_disabled_audit.stdout.log",
+      "bytes": 2007,
+      "sha256": "ffdaaed04778e9ea7b6f86de58256a0b2d155e987b329d430f0506dc99c85d50",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_enabled.stderr.log",
+      "bytes": 55775,
+      "sha256": "4d59b6a61cd3ac68ec203c373b468343d3b3b3cb44473facb0d2372ce2331682",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_enabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_enabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_enabled_audit.stdout.log",
+      "bytes": 2243,
+      "sha256": "7382286a28ff2cb8605f02f81fbf4d3a01afb38ca80ca7767b759129b1a6ac24",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_enabled_metrics.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/random_20261033_enabled_metrics.stdout.log",
+      "bytes": 825,
+      "sha256": "4e45f5aa284b5463a89fe8a7c932d2610580723a00d3b329ab2e39083daf81f5",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/continuation_001/status.json",
+      "bytes": 28361,
+      "sha256": "6a5c6414e5f51e2da5cb5a61e9a8c229b9b559d86fc91772c8a77cf808e48b04",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/control_001/manifest.json",
+      "bytes": 63219,
+      "sha256": "f40aefc4f533c957d3c4193901b2571717a3d34d88f34033d1e9c3980d5cedf5",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/analysis.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/analysis.stdout.log",
+      "bytes": 7203,
+      "sha256": "8549b517246b5d26192672a7b2d8995b5343287ca07f909ed7666c49fba1cbec",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/capture.stderr.log",
+      "bytes": 55774,
+      "sha256": "3e9c604425cdbca4232a97b4e63362caed64596406ce16ff1c4d2728f3168415",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/capture.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/control.stderr.log",
+      "bytes": 55774,
+      "sha256": "adfc717fea3f9f8a383c1a17331174cc930d08ecee7c7688b6341004abc3ce91",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/control.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/git_diff.patch",
+      "bytes": 38309,
+      "sha256": "7100b90c405f97ed795a537f1292b2c30942fd2ca7d74e74e92a2ffb858d5cd4",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/git_status.txt",
+      "bytes": 55459,
+      "sha256": "2ceb5f3854199cf2e3266cce4237a42ccf853cf1bc03b6f1398e38ae870ad900",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/integrity.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/integrity.stdout.log",
+      "bytes": 776,
+      "sha256": "5b3dda7783e03a9e9664b57170a5fa8bac4d76228b466f843f4ebcf7b53e64a7",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/noninterference.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/noninterference.stdout.log",
+      "bytes": 6128,
+      "sha256": "f19b869e7f35532e6a76985bc2576863fff77a6db6380e1f19ae43ec5e9b4e20",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/pip_freeze.txt",
+      "bytes": 3780,
+      "sha256": "10a0000161f29e169d0c30a3ba25bcf7e738c2a627282fa39977731af37dcb89",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/probe.stderr.log",
+      "bytes": 42931,
+      "sha256": "f246c1b72ecd2fb22e719f76f4f1a8b84ec9dd44da1820eb14bcedd095e2198b",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/probe.stdout.log",
+      "bytes": 14378,
+      "sha256": "ffc58494416cbda531a917354c657718f67d2ca65c3bc9d5baf08de2dd86e2dd",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/cycle_001/status.json",
+      "bytes": 8874,
+      "sha256": "e09b163956aabd4d275720cc122d8d9e3a55143a0d30ce4ffd3d3d67cd2ad604",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/equivalence.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/equivalence.stdout.log",
+      "bytes": 1872,
+      "sha256": "312284b3952bd3147be003f535b6cca75ce709583991465749eb4266b72e80fd",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/equivalence_audit_001/summary.json",
+      "bytes": 1872,
+      "sha256": "312284b3952bd3147be003f535b6cca75ce709583991465749eb4266b72e80fd",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/execution_dirty.patch",
+      "bytes": 38309,
+      "sha256": "7100b90c405f97ed795a537f1292b2c30942fd2ca7d74e74e92a2ffb858d5cd4",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/pretrain_src/run_pt/r2r_model_config_dep.json",
+      "bytes": 1057,
+      "sha256": "042393a1d8971954fe14d6948b42a31b92e75b2e793ca8ab4bba0c8cee8524c0",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/GRAPH_VALUE_PROSPECTIVE_REPLICATION_PROTOCOL.md",
+      "bytes": 4656,
+      "sha256": "402889991d72fa5b151d7b36c209ad73707a524edfb4e4c042f7d6924c356026",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json",
+      "bytes": 3744,
+      "sha256": "3cf19a00e3425bb534eb00b3317d0622c15da22e77faae4a6a525bbb723f8b33",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/results/graph_value_prospective_replication_001/models/cost.json",
+      "bytes": 2434,
+      "sha256": "84d0366d4ba717e90e9f204171e259e4f2288b30939a1b48870e02683be7d14a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/results/graph_value_prospective_replication_001/models/full.json",
+      "bytes": 2058,
+      "sha256": "18cf29c67222ab884b87154df332fc6c006f4e85eee007f11d310263d7d3353f",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/results/graph_value_prospective_replication_001/sampling_001/manifest.json",
+      "bytes": 16496,
+      "sha256": "007e93651d058d921b6b2fd9d271686d5148729586cfec5aa96e5a27742f1617",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/results/graph_value_prospective_replication_001/sampling_001/route_audit_001.json",
+      "bytes": 4369,
+      "sha256": "4cb117a581037801f497efda561ce36b8abacb1e5dabf8557f0436a7329ac36e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/analyze_preference_replication.py",
+      "bytes": 6997,
+      "sha256": "401e8e5b330f5214ccbcbb2cf5674c5db3567a54d0b24911e3260884b5a8fed0",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/audit_single_intervention.py",
+      "bytes": 15145,
+      "sha256": "16d8c8b8deb288ccb6c0f5ee3bb679dc4180982cdf0b35bc79bbcace5452e36f",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/freeze_reduced_graph_preference.py",
+      "bytes": 3053,
+      "sha256": "4e739792f55a7997c015ce6601ec1ba25e5a8a33a5ed806cee493c4e31f04dd0",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/graph_value_feasibility.py",
+      "bytes": 12000,
+      "sha256": "3154f554eb4e4e0500051440aeb326b480a978000cbd5c0784ba428fb5d12c97",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/prepare_outcome_blind_sample.py",
+      "bytes": 4352,
+      "sha256": "69c5cb00215a35c06ba51ccfcef651f431f2761dcdbbaa4f428262adb9818728",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/prepare_preference_replication_schedules.py",
+      "bytes": 5133,
+      "sha256": "d72a4f902739c65892bac805c07b00ff01e5cb24e18b36ad678f5a98c22083d0",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/prepare_ranker_intervention_schedule.py",
+      "bytes": 5669,
+      "sha256": "8bf7951555788dd90880661b7bd1b9d46d4cb65140342d79b227564fb512ac53",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/run_graph_option_cycle.py",
+      "bytes": 4366,
+      "sha256": "bbaa5aa56861c2f641909715d42e14d8695e03140afaaa7c91273c6873b2ddba",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/run_option_capture.py",
+      "bytes": 4280,
+      "sha256": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/run_preference_replication.py",
+      "bytes": 5044,
+      "sha256": "cbe5cd10fed1be29b47b489ace6b23c7a4c7d15acabaa2159c8d90420156f227",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/run_single_intervention.py",
+      "bytes": 4582,
+      "sha256": "41e993beb9c735942218969e4ae311d9c4fab0659f9b33ebb53e873954942e6d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/verify_intervention_metrics.py",
+      "bytes": 3363,
+      "sha256": "141fa04916be8c79afa0dfe5a78c98ea3b55f1ed0bdec93a51ddbe81720843a9",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/run_r2r/iter_train.yaml",
+      "bytes": 2223,
+      "sha256": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/adaptive_action/graph_option_capture.py",
+      "bytes": 7247,
+      "sha256": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/adaptive_action/option_calibration.py",
+      "bytes": 5958,
+      "sha256": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/adaptive_action/single_intervention.py",
+      "bytes": 10857,
+      "sha256": "2274f37666a7c531b334115f7cf616cf1150f7a68e42937e020df4477bd285cd",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/common/environments.py",
+      "bytes": 22297,
+      "sha256": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/config/default.py",
+      "bytes": 10465,
+      "sha256": "e4114522e11db807aa4f2fdf4e04c20a12591c29891e8396e70e713882dba10c",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/models/Policy_ViewSelection_ETP.py",
+      "bytes": 20682,
+      "sha256": "d9a4ac9cfd5bb74533428ee50dd095e4a902a90ee56c553a27ac2668e0c7cf05",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/models/graph_utils.py",
+      "bytes": 13344,
+      "sha256": "a4876fd7d1598c0f39b4186f769f62f31181fa16a038cf9d35562cf79a62c205",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/ss_trainer_ETP.py",
+      "bytes": 99288,
+      "sha256": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/execution_sources_001/manifest.json",
+      "bytes": 10473,
+      "sha256": "ac17282726a380975c511adfdb5dae67c83d913e7dfd8aa1f7a33030108adbfa",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/figures_001/paired_effects.pdf",
+      "bytes": 24633,
+      "sha256": "d0626c42c39e61f10b31057b36080199fb4dfb22a392e105040efa27c1281b7c",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/figures_001/paired_effects.png",
+      "bytes": 136282,
+      "sha256": "f18c8b1a3422f21309713f63ab114fca1abf2e9a048d313c02b6e811fb777913",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/integrity_001/summary.json",
+      "bytes": 776,
+      "sha256": "5b3dda7783e03a9e9664b57170a5fa8bac4d76228b466f843f4ebcf7b53e64a7",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/model_fit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/model_fit.stdout.log",
+      "bytes": 218,
+      "sha256": "4e52e598bff4cf257a5cecc4cb2dfee98de0a5030f0342d1c0272a218358bfde",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/models/cost.json",
+      "bytes": 2434,
+      "sha256": "84d0366d4ba717e90e9f204171e259e4f2288b30939a1b48870e02683be7d14a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/models/full.json",
+      "bytes": 2058,
+      "sha256": "18cf29c67222ab884b87154df332fc6c006f4e85eee007f11d310263d7d3353f",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/noninterference_001/capture_aggregate.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/noninterference_001/capture_episodes.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/noninterference_001/control_aggregate.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/noninterference_001/control_episodes.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/noninterference_001/summary.json",
+      "bytes": 6128,
+      "sha256": "f19b869e7f35532e6a76985bc2576863fff77a6db6380e1f19ae43ec5e9b4e20",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/paired_analysis_001/summary.json",
+      "bytes": 52318,
+      "sha256": "df09ede9be7bc769aa5074b3e9f81633df51c36c474872fcc2105bf13f6ca0e0",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/plot.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/plot.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/probe_full001/branch_traces.jsonl",
+      "bytes": 388326451,
+      "sha256": "28bf125ce02ace1e72c0651f31a5146623a509efe611173460bec5f0cc77bf70",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/probe_full001/decisions.jsonl",
+      "bytes": 4302922,
+      "sha256": "f6cb4e8d8254eca3552443c081263a5cd8917b38bcf67270f2be45d426c6668b",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/probe_full001/manifest.json",
+      "bytes": 25562,
+      "sha256": "6e08e91b72c10edf1fd323c3494faf6ce36b63c667c58d908df68850bbfffd72",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/probe_full001/order_checks.jsonl",
+      "bytes": 942755,
+      "sha256": "4346fd15a22eb8f0ff4d19c13621668ec686120e6564b781a81ae13af9122ad4",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/probe_full001/sentinel_checks.jsonl",
+      "bytes": 326340,
+      "sha256": "be2c911c50548f2b7553081a3febdc537b61da379524ffa353a6bc5ac016fb9a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/probe_full001/summary.json",
+      "bytes": 757,
+      "sha256": "1663399c51cb8a2d66a178a343b0526fb0262ffee999dd9128315d2c7650e169",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/registration_001.json",
+      "bytes": 6965,
+      "sha256": "dde12551d6f22adf4517bf41ee22878ad418b4d2d66329ba423cb1b9df73668f",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled/hook/decisions.jsonl",
+      "bytes": 1022985,
+      "sha256": "46b41626ed1e26280212d8850d3b681644a7a0d15498ba25dc0d53902e541ee9",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled/hook/summary.json",
+      "bytes": 504,
+      "sha256": "0da9c1623e85f1070b2b978d719bdf86c81b6f6f6b41fbf084678a003b105f07",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled/manifest.json",
+      "bytes": 126377,
+      "sha256": "fc64637fe7df019c738dac718af66390408aa7a094d430ff17b990afa03ef53c",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled/traces/worker_seed100.jsonl",
+      "bytes": 24596542,
+      "sha256": "96ab76cb022101d8bab39c91785d7c1f7f5a37a722f413e6f6ea62326f31af70",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled/traces/worker_seed100.yaml",
+      "bytes": 163074,
+      "sha256": "812e458b9a1ee6c251780991976c9173b2c77f8165835ccb3c8a6a759dcb2a7f",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled.stderr.log",
+      "bytes": 55774,
+      "sha256": "5763ff61adaa7e1b6e4cdc3d6c7d0a6b15c922a6c1763e614d763eaea2ebd4e8",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled_audit/event_checks.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled_audit/paired_episodes.json",
+      "bytes": 201068,
+      "sha256": "83f7559b5ac617f617cd4f03d6b3901007449730c7e6e01c8560b53c3a28fc3d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled_audit/provenance.json",
+      "bytes": 2050,
+      "sha256": "00bd9cd394ba1f304a56fb9d7cea463bbafba469f91202060259a8e252e28691",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled_audit/summary.json",
+      "bytes": 20043,
+      "sha256": "751fd7811a1e1d01f77edef2106004130616447b81d1385218071b2d096b79c0",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_disabled_audit.stdout.log",
+      "bytes": 1976,
+      "sha256": "0f3ca373229c2ad26fd8d56b19d1297d145cee40a018d1d4502a34da53cde178",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled/hook/decisions.jsonl",
+      "bytes": 1052852,
+      "sha256": "e9b08b9cd0b07908c84de609574f7ddd060273a1e79d5934657382a883c29eb2",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled/hook/summary.json",
+      "bytes": 782,
+      "sha256": "9b08c46f9aed97429f78ea5e297beba2c3fa1f13c1742c34acc43ec550a30951",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled/manifest.json",
+      "bytes": 126655,
+      "sha256": "55a5c06771786093fabcab5c424cbdfb17b6f1a3f99316c99aceb7a26e73b768",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled/traces/worker_seed100.jsonl",
+      "bytes": 25170282,
+      "sha256": "030ebc656cf223730a31e3f0dd548fb213fdd3a5a653e4c5a193067868b3d1c5",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled/traces/worker_seed100.yaml",
+      "bytes": 163068,
+      "sha256": "8e04c6725bd22dae08c3099e7761f79986e1181ffca3c23eec0a22511a606b3e",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled.stderr.log",
+      "bytes": 55774,
+      "sha256": "d7247de65b10a874ad8f5276e6e85329a704f2db46ae8d2b62d45183d8867423",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/event_checks.json",
+      "bytes": 16318,
+      "sha256": "b5c1f53473ea7a9d981fce51cfddb3f054db53d176574bc49a94abc0f5fef35b",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/paired_episodes.json",
+      "bytes": 203855,
+      "sha256": "b80c2d922e35e4b0535081ef6b8f92ae9ed8a0d60bbe38fd99acc83ead96b91e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/provenance.json",
+      "bytes": 2044,
+      "sha256": "872c56cda416c2f6a6171247fc8ece5ee3e99a77f9b7c893d331b020e9754f7a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/summary.json",
+      "bytes": 38282,
+      "sha256": "a693e21ab275b5c9f92aa60abd92cb2de4f40139869da72c02a52b3640696657",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit.stdout.log",
+      "bytes": 2183,
+      "sha256": "6abe8625c51aac940ed83fa32b0259be45cc08a9926d331c7b66ed30ecea71b1",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_metrics/episodes.json",
+      "bytes": 42720,
+      "sha256": "02a2d9f425cd26990fbc426aa2aa343bbb59f0bfac28d260181540ec88e5a5da",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_metrics/summary.json",
+      "bytes": 819,
+      "sha256": "2e7923d130c552817fb4bb69069d2ac20b9fdf711e41d675cd975d5b4bedfb1b",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_metrics.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_metrics.stdout.log",
+      "bytes": 819,
+      "sha256": "2e7923d130c552817fb4bb69069d2ac20b9fdf711e41d675cd975d5b4bedfb1b",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled/hook/decisions.jsonl",
+      "bytes": 1022934,
+      "sha256": "00df633e4d4ff94be97856b7570cdcba147cf2ed3afc14b98028c67da2fb856f",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled/hook/summary.json",
+      "bytes": 1121,
+      "sha256": "a242271de5b07d19cdd1a947c1805a7005bfd496170e83aa97527050a4de64d3",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled/manifest.json",
+      "bytes": 227839,
+      "sha256": "c446e12cd5388adf46cf4cfc37cc4750489744ad55922cedf9e4c3756089cf6c",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled/traces/worker_seed100.jsonl",
+      "bytes": 24596542,
+      "sha256": "96ab76cb022101d8bab39c91785d7c1f7f5a37a722f413e6f6ea62326f31af70",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled/traces/worker_seed100.yaml",
+      "bytes": 163050,
+      "sha256": "b82d85807175fcd5ed0172290678315beb259b6d3653d67a5ce436d8f75995a1",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled.stderr.log",
+      "bytes": 55774,
+      "sha256": "f7c8767ad5664e568c9de1dd71f15184c2e43f2392184f3713c57206ecbeefd5",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled_audit/event_checks.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled_audit/paired_episodes.json",
+      "bytes": 201017,
+      "sha256": "5b4671bd24478d9c2bd6696d61652810ef4bbb58d7f4b3920505758bcd5bdeda",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled_audit/provenance.json",
+      "bytes": 2026,
+      "sha256": "243c537c9052ad65fd79f12c7df9f73d85d5ffe5100aab2306ab3fd4eb162a62",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled_audit/summary.json",
+      "bytes": 20762,
+      "sha256": "cd264817b9dcc1de5f3f7fd991af442d3d661f8269e80ca315eb20d33411fc09",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_disabled_audit.stdout.log",
+      "bytes": 2691,
+      "sha256": "a988177ecbd449358cda0a91e790ec7ebdcde63b763f39c477dca3a9c70d5f14",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled/hook/decisions.jsonl",
+      "bytes": 1087946,
+      "sha256": "720c811cc3957d8bd6d2b86861a245822203eaadd4bd3c366d40ced002e0a9ba",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled/hook/summary.json",
+      "bytes": 2016,
+      "sha256": "5214d315a1f3c6b61e5f84d94a8f941053d6e94dda42b6c6f4bfff9a461ee994",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled/manifest.json",
+      "bytes": 228109,
+      "sha256": "b9c93043bedf05363da8acde42f5f07b2a960bd85b01424188417ee60eb4df1d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled/traces/worker_seed100.jsonl",
+      "bytes": 25963460,
+      "sha256": "4eaf51a1c2ee40282bfb7ad7b6596b07456709ee7f7d263fefaf384569171028",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled/traces/worker_seed100.yaml",
+      "bytes": 163044,
+      "sha256": "6857a7ffa66bddacc09b3eee01b3487c7c4e63519513c5ad7f5ebc4b3681285a",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled.stderr.log",
+      "bytes": 55774,
+      "sha256": "77622e5c5bb3088bb71d5bdb5c06b4041cd1e77267287fe7bd4c5578bc5407f7",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/event_checks.json",
+      "bytes": 52790,
+      "sha256": "b664b692b5879dbc68cc125debed3d75409304f973eebe0f02c5fb2198a427eb",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/paired_episodes.json",
+      "bytes": 209186,
+      "sha256": "d4c0778c06b744b1bd2e7844dba19367b101ca3ad0916c869ca25d9643f3df20",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/provenance.json",
+      "bytes": 2020,
+      "sha256": "e917f746be23e5445d40ae35cd1674d40370d023b65f19bd9ccf44ee1338cb02",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/summary.json",
+      "bytes": 78777,
+      "sha256": "df30db790e25decff6f6abe71c69af6e7794196fbf766a3513893d5947d4230a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit.stdout.log",
+      "bytes": 3616,
+      "sha256": "1cb99b993ee03972c6c558d27caa0e34cea94f56f9ef810c738dde744afcf09f",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_metrics/episodes.json",
+      "bytes": 42812,
+      "sha256": "d30a1dd17d41a6351cccdb7c1b0870b20e5904208524ca0fed6bf38f0e5eae7b",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_metrics/summary.json",
+      "bytes": 811,
+      "sha256": "18426ae656ca8bae7898ebfc363a4ab62ee788b442cef5508e35783a03bba806",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_metrics.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_metrics.stdout.log",
+      "bytes": 811,
+      "sha256": "18426ae656ca8bae7898ebfc363a4ab62ee788b442cef5508e35783a03bba806",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/foundation.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/foundation.stdout.log",
+      "bytes": 229,
+      "sha256": "88f0587f7b2dab13cbdfe29ac722dde20c67092c0c2f0c178379da45b38f1bff",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled/hook/decisions.jsonl",
+      "bytes": 1022979,
+      "sha256": "bb3a511fc2e5eb13a6e19815b925c9e5567017182d8c7830f17fb40edd364bd1",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled/hook/summary.json",
+      "bytes": 576,
+      "sha256": "7cd0bd41f74f7548af336316044c3ef5ae2345807006b077ac3bb3f1cbdedde9",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled/manifest.json",
+      "bytes": 139208,
+      "sha256": "e3a606e7626ff8688fd30a810684ee2dff104d3eeb5ca166333e6cf13c9c096e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled/traces/worker_seed100.jsonl",
+      "bytes": 24596542,
+      "sha256": "96ab76cb022101d8bab39c91785d7c1f7f5a37a722f413e6f6ea62326f31af70",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled/traces/worker_seed100.yaml",
+      "bytes": 163026,
+      "sha256": "6eeccdabe025ea4ae1e457618365029d42ac0bd912cd844dbf970ada263b7cca",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled.stderr.log",
+      "bytes": 55774,
+      "sha256": "10088cb2624a3201dcb4b25a2896f717917b0090c1cd7baba6b916bcbd4be77e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled_audit/event_checks.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled_audit/paired_episodes.json",
+      "bytes": 201062,
+      "sha256": "6d0686c4116bc94d927d1adae076fb3a04615a73b00446040fdfb5c2b3c4aa7e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled_audit/provenance.json",
+      "bytes": 2002,
+      "sha256": "8a82a359936768b0de7d28338ce9e7c6a653e3c3562373e3c79392756b60b049",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled_audit/summary.json",
+      "bytes": 20137,
+      "sha256": "9f22bad296bc699363af1fc2409370a3704d9d9fd40de6de7ac02350488accb6",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_disabled_audit.stdout.log",
+      "bytes": 2052,
+      "sha256": "0c91259b62c4eeb1bb170e757b699488f143d8fe42e484a2282b2b26949d2685",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled/hook/decisions.jsonl",
+      "bytes": 1060175,
+      "sha256": "8bd441ffa1facca30893f9dbbe0862d703c2f3db7db759bf676dbecb3f8e6159",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled/hook/summary.json",
+      "bytes": 926,
+      "sha256": "717bdb2ab674b1e426cf775661b1e2f42d99099315f7f3b8f8970c2eb968ae4f",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled/manifest.json",
+      "bytes": 139470,
+      "sha256": "4e66cbf98fe42b1b2c68cd5e4b2f30c84bf63a3901561547c6e05f95ca404c22",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled/traces/worker_seed100.jsonl",
+      "bytes": 25305218,
+      "sha256": "ce5a6c3e968cc3354732803810b1c5b473956e6653ea5730481f40e03e7e25f3",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled/traces/worker_seed100.yaml",
+      "bytes": 163020,
+      "sha256": "a00469e2875a2ec7cc57d7bc7b131f28870c06b0e89553d5bf913564b8095e50",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled.stderr.log",
+      "bytes": 55774,
+      "sha256": "0b9a9ca09d654a4c36fe8241527c302e5d3056d864bdddd284c627e6eaba6ce7",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled.stdout.log",
+      "bytes": 6850,
+      "sha256": "bfe9dd7d511868637a6083b08c1838ed1860f9c3ddcf02aa0d50d77fbd8a195e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/event_checks.json",
+      "bytes": 20597,
+      "sha256": "30ac64dba76156f5cf24cb9bd8ba8c69b306aa4e14597a7de82861715e9ba295",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/paired_episodes.json",
+      "bytes": 204476,
+      "sha256": "ecdde353462d1be48ac34c550565b543382a266627e3be40ae712b563c81b32c",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/provenance.json",
+      "bytes": 1996,
+      "sha256": "e4a13932849d92465748b208b90ac5384db00e74eb38402847462838c47c28fd",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/summary.json",
+      "bytes": 43196,
+      "sha256": "b73b72094df69e3afb620b7abd47b4913c730b42b28c67d37ecbeb368bc2b9db",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit.stdout.log",
+      "bytes": 2343,
+      "sha256": "4f6d695dffe2d106ec22034f88a17081bb4b02dd41f3cf74b9370536f3b10104",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_metrics/episodes.json",
+      "bytes": 42751,
+      "sha256": "7816a55c6d40384604f4eb02841b4c66f0fd6d0b7208a3665a2b91c4f76499c4",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_metrics/summary.json",
+      "bytes": 803,
+      "sha256": "5405412eaabf27d5b768a1531ca7c65a0e918e5b0ddb9e67ded10d1fd3432569",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_metrics.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_metrics.stdout.log",
+      "bytes": 803,
+      "sha256": "5405412eaabf27d5b768a1531ca7c65a0e918e5b0ddb9e67ded10d1fd3432569",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled/hook/decisions.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled/manifest.json",
+      "bytes": 163404,
+      "sha256": "75795056f3b52bf44b7c462ab99fecf36a3403e7a5dc8bed82cd3e4cc027d63b",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled.stderr.log",
+      "bytes": 2301,
+      "sha256": "b308a936c9ec0fcc6ace8c1b227f746fa58fda981b0fc2fc0a40365bba193dea",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled_audit/event_checks.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled_audit/paired_episodes.json",
+      "bytes": 201063,
+      "sha256": "b0941876a0df94034704b74a21b7ed054b2afd4423661eac418bf8f1e7e7018a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled_audit/provenance.json",
+      "bytes": 2122,
+      "sha256": "ef7415dd47aff640061a99c85e3873d818e72626666928934e13ffcc1477709f",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled_audit/summary.json",
+      "bytes": 20070,
+      "sha256": "ed46b91a740a6d63a313e5a82e4ac23f6d809d5f219d81676b9d8f83f4154f3a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled_retry001/hook/decisions.jsonl",
+      "bytes": 1022980,
+      "sha256": "b61302357575842496e9e0710277fcb6fe5948a8bac10cab758b69e214fd1c2b",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled_retry001/hook/summary.json",
+      "bytes": 564,
+      "sha256": "e65e80fdbf84d350306b24f598e07e4adcac168b35d2a74e1a43842949e38e5d",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled_retry001/manifest.json",
+      "bytes": 163571,
+      "sha256": "20f670c15a2c6e52dbb09fc2cc081fc1887b9f40a23fd8cbb5ea0626421ab9e1",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled_retry001/traces/worker_seed100.jsonl",
+      "bytes": 24596542,
+      "sha256": "96ab76cb022101d8bab39c91785d7c1f7f5a37a722f413e6f6ea62326f31af70",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_disabled_retry001/traces/worker_seed100.yaml",
+      "bytes": 163146,
+      "sha256": "7554822d97bc65a010a18cc253645ccc2631db2abc34cc4d51922a169112698f",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled/hook/decisions.jsonl",
+      "bytes": 1106284,
+      "sha256": "f75393198fae17fbc0713a6455495773635d15e0886fe3536dbd9f1885cdc024",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled/hook/summary.json",
+      "bytes": 902,
+      "sha256": "a6097a053572413e46c539a760eeda08a41c7e86ac6f6d55964c03a6d923d4d3",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled/manifest.json",
+      "bytes": 163881,
+      "sha256": "4b4f3393277693cea89243918a3a89850fe6b06781497e68ba49a646014b91a1",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled/traces/worker_seed100.jsonl",
+      "bytes": 25968164,
+      "sha256": "0ae750480dca090a2c08653ae4721cded95f8b625cc017afa87ac2f44fb1b023",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled/traces/worker_seed100.yaml",
+      "bytes": 163086,
+      "sha256": "e4ea296d28a78a766ff694f0c5e69859740ea242c1ee3b53590089e74dc877ff",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_audit/event_checks.json",
+      "bytes": 19945,
+      "sha256": "1186590961eff245d8369c9058f46315237cb7d7b870a6247a3b86d8ff0fcbee",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_audit/paired_episodes.json",
+      "bytes": 204538,
+      "sha256": "f02bc53c5e26a5f1e37549329a8860387dcc39a23f2e98abf73f6f2454369e01",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_audit/provenance.json",
+      "bytes": 2062,
+      "sha256": "9241dd8b8322b076564d391413ba73386f0bb9114d677e0a893b9c4d175c401d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_audit/summary.json",
+      "bytes": 42472,
+      "sha256": "adb1ecd6815b26e073caae1adc5ffc0e17272fda59f04be2d571e978be53cf6c",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_metrics/episodes.json",
+      "bytes": 42695,
+      "sha256": "c9467ea165bb62cf905b7618415ddd63d8e47fed133c66ec9139ad9cfbdf4e23",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261031_enabled_metrics/summary.json",
+      "bytes": 825,
+      "sha256": "07f7805303a156cb8049142454b6264b1791afb26d90e95d05acba97e90ac767",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_disabled/hook/decisions.jsonl",
+      "bytes": 1022982,
+      "sha256": "81cf0e41e5ef111bc73e359a859ca679a3a539c3d3b61fe6df9af7a987cfde62",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_disabled/hook/summary.json",
+      "bytes": 540,
+      "sha256": "9b887804964c98f37287d8505f86cfeea273ecac8efe5fe0424e200513597b1d",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_disabled/manifest.json",
+      "bytes": 156928,
+      "sha256": "7d6b5e40b7d65d75f857778635edf81183d3a34dfe1c48ea54e82e5aa8dc4d07",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_disabled/traces/worker_seed100.jsonl",
+      "bytes": 24596542,
+      "sha256": "96ab76cb022101d8bab39c91785d7c1f7f5a37a722f413e6f6ea62326f31af70",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_disabled/traces/worker_seed100.yaml",
+      "bytes": 163092,
+      "sha256": "4f3fcce47043f44670c23636e2bd405e2738c03233a4c86747fca82d2ae645ea",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_disabled_audit/event_checks.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_disabled_audit/paired_episodes.json",
+      "bytes": 201065,
+      "sha256": "af4a73e295f8cd7262022c4b9e46fe9f715b103fd2064d25f6731a8eca0f4e55",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_disabled_audit/provenance.json",
+      "bytes": 2068,
+      "sha256": "1e389e7a0cc76a0d54e6c17acb9548a76d0a493254e2625ce18b0ea663401213",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_disabled_audit/summary.json",
+      "bytes": 20126,
+      "sha256": "5814a42d623d4d99e494a338edebab4808b1ed4b4ec9a818e84d8a95813d26bc",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled/hook/decisions.jsonl",
+      "bytes": 1089265,
+      "sha256": "1a8d62ebb49840c4232ffa6d5bdd635c3a3e5e7c2a4947a9a5872262cc970171",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled/hook/summary.json",
+      "bytes": 854,
+      "sha256": "2566c5f53da2a4e1da4e35c9d49372146598c2a6e97d215369a8cdc5a11773c5",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled/manifest.json",
+      "bytes": 157212,
+      "sha256": "798c11c67d01efebfc083c80cd705718ad8ed9885b20aa321076315bb24c706f",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled/traces/worker_seed100.jsonl",
+      "bytes": 25768607,
+      "sha256": "b712edfc41303e42df10896859f0dc98b3dff370a42e30b6a802999f7611006d",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled/traces/worker_seed100.yaml",
+      "bytes": 163086,
+      "sha256": "f32699520b8321518f6fba51025263b8e3a9b6cbbbddfffb962c29b9e2d7ad16",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_audit/event_checks.json",
+      "bytes": 18551,
+      "sha256": "244984f79b24884933c957645f7b81846554675451197e2c839a8b50ddfd39ae",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_audit/paired_episodes.json",
+      "bytes": 204261,
+      "sha256": "fce456f090df75262428aa7546aa2026461954cb8f379389f6396198083a2724",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_audit/provenance.json",
+      "bytes": 2062,
+      "sha256": "477f81d745a2fd7e86109160498ff05bc66555322594bac362a41e3c2a8e1b8a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_audit/summary.json",
+      "bytes": 40843,
+      "sha256": "0bb85c1b5985d9696651235ff853bc1d4810f4d4717cf04249ba3227c484882d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_metrics/episodes.json",
+      "bytes": 42690,
+      "sha256": "227dac49d0cfff9bf03f76ae99ca7e9523c5bcfab9bb50874ffe6a73678f87af",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261032_enabled_metrics/summary.json",
+      "bytes": 825,
+      "sha256": "f69dab3295a98ff91ee4c23eaaf928f40edf673668ffb2baad5d35e56f4468e1",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_disabled/hook/decisions.jsonl",
+      "bytes": 1022983,
+      "sha256": "54b95f56d6c9866cee7e29fcc8a6f4551d75e40b30362753a608f3d43c27f311",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_disabled/hook/summary.json",
+      "bytes": 528,
+      "sha256": "e4c93c787f473364d35bf5d7b2a4a747c77cd265af51f687de65f8ee20d5a400",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_disabled/manifest.json",
+      "bytes": 155656,
+      "sha256": "3ad3142d3d8aeec5242b45d167cc67b11d1faef5fc751743a5b2ed7755e4f375",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_disabled/traces/worker_seed100.jsonl",
+      "bytes": 24596542,
+      "sha256": "96ab76cb022101d8bab39c91785d7c1f7f5a37a722f413e6f6ea62326f31af70",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_disabled/traces/worker_seed100.yaml",
+      "bytes": 163092,
+      "sha256": "545b409d5a883737d67cdd42bfe25cf112760c503791f8f09b34c009167c89b2",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_disabled_audit/event_checks.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_disabled_audit/paired_episodes.json",
+      "bytes": 201066,
+      "sha256": "d0c7237cecf2a8e3d7f859145bb5b8e72e38a88dad71f873baaea2935019be97",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_disabled_audit/provenance.json",
+      "bytes": 2068,
+      "sha256": "04df4cfdc4c6c19a27c37ba466dfa38950906fdd3e5731be2fc4364d9caae49b",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_disabled_audit/summary.json",
+      "bytes": 19786,
+      "sha256": "07e50435c9b79589ffe1d3f48a92c8a81205cb7536c8e0de83d0d062342b534a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled/hook/decisions.jsonl",
+      "bytes": 1109337,
+      "sha256": "e6ae3124798f43a320cb65bd1d6d1eff57242cdeedebd2b26bdcba9896477dbe",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled/hook/summary.json",
+      "bytes": 830,
+      "sha256": "4056b8357964a017bf7b9d9b131ae7f758335367bac73972f53dd066c34fabbb",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled/manifest.json",
+      "bytes": 155940,
+      "sha256": "0cfd4997f2501eeb10cd96db1d2f362f4ee1c5c98ab8208d6f78d4a0aaf8e3ff",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled/traces/worker_seed100.jsonl",
+      "bytes": 26012448,
+      "sha256": "1a17bd385eee171c997492d1de5dce35c72ba06f837ef440ea75cd19cad02ec9",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled/traces/worker_seed100.yaml",
+      "bytes": 163086,
+      "sha256": "497813aea68656582e51a9c0dbc67ac85ce6034b9416e3f2fab05572e332fe9f",
+      "included_in_git_review": false
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_audit/event_checks.json",
+      "bytes": 17832,
+      "sha256": "6300e25768d9f82afaf465739106ca95db9b2a9928c150c85927d439a89ace43",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_audit/paired_episodes.json",
+      "bytes": 204198,
+      "sha256": "e0ebd174f9f63cbb89e11b064cec68f73126db00da4e83bfc4d3c99c7022abab",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_audit/provenance.json",
+      "bytes": 2062,
+      "sha256": "3ac53052be5078faca9bddf87f55b8083a4cdc419043f2d2478597196eb1f502",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_audit/summary.json",
+      "bytes": 39643,
+      "sha256": "b993fb2587a3981c1ce8c84a787aa04a0525c34ce433340b5f3699b4285174d9",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_metrics/episodes.json",
+      "bytes": 42643,
+      "sha256": "8054dc3e96b08a46508eddf1f301ddd21d134f756c2c9e7ac28d23f35d4d0280",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/random_20261033_enabled_metrics/summary.json",
+      "bytes": 825,
+      "sha256": "4e45f5aa284b5463a89fe8a7c932d2610580723a00d3b329ab2e39083daf81f5",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/schedules.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/schedules.stdout.log",
+      "bytes": 372,
+      "sha256": "7de94fe925be5c3bca055aeb00377264524e556e86bef382da32f43c62ea5079",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/replication_cycle_001/status.json",
+      "bytes": 28361,
+      "sha256": "6a5c6414e5f51e2da5cb5a61e9a8c229b9b559d86fc91772c8a77cf808e48b04",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_capture/stats_ckpt_59_train.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_capture/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_control/stats_ckpt_59_train.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_control/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_matched_disabled/stats_ckpt_59_train.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_matched_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_matched_enabled/stats_ckpt_59_train.json",
+      "bytes": 660,
+      "sha256": "3e69b5eb001a3426632ab98c141efbf701b29e1970186a2ac5aa5d8c1e65ef7b",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_matched_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54486,
+      "sha256": "982ad914422951ed2c900cfa64d6ba1691e18892c101ea620bec9b04496678dc",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_own_disabled/stats_ckpt_59_train.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_own_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_own_enabled/stats_ckpt_59_train.json",
+      "bytes": 695,
+      "sha256": "1001f395f5fba041d468da6996d829d0b59cd020ecb8747a6583144eb2f94f55",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_own_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54318,
+      "sha256": "7d9a965cf95ce8514386f941cf3c0b0e15ebfbc146fa5497bd9d3759b0cb7a1c",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_full_disabled/stats_ckpt_59_train.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_full_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_full_enabled/stats_ckpt_59_train.json",
+      "bytes": 650,
+      "sha256": "7d049eb1e240f0fcbbbd8fb43a021fd1e813ec09d98696f44106a8044194cbbe",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_full_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54458,
+      "sha256": "352f99afef5c9035df203aad5f997504ad60f71fba3a19ab5b04a389a902bd4a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261031_disabled_retry001/stats_ckpt_59_train.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261031_disabled_retry001/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261031_enabled/stats_ckpt_59_train.json",
+      "bytes": 698,
+      "sha256": "1bd36f2f7bcd6a8af6469a0bf23bd43d75686f4f143ca5a0e4bd896d46e3c5ee",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261031_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54457,
+      "sha256": "e300d048378d5d7a43b72a73942358c909fdf5ef98b19f177ed7d25a2c4957c8",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261032_disabled/stats_ckpt_59_train.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261032_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261032_enabled/stats_ckpt_59_train.json",
+      "bytes": 650,
+      "sha256": "1dd04746e454a59b54c5a6db39cad6e55dc0bbbb320f46e36a2695febf452fc8",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261032_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54400,
+      "sha256": "c811bd1d34ded69bd82d2c4b99bdbdc278a3e33d97979a34738dfe0430536e45",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261033_disabled/stats_ckpt_59_train.json",
+      "bytes": 676,
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261033_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54309,
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261033_enabled/stats_ckpt_59_train.json",
+      "bytes": 663,
+      "sha256": "5651fc579388fd9452f42e7553b19d8486ebf599e0aec7ba72c7c9054a77cd71",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261033_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "bytes": 54377,
+      "sha256": "135aba01a98b66c7355482aaced5e24fcc34e72541b4f4a0e5cf9d3479631fa1",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/route_diagnostics.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/route_diagnostics.stdout.log",
+      "bytes": 122,
+      "sha256": "82860aa768a0c9839920b585469f8f99f1b5d579fa1d75f1111580974d48ee8f",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/route_diagnostics_001/routes.csv",
+      "bytes": 182138,
+      "sha256": "3c276ea11a2c7baabb91bf87688456d1896c62dae02e508e5c0368a391131482",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/route_diagnostics_001/summary.json",
+      "bytes": 35930,
+      "sha256": "43e10e4f92ce99163b5742e98a046d665407c824b2e7ccaf6db8e7f7d296678f",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/sampling.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/sampling.stdout.log",
+      "bytes": 4486,
+      "sha256": "76d9f35e133379bc490cae8ba096954cfed267abaae8b57f1caeb8c17d7e266a",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/sampling_001/manifest.json",
+      "bytes": 16496,
+      "sha256": "007e93651d058d921b6b2fd9d271686d5148729586cfec5aa96e5a27742f1617",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/sampling_001/route_audit_001.json",
+      "bytes": 4369,
+      "sha256": "4cb117a581037801f497efda561ce36b8abacb1e5dabf8557f0436a7329ac36e",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/sampling_001/train96_bertidx.json.gz",
+      "bytes": 646542,
+      "sha256": "fc25a07d34aee09a167078a943712c3f6119d0c774b986172c25ed191cbfb80b",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/schedules_001/cost_matched.json",
+      "bytes": 56363,
+      "sha256": "e034ba062538ec927e84e06192c8bc61e86ec0ef3e934af5e85e695947599eae",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/schedules_001/cost_own.json",
+      "bytes": 149813,
+      "sha256": "a0feb26cd9cbe5b008284a0765359f5afb69a762edefcceb0498ed6b13584dd6",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/schedules_001/full.json",
+      "bytes": 68168,
+      "sha256": "14bd50c18340ac52399c35fff44e8f2b7eb4e43186a122926284db76672fe876",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/schedules_001/random_20261031.json",
+      "bytes": 90380,
+      "sha256": "4fc7d1b5fcf36ceb1a0b0f4c6c7a60d697958f31df6528e009781bc80af2d6ac",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/schedules_001/random_20261032.json",
+      "bytes": 84163,
+      "sha256": "e959a48fb9c2f5a52b9f61a043b080ce18727fedde00d239bcd7a0c1a03f7973",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/schedules_001/random_20261033.json",
+      "bytes": 82991,
+      "sha256": "e40ee45db6775492f33842cfab99042a8ce152125201fc05b47f0a4dd0d4db45",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/tests.stderr.log",
+      "bytes": 101,
+      "sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+      "included_in_git_review": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/tests.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_in_git_review": true
+    }
+  ],
+  "copied_external_native_metrics": [
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_capture/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_capture/stats_ckpt_59_train.json",
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_capture/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_capture/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_control/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_control/stats_ckpt_59_train.json",
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_control/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_control/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_cost_matched_disabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_matched_disabled/stats_ckpt_59_train.json",
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_cost_matched_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_matched_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_cost_matched_enabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_matched_enabled/stats_ckpt_59_train.json",
+      "sha256": "3e69b5eb001a3426632ab98c141efbf701b29e1970186a2ac5aa5d8c1e65ef7b"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_cost_matched_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_matched_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "982ad914422951ed2c900cfa64d6ba1691e18892c101ea620bec9b04496678dc"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_cost_own_disabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_own_disabled/stats_ckpt_59_train.json",
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_cost_own_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_own_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_cost_own_enabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_own_enabled/stats_ckpt_59_train.json",
+      "sha256": "1001f395f5fba041d468da6996d829d0b59cd020ecb8747a6583144eb2f94f55"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_cost_own_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_cost_own_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "7d9a965cf95ce8514386f941cf3c0b0e15ebfbc146fa5497bd9d3759b0cb7a1c"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_full_disabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_full_disabled/stats_ckpt_59_train.json",
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_full_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_full_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_full_enabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_full_enabled/stats_ckpt_59_train.json",
+      "sha256": "7d049eb1e240f0fcbbbd8fb43a021fd1e813ec09d98696f44106a8044194cbbe"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_full_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_full_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "352f99afef5c9035df203aad5f997504ad60f71fba3a19ab5b04a389a902bd4a"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261031_disabled_retry001/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261031_disabled_retry001/stats_ckpt_59_train.json",
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261031_disabled_retry001/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261031_disabled_retry001/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261031_enabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261031_enabled/stats_ckpt_59_train.json",
+      "sha256": "1bd36f2f7bcd6a8af6469a0bf23bd43d75686f4f143ca5a0e4bd896d46e3c5ee"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261031_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261031_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "e300d048378d5d7a43b72a73942358c909fdf5ef98b19f177ed7d25a2c4957c8"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261032_disabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261032_disabled/stats_ckpt_59_train.json",
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261032_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261032_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261032_enabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261032_enabled/stats_ckpt_59_train.json",
+      "sha256": "1dd04746e454a59b54c5a6db39cad6e55dc0bbbb320f46e36a2695febf452fc8"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261032_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261032_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "c811bd1d34ded69bd82d2c4b99bdbdc278a3e33d97979a34738dfe0430536e45"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261033_disabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261033_disabled/stats_ckpt_59_train.json",
+      "sha256": "18208ce709c7f302aa09f1d9fd8282c902d55a1d70c5834b1888cd6c8398db7d"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261033_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261033_disabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "86256b985311a7f4d4c8e0bb522c481762e1208a94cbb6c089aef3b83fe9b544"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261033_enabled/stats_ckpt_59_train.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261033_enabled/stats_ckpt_59_train.json",
+      "sha256": "5651fc579388fd9452f42e7553b19d8486ebf599e0aec7ba72c7c9054a77cd71"
+    },
+    {
+      "source_path": "data/logs/eval_results/aaa_gv_prospective001_random_20261033_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "archive_path": "research/results/graph_value_prospective_replication_001/review_archive_001/native_metrics/aaa_gv_prospective001_random_20261033_enabled/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "135aba01a98b66c7355482aaced5e24fcc34e72541b4f4a0e5cf9d3479631fa1"
+    }
+  ],
+  "policy": "Include files <=2 MiB except raw traces, graph-option payloads, hook decisions and pycache. All excluded files remain local with SHA256. This manifest and its selection list do not self-hash."
+}

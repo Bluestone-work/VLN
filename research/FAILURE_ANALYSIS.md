@@ -350,3 +350,21 @@ new prospectively frozen route sample; no adaptive density, RL, VLM or interrupt
 policy training. Full evidence: `GRAPH_VALUE_ROUTE_EXECUTION_REPORT.md`;
 protocol: `GRAPH_VALUE_ROUTE_INTERVENTION_PROTOCOL.md`; next gate:
 `GRAPH_VALUE_ROUTE_NEXT_GATE.md`.
+
+
+## 2026-10-08 — prospective executed-choice harms and continuation cost
+
+The complete frozen 96-route replication rescues 1943, 4790, 4010 and 6098,
+but loses 4841. The first three rescues preserve nDTW in two scenes; 6098 loses
+15.688 pp nDTW and adds 44 primitives. Across FULL's 29 changed routes, 15 lose
+nDTW, 12 lose SPL and 18 use more primitives. Fourteen have a cheaper replacement
+option but a more expensive complete episode. Total option cost falls by 133,
+remaining continuation cost rises by 254, net +121. Costs on rescued routes sum
+to −25, on the lost route −16, and on unchanged-success-status routes +162.
+
+These are exact-prefix paired outcome descriptions, not a causal partition of
+ranking/proposal/execution/termination. No new target critical census was used
+to fit or tune the scorer. The frozen recipe fails its registered cost gate;
+do not reinterpret this as permission to modify the waypoint predictor or train
+an interrupt policy. See `GRAPH_VALUE_PROSPECTIVE_REPLICATION_REPORT.md` and
+`results/graph_value_prospective_replication_001/route_diagnostics_001/routes.csv`.

@@ -1,0 +1,21 @@
+{
+  "experiment_id": "GRAPH-VALUE-PROSPECTIVE-REPLICATION-001",
+  "episodes": 96,
+  "scenes": 8,
+  "decisions": 724,
+  "forward_branches": 7994,
+  "reversed_decisions": 192,
+  "reversed_branches": 2032,
+  "selected_sentinels_passed": 724,
+  "order_checks_passed": 2032,
+  "max_sentinel_endpoint_error_m": 0.0,
+  "max_order_endpoint_error_m": 0.0,
+  "sentinel_sensor_matches": 724,
+  "order_sensor_matches": 2032,
+  "all_required_gates_passed": true,
+  "baseline_noninterference_passed": true,
+  "all_admissible_options_complete": true,
+  "masked_budget_options_skipped": 101,
+  "limits": "96 train routes / 8 scenes; research-route holdout, scene overlap allowed; checkpoint trained on train; seed 100; not benchmark.",
+  "privileged_analysis_only": true
+}

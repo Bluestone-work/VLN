@@ -1,0 +1,175 @@
+{
+  "execution_git_commit": "6fb04822b81c5a08003b11271d6d9b9ecbaf763c",
+  "registered_files_still_match": true,
+  "snapshots": [
+    {
+      "path": "pretrain_src/run_pt/r2r_model_config_dep.json",
+      "sha256": "042393a1d8971954fe14d6948b42a31b92e75b2e793ca8ab4bba0c8cee8524c0",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/pretrain_src/run_pt/r2r_model_config_dep.json",
+      "registered_before_capture": false
+    },
+    {
+      "path": "research/GRAPH_VALUE_PROSPECTIVE_REPLICATION_PROTOCOL.md",
+      "sha256": "402889991d72fa5b151d7b36c209ad73707a524edfb4e4c042f7d6924c356026",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/GRAPH_VALUE_PROSPECTIVE_REPLICATION_PROTOCOL.md",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json",
+      "sha256": "3cf19a00e3425bb534eb00b3317d0622c15da22e77faae4a6a525bbb723f8b33",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/configs/GRAPH_VALUE_PROSPECTIVE_REPLICATION_001.json",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/models/cost.json",
+      "sha256": "84d0366d4ba717e90e9f204171e259e4f2288b30939a1b48870e02683be7d14a",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/results/graph_value_prospective_replication_001/models/cost.json",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/models/full.json",
+      "sha256": "18cf29c67222ab884b87154df332fc6c006f4e85eee007f11d310263d7d3353f",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/results/graph_value_prospective_replication_001/models/full.json",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/sampling_001/manifest.json",
+      "sha256": "007e93651d058d921b6b2fd9d271686d5148729586cfec5aa96e5a27742f1617",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/results/graph_value_prospective_replication_001/sampling_001/manifest.json",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/results/graph_value_prospective_replication_001/sampling_001/route_audit_001.json",
+      "sha256": "4cb117a581037801f497efda561ce36b8abacb1e5dabf8557f0436a7329ac36e",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/results/graph_value_prospective_replication_001/sampling_001/route_audit_001.json",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/analyze_preference_replication.py",
+      "sha256": "401e8e5b330f5214ccbcbb2cf5674c5db3567a54d0b24911e3260884b5a8fed0",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/analyze_preference_replication.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/audit_single_intervention.py",
+      "sha256": "16d8c8b8deb288ccb6c0f5ee3bb679dc4180982cdf0b35bc79bbcace5452e36f",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/audit_single_intervention.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/freeze_reduced_graph_preference.py",
+      "sha256": "4e739792f55a7997c015ce6601ec1ba25e5a8a33a5ed806cee493c4e31f04dd0",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/freeze_reduced_graph_preference.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/graph_value_feasibility.py",
+      "sha256": "3154f554eb4e4e0500051440aeb326b480a978000cbd5c0784ba428fb5d12c97",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/graph_value_feasibility.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/prepare_outcome_blind_sample.py",
+      "sha256": "69c5cb00215a35c06ba51ccfcef651f431f2761dcdbbaa4f428262adb9818728",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/prepare_outcome_blind_sample.py",
+      "registered_before_capture": false
+    },
+    {
+      "path": "research/tools/prepare_preference_replication_schedules.py",
+      "sha256": "d72a4f902739c65892bac805c07b00ff01e5cb24e18b36ad678f5a98c22083d0",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/prepare_preference_replication_schedules.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/prepare_ranker_intervention_schedule.py",
+      "sha256": "8bf7951555788dd90880661b7bd1b9d46d4cb65140342d79b227564fb512ac53",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/prepare_ranker_intervention_schedule.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/run_graph_option_cycle.py",
+      "sha256": "bbaa5aa56861c2f641909715d42e14d8695e03140afaaa7c91273c6873b2ddba",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/run_graph_option_cycle.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/run_option_capture.py",
+      "sha256": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/run_option_capture.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/run_preference_replication.py",
+      "sha256": "cbe5cd10fed1be29b47b489ace6b23c7a4c7d15acabaa2159c8d90420156f227",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/run_preference_replication.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/run_single_intervention.py",
+      "sha256": "41e993beb9c735942218969e4ae311d9c4fab0659f9b33ebb53e873954942e6d",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/run_single_intervention.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "research/tools/verify_intervention_metrics.py",
+      "sha256": "141fa04916be8c79afa0dfe5a78c98ea3b55f1ed0bdec93a51ddbe81720843a9",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/research/tools/verify_intervention_metrics.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "run_r2r/iter_train.yaml",
+      "sha256": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/run_r2r/iter_train.yaml",
+      "registered_before_capture": true
+    },
+    {
+      "path": "vlnce_baselines/adaptive_action/graph_option_capture.py",
+      "sha256": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/adaptive_action/graph_option_capture.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "vlnce_baselines/adaptive_action/option_calibration.py",
+      "sha256": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/adaptive_action/option_calibration.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "vlnce_baselines/adaptive_action/single_intervention.py",
+      "sha256": "2274f37666a7c531b334115f7cf616cf1150f7a68e42937e020df4477bd285cd",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/adaptive_action/single_intervention.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "vlnce_baselines/common/environments.py",
+      "sha256": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/common/environments.py",
+      "registered_before_capture": true
+    },
+    {
+      "path": "vlnce_baselines/config/default.py",
+      "sha256": "e4114522e11db807aa4f2fdf4e04c20a12591c29891e8396e70e713882dba10c",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/config/default.py",
+      "registered_before_capture": false
+    },
+    {
+      "path": "vlnce_baselines/models/Policy_ViewSelection_ETP.py",
+      "sha256": "d9a4ac9cfd5bb74533428ee50dd095e4a902a90ee56c553a27ac2668e0c7cf05",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/models/Policy_ViewSelection_ETP.py",
+      "registered_before_capture": false
+    },
+    {
+      "path": "vlnce_baselines/models/graph_utils.py",
+      "sha256": "a4876fd7d1598c0f39b4186f769f62f31181fa16a038cf9d35562cf79a62c205",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/models/graph_utils.py",
+      "registered_before_capture": false
+    },
+    {
+      "path": "vlnce_baselines/ss_trainer_ETP.py",
+      "sha256": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+      "snapshot": "research/results/graph_value_prospective_replication_001/execution_sources_001/files/vlnce_baselines/ss_trainer_ETP.py",
+      "registered_before_capture": true
+    }
+  ],
+  "limits": "Additional dirty files not pinned before capture are snapshots at archival time; do not claim retrospective preregistration. No execution source was changed by this continuation."
+}

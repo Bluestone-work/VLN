@@ -1049,3 +1049,79 @@ Next:
 Prospectively freeze a fresh route-disjoint sample and compare the unchanged
 full scorer with a graph-logit/rank plus distance-only preference fit on the old
 training cohort. No target tuning, RL/VLM, density selector or interrupt model.
+
+
+## 2026-10-07 / GRAPH-VALUE-PROSPECTIVE-REPLICATION-001 — registration
+
+Question:
+Does the frozen first-disagreement scorer replicate on new research-held-out
+routes, and does its full feature set add value beyond graph scores and execution
+distance at the same decision time?
+
+Change:
+New metadata-only sample, seed 20261024: 96 routes in 8 scenes, excluding 1,584
+registered route keys including both prior 96-route cohorts. FULL weights are
+byte-identical to the old model. COST fits four features on the same 5,668 old
+strict-dominance pairs. Six arms: FULL, COST-own, COST-matched at FULL states,
+and three matched random seeds 20261031/32/33. Native is the paired baseline.
+
+Control:
+R2R released checkpoint, seed 100, sensors, sliding/controller, masks, native
+STOP and 15-decision horizon. All 96 routes retained. Models/protocol/source
+hashes frozen before target capture and committed as 6fb0482. No target labels
+used in fitting; no resampling after native outcomes. Scene overlap allowed.
+
+Result:
+Sampling audit passed with zero declared-route overlap; 3 new focused tests pass.
+Navigation outcomes pending; do not treat registration as a positive result.
+
+Interpretation:
+This is a prospective follow-up to the exploratory execution gain, still on
+baseline training scenes/routes. COST uses the same full-return labels, so the
+contrast tests feature sufficiency, not whether long-horizon labels are necessary.
+
+Next:
+Complete all predeclared fidelity gates and six actual-navigation arms; apply
+the frozen point and matched-feature gates without tuning or changing the sample.
+
+
+## 2026-10-08 / GRAPH-VALUE-PROSPECTIVE-REPLICATION-001 — completed
+
+Question:
+Does the frozen first-disagreement result replicate, and do full features add
+value over graph scores plus execution distance at matched timing?
+
+Change:
+Executed all six prospectively frozen arms on 96 new declared-research-held-out
+routes in eight overlapping training scenes. FULL remains byte-identical;
+COST uses four features fitted on old labels. No target fitting or resampling.
+
+Control:
+Same checkpoint, simulator seed 100, sensors, masks, controller/sliding, STOP
+and 15-decision horizon. All 96 routes retained. Six disabled/enabled audits
+pass; 3,456 independent metric reconstructions and 838 cross-arm identical-action
+checks pass. Original random31 worker-startup BrokenPipeError produced no
+navigation records; preserved and retried under continuation_001 amendment,
+with identical registered scientific settings and unchanged execution HEAD.
+
+Result:
+FULL rescues 4, loses 1; SR/SPL/nDTW +3.125/+1.771/+0.938 pp;
+primitives +1.260/route. All four primary scene CIs include zero.
+COST-own: same SR gain, +3.427 primitives/route. COST-matched: SR +2.083 pp,
++1.021 primitives/route. Random SR changes 0/−1.042/−1.042 pp; all worsen
+SPL/nDTW/cost. FULL-vs-COST-matched added-feature gate fails.
+Post hoc: changed options −133 primitives, continuation +254, total +121;
+14 routes have cheaper replacements but costlier complete episodes.
+
+Interpretation:
+NO-GO for scaling this frozen first-disagreement recipe: the prospective mean
+primitive gate fails. Positive SR point changes and superiority to random are
+preserved, but do not override the gate or establish benchmark generalization.
+The data do not show that extra full-model features are necessary, that interrupts
+would solve the problem, or that proposal coverage is the dominant failure.
+
+Next:
+Before further learning, separately register a development-only diagnostic of
+pre-action evidence for harmful early substitutions using full continuation
+cost, native-success routes and abstention. Do not tune on this replication,
+expand this recipe, pool it post hoc into a positive claim, or add RL/VLM.
