@@ -1,0 +1,53 @@
+{
+  "pairs": 16,
+  "metrics": {
+    "success": {
+      "mean_top_minus_seeded": 0.0625,
+      "scene_bootstrap_95": [
+        -0.125,
+        0.25
+      ]
+    },
+    "spl": {
+      "mean_top_minus_seeded": 0.13534948914917727,
+      "scene_bootstrap_95": [
+        -0.10053518100436179,
+        0.3531483295999073
+      ]
+    },
+    "ndtw": {
+      "mean_top_minus_seeded": 0.12194297736624239,
+      "scene_bootstrap_95": [
+        -0.05235648657424315,
+        0.3106074044045776
+      ]
+    },
+    "distance_to_goal": {
+      "mean_top_minus_seeded": -0.12167735304683447,
+      "scene_bootstrap_95": [
+        -2.809540070593357,
+        2.6671301827766003
+      ]
+    },
+    "path_length": {
+      "mean_top_minus_seeded": -6.686371296644211,
+      "scene_bootstrap_95": [
+        -11.527747418731451,
+        -2.3350739277899275
+      ]
+    },
+    "primitive_action_count": {
+      "mean_top_minus_seeded": -47.5,
+      "scene_bootstrap_95": [
+        -76.6875,
+        -21.25
+      ]
+    }
+  },
+  "categories": {
+    "dominates": 3,
+    "dominated": 2,
+    "mixed": 11,
+    "tied": 0
+  }
+}

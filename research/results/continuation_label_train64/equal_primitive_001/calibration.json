@@ -1,0 +1,4111 @@
+{
+  "passed": true,
+  "endpoint_comparisons": 456,
+  "max_absolute_error_m": 0.0,
+  "checks": [
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 9,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 9,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 10,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "run": "intervention",
+      "step": 10,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 9,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 9,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 10,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 10,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 11,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "baseline",
+      "step": 11,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 9,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 9,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 10,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 10,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 11,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 11,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 12,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 12,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 13,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 13,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 14,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "baseline",
+      "step": 14,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 9,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 9,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 10,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 10,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 11,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 11,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 12,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 12,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 13,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 13,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 14,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "run": "intervention",
+      "step": 14,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 9,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 9,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 10,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 10,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 11,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 11,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 12,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 12,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 13,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 13,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 14,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "baseline",
+      "step": 14,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 9,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 9,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 10,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "run": "intervention",
+      "step": 10,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 9,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 9,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 10,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "baseline",
+      "step": 10,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 7,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 8,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 9,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 9,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 10,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 10,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 11,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "run": "intervention",
+      "step": 11,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "baseline",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 0,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 1,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 2,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 3,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 4,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 5,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "pre_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "run": "intervention",
+      "step": 6,
+      "endpoint": "post_pose",
+      "absolute_error_m": 0.0,
+      "passed": true
+    }
+  ]
+}

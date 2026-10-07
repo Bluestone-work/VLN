@@ -1,0 +1,60 @@
+{
+  "deployable_features": [
+    "graph_logit",
+    "heatmap_score",
+    "distance",
+    "sin_angle",
+    "cos_angle",
+    "angular_dispersion",
+    "policy_entropy",
+    "candidate_count"
+  ],
+  "feature_names": [
+    "graph_logit",
+    "heatmap_score",
+    "distance",
+    "sin_angle",
+    "cos_angle",
+    "angular_dispersion",
+    "policy_entropy",
+    "candidate_count"
+  ],
+  "interpretation": "offline train-to-val diagnostic; no navigation trajectory used the learned weights",
+  "privileged_label": "one-step goal-distance progress",
+  "ridge_lambda": 10.0,
+  "schema_version": 1,
+  "train_candidates": 1809,
+  "train_decisions": 485,
+  "val_candidates": 1838,
+  "val_decisions": 511,
+  "validation": {
+    "graph_logit": {
+      "candidates": 1838,
+      "decisions": 511,
+      "regret_mean_m": 0.5216851528668357,
+      "top1_rate": 0.5870841487279843
+    },
+    "heatmap_score": {
+      "candidates": 1838,
+      "decisions": 511,
+      "regret_mean_m": 0.8537182633832476,
+      "top1_rate": 0.5009784735812133
+    },
+    "linear_ranker": {
+      "candidates": 1838,
+      "decisions": 511,
+      "regret_mean_m": 0.5370160509520547,
+      "top1_rate": 0.5499021526418787
+    }
+  },
+  "weights_standardized": [
+    0.7674972820315784,
+    0.0013257749887709577,
+    -0.10643327772456487,
+    -0.06282810958480911,
+    0.21058003590402333,
+    -0.06780821195629051,
+    -0.22155939561121094,
+    0.007589762661555366
+  ]
+}

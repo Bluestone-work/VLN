@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "research/tools/prepare_option_expansion.py": "parse passed",
+    "research/tools/run_graph_option_cycle.py": "parse passed",
+    "research/tools/route_alignment.py": "parse passed",
+    "research/tools/analyze_route_options.py": "parse passed",
+    "research/tools/inspect_route_results.py": "parse passed",
+    "research/tools/test_route_alignment.py": "parse passed"
+  },
+  "limits": "Static research-tool checks; controller validity is established by separate simulator gates.",
+  "unit_tests": {
+    "run": "logs/tests_v2.stderr.log",
+    "passed": 13
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "experiment_id": "GRAPH-OPTION-UNSEEN-001",
+  "episodes": 66,
+  "scenes": 11,
+  "decisions": 600,
+  "forward_branches": 7113,
+  "reversed_decisions": 132,
+  "reversed_branches": 1516,
+  "selected_sentinels_passed": 600,
+  "order_checks_passed": 1516,
+  "max_sentinel_endpoint_error_m": 0.0,
+  "max_order_endpoint_error_m": 0.0,
+  "sentinel_sensor_matches": 600,
+  "order_sensor_matches": 1516,
+  "all_required_gates_passed": true,
+  "baseline_noninterference_passed": true,
+  "all_admissible_options_complete": true,
+  "masked_budget_options_skipped": 207,
+  "limits": "Balanced diagnostic subset: 66 routes in 11 unseen scenes, one simulator seed. No learning or full-benchmark improvement claim. STOP gates and final-decision budget preserved; distances analysis-only.",
+  "privileged_analysis_only": true
+}

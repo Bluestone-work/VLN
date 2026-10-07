@@ -1,0 +1,821 @@
+{
+  "created_utc": "2026-10-07T08:47:00.586884+00:00",
+  "status": "complete",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "core_tracked_diff_unchanged": true,
+  "tests": {
+    "new_native_stop_contract_tests": 4,
+    "passed": true
+  },
+  "branch_actual_h1_checks": [
+    {
+      "kind": "top_logit",
+      "episode_id": "3716",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "3373",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "2101",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "9935",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "9871",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "9559",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "8891",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "2451",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "7085",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "6235",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "7537",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "7585",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "5703",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "3023",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "2979",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "top_logit",
+      "episode_id": "2508",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "3716",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "3373",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "2101",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "9935",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "9871",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "9559",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "8891",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "2451",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "7085",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "6235",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "7537",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "7585",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "5703",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "3023",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "2979",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    },
+    {
+      "kind": "seeded_graph_id",
+      "episode_id": "2508",
+      "progress_error_m": 0.0,
+      "primitive_error": 0
+    }
+  ],
+  "all_stop_gates_passed": true,
+  "decision_count": 1738,
+  "route_record_count": 218,
+  "geodesic_calibration": {
+    "comparisons": 84,
+    "max_error_m": 0.0
+  },
+  "source_capture_manifests": {
+    "train_pilot8": {
+      "created_utc": "2026-10-07T03:18:40.255061+00:00",
+      "config": {
+        "experiment_id": "GRAPH-OPTION-PILOT-001",
+        "base_config": "run_r2r/iter_train.yaml",
+        "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "split": "train",
+        "episodes": 8,
+        "seed": 100,
+        "dataset_path": "research/results/graph_option_pilot/train8_sampling/train_pilot8_bertidx.json.gz",
+        "sampling_manifest": "research/results/graph_option_pilot/train8_sampling/manifest.json",
+        "capture_graph_options": true,
+        "allow_sliding": true,
+        "tryout_effective": false,
+        "back_algo": "control",
+        "replay_modes": [
+          "sequential",
+          "isolated_branch"
+        ],
+        "reverse_states_per_episode": 2,
+        "reverse_selection_seed": 20261007,
+        "gates": {
+          "endpoint_tolerance_m": 1e-05,
+          "rotation_tolerance_rad": 1e-05,
+          "progress_tolerance_m": 1e-05,
+          "primitive_action_sequence_exact": true,
+          "per_primitive_collision_sequence_exact": true,
+          "rng_post_exact": true,
+          "terminal_flag_exact": true,
+          "baseline_episode_metrics_tolerance": 1e-06
+        },
+        "analysis": {
+          "primary": "Best admissible non-STOP full-option goal progress minus actually selected ghost; learned and forced STOP states excluded",
+          "controls": [
+            "candidate local to current observation",
+            "primitive count no greater than selected",
+            "movement path no longer than selected"
+          ],
+          "material_state_gain_m": 0.25,
+          "bootstrap_seed": 20261007,
+          "bootstrap_samples": 5000
+        },
+        "purpose": "Training-only diagnostic of complete graph actions, with selected sentinels, reversed enumeration and baseline noninterference.",
+        "limits": "Eight routes across four training scenes, one simulator seed; no learned model or navigation gain claim. Final-decision non-STOP alternatives are inadmissible. Goal distances are analysis-only."
+      },
+      "exp_name": "aaa_graph_option_pilot001",
+      "overrides": {
+        "TRAINER_NAME": "SS-ETP-OptionCapture",
+        "ENV_NAME": "VLNCEOptionTraceEnv",
+        "SIMULATOR_GPU_IDS": "[0]",
+        "TORCH_GPU_IDS": "[0]",
+        "GPU_NUMBERS": "1",
+        "NUM_ENVIRONMENTS": "1",
+        "EVAL.SPLIT": "train",
+        "EVAL.EPISODE_COUNT": "8",
+        "TASK_CONFIG.SEED": "100",
+        "EVAL.CKPT_PATH_DIR": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "IL.back_algo": "control",
+        "RL_TOPO.ENABLED": "False",
+        "ACTION_ABSTRACTION.LEVEL": "default",
+        "ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED": "False",
+        "ACTION_ABSTRACTION.ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS": "False",
+        "TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING": "True",
+        "TASK_CONFIG.DATASET.DATA_PATH": "research/results/graph_option_pilot/train8_sampling/train_pilot8_bertidx.json.gz"
+      },
+      "trace": true,
+      "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+      "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n?? vlnce_baselines/adaptive_action/\n",
+      "hashes": {
+        "research/configs/GRAPH_OPTION_PILOT_001.json": "bebfb52ca60e27af4f6e128a6aa0a63ca8f2bbc17e200284aa826ca90400f8fa",
+        "research/tools/run_option_capture.py": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+        "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+        "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+        "vlnce_baselines/ss_trainer_ETP.py": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+        "run_r2r/iter_train.yaml": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+        "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+        "vlnce_baselines/adaptive_action/graph_option_capture.py": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db",
+        "research/results/graph_option_pilot/train8_sampling/train_pilot8_bertidx.json.gz": "10eeeedf7d116e0a1e088a3e4f2fc833c104a41f128dd0af89a0deb249109aba",
+        "research/results/graph_option_pilot/train8_sampling/manifest.json": "4558c98cbb2628a4dfdc310d61d7ee95869fcfedd8e93acba3df7941564bf780"
+      },
+      "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+      "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+      "command_argv": [
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/GRAPH_OPTION_PILOT_001.json",
+        "--output-dir",
+        "research/results/graph_option_pilot/capture_001",
+        "--exp-name",
+        "aaa_graph_option_pilot001",
+        "--trace"
+      ],
+      "environment": {
+        "EGL_PLATFORM": "surfaceless",
+        "CUDA_VISIBLE_DEVICES": "0"
+      }
+    },
+    "train64": {
+      "created_utc": "2026-10-07T03:44:26.889987+00:00",
+      "config": {
+        "experiment_id": "GRAPH-OPTION-TRAIN64-001",
+        "base_config": "run_r2r/iter_train.yaml",
+        "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "split": "train",
+        "episodes": 64,
+        "seed": 100,
+        "dataset_path": "research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz",
+        "sampling_manifest": "research/results/graph_option_train64/sampling_001/manifest.json",
+        "capture_graph_options": true,
+        "allow_sliding": true,
+        "tryout_effective": false,
+        "back_algo": "control",
+        "replay_modes": [
+          "sequential",
+          "isolated_branch"
+        ],
+        "reverse_states_per_episode": 2,
+        "reverse_selection_seed": 20261007,
+        "gates": {
+          "endpoint_tolerance_m": 1e-05,
+          "rotation_tolerance_rad": 1e-05,
+          "progress_tolerance_m": 1e-05,
+          "primitive_action_sequence_exact": true,
+          "per_primitive_collision_sequence_exact": true,
+          "rng_post_exact": true,
+          "terminal_flag_exact": true,
+          "baseline_episode_metrics_tolerance": 1e-06
+        },
+        "analysis": {
+          "primary": "Best admissible non-STOP full-option goal progress minus actually selected ghost; learned and forced STOP states excluded",
+          "controls": [
+            "candidate local to current observation",
+            "primitive count no greater than selected",
+            "movement path no longer than selected"
+          ],
+          "material_state_gain_m": 0.25,
+          "bootstrap_seed": 20261007,
+          "bootstrap_samples": 5000
+        },
+        "purpose": "Broaden training coverage before any fitting; audit cost-controlled local opportunity and ordered route compatibility.",
+        "limits": "64 newly selected routes in 16 training scenes, one simulator seed. No learned improvement or causal failure claim. Same STOP, sensors, horizon and original controller.",
+        "sampling": {
+          "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+          "exclude_manifest": "research/results/graph_option_pilot/train8_sampling/manifest.json",
+          "scenes": 16,
+          "routes_per_scene": 4,
+          "seed": 20261007
+        },
+        "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md"
+      },
+      "exp_name": "aaa_graph_option_train64_001_capture",
+      "overrides": {
+        "TRAINER_NAME": "SS-ETP-OptionCapture",
+        "ENV_NAME": "VLNCEOptionTraceEnv",
+        "SIMULATOR_GPU_IDS": "[0]",
+        "TORCH_GPU_IDS": "[0]",
+        "GPU_NUMBERS": "1",
+        "NUM_ENVIRONMENTS": "1",
+        "EVAL.SPLIT": "train",
+        "EVAL.EPISODE_COUNT": "64",
+        "TASK_CONFIG.SEED": "100",
+        "EVAL.CKPT_PATH_DIR": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "IL.back_algo": "control",
+        "RL_TOPO.ENABLED": "False",
+        "ACTION_ABSTRACTION.LEVEL": "default",
+        "ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED": "False",
+        "ACTION_ABSTRACTION.ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS": "False",
+        "TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING": "True",
+        "TASK_CONFIG.DATASET.DATA_PATH": "research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz"
+      },
+      "trace": true,
+      "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+      "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n?? vlnce_baselines/adaptive_action/\n",
+      "hashes": {
+        "research/configs/GRAPH_OPTION_TRAIN64_001.json": "2114bb0ff5b43d3c949158ae40cb7f95c4a4f9ccd380110d7d4217765e5b35db",
+        "research/tools/run_option_capture.py": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+        "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+        "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+        "vlnce_baselines/ss_trainer_ETP.py": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+        "run_r2r/iter_train.yaml": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+        "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+        "vlnce_baselines/adaptive_action/graph_option_capture.py": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db",
+        "research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz": "2a9b8b94279ad8a062c4c7eaa4424d2516bd4f476b7c71a82d3fa1e31f03a283",
+        "research/results/graph_option_train64/sampling_001/manifest.json": "add89444e76a5aff6e8535416b6995b1c300f56c437112aa147759258d5bacf2"
+      },
+      "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+      "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+      "command_argv": [
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/GRAPH_OPTION_TRAIN64_001.json",
+        "--output-dir",
+        "research/results/graph_option_train64/capture_001",
+        "--exp-name",
+        "aaa_graph_option_train64_001_capture",
+        "--trace"
+      ],
+      "environment": {
+        "EGL_PLATFORM": "surfaceless",
+        "CUDA_VISIBLE_DEVICES": "0"
+      }
+    },
+    "continuation_train64": {
+      "created_utc": "2026-10-07T04:31:50.343599+00:00",
+      "config": {
+        "experiment_id": "CONTINUATION-LABEL-TRAIN64-001",
+        "base_config": "run_r2r/iter_train.yaml",
+        "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "split": "train",
+        "episodes": 64,
+        "seed": 100,
+        "dataset_path": "research/results/continuation_label_train64/sampling_001/train64_bertidx.json.gz",
+        "sampling_manifest": "research/results/continuation_label_train64/sampling_001/manifest.json",
+        "capture_graph_options": true,
+        "allow_sliding": true,
+        "tryout_effective": false,
+        "back_algo": "control",
+        "replay_modes": [
+          "sequential",
+          "isolated_branch"
+        ],
+        "reverse_states_per_episode": 2,
+        "reverse_selection_seed": 20261007,
+        "gates": {
+          "endpoint_tolerance_m": 1e-05,
+          "rotation_tolerance_rad": 1e-05,
+          "progress_tolerance_m": 1e-05,
+          "primitive_action_sequence_exact": true,
+          "per_primitive_collision_sequence_exact": true,
+          "rng_post_exact": true,
+          "terminal_flag_exact": true,
+          "baseline_episode_metrics_tolerance": 1e-06
+        },
+        "analysis": {
+          "primary": "Best admissible non-STOP full-option goal progress minus actually selected ghost; learned and forced STOP states excluded",
+          "controls": [
+            "candidate local to current observation",
+            "primitive count no greater than selected",
+            "movement path no longer than selected"
+          ],
+          "material_state_gain_m": 0.25,
+          "bootstrap_seed": 20261007,
+          "bootstrap_samples": 5000
+        },
+        "purpose": "Prospective H=2 confirmation of H=1 alternatives on previously uninspected training scenes; no fitting.",
+        "limits": "64 new training routes / 16 scenes; privileged label diagnostic, one simulator seed, no held-out model claim.",
+        "sampling": {
+          "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+          "exclude_sources": [
+            "research/results/graph_option_pilot/train8_sampling/manifest.json",
+            "research/results/graph_option_train64/sampling_001/manifest.json",
+            "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+            "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+            "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+            "research/results/action_abstraction/ranker_train64_oracle.jsonl"
+          ],
+          "scenes": 16,
+          "routes_per_scene": 4,
+          "seed": 20261007
+        },
+        "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+        "continuation_protocol": "research/CONTINUATION_LABEL_PROTOCOL.md",
+        "continuation": {
+          "primary_horizon": 2,
+          "descriptive_horizon": 3,
+          "minimum_progress_gain_m": 0.25,
+          "primitive_delta_max": 0,
+          "movement_delta_max_m": 1e-05,
+          "minimum_treated_scenes_for_learning_consideration": 8,
+          "event_selection_seed": 20261007,
+          "all_eligible_routes": true,
+          "one_intervention_per_route": true
+        }
+      },
+      "exp_name": "aaa_continuation_label_train64_001_capture",
+      "overrides": {
+        "TRAINER_NAME": "SS-ETP-OptionCapture",
+        "ENV_NAME": "VLNCEOptionTraceEnv",
+        "SIMULATOR_GPU_IDS": "[0]",
+        "TORCH_GPU_IDS": "[0]",
+        "GPU_NUMBERS": "1",
+        "NUM_ENVIRONMENTS": "1",
+        "EVAL.SPLIT": "train",
+        "EVAL.EPISODE_COUNT": "64",
+        "TASK_CONFIG.SEED": "100",
+        "EVAL.CKPT_PATH_DIR": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "IL.back_algo": "control",
+        "RL_TOPO.ENABLED": "False",
+        "ACTION_ABSTRACTION.LEVEL": "default",
+        "ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED": "False",
+        "ACTION_ABSTRACTION.ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS": "False",
+        "TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING": "True",
+        "TASK_CONFIG.DATASET.DATA_PATH": "research/results/continuation_label_train64/sampling_001/train64_bertidx.json.gz"
+      },
+      "trace": true,
+      "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+      "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n?? vlnce_baselines/adaptive_action/\n",
+      "hashes": {
+        "research/configs/CONTINUATION_LABEL_TRAIN64_001.json": "b39b5c82343369307aac31342eff4a38a8abe876681aceab369613fafd810773",
+        "research/tools/run_option_capture.py": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+        "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+        "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+        "vlnce_baselines/ss_trainer_ETP.py": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+        "run_r2r/iter_train.yaml": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+        "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+        "vlnce_baselines/adaptive_action/graph_option_capture.py": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db",
+        "research/results/continuation_label_train64/sampling_001/train64_bertidx.json.gz": "9e71ded27a31b107a98d45e6b3a59fa2f7774b957fc7782151af7bbc569fd3e1",
+        "research/results/continuation_label_train64/sampling_001/manifest.json": "d6380b5d04f12d4f5a0ba207e593254a64719ad16533f17ac6cabfbf2eb187d4"
+      },
+      "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+      "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+      "command_argv": [
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/CONTINUATION_LABEL_TRAIN64_001.json",
+        "--output-dir",
+        "research/results/continuation_label_train64/capture_001",
+        "--exp-name",
+        "aaa_continuation_label_train64_001_capture",
+        "--trace"
+      ],
+      "environment": {
+        "EGL_PLATFORM": "surfaceless",
+        "CUDA_VISIBLE_DEVICES": "0"
+      }
+    },
+    "full_return_train16": {
+      "created_utc": "2026-10-07T07:21:08.701444+00:00",
+      "config": {
+        "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001",
+        "base_config": "run_r2r/iter_train.yaml",
+        "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "split": "train",
+        "episodes": 16,
+        "seed": 100,
+        "dataset_path": "research/results/full_return_label_train16/sampling_001/train16_bertidx.json.gz",
+        "sampling_manifest": "research/results/full_return_label_train16/sampling_001/manifest.json",
+        "capture_graph_options": true,
+        "allow_sliding": true,
+        "tryout_effective": false,
+        "back_algo": "control",
+        "replay_modes": [
+          "sequential",
+          "isolated_branch"
+        ],
+        "reverse_states_per_episode": 2,
+        "reverse_selection_seed": 20261007,
+        "gates": {
+          "endpoint_tolerance_m": 1e-05,
+          "rotation_tolerance_rad": 1e-05,
+          "progress_tolerance_m": 1e-05,
+          "primitive_action_sequence_exact": true,
+          "per_primitive_collision_sequence_exact": true,
+          "rng_post_exact": true,
+          "terminal_flag_exact": true,
+          "baseline_episode_metrics_tolerance": 1e-06
+        },
+        "analysis": {
+          "primary": "Full native continuation of outcome-blind state and two deployable candidate alternatives",
+          "selection": "State and alternatives selected from metadata, masks and native graph logits only; no goal, reference route, branch outcome or final metric",
+          "candidate_alternatives": [
+            "highest_nonselected_native_logit",
+            "seeded_valid_graph_id"
+          ],
+          "bootstrap_seed": 20261007,
+          "bootstrap_samples": 5000
+        },
+        "purpose": "Outcome-blind full-return diagnostic before any scorer fitting.",
+        "limits": "16 training routes / 8 new-to-diagnostics scenes, one simulator seed. Privileged alternative rollout analysis; no learned model or held-out claim.",
+        "sampling": {
+          "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+          "exclude_sources": [
+            "research/results/graph_option_pilot/train8_sampling/manifest.json",
+            "research/results/graph_option_train64/sampling_001/manifest.json",
+            "research/results/continuation_label_train64/sampling_001/manifest.json",
+            "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+            "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+            "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+            "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl"
+          ],
+          "scenes": 8,
+          "routes_per_scene": 2,
+          "seed": 20261007
+        },
+        "continuation_protocol": "research/FULL_RETURN_LABEL_NEXT_GATE.md",
+        "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+        "outcome_blind_schedule": {
+          "state_seed": 20261007,
+          "random_alternative_seed": 20261008,
+          "one_state_per_route": true,
+          "allow_failed_routes": true,
+          "selection_excludes": [
+            "goal_distance",
+            "reference_route",
+            "branch_progress",
+            "episode_metrics",
+            "success",
+            "SPL",
+            "nDTW"
+          ]
+        }
+      },
+      "exp_name": "aaa_full_return_label_train16_001_capture",
+      "overrides": {
+        "TRAINER_NAME": "SS-ETP-OptionCapture",
+        "ENV_NAME": "VLNCEOptionTraceEnv",
+        "SIMULATOR_GPU_IDS": "[0]",
+        "TORCH_GPU_IDS": "[0]",
+        "GPU_NUMBERS": "1",
+        "NUM_ENVIRONMENTS": "1",
+        "EVAL.SPLIT": "train",
+        "EVAL.EPISODE_COUNT": "16",
+        "TASK_CONFIG.SEED": "100",
+        "EVAL.CKPT_PATH_DIR": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "IL.back_algo": "control",
+        "RL_TOPO.ENABLED": "False",
+        "ACTION_ABSTRACTION.LEVEL": "default",
+        "ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED": "False",
+        "ACTION_ABSTRACTION.ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS": "False",
+        "TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING": "True",
+        "TASK_CONFIG.DATASET.DATA_PATH": "research/results/full_return_label_train16/sampling_001/train16_bertidx.json.gz"
+      },
+      "trace": true,
+      "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+      "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n?? vlnce_baselines/adaptive_action/\n",
+      "hashes": {
+        "research/configs/FULL_RETURN_LABEL_TRAIN16_001.json": "8e818d1259630c71608af5654fde3f0520c2f213fa9bd2936df5c6ceba7ef00c",
+        "research/tools/run_option_capture.py": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+        "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+        "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+        "vlnce_baselines/ss_trainer_ETP.py": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+        "run_r2r/iter_train.yaml": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+        "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+        "vlnce_baselines/adaptive_action/graph_option_capture.py": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db",
+        "research/results/full_return_label_train16/sampling_001/train16_bertidx.json.gz": "87730d5894d8861b234531d702efa1a05654497419066784ce8ba3efe046fcda",
+        "research/results/full_return_label_train16/sampling_001/manifest.json": "a6326b56df738feb18bbf4b0058d27583e867198a1a893a0a503e7590880b2d2"
+      },
+      "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+      "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+      "command_argv": [
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/FULL_RETURN_LABEL_TRAIN16_001.json",
+        "--output-dir",
+        "research/results/full_return_label_train16/capture_001",
+        "--exp-name",
+        "aaa_full_return_label_train16_001_capture",
+        "--trace"
+      ],
+      "environment": {
+        "EGL_PLATFORM": null,
+        "CUDA_VISIBLE_DEVICES": null
+      }
+    },
+    "unseen66": {
+      "created_utc": "2026-10-07T03:24:05.614075+00:00",
+      "config": {
+        "experiment_id": "GRAPH-OPTION-UNSEEN-001",
+        "base_config": "run_r2r/iter_train.yaml",
+        "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "split": "val_unseen",
+        "episodes": 66,
+        "seed": 100,
+        "dataset_path": "research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz",
+        "sampling_manifest": "research/results/option_calibration/unseen_balanced66_sampling/manifest.json",
+        "allow_sliding": true,
+        "tryout_effective": false,
+        "back_algo": "control",
+        "replay_modes": [
+          "sequential",
+          "isolated_branch"
+        ],
+        "gates": {
+          "endpoint_tolerance_m": 1e-05,
+          "rotation_tolerance_rad": 1e-05,
+          "progress_tolerance_m": 1e-05,
+          "primitive_action_sequence_exact": true,
+          "per_primitive_collision_sequence_exact": true,
+          "rng_post_exact": true,
+          "terminal_flag_exact": true,
+          "baseline_episode_metrics_tolerance": 1e-06
+        },
+        "purpose": "Frozen 11-scene validation measurement of full graph-option progress, after train-pilot fidelity gates pass.",
+        "limits": "Balanced diagnostic subset: 66 routes in 11 unseen scenes, one simulator seed. No learning or full-benchmark improvement claim. STOP gates and final-decision budget preserved; distances analysis-only.",
+        "capture_graph_options": true,
+        "reverse_states_per_episode": 2,
+        "reverse_selection_seed": 20261007,
+        "analysis": {
+          "primary": "Best admissible non-STOP full-option goal progress minus actually selected ghost; learned and forced STOP states excluded",
+          "controls": [
+            "candidate local to current observation",
+            "primitive count no greater than selected",
+            "movement path no longer than selected"
+          ],
+          "material_state_gain_m": 0.25,
+          "bootstrap_seed": 20261007,
+          "bootstrap_samples": 5000
+        }
+      },
+      "exp_name": "aaa_graph_option_unseen001",
+      "overrides": {
+        "TRAINER_NAME": "SS-ETP-OptionCapture",
+        "ENV_NAME": "VLNCEOptionTraceEnv",
+        "SIMULATOR_GPU_IDS": "[0]",
+        "TORCH_GPU_IDS": "[0]",
+        "GPU_NUMBERS": "1",
+        "NUM_ENVIRONMENTS": "1",
+        "EVAL.SPLIT": "val_unseen",
+        "EVAL.EPISODE_COUNT": "66",
+        "TASK_CONFIG.SEED": "100",
+        "EVAL.CKPT_PATH_DIR": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+        "IL.back_algo": "control",
+        "RL_TOPO.ENABLED": "False",
+        "ACTION_ABSTRACTION.LEVEL": "default",
+        "ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED": "False",
+        "ACTION_ABSTRACTION.ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED": "False",
+        "ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS": "False",
+        "TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING": "True",
+        "TASK_CONFIG.DATASET.DATA_PATH": "research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz"
+      },
+      "trace": true,
+      "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+      "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n?? vlnce_baselines/adaptive_action/\n",
+      "hashes": {
+        "research/configs/GRAPH_OPTION_UNSEEN_001.json": "c14ff7ce04a63201c8941706070b9dd9d339cd4af9a6351b6e9be6bdff7e9426",
+        "research/tools/run_option_capture.py": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+        "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+        "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+        "vlnce_baselines/ss_trainer_ETP.py": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+        "run_r2r/iter_train.yaml": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+        "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+        "vlnce_baselines/adaptive_action/graph_option_capture.py": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db",
+        "research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz": "b17f5606d63a5d069aa81163bdb9b928fc11f54488179b0c67a871f5503e3c0d",
+        "research/results/option_calibration/unseen_balanced66_sampling/manifest.json": "428f9e0fad168ac8be91ece7bbfde0ebad57599d9e8905593ed867fcb8fcd24c"
+      },
+      "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+      "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+      "command_argv": [
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/GRAPH_OPTION_UNSEEN_001.json",
+        "--output-dir",
+        "research/results/graph_option_unseen/capture_001",
+        "--exp-name",
+        "aaa_graph_option_unseen001",
+        "--trace"
+      ],
+      "environment": {
+        "EGL_PLATFORM": "surfaceless",
+        "CUDA_VISIBLE_DEVICES": "0"
+      }
+    }
+  },
+  "analysis_execution": {
+    "python": "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+    "device": "CPU; original navmeshes only",
+    "new_rollouts": 0,
+    "models_trained": 0,
+    "script_seeds": "none; deterministic offline analysis; native capture seed100"
+  },
+  "files_sha256": {
+    "research/configs/FULL_RETURN_BRANCH_ALIGNMENT_001.json": "f17b82e5e0cdc3b2ca63752cdb5fdadee209f14a0f57d6b829785f29772c1800",
+    "research/configs/NATIVE_STOP_FEASIBILITY_001.json": "ed40bfa687f60e92f3a57a85be8618b6b70121da38558acc5672958c10cbbd5a",
+    "research/configs/PRIMITIVE_ARRIVAL_LOCALIZATION_001.json": "44ad23bc789b745b7f9116f16ce6057cb060f487023da7831314ebadb959b5df",
+    "research/tools/audit_full_return_branch_alignment.py": "c276480d80a38b1229a97fa1fb52b837842bf49e22541a5e361022dad9af98ba",
+    "research/tools/audit_native_stop_feasibility.py": "915074c9d393468924f24f0d875bd5ef0d4ab3ad4e8fc9bc668e29b2840d3f15",
+    "research/tools/localize_primitive_arrivals.py": "cdb7ca718797aa02badc7946a8e4636abbee486852fa46244ba795053cc6a2b4",
+    "research/tools/plot_native_stop_diagnostic.py": "f1ed56d25cfe8dbc42e36de50b982876905a18ca095f6160a0f360e1090861b5",
+    "research/tools/test_native_stop_feasibility.py": "2685ffd8184e13f5f1081e81a7e7e0af3d5e5880fb139278193d0516d3f530fc",
+    "research/tools/analyze_equal_primitive_budget.py": "ad7fbfaf951aba28252d185aaacd0ebfd39ff52d1da4b5d68b05872f2cd3fb53",
+    "research/FULL_RETURN_BRANCH_ALIGNMENT_REPORT.md": "2b74a98ff7c8752a9c3a2526e705911e90ef8a96d586947527ebf9fdc6d10790",
+    "research/NATIVE_STOP_FEASIBILITY_REPORT.md": "1be3410ec512be3180a298935feace01347aca5b134c9fac838c33de56858c61",
+    "research/NATIVE_STOP_FEASIBILITY_PROTOCOL.md": "8054e169f44e5f6b77ee6f2972b658c3f96373d8600176fc4ac57bc4e567b523",
+    "research/REPORT.md": "018d5341d5faf5d1e3ff71a2149b352bb22f30cda7ba2705c8adb18286e2586c",
+    "research/RESEARCH_LOG.md": "303f666d5dee1f0f859271b5110b0201886c4fd5a7f0d43cb3d2e8606ec9fe94",
+    "research/EXPERIMENT_TABLE.md": "dc049240af539dd09baa6516f07bd9f604dfd76651a883f9b73570d9d367e231",
+    "research/RESEARCH_STATUS_CN.md": "34c9066c45a7b5f16a04185978d129cfe061b9a53450c5e18435499d0759939d",
+    "research/AAA_CODE_AUDIT.md": "7f057551cebf1985651247b66c2413f498bb22ddd529b2988a714cf00961fc40",
+    "research/FAILURE_ANALYSIS.md": "11dd1d4b1d642d66c0d6147117a28f8b18e740cb898037a129a6d33df14e322c",
+    "research/results/native_stop_feasibility/analysis_001/summary.json": "15964193e74c3fc9a375e7154d2015c7a1042abd79c04e16cde9e0bd3a64a747",
+    "research/results/native_stop_feasibility/primitive_arrival_001/summary.json": "09bec09730abf18f8587a9863d56e8955a30f314e946a215fcaa24ea767810cb",
+    "research/results/native_stop_feasibility/primitive_arrival_001/calibration.json": "df13deb61a4aba6beaf55c78874404a1c2923d6a8c7b758af8a1d6d8d9ebd83f",
+    "research/results/full_return_branch_alignment/analysis_001/summary.json": "6b5e90099f8151c51505b1d33c0cc89fdd6f98c32b5fd79b5b837c2cb36db5c9",
+    "research/results/native_stop_feasibility/primitive_001.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/native_stop_feasibility/run_001.stdout.log": "0503866363e02d802ff125fd3695899aaa0fd00e24340345d78019beb4c3f669",
+    "research/results/native_stop_feasibility/plot_001.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/native_stop_feasibility/run_001.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/native_stop_feasibility/plot_001.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/native_stop_feasibility/primitive_001.stdout.log": "b65cbd8de3bc73feaee3b7d2acef3e93b2ef2a096bc6d08214f99d65761307fd",
+    "research/results/native_stop_feasibility/tests_001.stderr.log": "e6ec182765cd965f2837d8eeaef5a64af48a104f245cd1a0b7281559194c57c1",
+    "research/results/native_stop_feasibility/tests_001.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/full_return_branch_alignment.stdout.log": "46fba72e24e3dbe4bb80dc0d23f93b9cc8d22b4126eb8d43b09f793deb91303e",
+    "research/results/full_return_branch_alignment.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/graph_option_pilot/capture_001/manifest.json": "43ac22e411866135024e1800ed82718b92cdb587e4024cb783ca1de06c93ef70",
+    "research/results/graph_option_train64/capture_001/manifest.json": "83410401b55b71114941f43f2ff6aaf008f1a9598e43b70b7f7999cfb3169a76",
+    "research/results/continuation_label_train64/capture_001/manifest.json": "68cc6b4b8504db242bffeb060370e57a8d21b48531e54bafd1a0db0cc530e291",
+    "research/results/full_return_label_train16/capture_001/manifest.json": "b161b3403ed62b90b8773741e203b37f25bce39d476666e77b70212b80b24a9f",
+    "research/results/graph_option_unseen/capture_001/manifest.json": "20e70cb3b6323450a26bac45a38f2bf5c16e25e64a329241b4e17931b3dd45b5"
+  },
+  "decision": "NO-GO for AAA/selector fitting or STOP-only modeling from current evidence; interior-only arrival is a single marginal diagnostic case, not a validated method"
+}

@@ -1,0 +1,19 @@
+{
+  "experiment_id": "GRAPH-OPTION-TRAIN64-001",
+  "integrity_gate_passed": true,
+  "branches": 6449,
+  "forward_branches": 5090,
+  "reverse_branches": 1359,
+  "max_start_position_error_m": 0.0,
+  "max_start_rotation_error_rad": 4.2146848510894035e-08,
+  "max_start_goal_distance_error_m": 0.0,
+  "all_action_dictionaries_exact": true,
+  "all_start_rng_exact": true,
+  "all_admissibility_and_coverage_checks_passed": true,
+  "stop_branches": 602,
+  "branches_with_back_path": 4181,
+  "primitive_events_including_repeats": 194563,
+  "collision_events_including_repeats": 2145,
+  "raw_trace_sha256": "173e4d36321510dcae91a408992d594e6d375a1dbdfb2f9844c97a07577d980a",
+  "audit_source_sha256": "4dbbafc0f6a79336900d2c155ff95ac52881f1985354ddbb6f32b8ebbb04ba7a"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "endpoint_error_m": 0.0,
+    "rotation_error_rad": 0.0,
+    "pre_pose_error_m": 0.0,
+    "progress_error_m": 0.0,
+    "primitive_sequence_exact": true,
+    "collision_sequence_exact": true,
+    "rng_post_exact": true,
+    "terminal_flag_exact": true,
+    "sensor_hashes_exact": true,
+    "expected_primitives": 13,
+    "replayed_primitives": 13,
+    "max_primitive_position_error_m": 0.0,
+    "passed": true,
+    "decision_key": [
+      "data/scene_datasets/mp3d/V2XKFyX4ASd/V2XKFyX4ASd.glb",
+      "6126",
+      0
+    ],
+    "start_matches_baseline_exact": true,
+    "alternative_action_exact": true,
+    "local_progress_m": 0.6512675285339355,
+    "local_progress_gain_m": 0.43703794479370117
+  },
+  {
+    "endpoint_error_m": 0.0,
+    "rotation_error_rad": 0.0,
+    "pre_pose_error_m": 0.0,
+    "progress_error_m": 0.0,
+    "primitive_sequence_exact": true,
+    "collision_sequence_exact": true,
+    "rng_post_exact": true,
+    "terminal_flag_exact": true,
+    "sensor_hashes_exact": true,
+    "expected_primitives": 7,
+    "replayed_primitives": 7,
+    "max_primitive_position_error_m": 0.0,
+    "passed": true,
+    "decision_key": [
+      "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb",
+      "7581",
+      5
+    ],
+    "start_matches_baseline_exact": true,
+    "alternative_action_exact": true,
+    "local_progress_m": 0.911383181810379,
+    "local_progress_gain_m": 0.6309502422809601
+  }
+]

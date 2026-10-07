@@ -1,0 +1,695 @@
+{
+  "aliasing_state_rate": 0.12352941176470589,
+  "decisions": 510,
+  "diagnostic_file": "research/results/action_abstraction/graph_no_merge_oracle_valseen64.jsonl",
+  "duplicate_candidate_members": 126,
+  "duplicate_graph_groups": 63,
+  "interpretation": "Diagnostic-only estimate: candidate progress labels are privileged one-step goal-distance changes. A spread within one graph ID means GraphMap merging aliases proposals that a graph ranker cannot score separately.",
+  "largest_aliases": [
+    {
+      "candidate_indices": [
+        1,
+        3
+      ],
+      "episode_id": "470",
+      "graph_id": "2",
+      "high_level_step": 2,
+      "progress_values": [
+        0.4879884719848633,
+        -0.4896373748779297
+      ]
+    },
+    {
+      "candidate_indices": [
+        1,
+        3
+      ],
+      "episode_id": "471",
+      "graph_id": "2",
+      "high_level_step": 2,
+      "progress_values": [
+        0.4879884719848633,
+        -0.4896373748779297
+      ]
+    },
+    {
+      "candidate_indices": [
+        1,
+        3
+      ],
+      "episode_id": "472",
+      "graph_id": "2",
+      "high_level_step": 2,
+      "progress_values": [
+        0.4879884719848633,
+        -0.4896373748779297
+      ]
+    },
+    {
+      "candidate_indices": [
+        1,
+        3
+      ],
+      "episode_id": "77",
+      "graph_id": "2",
+      "high_level_step": 2,
+      "progress_values": [
+        0.2467823028564453,
+        -0.4963874816894531
+      ]
+    },
+    {
+      "candidate_indices": [
+        0,
+        3
+      ],
+      "episode_id": "470",
+      "graph_id": "0",
+      "high_level_step": 0,
+      "progress_values": [
+        0.16353797912597656,
+        -0.48836517333984375
+      ]
+    },
+    {
+      "candidate_indices": [
+        0,
+        3
+      ],
+      "episode_id": "471",
+      "graph_id": "0",
+      "high_level_step": 0,
+      "progress_values": [
+        0.16353797912597656,
+        -0.48836517333984375
+      ]
+    },
+    {
+      "candidate_indices": [
+        0,
+        3
+      ],
+      "episode_id": "472",
+      "graph_id": "0",
+      "high_level_step": 0,
+      "progress_values": [
+        0.16353797912597656,
+        -0.48836517333984375
+      ]
+    },
+    {
+      "candidate_indices": [
+        0,
+        2
+      ],
+      "episode_id": "84",
+      "graph_id": "9",
+      "high_level_step": 10,
+      "progress_values": [
+        -0.3887624740600586,
+        0.11637115478515625
+      ]
+    }
+  ],
+  "mixed_visited_alias_groups": 0,
+  "oracle_file": "research/results/action_abstraction/graph_no_merge_oracle_valseen64_oracle.jsonl",
+  "progress_spread_m": {
+    "groups": 63,
+    "groups_ge_0_5m": 8,
+    "max": 0.977625846862793,
+    "mean": 0.3055383856334383,
+    "median": 0.27246999740600586,
+    "p90": 0.5051336288452148
+  },
+  "schema_version": 1,
+  "state_rows": [
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "155",
+      "high_level_step": 5,
+      "max_progress_spread": 0.010983586311340332,
+      "mean_progress_spread": 0.010983586311340332,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "191",
+      "high_level_step": 1,
+      "max_progress_spread": 0.4147920608520508,
+      "mean_progress_spread": 0.4147920608520508,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "192",
+      "high_level_step": 1,
+      "max_progress_spread": 0.4147920608520508,
+      "mean_progress_spread": 0.4147920608520508,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "193",
+      "high_level_step": 1,
+      "max_progress_spread": 0.4147920608520508,
+      "mean_progress_spread": 0.4147920608520508,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "236",
+      "high_level_step": 9,
+      "max_progress_spread": 0.19296932220458984,
+      "mean_progress_spread": 0.19296932220458984,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "237",
+      "high_level_step": 5,
+      "max_progress_spread": 0.19420957565307617,
+      "mean_progress_spread": 0.19420957565307617,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "237",
+      "high_level_step": 7,
+      "max_progress_spread": 0.2578665018081665,
+      "mean_progress_spread": 0.2578665018081665,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "238",
+      "high_level_step": 4,
+      "max_progress_spread": 0.2809772491455078,
+      "mean_progress_spread": 0.2809772491455078,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "238",
+      "high_level_step": 6,
+      "max_progress_spread": 0.19431793689727783,
+      "mean_progress_spread": 0.19431793689727783,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "238",
+      "high_level_step": 9,
+      "max_progress_spread": 0.03475141525268555,
+      "mean_progress_spread": 0.03475141525268555,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "238",
+      "high_level_step": 10,
+      "max_progress_spread": 0.21652960777282715,
+      "mean_progress_spread": 0.21652960777282715,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "281",
+      "high_level_step": 3,
+      "max_progress_spread": 0.3222990036010742,
+      "mean_progress_spread": 0.3222990036010742,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "281",
+      "high_level_step": 4,
+      "max_progress_spread": 0.09121346473693848,
+      "mean_progress_spread": 0.09121346473693848,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "329",
+      "high_level_step": 1,
+      "max_progress_spread": 0.21479558944702148,
+      "mean_progress_spread": 0.21479558944702148,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "329",
+      "high_level_step": 3,
+      "max_progress_spread": 0.21683716773986816,
+      "mean_progress_spread": 0.21683716773986816,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "330",
+      "high_level_step": 1,
+      "max_progress_spread": 0.21479558944702148,
+      "mean_progress_spread": 0.21479558944702148,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "330",
+      "high_level_step": 3,
+      "max_progress_spread": 0.21683716773986816,
+      "mean_progress_spread": 0.21683716773986816,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "331",
+      "high_level_step": 1,
+      "max_progress_spread": 0.21479558944702148,
+      "mean_progress_spread": 0.21479558944702148,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "331",
+      "high_level_step": 3,
+      "max_progress_spread": 0.21683716773986816,
+      "mean_progress_spread": 0.21683716773986816,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "388",
+      "high_level_step": 7,
+      "max_progress_spread": 0.017783403396606445,
+      "mean_progress_spread": 0.017783403396606445,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "388",
+      "high_level_step": 8,
+      "max_progress_spread": 0.31951838731765747,
+      "mean_progress_spread": 0.31951838731765747,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "394",
+      "high_level_step": 5,
+      "max_progress_spread": 0.26611554622650146,
+      "mean_progress_spread": 0.26611554622650146,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "399",
+      "high_level_step": 7,
+      "max_progress_spread": 0.1004338264465332,
+      "mean_progress_spread": 0.1004338264465332,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "470",
+      "high_level_step": 0,
+      "max_progress_spread": 0.6519031524658203,
+      "mean_progress_spread": 0.6519031524658203,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "470",
+      "high_level_step": 2,
+      "max_progress_spread": 0.977625846862793,
+      "mean_progress_spread": 0.977625846862793,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "470",
+      "high_level_step": 8,
+      "max_progress_spread": 0.42612648010253906,
+      "mean_progress_spread": 0.42612648010253906,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "471",
+      "high_level_step": 0,
+      "max_progress_spread": 0.6519031524658203,
+      "mean_progress_spread": 0.6519031524658203,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "471",
+      "high_level_step": 2,
+      "max_progress_spread": 0.977625846862793,
+      "mean_progress_spread": 0.977625846862793,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "471",
+      "high_level_step": 9,
+      "max_progress_spread": 0.43366241455078125,
+      "mean_progress_spread": 0.43366241455078125,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "472",
+      "high_level_step": 0,
+      "max_progress_spread": 0.6519031524658203,
+      "mean_progress_spread": 0.6519031524658203,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "472",
+      "high_level_step": 2,
+      "max_progress_spread": 0.977625846862793,
+      "mean_progress_spread": 0.977625846862793,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "472",
+      "high_level_step": 13,
+      "max_progress_spread": 0.1322154998779297,
+      "mean_progress_spread": 0.1322154998779297,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "507",
+      "high_level_step": 2,
+      "max_progress_spread": 0.25485897064208984,
+      "mean_progress_spread": 0.25485897064208984,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "507",
+      "high_level_step": 7,
+      "max_progress_spread": 0.30532264709472656,
+      "mean_progress_spread": 0.30532264709472656,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "665",
+      "high_level_step": 5,
+      "max_progress_spread": 0.28847384452819824,
+      "mean_progress_spread": 0.28847384452819824,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "665",
+      "high_level_step": 6,
+      "max_progress_spread": 0.3257697820663452,
+      "mean_progress_spread": 0.3257697820663452,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "665",
+      "high_level_step": 7,
+      "max_progress_spread": 0.2648134231567383,
+      "mean_progress_spread": 0.2648134231567383,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "666",
+      "high_level_step": 5,
+      "max_progress_spread": 0.28847384452819824,
+      "mean_progress_spread": 0.28847384452819824,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "667",
+      "high_level_step": 4,
+      "max_progress_spread": 0.16115927696228027,
+      "mean_progress_spread": 0.16115927696228027,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "698",
+      "high_level_step": 4,
+      "max_progress_spread": 0.1172945499420166,
+      "mean_progress_spread": 0.1172945499420166,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "698",
+      "high_level_step": 5,
+      "max_progress_spread": 0.08680105209350586,
+      "mean_progress_spread": 0.08680105209350586,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "699",
+      "high_level_step": 3,
+      "max_progress_spread": 0.12699413299560547,
+      "mean_progress_spread": 0.12699413299560547,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "699",
+      "high_level_step": 4,
+      "max_progress_spread": 0.12834644317626953,
+      "mean_progress_spread": 0.12834644317626953,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "699",
+      "high_level_step": 6,
+      "max_progress_spread": 0.4473441243171692,
+      "mean_progress_spread": 0.4473441243171692,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "71",
+      "high_level_step": 4,
+      "max_progress_spread": 0.35301876068115234,
+      "mean_progress_spread": 0.35301876068115234,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "71",
+      "high_level_step": 6,
+      "max_progress_spread": 0.28813302516937256,
+      "mean_progress_spread": 0.28813302516937256,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "728",
+      "high_level_step": 4,
+      "max_progress_spread": 0.35892295837402344,
+      "mean_progress_spread": 0.35892295837402344,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "729",
+      "high_level_step": 3,
+      "max_progress_spread": 0.2770223617553711,
+      "mean_progress_spread": 0.2770223617553711,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "729",
+      "high_level_step": 4,
+      "max_progress_spread": 0.27246999740600586,
+      "mean_progress_spread": 0.27246999740600586,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "73",
+      "high_level_step": 2,
+      "max_progress_spread": 0.30682802200317383,
+      "mean_progress_spread": 0.30682802200317383,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "73",
+      "high_level_step": 3,
+      "max_progress_spread": 0.07731437683105469,
+      "mean_progress_spread": 0.07731437683105469,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "73",
+      "high_level_step": 4,
+      "max_progress_spread": 0.2506246566772461,
+      "mean_progress_spread": 0.2506246566772461,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "73",
+      "high_level_step": 5,
+      "max_progress_spread": 0.22249889373779297,
+      "mean_progress_spread": 0.22249889373779297,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "730",
+      "high_level_step": 3,
+      "max_progress_spread": 0.2770223617553711,
+      "mean_progress_spread": 0.2770223617553711,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "730",
+      "high_level_step": 4,
+      "max_progress_spread": 0.27246999740600586,
+      "mean_progress_spread": 0.27246999740600586,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "743",
+      "high_level_step": 5,
+      "max_progress_spread": 0.19475996494293213,
+      "mean_progress_spread": 0.19475996494293213,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "744",
+      "high_level_step": 4,
+      "max_progress_spread": 0.28566789627075195,
+      "mean_progress_spread": 0.28566789627075195,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "744",
+      "high_level_step": 7,
+      "max_progress_spread": 0.1714305877685547,
+      "mean_progress_spread": 0.1714305877685547,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "745",
+      "high_level_step": 4,
+      "max_progress_spread": 0.28566789627075195,
+      "mean_progress_spread": 0.28566789627075195,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "77",
+      "high_level_step": 2,
+      "max_progress_spread": 0.7431697845458984,
+      "mean_progress_spread": 0.7431697845458984,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "84",
+      "high_level_step": 10,
+      "max_progress_spread": 0.5051336288452148,
+      "mean_progress_spread": 0.5051336288452148,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "84",
+      "high_level_step": 11,
+      "max_progress_spread": 0.007473945617675781,
+      "mean_progress_spread": 0.007473945617675781,
+      "mixed_visited_groups": 0
+    },
+    {
+      "duplicate_candidates": 2,
+      "duplicate_groups": 1,
+      "episode_id": "84",
+      "high_level_step": 12,
+      "max_progress_spread": 0.3838024139404297,
+      "mean_progress_spread": 0.3838024139404297,
+      "mixed_visited_groups": 0
+    }
+  ],
+  "states_with_candidate_aliasing": 63
+}

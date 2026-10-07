@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "episodes": 66,
+  "metric_comparisons": 1188,
+  "max_absolute_delta": 0.0,
+  "issues": [],
+  "sources": {
+    "research/results/option_calibration/noninterference_002/control_episodes.json": "51400aa404c1128a4d4899bf1088db49ed445463612b61ebc30b57efa3f038fa",
+    "data/logs/eval_results/aaa_graph_option_unseen001/stats_ep_ckpt_59_val_unseen_r0_w1.json": "51400aa404c1128a4d4899bf1088db49ed445463612b61ebc30b57efa3f038fa"
+  }
+}

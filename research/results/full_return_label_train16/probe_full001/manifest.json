@@ -1,0 +1,280 @@
+{
+  "created_utc": "2026-10-07T07:22:44.190795+00:00",
+  "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001",
+  "capture_dir": "research/results/full_return_label_train16/capture_001",
+  "config": {
+    "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 16,
+    "seed": 100,
+    "dataset_path": "research/results/full_return_label_train16/sampling_001/train16_bertidx.json.gz",
+    "sampling_manifest": "research/results/full_return_label_train16/sampling_001/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261007,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Full native continuation of outcome-blind state and two deployable candidate alternatives",
+      "selection": "State and alternatives selected from metadata, masks and native graph logits only; no goal, reference route, branch outcome or final metric",
+      "candidate_alternatives": [
+        "highest_nonselected_native_logit",
+        "seeded_valid_graph_id"
+      ],
+      "bootstrap_seed": 20261007,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "Outcome-blind full-return diagnostic before any scorer fitting.",
+    "limits": "16 training routes / 8 new-to-diagnostics scenes, one simulator seed. Privileged alternative rollout analysis; no learned model or held-out claim.",
+    "sampling": {
+      "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+      "exclude_sources": [
+        "research/results/graph_option_pilot/train8_sampling/manifest.json",
+        "research/results/graph_option_train64/sampling_001/manifest.json",
+        "research/results/continuation_label_train64/sampling_001/manifest.json",
+        "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl"
+      ],
+      "scenes": 8,
+      "routes_per_scene": 2,
+      "seed": 20261007
+    },
+    "continuation_protocol": "research/FULL_RETURN_LABEL_NEXT_GATE.md",
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+    "outcome_blind_schedule": {
+      "state_seed": 20261007,
+      "random_alternative_seed": 20261008,
+      "one_state_per_route": true,
+      "allow_failed_routes": true,
+      "selection_excludes": [
+        "goal_distance",
+        "reference_route",
+        "branch_progress",
+        "episode_metrics",
+        "success",
+        "SPL",
+        "nDTW"
+      ]
+    }
+  },
+  "max_episodes": -1,
+  "selected_episodes": [
+    "7537",
+    "7585",
+    "2979",
+    "2508",
+    "9559",
+    "9871",
+    "3373",
+    "3716",
+    "6235",
+    "7085",
+    "2101",
+    "9935",
+    "3023",
+    "5703",
+    "2451",
+    "8891"
+  ],
+  "reverse_decisions": [
+    [
+      "data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "3373",
+      0
+    ],
+    [
+      "data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "3373",
+      2
+    ],
+    [
+      "data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "3716",
+      3
+    ],
+    [
+      "data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "3716",
+      4
+    ],
+    [
+      "data/scene_datasets/mp3d/D7G3Y4RVNrH/D7G3Y4RVNrH.glb",
+      "2101",
+      0
+    ],
+    [
+      "data/scene_datasets/mp3d/D7G3Y4RVNrH/D7G3Y4RVNrH.glb",
+      "2101",
+      4
+    ],
+    [
+      "data/scene_datasets/mp3d/D7G3Y4RVNrH/D7G3Y4RVNrH.glb",
+      "9935",
+      3
+    ],
+    [
+      "data/scene_datasets/mp3d/D7G3Y4RVNrH/D7G3Y4RVNrH.glb",
+      "9935",
+      6
+    ],
+    [
+      "data/scene_datasets/mp3d/GdvgFV5R1Z5/GdvgFV5R1Z5.glb",
+      "9559",
+      2
+    ],
+    [
+      "data/scene_datasets/mp3d/GdvgFV5R1Z5/GdvgFV5R1Z5.glb",
+      "9559",
+      3
+    ],
+    [
+      "data/scene_datasets/mp3d/GdvgFV5R1Z5/GdvgFV5R1Z5.glb",
+      "9871",
+      0
+    ],
+    [
+      "data/scene_datasets/mp3d/GdvgFV5R1Z5/GdvgFV5R1Z5.glb",
+      "9871",
+      3
+    ],
+    [
+      "data/scene_datasets/mp3d/JF19kD82Mey/JF19kD82Mey.glb",
+      "2451",
+      0
+    ],
+    [
+      "data/scene_datasets/mp3d/JF19kD82Mey/JF19kD82Mey.glb",
+      "2451",
+      3
+    ],
+    [
+      "data/scene_datasets/mp3d/JF19kD82Mey/JF19kD82Mey.glb",
+      "8891",
+      2
+    ],
+    [
+      "data/scene_datasets/mp3d/JF19kD82Mey/JF19kD82Mey.glb",
+      "8891",
+      13
+    ],
+    [
+      "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "6235",
+      0
+    ],
+    [
+      "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "6235",
+      2
+    ],
+    [
+      "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "7085",
+      1
+    ],
+    [
+      "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "7085",
+      6
+    ],
+    [
+      "data/scene_datasets/mp3d/VzqfbhrpDEA/VzqfbhrpDEA.glb",
+      "7537",
+      2
+    ],
+    [
+      "data/scene_datasets/mp3d/VzqfbhrpDEA/VzqfbhrpDEA.glb",
+      "7537",
+      5
+    ],
+    [
+      "data/scene_datasets/mp3d/VzqfbhrpDEA/VzqfbhrpDEA.glb",
+      "7585",
+      0
+    ],
+    [
+      "data/scene_datasets/mp3d/VzqfbhrpDEA/VzqfbhrpDEA.glb",
+      "7585",
+      4
+    ],
+    [
+      "data/scene_datasets/mp3d/i5noydFURQK/i5noydFURQK.glb",
+      "3023",
+      6
+    ],
+    [
+      "data/scene_datasets/mp3d/i5noydFURQK/i5noydFURQK.glb",
+      "3023",
+      7
+    ],
+    [
+      "data/scene_datasets/mp3d/i5noydFURQK/i5noydFURQK.glb",
+      "5703",
+      1
+    ],
+    [
+      "data/scene_datasets/mp3d/i5noydFURQK/i5noydFURQK.glb",
+      "5703",
+      5
+    ],
+    [
+      "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+      "2508",
+      4
+    ],
+    [
+      "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+      "2508",
+      6
+    ],
+    [
+      "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+      "2979",
+      1
+    ],
+    [
+      "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+      "2979",
+      9
+    ]
+  ],
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "hashes": {
+    "research/results/full_return_label_train16/capture_001/traces/worker_seed100.jsonl": "3db2d22e72690dbadd3383ca1af95d0e04432ab5c61e0bd77fe0d0e9c0a50807",
+    "research/results/full_return_label_train16/capture_001/graph_options/graph_options.jsonl": "f9487957e8cf4ef9b16344eb21c9a5f597812397717b9fd6600a5d681c2c7b3b",
+    "research/tools/probe_graph_options.py": "f2f0d3da42612435bcd8dfaa91d1cc4c65fd2caf0ae70bf39fd54032dff802c8",
+    "research/results/full_return_label_train16/capture_001/manifest.json": "b161b3403ed62b90b8773741e203b37f25bce39d476666e77b70212b80b24a9f",
+    "research/results/full_return_label_train16/noninterference_001/summary.json": "9b4a71d0cb66953eae530863555038945ce77f93a1578490a89906173ba8b205",
+    "research/tools/replay_option_calibration.py": "0f2227866556dd884c98d2ab73bcf5ff2a0d9c5d8eaca4b17f7e165563a8274a"
+  },
+  "privileged_analysis_only": true,
+  "command_argv": [
+    "research/tools/probe_graph_options.py",
+    "--capture-dir",
+    "research/results/full_return_label_train16/capture_001",
+    "--noninterference-dir",
+    "research/results/full_return_label_train16/noninterference_001",
+    "--output-dir",
+    "research/results/full_return_label_train16/probe_full001"
+  ]
+}

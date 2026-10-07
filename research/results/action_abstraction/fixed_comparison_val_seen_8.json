@@ -1,0 +1,129 @@
+{
+  "created": "2026-10-06",
+  "variants": {
+    "coarse": {
+      "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+      "command_stdout": "research/results/action_abstraction/coarse_8.stdout",
+      "diagnostics": {
+        "decisions": 93,
+        "mean_angular_dispersion": 0.782875270450461,
+        "mean_candidate_count": 2.4301075268817205,
+        "mean_entropy": 0.48804092700956186,
+        "mean_progress": 0.11626177962108325,
+        "positive_progress_rate": 0.5161290322580645,
+        "proxy_counts": {
+          "corridor_or_low_visibility": 53,
+          "junction_or_divergent": 34,
+          "open_or_single_route": 6
+        }
+      },
+      "diagnostics_file": "research/results/diagnostics/coarse_8.jsonl",
+      "episodes": 8,
+      "experiment": "aaa_coarse_8",
+      "metrics": {
+        "actual_stop_rate": 0.09930555555555555,
+        "collisions": 0.06357374386446854,
+        "distance_to_goal": 5.358467400074005,
+        "forced_stop_count": 0.375,
+        "forced_stop_max_len_count": 0.375,
+        "forced_stop_no_vp_count": 0.0,
+        "forced_stop_rate": 0.025,
+        "ghost_cnt": 18.625,
+        "high_level_steps": 11.625,
+        "ndtw": 0.41354921532408234,
+        "oracle_success": 0.625,
+        "path_length": 16.564524173736572,
+        "policy_stop_count": 0.625,
+        "policy_stop_rate": 0.07430555555555556,
+        "sdtw": 0.32814374090187093,
+        "spl": 0.3231016547825355,
+        "steps_taken": 131.625,
+        "success": 0.5
+      },
+      "seed": 100,
+      "split": "val_seen"
+    },
+    "default": {
+      "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+      "command_stdout": "research/results/action_abstraction/default_8.stdout",
+      "diagnostics": {
+        "decisions": 73,
+        "mean_angular_dispersion": 0.6424073512324465,
+        "mean_candidate_count": 4.383561643835616,
+        "mean_entropy": 0.8914795597402813,
+        "mean_progress": 0.40556419875523814,
+        "positive_progress_rate": 0.589041095890411,
+        "proxy_counts": {
+          "junction_or_divergent": 52,
+          "open_or_single_route": 21
+        }
+      },
+      "diagnostics_file": "research/results/diagnostics/default_8.jsonl",
+      "episodes": 8,
+      "experiment": "aaa_default_8",
+      "metrics": {
+        "actual_stop_rate": 0.12916666666666668,
+        "collisions": 0.18534529196293903,
+        "distance_to_goal": 3.0092372745275497,
+        "forced_stop_count": 0.25,
+        "forced_stop_max_len_count": 0.25,
+        "forced_stop_no_vp_count": 0.0,
+        "forced_stop_rate": 0.016666666666666666,
+        "ghost_cnt": 22.125,
+        "high_level_steps": 9.125,
+        "ndtw": 0.7086257120693077,
+        "oracle_success": 0.875,
+        "path_length": 10.577169477939606,
+        "policy_stop_count": 0.75,
+        "policy_stop_rate": 0.11249999999999999,
+        "sdtw": 0.70837818492799,
+        "spl": 0.6892070258559706,
+        "steps_taken": 78.375,
+        "success": 0.875
+      },
+      "seed": 100,
+      "split": "val_seen"
+    },
+    "fine": {
+      "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+      "command_stdout": "research/results/action_abstraction/fine_8.stdout",
+      "diagnostics": {
+        "decisions": 65,
+        "mean_angular_dispersion": 0.6782464387766894,
+        "mean_candidate_count": 7.369230769230769,
+        "mean_entropy": 1.0620840821988307,
+        "mean_progress": 0.1930673021536607,
+        "positive_progress_rate": 0.49230769230769234,
+        "proxy_counts": {
+          "junction_or_divergent": 48,
+          "open_or_single_route": 17
+        }
+      },
+      "diagnostics_file": "research/results/diagnostics/fine_8.jsonl",
+      "episodes": 8,
+      "experiment": "aaa_fine_8",
+      "metrics": {
+        "actual_stop_rate": 0.15104166666666666,
+        "collisions": 0.08244360902255639,
+        "distance_to_goal": 5.141338758170605,
+        "forced_stop_count": 0.0,
+        "forced_stop_max_len_count": 0.0,
+        "forced_stop_no_vp_count": 0.0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 23.375,
+        "high_level_steps": 8.125,
+        "ndtw": 0.4972644306080926,
+        "oracle_success": 0.875,
+        "path_length": 15.440490007400513,
+        "policy_stop_count": 1.0,
+        "policy_stop_rate": 0.15104166666666666,
+        "sdtw": 0.433309233774105,
+        "spl": 0.3998673435787149,
+        "steps_taken": 113.5,
+        "success": 0.625
+      },
+      "seed": 100,
+      "split": "val_seen"
+    }
+  }
+}

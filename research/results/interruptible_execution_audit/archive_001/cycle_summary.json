@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-10-07T09:01:06.906551+00:00",
+  "experiment_id": "INTERRUPTIBLE-EXECUTION-AUDIT-001",
+  "status": "complete",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "core_tracked_diff_unchanged": true,
+  "compared_to": "research/results/full_return_feature_audit/analysis_001/git_diff.patch",
+  "scope": "Static source-anchor checker and manual code/literature inspection; no dynamic simulator test",
+  "static_anchor_count": 13,
+  "static_anchor_passed": true,
+  "verification": {
+    "legacy_compile": {
+      "argv": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "-c",
+        "from pathlib import Path; p=Path('research/tools/audit_interruptible_execution.py'); compile(p.read_text(),str(p),'exec'); print('syntax OK')"
+      ],
+      "returncode": 0
+    },
+    "diff_check": {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0
+    }
+  },
+  "literature_cache_verification": [
+    {
+      "path": "research/results/literature_methods_20261007/2304.03047v3.html",
+      "sha256": "31aa9ccb02b11724c7d342e2242fb3e261f76936ac7c7b64d90f50a8e067b5cb",
+      "cache_matches_manifest": true
+    },
+    {
+      "path": "research/results/literature_methods_20261007/2609.03906v1.html",
+      "sha256": "02fb180f487d832d212e5fdb6f705c7f32d5d6b5a68d52c3d7521dced6c8fe39",
+      "cache_matches_manifest": true
+    },
+    {
+      "path": "research/results/literature_methods_20261007/2508.09444v1.html",
+      "sha256": "8c9a85327e054ba8ab35cc52169956f807f8f2225143ffaad84b106e4c55b04d",
+      "cache_matches_manifest": true
+    },
+    {
+      "path": "research/results/literature_methods_20261007/2606.07244v1.html",
+      "sha256": "cfb085fece459b9291a71e1cc7cf028c731924974b86fdb1e4ea24802f735356",
+      "cache_matches_manifest": true
+    },
+    {
+      "path": "research/results/literature_methods_20261007/2606.10577v3.html",
+      "sha256": "b7b90f9320d0404bf3667457e8826c7654d4d4a79d484526cb9a526cee10214b",
+      "cache_matches_manifest": true
+    },
+    {
+      "path": "research/results/literature_methods_20261007/2609.26408v1.html",
+      "sha256": "975d8c125c5ed9a02bd20815e36edc742de7965e9067d38929558799c88a10cd",
+      "cache_matches_manifest": true
+    }
+  ],
+  "limitations": [
+    "Checksums verify cached identity, not independent paper correctness or an exhaustive novelty search.",
+    "No deployable trigger, dynamic interruption test or navigation improvement is established."
+  ],
+  "new_simulator_episodes": 0,
+  "model_training": false,
+  "seed": null,
+  "dataset_split": null,
+  "checkpoint_loaded": null,
+  "not_applicable_reason": "Read-only static audit; referenced empirical runs retain their own provenance.",
+  "hardware": {
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:37:38) [GCC 14.3.0]",
+    "gpu_used": false
+  },
+  "decision": "NO-GO for interruptible execution prototype on current evidence",
+  "source_snapshot_sha256": {
+    "research/EXPERIMENT_TABLE.md": "b552391d11e1a9b66b41bbba2a8f834aa84f0b219939c9b057c13427ec63b211",
+    "research/INTERRUPTIBLE_EXECUTION_AUDIT.md": "a006155564e72bb95d9585a519db1293edc2c73d3df7ead5360752cc72eb2dbb",
+    "research/LITERATURE_METHOD_AUDIT_20261007.md": "036733ca1cc685ed18623f81d0c0be89b0cb35a66e367720cbd7e14da4e699d4",
+    "research/REPORT.md": "51c91a4a7a2c31afcc4e4ec6df7db1cc348a1bc64f1f3faa19804e7086281f4a",
+    "research/RESEARCH_LOG.md": "5bd3fd4ee460f92da96af7615dc6ff35769ce2523baf4ef66a4a511f2f6189ad",
+    "research/RESEARCH_STATUS_CN.md": "ea4242ab99b32e658245e45bb81131e6ca41cd5749a1381500b57eb06c3dc532",
+    "research/configs/INTERRUPTIBLE_EXECUTION_AUDIT_001.json": "3e4d675e1d5806ed7974f2060f78d876610d8b4bdd328236136d57e36034e5b8",
+    "research/results/interruptible_execution_audit/analysis_001/config.json": "8eeb482132431b8171046bffe13ce45c7304eaf34841be0c439490d61c33e517",
+    "research/results/interruptible_execution_audit/analysis_001/summary.json": "e37a4647c296fa1be518bf9f024592fd9549b00e7e25669ab1ae0ed90681698e",
+    "research/results/interruptible_execution_audit/analysis_002/config.json": "3e4d675e1d5806ed7974f2060f78d876610d8b4bdd328236136d57e36034e5b8",
+    "research/results/interruptible_execution_audit/analysis_002/summary.json": "6fec1b72865ca6681f1cd5e073ba02263e48d8ed7d9be45eecaf46110874def9",
+    "research/results/interruptible_execution_audit/preflight_failed_001/audit_interruptible_execution.py": "1e8bd0ae02717c1dd8906037762fc5f98ddd79d4e25933dc0e230df9bc814325",
+    "research/results/interruptible_execution_audit/preflight_failed_001/stderr.log": "b8ba05bc599a603a2536fdd1c3bbcac186c50d720e95167a129197a395d7e3af",
+    "research/results/interruptible_execution_audit/preflight_failed_001/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/interruptible_execution_audit/run_001.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/interruptible_execution_audit/run_001.stdout.log": "07808ce88ade5439dd8f9ec1d3ad70a4dd1f63bb7158c89b680ba922f1c4e2a8",
+    "research/results/interruptible_execution_audit/run_002.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/interruptible_execution_audit/run_002.stdout.log": "07808ce88ade5439dd8f9ec1d3ad70a4dd1f63bb7158c89b680ba922f1c4e2a8",
+    "research/results/interruptible_execution_audit.stderr.log": "b8ba05bc599a603a2536fdd1c3bbcac186c50d720e95167a129197a395d7e3af",
+    "research/results/interruptible_execution_audit.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/results/literature_methods_20261007/2304.03047v3.html": "31aa9ccb02b11724c7d342e2242fb3e261f76936ac7c7b64d90f50a8e067b5cb",
+    "research/results/literature_methods_20261007/2508.09444v1.html": "8c9a85327e054ba8ab35cc52169956f807f8f2225143ffaad84b106e4c55b04d",
+    "research/results/literature_methods_20261007/2606.07244v1.html": "cfb085fece459b9291a71e1cc7cf028c731924974b86fdb1e4ea24802f735356",
+    "research/results/literature_methods_20261007/2606.10577v3.html": "b7b90f9320d0404bf3667457e8826c7654d4d4a79d484526cb9a526cee10214b",
+    "research/results/literature_methods_20261007/2609.03906v1.html": "02fb180f487d832d212e5fdb6f705c7f32d5d6b5a68d52c3d7521dced6c8fe39",
+    "research/results/literature_methods_20261007/2609.26408v1.html": "975d8c125c5ed9a02bd20815e36edc742de7965e9067d38929558799c88a10cd",
+    "research/results/literature_methods_20261007/manifest.json": "120d61b0e0e1b7669793e65d469e28d1663e0bab02a18f26fdd594391c403d95",
+    "research/results/native_stop_feasibility/analysis_001/summary.json": "15964193e74c3fc9a375e7154d2015c7a1042abd79c04e16cde9e0bd3a64a747",
+    "research/results/native_stop_feasibility/primitive_arrival_001/summary.json": "09bec09730abf18f8587a9863d56e8955a30f314e946a215fcaa24ea767810cb",
+    "research/tools/audit_interruptible_execution.py": "1223715c775f59182a623175436d9cc8858415e43595a331cb9f92cd4e7dce38",
+    "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+    "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+    "vlnce_baselines/models/graph_utils.py": "a4876fd7d1598c0f39b4186f769f62f31181fa16a038cf9d35562cf79a62c205",
+    "vlnce_baselines/ss_trainer_ETP.py": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59"
+  },
+  "failed_preflight_preserved": true,
+  "latest_static_summary": "research/results/interruptible_execution_audit/analysis_002/summary.json"
+}

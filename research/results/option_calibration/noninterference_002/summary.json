@@ -1,0 +1,87 @@
+{
+  "experiment_id": "OPTION-CALIBRATION-002",
+  "baseline_noninterference_gate_passed": true,
+  "episode_comparison": {
+    "passed": true,
+    "episodes": 66,
+    "metric_comparisons": 1188,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "aggregate_comparison": {
+    "passed": true,
+    "episodes": 1,
+    "metric_comparisons": 18,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "sources": {
+    "capture_episodes": {
+      "path": "data/logs/eval_results/aaa_option_capture002/stats_ep_ckpt_59_val_unseen_r0_w1.json",
+      "sha256": "51400aa404c1128a4d4899bf1088db49ed445463612b61ebc30b57efa3f038fa"
+    },
+    "capture_aggregate": {
+      "path": "data/logs/eval_results/aaa_option_capture002/stats_ckpt_59_val_unseen.json",
+      "sha256": "f3207296efb3ef6f4ea161a43c7b0ccb8deae122c7027a9710405d56697c5273"
+    },
+    "control_episodes": {
+      "path": "data/logs/eval_results/aaa_option_control002/stats_ep_ckpt_59_val_unseen_r0_w1.json",
+      "sha256": "51400aa404c1128a4d4899bf1088db49ed445463612b61ebc30b57efa3f038fa"
+    },
+    "control_aggregate": {
+      "path": "data/logs/eval_results/aaa_option_control002/stats_ckpt_59_val_unseen.json",
+      "sha256": "f3207296efb3ef6f4ea161a43c7b0ccb8deae122c7027a9710405d56697c5273"
+    }
+  },
+  "config": {
+    "experiment_id": "OPTION-CALIBRATION-002",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "val_unseen",
+    "episodes": 66,
+    "seed": 100,
+    "dataset_path": "research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz",
+    "sampling_manifest": "research/results/option_calibration/unseen_balanced66_sampling/manifest.json",
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "purpose": "Validate selected-option replay across all 11 unseen scenes, six distinct routes per scene, before collecting alternate options.",
+    "limits": "Diagnostic subset, not a benchmark score. Static scenes, default sensors/controller, no noise; sliding=true disables tryout. Privileged distances are analysis-only."
+  },
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "metrics": {
+    "steps_taken": 86.81818181818181,
+    "distance_to_goal": 3.6843100312645687,
+    "success": 0.6666666666666666,
+    "oracle_success": 0.696969696969697,
+    "path_length": 12.460764288902283,
+    "collisions": 0.10513310377007502,
+    "spl": 0.5454684972881774,
+    "ndtw": 0.6056012312761734,
+    "sdtw": 0.4967179405244287,
+    "ghost_cnt": 25.060606060606062,
+    "high_level_steps": 9.090909090909092,
+    "policy_stop_count": 0.8787878787878788,
+    "forced_stop_count": 0.12121212121212122,
+    "forced_stop_max_len_count": 0.12121212121212122,
+    "forced_stop_no_vp_count": 0.0,
+    "policy_stop_rate": 0.11736991964264695,
+    "forced_stop_rate": 0.00808080808080808,
+    "actual_stop_rate": 0.125450727723455
+  },
+  "limits": "Metric equality tests tracing only; does not establish alternative-action validity or runtime neutrality."
+}

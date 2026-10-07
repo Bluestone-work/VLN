@@ -1,0 +1,19 @@
+{
+  "experiment_id": "CONTINUATION-LABEL-TRAIN64-001",
+  "integrity_gate_passed": true,
+  "branches": 6699,
+  "forward_branches": 5334,
+  "reverse_branches": 1365,
+  "max_start_position_error_m": 0.0,
+  "max_start_rotation_error_rad": 4.2146848510894035e-08,
+  "max_start_goal_distance_error_m": 0.0,
+  "all_action_dictionaries_exact": true,
+  "all_start_rng_exact": true,
+  "all_admissibility_and_coverage_checks_passed": true,
+  "stop_branches": 597,
+  "branches_with_back_path": 4331,
+  "primitive_events_including_repeats": 216772,
+  "collision_events_including_repeats": 4125,
+  "raw_trace_sha256": "7507eab37f256d0aca055b925ce471d7f295de3063bade1d0db6a3d3f0a0317d",
+  "audit_source_sha256": "4dbbafc0f6a79336900d2c155ff95ac52881f1985354ddbb6f32b8ebbb04ba7a"
+}

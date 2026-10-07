@@ -1,0 +1,19 @@
+{
+  "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001",
+  "integrity_gate_passed": true,
+  "branches": 1734,
+  "forward_branches": 1429,
+  "reverse_branches": 305,
+  "max_start_position_error_m": 0.0,
+  "max_start_rotation_error_rad": 4.2146848510894035e-08,
+  "max_start_goal_distance_error_m": 0.0,
+  "all_action_dictionaries_exact": true,
+  "all_start_rng_exact": true,
+  "all_admissibility_and_coverage_checks_passed": true,
+  "stop_branches": 164,
+  "branches_with_back_path": 1154,
+  "primitive_events_including_repeats": 54544,
+  "collision_events_including_repeats": 1510,
+  "raw_trace_sha256": "2f638cc4b6cb136d2b0ccc6bc612e4e9f72850a96d17821d376eb5f4162f0862",
+  "audit_source_sha256": "4dbbafc0f6a79336900d2c155ff95ac52881f1985354ddbb6f32b8ebbb04ba7a"
+}

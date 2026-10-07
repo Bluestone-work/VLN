@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-07T04:09:36.537317+00:00",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "hashes": {
+    "research/tools/audit_single_intervention.py": "2e3666a63080add9ab2be046ab48e43c19091851919982006c9830d7e1dcda22",
+    "research/results/single_intervention_train7/disabled_001/manifest.json": "371c4ea3601150f990754619ce05e1fd625daada2d87df1e4ce295182cbc3a32",
+    "research/results/graph_option_train64/capture_001/manifest.json": "83410401b55b71114941f43f2ff6aaf008f1a9598e43b70b7f7999cfb3169a76",
+    "research/results/graph_option_train64/noninterference_001/summary.json": "e1350a3d6106f9044afe6b1ba5a92cc598240102bcb76d7ed80d2e452e9d9e3e",
+    "research/results/single_intervention_train7/disabled_001/traces/worker_seed100.jsonl": "4dcc4cf8c7499ec19cc1b2aab272a64433105862ab86b18c6bbce85bcde4cf12",
+    "research/results/graph_option_train64/capture_001/traces/worker_seed100.jsonl": "4dcc4cf8c7499ec19cc1b2aab272a64433105862ab86b18c6bbce85bcde4cf12",
+    "research/results/graph_option_train64/noninterference_001/capture_episodes.json": "b11921013fa49e907041fa9cec1cac3f5fe6037cf5d80f5c47690e4b261b9e98",
+    "data/logs/eval_results/aaa_single_intervention_train7_disabled001/stats_ep_ckpt_59_train_r0_w1.json": "b11921013fa49e907041fa9cec1cac3f5fe6037cf5d80f5c47690e4b261b9e98",
+    "data/logs/eval_results/aaa_single_intervention_train7_disabled001/stats_ckpt_59_train.json": "3ef07126297ce754d8704a4c8f2e4502795c218cc3e89cd8bb47f41e1d581afd",
+    "research/results/single_intervention_train7/disabled_001/hook/decisions.jsonl": "2d114a42e67c3c6fb903cca3b39727389138544ae5f7fcadf8c1b9d22f3aa430",
+    "research/results/single_intervention_train7/disabled_001/hook/summary.json": "8565ece89147f35020a39c8fed16af775fedc571d48a350e4d39831885e5b37f"
+  }
+}

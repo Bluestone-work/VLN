@@ -1,0 +1,1139 @@
+{
+  "experiment_id": "CONTINUATION-LABEL-TRAIN64-001",
+  "analysis_type": "prospectively registered H=2 confirmation of H=1 candidates",
+  "total_routes": 64,
+  "treated_routes": 5,
+  "treated_scenes": 3,
+  "accepted_routes": 2,
+  "rejected_routes": 3,
+  "events": [
+    {
+      "episode_id": "1773",
+      "scene_id": "data/scene_datasets/mp3d/V2XKFyX4ASd/V2XKFyX4ASd.glb",
+      "high_level_step": 5,
+      "horizons": {
+        "1": {
+          "baseline": {
+            "distance_to_goal": 3.650428295135498,
+            "primitive_count": 57,
+            "movement_m": 5.7500016757745716,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 3.252413272857666,
+            "primitive_count": 26,
+            "movement_m": 2.7500007351188933,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": true,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 0.39801502227783203,
+            "primitive_delta": -31,
+            "movement_delta_m": -3.0000009406556782
+          }
+        },
+        "2": {
+          "baseline": {
+            "distance_to_goal": 2.6257121562957764,
+            "primitive_count": 74,
+            "movement_m": 7.000001750980687,
+            "actual_decisions": 2,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 3.7299208641052246,
+            "primitive_count": 76,
+            "movement_m": 8.75000061442314,
+            "actual_decisions": 2,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": false,
+            "gates": {
+              "material_progress": false,
+              "primitive_cap": false,
+              "path_cap": false
+            },
+            "extra_goal_progress_m": -1.1042087078094482,
+            "primitive_delta": 2,
+            "movement_delta_m": 1.7499988634424533
+          }
+        },
+        "3": {
+          "baseline": {
+            "distance_to_goal": 3.1740713119506836,
+            "primitive_count": 82,
+            "movement_m": 9.00000187131047,
+            "actual_decisions": 3,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 2.4956469535827637,
+            "primitive_count": 87,
+            "movement_m": 10.750000989179487,
+            "actual_decisions": 3,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": false,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": false,
+              "path_cap": false
+            },
+            "extra_goal_progress_m": 0.6784243583679199,
+            "primitive_delta": 5,
+            "movement_delta_m": 1.7499991178690166
+          }
+        }
+      },
+      "h2_accepted": false,
+      "final_delta": {
+        "actual_stop_rate": 0.024242424242424246,
+        "collision_events": -1,
+        "collisions": -0.005681818181818182,
+        "distance_to_goal": -1.6906077861785889,
+        "forced_stop_count": -1,
+        "forced_stop_max_len_count": -1,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": -0.06666666666666667,
+        "ghost_cnt": 1,
+        "high_level_steps": -4,
+        "native_collision_count": -1,
+        "ndtw": 0.3129271260897377,
+        "oracle_success": 0.0,
+        "path_length": -22.899133682250977,
+        "policy_stop_count": 1,
+        "policy_stop_rate": 0.09090909090909091,
+        "primitive_action_count": -244,
+        "sdtw": 0.3129271260897377,
+        "spl": 0.16308254088695745,
+        "steps_taken": -244.0,
+        "success": 0.0
+      },
+      "final_extra_goal_progress_m": 1.6906077861785889,
+      "both_terminal_by_h2": false,
+      "either_terminal_by_h2": false,
+      "extra_goal_progress_strictly_after_h2_m": 2.794816493988037,
+      "primitive_delta_strictly_after_h2": -246,
+      "success_lost": false,
+      "ndtw_worse": false,
+      "episode_primitive_cost_increased": false
+    },
+    {
+      "episode_id": "6126",
+      "scene_id": "data/scene_datasets/mp3d/V2XKFyX4ASd/V2XKFyX4ASd.glb",
+      "high_level_step": 0,
+      "horizons": {
+        "1": {
+          "baseline": {
+            "distance_to_goal": 4.607122421264648,
+            "primitive_count": 15,
+            "movement_m": 1.9756174685393018,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 4.170084476470947,
+            "primitive_count": 13,
+            "movement_m": 1.250000229492777,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": true,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 0.43703794479370117,
+            "primitive_delta": -2,
+            "movement_delta_m": -0.7256172390465248
+          }
+        },
+        "2": {
+          "baseline": {
+            "distance_to_goal": 3.3643651008605957,
+            "primitive_count": 28,
+            "movement_m": 3.225618307699987,
+            "actual_decisions": 2,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 2.9221014976501465,
+            "primitive_count": 24,
+            "movement_m": 2.500000458985554,
+            "actual_decisions": 2,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": true,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 0.4422636032104492,
+            "primitive_delta": -4,
+            "movement_delta_m": -0.7256178487144331
+          }
+        },
+        "3": {
+          "baseline": {
+            "distance_to_goal": 2.0973057746887207,
+            "primitive_count": 33,
+            "movement_m": 4.49149575675963,
+            "actual_decisions": 3,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 1.8882553577423096,
+            "primitive_count": 30,
+            "movement_m": 3.7499996683510415,
+            "actual_decisions": 3,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": false,
+            "gates": {
+              "material_progress": false,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 0.20905041694641113,
+            "primitive_delta": -3,
+            "movement_delta_m": -0.7414960884085882
+          }
+        }
+      },
+      "h2_accepted": true,
+      "final_delta": {
+        "actual_stop_rate": 0.0,
+        "collision_events": -3,
+        "collisions": -0.125,
+        "distance_to_goal": -0.5252246856689453,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 1,
+        "high_level_steps": 0,
+        "native_collision_count": -3,
+        "ndtw": 0.10995806750599546,
+        "oracle_success": 0.0,
+        "path_length": -0.7414960861206055,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.0,
+        "primitive_action_count": 0,
+        "sdtw": 0.10995806750599546,
+        "spl": 0.12453249904712294,
+        "steps_taken": 0.0,
+        "success": 0.0
+      },
+      "final_extra_goal_progress_m": 0.5252246856689453,
+      "both_terminal_by_h2": false,
+      "either_terminal_by_h2": false,
+      "extra_goal_progress_strictly_after_h2_m": 0.0829610824584961,
+      "primitive_delta_strictly_after_h2": 4,
+      "success_lost": false,
+      "ndtw_worse": false,
+      "episode_primitive_cost_increased": false
+    },
+    {
+      "episode_id": "1374",
+      "scene_id": "data/scene_datasets/mp3d/S9hNv5qa7GM/S9hNv5qa7GM.glb",
+      "high_level_step": 5,
+      "horizons": {
+        "1": {
+          "baseline": {
+            "distance_to_goal": 2.7422034740448,
+            "primitive_count": 8,
+            "movement_m": 1.7499998254138471,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 2.4616787433624268,
+            "primitive_count": 5,
+            "movement_m": 1.2500002102228613,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": true,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 0.28052473068237305,
+            "primitive_delta": -3,
+            "movement_delta_m": -0.4999996151909858
+          }
+        },
+        "2": {
+          "baseline": {
+            "distance_to_goal": 0.8309761881828308,
+            "primitive_count": 24,
+            "movement_m": 4.000000220264753,
+            "actual_decisions": 2,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 1.067117691040039,
+            "primitive_count": 16,
+            "movement_m": 2.7499999645601614,
+            "actual_decisions": 2,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": false,
+            "gates": {
+              "material_progress": false,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": -0.23614150285720825,
+            "primitive_delta": -8,
+            "movement_delta_m": -1.2500002557045917
+          }
+        },
+        "3": {
+          "baseline": {
+            "distance_to_goal": 0.8309761881828308,
+            "primitive_count": 25,
+            "movement_m": 4.000000220264753,
+            "actual_decisions": 3,
+            "terminal": true
+          },
+          "intervention": {
+            "distance_to_goal": 0.0974811464548111,
+            "primitive_count": 22,
+            "movement_m": 3.749999002432587,
+            "actual_decisions": 3,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": true,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 0.7334950417280197,
+            "primitive_delta": -3,
+            "movement_delta_m": -0.2500012178321662
+          }
+        }
+      },
+      "h2_accepted": false,
+      "final_delta": {
+        "actual_stop_rate": -0.013888888888888895,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": -0.7334950417280197,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 3,
+        "high_level_steps": 1,
+        "native_collision_count": 0,
+        "ndtw": 0.03227442110736678,
+        "oracle_success": 0.0,
+        "path_length": -0.2500009536743164,
+        "policy_stop_count": 0,
+        "policy_stop_rate": -0.013888888888888895,
+        "primitive_action_count": -2,
+        "sdtw": 0.03227442110736678,
+        "spl": 0.02111912622866785,
+        "steps_taken": -2.0,
+        "success": 0.0
+      },
+      "final_extra_goal_progress_m": 0.7334950417280197,
+      "both_terminal_by_h2": false,
+      "either_terminal_by_h2": false,
+      "extra_goal_progress_strictly_after_h2_m": 0.969636544585228,
+      "primitive_delta_strictly_after_h2": 6,
+      "success_lost": false,
+      "ndtw_worse": false,
+      "episode_primitive_cost_increased": false
+    },
+    {
+      "episode_id": "10121",
+      "scene_id": "data/scene_datasets/mp3d/S9hNv5qa7GM/S9hNv5qa7GM.glb",
+      "high_level_step": 3,
+      "horizons": {
+        "1": {
+          "baseline": {
+            "distance_to_goal": 7.320033073425293,
+            "primitive_count": 30,
+            "movement_m": 3.1982530507097735,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 6.263044357299805,
+            "primitive_count": 27,
+            "movement_m": 1.999999859105806,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": true,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 1.0569887161254883,
+            "primitive_delta": -3,
+            "movement_delta_m": -1.1982531916039676
+          }
+        },
+        "2": {
+          "baseline": {
+            "distance_to_goal": 6.4793877601623535,
+            "primitive_count": 42,
+            "movement_m": 4.701984314675844,
+            "actual_decisions": 2,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 6.568655014038086,
+            "primitive_count": 62,
+            "movement_m": 4.4999998711551505,
+            "actual_decisions": 2,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": false,
+            "gates": {
+              "material_progress": false,
+              "primitive_cap": false,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": -0.08926725387573242,
+            "primitive_delta": 20,
+            "movement_delta_m": -0.20198444352069345
+          }
+        },
+        "3": {
+          "baseline": {
+            "distance_to_goal": 4.229604244232178,
+            "primitive_count": 53,
+            "movement_m": 6.951984071122501,
+            "actual_decisions": 3,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 6.944766044616699,
+            "primitive_count": 67,
+            "movement_m": 5.249999981368933,
+            "actual_decisions": 3,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": false,
+            "gates": {
+              "material_progress": false,
+              "primitive_cap": false,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": -2.7151618003845215,
+            "primitive_delta": 14,
+            "movement_delta_m": -1.7019840897535685
+          }
+        }
+      },
+      "h2_accepted": false,
+      "final_delta": {
+        "actual_stop_rate": -0.007575757575757583,
+        "collision_events": -2,
+        "collisions": -0.028647087144920556,
+        "distance_to_goal": 0.4925740957260132,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": -6,
+        "high_level_steps": 1,
+        "native_collision_count": -2,
+        "ndtw": -0.025492379726637315,
+        "oracle_success": 0.0,
+        "path_length": -0.8761157989501953,
+        "policy_stop_count": 0,
+        "policy_stop_rate": -0.007575757575757583,
+        "primitive_action_count": 32,
+        "sdtw": -0.025492379726637315,
+        "spl": 0.029851231505531373,
+        "steps_taken": 32.0,
+        "success": 0.0
+      },
+      "final_extra_goal_progress_m": -0.4925740957260132,
+      "both_terminal_by_h2": false,
+      "either_terminal_by_h2": false,
+      "extra_goal_progress_strictly_after_h2_m": -0.40330684185028076,
+      "primitive_delta_strictly_after_h2": 12,
+      "success_lost": false,
+      "ndtw_worse": true,
+      "episode_primitive_cost_increased": true
+    },
+    {
+      "episode_id": "7581",
+      "scene_id": "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb",
+      "high_level_step": 5,
+      "horizons": {
+        "1": {
+          "baseline": {
+            "distance_to_goal": 1.0427448749542236,
+            "primitive_count": 7,
+            "movement_m": 1.5000015470633323,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "intervention": {
+            "distance_to_goal": 0.41179463267326355,
+            "primitive_count": 7,
+            "movement_m": 0.9999993870896916,
+            "actual_decisions": 1,
+            "terminal": false
+          },
+          "comparison": {
+            "accepted": true,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 0.6309502422809601,
+            "primitive_delta": 0,
+            "movement_delta_m": -0.5000021599736407
+          }
+        },
+        "2": {
+          "baseline": {
+            "distance_to_goal": 1.0427448749542236,
+            "primitive_count": 8,
+            "movement_m": 1.5000015470633323,
+            "actual_decisions": 2,
+            "terminal": true
+          },
+          "intervention": {
+            "distance_to_goal": 0.41179463267326355,
+            "primitive_count": 8,
+            "movement_m": 0.9999993870896916,
+            "actual_decisions": 2,
+            "terminal": true
+          },
+          "comparison": {
+            "accepted": true,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 0.6309502422809601,
+            "primitive_delta": 0,
+            "movement_delta_m": -0.5000021599736407
+          }
+        },
+        "3": {
+          "baseline": {
+            "distance_to_goal": 1.0427448749542236,
+            "primitive_count": 8,
+            "movement_m": 1.5000015470633323,
+            "actual_decisions": 2,
+            "terminal": true
+          },
+          "intervention": {
+            "distance_to_goal": 0.41179463267326355,
+            "primitive_count": 8,
+            "movement_m": 0.9999993870896916,
+            "actual_decisions": 2,
+            "terminal": true
+          },
+          "comparison": {
+            "accepted": true,
+            "gates": {
+              "material_progress": true,
+              "primitive_cap": true,
+              "path_cap": true
+            },
+            "extra_goal_progress_m": 0.6309502422809601,
+            "primitive_delta": 0,
+            "movement_delta_m": -0.5000021599736407
+          }
+        }
+      },
+      "h2_accepted": true,
+      "final_delta": {
+        "actual_stop_rate": 0.0,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": -0.6309502422809601,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 1,
+        "high_level_steps": 0,
+        "native_collision_count": 0,
+        "ndtw": 0.018586517319842177,
+        "oracle_success": 0.0,
+        "path_length": -0.5000009536743164,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.0,
+        "primitive_action_count": 0,
+        "sdtw": 0.018586517319842177,
+        "spl": 0.05291710893987411,
+        "steps_taken": 0.0,
+        "success": 0.0
+      },
+      "final_extra_goal_progress_m": 0.6309502422809601,
+      "both_terminal_by_h2": true,
+      "either_terminal_by_h2": true,
+      "extra_goal_progress_strictly_after_h2_m": 0.0,
+      "primitive_delta_strictly_after_h2": 0,
+      "success_lost": false,
+      "ndtw_worse": false,
+      "episode_primitive_cost_increased": false
+    }
+  ],
+  "groups": {
+    "treated": {
+      "h1_actual": {
+        "episodes": 5,
+        "metrics": {
+          "success": {
+            "baseline_mean": 1.0,
+            "composed_mean": 1.0,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "spl": {
+            "baseline_mean": 0.6609045626082753,
+            "composed_mean": 0.739205063929906,
+            "sum_delta": 0.3915025066081532,
+            "mean_delta": 0.07830050132163065
+          },
+          "ndtw": {
+            "baseline_mean": 0.6804873196833322,
+            "composed_mean": 0.7701380701425932,
+            "sum_delta": 0.44825375229630504,
+            "mean_delta": 0.089650750459261
+          },
+          "sdtw": {
+            "baseline_mean": 0.6804873196833322,
+            "composed_mean": 0.7701380701425932,
+            "sum_delta": 0.44825375229630504,
+            "mean_delta": 0.089650750459261
+          },
+          "distance_to_goal": {
+            "baseline_mean": 1.3672696232795716,
+            "composed_mean": 0.7497288912534714,
+            "sum_delta": -3.087703660130501,
+            "mean_delta": -0.6175407320261002
+          },
+          "path_length": {
+            "baseline_mean": 17.065827083587646,
+            "composed_mean": 12.012477588653564,
+            "sum_delta": -25.26674747467041,
+            "mean_delta": -5.053349494934082
+          },
+          "primitive_action_count": {
+            "baseline_mean": 138.4,
+            "composed_mean": 95.6,
+            "sum_delta": -214,
+            "mean_delta": -42.8
+          },
+          "high_level_steps": {
+            "baseline_mean": 9.2,
+            "composed_mean": 8.8,
+            "sum_delta": -2,
+            "mean_delta": -0.4
+          },
+          "collision_events": {
+            "baseline_mean": 1.4,
+            "composed_mean": 0.2,
+            "sum_delta": -6,
+            "mean_delta": -1.2
+          }
+        },
+        "success_rescued": [],
+        "success_lost": []
+      },
+      "h2_offline_composition": {
+        "episodes": 5,
+        "metrics": {
+          "success": {
+            "baseline_mean": 1.0,
+            "composed_mean": 1.0,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "spl": {
+            "baseline_mean": 0.6609045626082753,
+            "composed_mean": 0.6963944842056747,
+            "sum_delta": 0.17744960798699694,
+            "mean_delta": 0.03548992159739939
+          },
+          "ndtw": {
+            "baseline_mean": 0.6804873196833322,
+            "composed_mean": 0.7061962366484997,
+            "sum_delta": 0.12854458482583775,
+            "mean_delta": 0.02570891696516755
+          },
+          "sdtw": {
+            "baseline_mean": 0.6804873196833322,
+            "composed_mean": 0.7061962366484997,
+            "sum_delta": 0.12854458482583775,
+            "mean_delta": 0.02570891696516755
+          },
+          "distance_to_goal": {
+            "baseline_mean": 1.3672696232795716,
+            "composed_mean": 1.1360346376895905,
+            "sum_delta": -1.1561749279499054,
+            "mean_delta": -0.23123498558998107
+          },
+          "path_length": {
+            "baseline_mean": 17.065827083587646,
+            "composed_mean": 16.81752767562866,
+            "sum_delta": -1.2414970397949219,
+            "mean_delta": -0.24829940795898436
+          },
+          "primitive_action_count": {
+            "baseline_mean": 138.4,
+            "composed_mean": 138.4,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "high_level_steps": {
+            "baseline_mean": 9.2,
+            "composed_mean": 9.2,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "collision_events": {
+            "baseline_mean": 1.4,
+            "composed_mean": 0.8,
+            "sum_delta": -3,
+            "mean_delta": -0.6
+          }
+        },
+        "success_rescued": [],
+        "success_lost": []
+      }
+    },
+    "accepted": {
+      "h1_actual": {
+        "episodes": 2,
+        "metrics": {
+          "success": {
+            "baseline_mean": 1.0,
+            "composed_mean": 1.0,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "spl": {
+            "baseline_mean": 0.8651870652078011,
+            "composed_mean": 0.9539118692012996,
+            "sum_delta": 0.17744960798699694,
+            "mean_delta": 0.08872480399349847
+          },
+          "ndtw": {
+            "baseline_mean": 0.8750951243391252,
+            "composed_mean": 0.939367416752044,
+            "sum_delta": 0.12854458482583775,
+            "mean_delta": 0.06427229241291887
+          },
+          "sdtw": {
+            "baseline_mean": 0.8750951243391252,
+            "composed_mean": 0.939367416752044,
+            "sum_delta": 0.12854458482583775,
+            "mean_delta": 0.06427229241291887
+          },
+          "distance_to_goal": {
+            "baseline_mean": 1.111419916152954,
+            "composed_mean": 0.5333324521780014,
+            "sum_delta": -1.1561749279499054,
+            "mean_delta": -0.5780874639749527
+          },
+          "path_length": {
+            "baseline_mean": 7.328450918197632,
+            "composed_mean": 6.707702398300171,
+            "sum_delta": -1.2414970397949219,
+            "mean_delta": -0.6207485198974609
+          },
+          "primitive_action_count": {
+            "baseline_mean": 48.0,
+            "composed_mean": 48.0,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "high_level_steps": {
+            "baseline_mean": 6.0,
+            "composed_mean": 6.0,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "collision_events": {
+            "baseline_mean": 1.5,
+            "composed_mean": 0.0,
+            "sum_delta": -3,
+            "mean_delta": -1.5
+          }
+        },
+        "success_rescued": [],
+        "success_lost": []
+      },
+      "h2_offline_composition": {
+        "episodes": 2,
+        "metrics": {
+          "success": {
+            "baseline_mean": 1.0,
+            "composed_mean": 1.0,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "spl": {
+            "baseline_mean": 0.8651870652078011,
+            "composed_mean": 0.9539118692012996,
+            "sum_delta": 0.17744960798699694,
+            "mean_delta": 0.08872480399349847
+          },
+          "ndtw": {
+            "baseline_mean": 0.8750951243391252,
+            "composed_mean": 0.939367416752044,
+            "sum_delta": 0.12854458482583775,
+            "mean_delta": 0.06427229241291887
+          },
+          "sdtw": {
+            "baseline_mean": 0.8750951243391252,
+            "composed_mean": 0.939367416752044,
+            "sum_delta": 0.12854458482583775,
+            "mean_delta": 0.06427229241291887
+          },
+          "distance_to_goal": {
+            "baseline_mean": 1.111419916152954,
+            "composed_mean": 0.5333324521780014,
+            "sum_delta": -1.1561749279499054,
+            "mean_delta": -0.5780874639749527
+          },
+          "path_length": {
+            "baseline_mean": 7.328450918197632,
+            "composed_mean": 6.707702398300171,
+            "sum_delta": -1.2414970397949219,
+            "mean_delta": -0.6207485198974609
+          },
+          "primitive_action_count": {
+            "baseline_mean": 48.0,
+            "composed_mean": 48.0,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "high_level_steps": {
+            "baseline_mean": 6.0,
+            "composed_mean": 6.0,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "collision_events": {
+            "baseline_mean": 1.5,
+            "composed_mean": 0.0,
+            "sum_delta": -3,
+            "mean_delta": -1.5
+          }
+        },
+        "success_rescued": [],
+        "success_lost": []
+      }
+    },
+    "rejected": {
+      "h1_actual": {
+        "episodes": 3,
+        "metrics": {
+          "success": {
+            "baseline_mean": 1.0,
+            "composed_mean": 1.0,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "spl": {
+            "baseline_mean": 0.5247162275419247,
+            "composed_mean": 0.596067193748977,
+            "sum_delta": 0.21405289862115673,
+            "mean_delta": 0.07135096620705224
+          },
+          "ndtw": {
+            "baseline_mean": 0.5507487832461369,
+            "composed_mean": 0.6573185057362926,
+            "sum_delta": 0.31970916747046707,
+            "mean_delta": 0.10656972249015569
+          },
+          "sdtw": {
+            "baseline_mean": 0.5507487832461369,
+            "composed_mean": 0.6573185057362926,
+            "sum_delta": 0.31970916747046707,
+            "mean_delta": 0.10656972249015569
+          },
+          "distance_to_goal": {
+            "baseline_mean": 1.5378360946973164,
+            "composed_mean": 0.8939931839704514,
+            "sum_delta": -1.9315287321805954,
+            "mean_delta": -0.6438429107268652
+          },
+          "path_length": {
+            "baseline_mean": 23.557411193847656,
+            "composed_mean": 15.548994382222494,
+            "sum_delta": -24.02525043487549,
+            "mean_delta": -8.008416811625162
+          },
+          "primitive_action_count": {
+            "baseline_mean": 198.66666666666666,
+            "composed_mean": 127.33333333333333,
+            "sum_delta": -214,
+            "mean_delta": -71.33333333333333
+          },
+          "high_level_steps": {
+            "baseline_mean": 11.333333333333334,
+            "composed_mean": 10.666666666666666,
+            "sum_delta": -2,
+            "mean_delta": -0.6666666666666666
+          },
+          "collision_events": {
+            "baseline_mean": 1.3333333333333333,
+            "composed_mean": 0.3333333333333333,
+            "sum_delta": -3,
+            "mean_delta": -1.0
+          }
+        },
+        "success_rescued": [],
+        "success_lost": []
+      },
+      "h2_offline_composition": {
+        "episodes": 3,
+        "metrics": {
+          "success": {
+            "baseline_mean": 1.0,
+            "composed_mean": 1.0,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "spl": {
+            "baseline_mean": 0.5247162275419247,
+            "composed_mean": 0.5247162275419247,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "ndtw": {
+            "baseline_mean": 0.5507487832461369,
+            "composed_mean": 0.5507487832461369,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "sdtw": {
+            "baseline_mean": 0.5507487832461369,
+            "composed_mean": 0.5507487832461369,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "distance_to_goal": {
+            "baseline_mean": 1.5378360946973164,
+            "composed_mean": 1.5378360946973164,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "path_length": {
+            "baseline_mean": 23.557411193847656,
+            "composed_mean": 23.557411193847656,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "primitive_action_count": {
+            "baseline_mean": 198.66666666666666,
+            "composed_mean": 198.66666666666666,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "high_level_steps": {
+            "baseline_mean": 11.333333333333334,
+            "composed_mean": 11.333333333333334,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "collision_events": {
+            "baseline_mean": 1.3333333333333333,
+            "composed_mean": 1.3333333333333333,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          }
+        },
+        "success_rescued": [],
+        "success_lost": []
+      }
+    },
+    "all_routes": {
+      "h1_actual": {
+        "episodes": 64,
+        "metrics": {
+          "success": {
+            "baseline_mean": 0.875,
+            "composed_mean": 0.875,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "spl": {
+            "baseline_mean": 0.8147057819555287,
+            "composed_mean": 0.8208230086212812,
+            "sum_delta": 0.39150250660816255,
+            "mean_delta": 0.00611722666575254
+          },
+          "ndtw": {
+            "baseline_mean": 0.8157750710860173,
+            "composed_mean": 0.8227790359656469,
+            "sum_delta": 0.4482537522962957,
+            "mean_delta": 0.0070039648796296206
+          },
+          "sdtw": {
+            "baseline_mean": 0.7468808714498595,
+            "composed_mean": 0.7538848363294893,
+            "sum_delta": 0.4482537522963099,
+            "mean_delta": 0.007003964879629843
+          },
+          "distance_to_goal": {
+            "baseline_mean": 1.6618700249237008,
+            "composed_mean": 1.6136246552341618,
+            "sum_delta": -3.087703660130501,
+            "mean_delta": -0.048245369689539075
+          },
+          "path_length": {
+            "baseline_mean": 9.88343420624733,
+            "composed_mean": 9.488641276955605,
+            "sum_delta": -25.26674747467041,
+            "mean_delta": -0.39479292929172516
+          },
+          "primitive_action_count": {
+            "baseline_mean": 61.5,
+            "composed_mean": 58.15625,
+            "sum_delta": -214,
+            "mean_delta": -3.34375
+          },
+          "high_level_steps": {
+            "baseline_mean": 7.328125,
+            "composed_mean": 7.296875,
+            "sum_delta": -2,
+            "mean_delta": -0.03125
+          },
+          "collision_events": {
+            "baseline_mean": 2.203125,
+            "composed_mean": 2.109375,
+            "sum_delta": -6,
+            "mean_delta": -0.09375
+          }
+        },
+        "success_rescued": [],
+        "success_lost": []
+      },
+      "h2_offline_composition": {
+        "episodes": 64,
+        "metrics": {
+          "success": {
+            "baseline_mean": 0.875,
+            "composed_mean": 0.875,
+            "sum_delta": 0.0,
+            "mean_delta": 0.0
+          },
+          "spl": {
+            "baseline_mean": 0.8147057819555287,
+            "composed_mean": 0.8174784320803256,
+            "sum_delta": 0.1774496079870005,
+            "mean_delta": 0.0027726501247968827
+          },
+          "ndtw": {
+            "baseline_mean": 0.8157750710860173,
+            "composed_mean": 0.817783580223921,
+            "sum_delta": 0.12854458482583198,
+            "mean_delta": 0.0020085091379036246
+          },
+          "sdtw": {
+            "baseline_mean": 0.7468808714498595,
+            "composed_mean": 0.7488893805877633,
+            "sum_delta": 0.1285445848258462,
+            "mean_delta": 0.0020085091379038467
+          },
+          "distance_to_goal": {
+            "baseline_mean": 1.6618700249237008,
+            "composed_mean": 1.6438047916744836,
+            "sum_delta": -1.1561749279499054,
+            "mean_delta": -0.018065233249217272
+          },
+          "path_length": {
+            "baseline_mean": 9.88343420624733,
+            "composed_mean": 9.864035815000534,
+            "sum_delta": -1.2414970397949219,
+            "mean_delta": -0.019398391246795654
+          },
+          "primitive_action_count": {
+            "baseline_mean": 61.5,
+            "composed_mean": 61.5,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "high_level_steps": {
+            "baseline_mean": 7.328125,
+            "composed_mean": 7.328125,
+            "sum_delta": 0,
+            "mean_delta": 0.0
+          },
+          "collision_events": {
+            "baseline_mean": 2.203125,
+            "composed_mean": 2.15625,
+            "sum_delta": -3,
+            "mean_delta": -0.046875
+          }
+        },
+        "success_rescued": [],
+        "success_lost": []
+      }
+    }
+  },
+  "accepted_risk_counts": {
+    "success_lost": 0,
+    "ndtw_worse": 0,
+    "episode_primitive_cost_increased": 0,
+    "both_terminal_by_h2": 1,
+    "either_terminal_by_h2": 1
+  },
+  "paired_scene_bootstrap": {
+    "status": "not_run_insufficient_treated_scenes",
+    "minimum_scenes": 8
+  },
+  "mixed_schedule_rollout_gate": true,
+  "current_filter_insufficient_due_to_later_harm": false,
+  "learning_support_gate_passed": false,
+  "next_action": "verify_mixed_schedule",
+  "privileged_analysis_only": true,
+  "h2_result_is_offline_composition": true,
+  "learned_model_trained": false,
+  "limits": "One candidate per eligible route, one seed, new training scenes; H=2 is future oracle information. This is not best-of-all-H=2 search. SR/path metrics overlap windows when terminal; report suffix diagnostics. No learned, held-out or novelty claim.",
+  "hashes": {
+    "research/configs/CONTINUATION_LABEL_TRAIN64_001.json": "b39b5c82343369307aac31342eff4a38a8abe876681aceab369613fafd810773",
+    "research/CONTINUATION_LABEL_PROTOCOL.md": "fcbad1dee510c65940f8b073b03e7b2efe2bbdaf73ac78f94a530fa553098264",
+    "research/tools/analyze_prospective_continuation.py": "29d1341590346c0d344bc9669ef29e45d262e8eb5063ffb25173f2c8d13fc5a4",
+    "research/tools/continuation_labels.py": "c15e778245a8a9651dd2cf7cc6daab452b5aa1d54c02601c7d15079739f4b2f3",
+    "research/tools/analyze_continuation_horizon.py": "7a846c1a1005190a6702b21d535d2b5f1f6e43d073cbce0afab4297c6f73e11f",
+    "research/results/continuation_label_train64/enabled_audit_001/summary.json": "47e7c780784499290cf545d0fa45bf8069d29a8b625f8fe6ff84c3250f65de79",
+    "research/results/continuation_label_train64/enabled_audit_001/paired_episodes.json": "06f779c7207f222aab0eb9df3bd0ec5d0346d9643347a7019abb2a8f80f96b61",
+    "research/results/continuation_label_train64/capture_001/traces/worker_seed100.jsonl": "e3ca98b82f2f35d5714402498ddd868a4ed316dee6b0d41113907b7574e141b2",
+    "research/results/continuation_label_train64/enabled_001/traces/worker_seed100.jsonl": "1cf4f32984d123c14842fccc737724d50aaa8545b8d8f07bf39cd9c18b70d298"
+  }
+}

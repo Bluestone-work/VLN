@@ -1,0 +1,16 @@
+{
+  "accepted_noninterference": "noninterference_002",
+  "active_probe": "probe_full002",
+  "superseded_attempts": [
+    {
+      "path": "noninterference_001",
+      "reason": "Started before untraced control completed; expected native result was not yet present; no result comparison accepted."
+    },
+    {
+      "path": "probe_full001",
+      "reason": "Preflight correctly failed because noninterference summary did not exist; no simulator branches executed."
+    }
+  ],
+  "protocol_changed": false,
+  "old_artifacts_preserved": true
+}

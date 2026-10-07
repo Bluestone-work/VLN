@@ -1,0 +1,1058 @@
+[
+  {
+    "episode_id": "413",
+    "distinct_positions": 80,
+    "reference_positions": 19,
+    "recomputed": {
+      "path_length": 4.81660101483094,
+      "ndtw": 0.5444385808258396,
+      "sdtw": 0.5444385808258396
+    },
+    "absolute_deltas": {
+      "path_length": 6.921075517141162e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1483",
+    "distinct_positions": 27,
+    "reference_positions": 27,
+    "recomputed": {
+      "path_length": 6.344675371499481,
+      "ndtw": 0.9432914098972822,
+      "sdtw": 0.9432914098972822
+    },
+    "absolute_deltas": {
+      "path_length": 3.074125665136762e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1624",
+    "distinct_positions": 32,
+    "reference_positions": 20,
+    "recomputed": {
+      "path_length": 6.890123783691272,
+      "ndtw": 0.8204683122997566,
+      "sdtw": 0.8204683122997566
+    },
+    "absolute_deltas": {
+      "path_length": 6.045545664079555e-08,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "651",
+    "distinct_positions": 47,
+    "reference_positions": 20,
+    "recomputed": {
+      "path_length": 9.982669634031467,
+      "ndtw": 0.10973661654629373,
+      "sdtw": 0.10973661654629373
+    },
+    "absolute_deltas": {
+      "path_length": 2.103639431538795e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "1778",
+    "distinct_positions": 20,
+    "reference_positions": 25,
+    "recomputed": {
+      "path_length": 4.739521186008661,
+      "ndtw": 0.528773785384533,
+      "sdtw": 0.528773785384533
+    },
+    "absolute_deltas": {
+      "path_length": 1.5939733266634448e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1584",
+    "distinct_positions": 38,
+    "reference_positions": 31,
+    "recomputed": {
+      "path_length": 3.996199623143358,
+      "ndtw": 0.637060568627199,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 2.537128160895463e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "392",
+    "distinct_positions": 60,
+    "reference_positions": 47,
+    "recomputed": {
+      "path_length": 14.899552152345413,
+      "ndtw": 0.7962244262927257,
+      "sdtw": 0.7962244262927257
+    },
+    "absolute_deltas": {
+      "path_length": 1.9293046626955856e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1496",
+    "distinct_positions": 73,
+    "reference_positions": 62,
+    "recomputed": {
+      "path_length": 18.16696169866995,
+      "ndtw": 0.008407652149790104,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 2.8748075919793337e-08,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "397",
+    "distinct_positions": 48,
+    "reference_positions": 41,
+    "recomputed": {
+      "path_length": 11.820150059616847,
+      "ndtw": 0.16355513862628135,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 2.5452735847864005e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "1657",
+    "distinct_positions": 33,
+    "reference_positions": 32,
+    "recomputed": {
+      "path_length": 8.059782693177114,
+      "ndtw": 0.9763965591377779,
+      "sdtw": 0.9763965591377779
+    },
+    "absolute_deltas": {
+      "path_length": 6.649788719670369e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "548",
+    "distinct_positions": 52,
+    "reference_positions": 46,
+    "recomputed": {
+      "path_length": 12.798563060462786,
+      "ndtw": 0.14391522018690708,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 8.96751569001708e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1238",
+    "distinct_positions": 88,
+    "reference_positions": 47,
+    "recomputed": {
+      "path_length": 21.794750033506997,
+      "ndtw": 0.029770520865015335,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 2.08746468288723e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "730",
+    "distinct_positions": 72,
+    "reference_positions": 45,
+    "recomputed": {
+      "path_length": 17.68650184311299,
+      "ndtw": 0.11721939011071184,
+      "sdtw": 0.11721939011071184
+    },
+    "absolute_deltas": {
+      "path_length": 1.2937965827575226e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "1593",
+    "distinct_positions": 41,
+    "reference_positions": 40,
+    "recomputed": {
+      "path_length": 9.999999945192581,
+      "ndtw": 0.7174853883574861,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 5.480741904761999e-08,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1149",
+    "distinct_positions": 60,
+    "reference_positions": 35,
+    "recomputed": {
+      "path_length": 14.702852779694235,
+      "ndtw": 0.07829407199940913,
+      "sdtw": 0.07829407199940913
+    },
+    "absolute_deltas": {
+      "path_length": 5.305487267293074e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1507",
+    "distinct_positions": 40,
+    "reference_positions": 33,
+    "recomputed": {
+      "path_length": 9.820893743401387,
+      "ndtw": 0.8904419225205948,
+      "sdtw": 0.8904419225205948
+    },
+    "absolute_deltas": {
+      "path_length": 4.557426951379284e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "221",
+    "distinct_positions": 159,
+    "reference_positions": 48,
+    "recomputed": {
+      "path_length": 38.76163132286737,
+      "ndtw": 0.0024731873053093533,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 4.125601748228291e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "350",
+    "distinct_positions": 96,
+    "reference_positions": 58,
+    "recomputed": {
+      "path_length": 23.05016456879572,
+      "ndtw": 0.15418912897300893,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 1.2997527498725958e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "1702",
+    "distinct_positions": 133,
+    "reference_positions": 26,
+    "recomputed": {
+      "path_length": 35.75038821034496,
+      "ndtw": 0.24754649787030605,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 8.88776135354874e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "131",
+    "distinct_positions": 45,
+    "reference_positions": 24,
+    "recomputed": {
+      "path_length": 4.239380654843987,
+      "ndtw": 0.23325926128205607,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 7.72031486739877e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1689",
+    "distinct_positions": 48,
+    "reference_positions": 36,
+    "recomputed": {
+      "path_length": 12.375991047854708,
+      "ndtw": 0.880066175595869,
+      "sdtw": 0.880066175595869
+    },
+    "absolute_deltas": {
+      "path_length": 1.1339142780286693e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "724",
+    "distinct_positions": 25,
+    "reference_positions": 32,
+    "recomputed": {
+      "path_length": 6.020916614482709,
+      "ndtw": 0.7515936154763775,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 3.24299029408337e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "268",
+    "distinct_positions": 121,
+    "reference_positions": 18,
+    "recomputed": {
+      "path_length": 34.540641065027245,
+      "ndtw": 0.08520255264593928,
+      "sdtw": 0.08520255264593928
+    },
+    "absolute_deltas": {
+      "path_length": 3.0950565417242615e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "1793",
+    "distinct_positions": 90,
+    "reference_positions": 35,
+    "recomputed": {
+      "path_length": 22.230878353593006,
+      "ndtw": 0.232611318510032,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 4.7636304856268907e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1278",
+    "distinct_positions": 50,
+    "reference_positions": 38,
+    "recomputed": {
+      "path_length": 10.163828983268932,
+      "ndtw": 0.8836782496159057,
+      "sdtw": 0.8836782496159057
+    },
+    "absolute_deltas": {
+      "path_length": 8.201978651811714e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1126",
+    "distinct_positions": 89,
+    "reference_positions": 40,
+    "recomputed": {
+      "path_length": 21.048751501796367,
+      "ndtw": 0.09572696426496877,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 3.292583201641719e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1174",
+    "distinct_positions": 43,
+    "reference_positions": 44,
+    "recomputed": {
+      "path_length": 10.652516946989383,
+      "ndtw": 0.9104742085304239,
+      "sdtw": 0.9104742085304239
+    },
+    "absolute_deltas": {
+      "path_length": 5.819381136973334e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "107",
+    "distinct_positions": 33,
+    "reference_positions": 38,
+    "recomputed": {
+      "path_length": 8.209889235124582,
+      "ndtw": 0.9279320004257212,
+      "sdtw": 0.9279320004257212
+    },
+    "absolute_deltas": {
+      "path_length": 1.768016879566403e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1151",
+    "distinct_positions": 27,
+    "reference_positions": 52,
+    "recomputed": {
+      "path_length": 6.431231942872632,
+      "ndtw": 0.5066039829538772,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 4.441543701716455e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1708",
+    "distinct_positions": 49,
+    "reference_positions": 41,
+    "recomputed": {
+      "path_length": 11.873769886988201,
+      "ndtw": 0.8052971939654257,
+      "sdtw": 0.8052971939654257
+    },
+    "absolute_deltas": {
+      "path_length": 1.2685636541220902e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "429",
+    "distinct_positions": 49,
+    "reference_positions": 61,
+    "recomputed": {
+      "path_length": 11.986065672308923,
+      "ndtw": 0.840513731517729,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 7.614202512939983e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1093",
+    "distinct_positions": 36,
+    "reference_positions": 37,
+    "recomputed": {
+      "path_length": 8.737774989053618,
+      "ndtw": 0.9569480027970666,
+      "sdtw": 0.9569480027970666
+    },
+    "absolute_deltas": {
+      "path_length": 1.093789945727508e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "500",
+    "distinct_positions": 53,
+    "reference_positions": 37,
+    "recomputed": {
+      "path_length": 9.405258509556663,
+      "ndtw": 0.9046074093482318,
+      "sdtw": 0.9046074093482318
+    },
+    "absolute_deltas": {
+      "path_length": 3.3084572592656514e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "793",
+    "distinct_positions": 76,
+    "reference_positions": 42,
+    "recomputed": {
+      "path_length": 18.64473342912152,
+      "ndtw": 0.2335708699975429,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 1.9071821917293619e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "381",
+    "distinct_positions": 80,
+    "reference_positions": 50,
+    "recomputed": {
+      "path_length": 18.90715506542619,
+      "ndtw": 0.7679192134350376,
+      "sdtw": 0.7679192134350376
+    },
+    "absolute_deltas": {
+      "path_length": 9.821742352755791e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "540",
+    "distinct_positions": 23,
+    "reference_positions": 25,
+    "recomputed": {
+      "path_length": 5.513166183870579,
+      "ndtw": 0.2141001455607598,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 2.4374172546970385e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1605",
+    "distinct_positions": 43,
+    "reference_positions": 31,
+    "recomputed": {
+      "path_length": 10.696257177791184,
+      "ndtw": 0.7770896396925787,
+      "sdtw": 0.7770896396925787
+    },
+    "absolute_deltas": {
+      "path_length": 5.402179414915054e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "553",
+    "distinct_positions": 102,
+    "reference_positions": 24,
+    "recomputed": {
+      "path_length": 25.551332447049674,
+      "ndtw": 0.06171816771532592,
+      "sdtw": 0.06171816771532592
+    },
+    "absolute_deltas": {
+      "path_length": 1.934053841523564e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "1054",
+    "distinct_positions": 25,
+    "reference_positions": 27,
+    "recomputed": {
+      "path_length": 5.750000776642929,
+      "ndtw": 0.9505543029761369,
+      "sdtw": 0.9505543029761369
+    },
+    "absolute_deltas": {
+      "path_length": 1.7703138777136473e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "7",
+    "distinct_positions": 38,
+    "reference_positions": 42,
+    "recomputed": {
+      "path_length": 9.046567241454998,
+      "ndtw": 0.8412877709314589,
+      "sdtw": 0.8412877709314589
+    },
+    "absolute_deltas": {
+      "path_length": 2.782591970174053e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "640",
+    "distinct_positions": 29,
+    "reference_positions": 31,
+    "recomputed": {
+      "path_length": 7.000000764690208,
+      "ndtw": 0.9296243920054178,
+      "sdtw": 0.9296243920054178
+    },
+    "absolute_deltas": {
+      "path_length": 2.878530498406917e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1052",
+    "distinct_positions": 29,
+    "reference_positions": 42,
+    "recomputed": {
+      "path_length": 7.068308020249613,
+      "ndtw": 0.7395810722364892,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 1.436626986262013e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "370",
+    "distinct_positions": 31,
+    "reference_positions": 36,
+    "recomputed": {
+      "path_length": 7.635487276763512,
+      "ndtw": 0.9200412697192494,
+      "sdtw": 0.9200412697192494
+    },
+    "absolute_deltas": {
+      "path_length": 2.7969400751004514e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1186",
+    "distinct_positions": 34,
+    "reference_positions": 37,
+    "recomputed": {
+      "path_length": 8.469762341734587,
+      "ndtw": 0.9708577890240475,
+      "sdtw": 0.9708577890240475
+    },
+    "absolute_deltas": {
+      "path_length": 4.6038943679604927e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "382",
+    "distinct_positions": 48,
+    "reference_positions": 44,
+    "recomputed": {
+      "path_length": 11.773376195967108,
+      "ndtw": 0.8211157557895638,
+      "sdtw": 0.8211157557895638
+    },
+    "absolute_deltas": {
+      "path_length": 6.847976745660844e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1677",
+    "distinct_positions": 22,
+    "reference_positions": 22,
+    "recomputed": {
+      "path_length": 5.9942037809792925,
+      "ndtw": 0.9611197111221856,
+      "sdtw": 0.9611197111221856
+    },
+    "absolute_deltas": {
+      "path_length": 2.633627484982526e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1568",
+    "distinct_positions": 23,
+    "reference_positions": 30,
+    "recomputed": {
+      "path_length": 5.499996736934842,
+      "ndtw": 0.8456552221546764,
+      "sdtw": 0.8456552221546764
+    },
+    "absolute_deltas": {
+      "path_length": 7.47949497892364e-08,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "603",
+    "distinct_positions": 30,
+    "reference_positions": 43,
+    "recomputed": {
+      "path_length": 7.249997825307472,
+      "ndtw": 0.8280291750200947,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 2.094932627372259e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "893",
+    "distinct_positions": 39,
+    "reference_positions": 44,
+    "recomputed": {
+      "path_length": 9.49999826825317,
+      "ndtw": 0.9266723019436323,
+      "sdtw": 0.9266723019436323
+    },
+    "absolute_deltas": {
+      "path_length": 7.780725130857036e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "73",
+    "distinct_positions": 83,
+    "reference_positions": 34,
+    "recomputed": {
+      "path_length": 20.50000887195575,
+      "ndtw": 0.1412068912428257,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 1.2425612183619705e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "1263",
+    "distinct_positions": 35,
+    "reference_positions": 42,
+    "recomputed": {
+      "path_length": 8.499992569955987,
+      "ndtw": 0.9051539087669414,
+      "sdtw": 0.9051539087669414
+    },
+    "absolute_deltas": {
+      "path_length": 1.993505183151001e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1026",
+    "distinct_positions": 60,
+    "reference_positions": 59,
+    "recomputed": {
+      "path_length": 14.704335971627442,
+      "ndtw": 0.9578046377697006,
+      "sdtw": 0.9578046377697006
+    },
+    "absolute_deltas": {
+      "path_length": 7.58919922461132e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "14",
+    "distinct_positions": 48,
+    "reference_positions": 50,
+    "recomputed": {
+      "path_length": 11.734404629986217,
+      "ndtw": 0.91143928929057,
+      "sdtw": 0.91143928929057
+    },
+    "absolute_deltas": {
+      "path_length": 8.875919075279626e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "507",
+    "distinct_positions": 32,
+    "reference_positions": 28,
+    "recomputed": {
+      "path_length": 6.361111404175185,
+      "ndtw": 0.8898507359472342,
+      "sdtw": 0.8898507359472342
+    },
+    "absolute_deltas": {
+      "path_length": 2.400821674797271e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1803",
+    "distinct_positions": 43,
+    "reference_positions": 40,
+    "recomputed": {
+      "path_length": 10.513458379372477,
+      "ndtw": 0.926606034706816,
+      "sdtw": 0.926606034706816
+    },
+    "absolute_deltas": {
+      "path_length": 1.0810936679206407e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "166",
+    "distinct_positions": 44,
+    "reference_positions": 24,
+    "recomputed": {
+      "path_length": 10.6999258080226,
+      "ndtw": 0.7487753236539988,
+      "sdtw": 0.7487753236539988
+    },
+    "absolute_deltas": {
+      "path_length": 5.683201731443432e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "833",
+    "distinct_positions": 36,
+    "reference_positions": 41,
+    "recomputed": {
+      "path_length": 8.740698543637086,
+      "ndtw": 0.9091343527432877,
+      "sdtw": 0.9091343527432877
+    },
+    "absolute_deltas": {
+      "path_length": 6.829193122115385e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1608",
+    "distinct_positions": 52,
+    "reference_positions": 28,
+    "recomputed": {
+      "path_length": 12.74999955492666,
+      "ndtw": 0.46139225108392823,
+      "sdtw": 0.46139225108392823
+    },
+    "absolute_deltas": {
+      "path_length": 4.450733399607998e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "931",
+    "distinct_positions": 109,
+    "reference_positions": 34,
+    "recomputed": {
+      "path_length": 26.984257967095004,
+      "ndtw": 0.0010525254797830205,
+      "sdtw": 0.0010525254797830205
+    },
+    "absolute_deltas": {
+      "path_length": 1.222710238835134e-06,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": false
+  },
+  {
+    "episode_id": "159",
+    "distinct_positions": 41,
+    "reference_positions": 36,
+    "recomputed": {
+      "path_length": 9.999996256785298,
+      "ndtw": 0.9413911904587994,
+      "sdtw": 0.9413911904587994
+    },
+    "absolute_deltas": {
+      "path_length": 7.148256386813046e-08,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "776",
+    "distinct_positions": 45,
+    "reference_positions": 40,
+    "recomputed": {
+      "path_length": 11.477246474314438,
+      "ndtw": 0.8580382505781656,
+      "sdtw": 0.8580382505781656
+    },
+    "absolute_deltas": {
+      "path_length": 1.8982957428193004e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "442",
+    "distinct_positions": 73,
+    "reference_positions": 46,
+    "recomputed": {
+      "path_length": 18.035720508051227,
+      "ndtw": 0.0741450361282377,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 3.171440852156593e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1305",
+    "distinct_positions": 41,
+    "reference_positions": 30,
+    "recomputed": {
+      "path_length": 10.065412606664673,
+      "ndtw": 0.1909518224628403,
+      "sdtw": 0.0
+    },
+    "absolute_deltas": {
+      "path_length": 8.530236783599321e-08,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "885",
+    "distinct_positions": 31,
+    "reference_positions": 26,
+    "recomputed": {
+      "path_length": 7.9766859920203,
+      "ndtw": 0.8662417660158053,
+      "sdtw": 0.8662417660158053
+    },
+    "absolute_deltas": {
+      "path_length": 8.803674234059145e-09,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1552",
+    "distinct_positions": 39,
+    "reference_positions": 22,
+    "recomputed": {
+      "path_length": 9.817977180822131,
+      "ndtw": 0.6242299901845364,
+      "sdtw": 0.6242299901845364
+    },
+    "absolute_deltas": {
+      "path_length": 2.292230103506654e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "783",
+    "distinct_positions": 30,
+    "reference_positions": 22,
+    "recomputed": {
+      "path_length": 7.250002739552697,
+      "ndtw": 0.8491274134839151,
+      "sdtw": 0.8491274134839151
+    },
+    "absolute_deltas": {
+      "path_length": 8.322040638830686e-07,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  }
+]

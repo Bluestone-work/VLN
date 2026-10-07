@@ -1,0 +1,38 @@
+{
+  "interpretation": {
+    "all_progress_labels": "privileged goal-distance progress; used only for offline analysis",
+    "graph_logit": "current learned graph navigator score",
+    "heatmap_score": "waypoint NMS heatmap mass, available to the baseline",
+    "negative_distance": "forward distance with max-selection, included as a sanity control",
+    "short_distance": "negative candidate forward distance heuristic"
+  },
+  "mean_eligible_candidates": 3.5968688845401173,
+  "num_matched_decisions_with_candidates": 511,
+  "schema_version": 1,
+  "signals": {
+    "graph_logit": {
+      "candidate_level_pearson": 0.5577202664009704,
+      "candidate_level_spearman": 0.5309767686315764,
+      "top1_best_progress_rate": 0.5870841487279843,
+      "top1_regret_mean_m": 0.5216851528668357
+    },
+    "heatmap_score": {
+      "candidate_level_pearson": 0.08368010990695571,
+      "candidate_level_spearman": 0.19725596823003083,
+      "top1_best_progress_rate": 0.5009784735812133,
+      "top1_regret_mean_m": 0.8537182633832476
+    },
+    "negative_distance": {
+      "candidate_level_pearson": -0.013232949818569574,
+      "candidate_level_spearman": 0.13527384901615375,
+      "top1_best_progress_rate": 0.436399217221135,
+      "top1_regret_mean_m": 1.085663954426631
+    },
+    "short_distance": {
+      "candidate_level_pearson": 0.013232949818569574,
+      "candidate_level_spearman": 0.18629571544221107,
+      "top1_best_progress_rate": 0.29354207436399216,
+      "top1_regret_mean_m": 1.0637016522966019
+    }
+  }
+}

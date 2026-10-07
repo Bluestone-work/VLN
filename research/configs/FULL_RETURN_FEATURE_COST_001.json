@@ -1,0 +1,12 @@
+{
+  "experiment_id": "FULL-RETURN-FEATURE-COST-001",
+  "type": "post-hoc accounting; follows observed feature associations",
+  "feature_result": "research/results/full_return_feature_audit/analysis_001/summary.json",
+  "source_root": "research/results/full_return_label_train16",
+  "accepted_tag": "003",
+  "output_dir": "research/results/full_return_feature_audit/cost_001",
+  "parts": ["immediate", "later_navigation", "later_stop", "later_other"],
+  "feature": "commanded_polyline_delta_m",
+  "control": "No rollout or fitted model. Exact primitive and collision accounting against accepted native episode metrics; frozen sample and actions.",
+  "limits": "Post-hoc association only. Later costs may correlate with geography, action selection and episode length. No causal or generalization claim."
+}

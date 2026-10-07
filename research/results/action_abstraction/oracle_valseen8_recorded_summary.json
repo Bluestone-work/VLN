@@ -1,0 +1,96 @@
+{
+  "best_progress_mean": {
+    "coarse": 0.957550705091594,
+    "default": 1.1073232344160342,
+    "fine": 1.3273696727948645
+  },
+  "best_progress_median": {
+    "coarse": 1.106358528137207,
+    "default": 1.106358528137207,
+    "fine": 1.1799098551273346
+  },
+  "conditional_best_progress_by_default_candidate_count": {
+    "3-5": {
+      "coarse": 0.957550705091594,
+      "default": 1.1073232344160342,
+      "fine": 1.3273696727948645
+    }
+  },
+  "conditional_best_progress_by_distance_to_goal": {
+    "0-3m": {
+      "coarse": 0.7972249699866071,
+      "default": 0.8700554497978267,
+      "fine": 0.978202677824918
+    },
+    "3-6m": {
+      "coarse": 0.9055399327051072,
+      "default": 1.123889718736921,
+      "fine": 1.388533739816575
+    },
+    "6m+": {
+      "coarse": 1.3210674391852484,
+      "default": 1.5361681514316134,
+      "fine": 1.9155492517683241
+    }
+  },
+  "gain_over_default_bootstrap_95ci": {
+    "coarse": [
+      -0.24325549071782257,
+      -0.07395151829066342
+    ],
+    "default": [
+      0.0,
+      0.0
+    ],
+    "fine": [
+      0.10557451966690691,
+      0.3417356404131406
+    ]
+  },
+  "gain_over_default_mean": {
+    "coarse": -0.1497725293244401,
+    "default": 0.0,
+    "fine": 0.22004643837883048
+  },
+  "gain_over_default_stderr": {
+    "coarse": 0.043975301809397904,
+    "default": 0.0,
+    "fine": 0.061013252370933274
+  },
+  "interpretation": {
+    "oracle_is_privileged": true,
+    "progress_definition": "distance_to_goal_before - distance_to_goal_after",
+    "state_proxy": "number of candidates produced by default NMS"
+  },
+  "num_decisions": 73,
+  "num_episodes": 8,
+  "oracle_gain_over_default_mean": 0.27654218979894296,
+  "oracle_gain_over_default_stderr": 0.05285270220293345,
+  "oracle_selection_count": {
+    "default": 39,
+    "fine": 34
+  },
+  "oracle_selection_rate": {
+    "coarse": 0.0,
+    "default": 0.5342465753424658,
+    "fine": 0.4657534246575342
+  },
+  "oracle_selection_rate_by_distance_to_goal": {
+    "0-3m": {
+      "coarse": 0.0,
+      "default": 0.7058823529411765,
+      "fine": 0.29411764705882354
+    },
+    "3-6m": {
+      "coarse": 0.0,
+      "default": 0.38095238095238093,
+      "fine": 0.6190476190476191
+    },
+    "6m+": {
+      "coarse": 0.0,
+      "default": 0.3888888888888889,
+      "fine": 0.6111111111111112
+    }
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,19 @@
+{
+  "experiment_id": "GRAPH-OPTION-UNSEEN-001",
+  "integrity_gate_passed": true,
+  "branches": 8629,
+  "forward_branches": 7113,
+  "reverse_branches": 1516,
+  "max_start_position_error_m": 0.0,
+  "max_start_rotation_error_rad": 4.2146848510894035e-08,
+  "max_start_goal_distance_error_m": 0.0,
+  "all_action_dictionaries_exact": true,
+  "all_start_rng_exact": true,
+  "all_admissibility_and_coverage_checks_passed": true,
+  "stop_branches": 732,
+  "branches_with_back_path": 6013,
+  "primitive_events_including_repeats": 293267,
+  "collision_events_including_repeats": 6041,
+  "raw_trace_sha256": "2648b371d573cb2f4cda7d161ce6fd932705e5de49db9431db7164f59c338ac8",
+  "audit_source_sha256": "4dbbafc0f6a79336900d2c155ff95ac52881f1985354ddbb6f32b8ebbb04ba7a"
+}

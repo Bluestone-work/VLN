@@ -1,0 +1,11 @@
+{
+  "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001-ROUTE",
+  "protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+  "cost_and_dtw_tolerance": 0.00001,
+  "baseline_metric_tolerance": 0.000001,
+  "material_gain_m": 0.25,
+  "bootstrap_seed": 20261007,
+  "bootstrap_samples": 5000,
+  "datasets": ["outcome_blind_train16"],
+  "privileged_analysis_only": true
+}

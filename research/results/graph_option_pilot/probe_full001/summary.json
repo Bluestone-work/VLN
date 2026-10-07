@@ -1,0 +1,21 @@
+{
+  "experiment_id": "GRAPH-OPTION-PILOT-001",
+  "episodes": 8,
+  "scenes": 4,
+  "decisions": 63,
+  "forward_branches": 760,
+  "reversed_decisions": 16,
+  "reversed_branches": 218,
+  "selected_sentinels_passed": 63,
+  "order_checks_passed": 218,
+  "max_sentinel_endpoint_error_m": 0.0,
+  "max_order_endpoint_error_m": 0.0,
+  "sentinel_sensor_matches": 63,
+  "order_sensor_matches": 218,
+  "all_required_gates_passed": true,
+  "baseline_noninterference_passed": true,
+  "all_admissible_options_complete": true,
+  "masked_budget_options_skipped": 30,
+  "limits": "Eight routes across four training scenes, one simulator seed; no learned model or navigation gain claim. Final-decision non-STOP alternatives are inadmissible. Goal distances are analysis-only.",
+  "privileged_analysis_only": true
+}

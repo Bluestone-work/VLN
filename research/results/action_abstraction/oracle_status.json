@@ -1,0 +1,75 @@
+{
+  "status": "hypothesis_weakened_no_go_for_standalone_aaa",
+  "reason": "Same-state probing derives all levels from one waypoint heatmap and restores the Habitat worker simulator after every candidate probe. The oracle is privileged and analysis-only.",
+  "levels": ["coarse", "default", "fine"],
+  "privileged_objective": "one-step geodesic goal progress; execution reliability not yet included",
+  "deployable": false,
+  "implementation": "vlnce_baselines/adaptive_action/oracle_selector.py",
+  "run": {
+    "split": "R2R-CE val_seen",
+    "episodes": 8,
+    "decisions": 73,
+    "config": "research/results/action_abstraction/oracle_valseen8.yaml",
+    "stdout": "research/results/action_abstraction/oracle_valseen8_recorded.stdout",
+    "jsonl": "research/results/action_abstraction/oracle_valseen8_recorded.jsonl",
+    "summary": "research/results/action_abstraction/oracle_valseen8_recorded_summary.json",
+    "best_progress_mean_m": {
+      "coarse": 0.957551,
+      "default": 1.107323,
+      "fine": 1.327370
+    },
+    "oracle_selection_rate": {
+      "coarse": 0.0,
+      "default": 0.534247,
+      "fine": 0.465753
+    },
+    "fine_gain_over_default_mean_m": 0.220046
+  },
+  "expanded_run": {
+    "split": "R2R-CE val_seen",
+    "episodes": 64,
+    "decisions": 511,
+    "config": "research/results/action_abstraction/oracle_valseen64.yaml",
+    "stdout": "research/results/action_abstraction/oracle_valseen64.stdout",
+    "jsonl": "research/results/action_abstraction/oracle_valseen64.jsonl",
+    "summary": "research/results/action_abstraction/oracle_valseen64_summary.json",
+    "best_progress_mean_m": {
+      "coarse": 1.116054,
+      "default": 1.266429,
+      "fine": 1.551775
+    },
+    "fine_minus_default_mean_m": 0.285347,
+    "fine_minus_default_bootstrap_95ci_m": [0.242564, 0.328765],
+    "oracle_selection_rate": {
+      "coarse": 0.0,
+      "default": 0.506849,
+      "fine": 0.493151
+    },
+    "selection_gap_analysis": "research/results/action_abstraction/oracle_valseen64_selection_gap.json",
+    "diagnostics": "research/results/action_abstraction/oracle_valseen64_diagnostics.jsonl",
+    "selection_stdout": "research/results/action_abstraction/oracle_valseen64_selection.stdout",
+    "realized_default_progress_mean_m": 0.610209,
+    "default_best_candidate_gap_mean_m": 0.656220,
+    "graph_selection_analysis": "research/results/action_abstraction/graph_selection_valseen64_analysis.json",
+    "best_available_graph_candidate_progress_mean_m": 1.071699,
+    "selected_candidate_counterfactual_progress_mean_m": 0.728872,
+    "graph_selection_gap_mean_m": 0.470567,
+    "execution_gap_after_selected_candidate_mean_m": 0.052060
+  },
+  "graph_selection_intervention": {
+    "config": "research/results/action_abstraction/graph_selection_oracle_valseen8.yaml",
+    "expanded_split": "R2R-CE val_seen",
+    "expanded_episodes": 64,
+    "expanded_decisions": 404,
+    "stdout": "research/results/action_abstraction/graph_selection_oracle_valseen64.stdout",
+    "jsonl": "research/results/action_abstraction/graph_selection_oracle_valseen64.jsonl",
+    "summary": "research/results/action_abstraction/graph_selection_oracle_valseen64_summary.json",
+    "sr": 1.0,
+    "spl": 0.982564,
+    "ndtw": 0.925763,
+    "override_rate": 0.222772,
+    "privileged": true,
+    "deployable": false
+  },
+  "go_gate": "NO-GO for Adaptive Action Abstraction as the standalone primary contribution under the current fixed-NMS formulation: default wins the matched 64-episode fixed comparison, and the statewise oracle exceeds the best fixed candidate level by only 0.0287 m on average. Continue only as a separately scoped graph-ranking study or redesign the abstraction hypothesis."
+}

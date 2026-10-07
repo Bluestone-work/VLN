@@ -1,0 +1,130 @@
+[
+  {
+    "episode_id": "3000",
+    "distinct_positions": 47,
+    "reference_positions": 50,
+    "recomputed": {
+      "path_length": 11.640069961547852,
+      "ndtw": 0.9061423717730361,
+      "sdtw": 0.9061423717730361
+    },
+    "absolute_deltas": {
+      "path_length": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "986",
+    "distinct_positions": 31,
+    "reference_positions": 31,
+    "recomputed": {
+      "path_length": 7.470796585083008,
+      "ndtw": 0.9114822766699935,
+      "sdtw": 0.9114822766699935
+    },
+    "absolute_deltas": {
+      "path_length": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "519",
+    "distinct_positions": 40,
+    "reference_positions": 33,
+    "recomputed": {
+      "path_length": 10.164961814880371,
+      "ndtw": 0.8921591060947637,
+      "sdtw": 0.8921591060947637
+    },
+    "absolute_deltas": {
+      "path_length": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10237",
+    "distinct_positions": 31,
+    "reference_positions": 33,
+    "recomputed": {
+      "path_length": 7.508174896240234,
+      "ndtw": 0.9090257277384487,
+      "sdtw": 0.9090257277384487
+    },
+    "absolute_deltas": {
+      "path_length": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4259",
+    "distinct_positions": 37,
+    "reference_positions": 38,
+    "recomputed": {
+      "path_length": 9.132022857666016,
+      "ndtw": 0.8993386221643167,
+      "sdtw": 0.8993386221643167
+    },
+    "absolute_deltas": {
+      "path_length": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "878",
+    "distinct_positions": 32,
+    "reference_positions": 30,
+    "recomputed": {
+      "path_length": 7.750007152557373,
+      "ndtw": 0.8584162960826509,
+      "sdtw": 0.8584162960826509
+    },
+    "absolute_deltas": {
+      "path_length": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10124",
+    "distinct_positions": 71,
+    "reference_positions": 66,
+    "recomputed": {
+      "path_length": 17.620410919189453,
+      "ndtw": 0.8440789163903274,
+      "sdtw": 0.8440789163903274
+    },
+    "absolute_deltas": {
+      "path_length": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "6587",
+    "distinct_positions": 38,
+    "reference_positions": 42,
+    "recomputed": {
+      "path_length": 9.172568321228027,
+      "ndtw": 0.91647423481448,
+      "sdtw": 0.91647423481448
+    },
+    "absolute_deltas": {
+      "path_length": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  }
+]

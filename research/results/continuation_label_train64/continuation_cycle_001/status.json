@@ -1,0 +1,357 @@
+{
+  "created_utc": "2026-10-07T04:42:51.118908+00:00",
+  "config": {
+    "experiment_id": "CONTINUATION-LABEL-TRAIN64-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 64,
+    "seed": 100,
+    "dataset_path": "research/results/continuation_label_train64/sampling_001/train64_bertidx.json.gz",
+    "sampling_manifest": "research/results/continuation_label_train64/sampling_001/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261007,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Best admissible non-STOP full-option goal progress minus actually selected ghost; learned and forced STOP states excluded",
+      "controls": [
+        "candidate local to current observation",
+        "primitive count no greater than selected",
+        "movement path no longer than selected"
+      ],
+      "material_state_gain_m": 0.25,
+      "bootstrap_seed": 20261007,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "Prospective H=2 confirmation of H=1 alternatives on previously uninspected training scenes; no fitting.",
+    "limits": "64 new training routes / 16 scenes; privileged label diagnostic, one simulator seed, no held-out model claim.",
+    "sampling": {
+      "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+      "exclude_sources": [
+        "research/results/graph_option_pilot/train8_sampling/manifest.json",
+        "research/results/graph_option_train64/sampling_001/manifest.json",
+        "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+        "research/results/action_abstraction/ranker_train64_oracle.jsonl"
+      ],
+      "scenes": 16,
+      "routes_per_scene": 4,
+      "seed": 20261007
+    },
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+    "continuation_protocol": "research/CONTINUATION_LABEL_PROTOCOL.md",
+    "continuation": {
+      "primary_horizon": 2,
+      "descriptive_horizon": 3,
+      "minimum_progress_gain_m": 0.25,
+      "primitive_delta_max": 0,
+      "movement_delta_max_m": 1e-05,
+      "minimum_treated_scenes_for_learning_consideration": 8,
+      "event_selection_seed": 20261007,
+      "all_eligible_routes": true,
+      "one_intervention_per_route": true
+    }
+  },
+  "stages": [
+    {
+      "name": "route",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/analyze_route_options.py",
+        "--config",
+        "research/configs/CONTINUATION_LABEL_ROUTE_001.json",
+        "--probe-dir",
+        "research/results/continuation_label_train64/probe_full001",
+        "--integrity-dir",
+        "research/results/continuation_label_train64/integrity_001",
+        "--noninterference-dir",
+        "research/results/continuation_label_train64/noninterference_001",
+        "--output-dir",
+        "research/results/continuation_label_train64/route_001"
+      ],
+      "started_utc": "2026-10-07T04:42:51.122145+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:42:55.290217+00:00"
+    },
+    {
+      "name": "schedule",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/prepare_continuation_schedule.py",
+        "--config",
+        "research/configs/CONTINUATION_LABEL_TRAIN64_001.json",
+        "--root",
+        "research/results/continuation_label_train64",
+        "--output",
+        "research/results/continuation_label_train64/schedule_h1_001.json"
+      ],
+      "started_utc": "2026-10-07T04:42:55.290747+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:43:06.533179+00:00"
+    },
+    {
+      "name": "disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/continuation_label_train64/schedule_h1_001.json",
+        "--source-capture",
+        "research/results/continuation_label_train64/capture_001",
+        "--output-dir",
+        "research/results/continuation_label_train64/disabled_001",
+        "--exp-name",
+        "aaa_continuation_label_train64_001_disabled"
+      ],
+      "started_utc": "2026-10-07T04:43:06.533815+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:44:44.085605+00:00"
+    },
+    {
+      "name": "disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/continuation_label_train64/disabled_001",
+        "--source-noninterference",
+        "research/results/continuation_label_train64/noninterference_001",
+        "--source-probe",
+        "research/results/continuation_label_train64/probe_full001",
+        "--output-dir",
+        "research/results/continuation_label_train64/disabled_audit_001"
+      ],
+      "started_utc": "2026-10-07T04:44:44.086257+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:44:56.573239+00:00"
+    },
+    {
+      "name": "enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/continuation_label_train64/schedule_h1_001.json",
+        "--source-capture",
+        "research/results/continuation_label_train64/capture_001",
+        "--output-dir",
+        "research/results/continuation_label_train64/enabled_001",
+        "--exp-name",
+        "aaa_continuation_label_train64_001_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/continuation_label_train64/disabled_audit_001/summary.json"
+      ],
+      "started_utc": "2026-10-07T04:44:56.573656+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:46:26.351076+00:00"
+    },
+    {
+      "name": "enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/continuation_label_train64/enabled_001",
+        "--source-noninterference",
+        "research/results/continuation_label_train64/noninterference_001",
+        "--source-probe",
+        "research/results/continuation_label_train64/probe_full001",
+        "--output-dir",
+        "research/results/continuation_label_train64/enabled_audit_001"
+      ],
+      "started_utc": "2026-10-07T04:46:26.351558+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:46:31.107559+00:00"
+    },
+    {
+      "name": "native_reconstruction",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/continuation_label_train64/enabled_001",
+        "--output-dir",
+        "research/results/continuation_label_train64/native_reconstruction_001"
+      ],
+      "started_utc": "2026-10-07T04:46:31.108098+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:46:34.769418+00:00"
+    },
+    {
+      "name": "h2_analysis",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/analyze_prospective_continuation.py",
+        "--config",
+        "research/configs/CONTINUATION_LABEL_TRAIN64_001.json",
+        "--root",
+        "research/results/continuation_label_train64",
+        "--output-dir",
+        "research/results/continuation_label_train64/h2_analysis_001"
+      ],
+      "started_utc": "2026-10-07T04:46:34.770244+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:46:38.893786+00:00"
+    },
+    {
+      "name": "h2_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/continuation_label_train64/schedule_h2_001.json",
+        "--source-capture",
+        "research/results/continuation_label_train64/capture_001",
+        "--output-dir",
+        "research/results/continuation_label_train64/h2_disabled_001",
+        "--exp-name",
+        "aaa_continuation_label_train64_001_h2_disabled"
+      ],
+      "started_utc": "2026-10-07T04:46:38.895763+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:47:47.475949+00:00"
+    },
+    {
+      "name": "h2_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/continuation_label_train64/h2_disabled_001",
+        "--source-noninterference",
+        "research/results/continuation_label_train64/noninterference_001",
+        "--source-probe",
+        "research/results/continuation_label_train64/probe_full001",
+        "--output-dir",
+        "research/results/continuation_label_train64/h2_disabled_audit_001"
+      ],
+      "started_utc": "2026-10-07T04:47:47.476587+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:47:51.580998+00:00"
+    },
+    {
+      "name": "h2_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/continuation_label_train64/schedule_h2_001.json",
+        "--source-capture",
+        "research/results/continuation_label_train64/capture_001",
+        "--output-dir",
+        "research/results/continuation_label_train64/h2_enabled_001",
+        "--exp-name",
+        "aaa_continuation_label_train64_001_h2_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/continuation_label_train64/h2_disabled_audit_001/summary.json"
+      ],
+      "started_utc": "2026-10-07T04:47:51.581537+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:49:05.935852+00:00"
+    },
+    {
+      "name": "h2_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/continuation_label_train64/h2_enabled_001",
+        "--source-noninterference",
+        "research/results/continuation_label_train64/noninterference_001",
+        "--source-probe",
+        "research/results/continuation_label_train64/probe_full001",
+        "--output-dir",
+        "research/results/continuation_label_train64/h2_enabled_audit_001"
+      ],
+      "started_utc": "2026-10-07T04:49:05.936603+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:49:18.875153+00:00"
+    },
+    {
+      "name": "h2_native_reconstruction",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/continuation_label_train64/h2_enabled_001",
+        "--output-dir",
+        "research/results/continuation_label_train64/h2_native_reconstruction_001"
+      ],
+      "started_utc": "2026-10-07T04:49:18.875787+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T04:49:27.779922+00:00"
+    }
+  ],
+  "status": "complete",
+  "hashes": {
+    "research/configs/CONTINUATION_LABEL_TRAIN64_001.json": "b39b5c82343369307aac31342eff4a38a8abe876681aceab369613fafd810773",
+    "research/configs/CONTINUATION_LABEL_ROUTE_001.json": "66030321ea1bd07b301d2ffeba2aa298e503d5e236b670d1f505b9b0608da199",
+    "research/CONTINUATION_LABEL_PROTOCOL.md": "fcbad1dee510c65940f8b073b03e7b2efe2bbdaf73ac78f94a530fa553098264",
+    "research/tools/run_continuation_cycle.py": "368a7a23735b602df4f2acef3fa2e3b71038ba2a1aa468d1fe50911b57294019",
+    "research/tools/run_single_intervention.py": "d5b9e8310273e5870de11c37e21edff47e3f8032e67b1b082e90a29b9242f9a0",
+    "research/tools/audit_single_intervention.py": "8d0bb2b0555a8f03759e2ff9f7c41f5c0f962a92100583e69ff4b5867e9d6627",
+    "research/tools/analyze_prospective_continuation.py": "29d1341590346c0d344bc9669ef29e45d262e8eb5063ffb25173f2c8d13fc5a4",
+    "research/tools/continuation_labels.py": "c15e778245a8a9651dd2cf7cc6daab452b5aa1d54c02601c7d15079739f4b2f3",
+    "research/tools/prepare_continuation_schedule.py": "d4554c8c57b38b4c13e06e6980b5743683a4b29b14cb1278125efa3a4be00e5a",
+    "research/tools/verify_intervention_metrics.py": "141fa04916be8c79afa0dfe5a78c98ea3b55f1ed0bdec93a51ddbe81720843a9",
+    "vlnce_baselines/adaptive_action/single_intervention.py": "2274f37666a7c531b334115f7cf616cf1150f7a68e42937e020df4477bd285cd"
+  },
+  "argv": [
+    "research/tools/run_continuation_cycle.py",
+    "--config",
+    "research/configs/CONTINUATION_LABEL_TRAIN64_001.json",
+    "--route-config",
+    "research/configs/CONTINUATION_LABEL_ROUTE_001.json",
+    "--root",
+    "research/results/continuation_label_train64"
+  ],
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "environment": {
+    "EGL_PLATFORM": "surfaceless",
+    "CUDA_VISIBLE_DEVICES": "0"
+  },
+  "h2_execution": "separate_mixed_schedule_completed",
+  "composition_verification": {
+    "passed": true,
+    "exact_full_trace_comparisons": 469,
+    "accepted_routes": 2,
+    "mode": "separate_mixed_schedule_completed",
+    "actual_run_dir": "research/results/continuation_label_train64/h2_enabled_001",
+    "actual_trace_sha256": "d8434edfe0fd8db9d36c82bd1e18ea63964586deb7db09d9dcc0f92daf09d99a"
+  },
+  "finished_utc": "2026-10-07T04:49:37.530226+00:00",
+  "no_model_trained": true
+}

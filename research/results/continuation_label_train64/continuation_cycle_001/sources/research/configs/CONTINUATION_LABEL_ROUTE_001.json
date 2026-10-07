@@ -1,0 +1,15 @@
+{
+  "experiment_id": "CONTINUATION-LABEL-TRAIN64-001-ROUTE",
+  "protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+  "cost_and_dtw_tolerance": 1e-05,
+  "baseline_metric_tolerance": 1e-06,
+  "material_gain_m": 0.25,
+  "bootstrap_seed": 20261007,
+  "bootstrap_samples": 5000,
+  "primary": "joint cost caps plus matched-prefix route gate",
+  "sensitivity": "endpoint-only route gate",
+  "datasets": [
+    "new_training_scenes64"
+  ],
+  "privileged_analysis_only": true
+}

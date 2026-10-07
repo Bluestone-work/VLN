@@ -1,0 +1,21 @@
+{
+  "experiment_id": "GRAPH-OPTION-TRAIN64-001",
+  "episodes": 64,
+  "scenes": 16,
+  "decisions": 474,
+  "forward_branches": 5090,
+  "reversed_decisions": 128,
+  "reversed_branches": 1359,
+  "selected_sentinels_passed": 474,
+  "order_checks_passed": 1359,
+  "max_sentinel_endpoint_error_m": 0.0,
+  "max_order_endpoint_error_m": 0.0,
+  "sentinel_sensor_matches": 474,
+  "order_sensor_matches": 1359,
+  "all_required_gates_passed": true,
+  "baseline_noninterference_passed": true,
+  "all_admissible_options_complete": true,
+  "masked_budget_options_skipped": 38,
+  "limits": "64 newly selected routes in 16 training scenes, one simulator seed. No learned improvement or causal failure claim. Same STOP, sensors, horizon and original controller.",
+  "privileged_analysis_only": true
+}

@@ -1,0 +1,13 @@
+{
+  "episodes": 16,
+  "metric_comparisons": 96,
+  "all_required_gates_passed": true,
+  "max_absolute_delta": 0.0,
+  "unchanged_native_success_distance_m": 3.0,
+  "hashes": {
+    "research/tools/verify_intervention_metrics.py": "141fa04916be8c79afa0dfe5a78c98ea3b55f1ed0bdec93a51ddbe81720843a9",
+    "research/results/full_return_label_train16/top_logit_enabled_003/traces/worker_seed100.jsonl": "69fd66e3abba22cd8aa78dec0b98f029a4b39018d8dc12789ea467872f4a92b2",
+    "data/logs/eval_results/aaa_full_return_label_train16_003_top_logit_enabled/stats_ep_ckpt_59_train_r0_w1.json": "43fc83848d4af3e189dee60a8b676c22da92ef54d2f3a460537f0baaaf172412",
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed/train/train_gt.json.gz": "e1f380f83e898dc50383f2fae5fbefac1a9c62a766dde1c30b254db47e93b0ac"
+  }
+}

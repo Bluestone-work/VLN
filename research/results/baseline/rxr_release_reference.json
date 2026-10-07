@@ -1,0 +1,32 @@
+{
+  "dataset": "RxR-CE",
+  "split": "val_unseen",
+  "episodes": 11006,
+  "checkpoint": "data/logs/checkpoints/release_rxr/ckpt.iter19600.pth",
+  "pretrained_language_checkpoint": "data/pretrained/ETP/mlm.sap_rxr/ckpts/model_step_90000.pt",
+  "git_commit": "160e65fe5d23ad83d024d57d710e47be6892fc68",
+  "environment": "etpnav_legacy",
+  "python": "3.6.13",
+  "torch": "1.9.1+cu111",
+  "habitat_sim": "0.1.7 official py3.6 headless EGL build",
+  "habitat_lab": "0.1.7",
+  "gpu": "2 x NVIDIA GeForce RTX 4090",
+  "num_environments": 2,
+  "metrics": {
+    "steps_taken": 166.566330,
+    "distance_to_goal": 5.728692,
+    "success": 0.554334,
+    "oracle_success": 0.642195,
+    "path_length": 18.065586,
+    "collisions": 0.363841,
+    "spl": 0.451361,
+    "ndtw": 0.623533,
+    "sdtw": 0.456984,
+    "ghost_cnt": 33.551247
+  },
+  "log": "logs/rxr_full_baseline.log",
+  "raw_results": "data/logs/eval_results/release_rxr/stats_ckpt_97_val_unseen.json",
+  "raw_rank_results": ["data/logs/eval_results/release_rxr/stats_ep_ckpt_97_val_unseen_r0_w2.json", "data/logs/eval_results/release_rxr/stats_ep_ckpt_97_val_unseen_r1_w2.json"],
+  "reproduction_status": "Compatibility reproduction",
+  "algorithmic_modification": false
+}

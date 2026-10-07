@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-07T04:24:34.405376+00:00",
+  "hashes": {
+    "vlnce_baselines/adaptive_action/single_intervention.py": "2274f37666a7c531b334115f7cf616cf1150f7a68e42937e020df4477bd285cd",
+    "research/tools/run_single_intervention.py": "d5b9e8310273e5870de11c37e21edff47e3f8032e67b1b082e90a29b9242f9a0",
+    "research/tools/audit_single_intervention.py": "2e3666a63080add9ab2be046ab48e43c19091851919982006c9830d7e1dcda22",
+    "research/tools/test_single_intervention.py": "74b2bafac8e4b35dc72e299d9ac34bb938dbf2c1ffe366c03778fa937163d235",
+    "research/tools/test_single_intervention_audit.py": "6bfe386471e68ad5de1aaac4fbbe8fe50c200b3dcb4974a583938c0072b22eb8",
+    "research/tools/inspect_single_intervention.py": "84e2f92e7642b59b1dc8f24a3c772bc6c142c056869fe564dc3197659e46d5ac",
+    "research/tools/analyze_continuation_horizon.py": "7a846c1a1005190a6702b21d535d2b5f1f6e43d073cbce0afab4297c6f73e11f",
+    "research/tools/verify_intervention_metrics.py": "141fa04916be8c79afa0dfe5a78c98ea3b55f1ed0bdec93a51ddbe81720843a9",
+    "research/tools/route_alignment.py": "de864d584766d90401c04d4bba1f2f2fab7debc6611c0961d853196cb48c6031",
+    "research/tools/run_option_capture.py": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+    "research/tools/check_option_noninterference.py": "51465e1ea29bb3d6a8e8d1eee5500bbc923fb04c1f8604ff1c51e90e1b8ca74d",
+    "research/tools/replay_option_calibration.py": "0f2227866556dd884c98d2ab73bcf5ff2a0d9c5d8eaca4b17f7e165563a8274a",
+    "research/AAA_CODE_AUDIT.md": "57c7f72f526f1c3a6b02c274f4b0a79e4482cc50b613cfe0404fa52b1c089ed6",
+    "research/BASELINE_REPORT.md": "d8d1613bf080ce63ca124f17eb133f7096a8a1e3890f59d3e6b402455d0b03de",
+    "research/RESEARCH_LOG.md": "ee101f751df3877939780bb503e7bbbb861542332b04a8e790a009d692ff2ee3",
+    "research/REPORT.md": "73ca8979b6a683813d2d914e379e33e1d2f3c3975415c7a49199bc5685594362",
+    "research/FAILURE_ANALYSIS.md": "dd814fbdcd27f605f65c8abfb6f24a07a6cc65d2ede437f7d06c9c29699b0dd1",
+    "research/OPTION_LABEL_PROTOCOL.md": "481ef3f0f42433bc496bf05e9faed4734c3855f93e154e591b6075051137263f",
+    "research/GRAPH_DECISION_NEXT_GATE.md": "f5ae64bfafd39d9d65c8045fa2e1843583531278bc582bf0b20853a17a40488b",
+    "research/SINGLE_INTERVENTION_REPORT.md": "bfa9db2ba708ee2caa83829123357b4d77ef62bc2470fc72fd7cb10a0124f3d2",
+    "research/RESEARCH_STATUS_CN.md": "03550ad6c6ce5f2a8c61534ac8e1310a611f6fcc4b9aea0963be572641d3c3b2",
+    "research/EXPERIMENT_TABLE.md": "0adc12816cbde40748c93dbfb29244fb211e2ff266e5058c529970267f84bf2a",
+    "research/SINGLE_INTERVENTION_PROTOCOL.md": "f33c16dadcc1615a75e5c5ae72284a05b5030a25c6210fe9bce0ff0dff20a688",
+    "research/ROUTE_COMPATIBILITY_REPORT.md": "b6b49a872cbe71ad2b660988bcaf8ef052b35af8fce79d17b8347d16e9a4d060",
+    "research/GRAPH_OPTION_REPORT.md": "6accd9e00c3dc6c47b50f5411ccebb92127626c671d9e89316a0def226bf9631",
+    "research/configs/GRAPH_SINGLE_INTERVENTION_TRAIN7_001.json": "d9c4b3c5de8bb0ce7a2991f311fc5c045ca34f8b2323aef2404bc048830687cb"
+  },
+  "prior_snapshots_preserved": true
+}

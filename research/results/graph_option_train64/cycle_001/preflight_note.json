@@ -1,0 +1,7 @@
+{
+  "attempt": "sampler asset preflight",
+  "status": "corrected before any collection",
+  "error": "Scene IDs are relative to data/scene_datasets, not repository root.",
+  "effect": "No routes changed; no output dataset or simulator branches created by failed attempt.",
+  "fix": "Resolve existing Habitat scene root; rerun same metadata protocol."
+}

@@ -1,0 +1,109 @@
+{
+  "best_fixed_level_by_mean_progress": "fine",
+  "best_progress_mean": {
+    "coarse": 1.1160543234235154,
+    "default": 1.2664285458609783,
+    "fine": 1.5517754434314492
+  },
+  "best_progress_median": {
+    "coarse": 1.2336044311523438,
+    "default": 1.2418441772460938,
+    "fine": 1.6446080207824707
+  },
+  "conditional_best_progress_by_default_candidate_count": {
+    "3-5": {
+      "coarse": 1.1160543234235154,
+      "default": 1.2664285458609783,
+      "fine": 1.5517754434314492
+    }
+  },
+  "conditional_best_progress_by_distance_to_goal": {
+    "0-3m": {
+      "coarse": 0.6577852981295004,
+      "default": 0.7887765776019456,
+      "fine": 0.8854157301748908
+    },
+    "3-6m": {
+      "coarse": 1.2628748458582204,
+      "default": 1.385163791529782,
+      "fine": 1.8548673485125695
+    },
+    "6m+": {
+      "coarse": 1.4110897195582488,
+      "default": 1.5989642520340122,
+      "fine": 1.9154067100310812
+    }
+  },
+  "gain_over_default_bootstrap_95ci": {
+    "coarse": [
+      -0.18406092735652588,
+      -0.12000609313205264
+    ],
+    "default": [
+      0.0,
+      0.0
+    ],
+    "fine": [
+      0.24256435732143966,
+      0.32876474144932344
+    ]
+  },
+  "gain_over_default_mean": {
+    "coarse": -0.15037422243746293,
+    "default": 0.0,
+    "fine": 0.285346897570471
+  },
+  "gain_over_default_stderr": {
+    "coarse": 0.016328371685231255,
+    "default": 0.0,
+    "fine": 0.02205472895929063
+  },
+  "interpretation": {
+    "oracle_is_privileged": true,
+    "progress_definition": "distance_to_goal_before - distance_to_goal_after",
+    "state_proxy": "number of candidates produced by default NMS"
+  },
+  "num_decisions": 511,
+  "num_episodes": 64,
+  "oracle_gain_over_default_mean": 0.3140361320278416,
+  "oracle_gain_over_default_stderr": 0.02036919174536,
+  "oracle_minus_best_fixed_mean": 0.028689234457370587,
+  "oracle_minus_best_fixed_stderr": 0.006014640159348042,
+  "oracle_selection_count": {
+    "default": 259,
+    "fine": 252
+  },
+  "oracle_selection_rate": {
+    "coarse": 0.0,
+    "default": 0.5068493150684932,
+    "fine": 0.4931506849315068
+  },
+  "oracle_selection_rate_by_distance_to_goal": {
+    "0-3m": {
+      "coarse": 0.0,
+      "default": 0.627906976744186,
+      "fine": 0.37209302325581395
+    },
+    "3-6m": {
+      "coarse": 0.0,
+      "default": 0.3916083916083916,
+      "fine": 0.6083916083916084
+    },
+    "6m+": {
+      "coarse": 0.0,
+      "default": 0.4846938775510204,
+      "fine": 0.5153061224489796
+    }
+  },
+  "schema_version": 1,
+  "strict_oracle_selection_count": {
+    "default": 41,
+    "fine": 252
+  },
+  "strict_oracle_selection_rate": {
+    "coarse": 0.0,
+    "default": 0.13993174061433447,
+    "fine": 0.8600682593856656
+  },
+  "tied_best_decision_count": 218
+}

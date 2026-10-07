@@ -1,0 +1,14 @@
+{
+  "experiment_id": "INTERRUPTIBLE-EXECUTION-AUDIT-001",
+  "type": "read-only code and literature audit",
+  "report": "research/INTERRUPTIBLE_EXECUTION_AUDIT.md",
+  "sources": [
+    "vlnce_baselines/common/environments.py",
+    "vlnce_baselines/ss_trainer_ETP.py",
+    "vlnce_baselines/models/graph_utils.py",
+    "vlnce_baselines/adaptive_action/option_calibration.py",
+    "research/LITERATURE_METHOD_AUDIT_20261007.md"
+  ],
+  "controls": "No source mutation, simulator run, model training or new claim. Existing native action and observation contracts remain unchanged.",
+  "decision": "NO-GO for interruptible execution prototype in current cycle"
+}

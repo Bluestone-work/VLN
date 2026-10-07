@@ -1,0 +1,185 @@
+{
+  "experiment_id": "CONTINUATION-LABEL-TRAIN64-001-H2-CONFIRMED",
+  "status": "frozen_after_registered_h2_rule_before_mixed_rollout",
+  "analysis_only_oracle": true,
+  "expected_event_count": 2,
+  "base_experiment_config": "research/configs/CONTINUATION_LABEL_TRAIN64_001.json",
+  "protocol": "research/CONTINUATION_LABEL_PROTOCOL.md",
+  "selection_rule": "Registered H=2 confirmation on already frozen H=1 candidates; privileged future information",
+  "events": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/V2XKFyX4ASd/V2XKFyX4ASd.glb",
+      "episode_id": "6126",
+      "high_level_step": 0,
+      "trajectory_id": "4037",
+      "baseline_index": 2,
+      "alternative_index": 3,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.3541901111602783,
+            0.10309600830078125,
+            2.7030301094055176
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.9682615791354658,
+            0.10309600830078125,
+            0.740618539889792
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.3541901111602783,
+            0.10309600830078125,
+            2.7030301094055176
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            2.503801944782465,
+            0.10309600830078125,
+            1.4620158873918425
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "g0",
+        "g1",
+        "g2",
+        "g3"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          2.3541901111602783,
+          0.10309600830078125,
+          2.7030301094055176
+        ],
+        "dtype": "<f4"
+      },
+      "local_route_matched_gain_m": 0.43703794479370117,
+      "baseline_episode_success": 1.0
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb",
+      "episode_id": "7581",
+      "high_level_step": 5,
+      "trajectory_id": "5063",
+      "baseline_index": 21,
+      "alternative_index": 20,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            11.417943000793457,
+            3.628255844116211,
+            4.357661247253418
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            12.911590598763224,
+            3.628255844116211,
+            4.219759640739403
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g19",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            11.417943000793457,
+            3.628255844116211,
+            4.357661247253418
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            12.096424780483483,
+            3.628255844116211,
+            3.623044017242676
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g18",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "g1",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g11",
+        "g12",
+        "g14",
+        "g15",
+        "g16",
+        "g17",
+        "g18",
+        "g19"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          11.417943000793457,
+          3.628255844116211,
+          4.357661247253418
+        ],
+        "dtype": "<f4"
+      },
+      "local_route_matched_gain_m": 0.6309502422809601,
+      "baseline_episode_success": 1.0
+    }
+  ],
+  "hashes": {
+    "research/configs/CONTINUATION_LABEL_TRAIN64_001.json": "b39b5c82343369307aac31342eff4a38a8abe876681aceab369613fafd810773",
+    "research/CONTINUATION_LABEL_PROTOCOL.md": "fcbad1dee510c65940f8b073b03e7b2efe2bbdaf73ac78f94a530fa553098264",
+    "research/tools/prepare_continuation_schedule.py": "d4554c8c57b38b4c13e06e6980b5743683a4b29b14cb1278125efa3a4be00e5a",
+    "research/results/continuation_label_train64/route_001/states.jsonl": "d318f36f379fa44dfa719e2ce1151a24f7c56dcac4e95e5e9531ea09b3a6104d",
+    "research/results/continuation_label_train64/capture_001/graph_options/graph_options.jsonl": "2277043d6fdaece8c856a1d9b9b6887246ce13fdebfeda746abeaef97a5d517b",
+    "research/results/continuation_label_train64/route_001/summary.json": "28f44bb5cd0c4db8a23fad95e9ba8aacf965ebc235f1a71849d96bb318f30204",
+    "research/results/continuation_label_train64/sampling_001/manifest.json": "d6380b5d04f12d4f5a0ba207e593254a64719ad16533f17ac6cabfbf2eb187d4",
+    "research/results/continuation_label_train64/h2_analysis_001/summary.json": "b8f5dbd6b0f63249b2966e7483ee7b67cc3d66b4d4dd07eeacad037c9f716036"
+  }
+}

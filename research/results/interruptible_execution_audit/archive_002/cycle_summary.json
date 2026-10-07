@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-10-07T09:04:59.797075+00:00",
+  "experiment_id": "INTERRUPTIBLE-EXECUTION-AUDIT-001",
+  "status": "complete",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "core_tracked_diff_unchanged": true,
+  "compared_to": "/home/wj/VLN-CE/ETPNav/research/results/full_return_feature_audit/analysis_001/git_diff.patch",
+  "latest_analysis": "research/results/interruptible_execution_audit/analysis_003/summary.json",
+  "static_checks": {
+    "count": 13,
+    "passed": true,
+    "dynamic_semantics_proven": false
+  },
+  "cached_literature_hashes_verified": 6,
+  "new_simulator_episodes": 0,
+  "model_training": false,
+  "decision": "NO-GO for interruptible execution prototype on current evidence",
+  "scope": "Read-only source-anchor and literature audit; existing empirical traces only",
+  "limitations": [
+    "No deployable interruption trigger has been validated.",
+    "No dynamic simulator interruption test was run.",
+    "Cached checksum identity is not an exhaustive novelty search."
+  ],
+  "snapshot_sha256": {
+    "research/EXPERIMENT_TABLE.md": "e1cd2d1001a3fc603dc3943dfd808bbcaadb596f132d7f4468331e692751049a",
+    "research/INTERRUPTIBLE_EXECUTION_AUDIT.md": "a006155564e72bb95d9585a519db1293edc2c73d3df7ead5360752cc72eb2dbb",
+    "research/LITERATURE_METHOD_AUDIT_20261007.md": "036733ca1cc685ed18623f81d0c0be89b0cb35a66e367720cbd7e14da4e699d4",
+    "research/REPORT.md": "51c91a4a7a2c31afcc4e4ec6df7db1cc348a1bc64f1f3faa19804e7086281f4a",
+    "research/RESEARCH_LOG.md": "5bd3fd4ee460f92da96af7615dc6ff35769ce2523baf4ef66a4a511f2f6189ad",
+    "research/RESEARCH_STATUS_CN.md": "ea4242ab99b32e658245e45bb81131e6ca41cd5749a1381500b57eb06c3dc532",
+    "research/configs/INTERRUPTIBLE_EXECUTION_AUDIT_001.json": "3e4d675e1d5806ed7974f2060f78d876610d8b4bdd328236136d57e36034e5b8",
+    "research/results/interruptible_execution_audit/analysis_003/config.json": "3e4d675e1d5806ed7974f2060f78d876610d8b4bdd328236136d57e36034e5b8",
+    "research/results/interruptible_execution_audit/analysis_003/summary.json": "6fec1b72865ca6681f1cd5e073ba02263e48d8ed7d9be45eecaf46110874def9",
+    "research/results/interruptible_execution_audit/run_003.stdout.log": "07808ce88ade5439dd8f9ec1d3ad70a4dd1f63bb7158c89b680ba922f1c4e2a8",
+    "research/results/literature_methods_20261007/manifest.json": "120d61b0e0e1b7669793e65d469e28d1663e0bab02a18f26fdd594391c403d95",
+    "research/tools/audit_interruptible_execution.py": "1223715c775f59182a623175436d9cc8858415e43595a331cb9f92cd4e7dce38"
+  }
+}

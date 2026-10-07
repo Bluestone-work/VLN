@@ -1,0 +1,38 @@
+{
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n?? vlnce_baselines/adaptive_action/\n",
+  "files_sha256": {
+    "research/results/full_return_label_train16/full_return_cycle_003/status.json": "c366f037a07aed1d01913fb95230c96cf00e48fee0dfeae557b4b88d54e1fd0b",
+    "research/results/full_return_label_train16/capture_001/manifest.json": "b161b3403ed62b90b8773741e203b37f25bce39d476666e77b70212b80b24a9f",
+    "research/results/full_return_label_train16/integrity_001/summary.json": "b10ed14fc2139100fa3806427b7170fffbf403c7c9e0618e3d17d0c2f54aa46d",
+    "research/results/full_return_label_train16/probe_full001/summary.json": "9788209e575d30b965b9d71083721c7e3fb3ce0f091402bc798510ae9b7a231a",
+    "research/results/full_return_label_train16/full_return_analysis_001/summary.json": "121eb7e6ac64cc1b0d1b61931a98637c779591793e45a606115642cbf79947e5",
+    "research/results/full_return_label_train16/full_return_analysis_001/paired_table.md": "60ac9b7369f2b8a1f80f00c85c50250d0ee82970c340a13f834f4dcef3cb56da",
+    "research/results/full_return_label_train16/descriptive_002/summary.json": "97cab099ed262b2f106b6cf71235cd0c91a4de931415fa04a165298396738d7c",
+    "research/results/full_return_label_train16/schedule_top_logit_001.json": "4d1b27935297867eb9b456e9f5485576634bb5801f2cdd0e08643a6b094ba318",
+    "research/results/full_return_label_train16/schedule_seeded_graph_id_001.json": "fb06323a430f0d4d704faa42a01132bbeda9ec9c059370ea00efb3ddcdf0957d",
+    "research/FULL_RETURN_LABEL_REPORT.md": "0b843272776211f7f8578f236d473e35e5f16d915ae027802801a8c7388b0dfa",
+    "research/REPORT.md": "8eb34c4b249198ab3f1c99573dae2c02d32e9df9966934146f14ceba3d45c797",
+    "research/RESEARCH_STATUS_CN.md": "39c328a34a55b5d5ef417d27259c20fe77fd7337a2d04a9f431cd2ab48c25233",
+    "research/RESEARCH_LOG.md": "ab70576e5f1ed7389c67d0628876d65679cea53b4f6c6ee39edf11e73e9b7127",
+    "research/EXPERIMENT_TABLE.md": "33dbea5461e4b05d92f4ebb57af6e57279d185cb7980ac12c972b244bfbad0d8",
+    "research/tools/census_terminal_recovery.py": "2487ca57d4c251abbd25f746a16ff826540ffd41b83bf6e413542a27553b9d67",
+    "research/results/terminal_recovery_census_001/summary.json": "4bdafc24dc12a48669e87ed39c40815c783665807bf70e39d71de8e9bad8c174",
+    "research/results/terminal_recovery_census_003/summary.json": "be9635e4ff423750477a25172ba7a4412cc3bc1fdfce10f0f8c8ff3268187810",
+    "research/results/terminal_recovery_census_valunseen_001/summary.json": "6c1292b58880be7f33e5aa6ecbecf6a296c7412fedf4ab1f915a7c8be84a5281",
+    "research/configs/FULL_RETURN_FEATURE_AUDIT_001.json": "28f7c435add1dd6fe086461ecaf83e562ea2f601bdcb9f1dc0de31c4294f4155",
+    "research/configs/FULL_RETURN_FEATURE_COST_001.json": "2f8ae4c519e3777b287f5578b9533a7b5578aaa03e8a0e48fb270e0b1ef189c2",
+    "research/tools/audit_full_return_features.py": "8f5bb33c477dd86d9563ba7756c187befa567a3d52290efbbeda434a092736f4",
+    "research/tools/audit_full_return_feature_cost.py": "1aae0608715dedd1e87fdf34dce4c91917a8995d8758f5001cd3633204b6daa4",
+    "research/tools/test_full_return_features.py": "8f488516f66e7bd8e7ab1618078a59aadfe585ccc9b7e29d917b08127d54fbb1",
+    "research/FULL_RETURN_FEATURE_AUDIT_REPORT.md": "a1415bd5c19cbdb7a3343e80b7bb3dbafecee98691b46f851c5494689463425c",
+    "research/results/full_return_feature_audit/analysis_001/summary.json": "7a77523c22872f8cdad398f0f2b1fc4b5e1a4ce1c1ab713d7d6e9bb701491879",
+    "research/results/full_return_feature_audit/cost_001/summary.json": "cc70236602d4cce9daa02bddd8cdb69160f6971d09c27bb0b392adc0675a5fcb",
+    "research/AAA_CODE_AUDIT.md": "4770f3e6cfdfdfe063722dfdc9c375063efdffe48ad09d31151330af75c8fb2f",
+    "research/FAILURE_ANALYSIS.md": "9f8b81c36f689f48d70f03c3792ef16d9f3eacf5058068b7b44f9c7e4d28b2e9"
+  },
+  "environment": {
+    "EGL_PLATFORM": null,
+    "CUDA_VISIBLE_DEVICES": null
+  }
+}

@@ -1,0 +1,789 @@
+{
+  "evaluations": {
+    "val64": {
+      "coverage": {
+        "alias_label_spread_max_m": 1.1918619871139526,
+        "alias_label_spread_mean_m": 0.2221184330510682,
+        "aliased_eligible_graph_groups": 232,
+        "checked_candidates": 2295,
+        "eligible_decisions": 511,
+        "eligible_states_with_aliasing": 217,
+        "episodes": 64,
+        "episodes_by_scene": {
+          "ULsKaCPVFJR": 24,
+          "VLzqgDo317F": 12,
+          "b8cTxDM8gDG": 18,
+          "e9zR4mvMWw7": 10
+        },
+        "identical_embedding_conflicting_label_pairs": 239,
+        "ineligible_candidates": 457,
+        "raw_decisions": 511,
+        "routes": 23,
+        "scenes": 4,
+        "unique_eligible_graph_actions": 1592
+      },
+      "label_conventions": {
+        "max": {
+          "graph_logit": {
+            "regret_mean_m": 0.49719019753242427,
+            "top1_rate": 0.649706457925636
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.09081659881316298,
+                  0.052572388822002145
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.01234011658250469,
+                "equal_cluster_mean_m": -0.004264539876184261
+              },
+              "route": {
+                "ci95_m": [
+                  -0.07691937193706401,
+                  0.04949010760339593
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.01234011658250469,
+                "equal_cluster_mean_m": -0.0011334106640134704
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.030575890176303754,
+                  0.01861084495070418
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.01234011658250469,
+                "equal_cluster_mean_m": -0.0022441334388702454,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.48485008094991955,
+            "top1_rate": 0.6360078277886497
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.03929305306090993,
+                  0.016459063718131908
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.010078681716713653,
+                "equal_cluster_mean_m": -0.011080793330685925
+              },
+              "route": {
+                "ci95_m": [
+                  -0.043355579640885974,
+                  0.021347791267319737
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.010078681716713653,
+                "equal_cluster_mean_m": -0.010039277058144107
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.03734264549445456,
+                  0.026989763237766383
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.010078681716713653,
+                "equal_cluster_mean_m": -0.0017389408998299705,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.4871115158157106,
+            "top1_rate": 0.6457925636007827
+          }
+        },
+        "mean": {
+          "graph_logit": {
+            "regret_mean_m": 0.494544330019618,
+            "top1_rate": 0.649706457925636
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.08920453228384298,
+                  0.0525983454580051
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.011569390626258502,
+                "equal_cluster_mean_m": -0.004508498656554259
+              },
+              "route": {
+                "ci95_m": [
+                  -0.07521384610868889,
+                  0.04941787936800031
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.011569390626258502,
+                "equal_cluster_mean_m": -0.0012493175155873506
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.030084506162960323,
+                  0.018684689915671793
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.011569390626258502,
+                "equal_cluster_mean_m": -0.0014516961675191142,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.4829749393933595,
+            "top1_rate": 0.6320939334637965
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.03989109655474761,
+                  0.014585264905544371
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.011420000176840332,
+                "equal_cluster_mean_m": -0.012714463884561085
+              },
+              "route": {
+                "ci95_m": [
+                  -0.04423651217500084,
+                  0.0195591975455505
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.011420000176840332,
+                "equal_cluster_mean_m": -0.011382229842850356
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.037724961363274155,
+                  0.025119805842945257
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.011420000176840332,
+                "equal_cluster_mean_m": -0.003325536115383519,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.4831243298427777,
+            "top1_rate": 0.6457925636007827
+          }
+        },
+        "min": {
+          "graph_logit": {
+            "regret_mean_m": 0.4917901106718235,
+            "top1_rate": 0.649706457925636
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.08789462457894526,
+                  0.05254626842112789
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.010765763528193046,
+                "equal_cluster_mean_m": -0.004734944433310043
+              },
+              "route": {
+                "ci95_m": [
+                  -0.07310719835496367,
+                  0.04945909996025314
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.010765763528193046,
+                "equal_cluster_mean_m": -0.0013322551234304662
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.029540085924160592,
+                  0.01991186636624877
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.010765763528193046,
+                "equal_cluster_mean_m": -0.0006351030291138923,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.48102434714363046,
+            "top1_rate": 0.6320939334637965
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.040770672809659736,
+                  0.012800209028252225
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.012761318636967011,
+                "equal_cluster_mean_m": -0.014348134438436237
+              },
+              "route": {
+                "ci95_m": [
+                  -0.045359815491904175,
+                  0.017987874162032524
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.012761318636967011,
+                "equal_cluster_mean_m": -0.012725182627556609
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.03810727723209375,
+                  0.023249848448124128
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.012761318636967011,
+                "equal_cluster_mean_m": -0.004912131330937068,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.4790287920348565,
+            "top1_rate": 0.6457925636007827
+          }
+        },
+        "raw_first": {
+          "graph_logit": {
+            "regret_mean_m": 0.5216851528668357,
+            "top1_rate": 0.5870841487279843
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.08892124140347667,
+                  0.053267219220819007
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.010815456013856802,
+                "equal_cluster_mean_m": -0.003742340980038725
+              },
+              "route": {
+                "ci95_m": [
+                  -0.07429043595166068,
+                  0.05019590554155998
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.010815456013856802,
+                "equal_cluster_mean_m": -0.0006209024608576776
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.028966640918412796,
+                  0.01999104781263679
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.010815456013856802,
+                "equal_cluster_mean_m": -0.0005827113749321161,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.5108696968529789,
+            "top1_rate": 0.5714285714285714
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.04096867031165719,
+                  0.014253687367522166
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.01207166181151881,
+                "equal_cluster_mean_m": -0.013611127785957487
+              },
+              "route": {
+                "ci95_m": [
+                  -0.045464903718215655,
+                  0.01950229683146829
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.01207166181151881,
+                "equal_cluster_mean_m": -0.012219200165369216
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.03912709300522098,
+                  0.02525771801004705
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.01207166181151881,
+                "equal_cluster_mean_m": -0.004159963871301566,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.5096134910553168,
+            "top1_rate": 0.5870841487279843
+          }
+        },
+        "raw_last": {
+          "graph_logit": {
+            "regret_mean_m": 0.511696613785572,
+            "top1_rate": 0.6007827788649707
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.08977132813544775,
+                  0.05187819912191572
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.012553604614944607,
+                "equal_cluster_mean_m": -0.005397232126071182
+              },
+              "route": {
+                "ci95_m": [
+                  -0.07560911401029359,
+                  0.04863004985610023
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.012553604614944607,
+                "equal_cluster_mean_m": -0.001968196998640402
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.031573578856344854,
+                  0.018525425459920745
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.012553604614944607,
+                "equal_cluster_mean_m": -0.002489751019418368,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.4991430091706274,
+            "top1_rate": 0.5909980430528375
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.039298061680982016,
+                  0.015283995335838423
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.010768338542161856,
+                "equal_cluster_mean_m": -0.011817799983164675
+              },
+              "route": {
+                "ci95_m": [
+                  -0.04293912050460556,
+                  0.019579063494674465
+                ],
+                "clusters": 23,
+                "decision_weighted_mean_m": -0.010768338542161856,
+                "equal_cluster_mean_m": -0.0105452595203315
+              },
+              "scene": {
+                "ci95_m": [
+                  -0.03632282972132733,
+                  0.024981893675843466
+                ],
+                "clusters": 4,
+                "decision_weighted_mean_m": -0.010768338542161856,
+                "equal_cluster_mean_m": -0.002491108359465472,
+                "warning": "Few clusters; interval is exploratory."
+              }
+            },
+            "regret_mean_m": 0.5009282752434101,
+            "top1_rate": 0.6007827788649707
+          }
+        }
+      }
+    },
+    "valunseen64": {
+      "coverage": {
+        "alias_label_spread_max_m": 0.8578662872314453,
+        "alias_label_spread_mean_m": 0.2831405983971698,
+        "aliased_eligible_graph_groups": 259,
+        "checked_candidates": 2228,
+        "eligible_decisions": 497,
+        "eligible_states_with_aliasing": 231,
+        "episodes": 64,
+        "episodes_by_scene": {
+          "zsNo4HB9uLZ": 64
+        },
+        "identical_embedding_conflicting_label_pairs": 273,
+        "ineligible_candidates": 444,
+        "raw_decisions": 497,
+        "routes": 46,
+        "scenes": 1,
+        "unique_eligible_graph_actions": 1518
+      },
+      "label_conventions": {
+        "max": {
+          "graph_logit": {
+            "regret_mean_m": 0.3477453858679689,
+            "top1_rate": 0.6981891348088531
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.053232100718561506,
+                  0.008109801664811738
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.021840553528346286,
+                "equal_cluster_mean_m": -0.0308878441193948
+              },
+              "route": {
+                "ci95_m": [
+                  -0.05354570248660566,
+                  0.009959711141980857
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": -0.021840553528346286,
+                "equal_cluster_mean_m": -0.025031604779517862
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": -0.021840553528346286,
+                "equal_cluster_mean_m": -0.021840553528346286,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.3259048323396226,
+            "top1_rate": 0.7142857142857143
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.022701537411423747,
+                  0.05572078942058818
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": 0.015879903880643174,
+                "equal_cluster_mean_m": 0.00955322114876863
+              },
+              "route": {
+                "ci95_m": [
+                  -0.02181255749304379,
+                  0.057070193656564135
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": 0.015879903880643174,
+                "equal_cluster_mean_m": 0.014106877999679744
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": 0.015879903880643174,
+                "equal_cluster_mean_m": 0.015879903880643174,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.3636252897486121,
+            "top1_rate": 0.6921529175050302
+          }
+        },
+        "mean": {
+          "graph_logit": {
+            "regret_mean_m": 0.3309862731208264,
+            "top1_rate": 0.7022132796780685
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.05234706623657658,
+                  0.009249057900800328
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.02083149906135421,
+                "equal_cluster_mean_m": -0.029294746565409077
+              },
+              "route": {
+                "ci95_m": [
+                  -0.052308724647371636,
+                  0.011107966017184688
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": -0.02083149906135421,
+                "equal_cluster_mean_m": -0.02305206161005755
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": -0.02083149906135421,
+                "equal_cluster_mean_m": -0.02083149906135421,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.31015477405947217,
+            "top1_rate": 0.7183098591549296
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.02279313769774667,
+                  0.056599373075840294
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": 0.015973325826272637,
+                "equal_cluster_mean_m": 0.009439544402609138
+              },
+              "route": {
+                "ci95_m": [
+                  -0.02209194505966983,
+                  0.05789061103642282
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": 0.015973325826272637,
+                "equal_cluster_mean_m": 0.014582286753830153
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": 0.015973325826272637,
+                "equal_cluster_mean_m": 0.015973325826272637,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.34695959894709905,
+            "top1_rate": 0.6961770623742455
+          }
+        },
+        "min": {
+          "graph_logit": {
+            "regret_mean_m": 0.3153222428121317,
+            "top1_rate": 0.7062374245472837
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.051374964951509124,
+                  0.010348519406560529
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.019688479257541403,
+                "equal_cluster_mean_m": -0.027493584097673652
+              },
+              "route": {
+                "ci95_m": [
+                  -0.051155977149047495,
+                  0.012765960602380935
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": -0.019688479257541403,
+                "equal_cluster_mean_m": -0.020927777631032228
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": -0.019688479257541403,
+                "equal_cluster_mean_m": -0.019688479257541403,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.2956337635545903,
+            "top1_rate": 0.7223340040241448
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.0234399427374763,
+                  0.057261308233118376
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": 0.01620071310872283,
+                "equal_cluster_mean_m": 0.009533932570199343
+              },
+              "route": {
+                "ci95_m": [
+                  -0.0224385724682641,
+                  0.05912112930969875
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": 0.01620071310872283,
+                "equal_cluster_mean_m": 0.015202436317545568
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": 0.01620071310872283,
+                "equal_cluster_mean_m": 0.01620071310872283,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.33152295592085457,
+            "top1_rate": 0.7002012072434608
+          }
+        },
+        "raw_first": {
+          "graph_logit": {
+            "regret_mean_m": 0.36783704419491037,
+            "top1_rate": 0.6237424547283702
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.0523237935823316,
+                  0.009286392118668595
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.02078633661001501,
+                "equal_cluster_mean_m": -0.028620861711488685
+              },
+              "route": {
+                "ci95_m": [
+                  -0.05237990438710884,
+                  0.011526222359981847
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": -0.02078633661001501,
+                "equal_cluster_mean_m": -0.0224961638763401
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": -0.02078633661001501,
+                "equal_cluster_mean_m": -0.02078633661001501,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.34705070758489537,
+            "top1_rate": 0.6378269617706237
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.021823276540262556,
+                  0.05814508924438189
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": 0.017365219487510696,
+                "equal_cluster_mean_m": 0.011195796670129378
+              },
+              "route": {
+                "ci95_m": [
+                  -0.02037120652944408,
+                  0.05895416130872941
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": 0.017365219487510696,
+                "equal_cluster_mean_m": 0.016226350540094126
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": 0.017365219487510696,
+                "equal_cluster_mean_m": 0.017365219487510696,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.38520226368242105,
+            "top1_rate": 0.6177062374245473
+          }
+        },
+        "raw_last": {
+          "graph_logit": {
+            "regret_mean_m": 0.3775198602602935,
+            "top1_rate": 0.6116700201207244
+          },
+          "pairwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.052062679270846526,
+                  0.009170841624743516
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": -0.02074269617587268,
+                "equal_cluster_mean_m": -0.029760566505579768
+              },
+              "route": {
+                "ci95_m": [
+                  -0.052298095848624486,
+                  0.011369977475347619
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": -0.02074269617587268,
+                "equal_cluster_mean_m": -0.023463218534209986
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": -0.02074269617587268,
+                "equal_cluster_mean_m": -0.02074269617587268,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.35677716408442084,
+            "top1_rate": 0.6257545271629779
+          },
+          "pointwise_embedding": {
+            "paired_regret_delta_vs_graph": {
+              "episode": {
+                "ci95_m": [
+                  -0.02405486055331445,
+                  0.055180564232006686
+                ],
+                "clusters": 64,
+                "decision_weighted_mean_m": 0.014715397501855309,
+                "equal_cluster_mean_m": 0.007891357048838596
+              },
+              "route": {
+                "ci95_m": [
+                  -0.023472457405632013,
+                  0.05706473575406785
+                ],
+                "clusters": 46,
+                "decision_weighted_mean_m": 0.014715397501855309,
+                "equal_cluster_mean_m": 0.013082963777131185
+              },
+              "scene": {
+                "ci95_m": null,
+                "clusters": 1,
+                "decision_weighted_mean_m": 0.014715397501855309,
+                "equal_cluster_mean_m": 0.014715397501855309,
+                "warning": "Insufficient clusters; no cross-cluster confidence interval."
+              }
+            },
+            "regret_mean_m": 0.39223525776214885,
+            "top1_rate": 0.6056338028169014
+          }
+        }
+      }
+    }
+  },
+  "experiment_id": "RANKER-VALIDITY-001",
+  "interpretation": "Goal progress after direct candidate probe is not progress after the full graph option/controller. Graph aggregation is sensitivity analysis only.",
+  "navigation_intervention": false,
+  "pair_count_in_legacy_fit": 44887,
+  "train": {
+    "alias_label_spread_max_m": 1.200028419494629,
+    "alias_label_spread_mean_m": 0.25397596550810575,
+    "aliased_eligible_graph_groups": 3614,
+    "checked_candidates": 35424,
+    "eligible_decisions": 7803,
+    "eligible_states_with_aliasing": 3295,
+    "episodes": 960,
+    "episodes_by_scene": {
+      "29hnd4uzFmX": 192,
+      "759xd9YjKW5": 210,
+      "7y3sRwLe3Va": 196,
+      "ULsKaCPVFJR": 13,
+      "gTV8FGcVJC9": 202,
+      "jh4fc5c5qoQ": 147
+    },
+    "identical_embedding_conflicting_label_pairs": 3937,
+    "ineligible_candidates": 5714,
+    "raw_decisions": 7813,
+    "routes": 328,
+    "scenes": 6,
+    "states_without_eligible_candidates": 10,
+    "unique_eligible_graph_actions": 25930
+  }
+}

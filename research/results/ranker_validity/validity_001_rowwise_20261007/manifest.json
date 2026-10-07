@@ -1,0 +1,24 @@
+{
+  "cpu": "x86_64",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "hashes_at_analysis_time": {
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz": "b43db098cbf6bdf05fdccd9992b87a9aee58eef5c74adc62d92cfe636baf2f4d",
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_seen/val_seen_bertidx.json.gz": "83b231674ae3a18cb02b3d65847377e978f45cc35682f807c03becc38b09410c",
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_unseen/val_unseen_bertidx.json.gz": "7db0a39bef374cf5ce986473f8b35c9721f962c6c1a9af069257aa710df16365",
+    "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+    "research/configs/RANKER_VALIDITY_001.json": "53dd1cfdd34ed054fa6dd6f23c1218db1982aa61b587d180c6a66eca9e22e3b6",
+    "research/results/action_abstraction/ranker_embedding_train960_diagnostics.jsonl": "028c9394be9559b353308dfc29ee37fa7ba86b517c8adf1765d58f8fe38f23a9",
+    "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl": "6000a51c1cb264e4e4658c8b869129e32f7bf47158db4724ba3ac9d38e129513",
+    "research/results/action_abstraction/ranker_embedding_val64_diagnostics.jsonl": "6ce18bbbb92e89f9997a7909a389f15d72e3af13e6a13d884246d86b190e3e86",
+    "research/results/action_abstraction/ranker_embedding_val64_oracle.jsonl": "58860a81d7d033d55144fa62864a12aeabf011bf24ff07ca042d3ae7872b63fd",
+    "research/results/action_abstraction/ranker_embedding_valunseen64_diagnostics.jsonl": "3c3c2678668c8dcefabb9eda27dccf54b5bc2b5e60e3c810e6432e99d5407cf6",
+    "research/results/action_abstraction/ranker_embedding_valunseen64_oracle.jsonl": "4262b50190730ffd894592ef74f2dd641d34293f896946b6983f4527cc23426c",
+    "research/tools/audit_ranker_validity.py": "e720ae5feafab15e2ae4823d528a09178de8038b060810b213f9fde2820b736e",
+    "research/tools/train_embedding_ranker.py": "4151bcc87e86b5bd4bf4288be39776c91af6fe5cf76fd1e96f01fad679c050e5"
+  },
+  "note": "Hashes recorded now cannot reconstruct historical uncommitted source snapshots.",
+  "numpy": "1.19.5",
+  "python": "3.6.13",
+  "time_utc": "2026-10-07T02:46:14.548664+00:00",
+  "working_tree_dirty": true
+}

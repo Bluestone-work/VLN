@@ -1,0 +1,37 @@
+{
+  "feature_names": [
+    "graph_logit",
+    "heatmap_score",
+    "distance",
+    "sin_angle",
+    "cos_angle",
+    "angular_dispersion",
+    "policy_entropy",
+    "candidate_count"
+  ],
+  "interpretation": "offline train-to-val diagnostic; no navigation trajectory used these weights",
+  "pair_count": 2676,
+  "privileged_label": "one-step goal-distance progress used only for offline pair construction",
+  "ridge_lambda": 10.0,
+  "schema_version": 1,
+  "train_decisions": 485,
+  "val_decisions": 511,
+  "validation": {
+    "pairwise_linear_ranker": {
+      "candidates": 1838,
+      "decisions": 511,
+      "regret_mean_m": 0.5348078804764962,
+      "top1_rate": 0.5459882583170255
+    }
+  },
+  "weights_standardized": [
+    0.43137920888264525,
+    -0.02592807674641854,
+    -0.08466779523453055,
+    -0.013184038363295368,
+    0.051744279409818066,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

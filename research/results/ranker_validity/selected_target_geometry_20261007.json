@@ -1,0 +1,95 @@
+{
+  "interpretation": "Euclidean geometric mismatch, not execution failure rate. Probe label uses raw proposal; action uses merged ghost, front/back path, quantized turns and tryout.",
+  "sources": {
+    "research/results/action_abstraction/ranker_embedding_val64_diagnostics.jsonl": {
+      "ghost_decisions": 447,
+      "selected_ghost_represented_by_current_candidate": 426,
+      "nearest_raw_target_offset_mean_m": 0.03457590285769604,
+      "offset_gt_1mm_count": 79,
+      "offset_gt_10cm_count": 75,
+      "offset_max_m": 0.24565694621299666,
+      "largest_offsets": [
+        {
+          "episode_id": "665",
+          "step": 1,
+          "graph_id": "g5",
+          "nearest_raw_target_offset_m": 0.24565694621299666,
+          "matching_proposals": 2
+        },
+        {
+          "episode_id": "666",
+          "step": 1,
+          "graph_id": "g5",
+          "nearest_raw_target_offset_m": 0.24565694621299666,
+          "matching_proposals": 2
+        },
+        {
+          "episode_id": "78",
+          "step": 5,
+          "graph_id": "g25",
+          "nearest_raw_target_offset_m": 0.2346517923425494,
+          "matching_proposals": 2
+        },
+        {
+          "episode_id": "508",
+          "step": 1,
+          "graph_id": "g5",
+          "nearest_raw_target_offset_m": 0.2191927351942279,
+          "matching_proposals": 2
+        },
+        {
+          "episode_id": "507",
+          "step": 4,
+          "graph_id": "g12",
+          "nearest_raw_target_offset_m": 0.21810465575103535,
+          "matching_proposals": 2
+        }
+      ]
+    },
+    "research/results/action_abstraction/ranker_embedding_valunseen64_diagnostics.jsonl": {
+      "ghost_decisions": 433,
+      "selected_ghost_represented_by_current_candidate": 415,
+      "nearest_raw_target_offset_mean_m": 0.04328429883875511,
+      "offset_gt_1mm_count": 92,
+      "offset_gt_10cm_count": 86,
+      "offset_max_m": 0.32512490359070545,
+      "largest_offsets": [
+        {
+          "episode_id": "302",
+          "step": 4,
+          "graph_id": "g6",
+          "nearest_raw_target_offset_m": 0.32512490359070545,
+          "matching_proposals": 1
+        },
+        {
+          "episode_id": "2",
+          "step": 6,
+          "graph_id": "g14",
+          "nearest_raw_target_offset_m": 0.3166128544999324,
+          "matching_proposals": 1
+        },
+        {
+          "episode_id": "1099",
+          "step": 6,
+          "graph_id": "g13",
+          "nearest_raw_target_offset_m": 0.24801119539510524,
+          "matching_proposals": 2
+        },
+        {
+          "episode_id": "1263",
+          "step": 5,
+          "graph_id": "g16",
+          "nearest_raw_target_offset_m": 0.24801119539510508,
+          "matching_proposals": 2
+        },
+        {
+          "episode_id": "1262",
+          "step": 5,
+          "graph_id": "g16",
+          "nearest_raw_target_offset_m": 0.24801119539510508,
+          "matching_proposals": 2
+        }
+      ]
+    }
+  }
+}

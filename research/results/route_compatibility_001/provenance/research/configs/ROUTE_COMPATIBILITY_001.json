@@ -1,0 +1,17 @@
+{
+  "experiment_id": "ROUTE-COMPATIBILITY-001",
+  "protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+  "cost_and_dtw_tolerance": 1e-05,
+  "baseline_metric_tolerance": 1e-06,
+  "material_gain_m": 0.25,
+  "bootstrap_seed": 20261007,
+  "bootstrap_samples": 5000,
+  "primary": "joint cost caps plus matched-prefix route gate",
+  "sensitivity": "endpoint-only route gate",
+  "datasets": [
+    "train_pilot8",
+    "val_unseen_balanced66",
+    "train_expansion64"
+  ],
+  "privileged_analysis_only": true
+}

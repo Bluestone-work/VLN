@@ -1,0 +1,30 @@
+{
+  "dataset": "R2R-CE",
+  "split": "val_unseen",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "pretrained_language_checkpoint": "data/pretrained/ETP/mlm.sap_r2r/ckpts/model_step_82500.pt",
+  "git_commit": "160e65fe5d23ad83d024d57d710e47be6892fc68",
+  "environment": "etpnav_legacy",
+  "python": "3.6.13",
+  "torch": "1.9.1+cu111",
+  "habitat_sim": "0.1.7 official py3.6 headless EGL build",
+  "habitat_lab": "0.1.7",
+  "gpu": "2 x NVIDIA GeForce RTX 4090",
+  "episodes": 1839,
+  "metrics": {
+    "steps_taken": 80.274063,
+    "distance_to_goal": 4.734436,
+    "success": 0.570962,
+    "oracle_success": 0.643284,
+    "path_length": 11.569253,
+    "collisions": 0.127652,
+    "spl": 0.491014,
+    "ndtw": 0.623051,
+    "sdtw": 0.467859,
+    "ghost_cnt": 23.849920
+  },
+  "log": "logs/r2r_full_baseline.log",
+  "raw_results": "data/logs/eval_results/release_r2r/stats_ckpt_59_val_unseen.json",
+  "reproduction_status": "Compatibility reproduction",
+  "algorithmic_modification": false
+}

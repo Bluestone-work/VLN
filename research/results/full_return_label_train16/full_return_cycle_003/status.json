@@ -1,0 +1,198 @@
+{
+  "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001",
+  "status": "complete",
+  "started_utc": "2026-10-07T07:31:19.275068+00:00",
+  "stages": [
+    {
+      "name": "top_logit_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/full_return_label_train16/schedule_top_logit_001.json",
+        "--source-capture",
+        "research/results/full_return_label_train16/capture_001",
+        "--output-dir",
+        "research/results/full_return_label_train16/top_logit_disabled_003",
+        "--exp-name",
+        "aaa_full_return_label_train16_003_top_logit_disabled"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:31:19.275165+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:32:05.431639+00:00"
+    },
+    {
+      "name": "top_logit_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/full_return_label_train16/top_logit_disabled_003",
+        "--source-noninterference",
+        "research/results/full_return_label_train16/noninterference_001",
+        "--source-probe",
+        "research/results/full_return_label_train16/probe_full001",
+        "--output-dir",
+        "research/results/full_return_label_train16/top_logit_disabled_audit_003"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:32:05.432016+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:32:09.235870+00:00"
+    },
+    {
+      "name": "top_logit_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/full_return_label_train16/schedule_top_logit_001.json",
+        "--source-capture",
+        "research/results/full_return_label_train16/capture_001",
+        "--output-dir",
+        "research/results/full_return_label_train16/top_logit_enabled_003",
+        "--exp-name",
+        "aaa_full_return_label_train16_003_top_logit_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/full_return_label_train16/top_logit_disabled_audit_003/summary.json"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:32:09.236258+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:32:58.200179+00:00"
+    },
+    {
+      "name": "top_logit_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/full_return_label_train16/top_logit_enabled_003",
+        "--source-noninterference",
+        "research/results/full_return_label_train16/noninterference_001",
+        "--source-probe",
+        "research/results/full_return_label_train16/probe_full001",
+        "--output-dir",
+        "research/results/full_return_label_train16/top_logit_enabled_audit_003"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:32:58.200560+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:33:02.340979+00:00"
+    },
+    {
+      "name": "top_logit_reconstruction",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/full_return_label_train16/top_logit_enabled_003",
+        "--output-dir",
+        "research/results/full_return_label_train16/top_logit_native_reconstruction_003"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:33:02.341359+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:33:06.976638+00:00"
+    },
+    {
+      "name": "seeded_graph_id_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/full_return_label_train16/schedule_seeded_graph_id_001.json",
+        "--source-capture",
+        "research/results/full_return_label_train16/capture_001",
+        "--output-dir",
+        "research/results/full_return_label_train16/seeded_graph_id_disabled_003",
+        "--exp-name",
+        "aaa_full_return_label_train16_003_seeded_graph_id_disabled"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:33:06.977038+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:33:53.358418+00:00"
+    },
+    {
+      "name": "seeded_graph_id_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/full_return_label_train16/seeded_graph_id_disabled_003",
+        "--source-noninterference",
+        "research/results/full_return_label_train16/noninterference_001",
+        "--source-probe",
+        "research/results/full_return_label_train16/probe_full001",
+        "--output-dir",
+        "research/results/full_return_label_train16/seeded_graph_id_disabled_audit_003"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:33:53.358913+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:33:57.263888+00:00"
+    },
+    {
+      "name": "seeded_graph_id_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/full_return_label_train16/schedule_seeded_graph_id_001.json",
+        "--source-capture",
+        "research/results/full_return_label_train16/capture_001",
+        "--output-dir",
+        "research/results/full_return_label_train16/seeded_graph_id_enabled_003",
+        "--exp-name",
+        "aaa_full_return_label_train16_003_seeded_graph_id_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/full_return_label_train16/seeded_graph_id_disabled_audit_003/summary.json"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:33:57.264309+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:34:47.998952+00:00"
+    },
+    {
+      "name": "seeded_graph_id_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/full_return_label_train16/seeded_graph_id_enabled_003",
+        "--source-noninterference",
+        "research/results/full_return_label_train16/noninterference_001",
+        "--source-probe",
+        "research/results/full_return_label_train16/probe_full001",
+        "--output-dir",
+        "research/results/full_return_label_train16/seeded_graph_id_enabled_audit_003"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:34:47.999382+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:34:52.194838+00:00"
+    },
+    {
+      "name": "seeded_graph_id_reconstruction",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/full_return_label_train16/seeded_graph_id_enabled_003",
+        "--output-dir",
+        "research/results/full_return_label_train16/seeded_graph_id_native_reconstruction_003"
+      ],
+      "status": "passed",
+      "started_utc": "2026-10-07T07:34:52.195277+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T07:34:55.448548+00:00"
+    }
+  ],
+  "finished_utc": "2026-10-07T07:34:55.448997+00:00",
+  "no_model_trained": true,
+  "tag": "003"
+}

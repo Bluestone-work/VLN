@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-07T03:51:07.470142+00:00",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n?? vlnce_baselines/adaptive_action/\n",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "hashes": {
+    "research/tools/prepare_option_expansion.py": "abddee44749d2eb4410a2d39f8a0ac3c933ec40bf0690b60df628f7c377ddd60",
+    "research/tools/run_graph_option_cycle.py": "bbaa5aa56861c2f641909715d42e14d8695e03140afaaa7c91273c6873b2ddba",
+    "research/tools/route_alignment.py": "de864d584766d90401c04d4bba1f2f2fab7debc6611c0961d853196cb48c6031",
+    "research/tools/analyze_route_options.py": "1211df50b2c7ac7ed51c674eeda73b0606cea2a65674c452cf5e45ddf3373477",
+    "research/tools/test_route_alignment.py": "c83798e5357b1e92c3618c98aaf2ff17d0e55d2b5699a79aca7ea8a113d2fd63",
+    "research/tools/inspect_route_results.py": "3c77c389beb6ad28867fa7316cb1ff051c7877d170bc16ceea56dd01caeae531",
+    "research/ROUTE_COMPATIBILITY_PROTOCOL.md": "376b871ebbcbfa716a76d723727d19d2cea826b189ccf22626178b86b62d12ed",
+    "research/configs/ROUTE_COMPATIBILITY_001.json": "f760992e53d0638f57760d242b6332c4dc56687971610e15f4b0e1457c43af8d",
+    "research/configs/GRAPH_OPTION_TRAIN64_001.json": "2114bb0ff5b43d3c949158ae40cb7f95c4a4f9ccd380110d7d4217765e5b35db"
+  },
+  "analysis_seed": 20261007,
+  "simulator_seed": 100,
+  "related_capture_config": "research/configs/GRAPH_OPTION_TRAIN64_001.json",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "checkpoint_sha256": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3"
+}

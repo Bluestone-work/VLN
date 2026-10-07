@@ -1,0 +1,633 @@
+{
+  "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001-DESCRIPTIVE",
+  "scene_bootstrap": {
+    "top_logit": {
+      "success": {
+        "mean_delta": 0.0,
+        "scene_percentile_95": [
+          -0.1875,
+          0.1875
+        ]
+      },
+      "spl": {
+        "mean_delta": -0.15233583911314666,
+        "scene_percentile_95": [
+          -0.30126499545098273,
+          0.016101081338401185
+        ]
+      },
+      "ndtw": {
+        "mean_delta": -0.12080352729805716,
+        "scene_percentile_95": [
+          -0.2456781177801562,
+          -0.013462098269747483
+        ]
+      },
+      "sdtw": {
+        "mean_delta": -0.08515061678642893,
+        "scene_percentile_95": [
+          -0.2425747074168487,
+          0.08741357835194932
+        ]
+      },
+      "distance_to_goal": {
+        "mean_delta": 0.9568646208354039,
+        "scene_percentile_95": [
+          -0.6087188948004041,
+          3.292276975043933
+        ]
+      },
+      "path_length": {
+        "mean_delta": 1.2988829612731934,
+        "scene_percentile_95": [
+          -0.24880834445357322,
+          2.963591128587723
+        ]
+      },
+      "primitive_action_count": {
+        "mean_delta": 15.5,
+        "scene_percentile_95": [
+          2.25,
+          28.5
+        ]
+      },
+      "high_level_steps": {
+        "mean_delta": 0.125,
+        "scene_percentile_95": [
+          -0.375,
+          0.5625
+        ]
+      },
+      "collision_events": {
+        "mean_delta": 0.5,
+        "scene_percentile_95": [
+          -0.8125,
+          2.0
+        ]
+      }
+    },
+    "seeded_graph_id": {
+      "success": {
+        "mean_delta": -0.0625,
+        "scene_percentile_95": [
+          -0.25,
+          0.125
+        ]
+      },
+      "spl": {
+        "mean_delta": -0.28768532826232396,
+        "scene_percentile_95": [
+          -0.4692876590223512,
+          -0.12293670339703933
+        ]
+      },
+      "ndtw": {
+        "mean_delta": -0.24274650466429956,
+        "scene_percentile_95": [
+          -0.3593466482083828,
+          -0.13243773554257507
+        ]
+      },
+      "sdtw": {
+        "mean_delta": -0.192229391592884,
+        "scene_percentile_95": [
+          -0.34750558884418165,
+          -0.05723040517967622
+        ]
+      },
+      "distance_to_goal": {
+        "mean_delta": 1.0785419738822384,
+        "scene_percentile_95": [
+          -0.2505558560136706,
+          3.097168033817433
+        ]
+      },
+      "path_length": {
+        "mean_delta": 7.985254257917404,
+        "scene_percentile_95": [
+          4.219364047050476,
+          12.066566169261932
+        ]
+      },
+      "primitive_action_count": {
+        "mean_delta": 63.0,
+        "scene_percentile_95": [
+          37.810937499999994,
+          88.56406249999998
+        ]
+      },
+      "high_level_steps": {
+        "mean_delta": 1.1875,
+        "scene_percentile_95": [
+          0.5625,
+          2.0
+        ]
+      },
+      "collision_events": {
+        "mean_delta": 2.1875,
+        "scene_percentile_95": [
+          0.0625,
+          4.8125
+        ]
+      }
+    }
+  },
+  "bootstrap_seed": 20261007,
+  "bootstrap_samples": 5000,
+  "terminal_symptoms": {
+    "baseline": [
+      {
+        "episode_id": "2101",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 1,
+        "minimum_endpoint_distance_m": 0.24342812597751617,
+        "final_goal_distance_m": 0.24342812597751617,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "2451",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 4,
+        "minimum_endpoint_distance_m": 0.00350428675301373,
+        "final_goal_distance_m": 0.00350428675301373,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "2508",
+        "success": 0.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 0.1668686866760254,
+        "final_goal_distance_m": 4.172120094299316,
+        "left_neighborhood_and_failed": true,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "2979",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 7,
+        "minimum_endpoint_distance_m": 0.388793021440506,
+        "final_goal_distance_m": 1.8641588687896729,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "3023",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 5,
+        "minimum_endpoint_distance_m": 1.1013476848602295,
+        "final_goal_distance_m": 1.1013476848602295,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "3373",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 1.0595661401748657,
+        "final_goal_distance_m": 1.0595661401748657,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "3716",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 1,
+        "minimum_endpoint_distance_m": 0.17900235950946808,
+        "final_goal_distance_m": 0.17900235950946808,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "5703",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 5,
+        "minimum_endpoint_distance_m": 0.8552553057670593,
+        "final_goal_distance_m": 0.8552553057670593,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "6235",
+        "success": 0.0,
+        "endpoint_neighborhood_visited": false,
+        "first_endpoint_inside_step": null,
+        "minimum_endpoint_distance_m": 5.090210914611816,
+        "final_goal_distance_m": 5.090210914611816,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "7085",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 4,
+        "minimum_endpoint_distance_m": 0.5586753487586975,
+        "final_goal_distance_m": 0.5586753487586975,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "7537",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 5,
+        "minimum_endpoint_distance_m": 1.1601731777191162,
+        "final_goal_distance_m": 1.1601731777191162,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "7585",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 0.8890804052352905,
+        "final_goal_distance_m": 0.8890804052352905,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "8891",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 13,
+        "minimum_endpoint_distance_m": 2.031377077102661,
+        "final_goal_distance_m": 2.031377077102661,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "9559",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 2,
+        "minimum_endpoint_distance_m": 0.48565909266471863,
+        "final_goal_distance_m": 0.48565909266471863,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "9871",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 2,
+        "minimum_endpoint_distance_m": 0.8457038402557373,
+        "final_goal_distance_m": 0.8457038402557373,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "9935",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 0.41003137826919556,
+        "final_goal_distance_m": 0.41003137826919556,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      }
+    ],
+    "top_logit": [
+      {
+        "episode_id": "2101",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 1,
+        "minimum_endpoint_distance_m": 0.24342812597751617,
+        "final_goal_distance_m": 0.24342812597751617,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "2451",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 4,
+        "minimum_endpoint_distance_m": 0.15759269893169403,
+        "final_goal_distance_m": 0.15759269893169403,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "2508",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 0.16686880588531494,
+        "final_goal_distance_m": 0.16686880588531494,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "2979",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 7,
+        "minimum_endpoint_distance_m": 0.3519821763038635,
+        "final_goal_distance_m": 1.694273829460144,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "3023",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 4,
+        "minimum_endpoint_distance_m": 1.2548577785491943,
+        "final_goal_distance_m": 1.2548577785491943,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "3373",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 2,
+        "minimum_endpoint_distance_m": 0.20635583996772766,
+        "final_goal_distance_m": 0.20635583996772766,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "3716",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 1,
+        "minimum_endpoint_distance_m": 0.2946756184101105,
+        "final_goal_distance_m": 0.2946756184101105,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "5703",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 5,
+        "minimum_endpoint_distance_m": 1.5992753505706787,
+        "final_goal_distance_m": 1.5992753505706787,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "6235",
+        "success": 0.0,
+        "endpoint_neighborhood_visited": false,
+        "first_endpoint_inside_step": null,
+        "minimum_endpoint_distance_m": 6.120870590209961,
+        "final_goal_distance_m": 6.120870590209961,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "7085",
+        "success": 0.0,
+        "endpoint_neighborhood_visited": false,
+        "first_endpoint_inside_step": null,
+        "minimum_endpoint_distance_m": 11.434959411621094,
+        "final_goal_distance_m": 16.22026824951172,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "7537",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 6,
+        "minimum_endpoint_distance_m": 2.030470609664917,
+        "final_goal_distance_m": 2.030470609664917,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "7585",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 1.1390671730041504,
+        "final_goal_distance_m": 1.1390671730041504,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "8891",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 13,
+        "minimum_endpoint_distance_m": 2.630103349685669,
+        "final_goal_distance_m": 2.630103349685669,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "9559",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 1.3353909254074097,
+        "final_goal_distance_m": 1.3353909254074097,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "9871",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 2,
+        "minimum_endpoint_distance_m": 0.7886484265327454,
+        "final_goal_distance_m": 0.7886484265327454,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "9935",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 0.37698066234588623,
+        "final_goal_distance_m": 0.37698066234588623,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      }
+    ],
+    "seeded_graph_id": [
+      {
+        "episode_id": "2101",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 1,
+        "minimum_endpoint_distance_m": 0.4768230617046356,
+        "final_goal_distance_m": 0.4768230617046356,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "2451",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 4,
+        "minimum_endpoint_distance_m": 0.24869857728481293,
+        "final_goal_distance_m": 0.24869857728481293,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "2508",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 5,
+        "minimum_endpoint_distance_m": 0.1814081221818924,
+        "final_goal_distance_m": 2.9818079471588135,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "2979",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 9,
+        "minimum_endpoint_distance_m": 0.5762766599655151,
+        "final_goal_distance_m": 0.6899113059043884,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "3023",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 7,
+        "minimum_endpoint_distance_m": 0.9447283148765564,
+        "final_goal_distance_m": 0.9447283148765564,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "3373",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 4,
+        "minimum_endpoint_distance_m": 1.0595661401748657,
+        "final_goal_distance_m": 1.0595661401748657,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "3716",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 1,
+        "minimum_endpoint_distance_m": 0.28293702006340027,
+        "final_goal_distance_m": 0.28293702006340027,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "5703",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 6,
+        "minimum_endpoint_distance_m": 1.1499890089035034,
+        "final_goal_distance_m": 1.1499890089035034,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "6235",
+        "success": 0.0,
+        "endpoint_neighborhood_visited": false,
+        "first_endpoint_inside_step": null,
+        "minimum_endpoint_distance_m": 6.016073703765869,
+        "final_goal_distance_m": 6.016073703765869,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "7085",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 5,
+        "minimum_endpoint_distance_m": 1.1191315650939941,
+        "final_goal_distance_m": 1.1191315650939941,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "7537",
+        "success": 0.0,
+        "endpoint_neighborhood_visited": false,
+        "first_endpoint_inside_step": null,
+        "minimum_endpoint_distance_m": 4.164351940155029,
+        "final_goal_distance_m": 4.164351940155029,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "7585",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 0.8890818357467651,
+        "final_goal_distance_m": 0.8890818357467651,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "8891",
+        "success": 0.0,
+        "endpoint_neighborhood_visited": false,
+        "first_endpoint_inside_step": null,
+        "minimum_endpoint_distance_m": 5.890815734863281,
+        "final_goal_distance_m": 16.802976608276367,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 36
+      },
+      {
+        "episode_id": "9559",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 4,
+        "minimum_endpoint_distance_m": 0.2565615773200989,
+        "final_goal_distance_m": 0.2565615773200989,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "9871",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 2,
+        "minimum_endpoint_distance_m": 0.8457057476043701,
+        "final_goal_distance_m": 0.8457057476043701,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      },
+      {
+        "episode_id": "9935",
+        "success": 1.0,
+        "endpoint_neighborhood_visited": true,
+        "first_endpoint_inside_step": 3,
+        "minimum_endpoint_distance_m": 0.277621328830719,
+        "final_goal_distance_m": 0.277621328830719,
+        "left_neighborhood_and_failed": false,
+        "stop_primitives": 1
+      }
+    ]
+  },
+  "limits": "Post-hoc descriptive analysis, eight scene clusters, one simulator seed. Endpoint visits miss between-endpoint proximity. No causal STOP gain, no threshold tuning or new policy.",
+  "hashes": {
+    "research/results/full_return_label_train16/full_return_analysis_001/summary.json": "121eb7e6ac64cc1b0d1b61931a98637c779591793e45a606115642cbf79947e5",
+    "research/tools/summarize_full_return_followup.py": "1d48fc1182b7f71025fa0aa533c8677f5e420273d33e1acc398b48b209682446",
+    "research/results/full_return_label_train16/capture_001/traces/worker_seed100.jsonl": "3db2d22e72690dbadd3383ca1af95d0e04432ab5c61e0bd77fe0d0e9c0a50807",
+    "research/results/full_return_label_train16/top_logit_enabled_003/traces/worker_seed100.jsonl": "69fd66e3abba22cd8aa78dec0b98f029a4b39018d8dc12789ea467872f4a92b2",
+    "research/results/full_return_label_train16/seeded_graph_id_enabled_003/traces/worker_seed100.jsonl": "6cb8087616b278f3c3dac4156c6f14c104204efb14533dfd1656ec088e7b1ba1"
+  }
+}

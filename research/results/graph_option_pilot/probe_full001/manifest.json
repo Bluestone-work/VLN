@@ -1,0 +1,161 @@
+{
+  "created_utc": "2026-10-07T03:22:08.364116+00:00",
+  "experiment_id": "GRAPH-OPTION-PILOT-001",
+  "capture_dir": "research/results/graph_option_pilot/capture_001",
+  "config": {
+    "experiment_id": "GRAPH-OPTION-PILOT-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 8,
+    "seed": 100,
+    "dataset_path": "research/results/graph_option_pilot/train8_sampling/train_pilot8_bertidx.json.gz",
+    "sampling_manifest": "research/results/graph_option_pilot/train8_sampling/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261007,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Best admissible non-STOP full-option goal progress minus actually selected ghost; learned and forced STOP states excluded",
+      "controls": [
+        "candidate local to current observation",
+        "primitive count no greater than selected",
+        "movement path no longer than selected"
+      ],
+      "material_state_gain_m": 0.25,
+      "bootstrap_seed": 20261007,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "Training-only diagnostic of complete graph actions, with selected sentinels, reversed enumeration and baseline noninterference.",
+    "limits": "Eight routes across four training scenes, one simulator seed; no learned model or navigation gain claim. Final-decision non-STOP alternatives are inadmissible. Goal distances are analysis-only."
+  },
+  "max_episodes": -1,
+  "selected_episodes": [
+    "3000",
+    "986",
+    "519",
+    "10237",
+    "4259",
+    "878",
+    "10124",
+    "6587"
+  ],
+  "reverse_decisions": [
+    [
+      "data/scene_datasets/mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "10237",
+      2
+    ],
+    [
+      "data/scene_datasets/mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "10237",
+      4
+    ],
+    [
+      "data/scene_datasets/mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "519",
+      2
+    ],
+    [
+      "data/scene_datasets/mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "519",
+      8
+    ],
+    [
+      "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "4259",
+      2
+    ],
+    [
+      "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "4259",
+      5
+    ],
+    [
+      "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "878",
+      0
+    ],
+    [
+      "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "878",
+      1
+    ],
+    [
+      "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "3000",
+      5
+    ],
+    [
+      "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "3000",
+      7
+    ],
+    [
+      "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "986",
+      5
+    ],
+    [
+      "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "986",
+      6
+    ],
+    [
+      "data/scene_datasets/mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "10124",
+      5
+    ],
+    [
+      "data/scene_datasets/mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "10124",
+      12
+    ],
+    [
+      "data/scene_datasets/mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "6587",
+      2
+    ],
+    [
+      "data/scene_datasets/mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "6587",
+      4
+    ]
+  ],
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "hashes": {
+    "research/results/graph_option_pilot/capture_001/traces/worker_seed100.jsonl": "f6fc7ea92e184a425398a33ce1167ed385842032c1b7f6fc0d0d949e008ef888",
+    "research/results/graph_option_pilot/capture_001/graph_options/graph_options.jsonl": "f8bb990dd88969f0d5fad84d55140aa1c38e08975d8ddf6708c3fdce8a0e274d",
+    "research/tools/probe_graph_options.py": "f2f0d3da42612435bcd8dfaa91d1cc4c65fd2caf0ae70bf39fd54032dff802c8",
+    "research/results/graph_option_pilot/capture_001/manifest.json": "43ac22e411866135024e1800ed82718b92cdb587e4024cb783ca1de06c93ef70",
+    "research/results/graph_option_pilot/noninterference_001/summary.json": "3f1c38611d32f47c9204059fd655242b64e529444b75c5aeaf02150fe78d27bc",
+    "research/tools/replay_option_calibration.py": "0f2227866556dd884c98d2ab73bcf5ff2a0d9c5d8eaca4b17f7e165563a8274a"
+  },
+  "privileged_analysis_only": true,
+  "command_argv": [
+    "research/tools/probe_graph_options.py",
+    "--capture-dir",
+    "research/results/graph_option_pilot/capture_001",
+    "--noninterference-dir",
+    "research/results/graph_option_pilot/noninterference_001",
+    "--output-dir",
+    "research/results/graph_option_pilot/probe_full001"
+  ]
+}

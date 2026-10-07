@@ -1,0 +1,3936 @@
+{
+  "experiment_id": "PRIMITIVE-ARRIVAL-LOCALIZATION-001",
+  "status": "complete",
+  "post_hoc": true,
+  "no_new_rollout": true,
+  "no_model_trained": true,
+  "calibration_comparisons": 84,
+  "max_calibration_error_m": 0.0,
+  "episodes": [
+    {
+      "cohort": "continuation_train64",
+      "episode_id": "10587",
+      "scene_id": "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb",
+      "native_oracle_success_reconstructed": true,
+      "first_arrival": {
+        "high_level_step": 1,
+        "within_option_primitive": 4,
+        "episode_primitive": 20,
+        "primitive_action": 1,
+        "macro_action": 4,
+        "distance_m": 2.815880298614502,
+        "is_option_end": false,
+        "within_3m": true
+      },
+      "minimum_distance_m": 2.476536512374878,
+      "arrival_primitive_count": 18,
+      "route_audit": {
+        "scene_id": "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb",
+        "success": false,
+        "oracle_success": true,
+        "final_distance_m": 4.780153274536133,
+        "min_decision_boundary_m": 2.566797971725464,
+        "boundary_arrival_le_3m": true,
+        "successful_counterfactual_stop_steps": [
+          2,
+          3
+        ],
+        "native_stop_steps": [
+          6
+        ],
+        "failed_route": true,
+        "missed_native_stop": true,
+        "oracle_arrival_without_boundary": false,
+        "boundary_arrival_without_native_stop": false
+      },
+      "primitives": [
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 1,
+          "episode_primitive": 1,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.896900177001953,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 2,
+          "episode_primitive": 2,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.896900177001953,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 3,
+          "episode_primitive": 3,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.896900177001953,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 4,
+          "episode_primitive": 4,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.896900177001953,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 5,
+          "episode_primitive": 5,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.896900177001953,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 6,
+          "episode_primitive": 6,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.688193321228027,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 7,
+          "episode_primitive": 7,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.476929187774658,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 8,
+          "episode_primitive": 8,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.257964134216309,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 9,
+          "episode_primitive": 9,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.035616874694824,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 10,
+          "episode_primitive": 10,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.786232948303223,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 11,
+          "episode_primitive": 11,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.544434547424316,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 12,
+          "episode_primitive": 12,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.307144641876221,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 13,
+          "episode_primitive": 13,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.058095455169678,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 14,
+          "episode_primitive": 14,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.8120903968811035,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 15,
+          "episode_primitive": 15,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.569758892059326,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 16,
+          "episode_primitive": 16,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.3313655853271484,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 1,
+          "episode_primitive": 17,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.3313655853271484,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 2,
+          "episode_primitive": 18,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.3313655853271484,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 3,
+          "episode_primitive": 19,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.0698232650756836,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 4,
+          "episode_primitive": 20,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.815880298614502,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 5,
+          "episode_primitive": 21,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.566797971725464,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 1,
+          "episode_primitive": 22,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.566797971725464,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 2,
+          "episode_primitive": 23,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.566797971725464,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 3,
+          "episode_primitive": 24,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.566797971725464,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 4,
+          "episode_primitive": 25,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.566797971725464,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 5,
+          "episode_primitive": 26,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.513277769088745,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 6,
+          "episode_primitive": 27,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.479341745376587,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 7,
+          "episode_primitive": 28,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.476536512374878,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 8,
+          "episode_primitive": 29,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.498865842819214,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 9,
+          "episode_primitive": 30,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.545668363571167,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 10,
+          "episode_primitive": 31,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.615630865097046,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 11,
+          "episode_primitive": 32,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.706958055496216,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 12,
+          "episode_primitive": 33,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.817573308944702,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 13,
+          "episode_primitive": 34,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.9453043937683105,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 1,
+          "episode_primitive": 35,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 2.9453043937683105,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 2,
+          "episode_primitive": 36,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 2.9453043937683105,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 3,
+          "episode_primitive": 37,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.9691343307495117,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 4,
+          "episode_primitive": 38,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.0154800415039062,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 5,
+          "episode_primitive": 39,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.0832362174987793,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 6,
+          "episode_primitive": 40,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.1709108352661133,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 7,
+          "episode_primitive": 41,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.2836480140686035,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 8,
+          "episode_primitive": 42,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.427515983581543,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 9,
+          "episode_primitive": 43,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.603731155395508,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 10,
+          "episode_primitive": 44,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.8131752014160156,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 11,
+          "episode_primitive": 45,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.038914203643799,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 1,
+          "episode_primitive": 46,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 4.038914203643799,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 2,
+          "episode_primitive": 47,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 4.038914203643799,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 3,
+          "episode_primitive": 48,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.205706596374512,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 4,
+          "episode_primitive": 49,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.3956685066223145,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 5,
+          "episode_primitive": 50,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.6011128425598145,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 6,
+          "episode_primitive": 51,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.817101001739502,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 7,
+          "episode_primitive": 52,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.040462493896484,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 8,
+          "episode_primitive": 53,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 1,
+          "episode_primitive": 54,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 2,
+          "episode_primitive": 55,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 3,
+          "episode_primitive": 56,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 4,
+          "episode_primitive": 57,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 5,
+          "episode_primitive": 58,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 6,
+          "episode_primitive": 59,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 7,
+          "episode_primitive": 60,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 8,
+          "episode_primitive": 61,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 9,
+          "episode_primitive": 62,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 10,
+          "episode_primitive": 63,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.2691240310668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 11,
+          "episode_primitive": 64,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.126099586486816,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 12,
+          "episode_primitive": 65,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.0030412673950195,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 13,
+          "episode_primitive": 66,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.903607368469238,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 14,
+          "episode_primitive": 67,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.831427097320557,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 15,
+          "episode_primitive": 68,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.789604187011719,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 16,
+          "episode_primitive": 69,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.780153274536133,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 1,
+          "episode_primitive": 70,
+          "primitive_action": 0,
+          "macro_action": 0,
+          "distance_m": 4.780153274536133,
+          "is_option_end": true,
+          "within_3m": false
+        }
+      ]
+    },
+    {
+      "cohort": "continuation_train64",
+      "episode_id": "393",
+      "scene_id": "data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "native_oracle_success_reconstructed": true,
+      "first_arrival": {
+        "high_level_step": 1,
+        "within_option_primitive": 8,
+        "episode_primitive": 24,
+        "primitive_action": 1,
+        "macro_action": 4,
+        "distance_m": 2.989811897277832,
+        "is_option_end": false,
+        "within_3m": true
+      },
+      "minimum_distance_m": 2.213313102722168,
+      "arrival_primitive_count": 18,
+      "route_audit": {
+        "scene_id": "data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+        "success": false,
+        "oracle_success": true,
+        "final_distance_m": 3.6595988273620605,
+        "min_decision_boundary_m": 2.213313102722168,
+        "boundary_arrival_le_3m": true,
+        "successful_counterfactual_stop_steps": [
+          2,
+          3
+        ],
+        "native_stop_steps": [
+          4
+        ],
+        "failed_route": true,
+        "missed_native_stop": true,
+        "oracle_arrival_without_boundary": false,
+        "boundary_arrival_without_native_stop": false
+      },
+      "primitives": [
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 1,
+          "episode_primitive": 1,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.291481971740723,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 2,
+          "episode_primitive": 2,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.291481971740723,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 3,
+          "episode_primitive": 3,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.291481971740723,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 4,
+          "episode_primitive": 4,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.291481971740723,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 5,
+          "episode_primitive": 5,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.291481971740723,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 6,
+          "episode_primitive": 6,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.291481971740723,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 7,
+          "episode_primitive": 7,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.291481971740723,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 8,
+          "episode_primitive": 8,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.291481971740723,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 9,
+          "episode_primitive": 9,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.291481971740723,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 10,
+          "episode_primitive": 10,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.065056324005127,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 11,
+          "episode_primitive": 11,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.844753265380859,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 12,
+          "episode_primitive": 12,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.63306188583374,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 13,
+          "episode_primitive": 13,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.433820724487305,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 14,
+          "episode_primitive": 14,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.253016471862793,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 15,
+          "episode_primitive": 15,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.0998382568359375,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 16,
+          "episode_primitive": 16,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.981159210205078,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 1,
+          "episode_primitive": 17,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.981159210205078,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 2,
+          "episode_primitive": 18,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.981159210205078,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 3,
+          "episode_primitive": 19,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.981159210205078,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 4,
+          "episode_primitive": 20,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.981159210205078,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 5,
+          "episode_primitive": 21,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.732329845428467,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 6,
+          "episode_primitive": 22,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.48392391204834,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 7,
+          "episode_primitive": 23,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.2362210750579834,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 8,
+          "episode_primitive": 24,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.989811897277832,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 9,
+          "episode_primitive": 25,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.7461915016174316,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 10,
+          "episode_primitive": 26,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.5104262828826904,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 11,
+          "episode_primitive": 27,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.3102965354919434,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 12,
+          "episode_primitive": 28,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.213313102722168,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 1,
+          "episode_primitive": 29,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.2441675662994385,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 2,
+          "episode_primitive": 30,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.306335926055908,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 3,
+          "episode_primitive": 31,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.393132448196411,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 4,
+          "episode_primitive": 32,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.501995086669922,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 5,
+          "episode_primitive": 33,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.630185604095459,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 6,
+          "episode_primitive": 34,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.7860641479492188,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 7,
+          "episode_primitive": 35,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.9946177005767822,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 1,
+          "episode_primitive": 36,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 2.9946177005767822,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 2,
+          "episode_primitive": 37,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 2.9946177005767822,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 3,
+          "episode_primitive": 38,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 2.9946177005767822,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 4,
+          "episode_primitive": 39,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 2.9946177005767822,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 5,
+          "episode_primitive": 40,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 2.9946177005767822,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 6,
+          "episode_primitive": 41,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.988222122192383,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 7,
+          "episode_primitive": 42,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.0722837448120117,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 8,
+          "episode_primitive": 43,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.234520435333252,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 9,
+          "episode_primitive": 44,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.4371821880340576,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 10,
+          "episode_primitive": 45,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.6595988273620605,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 1,
+          "episode_primitive": 46,
+          "primitive_action": 0,
+          "macro_action": 0,
+          "distance_m": 3.6595988273620605,
+          "is_option_end": true,
+          "within_3m": false
+        }
+      ]
+    },
+    {
+      "cohort": "full_return_train16",
+      "episode_id": "2508",
+      "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+      "native_oracle_success_reconstructed": true,
+      "first_arrival": {
+        "high_level_step": 3,
+        "within_option_primitive": 6,
+        "episode_primitive": 26,
+        "primitive_action": 1,
+        "macro_action": 4,
+        "distance_m": 2.8122353553771973,
+        "is_option_end": false,
+        "within_3m": true
+      },
+      "minimum_distance_m": 0.1668686866760254,
+      "arrival_primitive_count": 39,
+      "route_audit": {
+        "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "success": false,
+        "oracle_success": true,
+        "final_distance_m": 4.172120094299316,
+        "min_decision_boundary_m": 0.1668686866760254,
+        "boundary_arrival_le_3m": true,
+        "successful_counterfactual_stop_steps": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "native_stop_steps": [
+          8
+        ],
+        "failed_route": true,
+        "missed_native_stop": true,
+        "oracle_arrival_without_boundary": false,
+        "boundary_arrival_without_native_stop": false
+      },
+      "primitives": [
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 1,
+          "episode_primitive": 1,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.224630355834961,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 2,
+          "episode_primitive": 2,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.979090690612793,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 3,
+          "episode_primitive": 3,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.7339677810668945,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 4,
+          "episode_primitive": 4,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.4907026290893555,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 5,
+          "episode_primitive": 5,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.250904083251953,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 1,
+          "episode_primitive": 6,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.016182899475098,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 2,
+          "episode_primitive": 7,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.790604591369629,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 3,
+          "episode_primitive": 8,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.584424018859863,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 4,
+          "episode_primitive": 9,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.417674541473389,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 5,
+          "episode_primitive": 10,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.3053107261657715,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 1,
+          "episode_primitive": 11,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 4.3053107261657715,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 2,
+          "episode_primitive": 12,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 4.3053107261657715,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 3,
+          "episode_primitive": 13,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 4.3053107261657715,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 4,
+          "episode_primitive": 14,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.093961715698242,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 5,
+          "episode_primitive": 15,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.9157845973968506,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 6,
+          "episode_primitive": 16,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.7556166648864746,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 7,
+          "episode_primitive": 17,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.6110901832580566,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 8,
+          "episode_primitive": 18,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.4849936962127686,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 9,
+          "episode_primitive": 19,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.3794593811035156,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 10,
+          "episode_primitive": 20,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.2967443466186523,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 1,
+          "episode_primitive": 21,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 3.2967443466186523,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 2,
+          "episode_primitive": 22,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 3.2967443466186523,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 3,
+          "episode_primitive": 23,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 3.2967443466186523,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 4,
+          "episode_primitive": 24,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 3.2967443466186523,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 5,
+          "episode_primitive": 25,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.054084300994873,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 6,
+          "episode_primitive": 26,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.8122353553771973,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 7,
+          "episode_primitive": 27,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.572625160217285,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 8,
+          "episode_primitive": 28,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.336510419845581,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 9,
+          "episode_primitive": 29,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.1051816940307617,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 10,
+          "episode_primitive": 30,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.879855751991272,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 11,
+          "episode_primitive": 31,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.6620277166366577,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 1,
+          "episode_primitive": 32,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 1.6620277166366577,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 2,
+          "episode_primitive": 33,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 1.6620277166366577,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 3,
+          "episode_primitive": 34,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.4121216535568237,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 4,
+          "episode_primitive": 35,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.1622560024261475,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 5,
+          "episode_primitive": 36,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.9124640226364136,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 6,
+          "episode_primitive": 37,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.6628288626670837,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 7,
+          "episode_primitive": 38,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.4136345684528351,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 8,
+          "episode_primitive": 39,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.1668686866760254,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 1,
+          "episode_primitive": 40,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.1668686866760254,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 2,
+          "episode_primitive": 41,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.1668686866760254,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 3,
+          "episode_primitive": 42,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.1668686866760254,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 4,
+          "episode_primitive": 43,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.1668686866760254,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 5,
+          "episode_primitive": 44,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.1668686866760254,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 6,
+          "episode_primitive": 45,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.1668686866760254,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 7,
+          "episode_primitive": 46,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.1668686866760254,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 8,
+          "episode_primitive": 47,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.36266836524009705,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 9,
+          "episode_primitive": 48,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.6001761555671692,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 10,
+          "episode_primitive": 49,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.8449227809906006,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 11,
+          "episode_primitive": 50,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.0920519828796387,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 12,
+          "episode_primitive": 51,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.3402464389801025,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 1,
+          "episode_primitive": 52,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 1.3402464389801025,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 2,
+          "episode_primitive": 53,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 1.3402464389801025,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 3,
+          "episode_primitive": 54,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 1.3402464389801025,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 4,
+          "episode_primitive": 55,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 1.3402464389801025,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 5,
+          "episode_primitive": 56,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.4591132402420044,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 6,
+          "episode_primitive": 57,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.615954875946045,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 7,
+          "episode_primitive": 58,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.8173539638519287,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 8,
+          "episode_primitive": 59,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.040027141571045,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 9,
+          "episode_primitive": 60,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.274214744567871,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 10,
+          "episode_primitive": 61,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.514310598373413,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 11,
+          "episode_primitive": 62,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.7575573921203613,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 1,
+          "episode_primitive": 63,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.7575573921203613,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 2,
+          "episode_primitive": 64,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.98355770111084,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 3,
+          "episode_primitive": 65,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.2152786254882812,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 4,
+          "episode_primitive": 66,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.450942039489746,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 5,
+          "episode_primitive": 67,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.6894216537475586,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 6,
+          "episode_primitive": 68,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.9299755096435547,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 7,
+          "episode_primitive": 69,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.172120094299316,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 8,
+          "within_option_primitive": 1,
+          "episode_primitive": 70,
+          "primitive_action": 0,
+          "macro_action": 0,
+          "distance_m": 4.172120094299316,
+          "is_option_end": true,
+          "within_3m": false
+        }
+      ]
+    },
+    {
+      "cohort": "unseen66",
+      "episode_id": "1593",
+      "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "native_oracle_success_reconstructed": true,
+      "first_arrival": {
+        "high_level_step": 4,
+        "within_option_primitive": 5,
+        "episode_primitive": 48,
+        "primitive_action": 1,
+        "macro_action": 4,
+        "distance_m": 2.922637462615967,
+        "is_option_end": false,
+        "within_3m": true
+      },
+      "minimum_distance_m": 2.9152393341064453,
+      "arrival_primitive_count": 3,
+      "route_audit": {
+        "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+        "success": false,
+        "oracle_success": true,
+        "final_distance_m": 3.20625376701355,
+        "min_decision_boundary_m": 3.1074273586273193,
+        "boundary_arrival_le_3m": false,
+        "successful_counterfactual_stop_steps": [],
+        "native_stop_steps": [
+          5
+        ],
+        "failed_route": true,
+        "missed_native_stop": false,
+        "oracle_arrival_without_boundary": true,
+        "boundary_arrival_without_native_stop": false
+      },
+      "primitives": [
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 1,
+          "episode_primitive": 1,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.31124496459961,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 2,
+          "episode_primitive": 2,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.31124496459961,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 3,
+          "episode_primitive": 3,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.31124496459961,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 4,
+          "episode_primitive": 4,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.31124496459961,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 5,
+          "episode_primitive": 5,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.341154098510742,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 6,
+          "episode_primitive": 6,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.568560600280762,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 7,
+          "episode_primitive": 7,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.375887870788574,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 8,
+          "episode_primitive": 8,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.272829055786133,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 9,
+          "episode_primitive": 9,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.287850379943848,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 10,
+          "episode_primitive": 10,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.345996856689453,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 11,
+          "episode_primitive": 11,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.417339324951172,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 12,
+          "episode_primitive": 12,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.501262664794922,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 1,
+          "episode_primitive": 13,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.501262664794922,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 2,
+          "episode_primitive": 14,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.501262664794922,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 3,
+          "episode_primitive": 15,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.501262664794922,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 4,
+          "episode_primitive": 16,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.501262664794922,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 5,
+          "episode_primitive": 17,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.501262664794922,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 6,
+          "episode_primitive": 18,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.501262664794922,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 7,
+          "episode_primitive": 19,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 8.501262664794922,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 8,
+          "episode_primitive": 20,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.252758026123047,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 9,
+          "episode_primitive": 21,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 8.004436492919922,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 10,
+          "episode_primitive": 22,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 7.75633430480957,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 11,
+          "episode_primitive": 23,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 7.508496284484863,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 12,
+          "episode_primitive": 24,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 7.260981559753418,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 13,
+          "episode_primitive": 25,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 7.013868808746338,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 14,
+          "episode_primitive": 26,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.767261505126953,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 15,
+          "episode_primitive": 27,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.521215915679932,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 16,
+          "episode_primitive": 28,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.27572774887085,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 1,
+          "episode_primitive": 29,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.030919075012207,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 2,
+          "episode_primitive": 30,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.786954402923584,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 3,
+          "episode_primitive": 31,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.54405403137207,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 4,
+          "episode_primitive": 32,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.302521705627441,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 5,
+          "episode_primitive": 33,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.062783241271973,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 6,
+          "episode_primitive": 34,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.8254241943359375,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 7,
+          "episode_primitive": 35,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.590919494628906,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 8,
+          "episode_primitive": 36,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.360175132751465,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 1,
+          "episode_primitive": 37,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.134660720825195,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 2,
+          "episode_primitive": 38,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.9166524410247803,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 3,
+          "episode_primitive": 39,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.7097983360290527,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 4,
+          "episode_primitive": 40,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.520090103149414,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 5,
+          "episode_primitive": 41,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.355619430541992,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 6,
+          "episode_primitive": 42,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.2162516117095947,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 7,
+          "episode_primitive": 43,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.1074273586273193,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 1,
+          "episode_primitive": 44,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.1074273586273193,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 2,
+          "episode_primitive": 45,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.1074273586273193,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 3,
+          "episode_primitive": 46,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.16603422164917,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 4,
+          "episode_primitive": 47,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.2705471515655518,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 5,
+          "episode_primitive": 48,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.922637462615967,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 6,
+          "episode_primitive": 49,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.9152393341064453,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 7,
+          "episode_primitive": 50,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.9559502601623535,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 8,
+          "episode_primitive": 51,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.0210564136505127,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 9,
+          "episode_primitive": 52,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.1049835681915283,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 10,
+          "episode_primitive": 53,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.20625376701355,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 1,
+          "episode_primitive": 54,
+          "primitive_action": 0,
+          "macro_action": 0,
+          "distance_m": 3.20625376701355,
+          "is_option_end": true,
+          "within_3m": false
+        }
+      ]
+    },
+    {
+      "cohort": "unseen66",
+      "episode_id": "73",
+      "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "native_oracle_success_reconstructed": true,
+      "first_arrival": {
+        "high_level_step": 2,
+        "within_option_primitive": 7,
+        "episode_primitive": 31,
+        "primitive_action": 1,
+        "macro_action": 4,
+        "distance_m": 2.8437652587890625,
+        "is_option_end": true,
+        "within_3m": true
+      },
+      "minimum_distance_m": 0.66167151927948,
+      "arrival_primitive_count": 39,
+      "route_audit": {
+        "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+        "success": false,
+        "oracle_success": true,
+        "final_distance_m": 7.306877136230469,
+        "min_decision_boundary_m": 0.8033305406570435,
+        "boundary_arrival_le_3m": true,
+        "successful_counterfactual_stop_steps": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "native_stop_steps": [
+          14
+        ],
+        "failed_route": true,
+        "missed_native_stop": true,
+        "oracle_arrival_without_boundary": false,
+        "boundary_arrival_without_native_stop": false
+      },
+      "primitives": [
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 1,
+          "episode_primitive": 1,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 7.302545547485352,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 2,
+          "episode_primitive": 2,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 7.302545547485352,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 3,
+          "episode_primitive": 3,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 7.302545547485352,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 4,
+          "episode_primitive": 4,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 7.302545547485352,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 5,
+          "episode_primitive": 5,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 7.069065570831299,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 6,
+          "episode_primitive": 6,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.841532230377197,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 7,
+          "episode_primitive": 7,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.6235480308532715,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 8,
+          "episode_primitive": 8,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.421877861022949,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 9,
+          "episode_primitive": 9,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.249719619750977,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 10,
+          "episode_primitive": 10,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.1315016746521,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 11,
+          "episode_primitive": 11,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.083863258361816,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 0,
+          "within_option_primitive": 12,
+          "episode_primitive": 12,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.055908203125,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 1,
+          "episode_primitive": 13,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 6.055908203125,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 2,
+          "episode_primitive": 14,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 6.055908203125,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 3,
+          "episode_primitive": 15,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 6.055908203125,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 4,
+          "episode_primitive": 16,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 6.055908203125,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 5,
+          "episode_primitive": 17,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 6.055908203125,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 6,
+          "episode_primitive": 18,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 6.055908203125,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 7,
+          "episode_primitive": 19,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.806878089904785,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 8,
+          "episode_primitive": 20,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.557962894439697,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 9,
+          "episode_primitive": 21,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.3091840744018555,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 10,
+          "episode_primitive": 22,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.060568332672119,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 11,
+          "episode_primitive": 23,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.812151908874512,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 1,
+          "within_option_primitive": 12,
+          "episode_primitive": 24,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.563979148864746,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 1,
+          "episode_primitive": 25,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.316112518310547,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 2,
+          "episode_primitive": 26,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.068634510040283,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 3,
+          "episode_primitive": 27,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.8216609954833984,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 4,
+          "episode_primitive": 28,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.575359344482422,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 5,
+          "episode_primitive": 29,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.3299779891967773,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 6,
+          "episode_primitive": 30,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.085904598236084,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 2,
+          "within_option_primitive": 7,
+          "episode_primitive": 31,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.8437652587890625,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 1,
+          "episode_primitive": 32,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.604412078857422,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 2,
+          "episode_primitive": 33,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.3694376945495605,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 3,
+          "episode_primitive": 34,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.1420459747314453,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 4,
+          "episode_primitive": 35,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.9291489124298096,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 3,
+          "within_option_primitive": 5,
+          "episode_primitive": 36,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.7409939765930176,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 1,
+          "episode_primitive": 37,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 1.7409939765930176,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 2,
+          "episode_primitive": 38,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 1.7409939765930176,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 3,
+          "episode_primitive": 39,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.500125765800476,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 4,
+          "episode_primitive": 40,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.2628121376037598,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 4,
+          "within_option_primitive": 5,
+          "episode_primitive": 41,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.031509518623352,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 1,
+          "episode_primitive": 42,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 1.031509518623352,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 2,
+          "episode_primitive": 43,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.8545629382133484,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 3,
+          "episode_primitive": 44,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.7221797108650208,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 4,
+          "episode_primitive": 45,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.66167151927948,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 5,
+          "episode_primitive": 46,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.6921522617340088,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 5,
+          "within_option_primitive": 6,
+          "episode_primitive": 47,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 0.8033305406570435,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 1,
+          "episode_primitive": 48,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.8033305406570435,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 2,
+          "episode_primitive": 49,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.8033305406570435,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 3,
+          "episode_primitive": 50,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 0.8033305406570435,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 4,
+          "episode_primitive": 51,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.050264596939087,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 5,
+          "episode_primitive": 52,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.2983728647232056,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 6,
+          "episode_primitive": 53,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.5470901727676392,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 7,
+          "episode_primitive": 54,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 1.79616379737854,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 8,
+          "episode_primitive": 55,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.0454635620117188,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 9,
+          "episode_primitive": 56,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.2949156761169434,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 10,
+          "episode_primitive": 57,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.5444753170013428,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 6,
+          "within_option_primitive": 11,
+          "episode_primitive": 58,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": true,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 1,
+          "episode_primitive": 59,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 2,
+          "episode_primitive": 60,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 3,
+          "episode_primitive": 61,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.0069947242736816,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 4,
+          "episode_primitive": 62,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.225207805633545,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 5,
+          "episode_primitive": 63,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.447740077972412,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 6,
+          "episode_primitive": 64,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.673807144165039,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 7,
+          "within_option_primitive": 7,
+          "episode_primitive": 65,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.90279483795166,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 8,
+          "within_option_primitive": 1,
+          "episode_primitive": 66,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.13494348526001,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 8,
+          "within_option_primitive": 2,
+          "episode_primitive": 67,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.371608734130859,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 8,
+          "within_option_primitive": 3,
+          "episode_primitive": 68,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.611421585083008,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 8,
+          "within_option_primitive": 4,
+          "episode_primitive": 69,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.853400230407715,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 8,
+          "within_option_primitive": 5,
+          "episode_primitive": 70,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 1,
+          "episode_primitive": 71,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 2,
+          "episode_primitive": 72,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 3,
+          "episode_primitive": 73,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 4,
+          "episode_primitive": 74,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 5,
+          "episode_primitive": 75,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 6,
+          "episode_primitive": 76,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 7,
+          "episode_primitive": 77,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 8,
+          "episode_primitive": 78,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 9,
+          "episode_primitive": 79,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 10,
+          "episode_primitive": 80,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 11,
+          "episode_primitive": 81,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 12,
+          "episode_primitive": 82,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.096927642822266,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 13,
+          "episode_primitive": 83,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.853400230407715,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 14,
+          "episode_primitive": 84,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.611421585083008,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 15,
+          "episode_primitive": 85,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.371608734130859,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 16,
+          "episode_primitive": 86,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.13494348526001,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 17,
+          "episode_primitive": 87,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.90279483795166,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 18,
+          "episode_primitive": 88,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.673807144165039,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 19,
+          "episode_primitive": 89,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.447740077972412,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 20,
+          "episode_primitive": 90,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.225207805633545,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 21,
+          "episode_primitive": 91,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.0069947242736816,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 22,
+          "episode_primitive": 92,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 23,
+          "episode_primitive": 93,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 24,
+          "episode_primitive": 94,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 25,
+          "episode_primitive": 95,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 26,
+          "episode_primitive": 96,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 27,
+          "episode_primitive": 97,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 28,
+          "episode_primitive": 98,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 29,
+          "episode_primitive": 99,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 30,
+          "episode_primitive": 100,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 2.794113874435425,
+          "is_option_end": false,
+          "within_3m": true
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 31,
+          "episode_primitive": 101,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.018892288208008,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 32,
+          "episode_primitive": 102,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.2473607063293457,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 33,
+          "episode_primitive": 103,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.4787914752960205,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 9,
+          "within_option_primitive": 34,
+          "episode_primitive": 104,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.7126309871673584,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 10,
+          "within_option_primitive": 1,
+          "episode_primitive": 105,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.7126309871673584,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 10,
+          "within_option_primitive": 2,
+          "episode_primitive": 106,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.7126309871673584,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 10,
+          "within_option_primitive": 3,
+          "episode_primitive": 107,
+          "primitive_action": 3,
+          "macro_action": 4,
+          "distance_m": 3.7126309871673584,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 10,
+          "within_option_primitive": 4,
+          "episode_primitive": 108,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 3.840604782104492,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 10,
+          "within_option_primitive": 5,
+          "episode_primitive": 109,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.02187442779541,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 10,
+          "within_option_primitive": 6,
+          "episode_primitive": 110,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.231291770935059,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 10,
+          "within_option_primitive": 7,
+          "episode_primitive": 111,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.4552321434021,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 11,
+          "within_option_primitive": 1,
+          "episode_primitive": 112,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 4.4552321434021,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 11,
+          "within_option_primitive": 2,
+          "episode_primitive": 113,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 4.4552321434021,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 11,
+          "within_option_primitive": 3,
+          "episode_primitive": 114,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.704010009765625,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 11,
+          "within_option_primitive": 4,
+          "episode_primitive": 115,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 4.953129291534424,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 11,
+          "within_option_primitive": 5,
+          "episode_primitive": 116,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.2024641036987305,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 11,
+          "within_option_primitive": 6,
+          "episode_primitive": 117,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.451943874359131,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 12,
+          "within_option_primitive": 1,
+          "episode_primitive": 118,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.451943874359131,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 12,
+          "within_option_primitive": 2,
+          "episode_primitive": 119,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 5.451943874359131,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 12,
+          "within_option_primitive": 3,
+          "episode_primitive": 120,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.664250373840332,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 12,
+          "within_option_primitive": 4,
+          "episode_primitive": 121,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 5.884154796600342,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 12,
+          "within_option_primitive": 5,
+          "episode_primitive": 122,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.124165058135986,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 12,
+          "within_option_primitive": 6,
+          "episode_primitive": 123,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.370691299438477,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 12,
+          "within_option_primitive": 7,
+          "episode_primitive": 124,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.618939399719238,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 13,
+          "within_option_primitive": 1,
+          "episode_primitive": 125,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 6.618939399719238,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 13,
+          "within_option_primitive": 2,
+          "episode_primitive": 126,
+          "primitive_action": 2,
+          "macro_action": 4,
+          "distance_m": 6.618939399719238,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 13,
+          "within_option_primitive": 3,
+          "episode_primitive": 127,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 6.833701133728027,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 13,
+          "within_option_primitive": 4,
+          "episode_primitive": 128,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 7.066608428955078,
+          "is_option_end": false,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 13,
+          "within_option_primitive": 5,
+          "episode_primitive": 129,
+          "primitive_action": 1,
+          "macro_action": 4,
+          "distance_m": 7.306877136230469,
+          "is_option_end": true,
+          "within_3m": false
+        },
+        {
+          "high_level_step": 14,
+          "within_option_primitive": 1,
+          "episode_primitive": 130,
+          "primitive_action": 0,
+          "macro_action": 0,
+          "distance_m": 7.306877136230469,
+          "is_option_end": true,
+          "within_3m": false
+        }
+      ]
+    }
+  ],
+  "source_hashes": {
+    "research/configs/PRIMITIVE_ARRIVAL_LOCALIZATION_001.json": "44ad23bc789b745b7f9116f16ce6057cb060f487023da7831314ebadb959b5df",
+    "research/tools/localize_primitive_arrivals.py": "cdb7ca718797aa02badc7946a8e4636abbee486852fa46244ba795053cc6a2b4",
+    "research/configs/NATIVE_STOP_FEASIBILITY_001.json": "ed40bfa687f60e92f3a57a85be8618b6b70121da38558acc5672958c10cbbd5a",
+    "research/results/native_stop_feasibility/analysis_001/summary.json": "15964193e74c3fc9a375e7154d2015c7a1042abd79c04e16cde9e0bd3a64a747",
+    "research/tools/analyze_equal_primitive_budget.py": "ad7fbfaf951aba28252d185aaacd0ebfd39ff52d1da4b5d68b05872f2cd3fb53",
+    "research/results/continuation_label_train64/capture_001/manifest.json": "68cc6b4b8504db242bffeb060370e57a8d21b48531e54bafd1a0db0cc530e291",
+    "research/results/continuation_label_train64/sampling_001/train64_bertidx.json.gz": "9e71ded27a31b107a98d45e6b3a59fa2f7774b957fc7782151af7bbc569fd3e1",
+    "research/results/continuation_label_train64/capture_001/traces/worker_seed100.jsonl": "e3ca98b82f2f35d5714402498ddd868a4ed316dee6b0d41113907b7574e141b2",
+    "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.navmesh": "1bde89aa1fa956742f7505119e88fd624f9bda680c03ea3433b3ff6fc66b6d52",
+    "data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.navmesh": "03a18135c9cd7b34102b0a6938a8f24b8d4b5f41d37294d808907d01b44259a7",
+    "research/results/full_return_label_train16/capture_001/manifest.json": "b161b3403ed62b90b8773741e203b37f25bce39d476666e77b70212b80b24a9f",
+    "research/results/full_return_label_train16/sampling_001/train16_bertidx.json.gz": "87730d5894d8861b234531d702efa1a05654497419066784ce8ba3efe046fcda",
+    "research/results/full_return_label_train16/capture_001/traces/worker_seed100.jsonl": "3db2d22e72690dbadd3383ca1af95d0e04432ab5c61e0bd77fe0d0e9c0a50807",
+    "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.navmesh": "2e8d74022efc4c4fb481a231a8ccf99158987629cbdeb0161f9bbbe8c2de305e",
+    "research/results/graph_option_unseen/capture_001/manifest.json": "20e70cb3b6323450a26bac45a38f2bf5c16e25e64a329241b4e17931b3dd45b5",
+    "research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz": "b17f5606d63a5d069aa81163bdb9b928fc11f54488179b0c67a871f5503e3c0d",
+    "research/results/graph_option_unseen/capture_001/traces/worker_seed100.jsonl": "7069a458976b7a3a39d2b4a1b6a04b29de9b7e9a61478709a11112d6f917ed9e",
+    "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.navmesh": "888bbdf1f17cab353c06a143f753fec7ce1ce3dfae5919c0fafb4cbbfd5b0f06",
+    "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.navmesh": "495495066a57c1eb662d7a3daa3c73f3889460695db148bd991044eef9b06c42"
+  },
+  "limits": "Goal and navmesh are privileged analysis inputs. Interior arrival is a symptom, not a deployable interrupt or a success outcome without STOP. No action abstraction learning or novel method claim."
+}

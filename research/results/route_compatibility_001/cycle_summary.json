@@ -1,0 +1,323 @@
+{
+  "completed_utc": "2026-10-07T03:59:53.248948+00:00",
+  "cycle": "broader_training_and_ordered_route_audit",
+  "completed_experiments": [
+    "GRAPH-OPTION-TRAIN64-001",
+    "ROUTE-COMPATIBILITY-001"
+  ],
+  "decisions": {
+    "original_nms_density_AAA": "NO-GO",
+    "focused_graph_decision_diagnostics": "CONDITIONAL GO",
+    "train_new_scorer_now": false
+  },
+  "new_training_probe": {
+    "experiment_id": "GRAPH-OPTION-TRAIN64-001",
+    "episodes": 64,
+    "scenes": 16,
+    "decisions": 474,
+    "forward_branches": 5090,
+    "reversed_decisions": 128,
+    "reversed_branches": 1359,
+    "selected_sentinels_passed": 474,
+    "order_checks_passed": 1359,
+    "max_sentinel_endpoint_error_m": 0.0,
+    "max_order_endpoint_error_m": 0.0,
+    "sentinel_sensor_matches": 474,
+    "order_sensor_matches": 1359,
+    "all_required_gates_passed": true,
+    "baseline_noninterference_passed": true,
+    "all_admissible_options_complete": true,
+    "masked_budget_options_skipped": 38,
+    "limits": "64 newly selected routes in 16 training scenes, one simulator seed. No learned improvement or causal failure claim. Same STOP, sensors, horizon and original controller.",
+    "privileged_analysis_only": true
+  },
+  "route_results": {
+    "train_pilot8_v2": {
+      "episodes": 8,
+      "scenes": 4,
+      "eligible_states": 55,
+      "native_metric_comparisons": 24,
+      "max_native_metric_delta": 0.0,
+      "metrics": {
+        "joint_cost_gain_m": {
+          "mean_m": 0.0,
+          "median_m": 0.0,
+          "material_states": 0,
+          "material_episodes": 0,
+          "material_scenes": 0,
+          "positive_states": 0,
+          "episode_bootstrap": {
+            "clusters": 8,
+            "decision_weighted_mean_m": 0.0,
+            "equal_cluster_mean_m": 0.0,
+            "ci95_m": [
+              0.0,
+              0.0
+            ],
+            "warning": "Few clusters; interval is exploratory."
+          },
+          "scene_bootstrap": {
+            "clusters": 4,
+            "decision_weighted_mean_m": 0.0,
+            "equal_cluster_mean_m": 0.0,
+            "ci95_m": [
+              0.0,
+              0.0
+            ],
+            "warning": "Few clusters; interval is exploratory."
+          }
+        },
+        "route_matched_gain_m": {
+          "mean_m": 0.0,
+          "median_m": 0.0,
+          "material_states": 0,
+          "material_episodes": 0,
+          "material_scenes": 0,
+          "positive_states": 0,
+          "episode_bootstrap": {
+            "clusters": 8,
+            "decision_weighted_mean_m": 0.0,
+            "equal_cluster_mean_m": 0.0,
+            "ci95_m": [
+              0.0,
+              0.0
+            ],
+            "warning": "Few clusters; interval is exploratory."
+          },
+          "scene_bootstrap": {
+            "clusters": 4,
+            "decision_weighted_mean_m": 0.0,
+            "equal_cluster_mean_m": 0.0,
+            "ci95_m": [
+              0.0,
+              0.0
+            ],
+            "warning": "Few clusters; interval is exploratory."
+          }
+        },
+        "endpoint_only_gain_m": {
+          "mean_m": 0.0,
+          "median_m": 0.0,
+          "material_states": 0,
+          "material_episodes": 0,
+          "material_scenes": 0,
+          "positive_states": 0,
+          "episode_bootstrap": {
+            "clusters": 8,
+            "decision_weighted_mean_m": 0.0,
+            "equal_cluster_mean_m": 0.0,
+            "ci95_m": [
+              0.0,
+              0.0
+            ],
+            "warning": "Few clusters; interval is exploratory."
+          },
+          "scene_bootstrap": {
+            "clusters": 4,
+            "decision_weighted_mean_m": 0.0,
+            "equal_cluster_mean_m": 0.0,
+            "ci95_m": [
+              0.0,
+              0.0
+            ],
+            "warning": "Few clusters; interval is exploratory."
+          }
+        }
+      }
+    },
+    "unseen66_v2": {
+      "episodes": 66,
+      "scenes": 11,
+      "eligible_states": 534,
+      "native_metric_comparisons": 198,
+      "max_native_metric_delta": 0.0,
+      "metrics": {
+        "joint_cost_gain_m": {
+          "mean_m": 0.148786530512549,
+          "median_m": 0.0,
+          "material_states": 59,
+          "material_episodes": 28,
+          "material_scenes": 11,
+          "positive_states": 71,
+          "episode_bootstrap": {
+            "clusters": 66,
+            "decision_weighted_mean_m": 0.148786530512549,
+            "equal_cluster_mean_m": 0.1252945535138272,
+            "ci95_m": [
+              0.09775232131689131,
+              0.20765807360023844
+            ]
+          },
+          "scene_bootstrap": {
+            "clusters": 11,
+            "decision_weighted_mean_m": 0.148786530512549,
+            "equal_cluster_mean_m": 0.13982441790767267,
+            "ci95_m": [
+              0.09391293290537436,
+              0.20432051020552983
+            ]
+          }
+        },
+        "route_matched_gain_m": {
+          "mean_m": 0.12696219908164236,
+          "median_m": 0.0,
+          "material_states": 49,
+          "material_episodes": 26,
+          "material_scenes": 11,
+          "positive_states": 57,
+          "episode_bootstrap": {
+            "clusters": 66,
+            "decision_weighted_mean_m": 0.12696219908164236,
+            "equal_cluster_mean_m": 0.10166428873968313,
+            "ci95_m": [
+              0.07609037107679624,
+              0.18529490254597739
+            ]
+          },
+          "scene_bootstrap": {
+            "clusters": 11,
+            "decision_weighted_mean_m": 0.12696219908164236,
+            "equal_cluster_mean_m": 0.11751867700056408,
+            "ci95_m": [
+              0.0740376613685681,
+              0.17988662863608681
+            ]
+          }
+        },
+        "endpoint_only_gain_m": {
+          "mean_m": 0.13686573282163242,
+          "median_m": 0.0,
+          "material_states": 52,
+          "material_episodes": 27,
+          "material_scenes": 11,
+          "positive_states": 61,
+          "episode_bootstrap": {
+            "clusters": 66,
+            "decision_weighted_mean_m": 0.13686573282163242,
+            "equal_cluster_mean_m": 0.11368492252543874,
+            "ci95_m": [
+              0.08671026458397327,
+              0.19506044334360556
+            ]
+          },
+          "scene_bootstrap": {
+            "clusters": 11,
+            "decision_weighted_mean_m": 0.13686573282163242,
+            "equal_cluster_mean_m": 0.1269402277863377,
+            "ci95_m": [
+              0.0827077359812953,
+              0.19043760749838623
+            ]
+          }
+        }
+      }
+    },
+    "train64_v2": {
+      "episodes": 64,
+      "scenes": 16,
+      "eligible_states": 410,
+      "native_metric_comparisons": 192,
+      "max_native_metric_delta": 0.0,
+      "metrics": {
+        "joint_cost_gain_m": {
+          "mean_m": 0.05345203135071731,
+          "median_m": 0.0,
+          "material_states": 19,
+          "material_episodes": 10,
+          "material_scenes": 7,
+          "positive_states": 22,
+          "episode_bootstrap": {
+            "clusters": 64,
+            "decision_weighted_mean_m": 0.05345203135071731,
+            "equal_cluster_mean_m": 0.035221393786076444,
+            "ci95_m": [
+              0.01566416521433239,
+              0.11040262688966294
+            ]
+          },
+          "scene_bootstrap": {
+            "clusters": 16,
+            "decision_weighted_mean_m": 0.05345203135071731,
+            "equal_cluster_mean_m": 0.0461221049760457,
+            "ci95_m": [
+              0.01533583970744472,
+              0.10574733761278585
+            ]
+          }
+        },
+        "route_matched_gain_m": {
+          "mean_m": 0.042087377135346576,
+          "median_m": 0.0,
+          "material_states": 14,
+          "material_episodes": 7,
+          "material_scenes": 5,
+          "positive_states": 16,
+          "episode_bootstrap": {
+            "clusters": 64,
+            "decision_weighted_mean_m": 0.042087377135346576,
+            "equal_cluster_mean_m": 0.02508382965151414,
+            "ci95_m": [
+              0.007393718371253858,
+              0.09697373833877396
+            ]
+          },
+          "scene_bootstrap": {
+            "clusters": 16,
+            "decision_weighted_mean_m": 0.042087377135346576,
+            "equal_cluster_mean_m": 0.03489479962366145,
+            "ci95_m": [
+              0.005733797063772707,
+              0.09567530231300579
+            ]
+          }
+        },
+        "endpoint_only_gain_m": {
+          "mean_m": 0.04231615429971276,
+          "median_m": 0.0,
+          "material_states": 14,
+          "material_episodes": 7,
+          "material_scenes": 5,
+          "positive_states": 16,
+          "episode_bootstrap": {
+            "clusters": 64,
+            "decision_weighted_mean_m": 0.04231615429971276,
+            "equal_cluster_mean_m": 0.025188515630744205,
+            "ci95_m": [
+              0.007393718371253858,
+              0.09763093284841272
+            ]
+          },
+          "scene_bootstrap": {
+            "clusters": 16,
+            "decision_weighted_mean_m": 0.04231615429971276,
+            "equal_cluster_mean_m": 0.035083909779689955,
+            "ci95_m": [
+              0.005733797063772707,
+              0.09638338049828353
+            ]
+          }
+        }
+      }
+    }
+  },
+  "native_metrics_reconstructed_exactly": 414,
+  "native_episodes_reconstructed": 138,
+  "selected_route_sentinels": 999,
+  "source_checks": {
+    "research/configs/GRAPH_OPTION_TRAIN64_001.json": true,
+    "research/tools/run_option_capture.py": true,
+    "vlnce_baselines/adaptive_action/option_calibration.py": true,
+    "vlnce_baselines/common/environments.py": true,
+    "vlnce_baselines/ss_trainer_ETP.py": true,
+    "run_r2r/iter_train.yaml": true,
+    "vlnce_baselines/adaptive_action/graph_option_capture.py": true,
+    "research/results/graph_option_train64/sampling_001/manifest.json": true
+  },
+  "tracked_core_diff_unchanged_during_cycle": true,
+  "new_unit_tests_passed": 13,
+  "next_experiment": {
+    "config": "research/configs/GRAPH_SINGLE_INTERVENTION_TRAIN7_001.json",
+    "status": "planned_not_executed"
+  },
+  "no_learned_model_or_closed_loop_method_evaluated": true
+}

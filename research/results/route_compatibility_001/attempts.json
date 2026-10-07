@@ -1,0 +1,21 @@
+{
+  "accepted": [
+    "train_pilot8_v2",
+    "unseen66_v2",
+    "train64_v2"
+  ],
+  "superseded": [
+    {
+      "path": "train_pilot8",
+      "reason": "Rerun with native float32 reconstruction to share identical source across splits; outcomes unchanged."
+    }
+  ],
+  "failed": [
+    {
+      "path": "unseen66",
+      "reason": "14 path-length reconstruction errors up to 4.126e-6 m from float64 vs native float32; no candidate route analysis executed."
+    }
+  ],
+  "fix": "Reconstruct baseline metric arithmetic in float32; diagnostic DTW remains float64. Tolerances/gates unchanged.",
+  "source_v1": "source_v1"
+}

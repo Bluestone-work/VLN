@@ -1,0 +1,50 @@
+{
+  "experiment_id": "OPTION-CALIBRATION-001",
+  "capture_dir": "research/results/option_calibration/capture_001",
+  "episodes": 1,
+  "scenes": 1,
+  "modes": {
+    "sequential": {
+      "options": 6,
+      "passed": 6,
+      "max_endpoint_error_m": 0.0,
+      "max_rotation_error_rad": 4.2146848510894035e-08,
+      "max_progress_error_m": 0.0,
+      "sensor_hash_matches": 6,
+      "primitive_events": 59,
+      "collision_events": 0,
+      "stop_options": 1,
+      "options_with_back_path": 1,
+      "tryout_options": 0
+    },
+    "isolated_branch": {
+      "options": 6,
+      "passed": 6,
+      "max_endpoint_error_m": 0.0,
+      "max_rotation_error_rad": 4.2146848510894035e-08,
+      "max_progress_error_m": 0.0,
+      "sensor_hash_matches": 6,
+      "primitive_events": 59,
+      "collision_events": 0,
+      "stop_options": 1,
+      "options_with_back_path": 1,
+      "tryout_options": 0
+    }
+  },
+  "selected_option_replay_gate_passed": true,
+  "baseline_noninterference_gate": "must be checked separately against untraced evaluation",
+  "all_action_counterfactual_validated": false,
+  "gates": {
+    "endpoint_tolerance_m": 1e-05,
+    "rotation_tolerance_rad": 1e-05,
+    "progress_tolerance_m": 1e-05,
+    "primitive_action_sequence_exact": true,
+    "per_primitive_collision_sequence_exact": true,
+    "rng_post_exact": true,
+    "terminal_flag_exact": true,
+    "baseline_episode_metrics_tolerance": 1e-06
+  },
+  "scope_limits": "Static scenes, default sensors and controller, no noise; sliding=true disables tryout. Privileged distances are analysis-only.",
+  "capture_sha256": "dbdc258a0367c478dd8a6911cfc33e302c46bcb0cfc2c3ffdaf9574e62b3a107",
+  "replay_source_sha256": "0f2227866556dd884c98d2ab73bcf5ff2a0d9c5d8eaca4b17f7e165563a8274a"
+}

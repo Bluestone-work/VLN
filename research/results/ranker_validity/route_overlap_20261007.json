@@ -1,0 +1,5 @@
+{
+  "train_val_seen_route_overlap": 0,
+  "train_val_unseen_route_overlap": 0,
+  "cluster_key": "scene_id + trajectory_id; not split-local episode_id"
+}

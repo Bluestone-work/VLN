@@ -1,0 +1,21 @@
+{
+  "experiment_id": "NATIVE-STOP-FEASIBILITY-001",
+  "type": "post-hoc diagnostic on existing calibrated baseline states",
+  "success_distance_m": 3.0,
+  "success_operator": "<=",
+  "output_dir": "research/results/native_stop_feasibility/analysis_001",
+  "cohorts": [
+    {"name": "train_pilot8", "root": "research/results/graph_option_pilot", "probe": "probe_full001", "noninterference": "noninterference_001"},
+    {"name": "train64", "root": "research/results/graph_option_train64", "probe": "probe_full001", "noninterference": "noninterference_001"},
+    {"name": "continuation_train64", "root": "research/results/continuation_label_train64", "probe": "probe_full001", "noninterference": "noninterference_001"},
+    {"name": "full_return_train16", "root": "research/results/full_return_label_train16", "probe": "probe_full001", "noninterference": "noninterference_001"},
+    {"name": "unseen66", "root": "research/results/graph_option_unseen", "probe": "probe_full002", "noninterference": "noninterference_002"}
+  ],
+  "questions": [
+    "Among baseline failures, how often is an actually executed native STOP branch successful at some baseline decision?",
+    "Does proximity before the decision agree with success after native historical-node STOP?",
+    "Does native oracle_success sometimes report proximity only within a macro-action, with no decision boundary inside the success radius?"
+  ],
+  "control": "No new sample, rollout or fit. Verify previous integrity/probe/noninterference gates, raw hashes, exact STOP action identity, pose and native final metric consistency. Keep every cohort separate.",
+  "limits": "STOP branches contain historical-target selection and controller return, not an in-place STOP. Privileged per-state feasibility is diagnostic only; no learned trigger, exhaustive oracle or population generalization. Existing validation data are diagnostic, not a new held-out test. No support gate is reopened."
+}

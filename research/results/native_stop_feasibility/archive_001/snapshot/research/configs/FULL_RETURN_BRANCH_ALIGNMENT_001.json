@@ -1,0 +1,11 @@
+{
+  "experiment_id": "FULL-RETURN-BRANCH-ALIGNMENT-001",
+  "type": "post-hoc alignment of full-option one-step branches with accepted full returns",
+  "source_root": "research/results/full_return_label_train16",
+  "accepted_tag": "003",
+  "analysis_path": "research/results/full_return_label_train16/full_return_analysis_001/summary.json",
+  "probe_dir": "research/results/full_return_label_train16/probe_full001",
+  "output_dir": "research/results/full_return_branch_alignment/analysis_001",
+  "controls": "No rollout, no new sample, no label threshold or fitted selector. Use only accepted forward branch probes and frozen full-return traces.",
+  "limits": "Privileged one-step branch outcomes are diagnostic only; non-STOP branches are compared at the same physical state. The all-option branch set is not a deployable policy or an exhaustive episode oracle."
+}

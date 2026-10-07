@@ -1,0 +1,24 @@
+{
+  "experiment_id": "EQUAL-PRIMITIVE-CONTINUATION-001",
+  "analysis_type": "post-hoc exploratory timing-confound check after prospective H2 results",
+  "batches": [
+    {
+      "name": "earlier_train7",
+      "root": "research/results/single_intervention_train7"
+    },
+    {
+      "name": "prospective_train5",
+      "root": "research/results/continuation_label_train64"
+    }
+  ],
+  "question": "Does replacing equal high-level windows with equal baseline-derived primitive budgets change the misleading H2 accept/reject decisions?",
+  "control": "Use all accepted actual H1 continuations from both batches; no new episodes, thresholds or simulator changes.",
+  "selection": "Every scheduled event in both frozen batches, not only bad cases; report batches separately.",
+  "baseline_high_level_horizon": 2,
+  "geodesic_tolerance_m": 1e-05,
+  "rule": {
+    "minimum_progress_gain_m": 0.25,
+    "primitive_delta_max": 0,
+    "movement_delta_max_m": 1e-05
+  }
+}

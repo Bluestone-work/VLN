@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-07",
+  "studies": [
+    {
+      "experiment_id": "GRAPH-OPTION-PILOT-001",
+      "episodes": 8,
+      "states": 63,
+      "forward_branches": 760,
+      "reverse_branches": 218,
+      "local_gain_m": 0.038215381448919124,
+      "joint_cost_capped_gain_m": 0.0,
+      "joint_cost_capped_states_ge025m": 0,
+      "scene_ci95_m": [
+        0.0,
+        0.0
+      ],
+      "sources": {
+        "probe": {
+          "path": "research/results/graph_option_pilot/probe_full001/summary.json",
+          "sha256": "72b4400b4e0372eac7a8d4f78a17086b95324f33a52ea4cecb225af76bb9e1e3"
+        },
+        "control": {
+          "path": "research/results/graph_option_pilot/noninterference_001/summary.json",
+          "sha256": "3f1c38611d32f47c9204059fd655242b64e529444b75c5aeaf02150fe78d27bc"
+        },
+        "analysis": {
+          "path": "research/results/graph_option_pilot/analysis_001/summary.json",
+          "sha256": "38061c0238fcadd0b57367468917bd30ec2a0f193bb24ae8869ff07173dfcd1e"
+        },
+        "integrity": {
+          "path": "research/results/graph_option_pilot/integrity_001/summary.json",
+          "sha256": "d0541ad0a66689771dcd1e046501e60b57cb43c778929caf8b5fccf65277f7a7"
+        }
+      }
+    },
+    {
+      "experiment_id": "GRAPH-OPTION-UNSEEN-001",
+      "episodes": 66,
+      "states": 600,
+      "forward_branches": 7113,
+      "reverse_branches": 1516,
+      "local_gain_m": 1.28460765875569,
+      "joint_cost_capped_gain_m": 0.148786530512549,
+      "joint_cost_capped_states_ge025m": 59,
+      "scene_ci95_m": [
+        0.09391293290537436,
+        0.20432051020552983
+      ],
+      "sources": {
+        "probe": {
+          "path": "research/results/graph_option_unseen/probe_full002/summary.json",
+          "sha256": "a739af5ca5754e00d60210f41ecd6cdd7735bb432be9b4b8fc616956fb0e3fde"
+        },
+        "control": {
+          "path": "research/results/graph_option_unseen/noninterference_002/summary.json",
+          "sha256": "53e121a51ada7cf7378437d0522b544b82b5ba94bc45d542770db40fae984f99"
+        },
+        "analysis": {
+          "path": "research/results/graph_option_unseen/analysis_001/summary.json",
+          "sha256": "035ae635d30464cb218c7fe42687f361ddae80018276a4bcd76b18e19d246ad2"
+        },
+        "integrity": {
+          "path": "research/results/graph_option_unseen/integrity_001/summary.json",
+          "sha256": "3f8955a755637bd0020a9fb1c224cf0424fc7abec34e84550e1247b152ffc092"
+        }
+      }
+    }
+  ],
+  "total_episodes": 74,
+  "total_states": 663,
+  "total_branch_executions": 9607,
+  "tests_passed": 36,
+  "full_trace_integrity_passed": true,
+  "learned_model_trained": false,
+  "closed_loop_new_policy_evaluated": false,
+  "aaa_nms_decision": "NO-GO",
+  "graph_decision_study": "CONDITIONAL GO: broader training coverage and route-compatible label audit before fitting",
+  "literature_audit": "research/LITERATURE_METHOD_AUDIT_20261007.md",
+  "report": "research/GRAPH_OPTION_REPORT.md"
+}

@@ -1,0 +1,969 @@
+{
+  "experiment_id": "EQUAL-PRIMITIVE-CONTINUATION-001",
+  "analysis_type": "post-hoc exploratory timing-confound check after prospective H2 results",
+  "native_geodesic_calibration_passed": true,
+  "calibration_endpoint_comparisons": 456,
+  "max_geodesic_error_m": 0.0,
+  "events": [
+    {
+      "batch": "earlier_train7",
+      "episode_id": "9045",
+      "step": 7,
+      "primitive_budget": 9,
+      "baseline": {
+        "distance_to_goal": 7.907123565673828,
+        "primitive_count": 9,
+        "movement_m": 1.7499987859615205,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": true,
+        "last_pose": [
+          -4.45089864730835,
+          0.09144997596740723,
+          -13.905930519104004
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 7.089022636413574,
+        "primitive_count": 9,
+        "movement_m": 1.0000001658427071,
+        "fully_completed_high_level_decisions": 1,
+        "terminal": false,
+        "last_pose": [
+          -3.859083890914917,
+          0.09144997596740723,
+          -13.330161094665527
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 0.8181009292602539,
+        "primitive_delta": 0,
+        "movement_delta_m": -0.7499986201188134
+      },
+      "original_h2_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": false,
+          "primitive_cap": false,
+          "path_cap": false
+        },
+        "extra_goal_progress_m": -1.0593452453613281,
+        "primitive_delta": 9,
+        "movement_delta_m": 1.250001114851333
+      },
+      "final_delta": {
+        "actual_stop_rate": -0.020202020202020193,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": 1.9016218185424805,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 6,
+        "high_level_steps": 2,
+        "native_collision_count": 0,
+        "ndtw": -0.14797804004930493,
+        "oracle_success": 0.0,
+        "path_length": 2.2500009536743164,
+        "policy_stop_count": 0,
+        "policy_stop_rate": -0.020202020202020193,
+        "primitive_action_count": 17,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 17.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8786",
+      "step": 3,
+      "primitive_budget": 14,
+      "baseline": {
+        "distance_to_goal": 7.474789619445801,
+        "primitive_count": 14,
+        "movement_m": 2.9999996591795735,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          -12.124479293823242,
+          0.1518409252166748,
+          6.7383341789245605
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 4.96368408203125,
+        "primitive_count": 14,
+        "movement_m": 2.9999976049145856,
+        "fully_completed_high_level_decisions": 1,
+        "terminal": false,
+        "last_pose": [
+          -11.241861343383789,
+          0.1518409252166748,
+          4.372029781341553
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 2.511105537414551,
+        "primitive_delta": 0,
+        "movement_delta_m": -2.054264987894072e-06
+      },
+      "original_h2_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": false,
+          "path_cap": false
+        },
+        "extra_goal_progress_m": 2.7117834091186523,
+        "primitive_delta": 2,
+        "movement_delta_m": 0.4999981527077684
+      },
+      "final_delta": {
+        "actual_stop_rate": 0.027777777777777776,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": 0.481913685798645,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": -7,
+        "high_level_steps": -3,
+        "native_collision_count": 0,
+        "ndtw": 0.10608447045097935,
+        "oracle_success": 0.0,
+        "path_length": -2.0000057220458984,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.027777777777777776,
+        "primitive_action_count": -24,
+        "sdtw": 0.10608447045097935,
+        "spl": 0.0966365932166402,
+        "steps_taken": -24.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "2408",
+      "step": 6,
+      "primitive_budget": 13,
+      "baseline": {
+        "distance_to_goal": 2.6923935413360596,
+        "primitive_count": 13,
+        "movement_m": 2.2500011566573206,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": true,
+        "last_pose": [
+          -7.579977989196777,
+          0.1518409252166748,
+          4.52559757232666
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 1.6038286685943604,
+        "primitive_count": 7,
+        "movement_m": 0.7499999203773726,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": true,
+        "last_pose": [
+          -9.463809967041016,
+          0.1518409252166748,
+          3.0846991539001465
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 1.0885648727416992,
+        "primitive_delta": -6,
+        "movement_delta_m": -1.500001236279948
+      },
+      "original_h2_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 1.0885648727416992,
+        "primitive_delta": -6,
+        "movement_delta_m": -1.500001236279948
+      },
+      "final_delta": {
+        "actual_stop_rate": 0.0,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": -1.0885648727416992,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": -1,
+        "high_level_steps": 0,
+        "native_collision_count": 0,
+        "ndtw": 0.1344271918029346,
+        "oracle_success": 0.0,
+        "path_length": -1.5,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.0,
+        "primitive_action_count": -6,
+        "sdtw": 0.1344271918029346,
+        "spl": 0.11941917017732173,
+        "steps_taken": -6.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "8",
+      "step": 2,
+      "primitive_budget": 20,
+      "baseline": {
+        "distance_to_goal": 5.581523418426514,
+        "primitive_count": 20,
+        "movement_m": 2.999998906545912,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          -12.68118667602539,
+          3.151840925216675,
+          5.60621452331543
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 4.0323100090026855,
+        "primitive_count": 20,
+        "movement_m": 3.249999395245986,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          -11.16379451751709,
+          3.151840925216675,
+          5.969655990600586
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": false
+        },
+        "extra_goal_progress_m": 1.5492134094238281,
+        "primitive_delta": 0,
+        "movement_delta_m": 0.2500004887000742
+      },
+      "original_h2_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 0.29944419860839844,
+        "primitive_delta": -6,
+        "movement_delta_m": -1.0000009321572145
+      },
+      "final_delta": {
+        "actual_stop_rate": 0.013888888888888895,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": 0.5192582011222839,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": -4,
+        "high_level_steps": -1,
+        "native_collision_count": 0,
+        "ndtw": 0.04372236100638305,
+        "oracle_success": 0.0,
+        "path_length": -1.7500009536743164,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.013888888888888895,
+        "primitive_action_count": -11,
+        "sdtw": 0.04372236100638305,
+        "spl": 0.1307279883847131,
+        "steps_taken": -11.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "10811",
+      "step": 7,
+      "primitive_budget": 11,
+      "baseline": {
+        "distance_to_goal": 1.3669612407684326,
+        "primitive_count": 11,
+        "movement_m": 2.2500001071895186,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": true,
+        "last_pose": [
+          -2.924276828765869,
+          -3.240571975708008,
+          15.071320533752441
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 0.5487033724784851,
+        "primitive_count": 8,
+        "movement_m": 1.500001029786846,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": true,
+        "last_pose": [
+          -2.008648633956909,
+          -3.240571975708008,
+          14.278571128845215
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 0.8182578682899475,
+        "primitive_delta": -3,
+        "movement_delta_m": -0.7499990774026726
+      },
+      "original_h2_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 0.8182578682899475,
+        "primitive_delta": -3,
+        "movement_delta_m": -0.7499990774026724
+      },
+      "final_delta": {
+        "actual_stop_rate": 0.0,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": -0.8182578682899475,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 2,
+        "high_level_steps": 0,
+        "native_collision_count": 0,
+        "ndtw": 0.04183711082816022,
+        "oracle_success": 0.0,
+        "path_length": -0.7499990463256836,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.0,
+        "primitive_action_count": -3,
+        "sdtw": 0.04183711082816022,
+        "spl": 0.042207228467450175,
+        "steps_taken": -3.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "6962",
+      "step": 10,
+      "primitive_budget": 71,
+      "baseline": {
+        "distance_to_goal": 6.6088786125183105,
+        "primitive_count": 71,
+        "movement_m": 6.91094948778697,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          -4.55635404586792,
+          0.07484699785709381,
+          -0.23619386553764343
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 8.449356079101562,
+        "primitive_count": 71,
+        "movement_m": 7.00000070418208,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          -2.6640701293945312,
+          0.07484699785709381,
+          -1.604128360748291
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": false,
+          "primitive_cap": true,
+          "path_cap": false
+        },
+        "extra_goal_progress_m": -1.840477466583252,
+        "primitive_delta": 0,
+        "movement_delta_m": 0.08905121639510938
+      },
+      "original_h2_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": false,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": -2.576469898223877,
+        "primitive_delta": -14,
+        "movement_delta_m": -0.6609491718060028
+      },
+      "final_delta": {
+        "actual_stop_rate": 0.0,
+        "collision_events": -2,
+        "collisions": -0.018351968886728246,
+        "distance_to_goal": 4.985171318054199,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 2,
+        "high_level_steps": 0,
+        "native_collision_count": -2,
+        "ndtw": -0.012275563484336897,
+        "oracle_success": 0.0,
+        "path_length": 3.82489013671875,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.0,
+        "primitive_action_count": 65,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 65.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "earlier_train7",
+      "episode_id": "875",
+      "step": 6,
+      "primitive_budget": 12,
+      "baseline": {
+        "distance_to_goal": 6.473343372344971,
+        "primitive_count": 12,
+        "movement_m": 2.2500022168232956,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": true,
+        "last_pose": [
+          -22.89788818359375,
+          0.07537198066711426,
+          -8.93807315826416
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 4.800418853759766,
+        "primitive_count": 11,
+        "movement_m": 1.9999930598303401,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": true,
+        "last_pose": [
+          -23.651277542114258,
+          0.07537198066711426,
+          -6.939350605010986
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 1.672924518585205,
+        "primitive_delta": -1,
+        "movement_delta_m": -0.25000915699295545
+      },
+      "original_h2_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 1.672924518585205,
+        "primitive_delta": -1,
+        "movement_delta_m": -0.25000915699295545
+      },
+      "final_delta": {
+        "actual_stop_rate": 0.0,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": -1.672924518585205,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 1,
+        "high_level_steps": 0,
+        "native_collision_count": 0,
+        "ndtw": 0.1308869521178485,
+        "oracle_success": 0.0,
+        "path_length": -0.25000858306884766,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.0,
+        "primitive_action_count": -1,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -1.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1773",
+      "step": 5,
+      "primitive_budget": 74,
+      "baseline": {
+        "distance_to_goal": 2.6257121562957764,
+        "primitive_count": 74,
+        "movement_m": 7.000001750980683,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          4.880681037902832,
+          0.10309600830078125,
+          -3.9189887046813965
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 4.194169998168945,
+        "primitive_count": 74,
+        "movement_m": 8.250000711164281,
+        "fully_completed_high_level_decisions": 1,
+        "terminal": false,
+        "last_pose": [
+          7.294160842895508,
+          0.10309600830078125,
+          -3.10060453414917
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": false,
+          "primitive_cap": true,
+          "path_cap": false
+        },
+        "extra_goal_progress_m": -1.568457841873169,
+        "primitive_delta": 0,
+        "movement_delta_m": 1.2499989601835981
+      },
+      "original_h2_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": false,
+          "primitive_cap": false,
+          "path_cap": false
+        },
+        "extra_goal_progress_m": -1.1042087078094482,
+        "primitive_delta": 2,
+        "movement_delta_m": 1.7499988634424533
+      },
+      "final_delta": {
+        "actual_stop_rate": 0.024242424242424246,
+        "collision_events": -1,
+        "collisions": -0.005681818181818182,
+        "distance_to_goal": -1.6906077861785889,
+        "forced_stop_count": -1,
+        "forced_stop_max_len_count": -1,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": -0.06666666666666667,
+        "ghost_cnt": 1,
+        "high_level_steps": -4,
+        "native_collision_count": -1,
+        "ndtw": 0.3129271260897377,
+        "oracle_success": 0.0,
+        "path_length": -22.899133682250977,
+        "policy_stop_count": 1,
+        "policy_stop_rate": 0.09090909090909091,
+        "primitive_action_count": -244,
+        "sdtw": 0.3129271260897377,
+        "spl": 0.16308254088695745,
+        "steps_taken": -244.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "6126",
+      "step": 0,
+      "primitive_budget": 28,
+      "baseline": {
+        "distance_to_goal": 3.3643651008605957,
+        "primitive_count": 28,
+        "movement_m": 3.2256183076999867,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          3.3318800926208496,
+          0.10309600830078125,
+          1.1562843322753906
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 2.2449662685394287,
+        "primitive_count": 28,
+        "movement_m": 3.2500000781799243,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          4.421695232391357,
+          0.10309600830078125,
+          1.3956207036972046
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": false
+        },
+        "extra_goal_progress_m": 1.119398832321167,
+        "primitive_delta": 0,
+        "movement_delta_m": 0.024381770479937614
+      },
+      "original_h2_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 0.4422636032104492,
+        "primitive_delta": -4,
+        "movement_delta_m": -0.7256178487144331
+      },
+      "final_delta": {
+        "actual_stop_rate": 0.0,
+        "collision_events": -3,
+        "collisions": -0.125,
+        "distance_to_goal": -0.5252246856689453,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 1,
+        "high_level_steps": 0,
+        "native_collision_count": -3,
+        "ndtw": 0.10995806750599546,
+        "oracle_success": 0.0,
+        "path_length": -0.7414960861206055,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.0,
+        "primitive_action_count": 0,
+        "sdtw": 0.10995806750599546,
+        "spl": 0.12453249904712294,
+        "steps_taken": 0.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "1374",
+      "step": 5,
+      "primitive_budget": 24,
+      "baseline": {
+        "distance_to_goal": 0.8309761881828308,
+        "primitive_count": 24,
+        "movement_m": 4.000000220264752,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          -8.948741912841797,
+          0.11627800017595291,
+          -1.587744951248169
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 0.0974811464548111,
+        "primitive_count": 23,
+        "movement_m": 3.7499990024325873,
+        "fully_completed_high_level_decisions": 4,
+        "terminal": true,
+        "last_pose": [
+          -9.43698787689209,
+          0.11627800017595291,
+          -2.1529202461242676
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 0.7334950417280197,
+        "primitive_delta": -1,
+        "movement_delta_m": -0.2500012178321649
+      },
+      "original_h2_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": false,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": -0.23614150285720825,
+        "primitive_delta": -8,
+        "movement_delta_m": -1.2500002557045917
+      },
+      "final_delta": {
+        "actual_stop_rate": -0.013888888888888895,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": -0.7334950417280197,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 3,
+        "high_level_steps": 1,
+        "native_collision_count": 0,
+        "ndtw": 0.03227442110736678,
+        "oracle_success": 0.0,
+        "path_length": -0.2500009536743164,
+        "policy_stop_count": 0,
+        "policy_stop_rate": -0.013888888888888895,
+        "primitive_action_count": -2,
+        "sdtw": 0.03227442110736678,
+        "spl": 0.02111912622866785,
+        "steps_taken": -2.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "10121",
+      "step": 3,
+      "primitive_budget": 42,
+      "baseline": {
+        "distance_to_goal": 6.4793877601623535,
+        "primitive_count": 42,
+        "movement_m": 4.701984314675844,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": false,
+        "last_pose": [
+          -1.2523921728134155,
+          0.11627800017595291,
+          -5.3667683601379395
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 6.561302185058594,
+        "primitive_count": 42,
+        "movement_m": 2.7499996474061907,
+        "fully_completed_high_level_decisions": 1,
+        "terminal": false,
+        "last_pose": [
+          -0.8668376207351685,
+          0.11627800017595291,
+          -2.940633773803711
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": false,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": -0.08191442489624023,
+        "primitive_delta": 0,
+        "movement_delta_m": -1.9519846672696533
+      },
+      "original_h2_rule": {
+        "accepted": false,
+        "gates": {
+          "material_progress": false,
+          "primitive_cap": false,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": -0.08926725387573242,
+        "primitive_delta": 20,
+        "movement_delta_m": -0.20198444352069345
+      },
+      "final_delta": {
+        "actual_stop_rate": -0.007575757575757583,
+        "collision_events": -2,
+        "collisions": -0.028647087144920556,
+        "distance_to_goal": 0.4925740957260132,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": -6,
+        "high_level_steps": 1,
+        "native_collision_count": -2,
+        "ndtw": -0.025492379726637315,
+        "oracle_success": 0.0,
+        "path_length": -0.8761157989501953,
+        "policy_stop_count": 0,
+        "policy_stop_rate": -0.007575757575757583,
+        "primitive_action_count": 32,
+        "sdtw": -0.025492379726637315,
+        "spl": 0.029851231505531373,
+        "steps_taken": 32.0,
+        "success": 0.0
+      }
+    },
+    {
+      "batch": "prospective_train5",
+      "episode_id": "7581",
+      "step": 5,
+      "primitive_budget": 8,
+      "baseline": {
+        "distance_to_goal": 1.0427448749542236,
+        "primitive_count": 8,
+        "movement_m": 1.5000015470633326,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": true,
+        "last_pose": [
+          12.888995170593262,
+          3.628255844116211,
+          4.064386367797852
+        ]
+      },
+      "intervention": {
+        "distance_to_goal": 0.41179463267326355,
+        "primitive_count": 8,
+        "movement_m": 0.9999993870896915,
+        "fully_completed_high_level_decisions": 2,
+        "terminal": true,
+        "last_pose": [
+          12.169495582580566,
+          3.628255844116211,
+          3.697988986968994
+        ]
+      },
+      "equal_primitive_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 0.6309502422809601,
+        "primitive_delta": 0,
+        "movement_delta_m": -0.5000021599736411
+      },
+      "original_h2_rule": {
+        "accepted": true,
+        "gates": {
+          "material_progress": true,
+          "primitive_cap": true,
+          "path_cap": true
+        },
+        "extra_goal_progress_m": 0.6309502422809601,
+        "primitive_delta": 0,
+        "movement_delta_m": -0.5000021599736407
+      },
+      "final_delta": {
+        "actual_stop_rate": 0.0,
+        "collision_events": 0,
+        "collisions": 0.0,
+        "distance_to_goal": -0.6309502422809601,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "forced_stop_rate": 0.0,
+        "ghost_cnt": 1,
+        "high_level_steps": 0,
+        "native_collision_count": 0,
+        "ndtw": 0.018586517319842177,
+        "oracle_success": 0.0,
+        "path_length": -0.5000009536743164,
+        "policy_stop_count": 0,
+        "policy_stop_rate": 0.0,
+        "primitive_action_count": 0,
+        "sdtw": 0.018586517319842177,
+        "spl": 0.05291710893987411,
+        "steps_taken": 0.0,
+        "success": 0.0
+      }
+    }
+  ],
+  "batches": {
+    "earlier_train7": {
+      "events": 7,
+      "changed_acceptance_episode_ids": [
+        "9045",
+        "8786",
+        "8"
+      ],
+      "accepted_episode_ids": [
+        "9045",
+        "8786",
+        "2408",
+        "10811",
+        "875"
+      ],
+      "accepted_final_primitive_delta": -17,
+      "accepted_ndtw_worse": 1,
+      "accepted_success_lost": 0
+    },
+    "prospective_train5": {
+      "events": 5,
+      "changed_acceptance_episode_ids": [
+        "6126",
+        "1374"
+      ],
+      "accepted_episode_ids": [
+        "1374",
+        "7581"
+      ],
+      "accepted_final_primitive_delta": -2,
+      "accepted_ndtw_worse": 0,
+      "accepted_success_lost": 0
+    }
+  },
+  "hashes": {
+    "research/configs/EQUAL_PRIMITIVE_CONTINUATION_001.json": "705c17f61775382962fecfea058e1d7b18be2eabf4921040ff56fa9fa6d0ed06",
+    "research/tools/analyze_equal_primitive_budget.py": "ad7fbfaf951aba28252d185aaacd0ebfd39ff52d1da4b5d68b05872f2cd3fb53",
+    "research/results/single_intervention_train7/enabled_001/manifest.json": "9b23509c7c72533d3106207a447986fdc33391cd037405a3f5ee2854bbbd9f81",
+    "research/results/single_intervention_train7/enabled_audit_001/summary.json": "d32f1b0750d68d7ee5a80d172b3fd020713272a2ebebd4a40d07367b79f81b78",
+    "research/results/single_intervention_train7/enabled_audit_001/paired_episodes.json": "1a42b47f94fc44ec9ee0b3e3553fe40c177e549d4ba76390810cb2822f51bdd8",
+    "research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz": "2a9b8b94279ad8a062c4c7eaa4424d2516bd4f476b7c71a82d3fa1e31f03a283",
+    "research/results/graph_option_train64/capture_001/traces/worker_seed100.jsonl": "4dcc4cf8c7499ec19cc1b2aab272a64433105862ab86b18c6bbce85bcde4cf12",
+    "research/results/single_intervention_train7/enabled_001/traces/worker_seed100.jsonl": "a18572dee13f5b33dd34f22cdb847d97bab9e2973bfe1c944be42d814e222f4a",
+    "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.navmesh": "3a182ac907047690f2134b0525ea9805f1d709a38cfd7a3857bb4c1b38f015c3",
+    "data/scene_datasets/mp3d/7y3sRwLe3Va/7y3sRwLe3Va.navmesh": "4de34df00453f0638a893979eb0110b4e654e2dd029ae26eebbb61e2233f13c6",
+    "data/scene_datasets/mp3d/rPc6DW4iMge/rPc6DW4iMge.navmesh": "05d68706ce0ce20b3dc9f14b30e84745853c86dd96acf53bfda1f53aaf3505eb",
+    "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.navmesh": "7b2b764a7f7dce5d65c3c36d693f2f51ea3800253ca6ee909ad01b1f295c9c00",
+    "data/scene_datasets/mp3d/r1Q1Z4BcV1o/r1Q1Z4BcV1o.navmesh": "782a763c91d621697fbd27bb74738527ae767223404796744258e3d278441411",
+    "research/results/continuation_label_train64/enabled_001/manifest.json": "88bb4acecc56b6a9429b4af5fb37714e5c905697103c83da2c07b0cb2fbabcc2",
+    "research/results/continuation_label_train64/enabled_audit_001/summary.json": "47e7c780784499290cf545d0fa45bf8069d29a8b625f8fe6ff84c3250f65de79",
+    "research/results/continuation_label_train64/enabled_audit_001/paired_episodes.json": "06f779c7207f222aab0eb9df3bd0ec5d0346d9643347a7019abb2a8f80f96b61",
+    "research/results/continuation_label_train64/sampling_001/train64_bertidx.json.gz": "9e71ded27a31b107a98d45e6b3a59fa2f7774b957fc7782151af7bbc569fd3e1",
+    "research/results/continuation_label_train64/capture_001/traces/worker_seed100.jsonl": "e3ca98b82f2f35d5714402498ddd868a4ed316dee6b0d41113907b7574e141b2",
+    "research/results/continuation_label_train64/enabled_001/traces/worker_seed100.jsonl": "1cf4f32984d123c14842fccc737724d50aaa8545b8d8f07bf39cd9c18b70d298",
+    "data/scene_datasets/mp3d/V2XKFyX4ASd/V2XKFyX4ASd.navmesh": "f89e0ab10659af718e5212e1a3d0f948aaba115f6d284596de60ebcf5f29b871",
+    "data/scene_datasets/mp3d/S9hNv5qa7GM/S9hNv5qa7GM.navmesh": "1bbfe1f0e3899dffdb72f839f773effc3cdfdb5d8dc1d32d5b2400a6cc92241d",
+    "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.navmesh": "1bde89aa1fa956742f7505119e88fd624f9bda680c03ea3433b3ff6fc66b6d52"
+  },
+  "no_model_trained": true,
+  "limits": "Post-hoc, privileged offline read of actual primitive poses. Baseline H=2 determines a different budget per event. Equal primitive count is not equal wall-clock time. STOP is absorbing; partial options are observations only, not a new executable action. No new rollout or independent validation."
+}

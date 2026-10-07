@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-10-07T03:18:40.255061+00:00",
+  "config": {
+    "experiment_id": "GRAPH-OPTION-PILOT-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 8,
+    "seed": 100,
+    "dataset_path": "research/results/graph_option_pilot/train8_sampling/train_pilot8_bertidx.json.gz",
+    "sampling_manifest": "research/results/graph_option_pilot/train8_sampling/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261007,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Best admissible non-STOP full-option goal progress minus actually selected ghost; learned and forced STOP states excluded",
+      "controls": [
+        "candidate local to current observation",
+        "primitive count no greater than selected",
+        "movement path no longer than selected"
+      ],
+      "material_state_gain_m": 0.25,
+      "bootstrap_seed": 20261007,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "Training-only diagnostic of complete graph actions, with selected sentinels, reversed enumeration and baseline noninterference.",
+    "limits": "Eight routes across four training scenes, one simulator seed; no learned model or navigation gain claim. Final-decision non-STOP alternatives are inadmissible. Goal distances are analysis-only."
+  },
+  "exp_name": "aaa_graph_option_pilot001",
+  "overrides": {
+    "TRAINER_NAME": "SS-ETP-OptionCapture",
+    "ENV_NAME": "VLNCEOptionTraceEnv",
+    "SIMULATOR_GPU_IDS": "[0]",
+    "TORCH_GPU_IDS": "[0]",
+    "GPU_NUMBERS": "1",
+    "NUM_ENVIRONMENTS": "1",
+    "EVAL.SPLIT": "train",
+    "EVAL.EPISODE_COUNT": "8",
+    "TASK_CONFIG.SEED": "100",
+    "EVAL.CKPT_PATH_DIR": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "IL.back_algo": "control",
+    "RL_TOPO.ENABLED": "False",
+    "ACTION_ABSTRACTION.LEVEL": "default",
+    "ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED": "False",
+    "ACTION_ABSTRACTION.ORACLE_ENABLED": "False",
+    "ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED": "False",
+    "ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS": "False",
+    "TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING": "True",
+    "TASK_CONFIG.DATASET.DATA_PATH": "research/results/graph_option_pilot/train8_sampling/train_pilot8_bertidx.json.gz"
+  },
+  "trace": true,
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n?? vlnce_baselines/adaptive_action/\n",
+  "hashes": {
+    "research/configs/GRAPH_OPTION_PILOT_001.json": "bebfb52ca60e27af4f6e128a6aa0a63ca8f2bbc17e200284aa826ca90400f8fa",
+    "research/tools/run_option_capture.py": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+    "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+    "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+    "vlnce_baselines/ss_trainer_ETP.py": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+    "run_r2r/iter_train.yaml": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+    "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+    "vlnce_baselines/adaptive_action/graph_option_capture.py": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db",
+    "research/results/graph_option_pilot/train8_sampling/train_pilot8_bertidx.json.gz": "10eeeedf7d116e0a1e088a3e4f2fc833c104a41f128dd0af89a0deb249109aba",
+    "research/results/graph_option_pilot/train8_sampling/manifest.json": "4558c98cbb2628a4dfdc310d61d7ee95869fcfedd8e93acba3df7941564bf780"
+  },
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "command_argv": [
+    "research/tools/run_option_capture.py",
+    "--config",
+    "research/configs/GRAPH_OPTION_PILOT_001.json",
+    "--output-dir",
+    "research/results/graph_option_pilot/capture_001",
+    "--exp-name",
+    "aaa_graph_option_pilot001",
+    "--trace"
+  ],
+  "environment": {
+    "EGL_PLATFORM": "surfaceless",
+    "CUDA_VISIBLE_DEVICES": "0"
+  }
+}

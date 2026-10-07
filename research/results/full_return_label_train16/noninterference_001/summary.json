@@ -1,0 +1,132 @@
+{
+  "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001",
+  "baseline_noninterference_gate_passed": true,
+  "episode_comparison": {
+    "passed": true,
+    "episodes": 16,
+    "metric_comparisons": 288,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "aggregate_comparison": {
+    "passed": true,
+    "episodes": 1,
+    "metric_comparisons": 18,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "sources": {
+    "capture_episodes": {
+      "path": "data/logs/eval_results/aaa_full_return_label_train16_001_capture/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "150f7d07136e3c5ec6b271937a7890c30576582e1af2ad2f3e603389f72f6b74"
+    },
+    "capture_aggregate": {
+      "path": "data/logs/eval_results/aaa_full_return_label_train16_001_capture/stats_ckpt_59_train.json",
+      "sha256": "db7c760562751b1317b3c0e8c9c922a6193e262d39e6d823908ba54a70d9552c"
+    },
+    "control_episodes": {
+      "path": "data/logs/eval_results/aaa_full_return_label_train16_001_control/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "150f7d07136e3c5ec6b271937a7890c30576582e1af2ad2f3e603389f72f6b74"
+    },
+    "control_aggregate": {
+      "path": "data/logs/eval_results/aaa_full_return_label_train16_001_control/stats_ckpt_59_train.json",
+      "sha256": "db7c760562751b1317b3c0e8c9c922a6193e262d39e6d823908ba54a70d9552c"
+    }
+  },
+  "config": {
+    "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 16,
+    "seed": 100,
+    "dataset_path": "research/results/full_return_label_train16/sampling_001/train16_bertidx.json.gz",
+    "sampling_manifest": "research/results/full_return_label_train16/sampling_001/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261007,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Full native continuation of outcome-blind state and two deployable candidate alternatives",
+      "selection": "State and alternatives selected from metadata, masks and native graph logits only; no goal, reference route, branch outcome or final metric",
+      "candidate_alternatives": [
+        "highest_nonselected_native_logit",
+        "seeded_valid_graph_id"
+      ],
+      "bootstrap_seed": 20261007,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "Outcome-blind full-return diagnostic before any scorer fitting.",
+    "limits": "16 training routes / 8 new-to-diagnostics scenes, one simulator seed. Privileged alternative rollout analysis; no learned model or held-out claim.",
+    "sampling": {
+      "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+      "exclude_sources": [
+        "research/results/graph_option_pilot/train8_sampling/manifest.json",
+        "research/results/graph_option_train64/sampling_001/manifest.json",
+        "research/results/continuation_label_train64/sampling_001/manifest.json",
+        "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl"
+      ],
+      "scenes": 8,
+      "routes_per_scene": 2,
+      "seed": 20261007
+    },
+    "continuation_protocol": "research/FULL_RETURN_LABEL_NEXT_GATE.md",
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+    "outcome_blind_schedule": {
+      "state_seed": 20261007,
+      "random_alternative_seed": 20261008,
+      "one_state_per_route": true,
+      "allow_failed_routes": true,
+      "selection_excludes": [
+        "goal_distance",
+        "reference_route",
+        "branch_progress",
+        "episode_metrics",
+        "success",
+        "SPL",
+        "nDTW"
+      ]
+    }
+  },
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "metrics": {
+    "steps_taken": 57.6875,
+    "distance_to_goal": 1.3093308812967734,
+    "success": 0.875,
+    "oracle_success": 0.9375,
+    "path_length": 9.473908573389053,
+    "collisions": 0.018614592357611787,
+    "spl": 0.8414642185615981,
+    "ndtw": 0.9000467471878317,
+    "sdtw": 0.8172696489356037,
+    "ghost_cnt": 22.5625,
+    "high_level_steps": 8.25,
+    "policy_stop_count": 0.9375,
+    "forced_stop_count": 0.0625,
+    "forced_stop_max_len_count": 0.0625,
+    "forced_stop_no_vp_count": 0.0,
+    "policy_stop_rate": 0.12963408119658118,
+    "forced_stop_rate": 0.004166666666666667,
+    "actual_stop_rate": 0.13380074786324786
+  },
+  "limits": "Metric equality tests tracing only; does not establish alternative-action validity or runtime neutrality."
+}

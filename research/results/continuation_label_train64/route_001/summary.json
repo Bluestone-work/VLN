@@ -1,0 +1,453 @@
+{
+  "experiment_id": "CONTINUATION-LABEL-TRAIN64-001-ROUTE",
+  "source_experiment": "CONTINUATION-LABEL-TRAIN64-001",
+  "episodes": 64,
+  "scenes": 16,
+  "eligible_states": 405,
+  "eligible_nonstop_branches": 3933,
+  "baseline_reconstruction_gate_passed": true,
+  "native_metric_comparisons": 192,
+  "max_native_metric_delta": 0.0,
+  "selected_route_sentinels_passed": 405,
+  "metrics": {
+    "joint_cost_gain_m": {
+      "mean_m": 0.025680092602600287,
+      "median_m": 0.0,
+      "material_states": 13,
+      "material_episodes": 11,
+      "material_scenes": 8,
+      "positive_states": 22,
+      "episode_bootstrap": {
+        "clusters": 64,
+        "decision_weighted_mean_m": 0.025680092602600287,
+        "equal_cluster_mean_m": 0.02417795500008478,
+        "ci95_m": [
+          0.013262880561777405,
+          0.03978629549968192
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 16,
+        "decision_weighted_mean_m": 0.025680092602600287,
+        "equal_cluster_mean_m": 0.02662733332662408,
+        "ci95_m": [
+          0.013859683823131302,
+          0.03785744662492299
+        ]
+      }
+    },
+    "route_matched_gain_m": {
+      "mean_m": 0.008900478813383314,
+      "median_m": 0.0,
+      "material_states": 6,
+      "material_episodes": 5,
+      "material_scenes": 3,
+      "positive_states": 7,
+      "episode_bootstrap": {
+        "clusters": 64,
+        "decision_weighted_mean_m": 0.008900478813383314,
+        "equal_cluster_mean_m": 0.006996429771451013,
+        "ci95_m": [
+          0.0019096409608940473,
+          0.017716975540832694
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 16,
+        "decision_weighted_mean_m": 0.008900478813383314,
+        "equal_cluster_mean_m": 0.008201769655092683,
+        "ci95_m": [
+          0.0003123379212336677,
+          0.019189824757774185
+        ]
+      }
+    },
+    "endpoint_only_gain_m": {
+      "mean_m": 0.01279298530684577,
+      "median_m": 0.0,
+      "material_states": 7,
+      "material_episodes": 6,
+      "material_scenes": 4,
+      "positive_states": 9,
+      "episode_bootstrap": {
+        "clusters": 64,
+        "decision_weighted_mean_m": 0.01279298530684577,
+        "equal_cluster_mean_m": 0.009632947355774895,
+        "ci95_m": [
+          0.0035917122707173634,
+          0.024121306852850473
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 16,
+        "decision_weighted_mean_m": 0.01279298530684577,
+        "equal_cluster_mean_m": 0.011502888136184032,
+        "ci95_m": [
+          0.00278752716860829,
+          0.023996363496712955
+        ]
+      }
+    }
+  },
+  "by_scene": {
+    "data/scene_datasets/mp3d/1LXtFkjw3qL/1LXtFkjw3qL.glb": {
+      "states": 23,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/5q7pvUzZiYa/5q7pvUzZiYa.glb": {
+      "states": 21,
+      "joint_cost_gain_m": 0.05441725254058838,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/82sE5b5pLXE/82sE5b5pLXE.glb": {
+      "states": 31,
+      "joint_cost_gain_m": 0.04846863592824628,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb": {
+      "states": 23,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/Pm6F8kyY3z2/Pm6F8kyY3z2.glb": {
+      "states": 19,
+      "joint_cost_gain_m": 0.03928990113107782,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/S9hNv5qa7GM/S9hNv5qa7GM.glb": {
+      "states": 29,
+      "joint_cost_gain_m": 0.054554832392725454,
+      "route_matched_gain_m": 0.04612115333820212,
+      "route_material_states": 2
+    },
+    "data/scene_datasets/mp3d/Uxmj2M2itWa/Uxmj2M2itWa.glb": {
+      "states": 30,
+      "joint_cost_gain_m": 0.030756060282389322,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/V2XKFyX4ASd/V2XKFyX4ASd.glb": {
+      "states": 28,
+      "joint_cost_gain_m": 0.056032768317631314,
+      "route_matched_gain_m": 0.056032768317631314,
+      "route_material_states": 3
+    },
+    "data/scene_datasets/mp3d/VLzqgDo317F/VLzqgDo317F.glb": {
+      "states": 41,
+      "joint_cost_gain_m": 0.00164177359604254,
+      "route_matched_gain_m": 0.00164177359604254,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb": {
+      "states": 17,
+      "joint_cost_gain_m": 0.06078445210176356,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb": {
+      "states": 23,
+      "joint_cost_gain_m": 0.057266443967819214,
+      "route_matched_gain_m": 0.02743261922960696,
+      "route_material_states": 1
+    },
+    "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb": {
+      "states": 30,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb": {
+      "states": 26,
+      "joint_cost_gain_m": 0.008903411718515249,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/sKLMLpTHeUy/sKLMLpTHeUy.glb": {
+      "states": 20,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/sT4fr6TAbpF/sT4fr6TAbpF.glb": {
+      "states": 20,
+      "joint_cost_gain_m": 0.012109661102294922,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/ur6pFq6Qu1A/ur6pFq6Qu1A.glb": {
+      "states": 24,
+      "joint_cost_gain_m": 0.0018121401468912761,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    }
+  },
+  "material_goal_best_gate_counts": {
+    "states": 13,
+    "endpoint_pass": 7,
+    "cost_pass": 12,
+    "both_pass": 6
+  },
+  "examples_route_retained": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/S9hNv5qa7GM/S9hNv5qa7GM.glb",
+      "episode_id": "10121",
+      "high_level_step": 3,
+      "trajectory_id": "6809",
+      "baseline_episode_success": 1.0,
+      "selected_index": 12,
+      "goal_best_index": 11,
+      "route_best_index": 11,
+      "selected_progress_m": -1.4224624633789062,
+      "joint_cost_gain_m": 1.0569887161254883,
+      "route_matched_gain_m": 1.0569887161254883,
+      "endpoint_only_gain_m": 1.0569887161254883,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": -8.55717320141507,
+      "selected_reference_endpoint": 15,
+      "goal_best_reference_endpoint": 15,
+      "route_best_reference_endpoint": 15,
+      "selected_primitives": 30,
+      "route_best_primitives": 27,
+      "selected_path_m": 3.1982530507097735,
+      "route_best_path_m": 1.9999998591058057
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/V2XKFyX4ASd/V2XKFyX4ASd.glb",
+      "episode_id": "1773",
+      "high_level_step": 13,
+      "trajectory_id": "1143",
+      "baseline_episode_success": 1.0,
+      "selected_index": 26,
+      "goal_best_index": 24,
+      "route_best_index": 24,
+      "selected_progress_m": -1.4068691730499268,
+      "joint_cost_gain_m": 0.7338645458221436,
+      "route_matched_gain_m": 0.7338645458221436,
+      "endpoint_only_gain_m": 0.7338645458221436,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": -26.878444866782957,
+      "selected_reference_endpoint": 21,
+      "goal_best_reference_endpoint": 21,
+      "route_best_reference_endpoint": 21,
+      "selected_primitives": 71,
+      "route_best_primitives": 5,
+      "selected_path_m": 6.56894136095423,
+      "route_best_path_m": 0.7499997121585141
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb",
+      "episode_id": "7581",
+      "high_level_step": 5,
+      "trajectory_id": "5063",
+      "baseline_episode_success": 1.0,
+      "selected_index": 21,
+      "goal_best_index": 20,
+      "route_best_index": 20,
+      "selected_progress_m": 0.28043293952941895,
+      "joint_cost_gain_m": 0.6309502422809601,
+      "route_matched_gain_m": 0.6309502422809601,
+      "endpoint_only_gain_m": 0.6309502422809601,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": -2.003877309747601,
+      "selected_reference_endpoint": 32,
+      "goal_best_reference_endpoint": 32,
+      "route_best_reference_endpoint": 32,
+      "selected_primitives": 7,
+      "route_best_primitives": 7,
+      "selected_path_m": 1.5000015470633323,
+      "route_best_path_m": 0.9999993870896916
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/V2XKFyX4ASd/V2XKFyX4ASd.glb",
+      "episode_id": "6126",
+      "high_level_step": 0,
+      "trajectory_id": "4037",
+      "baseline_episode_success": 1.0,
+      "selected_index": 2,
+      "goal_best_index": 3,
+      "route_best_index": 3,
+      "selected_progress_m": 0.21422958374023438,
+      "joint_cost_gain_m": 0.43703794479370117,
+      "route_matched_gain_m": 0.43703794479370117,
+      "endpoint_only_gain_m": 0.43703794479370117,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": -3.5089493749138017,
+      "selected_reference_endpoint": 4,
+      "goal_best_reference_endpoint": 4,
+      "route_best_reference_endpoint": 4,
+      "selected_primitives": 15,
+      "route_best_primitives": 13,
+      "selected_path_m": 1.9756174685393018,
+      "route_best_path_m": 1.250000229492777
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/V2XKFyX4ASd/V2XKFyX4ASd.glb",
+      "episode_id": "1773",
+      "high_level_step": 5,
+      "trajectory_id": "1143",
+      "baseline_episode_success": 1.0,
+      "selected_index": 15,
+      "goal_best_index": 16,
+      "route_best_index": 16,
+      "selected_progress_m": -0.7964038848876953,
+      "joint_cost_gain_m": 0.39801502227783203,
+      "route_matched_gain_m": 0.39801502227783203,
+      "endpoint_only_gain_m": 0.39801502227783203,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": -7.452555565928243,
+      "selected_reference_endpoint": 21,
+      "goal_best_reference_endpoint": 21,
+      "route_best_reference_endpoint": 21,
+      "selected_primitives": 57,
+      "route_best_primitives": 26,
+      "selected_path_m": 5.7500016757745716,
+      "route_best_path_m": 2.7500007351188933
+    }
+  ],
+  "examples_route_rejected": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/82sE5b5pLXE/82sE5b5pLXE.glb",
+      "episode_id": "9989",
+      "high_level_step": 8,
+      "trajectory_id": "6714",
+      "baseline_episode_success": 0.0,
+      "selected_index": 29,
+      "goal_best_index": 28,
+      "route_best_index": 29,
+      "selected_progress_m": -0.5515921115875244,
+      "joint_cost_gain_m": 1.5025277137756348,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 1.5025277137756348,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": false,
+      "goal_best_route_gate": false,
+      "goal_best_route_cost_delta": 1.1867371020387,
+      "selected_reference_endpoint": 52,
+      "goal_best_reference_endpoint": 56,
+      "route_best_reference_endpoint": 52,
+      "selected_primitives": 10,
+      "route_best_primitives": 10,
+      "selected_path_m": 1.0000022670475797,
+      "route_best_path_m": 1.0000022670475797
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "episode_id": "7399",
+      "high_level_step": 1,
+      "trajectory_id": "4924",
+      "baseline_episode_success": 0.0,
+      "selected_index": 10,
+      "goal_best_index": 7,
+      "route_best_index": 10,
+      "selected_progress_m": 0.14053630828857422,
+      "joint_cost_gain_m": 0.9593982696533203,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 0.0,
+      "goal_best_endpoint_gate": false,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": false,
+      "goal_best_route_cost_delta": -1.8572278335999286,
+      "selected_reference_endpoint": 14,
+      "goal_best_reference_endpoint": 12,
+      "route_best_reference_endpoint": 14,
+      "selected_primitives": 12,
+      "route_best_primitives": 12,
+      "selected_path_m": 2.250000522778173,
+      "route_best_path_m": 2.250000522778173
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/5q7pvUzZiYa/5q7pvUzZiYa.glb",
+      "episode_id": "10319",
+      "high_level_step": 5,
+      "trajectory_id": "6950",
+      "baseline_episode_success": 1.0,
+      "selected_index": 21,
+      "goal_best_index": 20,
+      "route_best_index": 21,
+      "selected_progress_m": -0.17675399780273438,
+      "joint_cost_gain_m": 0.8123499155044556,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 0.0,
+      "goal_best_endpoint_gate": false,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": false,
+      "goal_best_route_cost_delta": -8.4773899047483,
+      "selected_reference_endpoint": 36,
+      "goal_best_reference_endpoint": 31,
+      "route_best_reference_endpoint": 36,
+      "selected_primitives": 13,
+      "route_best_primitives": 13,
+      "selected_path_m": 2.9999961865730342,
+      "route_best_path_m": 2.9999961865730342
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/Pm6F8kyY3z2/Pm6F8kyY3z2.glb",
+      "episode_id": "4386",
+      "high_level_step": 3,
+      "trajectory_id": "2915",
+      "baseline_episode_success": 1.0,
+      "selected_index": 13,
+      "goal_best_index": 12,
+      "route_best_index": 13,
+      "selected_progress_m": -0.1795516014099121,
+      "joint_cost_gain_m": 0.7465081214904785,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 0.0,
+      "goal_best_endpoint_gate": false,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": false,
+      "goal_best_route_cost_delta": -6.04825267239903,
+      "selected_reference_endpoint": 27,
+      "goal_best_reference_endpoint": 21,
+      "route_best_reference_endpoint": 27,
+      "selected_primitives": 10,
+      "route_best_primitives": 10,
+      "selected_path_m": 2.338690320129019,
+      "route_best_path_m": 2.338690320129019
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb",
+      "episode_id": "10587",
+      "high_level_step": 2,
+      "trajectory_id": "7144",
+      "baseline_episode_success": 0.0,
+      "selected_index": 13,
+      "goal_best_index": 7,
+      "route_best_index": 13,
+      "selected_progress_m": -0.3785064220428467,
+      "joint_cost_gain_m": 0.6861779689788818,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 0.0,
+      "goal_best_endpoint_gate": false,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": false,
+      "goal_best_route_cost_delta": -8.237829892701328,
+      "selected_reference_endpoint": 17,
+      "goal_best_reference_endpoint": 15,
+      "route_best_reference_endpoint": 17,
+      "selected_primitives": 13,
+      "route_best_primitives": 13,
+      "selected_path_m": 2.305926918625646,
+      "route_best_path_m": 2.305926918625646
+    }
+  ],
+  "privileged_analysis_only": true,
+  "learned_model_evaluated": false,
+  "limits": "Conservative geometric ordered-prefix proxy; no semantic certificate, causal decomposition or counterfactual full-episode score. Monotonic commitment and fixed selected endpoint can penalize recovery/further progress. Bootstrap is descriptive."
+}

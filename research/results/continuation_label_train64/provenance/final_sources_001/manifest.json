@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-10-07T04:58:16.450814+00:00",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "source_rollout_seed": 100,
+  "source_rollout_split": "train",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "checkpoint_sha256": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+  "analysis_environment": {
+    "EGL_PLATFORM": "surfaceless",
+    "CUDA_VISIBLE_DEVICES": "0"
+  },
+  "followup_type": "offline post-hoc only; no new simulator rollout or model",
+  "source_runs": [
+    "research/results/single_intervention_train7/enabled_001/manifest.json",
+    "research/results/continuation_label_train64/enabled_001/manifest.json"
+  ],
+  "commands": [
+    "research/tools/decompose_continuation_costs.py --config research/configs/CONTINUATION_COST_DECOMPOSITION_001.json --output-dir research/results/continuation_label_train64/cost_decomposition_001",
+    "research/tools/analyze_equal_primitive_budget.py --config research/configs/EQUAL_PRIMITIVE_CONTINUATION_001.json --output-dir research/results/continuation_label_train64/equal_primitive_001",
+    "research/tools/plot_continuation_diagnostics.py --summary research/results/continuation_label_train64/cost_decomposition_001/summary.json --output-dir research/results/continuation_label_train64/figures_001"
+  ],
+  "executor": "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+  "hashes": {
+    "research/tools/prepare_continuation_sample.py": "12028623db14560a79416feb7660384ce592570225e8d297c9129b7072edd0d5",
+    "research/tools/prepare_continuation_schedule.py": "d4554c8c57b38b4c13e06e6980b5743683a4b29b14cb1278125efa3a4be00e5a",
+    "research/tools/continuation_labels.py": "c15e778245a8a9651dd2cf7cc6daab452b5aa1d54c02601c7d15079739f4b2f3",
+    "research/tools/analyze_prospective_continuation.py": "29d1341590346c0d344bc9669ef29e45d262e8eb5063ffb25173f2c8d13fc5a4",
+    "research/tools/run_continuation_cycle.py": "368a7a23735b602df4f2acef3fa2e3b71038ba2a1aa468d1fe50911b57294019",
+    "research/tools/audit_single_intervention.py": "8d0bb2b0555a8f03759e2ff9f7c41f5c0f962a92100583e69ff4b5867e9d6627",
+    "research/tools/test_continuation_labels.py": "45487d339379084308b42fc36759080591900387370ce9f2b8c1a5c43b0418c3",
+    "research/tools/test_single_intervention_audit.py": "e838a73985b9e3954935e73074ecc9255fd17a772a0487692007c22276c1edc8",
+    "research/tools/decompose_continuation_costs.py": "b704d59e0930b60f6bbbc32791a523cbafe6f275869403bfd7f3963a26316925",
+    "research/tools/analyze_equal_primitive_budget.py": "ad7fbfaf951aba28252d185aaacd0ebfd39ff52d1da4b5d68b05872f2cd3fb53",
+    "research/tools/plot_continuation_diagnostics.py": "25ccacde3ef4b7756831f1b4b0830ff07cce0aa7166292f17930740a8bd78b1a",
+    "research/tools/run_single_intervention.py": "d5b9e8310273e5870de11c37e21edff47e3f8032e67b1b082e90a29b9242f9a0",
+    "research/tools/verify_intervention_metrics.py": "141fa04916be8c79afa0dfe5a78c98ea3b55f1ed0bdec93a51ddbe81720843a9",
+    "research/tools/analyze_continuation_horizon.py": "7a846c1a1005190a6702b21d535d2b5f1f6e43d073cbce0afab4297c6f73e11f",
+    "research/tools/route_alignment.py": "de864d584766d90401c04d4bba1f2f2fab7debc6611c0961d853196cb48c6031",
+    "vlnce_baselines/adaptive_action/single_intervention.py": "2274f37666a7c531b334115f7cf616cf1150f7a68e42937e020df4477bd285cd",
+    "research/configs/CONTINUATION_LABEL_TRAIN64_001.json": "b39b5c82343369307aac31342eff4a38a8abe876681aceab369613fafd810773",
+    "research/configs/CONTINUATION_LABEL_ROUTE_001.json": "66030321ea1bd07b301d2ffeba2aa298e503d5e236b670d1f505b9b0608da199",
+    "research/configs/CONTINUATION_COST_DECOMPOSITION_001.json": "cf37b138bea1c8e43740ea8ac7bbb0504aa51a720f2a4e146b214ec3bac640d7",
+    "research/configs/EQUAL_PRIMITIVE_CONTINUATION_001.json": "705c17f61775382962fecfea058e1d7b18be2eabf4921040ff56fa9fa6d0ed06",
+    "research/CONTINUATION_LABEL_PROTOCOL.md": "fcbad1dee510c65940f8b073b03e7b2efe2bbdaf73ac78f94a530fa553098264",
+    "research/CONTINUATION_LABEL_REPORT.md": "e22bc0f773210255bdc5419d2090ba0e9c9593ce9e8e968876a54336fd89e4b1",
+    "research/FULL_RETURN_LABEL_NEXT_GATE.md": "2470d71749a06dbcd57d155a2a56ca46b5f9458394881c34453b4c497c95a39a",
+    "research/AAA_CODE_AUDIT.md": "7ad0e0ce242f286cd29eb6267387b3fce0816f45ae2874434e1e63870dea5d1f",
+    "research/BASELINE_REPORT.md": "1bb0ef775c6519cef4dc9323cbfb2459cd2aa8c0cd74e82269f22f79275e6aab",
+    "research/FAILURE_ANALYSIS.md": "14cdc99925769d87b618abd1402273087a545feb5e7706e13233506d03e6fe3c",
+    "research/RESEARCH_LOG.md": "c90f97a30b78dd8504612115ce405493808f05b5511703575faf35a79a435753",
+    "research/REPORT.md": "0ca6b6abe6ad447d2cc58a3fd74752921c03726e34921a84ed9ec781b93d9e28",
+    "research/RESEARCH_STATUS_CN.md": "8888dd31023672f071c086e34023c1d3672733836408441edf7e0cf8756b7c83",
+    "research/EXPERIMENT_TABLE.md": "e0c398447474c56f41d1cf3ef1ba7c3879130419e941a22d4717c18fe6cecb41",
+    "research/GRAPH_DECISION_NEXT_GATE.md": "256e47d64187dff426d9cb057812c17668e89cfd6e39476dc27f805dfc07c97a",
+    "research/OPTION_LABEL_PROTOCOL.md": "b4ae239357593615a77f1b53167bea71db0337713e342b0d76e78e521480e850"
+  },
+  "core_tracked_diff_unchanged": true,
+  "frozen_primary_protocol_and_config_unchanged": true
+}

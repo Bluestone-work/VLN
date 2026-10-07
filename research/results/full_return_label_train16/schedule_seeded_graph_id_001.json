@@ -1,0 +1,1747 @@
+{
+  "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001-SEEDED_GRAPH_ID",
+  "status": "frozen_before_continuation",
+  "analysis_only_oracle": true,
+  "expected_event_count": 16,
+  "base_experiment_config": "research/configs/FULL_RETURN_LABEL_TRAIN16_001.json",
+  "protocol": "research/FULL_RETURN_LABEL_NEXT_GATE.md",
+  "selection_rule": "One non-STOP state per route and candidate selected from graph IDs/masks/logits only; no outcomes or goal/reference data",
+  "events": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "episode_id": "3716",
+      "high_level_step": 0,
+      "trajectory_id": "2464",
+      "baseline_index": 3,
+      "alternative_index": 4,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.3672099113464355,
+            0.07244700193405151,
+            -4.303619861602783
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            2.341429871844259,
+            0.07244700193405151,
+            -2.5538097606023156
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.3672099113464355,
+            0.07244700193405151,
+            -4.303619861602783
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.7774604922225565,
+            0.07244700193405151,
+            -3.8402672716207618
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "g0",
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          2.3672099113464355,
+          0.07244700193405151,
+          -4.303619861602783
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 5.303514003753662,
+      "alternative_logit": -1.9671316146850586
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "episode_id": "3373",
+      "high_level_step": 0,
+      "trajectory_id": "2223",
+      "baseline_index": 3,
+      "alternative_index": 2,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.325719833374023,
+            0.16362358629703522,
+            1.8356200456619263
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -7.39542080583259,
+            0.16362358629703522,
+            0.7223050023048214
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.325719833374023,
+            0.16362358629703522,
+            1.8356200456619263
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -7.385089088693242,
+            0.16362358629703522,
+            2.5768297995540066
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "g0",
+        "g1",
+        "g2"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -7.325719833374023,
+          0.16362358629703522,
+          1.8356200456619263
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 0.9594098329544067,
+      "alternative_logit": -4.479891300201416
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/D7G3Y4RVNrH/D7G3Y4RVNrH.glb",
+      "episode_id": "2101",
+      "high_level_step": 2,
+      "trajectory_id": "1354",
+      "baseline_index": 10,
+      "alternative_index": 11,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -1.494586706161499,
+            2.4407129287719727,
+            -5.957699298858643
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -1.4071431915422088,
+            2.4407129287719727,
+            -7.204637000490535
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -1.494586706161499,
+            2.4407129287719727,
+            -5.957699298858643
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -0.2816569369788424,
+            2.4407129287719727,
+            -6.259860472788231
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g4",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -1.494586706161499,
+          2.4407129287719727,
+          -5.957699298858643
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 2.227306604385376,
+      "alternative_logit": -3.7940897941589355
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/D7G3Y4RVNrH/D7G3Y4RVNrH.glb",
+      "episode_id": "9935",
+      "high_level_step": 5,
+      "trajectory_id": "6674",
+      "baseline_index": 15,
+      "alternative_index": 9,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            -1.670139193534851,
+            0.04071307182312012,
+            -4.742293357849121
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            -1.652982628854384,
+            0.04071307182312012,
+            -3.6269305356929493
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g13",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "4",
+              {
+                "__array__": [
+                  -1.4659737348556519,
+                  0.04071307182312012,
+                  -5.721230506896973
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "3",
+              {
+                "__array__": [
+                  -1.5361719131469727,
+                  0.04071307182312012,
+                  -6.969258785247803
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -1.3320064544677734,
+                  0.04071307182312012,
+                  -7.948195934295654
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -1.0257582664489746,
+                  0.04071307182312012,
+                  -9.41659927368164
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            -1.0257582664489746,
+            0.04071307182312012,
+            -9.41659927368164
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            0.21688479399974603,
+            0.04071307182312012,
+            -9.552017973714676
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "g1",
+        "g2",
+        "g4",
+        "g5",
+        "g7",
+        "g8",
+        "g9",
+        "g12",
+        "g13"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -1.670139193534851,
+          0.04071307182312012,
+          -4.742293357849121
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 1.2681587934494019,
+      "alternative_logit": -5.810234546661377
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/GdvgFV5R1Z5/GdvgFV5R1Z5.glb",
+      "episode_id": "9871",
+      "high_level_step": 4,
+      "trajectory_id": "6633",
+      "baseline_index": 14,
+      "alternative_index": 15,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "4",
+        "front_pos": {
+          "__array__": [
+            -2.2584757804870605,
+            0.16666600108146667,
+            2.6995816230773926
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "4",
+        "ghost_pos": {
+          "__array__": [
+            -2.8772858998393156,
+            0.16666600108146667,
+            3.3077930828865094
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g12",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "4",
+        "front_pos": {
+          "__array__": [
+            -2.2584757804870605,
+            0.16666600108146667,
+            2.6995816230773926
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "4",
+        "ghost_pos": {
+          "__array__": [
+            -2.2264527107852663,
+            0.16666600108146667,
+            0.6998380087590785
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g13",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "g0",
+        "g2",
+        "g3",
+        "g4",
+        "g6",
+        "g8",
+        "g9",
+        "g10",
+        "g12",
+        "g13",
+        "g14",
+        "g15"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -2.2584757804870605,
+          0.16666600108146667,
+          2.6995816230773926
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 1.2303766012191772,
+      "alternative_logit": -6.637974262237549
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/GdvgFV5R1Z5/GdvgFV5R1Z5.glb",
+      "episode_id": "9559",
+      "high_level_step": 2,
+      "trajectory_id": "6398",
+      "baseline_index": 8,
+      "alternative_index": 4,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.0062222480773926,
+            0.16666600108146667,
+            2.608959913253784
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.0583566051732674,
+            0.16666600108146667,
+            0.609639526519782
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.7996420860290527,
+                  0.16666600108146667,
+                  3.2176339626312256
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -4.0389299392700195,
+                  0.16666600108146667,
+                  3.05433988571167
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -4.0389299392700195,
+            0.16666600108146667,
+            3.05433988571167
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -3.461546373593907,
+            0.16666600108146667,
+            3.363864098071028
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g6",
+        "g7"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -2.0062222480773926,
+          0.16666600108146667,
+          2.608959913253784
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 3.6294662952423096,
+      "alternative_logit": -6.748703956604004
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/JF19kD82Mey/JF19kD82Mey.glb",
+      "episode_id": "8891",
+      "high_level_step": 10,
+      "trajectory_id": "5930",
+      "baseline_index": 26,
+      "alternative_index": 13,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "10",
+        "front_pos": {
+          "__array__": [
+            -0.8233900666236877,
+            3.318902015686035,
+            0.44220322370529175
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "10",
+        "ghost_pos": {
+          "__array__": [
+            -1.6243450140040798,
+            3.318902015686035,
+            1.0265268430995764
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g24",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "9",
+              {
+                "__array__": [
+                  0.6344774961471558,
+                  3.318902015686035,
+                  0.08918428421020508
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "8",
+              {
+                "__array__": [
+                  1.6341841220855713,
+                  3.318902015686035,
+                  0.11340683698654175
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "7",
+              {
+                "__array__": [
+                  2.8334007263183594,
+                  3.318902015686035,
+                  0.4660821557044983
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "6",
+              {
+                "__array__": [
+                  4.083033561706543,
+                  3.318902015686035,
+                  0.4963603913784027
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "5",
+              {
+                "__array__": [
+                  5.297924041748047,
+                  3.318902015686035,
+                  0.20217794179916382
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "4",
+              {
+                "__array__": [
+                  7.047410011291504,
+                  3.318902015686035,
+                  0.244567409157753
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "3",
+              {
+                "__array__": [
+                  8.546969413757324,
+                  3.318902015686035,
+                  0.28090131282806396
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  9.199100494384766,
+                  3.318902015686035,
+                  0.9218854904174805
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  8.10174560546875,
+                  3.318902015686035,
+                  1.5204800367355347
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "10",
+        "front_pos": {
+          "__array__": [
+            8.10174560546875,
+            3.318902015686035,
+            1.5204800367355347
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            7.3830485430132935,
+            3.318902015686035,
+            1.734896762803948
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "g0",
+        "g1",
+        "g4",
+        "g5",
+        "g6",
+        "g8",
+        "g10",
+        "g11",
+        "g13",
+        "g16",
+        "g17",
+        "g19",
+        "g21",
+        "g23",
+        "g24"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -0.8233900666236877,
+          3.318902015686035,
+          0.44220322370529175
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 1.701246976852417,
+      "alternative_logit": -7.488479137420654
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/JF19kD82Mey/JF19kD82Mey.glb",
+      "episode_id": "2451",
+      "high_level_step": 6,
+      "trajectory_id": "1583",
+      "baseline_index": 15,
+      "alternative_index": 14,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            12.432642936706543,
+            3.318902015686035,
+            0.2482096552848816
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            11.183099462786398,
+            3.318902015686035,
+            0.214429383178609
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g13",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            12.432642936706543,
+            3.318902015686035,
+            0.2482096552848816
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            13.648352147473046,
+            3.318902015686035,
+            -0.042567088725856184
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g12",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "g0",
+        "g2",
+        "g4",
+        "g7",
+        "g9",
+        "g10",
+        "g12",
+        "g13"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          12.432642936706543,
+          3.318902015686035,
+          0.2482096552848816
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 1.8076306581497192,
+      "alternative_logit": -6.2220258712768555
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "episode_id": "7085",
+      "high_level_step": 0,
+      "trajectory_id": "4707",
+      "baseline_index": 5,
+      "alternative_index": 6,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -9.426969528198242,
+            3.115546703338623,
+            -2.0102601051330566
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -11.494695671283596,
+            3.115546703338623,
+            -2.8973951552812114
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -9.426969528198242,
+            3.115546703338623,
+            -2.0102601051330566
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -9.991097670125816,
+            3.115546703338623,
+            -2.504486206715464
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "g0",
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -9.426969528198242,
+          3.115546703338623,
+          -2.0102601051330566
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 3.4801738262176514,
+      "alternative_logit": -2.3391897678375244
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "episode_id": "6235",
+      "high_level_step": 6,
+      "trajectory_id": "4121",
+      "baseline_index": 23,
+      "alternative_index": 13,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -10.294650077819824,
+            0.11554622650146484,
+            -9.083986282348633
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            -7.559161884265112,
+            0.11554622650146484,
+            -9.366128698377807
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g21",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "5",
+              {
+                "__array__": [
+                  -12.035417556762695,
+                  0.11554622650146484,
+                  -8.90444278717041
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "4",
+              {
+                "__array__": [
+                  -13.250654220581055,
+                  0.11554622650146484,
+                  -8.025124549865723
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "3",
+              {
+                "__array__": [
+                  -13.045461654663086,
+                  0.11554622650146484,
+                  -6.035679817199707
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -13.322577476501465,
+                  0.11554622650146484,
+                  -4.307759761810303
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -13.322577476501465,
+            0.11554622650146484,
+            -4.307759761810303
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -12.150151408854345,
+            0.11554622650146484,
+            -2.6874458675597133
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "g0",
+        "g2",
+        "g4",
+        "g5",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12",
+        "g15",
+        "g16",
+        "g18",
+        "g19",
+        "g20",
+        "g21",
+        "g22",
+        "g23",
+        "g24"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -10.294650077819824,
+          0.11554622650146484,
+          -9.083986282348633
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 2.605456590652466,
+      "alternative_logit": -7.711577415466309
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/VzqfbhrpDEA/VzqfbhrpDEA.glb",
+      "episode_id": "7537",
+      "high_level_step": 1,
+      "trajectory_id": "5034",
+      "baseline_index": 8,
+      "alternative_index": 4,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -27.60248565673828,
+            0.09100902080535889,
+            -0.1712193489074707
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -28.07503251533281,
+            0.09100902080535889,
+            -1.856211772164157
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -27.4906005859375,
+                  0.09100902080535889,
+                  1.5751999616622925
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -27.4906005859375,
+            0.09100902080535889,
+            1.5751999616622925
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -28.09491855448017,
+            0.09100902080535889,
+            1.8947890956029072
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -27.60248565673828,
+          0.09100902080535889,
+          -0.1712193489074707
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 1.805705189704895,
+      "alternative_logit": -4.198647499084473
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/VzqfbhrpDEA/VzqfbhrpDEA.glb",
+      "episode_id": "7585",
+      "high_level_step": 4,
+      "trajectory_id": "5064",
+      "baseline_index": 14,
+      "alternative_index": 12,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "4",
+        "front_pos": {
+          "__array__": [
+            -28.326770782470703,
+            0.09100902080535889,
+            3.049569606781006
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "4",
+        "ghost_pos": {
+          "__array__": [
+            -28.286262962198716,
+            0.09100902080535889,
+            4.298913080969275
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g12",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "3",
+              {
+                "__array__": [
+                  -28.453777313232422,
+                  0.09100902080535889,
+                  1.5549554824829102
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "4",
+        "front_pos": {
+          "__array__": [
+            -28.453777313232422,
+            0.09100902080535889,
+            1.5549554824829102
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -27.752202977859582,
+            0.09100902080535889,
+            0.5204056035760702
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "g0",
+        "g1",
+        "g3",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g12",
+        "g13"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -28.326770782470703,
+          0.09100902080535889,
+          3.049569606781006
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 2.2055718898773193,
+      "alternative_logit": -7.6221771240234375
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/i5noydFURQK/i5noydFURQK.glb",
+      "episode_id": "5703",
+      "high_level_step": 5,
+      "trajectory_id": "3767",
+      "baseline_index": 13,
+      "alternative_index": 7,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            -0.24023199081420898,
+            0.18682312965393066,
+            5.70168399810791
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            -0.7843634614635531,
+            0.18682312965393066,
+            4.5763303014200725
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g11",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "4",
+              {
+                "__array__": [
+                  0.7399920225143433,
+                  0.18682312965393066,
+                  6.837095260620117
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  2.260620355606079,
+                  0.18682312965393066,
+                  6.823302268981934
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.562079906463623,
+                  0.18682312965393066,
+                  5.367010116577148
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            2.562079906463623,
+            0.18682312965393066,
+            5.367010116577148
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            2.635236357934964,
+            0.18682312965393066,
+            4.3696896396951574
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "g0",
+        "g1",
+        "g2",
+        "g5",
+        "g7",
+        "g10",
+        "g11",
+        "g12",
+        "g13"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -0.24023199081420898,
+          0.18682312965393066,
+          5.70168399810791
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 3.3912174701690674,
+      "alternative_logit": -6.645446300506592
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/i5noydFURQK/i5noydFURQK.glb",
+      "episode_id": "3023",
+      "high_level_step": 0,
+      "trajectory_id": "1999",
+      "baseline_index": 4,
+      "alternative_index": 2,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.5806900262832642,
+            0.18682312965393066,
+            1.1732900142669678
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -1.6825884606719228,
+            0.18682312965393066,
+            2.2799299769655867
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.5806900262832642,
+            0.18682312965393066,
+            1.1732900142669678
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -2.4362201983423244,
+            0.18682312965393066,
+            1.0795573769797469
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "g0",
+        "g1",
+        "g2"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -1.5806900262832642,
+          0.18682312965393066,
+          1.1732900142669678
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": -0.467633992433548,
+      "alternative_logit": -6.6276326179504395
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+      "episode_id": "2979",
+      "high_level_step": 5,
+      "trajectory_id": "1967",
+      "baseline_index": 14,
+      "alternative_index": 11,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            1.7286732196807861,
+            0.003321051597595215,
+            -16.176408767700195
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            2.4191005106150807,
+            0.003321051597595215,
+            -15.656234436618194
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g12",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "4",
+              {
+                "__array__": [
+                  2.079547882080078,
+                  0.003321051597595215,
+                  -18.34994888305664
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "3",
+              {
+                "__array__": [
+                  1.5688676834106445,
+                  0.003321051597595215,
+                  -19.209720611572266
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  0.6741125583648682,
+                  0.003321051597595215,
+                  -20.082599639892578
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            0.6741125583648682,
+            0.003321051597595215,
+            -20.082599639892578
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            1.4486798909537333,
+            0.003321051597595215,
+            -21.063693645218354
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "g0",
+        "g2",
+        "g4",
+        "g5",
+        "g6",
+        "g9",
+        "g11",
+        "g12",
+        "g13"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          1.7286732196807861,
+          0.003321051597595215,
+          -16.176408767700195
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 3.2892391681671143,
+      "alternative_logit": -7.860506057739258
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+      "episode_id": "2508",
+      "high_level_step": 3,
+      "trajectory_id": "1617",
+      "baseline_index": 12,
+      "alternative_index": 6,
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -0.8702980279922485,
+            0.15752652287483215,
+            1.8587853908538818
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -1.3803199918082245,
+            0.15752652287483215,
+            0.18475504572112555
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g10",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -2.130324363708496,
+                  0.003321051597595215,
+                  3.0732123851776123
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -3.3801121711730957,
+                  0.003321051597595215,
+                  3.0501811504364014
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -4.629899978637695,
+                  0.11778430640697479,
+                  3.0271499156951904
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -4.629899978637695,
+            0.11778430640697479,
+            3.0271499156951904
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -5.670837572786624,
+            0.11778430640697479,
+            1.9471272654292617
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g1",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -0.8702980279922485,
+          0.15752652287483215,
+          1.8587853908538818
+        ],
+        "dtype": "<f4"
+      },
+      "selection_kind": "seeded_graph_id",
+      "native_logit": 3.574305772781372,
+      "alternative_logit": -7.5416789054870605
+    }
+  ],
+  "omitted_routes_retained_as_controls": [],
+  "hashes": {
+    "research/configs/FULL_RETURN_LABEL_TRAIN16_001.json": "8e818d1259630c71608af5654fde3f0520c2f213fa9bd2936df5c6ceba7ef00c",
+    "research/FULL_RETURN_LABEL_NEXT_GATE.md": "2470d71749a06dbcd57d155a2a56ca46b5f9458394881c34453b4c497c95a39a",
+    "research/FULL_RETURN_TRAIN16_PROTOCOL.md": "6596dbfa13b511c332a41091e508b41f389eab3c11075b26c4a8f24950a46259",
+    "research/tools/prepare_outcome_blind_schedule.py": "3332535ec2686060cdf3773a532b783299d9f84bc0710c0e1fd577a7bbd501e9",
+    "research/results/full_return_label_train16/capture_001/graph_options/graph_options.jsonl": "f9487957e8cf4ef9b16344eb21c9a5f597812397717b9fd6600a5d681c2c7b3b",
+    "research/results/full_return_label_train16/capture_001/manifest.json": "b161b3403ed62b90b8773741e203b37f25bce39d476666e77b70212b80b24a9f",
+    "research/results/full_return_label_train16/sampling_001/manifest.json": "a6326b56df738feb18bbf4b0058d27583e867198a1a893a0a503e7590880b2d2"
+  }
+}

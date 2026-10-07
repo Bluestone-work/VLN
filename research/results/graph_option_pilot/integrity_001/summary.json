@@ -1,0 +1,19 @@
+{
+  "experiment_id": "GRAPH-OPTION-PILOT-001",
+  "integrity_gate_passed": true,
+  "branches": 978,
+  "forward_branches": 760,
+  "reverse_branches": 218,
+  "max_start_position_error_m": 0.0,
+  "max_start_rotation_error_rad": 4.2146848510894035e-08,
+  "max_start_goal_distance_error_m": 0.0,
+  "all_action_dictionaries_exact": true,
+  "all_start_rng_exact": true,
+  "all_admissibility_and_coverage_checks_passed": true,
+  "stop_branches": 79,
+  "branches_with_back_path": 662,
+  "primitive_events_including_repeats": 30763,
+  "collision_events_including_repeats": 322,
+  "raw_trace_sha256": "2155d322c39be3562cae03fe0322e99695ff2f6d0b3ddd9893cd69811bed1903",
+  "audit_source_sha256": "4dbbafc0f6a79336900d2c155ff95ac52881f1985354ddbb6f32b8ebbb04ba7a"
+}

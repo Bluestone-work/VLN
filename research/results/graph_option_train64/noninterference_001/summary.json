@@ -1,0 +1,109 @@
+{
+  "experiment_id": "GRAPH-OPTION-TRAIN64-001",
+  "baseline_noninterference_gate_passed": true,
+  "episode_comparison": {
+    "passed": true,
+    "episodes": 64,
+    "metric_comparisons": 1152,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "aggregate_comparison": {
+    "passed": true,
+    "episodes": 1,
+    "metric_comparisons": 18,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "sources": {
+    "capture_episodes": {
+      "path": "data/logs/eval_results/aaa_graph_option_train64_001_capture/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "b11921013fa49e907041fa9cec1cac3f5fe6037cf5d80f5c47690e4b261b9e98"
+    },
+    "capture_aggregate": {
+      "path": "data/logs/eval_results/aaa_graph_option_train64_001_capture/stats_ckpt_59_train.json",
+      "sha256": "3ef07126297ce754d8704a4c8f2e4502795c218cc3e89cd8bb47f41e1d581afd"
+    },
+    "control_episodes": {
+      "path": "data/logs/eval_results/aaa_graph_option_train64_001_control/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "b11921013fa49e907041fa9cec1cac3f5fe6037cf5d80f5c47690e4b261b9e98"
+    },
+    "control_aggregate": {
+      "path": "data/logs/eval_results/aaa_graph_option_train64_001_control/stats_ckpt_59_train.json",
+      "sha256": "3ef07126297ce754d8704a4c8f2e4502795c218cc3e89cd8bb47f41e1d581afd"
+    }
+  },
+  "config": {
+    "experiment_id": "GRAPH-OPTION-TRAIN64-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 64,
+    "seed": 100,
+    "dataset_path": "research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz",
+    "sampling_manifest": "research/results/graph_option_train64/sampling_001/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261007,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Best admissible non-STOP full-option goal progress minus actually selected ghost; learned and forced STOP states excluded",
+      "controls": [
+        "candidate local to current observation",
+        "primitive count no greater than selected",
+        "movement path no longer than selected"
+      ],
+      "material_state_gain_m": 0.25,
+      "bootstrap_seed": 20261007,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "Broaden training coverage before any fitting; audit cost-controlled local opportunity and ordered route compatibility.",
+    "limits": "64 newly selected routes in 16 training scenes, one simulator seed. No learned improvement or causal failure claim. Same STOP, sensors, horizon and original controller.",
+    "sampling": {
+      "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+      "exclude_manifest": "research/results/graph_option_pilot/train8_sampling/manifest.json",
+      "scenes": 16,
+      "routes_per_scene": 4,
+      "seed": 20261007
+    },
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md"
+  },
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "metrics": {
+    "steps_taken": 57.265625,
+    "distance_to_goal": 1.8533819176373072,
+    "success": 0.859375,
+    "oracle_success": 0.859375,
+    "path_length": 9.122405529022217,
+    "collisions": 0.1360891633907879,
+    "spl": 0.8110227290424299,
+    "ndtw": 0.8314558521902822,
+    "sdtw": 0.7640189911138612,
+    "ghost_cnt": 21.34375,
+    "high_level_steps": 7.40625,
+    "policy_stop_count": 0.953125,
+    "forced_stop_count": 0.046875,
+    "forced_stop_max_len_count": 0.046875,
+    "forced_stop_no_vp_count": 0.0,
+    "policy_stop_rate": 0.1473901966089466,
+    "forced_stop_rate": 0.003125,
+    "actual_stop_rate": 0.15051519660894658
+  },
+  "limits": "Metric equality tests tracing only; does not establish alternative-action validity or runtime neutrality."
+}

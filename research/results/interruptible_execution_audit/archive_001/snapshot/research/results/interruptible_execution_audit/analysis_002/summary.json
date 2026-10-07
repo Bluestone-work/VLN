@@ -1,0 +1,86 @@
+{
+  "experiment_id": "INTERRUPTIBLE-EXECUTION-AUDIT-001",
+  "status": "complete",
+  "source_checks": [
+    {
+      "file": "vlnce_baselines/common/environments.py",
+      "needle": "self._env.sim.step_without_obs(act)",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/common/environments.py",
+      "needle": "def single_step_control(self, pos, tryout, vis_info):",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/common/environments.py",
+      "needle": "def multi_step_control(self, path, tryout, vis_info):",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/common/environments.py",
+      "needle": "self.single_step_control(action['ghost_pos'], action['tryout'], vis_info)",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/common/environments.py",
+      "needle": "observations = self.get_observation_at(agent_state.position, agent_state.rotation)",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/ss_trainer_ETP.py",
+      "needle": "gmap.delete_ghost(ghost_vp)",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/ss_trainer_ETP.py",
+      "needle": "prev_vp[i] = front_vp",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/ss_trainer_ETP.py",
+      "needle": "outputs = self.envs.step(env_actions)",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/models/graph_utils.py",
+      "needle": "def delete_ghost(self, vp):",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/models/graph_utils.py",
+      "needle": "self.ghost_pos.pop(vp)",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/adaptive_action/option_calibration.py",
+      "needle": "self._primitive_trace.append",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/adaptive_action/option_calibration.py",
+      "needle": "def wrap_act(self, act, vis_info):",
+      "present": true
+    },
+    {
+      "file": "vlnce_baselines/adaptive_action/option_calibration.py",
+      "needle": "def step(self, action, vis_info, *args, **kwargs):",
+      "present": true
+    }
+  ],
+  "observation_between_primitives": "unavailable to high-level policy in normal non-video execution",
+  "graph_transaction": "ghost deletion and prev_vp update occur before envs.step",
+  "no_baseline_core_mutation": true,
+  "no_simulator_run": true,
+  "no_model_trained": true,
+  "static_checks_only": true,
+  "dynamic_semantics_proven": false,
+  "decision": "NO-GO for interruptible execution prototype in current cycle",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "source_hashes": {
+    "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+    "vlnce_baselines/ss_trainer_ETP.py": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+    "vlnce_baselines/models/graph_utils.py": "a4876fd7d1598c0f39b4186f769f62f31181fa16a038cf9d35562cf79a62c205",
+    "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec"
+  }
+}

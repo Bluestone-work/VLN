@@ -1,0 +1,209 @@
+{
+  "descriptive_posthoc": true,
+  "no_model_tuning": true,
+  "cost_control_mean_reduction_fraction": 0.8841774533271364,
+  "episodes_with_gain_ge_025m": 28,
+  "selected_collision_overlap_ge_025m": 10,
+  "by_episode_outcome": {
+    "successful": {
+      "states": 329,
+      "episodes": 44,
+      "mean_cost_capped_gain_m": 0.08688920174688554,
+      "states_ge_025m": 23
+    },
+    "failed": {
+      "states": 205,
+      "episodes": 22,
+      "mean_cost_capped_gain_m": 0.24812419472671138,
+      "states_ge_025m": 36
+    }
+  },
+  "examples": [
+    {
+      "episode_id": "221",
+      "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "step": 10,
+      "baseline_episode_success": 0.0,
+      "selected": {
+        "action_type": 4,
+        "back_path_nodes": 4,
+        "collision_events": 0,
+        "current_proposal": false,
+        "distance_after": 16.315153121948242,
+        "done": false,
+        "graph_id": "g16",
+        "index": 20,
+        "logit": -2.3848044872283936,
+        "motion_path_m": 5.999987338361677,
+        "post_pose": {
+          "position": [
+            2.03794527053833,
+            0.0985960066318512,
+            -0.8705120086669922
+          ],
+          "rotation": [
+            0.0,
+            -0.9938232898712158,
+            0.0,
+            -0.11097465455532074
+          ]
+        },
+        "primitive_events": 57,
+        "progress_m": -3.7070302963256836,
+        "target_error_horizontal_m": 0.09113660307586283
+      },
+      "best_cost_capped": {
+        "action_type": 4,
+        "back_path_nodes": 2,
+        "collision_events": 0,
+        "current_proposal": true,
+        "distance_after": 10.902421951293945,
+        "done": false,
+        "graph_id": "g0",
+        "index": 12,
+        "logit": -4.079211235046387,
+        "motion_path_m": 4.500000628225286,
+        "post_pose": {
+          "position": [
+            3.1616318225860596,
+            0.0985960066318512,
+            4.76378059387207
+          ],
+          "rotation": [
+            0.0,
+            -0.9886819124221802,
+            0.0,
+            0.15002700686454773
+          ]
+        },
+        "primitive_events": 39,
+        "progress_m": 1.7057008743286133,
+        "target_error_horizontal_m": 0.26436093137643474
+      }
+    },
+    {
+      "episode_id": "268",
+      "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "step": 8,
+      "baseline_episode_success": 1.0,
+      "selected": {
+        "action_type": 4,
+        "back_path_nodes": 8,
+        "collision_events": 0,
+        "current_proposal": false,
+        "distance_after": 5.880979537963867,
+        "done": false,
+        "graph_id": "g4",
+        "index": 12,
+        "logit": -1.3611432313919067,
+        "motion_path_m": 8.493154738859609,
+        "post_pose": {
+          "position": [
+            -1.91582190990448,
+            -0.07159048318862915,
+            0.6196506023406982
+          ],
+          "rotation": [
+            0.0,
+            -0.6874638199806213,
+            0.0,
+            -0.7262187004089355
+          ]
+        },
+        "primitive_events": 77,
+        "progress_m": -5.330024302005768,
+        "target_error_horizontal_m": 0.10241639318205514
+      },
+      "best_cost_capped": {
+        "action_type": 4,
+        "back_path_nodes": 0,
+        "collision_events": 0,
+        "current_proposal": true,
+        "distance_after": 0.637190043926239,
+        "done": false,
+        "graph_id": "g22",
+        "index": 24,
+        "logit": -2.4412927627563477,
+        "motion_path_m": 1.188230659272297,
+        "post_pose": {
+          "position": [
+            -2.5301496982574463,
+            1.968095302581787,
+            0.8673868179321289
+          ],
+          "rotation": [
+            0.0,
+            -0.7763729691505432,
+            0.0,
+            -0.630273699760437
+          ]
+        },
+        "primitive_events": 5,
+        "progress_m": -0.08623480796813965,
+        "target_error_horizontal_m": 0.14430056015266934
+      }
+    },
+    {
+      "episode_id": "1238",
+      "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "step": 9,
+      "baseline_episode_success": 0.0,
+      "selected": {
+        "action_type": 4,
+        "back_path_nodes": 0,
+        "collision_events": 0,
+        "current_proposal": true,
+        "distance_after": 5.896363258361816,
+        "done": false,
+        "graph_id": "g33",
+        "index": 35,
+        "logit": 0.9120930433273315,
+        "motion_path_m": 2.2610724909875324,
+        "post_pose": {
+          "position": [
+            18.14763641357422,
+            0.07773947715759277,
+            0.8832817077636719
+          ],
+          "rotation": [
+            0.0,
+            0.44733864068984985,
+            0.0,
+            0.8943646550178528
+          ]
+        },
+        "primitive_events": 16,
+        "progress_m": -1.2807140350341797,
+        "target_error_horizontal_m": 0.23551721298523726
+      },
+      "best_cost_capped": {
+        "action_type": 4,
+        "back_path_nodes": 0,
+        "collision_events": 0,
+        "current_proposal": true,
+        "distance_after": 2.3838601112365723,
+        "done": false,
+        "graph_id": "g32",
+        "index": 34,
+        "logit": -1.706889033317566,
+        "motion_path_m": 2.260122089822784,
+        "post_pose": {
+          "position": [
+            21.717506408691406,
+            0.0533425509929657,
+            0.8430228233337402
+          ],
+          "rotation": [
+            0.0,
+            -0.43722474575042725,
+            0.0,
+            0.8993523120880127
+          ]
+        },
+        "primitive_events": 9,
+        "progress_m": 2.2317891120910645,
+        "target_error_horizontal_m": 2.30197830379832e-07
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-07",
+  "runs": [
+    {
+      "experiment_id": "OPTION-CALIBRATION-001",
+      "episodes": 64,
+      "scenes": 4,
+      "selected_options": 511,
+      "replay_modes": {
+        "sequential": {
+          "options": 511,
+          "passed": 511,
+          "max_endpoint_error_m": 0.0,
+          "max_rotation_error_rad": 4.2146848510894035e-08,
+          "max_progress_error_m": 0.0,
+          "sensor_hash_matches": 511,
+          "primitive_events": 4293,
+          "collision_events": 376,
+          "stop_options": 64,
+          "options_with_back_path": 29,
+          "tryout_options": 0
+        },
+        "isolated_branch": {
+          "options": 511,
+          "passed": 511,
+          "max_endpoint_error_m": 0.0,
+          "max_rotation_error_rad": 4.2146848510894035e-08,
+          "max_progress_error_m": 0.0,
+          "sensor_hash_matches": 511,
+          "primitive_events": 4293,
+          "collision_events": 376,
+          "stop_options": 64,
+          "options_with_back_path": 29,
+          "tryout_options": 0
+        }
+      },
+      "noninterference": {
+        "passed": true,
+        "episodes": 64,
+        "metric_comparisons": 1152,
+        "max_absolute_delta": 0.0,
+        "issues": []
+      },
+      "baseline_metrics": {
+        "steps_taken": 67.078125,
+        "distance_to_goal": 3.0419089047936723,
+        "success": 0.796875,
+        "oracle_success": 0.859375,
+        "path_length": 9.723516650497913,
+        "collisions": 0.1915553494822854,
+        "spl": 0.7016084633992821,
+        "ndtw": 0.7360742267128616,
+        "sdtw": 0.6756948115131814,
+        "ghost_cnt": 21.53125,
+        "high_level_steps": 7.984375,
+        "policy_stop_count": 0.890625,
+        "forced_stop_count": 0.109375,
+        "forced_stop_max_len_count": 0.109375,
+        "forced_stop_no_vp_count": 0.0,
+        "policy_stop_rate": 0.13525467587967593,
+        "forced_stop_rate": 0.007291666666666666,
+        "actual_stop_rate": 0.14254634254634257
+      },
+      "capture_manifest": "research/results/option_calibration/capture_001/manifest.json",
+      "source_snapshots": {
+        "research/configs/OPTION_CALIBRATION_001.json": "research/results/option_calibration/cycle_20261007/source_snapshots/85d9f62458034fc00d554764b0de11c4274e39acfdd4d4012dcaa6bd8bbc4987.json",
+        "research/tools/run_option_capture.py": "research/results/option_calibration/cycle_20261007/source_snapshots/f88f412844749cc8754ef231dc4a8f58e11692d67834879870ed474161b2e735.py",
+        "vlnce_baselines/adaptive_action/option_calibration.py": "research/results/option_calibration/cycle_20261007/source_snapshots/844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec.py",
+        "vlnce_baselines/common/environments.py": "research/results/option_calibration/cycle_20261007/source_snapshots/c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed.py",
+        "vlnce_baselines/ss_trainer_ETP.py": "research/results/option_calibration/cycle_20261007/source_snapshots/81f31cc2779fb6311a1c929c54edeed20c22adc00e5abd953903ebe9c6e28960.py",
+        "run_r2r/iter_train.yaml": "research/results/option_calibration/cycle_20261007/source_snapshots/c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129.yaml"
+      }
+    },
+    {
+      "experiment_id": "OPTION-CALIBRATION-002",
+      "episodes": 66,
+      "scenes": 11,
+      "selected_options": 600,
+      "replay_modes": {
+        "sequential": {
+          "options": 600,
+          "passed": 600,
+          "max_endpoint_error_m": 0.0,
+          "max_rotation_error_rad": 4.2146848510894035e-08,
+          "max_progress_error_m": 0.0,
+          "sensor_hash_matches": 600,
+          "primitive_events": 5730,
+          "collision_events": 341,
+          "stop_options": 66,
+          "options_with_back_path": 41,
+          "tryout_options": 0
+        },
+        "isolated_branch": {
+          "options": 600,
+          "passed": 600,
+          "max_endpoint_error_m": 0.0,
+          "max_rotation_error_rad": 4.2146848510894035e-08,
+          "max_progress_error_m": 0.0,
+          "sensor_hash_matches": 600,
+          "primitive_events": 5730,
+          "collision_events": 341,
+          "stop_options": 66,
+          "options_with_back_path": 41,
+          "tryout_options": 0
+        }
+      },
+      "noninterference": {
+        "passed": true,
+        "episodes": 66,
+        "metric_comparisons": 1188,
+        "max_absolute_delta": 0.0,
+        "issues": []
+      },
+      "baseline_metrics": {
+        "steps_taken": 86.81818181818181,
+        "distance_to_goal": 3.6843100312645687,
+        "success": 0.6666666666666666,
+        "oracle_success": 0.696969696969697,
+        "path_length": 12.460764288902283,
+        "collisions": 0.10513310377007502,
+        "spl": 0.5454684972881774,
+        "ndtw": 0.6056012312761734,
+        "sdtw": 0.4967179405244287,
+        "ghost_cnt": 25.060606060606062,
+        "high_level_steps": 9.090909090909092,
+        "policy_stop_count": 0.8787878787878788,
+        "forced_stop_count": 0.12121212121212122,
+        "forced_stop_max_len_count": 0.12121212121212122,
+        "forced_stop_no_vp_count": 0.0,
+        "policy_stop_rate": 0.11736991964264695,
+        "forced_stop_rate": 0.00808080808080808,
+        "actual_stop_rate": 0.125450727723455
+      },
+      "capture_manifest": "research/results/option_calibration/capture_002/manifest.json",
+      "source_snapshots": {
+        "research/configs/OPTION_CALIBRATION_002.json": "research/results/option_calibration/cycle_20261007/source_snapshots/d5706143f6604288d4407e10d8791a3a3e9486bb6a59f9631cf1be5395065b47.json",
+        "research/tools/run_option_capture.py": "research/results/option_calibration/cycle_20261007/source_snapshots/db8bb0ac65a93d5f4db307faed1caa14fc488b579e239b1996502d1746b47da7.py",
+        "vlnce_baselines/adaptive_action/option_calibration.py": "research/results/option_calibration/cycle_20261007/source_snapshots/844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec.py",
+        "vlnce_baselines/common/environments.py": "research/results/option_calibration/cycle_20261007/source_snapshots/c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed.py",
+        "vlnce_baselines/ss_trainer_ETP.py": "research/results/option_calibration/cycle_20261007/source_snapshots/81f31cc2779fb6311a1c929c54edeed20c22adc00e5abd953903ebe9c6e28960.py",
+        "run_r2r/iter_train.yaml": "research/results/option_calibration/cycle_20261007/source_snapshots/c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129.yaml",
+        "research/results/option_calibration/unseen_balanced66_sampling/manifest.json": "research/results/option_calibration/cycle_20261007/source_snapshots/428f9e0fad168ac8be91ece7bbfde0ebad57599d9e8905593ed867fcb8fcd24c.json"
+      }
+    }
+  ],
+  "total_episodes": 130,
+  "selected_options": 1111,
+  "replay_execution_count": 2222,
+  "per_episode_metric_comparisons": 2340,
+  "tests_passed": 24,
+  "selected_replay_passed": true,
+  "noninterference_passed": true,
+  "unselected_alternatives_validated": false,
+  "deployable_improvement_established": false,
+  "aaa_nms_decision": "NO-GO",
+  "graph_option_diagnostic_decision": "CONDITIONAL GO",
+  "next_protocol": "research/OPTION_LABEL_PROTOCOL.md"
+}

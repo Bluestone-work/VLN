@@ -1,0 +1,63 @@
+{
+  "analysis_type": "post-hoc descriptive decomposition",
+  "all_seven_immediate_cost_caps_passed": true,
+  "events": [
+    {
+      "episode_id": "9045",
+      "high_level_step": 7,
+      "immediate_primitive_delta": -2,
+      "immediate_path_delta_m": -0.7499986201188134,
+      "local_progress_gain_m": 0.8181009292602539,
+      "joint_cost_cap_passed": true
+    },
+    {
+      "episode_id": "8786",
+      "high_level_step": 3,
+      "immediate_primitive_delta": -1,
+      "immediate_path_delta_m": -2.5818173114977583e-06,
+      "local_progress_gain_m": 1.2054462432861328,
+      "joint_cost_cap_passed": true
+    },
+    {
+      "episode_id": "2408",
+      "high_level_step": 6,
+      "immediate_primitive_delta": -6,
+      "immediate_path_delta_m": -1.500001236279948,
+      "local_progress_gain_m": 1.0885648727416992,
+      "joint_cost_cap_passed": true
+    },
+    {
+      "episode_id": "8",
+      "high_level_step": 2,
+      "immediate_primitive_delta": 0,
+      "immediate_path_delta_m": -0.7499993964113257,
+      "local_progress_gain_m": 0.5657038688659668,
+      "joint_cost_cap_passed": true
+    },
+    {
+      "episode_id": "10811",
+      "high_level_step": 7,
+      "immediate_primitive_delta": -3,
+      "immediate_path_delta_m": -0.7499990774026726,
+      "local_progress_gain_m": 0.8182578682899475,
+      "joint_cost_cap_passed": true
+    },
+    {
+      "episode_id": "6962",
+      "high_level_step": 10,
+      "immediate_primitive_delta": -4,
+      "immediate_path_delta_m": -0.17232202606501268,
+      "local_progress_gain_m": 3.5544118881225586,
+      "joint_cost_cap_passed": true
+    },
+    {
+      "episode_id": "875",
+      "high_level_step": 6,
+      "immediate_primitive_delta": -1,
+      "immediate_path_delta_m": -0.25000915699295545,
+      "local_progress_gain_m": 1.672924518585205,
+      "joint_cost_cap_passed": true
+    }
+  ],
+  "note": "These costs apply only to the replaced option, not to its native continuation."
+}

@@ -1,0 +1,643 @@
+{
+  "experiment_id": "GRAPH-SINGLE-INTERVENTION-TRAIN7-001",
+  "mode": "disabled",
+  "all_required_gates_passed": true,
+  "source_capture": "research/results/graph_option_train64/capture_001",
+  "schedule_sha256": "d9c4b3c5de8bb0ce7a2991f311fc5c045ca34f8b2323aef2404bc048830687cb",
+  "source_capture_manifest_sha256": "83410401b55b71114941f43f2ff6aaf008f1a9598e43b70b7f7999cfb3169a76",
+  "episodes": 64,
+  "decisions": 474,
+  "unchanged_metric_comparison": {
+    "passed": true,
+    "episodes": 64,
+    "metric_comparisons": 1152,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "aggregate_comparison": {
+    "passed": true,
+    "episodes": 1,
+    "metric_comparisons": 18,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "exact_trace_comparisons": 474,
+  "trace_differences": [],
+  "event_checks": [],
+  "interventions": 0,
+  "hook_summary": {
+    "hook_completed": true,
+    "enabled": false,
+    "decisions": 474,
+    "prefix_states_verified": 474,
+    "encountered_episodes": [
+      "10811",
+      "2408",
+      "6962",
+      "8",
+      "875",
+      "8786",
+      "9045"
+    ],
+    "intervened_episodes": [],
+    "privileged_analysis_only": true,
+    "no_model_trained": true
+  },
+  "paired_groups": {
+    "targeted_7": {
+      "episodes": 7,
+      "metrics": {
+        "actual_stop_rate": {
+          "baseline_mean": 0.10476190476190475,
+          "intervention_mean": 0.10476190476190475,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "collision_events": {
+          "baseline_mean": 0.5714285714285714,
+          "intervention_mean": 0.5714285714285714,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": true
+        },
+        "collisions": {
+          "baseline_mean": 0.004722550177095631,
+          "intervention_mean": 0.004722550177095631,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": true
+        },
+        "distance_to_goal": {
+          "baseline_mean": 3.402570000716618,
+          "intervention_mean": 3.402570000716618,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": true
+        },
+        "forced_stop_count": {
+          "baseline_mean": 0.14285714285714285,
+          "intervention_mean": 0.14285714285714285,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "forced_stop_max_len_count": {
+          "baseline_mean": 0.14285714285714285,
+          "intervention_mean": 0.14285714285714285,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "forced_stop_no_vp_count": {
+          "baseline_mean": 0.0,
+          "intervention_mean": 0.0,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "forced_stop_rate": {
+          "baseline_mean": 0.009523809523809523,
+          "intervention_mean": 0.009523809523809523,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "ghost_cnt": {
+          "baseline_mean": 29.857142857142858,
+          "intervention_mean": 29.857142857142858,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "high_level_steps": {
+          "baseline_mean": 10.0,
+          "intervention_mean": 10.0,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": true
+        },
+        "native_collision_count": {
+          "baseline_mean": 0.5714285714285714,
+          "intervention_mean": 0.5714285714285714,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": true
+        },
+        "ndtw": {
+          "baseline_mean": 0.6373028605789918,
+          "intervention_mean": 0.6373028605789918,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "oracle_success": {
+          "baseline_mean": 0.5714285714285714,
+          "intervention_mean": 0.5714285714285714,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "path_length": {
+          "baseline_mean": 15.241682870047432,
+          "intervention_mean": 15.241682870047432,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": true
+        },
+        "policy_stop_count": {
+          "baseline_mean": 0.8571428571428571,
+          "intervention_mean": 0.8571428571428571,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "policy_stop_rate": {
+          "baseline_mean": 0.09523809523809523,
+          "intervention_mean": 0.09523809523809523,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "primitive_action_count": {
+          "baseline_mean": 96.28571428571429,
+          "intervention_mean": 96.28571428571429,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": true
+        },
+        "sdtw": {
+          "baseline_mean": 0.46993109836489777,
+          "intervention_mean": 0.46993109836489777,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "spl": {
+          "baseline_mean": 0.46048432479001117,
+          "intervention_mean": 0.46048432479001117,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        },
+        "steps_taken": {
+          "baseline_mean": 96.28571428571429,
+          "intervention_mean": 96.28571428571429,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": true
+        },
+        "success": {
+          "baseline_mean": 0.5714285714285714,
+          "intervention_mean": 0.5714285714285714,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 7,
+          "lower_is_better": false
+        }
+      },
+      "success_rescued": [],
+      "success_lost": []
+    },
+    "unaffected_57": {
+      "episodes": 57,
+      "metrics": {
+        "actual_stop_rate": {
+          "baseline_mean": 0.15613402192349565,
+          "intervention_mean": 0.15613402192349565,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "collision_events": {
+          "baseline_mean": 2.491228070175439,
+          "intervention_mean": 2.491228070175439,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": true
+        },
+        "collisions": {
+          "baseline_mean": 0.1522219053643992,
+          "intervention_mean": 0.1522219053643992,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": true
+        },
+        "distance_to_goal": {
+          "baseline_mean": 1.663130749539848,
+          "intervention_mean": 1.663130749539848,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": true
+        },
+        "forced_stop_count": {
+          "baseline_mean": 0.03508771929824561,
+          "intervention_mean": 0.03508771929824561,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "forced_stop_max_len_count": {
+          "baseline_mean": 0.03508771929824561,
+          "intervention_mean": 0.03508771929824561,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "forced_stop_no_vp_count": {
+          "baseline_mean": 0.0,
+          "intervention_mean": 0.0,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "forced_stop_rate": {
+          "baseline_mean": 0.0023391812865497076,
+          "intervention_mean": 0.0023391812865497076,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "ghost_cnt": {
+          "baseline_mean": 20.29824561403509,
+          "intervention_mean": 20.29824561403509,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "high_level_steps": {
+          "baseline_mean": 7.087719298245614,
+          "intervention_mean": 7.087719298245614,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": true
+        },
+        "native_collision_count": {
+          "baseline_mean": 2.491228070175439,
+          "intervention_mean": 2.491228070175439,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": true
+        },
+        "ndtw": {
+          "baseline_mean": 0.8552992020372828,
+          "intervention_mean": 0.8552992020372828,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "oracle_success": {
+          "baseline_mean": 0.8947368421052632,
+          "intervention_mean": 0.8947368421052632,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "path_length": {
+          "baseline_mean": 8.37091532924719,
+          "intervention_mean": 8.37091532924719,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": true
+        },
+        "policy_stop_count": {
+          "baseline_mean": 0.9649122807017544,
+          "intervention_mean": 0.9649122807017544,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "policy_stop_rate": {
+          "baseline_mean": 0.15379484063694593,
+          "intervention_mean": 0.15379484063694593,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "primitive_action_count": {
+          "baseline_mean": 52.473684210526315,
+          "intervention_mean": 52.473684210526315,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": true
+        },
+        "sdtw": {
+          "baseline_mean": 0.8001350481181198,
+          "intervention_mean": 0.8001350481181198,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "spl": {
+          "baseline_mean": 0.8540713050032531,
+          "intervention_mean": 0.8540713050032531,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        },
+        "steps_taken": {
+          "baseline_mean": 52.473684210526315,
+          "intervention_mean": 52.473684210526315,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": true
+        },
+        "success": {
+          "baseline_mean": 0.8947368421052632,
+          "intervention_mean": 0.8947368421052632,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 57,
+          "lower_is_better": false
+        }
+      },
+      "success_rescued": [],
+      "success_lost": []
+    },
+    "all_64": {
+      "episodes": 64,
+      "metrics": {
+        "actual_stop_rate": {
+          "baseline_mean": 0.15051519660894658,
+          "intervention_mean": 0.15051519660894658,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "collision_events": {
+          "baseline_mean": 2.28125,
+          "intervention_mean": 2.28125,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": true
+        },
+        "collisions": {
+          "baseline_mean": 0.1360891633907879,
+          "intervention_mean": 0.1360891633907879,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": true
+        },
+        "distance_to_goal": {
+          "baseline_mean": 1.8533819176373072,
+          "intervention_mean": 1.8533819176373072,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": true
+        },
+        "forced_stop_count": {
+          "baseline_mean": 0.046875,
+          "intervention_mean": 0.046875,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "forced_stop_max_len_count": {
+          "baseline_mean": 0.046875,
+          "intervention_mean": 0.046875,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "forced_stop_no_vp_count": {
+          "baseline_mean": 0.0,
+          "intervention_mean": 0.0,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "forced_stop_rate": {
+          "baseline_mean": 0.003125,
+          "intervention_mean": 0.003125,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "ghost_cnt": {
+          "baseline_mean": 21.34375,
+          "intervention_mean": 21.34375,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "high_level_steps": {
+          "baseline_mean": 7.40625,
+          "intervention_mean": 7.40625,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": true
+        },
+        "native_collision_count": {
+          "baseline_mean": 2.28125,
+          "intervention_mean": 2.28125,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": true
+        },
+        "ndtw": {
+          "baseline_mean": 0.8314558521902822,
+          "intervention_mean": 0.8314558521902822,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "oracle_success": {
+          "baseline_mean": 0.859375,
+          "intervention_mean": 0.859375,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "path_length": {
+          "baseline_mean": 9.122405529022217,
+          "intervention_mean": 9.122405529022217,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": true
+        },
+        "policy_stop_count": {
+          "baseline_mean": 0.953125,
+          "intervention_mean": 0.953125,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "policy_stop_rate": {
+          "baseline_mean": 0.1473901966089466,
+          "intervention_mean": 0.1473901966089466,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "primitive_action_count": {
+          "baseline_mean": 57.265625,
+          "intervention_mean": 57.265625,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": true
+        },
+        "sdtw": {
+          "baseline_mean": 0.7640189911138612,
+          "intervention_mean": 0.7640189911138612,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "spl": {
+          "baseline_mean": 0.8110227290424299,
+          "intervention_mean": 0.8110227290424299,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        },
+        "steps_taken": {
+          "baseline_mean": 57.265625,
+          "intervention_mean": 57.265625,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": true
+        },
+        "success": {
+          "baseline_mean": 0.859375,
+          "intervention_mean": 0.859375,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 64,
+          "lower_is_better": false
+        }
+      },
+      "success_rescued": [],
+      "success_lost": []
+    }
+  },
+  "intervention_source_hashes": {
+    "vlnce_baselines/adaptive_action/single_intervention.py": "2274f37666a7c531b334115f7cf616cf1150f7a68e42937e020df4477bd285cd",
+    "research/tools/run_single_intervention.py": "d5b9e8310273e5870de11c37e21edff47e3f8032e67b1b082e90a29b9242f9a0"
+  },
+  "privileged_analysis_only": true,
+  "learned_model_evaluated": false,
+  "limits": "Seven training routes selected for earlier local gains, five scenes, one simulator seed. Paired descriptive continuation outcomes; not an unbiased benchmark or deployable method."
+}

@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-07T03:47:17.434592+00:00",
+  "argv": [
+    "research/tools/analyze_route_options.py",
+    "--config",
+    "research/configs/ROUTE_COMPATIBILITY_001.json",
+    "--probe-dir",
+    "research/results/graph_option_unseen/probe_full002",
+    "--integrity-dir",
+    "research/results/graph_option_unseen/integrity_001",
+    "--noninterference-dir",
+    "research/results/graph_option_unseen/noninterference_002",
+    "--output-dir",
+    "research/results/route_compatibility_001/unseen66_v2"
+  ],
+  "config": {
+    "experiment_id": "ROUTE-COMPATIBILITY-001",
+    "protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+    "cost_and_dtw_tolerance": 1e-05,
+    "baseline_metric_tolerance": 1e-06,
+    "material_gain_m": 0.25,
+    "bootstrap_seed": 20261007,
+    "bootstrap_samples": 5000,
+    "primary": "joint cost caps plus matched-prefix route gate",
+    "sensitivity": "endpoint-only route gate",
+    "datasets": [
+      "train_pilot8",
+      "val_unseen_balanced66",
+      "train_expansion64"
+    ],
+    "privileged_analysis_only": true
+  },
+  "probe_experiment": "GRAPH-OPTION-UNSEEN-001",
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "hashes": {
+    "research/configs/ROUTE_COMPATIBILITY_001.json": "f760992e53d0638f57760d242b6332c4dc56687971610e15f4b0e1457c43af8d",
+    "research/ROUTE_COMPATIBILITY_PROTOCOL.md": "376b871ebbcbfa716a76d723727d19d2cea826b189ccf22626178b86b62d12ed",
+    "research/tools/analyze_route_options.py": "1211df50b2c7ac7ed51c674eeda73b0606cea2a65674c452cf5e45ddf3373477",
+    "research/tools/route_alignment.py": "de864d584766d90401c04d4bba1f2f2fab7debc6611c0961d853196cb48c6031",
+    "research/tools/audit_ranker_validity.py": "e720ae5feafab15e2ae4823d528a09178de8038b060810b213f9fde2820b736e",
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed/val_unseen/val_unseen_gt.json.gz": "1b9497dc1aa6ab68073976f9678ac42a154b393edd9d0b0450d0ac90841f684c",
+    "research/results/graph_option_unseen/noninterference_002/capture_episodes.json": "51400aa404c1128a4d4899bf1088db49ed445463612b61ebc30b57efa3f038fa",
+    "research/results/graph_option_unseen/capture_001/traces/worker_seed100.jsonl": "7069a458976b7a3a39d2b4a1b6a04b29de9b7e9a61478709a11112d6f917ed9e",
+    "research/results/graph_option_unseen/probe_full002/manifest.json": "fcb5b4dacc0147bacea804c3e4372de73844ac8f560f5d32077ee45fdbd54c1c",
+    "research/results/graph_option_unseen/probe_full002/summary.json": "a739af5ca5754e00d60210f41ecd6cdd7735bb432be9b4b8fc616956fb0e3fde",
+    "research/results/graph_option_unseen/probe_full002/decisions.jsonl": "879db4641f9d716e4ba1f067a93243458eb734aa19a2a7181bad1e5cf24f25fc",
+    "research/results/graph_option_unseen/integrity_001/summary.json": "3f8955a755637bd0020a9fb1c224cf0424fc7abec34e84550e1247b152ffc092",
+    "research/results/graph_option_unseen/noninterference_002/summary.json": "53e121a51ada7cf7378437d0522b544b82b5ba94bc45d542770db40fae984f99"
+  },
+  "raw_trace_sha256": "2648b371d573cb2f4cda7d161ce6fd932705e5de49db9431db7164f59c338ac8",
+  "privileged_analysis_only": true
+}

@@ -1,0 +1,27 @@
+{
+  "hook_completed": true,
+  "enabled": false,
+  "decisions": 132,
+  "prefix_states_verified": 132,
+  "encountered_episodes": [
+    "2101",
+    "2451",
+    "2508",
+    "2979",
+    "3023",
+    "3373",
+    "3716",
+    "5703",
+    "6235",
+    "7085",
+    "7537",
+    "7585",
+    "8891",
+    "9559",
+    "9871",
+    "9935"
+  ],
+  "intervened_episodes": [],
+  "privileged_analysis_only": true,
+  "no_model_trained": true
+}

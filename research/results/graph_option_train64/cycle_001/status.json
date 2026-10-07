@@ -1,0 +1,175 @@
+{
+  "created_utc": "2026-10-07T03:44:16.274793+00:00",
+  "config": {
+    "experiment_id": "GRAPH-OPTION-TRAIN64-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 64,
+    "seed": 100,
+    "dataset_path": "research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz",
+    "sampling_manifest": "research/results/graph_option_train64/sampling_001/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261007,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Best admissible non-STOP full-option goal progress minus actually selected ghost; learned and forced STOP states excluded",
+      "controls": [
+        "candidate local to current observation",
+        "primitive count no greater than selected",
+        "movement path no longer than selected"
+      ],
+      "material_state_gain_m": 0.25,
+      "bootstrap_seed": 20261007,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "Broaden training coverage before any fitting; audit cost-controlled local opportunity and ordered route compatibility.",
+    "limits": "64 newly selected routes in 16 training scenes, one simulator seed. No learned improvement or causal failure claim. Same STOP, sensors, horizon and original controller.",
+    "sampling": {
+      "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+      "exclude_manifest": "research/results/graph_option_pilot/train8_sampling/manifest.json",
+      "scenes": 16,
+      "routes_per_scene": 4,
+      "seed": 20261007
+    },
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md"
+  },
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "argv": [
+    "research/tools/run_graph_option_cycle.py",
+    "--config",
+    "research/configs/GRAPH_OPTION_TRAIN64_001.json",
+    "--root",
+    "research/results/graph_option_train64",
+    "--exp-prefix",
+    "aaa_graph_option_train64_001"
+  ],
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "hashes": {
+    "research/configs/GRAPH_OPTION_TRAIN64_001.json": "2114bb0ff5b43d3c949158ae40cb7f95c4a4f9ccd380110d7d4217765e5b35db",
+    "research/results/graph_option_train64/sampling_001/manifest.json": "add89444e76a5aff6e8535416b6995b1c300f56c437112aa147759258d5bacf2",
+    "research/ROUTE_COMPATIBILITY_PROTOCOL.md": "376b871ebbcbfa716a76d723727d19d2cea826b189ccf22626178b86b62d12ed",
+    "research/tools/run_graph_option_cycle.py": "bbaa5aa56861c2f641909715d42e14d8695e03140afaaa7c91273c6873b2ddba"
+  },
+  "stages": [
+    {
+      "name": "capture",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/GRAPH_OPTION_TRAIN64_001.json",
+        "--output-dir",
+        "research/results/graph_option_train64/capture_001",
+        "--exp-name",
+        "aaa_graph_option_train64_001_capture",
+        "--trace"
+      ],
+      "started_utc": "2026-10-07T03:44:16.303718+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T03:45:47.797696+00:00"
+    },
+    {
+      "name": "control",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/GRAPH_OPTION_TRAIN64_001.json",
+        "--output-dir",
+        "research/results/graph_option_train64/control_001",
+        "--exp-name",
+        "aaa_graph_option_train64_001_control"
+      ],
+      "started_utc": "2026-10-07T03:45:47.798117+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T03:47:12.502535+00:00"
+    },
+    {
+      "name": "noninterference",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/check_option_noninterference.py",
+        "--capture-dir",
+        "research/results/graph_option_train64/capture_001",
+        "--control-dir",
+        "research/results/graph_option_train64/control_001",
+        "--output-dir",
+        "research/results/graph_option_train64/noninterference_001"
+      ],
+      "started_utc": "2026-10-07T03:47:12.503152+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T03:47:12.530337+00:00"
+    },
+    {
+      "name": "probe",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/probe_graph_options.py",
+        "--capture-dir",
+        "research/results/graph_option_train64/capture_001",
+        "--noninterference-dir",
+        "research/results/graph_option_train64/noninterference_001",
+        "--output-dir",
+        "research/results/graph_option_train64/probe_full001"
+      ],
+      "started_utc": "2026-10-07T03:47:12.530960+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T03:53:34.502470+00:00"
+    },
+    {
+      "name": "integrity",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_graph_option_probe.py",
+        "--probe-dir",
+        "research/results/graph_option_train64/probe_full001",
+        "--output-dir",
+        "research/results/graph_option_train64/integrity_001"
+      ],
+      "started_utc": "2026-10-07T03:53:34.503081+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T03:53:47.291882+00:00"
+    },
+    {
+      "name": "analysis",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/analyze_graph_options.py",
+        "--probe-dir",
+        "research/results/graph_option_train64/probe_full001",
+        "--output-dir",
+        "research/results/graph_option_train64/analysis_001"
+      ],
+      "started_utc": "2026-10-07T03:53:47.292588+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T03:53:47.410704+00:00"
+    }
+  ],
+  "status": "complete",
+  "finished_utc": "2026-10-07T03:53:47.411119+00:00"
+}

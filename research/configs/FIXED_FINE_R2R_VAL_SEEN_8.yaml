@@ -1,0 +1,14 @@
+experiment_id: FIXED_FINE_R2R_VAL_SEEN_8
+base_config: run_r2r/iter_train.yaml
+checkpoint: data/logs/checkpoints/release_r2r/ckpt.iter12000.pth
+pretrained_language: data/pretrained/ETP/mlm.sap_r2r/ckpts/model_step_82500.pt
+split: val_seen
+episodes: 8
+gpu: 0
+num_environments: 1
+rl_topo_enabled: false
+back_algo: control
+action_abstraction: fine
+diagnostics: research/results/diagnostics/fine_8.jsonl
+
+seed: 100

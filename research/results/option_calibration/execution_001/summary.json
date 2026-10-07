@@ -1,0 +1,170 @@
+{
+  "experiment_id": "OPTION-CALIBRATION-001",
+  "episodes": 64,
+  "scenes": 4,
+  "options": 511,
+  "primitive_events": 4293,
+  "by_action": {
+    "ghost": {
+      "options": 447,
+      "options_with_collision": 91,
+      "collision_events": 375,
+      "nonpositive_progress": 125,
+      "progress_m": {
+        "count": 447,
+        "mean": 0.6924578260955394,
+        "median": 0.9875741004943848,
+        "p90": 1.9548650026321415,
+        "max": 3.5576435327529907
+      },
+      "target_error_3d_m": {
+        "count": 447,
+        "mean": 0.3259596130452021,
+        "median": 0.23551081038799931,
+        "p90": 0.8676676822991474,
+        "max": 2.2499999999999996
+      },
+      "target_error_horizontal_m": {
+        "count": 447,
+        "mean": 0.28820106228115794,
+        "median": 0.15700849243410978,
+        "p90": 0.8676676822991474,
+        "max": 2.2499999999999996
+      },
+      "target_error_horizontal_threshold_counts": {
+        "0.25": 284,
+        "0.5": 389,
+        "1.0": 417
+      }
+    },
+    "stop": {
+      "options": 64,
+      "options_with_collision": 1,
+      "collision_events": 1,
+      "nonpositive_progress": 60,
+      "progress_m": {
+        "count": 64,
+        "mean": 0.035752350464463234,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 1.637578010559082
+      },
+      "target_error_3d_m": {
+        "count": 64,
+        "mean": 0.016889070673861088,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.2538631750314428
+      },
+      "target_error_horizontal_m": {
+        "count": 64,
+        "mean": 0.01625059397436543,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.25000032961805674
+      },
+      "target_error_horizontal_threshold_counts": {
+        "0.25": 63,
+        "0.5": 64,
+        "1.0": 64
+      }
+    }
+  },
+  "failure_symptoms": {
+    "failed_episodes": 13,
+    "with_any_collision": 7,
+    "with_forced_stop": 3,
+    "with_native_oracle_success": 4,
+    "with_stop_lost_goal_neighborhood": 0,
+    "categories_overlap": true,
+    "causal_failure_counts": false
+  },
+  "largest_target_error_examples": [
+    {
+      "episode_id": "78",
+      "high_level_step": 8,
+      "scene_id": "data/scene_datasets/mp3d/VLzqgDo317F/VLzqgDo317F.glb",
+      "action_type": 4,
+      "back_path_nodes": 0,
+      "target_error_3d_m": 2.2499999999999996,
+      "target_error_horizontal_m": 2.2499999999999996,
+      "progress_m": 0.0,
+      "distance_before": 2.6612329483032227,
+      "distance_after": 2.6612329483032227,
+      "primitive_events": 9,
+      "collision_events": 8,
+      "motion_path_length_m": 0.0,
+      "stop_lost_goal_neighborhood": false
+    },
+    {
+      "episode_id": "77",
+      "high_level_step": 6,
+      "scene_id": "data/scene_datasets/mp3d/VLzqgDo317F/VLzqgDo317F.glb",
+      "action_type": 4,
+      "back_path_nodes": 0,
+      "target_error_3d_m": 2.0,
+      "target_error_horizontal_m": 2.0,
+      "progress_m": 0.0,
+      "distance_before": 15.66856575012207,
+      "distance_after": 15.66856575012207,
+      "primitive_events": 8,
+      "collision_events": 8,
+      "motion_path_length_m": 0.0,
+      "stop_lost_goal_neighborhood": false
+    },
+    {
+      "episode_id": "77",
+      "high_level_step": 7,
+      "scene_id": "data/scene_datasets/mp3d/VLzqgDo317F/VLzqgDo317F.glb",
+      "action_type": 4,
+      "back_path_nodes": 0,
+      "target_error_3d_m": 2.0,
+      "target_error_horizontal_m": 2.0,
+      "progress_m": 0.0,
+      "distance_before": 15.66856575012207,
+      "distance_after": 15.66856575012207,
+      "primitive_events": 8,
+      "collision_events": 8,
+      "motion_path_length_m": 0.0,
+      "stop_lost_goal_neighborhood": false
+    },
+    {
+      "episode_id": "77",
+      "high_level_step": 8,
+      "scene_id": "data/scene_datasets/mp3d/VLzqgDo317F/VLzqgDo317F.glb",
+      "action_type": 4,
+      "back_path_nodes": 0,
+      "target_error_3d_m": 2.0,
+      "target_error_horizontal_m": 2.0,
+      "progress_m": 0.0,
+      "distance_before": 15.66856575012207,
+      "distance_after": 15.66856575012207,
+      "primitive_events": 8,
+      "collision_events": 8,
+      "motion_path_length_m": 0.0,
+      "stop_lost_goal_neighborhood": false
+    },
+    {
+      "episode_id": "77",
+      "high_level_step": 9,
+      "scene_id": "data/scene_datasets/mp3d/VLzqgDo317F/VLzqgDo317F.glb",
+      "action_type": 4,
+      "back_path_nodes": 0,
+      "target_error_3d_m": 2.0,
+      "target_error_horizontal_m": 2.0,
+      "progress_m": 0.0,
+      "distance_before": 15.66856575012207,
+      "distance_after": 15.66856575012207,
+      "primitive_events": 8,
+      "collision_events": 8,
+      "motion_path_length_m": 0.0,
+      "stop_lost_goal_neighborhood": false
+    }
+  ],
+  "scope": "Observed selected-option geometry and events; residual does not prove an appropriate target or execution failure. Negative progress can be valid recovery.",
+  "sources": {
+    "research/results/option_calibration/capture_001/traces/worker_seed100.jsonl": "dbdc258a0367c478dd8a6911cfc33e302c46bcb0cfc2c3ffdaf9574e62b3a107",
+    "data/logs/eval_results/aaa_option_capture001/stats_ep_ckpt_59_val_seen_r0_w1.json": "45a2bb6a31740439cc7bcb4c5cb29fcbe66a760eca884008a9796572d574bc5e"
+  },
+  "source_sha256": "0345e48f4d124449e9371f51b4e535cf317a80900fb81b18c0d8ee678e400bb9"
+}

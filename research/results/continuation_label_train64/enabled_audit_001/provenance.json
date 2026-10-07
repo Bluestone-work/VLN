@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-07T04:46:30.553204+00:00",
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "hashes": {
+    "research/tools/audit_single_intervention.py": "8d0bb2b0555a8f03759e2ff9f7c41f5c0f962a92100583e69ff4b5867e9d6627",
+    "research/results/continuation_label_train64/enabled_001/manifest.json": "88bb4acecc56b6a9429b4af5fb37714e5c905697103c83da2c07b0cb2fbabcc2",
+    "research/results/continuation_label_train64/capture_001/manifest.json": "68cc6b4b8504db242bffeb060370e57a8d21b48531e54bafd1a0db0cc530e291",
+    "research/results/continuation_label_train64/noninterference_001/summary.json": "0faecf27f929021ee23464449779d7020ca831e43bb319c6670ef9c05d079287",
+    "research/results/continuation_label_train64/enabled_001/traces/worker_seed100.jsonl": "1cf4f32984d123c14842fccc737724d50aaa8545b8d8f07bf39cd9c18b70d298",
+    "research/results/continuation_label_train64/capture_001/traces/worker_seed100.jsonl": "e3ca98b82f2f35d5714402498ddd868a4ed316dee6b0d41113907b7574e141b2",
+    "research/results/continuation_label_train64/noninterference_001/capture_episodes.json": "8287777c60da90e2aed1c31dba1864c595cb74b14a4b672a5e12face9f9d133a",
+    "data/logs/eval_results/aaa_continuation_label_train64_001_enabled/stats_ep_ckpt_59_train_r0_w1.json": "cb4db3c66e9cac7265916729934ce3f1495b5291b89b5d7bb4867a7ef098f9db",
+    "data/logs/eval_results/aaa_continuation_label_train64_001_enabled/stats_ckpt_59_train.json": "90006cee5c628a685a05118eb1280937ccec4079513c28afc61dce12d490d893",
+    "research/results/continuation_label_train64/enabled_001/hook/decisions.jsonl": "9783aa6b6db9d2b71cd0d6c5cbbf035442dec5feb37f4f7a6958b7d8d320945c",
+    "research/results/continuation_label_train64/enabled_001/hook/summary.json": "a400c4eaccc10752a8a949ba270b671d854a0d00d4cb5d325a7cd02e8d4de408"
+  }
+}

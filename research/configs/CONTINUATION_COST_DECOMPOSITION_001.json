@@ -1,0 +1,17 @@
+{
+  "experiment_id": "CONTINUATION-COST-DECOMPOSITION-001",
+  "analysis_type": "post-hoc descriptive follow-up after new H2 outcomes; no causal or new policy claim",
+  "batches": [
+    {
+      "name": "earlier_train7",
+      "root": "research/results/single_intervention_train7"
+    },
+    {
+      "name": "prospective_train5",
+      "root": "research/results/continuation_label_train64"
+    }
+  ],
+  "question": "Which subsequent movements and STOP return paths explain immediate versus episode cost changes, including H2 false rejections?",
+  "control": "Use all accepted actual H1 continuations from both batches; no new episodes, thresholds or simulator changes.",
+  "selection": "Every scheduled event in both frozen batches, not only bad cases; report batches separately."
+}

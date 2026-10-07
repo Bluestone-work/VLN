@@ -1,0 +1,61 @@
+{
+  "split": "train",
+  "selection_seed": 20261007,
+  "scenes": [
+    "mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+    "mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+    "mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+    "mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb"
+  ],
+  "routes_per_scene": 2,
+  "episode_count": 8,
+  "distinct_routes": 8,
+  "selection_rule": "Seeded SHA256 scene order, route order, then one instruction per route; no outcomes",
+  "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+  "source_sha256": "b43db098cbf6bdf05fdccd9992b87a9aee58eef5c74adc62d92cfe636baf2f4d",
+  "dataset_path": "research/results/graph_option_pilot/train8_sampling/train_pilot8_bertidx.json.gz",
+  "dataset_sha256": "10eeeedf7d116e0a1e088a3e4f2fc833c104a41f128dd0af89a0deb249109aba",
+  "source_script_sha256": "fb533e9ea704c52053ad771fb79fbd07344632a42fbd4140d9934f6e5f83c146",
+  "episodes": [
+    {
+      "scene_id": "mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "episode_id": "10237",
+      "trajectory_id": "6891"
+    },
+    {
+      "scene_id": "mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "episode_id": "519",
+      "trajectory_id": "340"
+    },
+    {
+      "scene_id": "mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "episode_id": "4259",
+      "trajectory_id": "2810"
+    },
+    {
+      "scene_id": "mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "episode_id": "878",
+      "trajectory_id": "568"
+    },
+    {
+      "scene_id": "mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "episode_id": "3000",
+      "trajectory_id": "1981"
+    },
+    {
+      "scene_id": "mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "episode_id": "986",
+      "trajectory_id": "626"
+    },
+    {
+      "scene_id": "mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "episode_id": "6587",
+      "trajectory_id": "4349"
+    },
+    {
+      "scene_id": "mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "episode_id": "10124",
+      "trajectory_id": "6811"
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "experiment_id": "ROUTE-COMPATIBILITY-001",
+  "source_experiment": "GRAPH-OPTION-PILOT-001",
+  "episodes": 8,
+  "scenes": 4,
+  "eligible_states": 55,
+  "eligible_nonstop_branches": 588,
+  "baseline_reconstruction_gate_passed": true,
+  "native_metric_comparisons": 24,
+  "max_native_metric_delta": 5.73264920866734e-07,
+  "selected_route_sentinels_passed": 55,
+  "metrics": {
+    "joint_cost_gain_m": {
+      "mean_m": 0.0,
+      "median_m": 0.0,
+      "material_states": 0,
+      "material_episodes": 0,
+      "material_scenes": 0,
+      "positive_states": 0,
+      "episode_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.0,
+        "equal_cluster_mean_m": 0.0,
+        "ci95_m": [
+          0.0,
+          0.0
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      },
+      "scene_bootstrap": {
+        "clusters": 4,
+        "decision_weighted_mean_m": 0.0,
+        "equal_cluster_mean_m": 0.0,
+        "ci95_m": [
+          0.0,
+          0.0
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "route_matched_gain_m": {
+      "mean_m": 0.0,
+      "median_m": 0.0,
+      "material_states": 0,
+      "material_episodes": 0,
+      "material_scenes": 0,
+      "positive_states": 0,
+      "episode_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.0,
+        "equal_cluster_mean_m": 0.0,
+        "ci95_m": [
+          0.0,
+          0.0
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      },
+      "scene_bootstrap": {
+        "clusters": 4,
+        "decision_weighted_mean_m": 0.0,
+        "equal_cluster_mean_m": 0.0,
+        "ci95_m": [
+          0.0,
+          0.0
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "endpoint_only_gain_m": {
+      "mean_m": 0.0,
+      "median_m": 0.0,
+      "material_states": 0,
+      "material_episodes": 0,
+      "material_scenes": 0,
+      "positive_states": 0,
+      "episode_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.0,
+        "equal_cluster_mean_m": 0.0,
+        "ci95_m": [
+          0.0,
+          0.0
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      },
+      "scene_bootstrap": {
+        "clusters": 4,
+        "decision_weighted_mean_m": 0.0,
+        "equal_cluster_mean_m": 0.0,
+        "ci95_m": [
+          0.0,
+          0.0
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    }
+  },
+  "by_scene": {
+    "data/scene_datasets/mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb": {
+      "states": 13,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb": {
+      "states": 9,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb": {
+      "states": 13,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    },
+    "data/scene_datasets/mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb": {
+      "states": 20,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "route_material_states": 0
+    }
+  },
+  "material_goal_best_gate_counts": {
+    "states": 0,
+    "endpoint_pass": 0,
+    "cost_pass": 0,
+    "both_pass": 0
+  },
+  "examples_route_retained": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "episode_id": "3000",
+      "high_level_step": 0,
+      "trajectory_id": "1981",
+      "baseline_episode_success": 1.0,
+      "selected_index": 6,
+      "goal_best_index": 6,
+      "route_best_index": 6,
+      "selected_progress_m": 2.494572639465332,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 0.0,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": 0.0,
+      "selected_reference_endpoint": 10,
+      "goal_best_reference_endpoint": 10,
+      "route_best_reference_endpoint": 10,
+      "selected_primitives": 12,
+      "route_best_primitives": 12,
+      "selected_path_m": 2.5523803960357436,
+      "route_best_path_m": 2.5523803960357436
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "episode_id": "3000",
+      "high_level_step": 1,
+      "trajectory_id": "1981",
+      "baseline_episode_success": 1.0,
+      "selected_index": 8,
+      "goal_best_index": 8,
+      "route_best_index": 8,
+      "selected_progress_m": 2.00624942779541,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 0.0,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": 0.0,
+      "selected_reference_endpoint": 18,
+      "goal_best_reference_endpoint": 18,
+      "route_best_reference_endpoint": 18,
+      "selected_primitives": 8,
+      "route_best_primitives": 8,
+      "selected_path_m": 2.0248062859991025,
+      "route_best_path_m": 2.0248062859991025
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "episode_id": "3000",
+      "high_level_step": 2,
+      "trajectory_id": "1981",
+      "baseline_episode_success": 1.0,
+      "selected_index": 10,
+      "goal_best_index": 10,
+      "route_best_index": 10,
+      "selected_progress_m": 0.8496799468994141,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 0.0,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": 0.0,
+      "selected_reference_endpoint": 22,
+      "goal_best_reference_endpoint": 22,
+      "route_best_reference_endpoint": 22,
+      "selected_primitives": 5,
+      "route_best_primitives": 5,
+      "selected_path_m": 0.9999999158926052,
+      "route_best_path_m": 0.9999999158926052
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "episode_id": "3000",
+      "high_level_step": 3,
+      "trajectory_id": "1981",
+      "baseline_episode_success": 1.0,
+      "selected_index": 11,
+      "goal_best_index": 11,
+      "route_best_index": 11,
+      "selected_progress_m": 0.9537954330444336,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 0.0,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": 0.0,
+      "selected_reference_endpoint": 27,
+      "goal_best_reference_endpoint": 27,
+      "route_best_reference_endpoint": 27,
+      "selected_primitives": 7,
+      "route_best_primitives": 7,
+      "selected_path_m": 1.2783686967364936,
+      "route_best_path_m": 1.2783686967364936
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "episode_id": "3000",
+      "high_level_step": 4,
+      "trajectory_id": "1981",
+      "baseline_episode_success": 1.0,
+      "selected_index": 16,
+      "goal_best_index": 16,
+      "route_best_index": 16,
+      "selected_progress_m": 1.4244680404663086,
+      "joint_cost_gain_m": 0.0,
+      "route_matched_gain_m": 0.0,
+      "endpoint_only_gain_m": 0.0,
+      "goal_best_endpoint_gate": true,
+      "goal_best_matched_cost_gate": true,
+      "goal_best_route_gate": true,
+      "goal_best_route_cost_delta": 0.0,
+      "selected_reference_endpoint": 32,
+      "goal_best_reference_endpoint": 32,
+      "route_best_reference_endpoint": 32,
+      "selected_primitives": 9,
+      "route_best_primitives": 9,
+      "selected_path_m": 1.512596391136452,
+      "route_best_path_m": 1.512596391136452
+    }
+  ],
+  "examples_route_rejected": [],
+  "privileged_analysis_only": true,
+  "learned_model_evaluated": false,
+  "limits": "Conservative geometric ordered-prefix proxy; no semantic certificate, causal decomposition or counterfactual full-episode score. Monotonic commitment and fixed selected endpoint can penalize recovery/further progress. Bootstrap is descriptive."
+}

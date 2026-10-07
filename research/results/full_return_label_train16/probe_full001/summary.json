@@ -1,0 +1,21 @@
+{
+  "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001",
+  "episodes": 16,
+  "scenes": 8,
+  "decisions": 132,
+  "forward_branches": 1429,
+  "reversed_decisions": 32,
+  "reversed_branches": 305,
+  "selected_sentinels_passed": 132,
+  "order_checks_passed": 305,
+  "max_sentinel_endpoint_error_m": 0.0,
+  "max_order_endpoint_error_m": 0.0,
+  "sentinel_sensor_matches": 132,
+  "order_sensor_matches": 305,
+  "all_required_gates_passed": true,
+  "baseline_noninterference_passed": true,
+  "all_admissible_options_complete": true,
+  "masked_budget_options_skipped": 22,
+  "limits": "16 training routes / 8 new-to-diagnostics scenes, one simulator seed. Privileged alternative rollout analysis; no learned model or held-out claim.",
+  "privileged_analysis_only": true
+}

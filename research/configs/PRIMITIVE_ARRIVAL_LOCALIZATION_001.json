@@ -1,0 +1,11 @@
+{
+  "experiment_id": "PRIMITIVE-ARRIVAL-LOCALIZATION-001",
+  "source_config": "research/configs/NATIVE_STOP_FEASIBILITY_001.json",
+  "source_result": "research/results/native_stop_feasibility/analysis_001/summary.json",
+  "output_dir": "research/results/native_stop_feasibility/primitive_arrival_001",
+  "selection": "All five listed cohorts, all baseline failures with native oracle_success=true; retain each once. Post-hoc diagnostic, not a new evaluation sample.",
+  "geodesic_tolerance_m": 0.00001,
+  "success_distance_m": 3.0,
+  "control": "Reuse recorded primitive poses, original dataset goal and scene navmesh. Reconstruct every selected route's pre/post distances before examining interior poses. No sensor render, policy call or simulator step.",
+  "limits": "Goal and navmesh are privileged analysis inputs. Interior arrival is a symptom, not a deployable interrupt or a success outcome without STOP. No action abstraction learning or novel method claim."
+}

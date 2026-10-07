@@ -1,0 +1,26 @@
+{
+  "experiment_id": "FULL-RETURN-LABEL-TRAIN16-001",
+  "status": "running",
+  "started_utc": "2026-10-07T07:30:17.794273+00:00",
+  "stages": [
+    {
+      "name": "top_logit_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/full_return_label_train16/schedule_top_logit_001.json",
+        "--source-capture",
+        "research/results/full_return_label_train16/capture_001",
+        "--output-dir",
+        "research/results/full_return_label_train16/top_logit_disabled_001",
+        "--exp-name",
+        "aaa_full_return_label_train16_002_top_logit_disabled"
+      ],
+      "status": "failed",
+      "started_utc": "2026-10-07T07:30:17.794380+00:00",
+      "returncode": 1,
+      "finished_utc": "2026-10-07T07:30:17.821243+00:00"
+    }
+  ]
+}

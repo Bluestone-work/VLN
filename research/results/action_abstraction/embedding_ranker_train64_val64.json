@@ -1,0 +1,52 @@
+{
+  "feature_dim": 768,
+  "interpretation": "offline train-to-val diagnostic; no navigation trajectory used these weights",
+  "pair_count": 2676,
+  "paired_regret_difference_vs_graph_logit": {
+    "pairwise_minus_graph": {
+      "bootstrap_95ci_m": [
+        -0.07729985464342419,
+        0.05361121400111809
+      ],
+      "mean_m": -0.011564576666649075
+    },
+    "pointwise_minus_graph": {
+      "bootstrap_95ci_m": [
+        -0.022538453632138248,
+        0.055777218418811864
+      ],
+      "mean_m": 0.01765124499797821
+    }
+  },
+  "privileged_label": "one-step goal-distance progress",
+  "ridge_lambda": 100.0,
+  "schema_version": 1,
+  "train_candidates": 1809,
+  "train_decisions": 485,
+  "val_candidates": 1838,
+  "val_decisions": 511,
+  "validation": {
+    "graph_logit": {
+      "candidates": 1838,
+      "decisions": 511,
+      "regret_mean_m": 0.5216851528668357,
+      "top1_rate": 0.5870841487279843
+    },
+    "pairwise_embedding": {
+      "candidates": 1838,
+      "decisions": 511,
+      "regret_mean_m": 0.5101205762001866,
+      "top1_rate": 0.5949119373776908
+    },
+    "pointwise_embedding": {
+      "candidates": 1838,
+      "decisions": 511,
+      "regret_mean_m": 0.5393363978648139,
+      "top1_rate": 0.5655577299412916
+    }
+  },
+  "weights_norm": {
+    "pairwise": 0.9371698508187143,
+    "pointwise": 0.9363692203055533
+  }
+}

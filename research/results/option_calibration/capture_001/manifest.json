@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-10-07T02:59:08.637164+00:00",
+  "config": {
+    "experiment_id": "OPTION-CALIBRATION-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "val_seen",
+    "episodes": 64,
+    "seed": 100,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "purpose": "Calibrate selected full graph-option labels before probing any alternative graph action.",
+    "limits": "Static scenes, default sensors and controller, no noise; sliding=true disables tryout. Privileged distances are analysis-only."
+  },
+  "exp_name": "aaa_option_capture001",
+  "overrides": {
+    "ENV_NAME": "VLNCEOptionTraceEnv",
+    "SIMULATOR_GPU_IDS": "[0]",
+    "TORCH_GPU_IDS": "[0]",
+    "GPU_NUMBERS": "1",
+    "NUM_ENVIRONMENTS": "1",
+    "EVAL.SPLIT": "val_seen",
+    "EVAL.EPISODE_COUNT": "64",
+    "TASK_CONFIG.SEED": "100",
+    "EVAL.CKPT_PATH_DIR": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "IL.back_algo": "control",
+    "RL_TOPO.ENABLED": "False",
+    "ACTION_ABSTRACTION.LEVEL": "default",
+    "ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED": "False",
+    "ACTION_ABSTRACTION.ORACLE_ENABLED": "False",
+    "ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED": "False",
+    "ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS": "False",
+    "TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING": "True"
+  },
+  "trace": true,
+  "git_commit": "1c1a794148a774940d59a12dc601ea51febf3d7e",
+  "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n?? vlnce_baselines/adaptive_action/\n",
+  "hashes": {
+    "research/configs/OPTION_CALIBRATION_001.json": "85d9f62458034fc00d554764b0de11c4274e39acfdd4d4012dcaa6bd8bbc4987",
+    "research/tools/run_option_capture.py": "f88f412844749cc8754ef231dc4a8f58e11692d67834879870ed474161b2e735",
+    "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+    "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+    "vlnce_baselines/ss_trainer_ETP.py": "81f31cc2779fb6311a1c929c54edeed20c22adc00e5abd953903ebe9c6e28960",
+    "run_r2r/iter_train.yaml": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+    "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3"
+  },
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "command_argv": [
+    "research/tools/run_option_capture.py",
+    "--config",
+    "research/configs/OPTION_CALIBRATION_001.json",
+    "--output-dir",
+    "research/results/option_calibration/capture_001",
+    "--exp-name",
+    "aaa_option_capture001",
+    "--trace"
+  ],
+  "environment": {
+    "EGL_PLATFORM": "surfaceless",
+    "CUDA_VISIBLE_DEVICES": "0"
+  }
+}

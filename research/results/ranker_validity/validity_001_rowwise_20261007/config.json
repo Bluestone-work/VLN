@@ -1,0 +1,28 @@
+{
+  "experiment_id": "RANKER-VALIDITY-001",
+  "question": "Do previous candidate ranker conclusions survive action-identity and clustered uncertainty checks?",
+  "train_tag": "train960",
+  "validation_tags": [
+    "val64",
+    "valunseen64"
+  ],
+  "splits": {
+    "train960": "train",
+    "val64": "val_seen",
+    "valunseen64": "val_unseen"
+  },
+  "input_root": "research/results/action_abstraction",
+  "dataset_template": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/{split}/{split}_bertidx.json.gz",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "ridge_lambda": 100.0,
+  "bootstrap_seed": 20261007,
+  "bootstrap_samples": 5000,
+  "geometry_tolerance": 1e-05,
+  "aggregation_sensitivity": [
+    "mean",
+    "min",
+    "max"
+  ],
+  "controls": "Reuse frozen embeddings, same training records/objectives, no hyperparameter selection, no simulator or model changes.",
+  "label_limit": "Goal progress after direct candidate probe is not progress after the full graph option/controller. Graph aggregation is sensitivity analysis only."
+}

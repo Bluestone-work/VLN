@@ -1,0 +1,13 @@
+experiment_id: BASELINE_SMOKE_R2R_VAL_SEEN
+base_config: run_r2r/iter_train.yaml
+checkpoint: data/logs/checkpoints/release_r2r/ckpt.iter12000.pth
+pretrained_language: data/pretrained/ETP/mlm.sap_r2r/ckpts/model_step_82500.pt
+split: val_seen
+episodes: 1
+gpu: 0
+num_environments: 1
+rl_topo_enabled: false
+back_algo: control
+seed_source: TASK_CONFIG.SEED from base config
+
+seed: 100

@@ -1,0 +1,19 @@
+{
+  "interpretation": {
+    "goal_distance_used": true,
+    "not_deployable": true,
+    "privileged": true,
+    "trajectory_metrics_are_from_oracle_intervention_rollout": true
+  },
+  "num_decisions": 529,
+  "num_overrides": 87,
+  "oracle_action_type_count": {
+    "ghost": 477,
+    "stop": 52
+  },
+  "oracle_candidate_count_mean": 3.54820415879017,
+  "oracle_selected_candidate_progress_mean_m": 0.7251224486706151,
+  "override_rate": 0.16446124763705103,
+  "policy_action_index_changed_count": 87,
+  "schema_version": 1
+}

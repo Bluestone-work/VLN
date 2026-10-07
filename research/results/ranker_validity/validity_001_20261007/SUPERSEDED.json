@@ -1,0 +1,5 @@
+{
+  "status": "superseded_excluded",
+  "reason": "Batched BLAS changes machine-precision alias ties; historical scores used row-wise dot products.",
+  "accepted_run": "../validity_001_rowwise_20261007"
+}

@@ -1,0 +1,24 @@
+{
+  "experiment_id": "OPTION-CALIBRATION-001",
+  "base_config": "run_r2r/iter_train.yaml",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "split": "val_seen",
+  "episodes": 64,
+  "seed": 100,
+  "allow_sliding": true,
+  "tryout_effective": false,
+  "back_algo": "control",
+  "replay_modes": ["sequential", "isolated_branch"],
+  "gates": {
+    "endpoint_tolerance_m": 0.00001,
+    "rotation_tolerance_rad": 0.00001,
+    "progress_tolerance_m": 0.00001,
+    "primitive_action_sequence_exact": true,
+    "per_primitive_collision_sequence_exact": true,
+    "rng_post_exact": true,
+    "terminal_flag_exact": true,
+    "baseline_episode_metrics_tolerance": 0.000001
+  },
+  "purpose": "Calibrate selected full graph-option labels before probing any alternative graph action.",
+  "limits": "Static scenes, default sensors and controller, no noise; sliding=true disables tryout. Privileged distances are analysis-only."
+}

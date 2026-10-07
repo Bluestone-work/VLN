@@ -1,0 +1,21 @@
+{
+  "experiment_id": "CONTINUATION-LABEL-TRAIN64-001",
+  "episodes": 64,
+  "scenes": 16,
+  "decisions": 469,
+  "forward_branches": 5334,
+  "reversed_decisions": 128,
+  "reversed_branches": 1365,
+  "selected_sentinels_passed": 469,
+  "order_checks_passed": 1365,
+  "max_sentinel_endpoint_error_m": 0.0,
+  "max_order_endpoint_error_m": 0.0,
+  "sentinel_sensor_matches": 469,
+  "order_sensor_matches": 1365,
+  "all_required_gates_passed": true,
+  "baseline_noninterference_passed": true,
+  "all_admissible_options_complete": true,
+  "masked_budget_options_skipped": 52,
+  "limits": "64 new training routes / 16 scenes; privileged label diagnostic, one simulator seed, no held-out model claim.",
+  "privileged_analysis_only": true
+}

@@ -1,0 +1,14 @@
+{
+  "experiment_id": "FULL-RETURN-FEATURE-AUDIT-001",
+  "type": "post-hoc descriptive analysis of previously observed outcomes",
+  "source_root": "research/results/full_return_label_train16",
+  "accepted_tag": "003",
+  "analysis_path": "research/results/full_return_label_train16/full_return_analysis_001/summary.json",
+  "output_dir": "research/results/full_return_feature_audit/analysis_001",
+  "bootstrap_seed": 20261009,
+  "bootstrap_samples": 5000,
+  "features": ["logit_gap", "normalized_entropy", "commanded_polyline_delta_m", "back_path_nodes_delta", "current_proposal"],
+  "metrics": ["success", "spl", "ndtw", "distance_to_goal", "path_length", "primitive_action_count"],
+  "controls": "No rollout, fitting, policy change, threshold search, outcome-based sample selection or validation access. Graph pre-action fields only; compare existing three continuations at each same state.",
+  "limits": "16 routes, 8 training scenes, one simulator seed. Two alternatives chosen conditional on existing logits. Features are descriptive associations only, not evidence of predictive generalization or adaptive abstraction. Six-metric dominance gate remains unchanged."
+}
