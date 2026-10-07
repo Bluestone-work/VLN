@@ -1,0 +1,226 @@
+{
+  "analysis": "transfer of frozen pairwise graph preference to separate training cohort",
+  "feature_names": [
+    "graph_logit",
+    "logit_rank_percentile",
+    "policy_entropy",
+    "stop_probability",
+    "candidate_count",
+    "action_is_stop",
+    "current_proposal",
+    "ghost_distance_m",
+    "back_path_length_m",
+    "back_path_nodes",
+    "embedding_norm",
+    "embedding_mean",
+    "embedding_std"
+  ],
+  "train_states": 28,
+  "train_actions": 388,
+  "train_strict_pairs": 1259,
+  "train_pair_support_scenes": 7,
+  "confirmation_states": 16,
+  "confirmation_scenes": 8,
+  "confirmation_strict_pairs": 19,
+  "pair_accuracy": {
+    "learned": 0.8947368421052632,
+    "native_logit": 0.8421052631578947
+  },
+  "pair_accuracy_counts": {
+    "learned": 19,
+    "native_logit": 19
+  },
+  "groups": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "episode_id": "3716",
+      "step": 0,
+      "strict_pair_count": 0,
+      "has_dominating_choice": false,
+      "learned_index": 3,
+      "native_index": 3,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/17DRP5sb8fy/17DRP5sb8fy.glb",
+      "episode_id": "3373",
+      "step": 0,
+      "strict_pair_count": 1,
+      "has_dominating_choice": false,
+      "learned_index": 3,
+      "native_index": 3,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/D7G3Y4RVNrH/D7G3Y4RVNrH.glb",
+      "episode_id": "2101",
+      "step": 2,
+      "strict_pair_count": 1,
+      "has_dominating_choice": false,
+      "learned_index": 10,
+      "native_index": 10,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/D7G3Y4RVNrH/D7G3Y4RVNrH.glb",
+      "episode_id": "9935",
+      "step": 5,
+      "strict_pair_count": 0,
+      "has_dominating_choice": false,
+      "learned_index": 15,
+      "native_index": 15,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/GdvgFV5R1Z5/GdvgFV5R1Z5.glb",
+      "episode_id": "9871",
+      "step": 4,
+      "strict_pair_count": 1,
+      "has_dominating_choice": false,
+      "learned_index": 14,
+      "native_index": 14,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/GdvgFV5R1Z5/GdvgFV5R1Z5.glb",
+      "episode_id": "9559",
+      "step": 2,
+      "strict_pair_count": 0,
+      "has_dominating_choice": false,
+      "learned_index": 8,
+      "native_index": 8,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/JF19kD82Mey/JF19kD82Mey.glb",
+      "episode_id": "8891",
+      "step": 10,
+      "strict_pair_count": 2,
+      "has_dominating_choice": false,
+      "learned_index": 26,
+      "native_index": 26,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/JF19kD82Mey/JF19kD82Mey.glb",
+      "episode_id": "2451",
+      "step": 6,
+      "strict_pair_count": 2,
+      "has_dominating_choice": false,
+      "learned_index": 15,
+      "native_index": 15,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "episode_id": "7085",
+      "step": 0,
+      "strict_pair_count": 2,
+      "has_dominating_choice": false,
+      "learned_index": 5,
+      "native_index": 5,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "episode_id": "6235",
+      "step": 6,
+      "strict_pair_count": 1,
+      "has_dominating_choice": false,
+      "learned_index": 24,
+      "native_index": 23,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/VzqfbhrpDEA/VzqfbhrpDEA.glb",
+      "episode_id": "7537",
+      "step": 1,
+      "strict_pair_count": 2,
+      "has_dominating_choice": false,
+      "learned_index": 8,
+      "native_index": 8,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/VzqfbhrpDEA/VzqfbhrpDEA.glb",
+      "episode_id": "7585",
+      "step": 4,
+      "strict_pair_count": 2,
+      "has_dominating_choice": false,
+      "learned_index": 14,
+      "native_index": 14,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/i5noydFURQK/i5noydFURQK.glb",
+      "episode_id": "5703",
+      "step": 5,
+      "strict_pair_count": 1,
+      "has_dominating_choice": false,
+      "learned_index": 13,
+      "native_index": 13,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/i5noydFURQK/i5noydFURQK.glb",
+      "episode_id": "3023",
+      "step": 0,
+      "strict_pair_count": 2,
+      "has_dominating_choice": false,
+      "learned_index": 4,
+      "native_index": 4,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+      "episode_id": "2979",
+      "step": 5,
+      "strict_pair_count": 0,
+      "has_dominating_choice": false,
+      "learned_index": 14,
+      "native_index": 14,
+      "learned_is_dominated": false,
+      "native_is_dominated": false
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+      "episode_id": "2508",
+      "step": 3,
+      "strict_pair_count": 2,
+      "has_dominating_choice": true,
+      "learned_index": 12,
+      "native_index": 12,
+      "learned_is_dominated": true,
+      "native_is_dominated": true
+    }
+  ],
+  "uses_unseen_labels": false,
+  "uses_future_features": false,
+  "learned_model_used_in_navigation": false,
+  "decision": "CONDITIONAL GO for a larger prospective confirmation",
+  "limits": [
+    "Confirmation is an existing separate training diagnostic, not untouched validation.",
+    "Only two frozen alternatives per state; predicted choices were not executed.",
+    "No deployable gain or benchmark claim."
+  ],
+  "hashes": {
+    "research/results/critical_causal_train64_new/plan_001.json": "6388c5018b5667e7c8e2374442d133fe956b51892a5513ccf1e8379c3cfeeaa0",
+    "research/results/critical_causal_train64_new/full_001/results.jsonl": "b4156a023448a1dbf46b7bc7e22163d4364d4a4a5aaa62968d54022759b3acf3",
+    "research/results/full_return_label_train16/full_return_analysis_001/summary.json": "121eb7e6ac64cc1b0d1b61931a98637c779591793e45a606115642cbf79947e5",
+    "research/tools/graph_value_transfer.py": "19560d8ed55a77153f5a2acf532d3fb949618ec0008a3edede8f9612794ad5e4"
+  }
+}

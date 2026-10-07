@@ -1,0 +1,83 @@
+{
+  "all_checks_passed": true,
+  "subset_episode_and_vocab_identity": true,
+  "exact_full_option_or_prefix_checks": 10868,
+  "exact_primitive_records": 144979,
+  "interrupt_prefix_and_cost_checks": 8,
+  "cut_rows": [
+    {
+      "case_id": "sense_only_10506_s8",
+      "cut": 9,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_consume_10506_s8",
+      "cut": 9,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_retain_10506_s8",
+      "cut": 9,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "sense_only_10754_s5",
+      "cut": 7,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_consume_10754_s5",
+      "cut": 7,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_retain_10754_s5",
+      "cut": 7,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "sense_only_3865_s9",
+      "cut": 23,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_consume_3865_s9",
+      "cut": 23,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_retain_3865_s9",
+      "cut": 23,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "sense_only_4702_s8",
+      "cut": 2,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_consume_4702_s8",
+      "cut": 2,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    },
+    {
+      "case_id": "interrupt_retain_4702_s8",
+      "cut": 2,
+      "sensors_match": true,
+      "partial_cost_retained": true
+    }
+  ],
+  "result_sha256": "00bd46126dad15c441d45bbe3f9f5cd536998e67c8974fd470d61e376c5ff60b",
+  "script_sha256": "67128db6000e9ac29a367ea7c76aae3145152afcad68f97bb2cb1e7e947eef9a"
+}

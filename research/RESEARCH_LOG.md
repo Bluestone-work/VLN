@@ -916,3 +916,96 @@ this cycle. See `SINGLE_INTERVENTION_REPORT.md` and
 **Interpretation:** Cross-scene confirmation makes graph-choice opportunity the leading observed mechanism, but 6/22 is not a majority and 14 routes remain unresolved. Interrupt remains NO-GO for learning. The subset was previously inspected and is not an untouched held-out benchmark.
 
 **Next:** Keep coarse/default/fine and interrupt-policy training stopped. Register a training-only, route-quality-aware long-horizon graph value/preference feasibility study only after fixing outcome-blind features, continuation-cost accounting and a genuinely held-out scene protocol. Do not use unseen results as labels.
+
+## 2026-10-07 / CRITICAL-GRAPH-VALUE-FRESH-001 (completed)
+
+**Question:** Does a newly registered, six-scene training failure cohort contain
+enough route-quality-aware native graph-action preference signal to justify one
+held-out confirmation?
+
+**Change:** Frozen 10 failures from 16 new training scenes, enumerated every
+admissible native graph action at 47 critical states, executed 996 full native
+continuations, and tested four preselected interrupt cuts. No model controlled
+navigation.
+
+**Control:** Same checkpoint, seed 100, sensors, graph masks, controller,
+native STOP and 15-decision horizon. Controls, action identity, primitive
+prefixes, RNG, collisions and final metrics were independently audited.
+
+**Result:** 996/996 action cases passed. Nine of ten routes have a graph-choice
+rescue; seven have SR rescue with nDTW nondegradation across five scenes.
+Termination rescues occur on six routes and overlap. Interrupt rescues are 2/4,
+but only one is route-quality clean. The audit passes 10,868 exact option/prefix
+checks and 144,979 primitive checks. A corrected outcome-blind pairwise model
+has 5,668 strict pairs and leave-one-scene-out accuracy 0.9386 versus 0.8520
+for native logit.
+
+**Interpretation:** This is **CONDITIONAL GO** for a separately registered,
+scene-grouped full-return confirmation. Pair accuracy is feasibility evidence;
+predicted actions were not executed. Counts overlap and cannot be called a
+causal majority or benchmark gain. Interrupt learning remains NO-GO.
+
+**Correction:** The first feasibility artifact indexed STOP probability against
+the unfiltered option list and omitted the current-to-first back-path segment.
+`feasibility_001.json` is retained as superseded audit history;
+`feasibility_002.json` uses the corrected schema. New unit tests cover both
+cases. Rollout rescue counts are unchanged.
+
+**Next:** Register and execute one independent six-scene confirmation with the
+corrected feature contract. Compare frozen ranker, native logit and random
+choice without policy retraining. Require route-quality rescue in at least two
+scenes while preserving STOP and primitive budget; otherwise stop graph-value
+fitting and investigate proposal coverage.
+
+## 2026-10-07 / GRAPH-VALUE-CONFIRMATION-001-SCENE-POOL-AUDIT (completed)
+
+**Question:** Is a genuinely independent six-scene, 96-route confirmation
+cohort available in the local R2R/RxR data after the registered exclusions?
+
+**Change:** Audited the metadata-only scene pool before writing any confirmation
+dataset. Counted unique scene IDs and trajectories from the exact source and
+hashed every exclusion manifest.
+
+**Control:** No episode outcomes, reference routes, simulator states or labels
+were read. No dataset sample was written and no model was trained.
+
+**Result:** The R2R train source has 61 scenes. Existing diagnostic exclusions
+cover 59, leaving two scenes with four routes total. This is below the
+pre-registered six-scene/96-route gate. RxR train uses the same 59 MP3D scene
+IDs, so changing language annotations would not create scene-independent
+evidence.
+
+**Interpretation:** **NO-GO for the clean independent confirmation with the
+current local scene pool.** Reusing the 59 covered scenes or validation labels
+would invalidate the intended gate. This is a data-availability limitation,
+not evidence for or against graph ranking.
+
+**Next:** Expand the scene/data pool, or explicitly register a weaker
+episode-level cross-scene-overlap study with its limitations. Keep the ranker
+out of navigation and keep RL/PPO/VLM and interrupt-policy work paused until a
+valid confirmation cohort exists.
+
+## 2026-10-07 / GRAPH-VALUE-CROSS-COHORT-TRANSFER-001 (completed)
+
+**Question:** Does the corrected fresh-cohort preference model transfer to the
+earlier 16-state, eight-scene full-return cohort?
+
+**Change:** Fit only on the fresh 47-state cohort using schema v2, then score the
+separate two-alternative confirmation states offline. No target outcomes were
+used as features and no predicted action was executed.
+
+**Control:** Native graph logit, exact action identity, same strict dominance
+definition and the unchanged confirmation records.
+
+**Result:** Learned pair accuracy is 0.8421, exactly equal to native logit
+0.8421 over 19 strict pairs (`transfer_002.json`). The earlier train-new-to-
+train16 transfer remains 0.8947 versus 0.8421, but it uses a different
+training cohort and is only feasibility evidence.
+
+**Interpretation:** The fresh in-cohort 0.9386 pair accuracy does not establish
+cross-cohort generalization. This strengthens the need for a truly independent
+confirmation and rules out treating the current ranker as deployable.
+
+**Next:** Do not fit more features or tune thresholds on existing outcomes.
+Obtain new scene data or explicitly downgrade the next study to an
+episode-level overlap analysis with wider uncertainty.

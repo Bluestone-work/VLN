@@ -519,3 +519,44 @@ is used for training.
 The next gate is a training-only, scene-grouped graph-value/preference feasibility
 study with unseen labels held out, defined in `GRAPH_VALUE_NEXT_GATE.md`. It does
 not authorize selector training from the current retrospective outcomes.
+
+### Fresh graph-value feasibility cohort
+
+The registered `CRITICAL-GRAPH-VALUE-FRESH-001` cohort is complete. It uses 64
+routes in 16 newly selected training scenes, with 10 baseline failures in six
+scenes. Failure-critical enumeration covers 47 states and all 996 admissible
+native graph actions. Every action was run from its exact frozen state through
+the unchanged navigator and native STOP. All 996 cases, 10 controls and the
+four interrupt controls passed the validity gates; the independent audit found
+10,868 exact option/prefix checks and 144,979 primitive records.
+
+The full-return opportunity is substantial enough to justify a feasibility
+follow-up: 9/10 routes have some graph-choice rescue and 7/10 have an SR rescue
+with nondecreasing nDTW, spanning five scenes. Termination rescues occur on
+6/10 and overlap graph-choice rescues. Interrupt rescues occur on 2/4 tested
+routes, but only route 4702 preserves route quality; route 3865 loses 17.898
+nDTW points and adds 97 primitives. These overlapping oracle counts are not a
+causal partition and are not benchmark results.
+
+The corrected outcome-blind feature audit has 5,668 strict dominance pairs over
+six scenes. A frozen scene-grouped linear pairwise model reaches 0.9386 pair
+accuracy versus 0.8520 for native graph logit. The prior feasibility artifact
+contained a STOP-probability indexing error and omitted the current-to-first
+back-path segment; it remains preserved as `feasibility_001.json`, while
+`feasibility_002.json` is the corrected result and is covered by unit tests.
+Because predicted actions were not executed, this is feasibility evidence only.
+
+**Current decision: CONDITIONAL GO for one independently registered,
+scene-grouped full-return confirmation of graph-value/preference learning.**
+The adaptive coarse/default/fine selector remains closed, interrupt-policy
+learning remains closed, and RL/PPO/VLM work remains paused. If the next cohort
+does not show route-quality rescue in at least two independent scenes while
+preserving native STOP and primitive budget, graph-value fitting will stop and
+proposal coverage will be investigated instead.
+
+The confirmation was audited before sampling. Existing exclusions cover 59 of
+the 61 R2R train scenes, leaving only two scenes and four routes; RxR train uses
+the same MP3D scene set. The six-scene/96-route independent gate is therefore
+**NO-GO with the current local data pool**. No dataset was written and no
+outcome labels were read. A new data source or an explicitly weaker
+scene-overlap protocol is required before evaluating a learned ranker.

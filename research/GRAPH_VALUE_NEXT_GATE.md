@@ -27,3 +27,27 @@ The target is a route-quality-aware continuation utility, not one-step goal prog
 5. If fewer than two new scenes show route-quality rescue, stop. Do not add RL, PPO, VLM or a waypoint predictor change.
 
 If the gates pass, compare a frozen preference ranker against native logit and a random selector with no policy retraining. Only then consider execution-aware joint fine-tuning. If gates fail, keep adaptive abstraction and graph-value learning NO-GO and investigate proposal coverage with an independent reachable waypoint oracle. This gate deliberately postpones RL/VLM.
+
+## Fresh cohort update (2026-10-07)
+
+The registered development cohort `CRITICAL-GRAPH-VALUE-FRESH-001` is now
+complete. It covers 47 critical states and 996/996 native full-return action
+cases from 10 failures in six new training scenes. Nine routes have some
+non-STOP rescue and seven have a rescue with SR and nondecreasing nDTW. These
+are overlapping oracle opportunities, not deployable results or a causal
+majority. Four interrupt routes were tested; only one has a clean route-quality
+rescue, so no interrupt policy is trained.
+
+The corrected frozen feature analysis has 5,668 strict dominance pairs. Its
+leave-one-scene-out pair accuracy is 0.9386 versus 0.8520 for native graph
+logit. The previous `feasibility_001.json` is retained because it is part of the
+audit trail; `feasibility_002.json` corrects STOP-probability indexing and
+back-path cost extraction. The correction does not alter any rollout or rescue
+count. Pair accuracy is still only a feasibility signal because predictions
+were never executed.
+
+The gate is therefore **CONDITIONAL GO** for one independently registered,
+scene-grouped full-return confirmation. The confirmation must use the corrected
+feature schema, preserve native STOP and primitive budget, and report route
+quality by scene. Do not tune on unseen outcomes, insert the ranker into the
+benchmark, or start RL/VLM work before that gate.

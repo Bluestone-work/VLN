@@ -1,0 +1,52 @@
+{
+  "experiment_id": "CRITICAL-GRAPH-VALUE-FRESH-001",
+  "status": "diagnostic_complete",
+  "cohort_type": "new_training_development_cohort",
+  "benchmark_status": "not_a_validation_benchmark",
+  "sampling": "64 routes / 16 scenes, metadata-frozen before full-return outcomes",
+  "failure_scope": "10 baseline failures / 6 scenes; 47 critical states; 996 native full-return action cases",
+  "interrupt_scope": "4 tested routes only; interrupt counts use denominator 4, never 10",
+  "oracle_only": true,
+  "unseen_labels_used": false,
+  "learned_model_used_in_navigation": false,
+  "failed_attempt_retained": "full_001 worker ConnectionResetError; zero action cases; excluded from denominators",
+  "accepted_run": "full_002",
+  "result_files": {
+    "plan_001.json": {
+      "sha256": "78e12f23274993e360102e34e241a93be55049a9eeb826c605b29fc749d9f9db",
+      "bytes": 2218500
+    },
+    "full_002/manifest.json": {
+      "sha256": "c5a3cbee449c4946cea14778902697221d5f7f6cc1783fad052c87baebe11710",
+      "bytes": 2463903
+    },
+    "full_002/status.json": {
+      "sha256": "4636283c5efbfe87d7aa61ebe6a755e4a3cf104bb890f8ce9cdf3aa723bc3fe6",
+      "bytes": 1365
+    },
+    "full_002/summary.json": {
+      "sha256": "4636283c5efbfe87d7aa61ebe6a755e4a3cf104bb890f8ce9cdf3aa723bc3fe6",
+      "bytes": 1365
+    },
+    "full_002/results.jsonl": {
+      "sha256": "00bd46126dad15c441d45bbe3f9f5cd536998e67c8974fd470d61e376c5ff60b",
+      "bytes": 2903413
+    },
+    "analysis_001/summary.json": {
+      "sha256": "bcc8cc4204db97b1dfbc30197c37d36f169542917814ebed1ddc5c949363897c",
+      "bytes": 54272
+    },
+    "analysis_001/table.md": {
+      "sha256": "b198172915a46dcdde6384fdda97c287f9860409f082be3d43ab970747a34d58",
+      "bytes": 937
+    },
+    "feasibility_002.json": {
+      "sha256": "698670e80eb3430466c69217071d902af27fd1c657c2e4ed6164ba8ade21c90d",
+      "bytes": 4904
+    },
+    "independent_audit_001/summary.json": {
+      "sha256": "8407290d3440449f75e776bd1f9178533d119364ebe8644e6b612dad3454f2b3",
+      "bytes": 2053
+    }
+  }
+}

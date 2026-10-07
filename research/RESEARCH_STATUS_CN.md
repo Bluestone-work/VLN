@@ -286,3 +286,52 @@ STOP，不能用已知案例继续调 H=3/H=4 后再声称独立验证。
 同一冻结规则覆盖此前已检查过的 unseen66 诊断子集的 22 条失败路线、71 个关键状态和 985 个原生动作。原生非 STOP 替换救回 SR 的路线为 7/22，其中 6/22 同时不降低 nDTW；终止替换为 6/22，与 graph 选择重叠。4 个碰撞中断 cut 仍为 0/4 救回，额外观测控制精确复现基线。8152 项指标、9688 个 option/prefix、127881 个 primitive 记录通过独立校验。
 
 训练集与 unseen 合并后，保留路线质量的 graph 选择机会为 10/31，终止为 8/31，中断为 0/8，仍有 17/31 未归因。graph value/preference 是领先机制但没有严格多数；unseen 只作跨场景诊断，绝不用于训练标签。下一步先注册训练集上的 outcome-blind 特征和真正新场景验证，再决定是否学习。报告见 `CRITICAL_CAUSAL_REPORT.md`。
+
+### 21. fresh training cohort 的 graph-value 可行性确认
+
+按预注册方案完成了一个全新的训练开发 cohort：64 条路线、16 个新场景，
+其中 10 条 baseline failure 分布在 6 个场景。关键失败状态共 47 个，穷举
+996 个原生 graph actions，并从冻结状态完整运行到原生 STOP。996/996 action
+cases、10 个 control 和 4 个 interrupt route 均通过完整性检查；独立审计通过
+10,868 个 option/prefix 检查和 144,979 个 primitive 记录。
+
+结果是 9/10 路线存在某个 graph-choice rescue，其中 7/10 同时满足 SR rescue
+和 nDTW 不下降，覆盖 5 个场景；termination rescue 为 6/10，和 graph rescue
+有重叠。interrupt 只测试 4 条路线，2 条 SR rescue 中只有 4702 保持路线质量；
+3865 的 nDTW 下降 17.898 个百分点并多用 97 个 primitive。因此 interrupt 仍不
+训练，以上计数也不是互斥因果分类或 benchmark 结果。
+
+纠正后的 outcome-blind feature feasibility 有 5,668 个 strict dominance pairs，
+leave-one-scene-out pair accuracy 为 0.9386，native graph logit 为 0.8520。旧的
+`feasibility_001.json` 中 STOP probability 索引到了未过滤选项，back-path cost
+漏掉了当前位置到首点的段；旧文件保留作审计，`feasibility_002.json` 是纠正后
+结果，并新增了单元测试。该修正不改变任何 full-return rollout 或 rescue count。
+
+当前结论是 **CONDITIONAL GO**：只注册并执行一轮独立、按 scene 分组的
+full-return confirmation，再决定是否做 graph-value/preference learning。预测
+动作尚未执行，不能声称可部署增益。coarse/default/fine 主线、interrupt policy、
+RL/PPO 和 VLM 继续暂停。如果下一轮不能在至少两个独立场景中保持路线质量
+rescue，同时保留 native STOP 和 primitive budget，就停止 graph-value fitting，
+转向 proposal coverage 诊断。
+
+### 22. 独立 confirmation 的场景池审计
+
+在真正采样前审计了注册的 `GRAPH-VALUE-CONFIRMATION-001`。本地 R2R train
+共有 61 个场景，但已有诊断 cohort 的排除集合覆盖了 59 个，只剩 2 个场景、
+4 条路线，达不到预注册的至少 6 场景、96 路线门槛。因此没有写出新的数据集，
+也没有读取 outcome 或训练模型。RxR train 使用相同的 MP3D 场景集合；换语言
+标注不能制造 scene-independent evidence。
+
+这个结果是 **当前数据池下独立 confirmation 的 NO-GO**，属于数据可用性限制，
+不是对 graph ranking 的正负结论。不能为了继续而复用已覆盖场景或 validation
+标签。审计记录在 `research/results/graph_value_confirmation_train96/scene_pool_audit_001.json`。
+
+下一步只有两个合规选择：扩充真正的新场景／数据源，或明确注册一个允许场景
+重叠的 episode-level study 并降低结论强度。ranker 仍不接入导航，RL/PPO、VLM
+和 interrupt policy 继续暂停。
+
+另外做了一个严格的跨 cohort transfer：用 fresh 的 47-state schema v2
+训练，再给此前 16-state、8-scene full-return cohort 打分。19 个 strict pairs
+上 learned 与 native logit 都是 **0.8421**（`transfer_002.json`）。因此 fresh
+cohort 内的 0.9386 不能当作泛化结果；此前 train-new 到 train16 的 0.8947
+仍只保留为可行性信号。当前不增加特征、不调阈值，也不把 ranker 接入导航。

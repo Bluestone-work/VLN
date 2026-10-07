@@ -1,0 +1,59 @@
+{
+  "experiment_id": "GRAPH-VALUE-CONFIRMATION-001",
+  "status": "blocked_before_sampling_scene_pool_audit",
+  "split": "train",
+  "minimum_routes": 96,
+  "minimum_scenes": 6,
+  "seed": 20261009,
+  "sampling": {
+    "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+    "scenes": 8,
+    "routes_per_scene": 12,
+    "seed": 20261009,
+    "exclude_sources": [
+      "research/results/graph_option_pilot/train8_sampling/manifest.json",
+      "research/results/graph_option_train64/sampling_001/manifest.json",
+      "research/results/continuation_label_train64/sampling_001/manifest.json",
+      "research/results/full_return_label_train16/sampling_001/manifest.json",
+      "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+      "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+      "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+      "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl"
+    ]
+  },
+  "dataset_path": "research/results/graph_value_confirmation_train96/sampling_001/train96_bertidx.json.gz",
+  "sampling_manifest": "research/results/graph_value_confirmation_train96/sampling_001/manifest.json",
+  "feature_schema_version": 2,
+  "protocol": "research/GRAPH_VALUE_CONFIRMATION_PROTOCOL.md",
+  "feature_source": "research/tools/graph_value_feasibility.py",
+  "exclude_cohorts": [
+    "graph_option_pilot",
+    "graph_option_train64",
+    "continuation_label_train64",
+    "full_return_label_train16",
+    "critical_causal_train64",
+    "critical_causal_train64_new",
+    "critical_graph_value_fresh",
+    "action_abstraction_ranker_diagnostics"
+  ],
+  "controls": [
+    "native_selected_action",
+    "native_graph_logit",
+    "seeded_random_admissible_action"
+  ],
+  "learned_model_in_navigation": false,
+  "unseen_labels_used": false,
+  "benchmark_evaluation": false,
+  "go_gate": {
+    "route_quality_rescue_scenes_min": 2,
+    "preserve_native_stop": true,
+    "report_scene_cluster_intervals": true,
+    "primitive_budget_inflation_allowed": false
+  },
+  "stop_conditions": [
+    "fewer than two independent scenes show route-quality rescue",
+    "native STOP or action identity controls fail",
+    "feature contract requires privileged information"
+  ],
+  "scene_pool_audit": "research/results/graph_value_confirmation_train96/scene_pool_audit_001.json"
+}

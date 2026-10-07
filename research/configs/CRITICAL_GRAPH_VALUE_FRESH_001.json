@@ -1,0 +1,18 @@
+{
+  "experiment_id": "CRITICAL-GRAPH-VALUE-FRESH-001",
+  "source_root": "research/results/graph_value_fresh_train64_retry",
+  "failure_subset_dataset": "research/results/critical_graph_value_fresh/failure_routes_10.json.gz",
+  "probe": "probe_full001",
+  "noninterference": "noninterference_001",
+  "protocol": "research/GRAPH_VALUE_NEXT_GATE.md",
+  "seed": 100,
+  "max_interrupt_routes": 4,
+  "collision_min": 1,
+  "endpoint_deviation_m": 0.5,
+  "stall_primitives_min": 3,
+  "stall_path_m_max": 0.1,
+  "success_distance_m": 3.0,
+  "max_high_level_decisions": 15,
+  "training": true,
+  "oracle_analysis_only": true
+}

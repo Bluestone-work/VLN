@@ -1,0 +1,132 @@
+{
+  "experiment_id": "CRITICAL-GRAPH-VALUE-FRESH-001",
+  "analysis": "scene-grouped linear pairwise preference feasibility",
+  "feature_names": [
+    "graph_logit",
+    "logit_rank_percentile",
+    "policy_entropy",
+    "stop_probability",
+    "candidate_count",
+    "action_is_stop",
+    "current_proposal",
+    "ghost_distance_m",
+    "back_path_length_m",
+    "back_path_nodes",
+    "embedding_norm",
+    "embedding_mean",
+    "embedding_std"
+  ],
+  "feature_schema_version": 2,
+  "feature_contract": "CRITICAL_GRAPH_VALUE_TRAINNEW_PROTOCOL.md",
+  "states": 47,
+  "actions": 996,
+  "strict_dominance_pairs": 5668,
+  "pair_support_scenes": 6,
+  "pair_support_scene_ids": [
+    "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+    "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+    "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+    "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb"
+  ],
+  "folds": [
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "status": "evaluated",
+      "train_pairs": 5612,
+      "val_pairs": 56,
+      "states": 2,
+      "states_with_route_quality_action": 2,
+      "learned_dominated_choice_rate": 0.0,
+      "native_dominated_choice_rate": 0.5,
+      "learned_route_quality_pick_rate": 0.0,
+      "native_route_quality_pick_rate": 0.0
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "status": "evaluated",
+      "train_pairs": 3812,
+      "val_pairs": 1856,
+      "states": 16,
+      "states_with_route_quality_action": 7,
+      "learned_dominated_choice_rate": 0.25,
+      "native_dominated_choice_rate": 0.6875,
+      "learned_route_quality_pick_rate": 0.2857142857142857,
+      "native_route_quality_pick_rate": 0.0
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "status": "evaluated",
+      "train_pairs": 5534,
+      "val_pairs": 134,
+      "states": 2,
+      "states_with_route_quality_action": 0,
+      "learned_dominated_choice_rate": 0.0,
+      "native_dominated_choice_rate": 0.0,
+      "learned_route_quality_pick_rate": null,
+      "native_route_quality_pick_rate": null
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "status": "evaluated",
+      "train_pairs": 5132,
+      "val_pairs": 536,
+      "states": 3,
+      "states_with_route_quality_action": 1,
+      "learned_dominated_choice_rate": 0.3333333333333333,
+      "native_dominated_choice_rate": 0.6666666666666666,
+      "learned_route_quality_pick_rate": 0.0,
+      "native_route_quality_pick_rate": 0.0
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "status": "evaluated",
+      "train_pairs": 3432,
+      "val_pairs": 2236,
+      "states": 12,
+      "states_with_route_quality_action": 9,
+      "learned_dominated_choice_rate": 0.0,
+      "native_dominated_choice_rate": 0.25,
+      "learned_route_quality_pick_rate": 0.2222222222222222,
+      "native_route_quality_pick_rate": 0.0
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "status": "evaluated",
+      "train_pairs": 4818,
+      "val_pairs": 850,
+      "states": 12,
+      "states_with_route_quality_action": 3,
+      "learned_dominated_choice_rate": 0.08333333333333333,
+      "native_dominated_choice_rate": 0.08333333333333333,
+      "learned_route_quality_pick_rate": 0.0,
+      "native_route_quality_pick_rate": 0.0
+    }
+  ],
+  "pair_accuracy": {
+    "learned": 0.9386026817219478,
+    "native_logit": 0.8519760056457304
+  },
+  "pair_accuracy_counts": {
+    "learned": 5668,
+    "native_logit": 5668
+  },
+  "learning_support_gate_passed": true,
+  "uses_unseen_labels": false,
+  "uses_future_features": false,
+  "learned_model_used_in_navigation": false,
+  "decision": "CONDITIONAL GO for a separately registered held-out confirmation",
+  "limits": [
+    "One seed and retrospective failure cohort; this is feasibility evidence only.",
+    "Strict dominance discards mixed/tied outcomes.",
+    "Predicted actions were not executed; no deployable gain is claimed.",
+    "Unseen outcomes were not read."
+  ],
+  "hashes": {
+    "research/results/critical_graph_value_fresh/plan_001.json": "78e12f23274993e360102e34e241a93be55049a9eeb826c605b29fc749d9f9db",
+    "research/results/graph_value_fresh_train64_retry/capture_001/graph_options/graph_options.jsonl": "2cf5c05176df79b5f30843e4488766a4623d27667148d25ba16a042f3b571c0c",
+    "research/results/critical_graph_value_fresh/full_002/results.jsonl": "00bd46126dad15c441d45bbe3f9f5cd536998e67c8974fd470d61e376c5ff60b",
+    "research/tools/graph_value_feasibility.py": "3154f554eb4e4e0500051440aeb326b480a978000cbd5c0784ba428fb5d12c97"
+  }
+}

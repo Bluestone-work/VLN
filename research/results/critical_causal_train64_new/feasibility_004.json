@@ -1,0 +1,144 @@
+{
+  "experiment_id": "CRITICAL-GRAPH-VALUE-TRAINNEW-001",
+  "analysis": "scene-grouped linear pairwise preference feasibility",
+  "feature_names": [
+    "graph_logit",
+    "logit_rank_percentile",
+    "policy_entropy",
+    "stop_probability",
+    "candidate_count",
+    "action_is_stop",
+    "current_proposal",
+    "ghost_distance_m",
+    "back_path_length_m",
+    "back_path_nodes",
+    "embedding_norm",
+    "embedding_mean",
+    "embedding_std"
+  ],
+  "feature_contract": "CRITICAL_GRAPH_VALUE_TRAINNEW_PROTOCOL.md",
+  "states": 28,
+  "actions": 388,
+  "strict_dominance_pairs": 1259,
+  "pair_support_scenes": 7,
+  "pair_support_scene_ids": [
+    "data/scene_datasets/mp3d/82sE5b5pLXE/82sE5b5pLXE.glb",
+    "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+    "data/scene_datasets/mp3d/Uxmj2M2itWa/Uxmj2M2itWa.glb",
+    "data/scene_datasets/mp3d/VLzqgDo317F/VLzqgDo317F.glb",
+    "data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+    "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb",
+    "data/scene_datasets/mp3d/sT4fr6TAbpF/sT4fr6TAbpF.glb"
+  ],
+  "folds": [
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/82sE5b5pLXE/82sE5b5pLXE.glb",
+      "status": "evaluated",
+      "train_pairs": 1081,
+      "val_pairs": 178,
+      "states": 2,
+      "states_with_route_quality_action": 1,
+      "learned_dominated_choice_rate": 0.0,
+      "native_dominated_choice_rate": 0.5,
+      "learned_route_quality_pick_rate": 0.0,
+      "native_route_quality_pick_rate": 0.0
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "status": "evaluated",
+      "train_pairs": 1186,
+      "val_pairs": 73,
+      "states": 2,
+      "states_with_route_quality_action": 0,
+      "learned_dominated_choice_rate": 0.0,
+      "native_dominated_choice_rate": 0.0,
+      "learned_route_quality_pick_rate": null,
+      "native_route_quality_pick_rate": null
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/Uxmj2M2itWa/Uxmj2M2itWa.glb",
+      "status": "evaluated",
+      "train_pairs": 1161,
+      "val_pairs": 98,
+      "states": 3,
+      "states_with_route_quality_action": 1,
+      "learned_dominated_choice_rate": 0.6666666666666666,
+      "native_dominated_choice_rate": 0.6666666666666666,
+      "learned_route_quality_pick_rate": 0.0,
+      "native_route_quality_pick_rate": 0.0
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/VLzqgDo317F/VLzqgDo317F.glb",
+      "status": "evaluated",
+      "train_pairs": 818,
+      "val_pairs": 441,
+      "states": 12,
+      "states_with_route_quality_action": 1,
+      "learned_dominated_choice_rate": 0.4166666666666667,
+      "native_dominated_choice_rate": 0.08333333333333333,
+      "learned_route_quality_pick_rate": 0.0,
+      "native_route_quality_pick_rate": 0.0
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/Vvot9Ly1tCj/Vvot9Ly1tCj.glb",
+      "status": "evaluated",
+      "train_pairs": 1068,
+      "val_pairs": 191,
+      "states": 4,
+      "states_with_route_quality_action": 3,
+      "learned_dominated_choice_rate": 0.0,
+      "native_dominated_choice_rate": 0.25,
+      "learned_route_quality_pick_rate": 0.3333333333333333,
+      "native_route_quality_pick_rate": 0.0
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/aayBHfsNo7d/aayBHfsNo7d.glb",
+      "status": "evaluated",
+      "train_pairs": 1036,
+      "val_pairs": 223,
+      "states": 3,
+      "states_with_route_quality_action": 1,
+      "learned_dominated_choice_rate": 0.3333333333333333,
+      "native_dominated_choice_rate": 0.3333333333333333,
+      "learned_route_quality_pick_rate": 0.0,
+      "native_route_quality_pick_rate": 0.0
+    },
+    {
+      "held_out_scene": "data/scene_datasets/mp3d/sT4fr6TAbpF/sT4fr6TAbpF.glb",
+      "status": "evaluated",
+      "train_pairs": 1204,
+      "val_pairs": 55,
+      "states": 2,
+      "states_with_route_quality_action": 1,
+      "learned_dominated_choice_rate": 0.0,
+      "native_dominated_choice_rate": 0.0,
+      "learned_route_quality_pick_rate": 0.0,
+      "native_route_quality_pick_rate": 0.0
+    }
+  ],
+  "pair_accuracy": {
+    "learned": 0.9118347895154885,
+    "native_logit": 0.8308181096108023
+  },
+  "pair_accuracy_counts": {
+    "learned": 1259,
+    "native_logit": 1259
+  },
+  "learning_support_gate_passed": true,
+  "uses_unseen_labels": false,
+  "uses_future_features": false,
+  "learned_model_used_in_navigation": false,
+  "decision": "CONDITIONAL GO for a separately registered held-out confirmation",
+  "limits": [
+    "One seed and retrospective failure cohort; this is feasibility evidence only.",
+    "Strict dominance discards mixed/tied outcomes.",
+    "Predicted actions were not executed; no deployable gain is claimed.",
+    "Unseen outcomes were not read."
+  ],
+  "hashes": {
+    "research/results/critical_causal_train64_new/plan_001.json": "6388c5018b5667e7c8e2374442d133fe956b51892a5513ccf1e8379c3cfeeaa0",
+    "research/results/continuation_label_train64/capture_001/graph_options/graph_options.jsonl": "2277043d6fdaece8c856a1d9b9b6887246ce13fdebfeda746abeaef97a5d517b",
+    "research/results/critical_causal_train64_new/full_001/results.jsonl": "b4156a023448a1dbf46b7bc7e22163d4364d4a4a5aaa62968d54022759b3acf3",
+    "research/tools/graph_value_feasibility.py": "f99440a561f8426bf2014d36434126b4ad20f52c661cb675a88a4fb92da8835d"
+  }
+}
