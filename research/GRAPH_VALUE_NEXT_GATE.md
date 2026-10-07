@@ -1,5 +1,34 @@
 # Long-horizon graph value / preference next gate
 
+## 2026-10-08 — continuation mechanism audit completed
+
+The frozen recipe remains **NO-GO**. A retrospective audit retains all 27 prior
+FULL and 29 replication FULL events, plus 97 overlapping COST control events.
+All 153 prefix/action and cost/collision/path checks pass; four diagnostic tests
+pass. No model or simulator rollout was added.
+
+Immediate-cheaper/episode-costlier reversals occur in 10/27 and 14/29 FULL events.
+Only 2/10 and 2/14 show immediate replacement execution symptoms; stable next
+reselection of the displaced target occurs in 4/10 and 7/14, also appearing in
+other events. Neither observation establishes a majority causal mechanism or
+an interrupt remedy. These are selected replacement actions, not a census of
+all native-agent execution failures.
+
+All 56 FULL alternatives are current proposals without backtracking; 53 have
+shorter final target segments. Frozen-score attribution gives execution geometry
+the largest positive contribution in 49/56 choices and 23/24 cost reversals.
+This is algebraic explanation, not a causal ablation or reliable failure detector.
+The earlier −161 total primitive result includes −155 from route 10199; another
+route avoids 91 primitives of native budget-STOP return. In replication, later
+navigation adds 200 primitives and STOP return adds 54 after immediate −133.
+
+No structural filter is selected or trained. Next: the specified old-development
+training-support audit checks whether strict-pair accuracy represents actual
+native-relative decisions, retaining mixed/tied returns and STOP distinctions.
+It has not run and cannot overturn the prospective gate using in-sample data.
+Report: `PREFERENCE_CONTINUATION_MECHANISM_REPORT.md`; next specification:
+`PREFERENCE_TRAINING_SUPPORT_PROTOCOL.md`.
+
 ## 2026-10-08 — prospective replication: NO-GO for scaling this recipe
 
 The preregistered 96-route / 8-scene follow-up is complete. FULL changes 29

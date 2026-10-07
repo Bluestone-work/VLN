@@ -1,0 +1,16 @@
+{
+  "experiment_id": "PREFERENCE-TRAINING-SUPPORT-001",
+  "status": "specified_not_run",
+  "protocol": "research/PREFERENCE_TRAINING_SUPPORT_PROTOCOL.md",
+  "training_plan": "research/results/critical_graph_value_fresh/plan_001.json",
+  "training_returns": "research/results/critical_graph_value_fresh/full_002/results.jsonl",
+  "frozen_model": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/frozen_ranker_fresh.json",
+  "expected_states": 47,
+  "expected_actions": 996,
+  "expected_strict_pairs": 5668,
+  "metric_tolerance": 0.000001,
+  "fit_model": false,
+  "use_replication_outcomes": false,
+  "allow_simulator_rollout": false,
+  "interpretation": "in-sample development postmortem; no training GO or navigation-performance claim"
+}

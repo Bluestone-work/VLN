@@ -1,0 +1,16 @@
+{
+  "experiment_id": "PREFERENCE-SCORE-ATTRIBUTION-001",
+  "analysis_type": "post hoc algebraic explanation of an already frozen model; not a new policy or feature ablation",
+  "events": "research/results/preference_continuation_mechanism_001/analysis_001/events.json",
+  "model": "research/results/graph_value_prospective_replication_001/models/full.json",
+  "output": "research/results/preference_continuation_mechanism_001/attribution_001",
+  "batches": ["exploratory_full", "replication_full"],
+  "groups": {
+    "native_policy": ["graph_logit", "logit_rank_percentile"],
+    "execution_geometry": ["ghost_distance_m", "back_path_length_m", "back_path_nodes"],
+    "current_proposal": ["current_proposal"],
+    "embedding_statistics": ["embedding_norm", "embedding_mean", "embedding_std"],
+    "constant_within_move_set": ["policy_entropy", "stop_probability", "candidate_count", "action_is_stop"]
+  },
+  "limits": "Specified after inspecting the mechanism census. No weights, thresholds, schedules or action sets are changed. Score contributions are not causal feature-importance estimates or held-out prediction evidence."
+}

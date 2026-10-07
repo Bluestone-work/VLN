@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-10-07T16:31:10.908629+00:00",
+  "config": {
+    "experiment_id": "PREFERENCE-SCORE-ATTRIBUTION-001",
+    "analysis_type": "post hoc algebraic explanation of an already frozen model; not a new policy or feature ablation",
+    "events": "research/results/preference_continuation_mechanism_001/analysis_001/events.json",
+    "model": "research/results/graph_value_prospective_replication_001/models/full.json",
+    "output": "research/results/preference_continuation_mechanism_001/attribution_001",
+    "batches": [
+      "exploratory_full",
+      "replication_full"
+    ],
+    "groups": {
+      "native_policy": [
+        "graph_logit",
+        "logit_rank_percentile"
+      ],
+      "execution_geometry": [
+        "ghost_distance_m",
+        "back_path_length_m",
+        "back_path_nodes"
+      ],
+      "current_proposal": [
+        "current_proposal"
+      ],
+      "embedding_statistics": [
+        "embedding_norm",
+        "embedding_mean",
+        "embedding_std"
+      ],
+      "constant_within_move_set": [
+        "policy_entropy",
+        "stop_probability",
+        "candidate_count",
+        "action_is_stop"
+      ]
+    },
+    "limits": "Specified after inspecting the mechanism census. No weights, thresholds, schedules or action sets are changed. Score contributions are not causal feature-importance estimates or held-out prediction evidence."
+  },
+  "git_commit": "72f78fb5e27c0b3ecc2773d6350eb3a490ca7ba1",
+  "hashes": {
+    "research/configs/PREFERENCE_SCORE_ATTRIBUTION_001.json": "0bb13a232e11a24b8b26d7561aeb8108fa2561938345231c00d1197a945312ea",
+    "research/tools/explain_preference_scores.py": "54e11a2652b98b77d49098cc239add6a47e213213c625ad5099cc1b6e440ae51",
+    "research/results/graph_value_prospective_replication_001/models/full.json": "18cf29c67222ab884b87154df332fc6c006f4e85eee007f11d310263d7d3353f",
+    "research/results/preference_continuation_mechanism_001/analysis_001/events.json": "f123f8795ab03a6d561d4c2290375fe3b5d721908ae6e864fcddffcba96dde41"
+  }
+}

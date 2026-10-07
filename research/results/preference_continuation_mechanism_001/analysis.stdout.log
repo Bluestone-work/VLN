@@ -1,0 +1,226 @@
+{
+  "exploratory_full": {
+    "all_events": {
+      "events": 27,
+      "scenes": 8,
+      "cost_reversal": 10,
+      "native_successes": 24,
+      "success_rescued": 3,
+      "success_lost": 0,
+      "quality_rescued": 3,
+      "ndtw_harmed": 13,
+      "primitive_delta": -161,
+      "cost_groups": {
+        "immediate": -106,
+        "later_navigation": 36,
+        "later_stop": -91,
+        "later_other": 0
+      },
+      "native_execution_symptom": 8,
+      "alternative_execution_symptom": 4,
+      "alternative_symptom_counts": {
+        "collision": 4,
+        "large_endpoint_deviation": 0,
+        "stall": 0
+      },
+      "displaced_ghost_reselected": 9,
+      "stable_next_reselection": 8,
+      "budget_stop_after": 2
+    },
+    "cost_reversals": {
+      "events": 10,
+      "scenes": 5,
+      "cost_reversal": 10,
+      "native_successes": 10,
+      "success_rescued": 0,
+      "success_lost": 0,
+      "quality_rescued": 0,
+      "ndtw_harmed": 9,
+      "primitive_delta": 131,
+      "cost_groups": {
+        "immediate": -44,
+        "later_navigation": 175,
+        "later_stop": 0,
+        "later_other": 0
+      },
+      "native_execution_symptom": 3,
+      "alternative_execution_symptom": 2,
+      "alternative_symptom_counts": {
+        "collision": 2,
+        "large_endpoint_deviation": 0,
+        "stall": 0
+      },
+      "displaced_ghost_reselected": 5,
+      "stable_next_reselection": 4,
+      "budget_stop_after": 0
+    }
+  },
+  "replication_full": {
+    "all_events": {
+      "events": 29,
+      "scenes": 8,
+      "cost_reversal": 14,
+      "native_successes": 23,
+      "success_rescued": 4,
+      "success_lost": 1,
+      "quality_rescued": 3,
+      "ndtw_harmed": 15,
+      "primitive_delta": 121,
+      "cost_groups": {
+        "immediate": -133,
+        "later_navigation": 200,
+        "later_stop": 54,
+        "later_other": 0
+      },
+      "native_execution_symptom": 3,
+      "alternative_execution_symptom": 3,
+      "alternative_symptom_counts": {
+        "collision": 3,
+        "large_endpoint_deviation": 3,
+        "stall": 1
+      },
+      "displaced_ghost_reselected": 10,
+      "stable_next_reselection": 9,
+      "budget_stop_after": 4
+    },
+    "cost_reversals": {
+      "events": 14,
+      "scenes": 7,
+      "cost_reversal": 14,
+      "native_successes": 12,
+      "success_rescued": 1,
+      "success_lost": 0,
+      "quality_rescued": 0,
+      "ndtw_harmed": 9,
+      "primitive_delta": 189,
+      "cost_groups": {
+        "immediate": -68,
+        "later_navigation": 203,
+        "later_stop": 54,
+        "later_other": 0
+      },
+      "native_execution_symptom": 3,
+      "alternative_execution_symptom": 2,
+      "alternative_symptom_counts": {
+        "collision": 2,
+        "large_endpoint_deviation": 2,
+        "stall": 1
+      },
+      "displaced_ghost_reselected": 8,
+      "stable_next_reselection": 7,
+      "budget_stop_after": 2
+    }
+  },
+  "replication_cost_own": {
+    "all_events": {
+      "events": 74,
+      "scenes": 8,
+      "cost_reversal": 40,
+      "native_successes": 67,
+      "success_rescued": 4,
+      "success_lost": 1,
+      "quality_rescued": 3,
+      "ndtw_harmed": 37,
+      "primitive_delta": 329,
+      "cost_groups": {
+        "immediate": -238,
+        "later_navigation": 518,
+        "later_stop": 49,
+        "later_other": 0
+      },
+      "native_execution_symptom": 19,
+      "alternative_execution_symptom": 4,
+      "alternative_symptom_counts": {
+        "collision": 4,
+        "large_endpoint_deviation": 1,
+        "stall": 1
+      },
+      "displaced_ghost_reselected": 24,
+      "stable_next_reselection": 21,
+      "budget_stop_after": 4
+    },
+    "cost_reversals": {
+      "events": 40,
+      "scenes": 8,
+      "cost_reversal": 40,
+      "native_successes": 37,
+      "success_rescued": 1,
+      "success_lost": 1,
+      "quality_rescued": 0,
+      "ndtw_harmed": 23,
+      "primitive_delta": 465,
+      "cost_groups": {
+        "immediate": -166,
+        "later_navigation": 586,
+        "later_stop": 45,
+        "later_other": 0
+      },
+      "native_execution_symptom": 12,
+      "alternative_execution_symptom": 4,
+      "alternative_symptom_counts": {
+        "collision": 4,
+        "large_endpoint_deviation": 1,
+        "stall": 1
+      },
+      "displaced_ghost_reselected": 15,
+      "stable_next_reselection": 12,
+      "budget_stop_after": 3
+    }
+  },
+  "replication_cost_matched": {
+    "all_events": {
+      "events": 23,
+      "scenes": 7,
+      "cost_reversal": 12,
+      "native_successes": 18,
+      "success_rescued": 3,
+      "success_lost": 1,
+      "quality_rescued": 2,
+      "ndtw_harmed": 11,
+      "primitive_delta": 98,
+      "cost_groups": {
+        "immediate": -79,
+        "later_navigation": 123,
+        "later_stop": 54,
+        "later_other": 0
+      },
+      "native_execution_symptom": 3,
+      "alternative_execution_symptom": 2,
+      "alternative_symptom_counts": {
+        "collision": 2,
+        "large_endpoint_deviation": 2,
+        "stall": 1
+      },
+      "displaced_ghost_reselected": 8,
+      "stable_next_reselection": 7,
+      "budget_stop_after": 3
+    },
+    "cost_reversals": {
+      "events": 12,
+      "scenes": 6,
+      "cost_reversal": 12,
+      "native_successes": 10,
+      "success_rescued": 1,
+      "success_lost": 0,
+      "quality_rescued": 0,
+      "ndtw_harmed": 7,
+      "primitive_delta": 156,
+      "cost_groups": {
+        "immediate": -39,
+        "later_navigation": 141,
+        "later_stop": 54,
+        "later_other": 0
+      },
+      "native_execution_symptom": 3,
+      "alternative_execution_symptom": 2,
+      "alternative_symptom_counts": {
+        "collision": 2,
+        "large_endpoint_deviation": 2,
+        "stall": 1
+      },
+      "displaced_ghost_reselected": 6,
+      "stable_next_reselection": 5,
+      "budget_stop_after": 2
+    }
+  }
+}

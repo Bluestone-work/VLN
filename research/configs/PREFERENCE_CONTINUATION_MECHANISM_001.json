@@ -1,0 +1,45 @@
+{
+  "experiment_id": "PREFERENCE-CONTINUATION-MECHANISM-001",
+  "analysis_type": "retrospective descriptive audit; no policy fitting or new rollout",
+  "protocol": "research/PREFERENCE_CONTINUATION_MECHANISM_PROTOCOL.md",
+  "output": "research/results/preference_continuation_mechanism_001",
+  "seed": 100,
+  "endpoint_deviation_m": 0.5,
+  "stall_primitives_min": 3,
+  "stall_path_m_max": 0.1,
+  "stable_target_drift_m": 0.25,
+  "batches": [
+    {
+      "name": "exploratory_full",
+      "role": "primary earlier exploratory cohort",
+      "root": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002",
+      "run": "intervention_cycle_001/learned_enabled",
+      "audit": "intervention_cycle_001/learned_enabled_audit",
+      "expected_events": 27
+    },
+    {
+      "name": "replication_full",
+      "role": "primary protected replication; descriptive only",
+      "root": "research/results/graph_value_prospective_replication_001",
+      "run": "replication_cycle_001/full_enabled",
+      "audit": "replication_cycle_001/full_enabled_audit",
+      "expected_events": 29
+    },
+    {
+      "name": "replication_cost_own",
+      "role": "secondary overlapping-episode control",
+      "root": "research/results/graph_value_prospective_replication_001",
+      "run": "replication_cycle_001/cost_own_enabled",
+      "audit": "replication_cycle_001/cost_own_enabled_audit",
+      "expected_events": 74
+    },
+    {
+      "name": "replication_cost_matched",
+      "role": "secondary overlapping-episode control",
+      "root": "research/results/graph_value_prospective_replication_001",
+      "run": "replication_cycle_001/cost_matched_enabled",
+      "audit": "replication_cycle_001/cost_matched_enabled_audit",
+      "expected_events": 23
+    }
+  ]
+}

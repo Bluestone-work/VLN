@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-10-07T16:41:55.803308+00:00",
+  "execution_git_commit": "72f78fb5e27c0b3ecc2773d6350eb3a490ca7ba1",
+  "frozen_inputs_still_match": true,
+  "primary_full_events": 56,
+  "total_events_including_overlapping_controls": 153,
+  "score_conservation_cases": 56,
+  "unit_tests_passed": 4,
+  "new_simulator_episodes": 0,
+  "new_fitted_models": 0,
+  "next_training_support_audit": "specified_not_run",
+  "registration_console_capture": "Registered retrospective specification: research/results/preference_continuation_mechanism_001/registration.json\n",
+  "registration_log_note": "Registration output retained from tool console; analysis/test/attribution/plot have separate process stdout/stderr."
+}

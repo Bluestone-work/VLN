@@ -1,0 +1,1705 @@
+{
+  "experiment_id": "PREFERENCE-SCORE-ATTRIBUTION-001",
+  "all_score_conservation_checks_passed": true,
+  "batches": {
+    "exploratory_full": {
+      "all_events": {
+        "events": 27,
+        "largest_positive_group_counts": {
+          "native_policy": 0,
+          "execution_geometry": 24,
+          "current_proposal": 1,
+          "embedding_statistics": 2,
+          "constant_within_move_set": 0
+        },
+        "mean_group_contribution": {
+          "native_policy": -0.03942066051087843,
+          "execution_geometry": 0.08708116055907737,
+          "current_proposal": 0.005800129461978166,
+          "embedding_statistics": -0.02354152897782699,
+          "constant_within_move_set": 0.0
+        }
+      },
+      "cost_reversals": {
+        "events": 10,
+        "largest_positive_group_counts": {
+          "native_policy": 0,
+          "execution_geometry": 10,
+          "current_proposal": 0,
+          "embedding_statistics": 0,
+          "constant_within_move_set": 0
+        },
+        "mean_group_contribution": {
+          "native_policy": -0.03679599636034389,
+          "execution_geometry": 0.10578516397708296,
+          "current_proposal": 0.0,
+          "embedding_statistics": -0.037661900456838704,
+          "constant_within_move_set": 0.0
+        }
+      }
+    },
+    "replication_full": {
+      "all_events": {
+        "events": 29,
+        "largest_positive_group_counts": {
+          "native_policy": 0,
+          "execution_geometry": 25,
+          "current_proposal": 3,
+          "embedding_statistics": 1,
+          "constant_within_move_set": 0
+        },
+        "mean_group_contribution": {
+          "native_policy": -0.03730495713439907,
+          "execution_geometry": 0.08198242086196536,
+          "current_proposal": 0.016200361600697637,
+          "embedding_statistics": -0.02155398127711679,
+          "constant_within_move_set": 0.0
+        }
+      },
+      "cost_reversals": {
+        "events": 14,
+        "largest_positive_group_counts": {
+          "native_policy": 0,
+          "execution_geometry": 13,
+          "current_proposal": 1,
+          "embedding_statistics": 0,
+          "constant_within_move_set": 0
+        },
+        "mean_group_contribution": {
+          "native_policy": -0.038967916287134086,
+          "execution_geometry": 0.08425846864521729,
+          "current_proposal": 0.011185963962386464,
+          "embedding_statistics": -0.026513991225625425,
+          "constant_within_move_set": 0.0
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "batch": "exploratory_full",
+      "episode_id": "8405",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.044121933877242565,
+        "execution_geometry": 0.06816828253799792,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.020193899356403915,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.003373280404352094,
+        "logit_rank_percentile": -0.04749521428159466,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.06816828253799792,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.01303597882120724,
+        "embedding_mean": -0.0008572386287380233,
+        "embedding_std": -0.006300681906458652
+      },
+      "frozen_pair_margin": 0.0038524493043515795,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "927",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.08138861762506586,
+        "execution_geometry": 0.15905932592199507,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.04039143376278119,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.025475614508522072,
+        "logit_rank_percentile": -0.10686423213358794,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.15905932592199507,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.014882304277508094,
+        "embedding_mean": -0.01833901184468941,
+        "embedding_std": -0.007170117640583688
+      },
+      "frozen_pair_margin": 0.03727927453414792,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "2906",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.08970635847380631,
+        "execution_geometry": 0.09089104338399731,
+        "current_proposal": 0.0,
+        "embedding_statistics": 0.0032733643589913236,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.052779284370977626,
+        "logit_rank_percentile": -0.14248564284478393,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399731,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.031249530472418723,
+        "embedding_mean": -0.04314297697558319,
+        "embedding_std": 0.01516681086215579
+      },
+      "frozen_pair_margin": 0.0044580492691823626,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "6080",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.0117145097747975,
+        "execution_geometry": 0.10349568423885919,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.08120468166135728,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.012033097365999829,
+        "logit_rank_percentile": -0.02374760714079733,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.10349568423885919,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.046636097017165215,
+        "embedding_mean": -0.01203891177284117,
+        "embedding_std": -0.02252967287135088
+      },
+      "frozen_pair_margin": 0.010576492802704451,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "8594",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.06416985999439855,
+        "execution_geometry": 0.18178208676799432,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.0493238692937845,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.007072961427993389,
+        "logit_rank_percentile": -0.07124282142239194,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.18178208676799432,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.027837424084974843,
+        "embedding_mean": -0.008039421622096457,
+        "embedding_std": -0.013447023586713201
+      },
+      "frozen_pair_margin": 0.06828835747981132,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "2060",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.043967644764701566,
+        "execution_geometry": 0.09089104338399723,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.044293467907548234,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.017097630740205844,
+        "logit_rank_percentile": -0.06106527550490741,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399723,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.025044557986902284,
+        "embedding_mean": -0.00715088389369303,
+        "embedding_std": -0.012098026026952915
+      },
+      "frozen_pair_margin": 0.0026299307117473303,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "1288",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.017999660112303487,
+        "execution_geometry": 0.06816828253799787,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.00452253274342719,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0057479470284938425,
+        "logit_rank_percentile": -0.02374760714079733,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.06816828253799787,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.002910680791866871,
+        "embedding_mean": -0.0002050487833533802,
+        "embedding_std": -0.0014068031682069387
+      },
+      "frozen_pair_margin": 0.045646089682267244,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "3284",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.023469485005251714,
+        "execution_geometry": 0.09089104338399723,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.014700897602757888,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.012151925705944278,
+        "logit_rank_percentile": -0.03562141071119599,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399723,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.009759640439865602,
+        "embedding_mean": -0.00022362833315044508,
+        "embedding_std": -0.004717628829741841
+      },
+      "frozen_pair_margin": 0.05272066077598769,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "10046",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.029849185182816672,
+        "execution_geometry": 0.06816828253799788,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.01751454512404857,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.005772225528379319,
+        "logit_rank_percentile": -0.03562141071119599,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.06816828253799788,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.010855488965469796,
+        "embedding_mean": -0.0014131066865272698,
+        "embedding_std": -0.005245949472051505
+      },
+      "frozen_pair_margin": 0.020804552231132645,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "3257",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.10499373047899593,
+        "execution_geometry": 0.20450484761399385,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.030330356422724275,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0018705016545919973,
+        "logit_rank_percentile": -0.10686423213358794,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.20450484761399385,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.01912352387596978,
+        "embedding_mean": -0.00196473570539403,
+        "embedding_std": -0.009242096841360467
+      },
+      "frozen_pair_margin": 0.06918076071227364,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "5888",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.04076384345143356,
+        "execution_geometry": 0.022722760845999508,
+        "current_proposal": 0.0,
+        "embedding_statistics": 0.0589868970462017,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.001981849402001609,
+        "logit_rank_percentile": -0.042745692853435165,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.022722760845999508,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.029735539986481013,
+        "embedding_mean": 0.014893711233638885,
+        "embedding_std": 0.014357645826081804
+      },
+      "frozen_pair_margin": 0.040945814440767725,
+      "largest_positive_group": "embedding_statistics"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "454",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.01700673561417397,
+        "execution_geometry": 0.09089104338399727,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.04093290273997581,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.011490392954782803,
+        "logit_rank_percentile": -0.028497128568956774,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399727,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.0260682332167775,
+        "embedding_mean": -0.002265780178956473,
+        "embedding_std": -0.01259888934424184
+      },
+      "frozen_pair_margin": 0.03295140502984739,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "9656",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": 0.0014377745987800249,
+        "execution_geometry": 0.11361380422999649,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.10776579412290763,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.02815383263217701,
+        "logit_rank_percentile": -0.026716058033396984,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.11361380422999649,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.06291640090799869,
+        "embedding_mean": -0.014452290365273866,
+        "embedding_std": -0.03039710284963506
+      },
+      "frozen_pair_margin": 0.007285784705869047,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "3398",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.015327736813220992,
+        "execution_geometry": 0.05453796720284734,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.029572505606678734,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.008419870327576337,
+        "logit_rank_percentile": -0.02374760714079733,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.05453796720284734,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.017335948151314173,
+        "embedding_mean": -0.003860851259310066,
+        "embedding_std": -0.008375706196054494
+      },
+      "frozen_pair_margin": 0.009637724782947554,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "4907",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.02303853664079323,
+        "execution_geometry": 0.02272276084599943,
+        "current_proposal": 0.0,
+        "embedding_statistics": 0.013631829745270392,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.00749410111166045,
+        "logit_rank_percentile": -0.03053263775245368,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.02272276084599943,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.006839340749575087,
+        "embedding_mean": 0.0034904077900820584,
+        "embedding_std": 0.003302081205613248
+      },
+      "frozen_pair_margin": 0.013316053950476636,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "8288",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.011759798972213582,
+        "execution_geometry": 0.03693150134047964,
+        "current_proposal": 0.0,
+        "embedding_statistics": 0.001211451905584084,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.054002805417686685,
+        "logit_rank_percentile": -0.06576260438990027,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.03693150134047964,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.023340317200731053,
+        "embedding_mean": -0.033460305910918704,
+        "embedding_std": 0.011331440615771736
+      },
+      "frozen_pair_margin": 0.026383154273850185,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "85",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.007291449196427827,
+        "execution_geometry": 0.0681682825379979,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.03842733925893845,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.021205679372528947,
+        "logit_rank_percentile": -0.028497128568956774,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.0681682825379979,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.021586372926771125,
+        "embedding_mean": -0.006413858695674256,
+        "embedding_std": -0.010427107636493071
+      },
+      "frozen_pair_margin": 0.022449494082631638,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "740",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.03724395224674966,
+        "execution_geometry": 0.11361380422999653,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.02779830636095289,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.010251262034845002,
+        "logit_rank_percentile": -0.04749521428159466,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.11361380422999653,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.01761409472004715,
+        "embedding_mean": -0.001671431055542809,
+        "embedding_std": -0.008512780585362933
+      },
+      "frozen_pair_margin": 0.04857154562229404,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "9089",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.012782078049249222,
+        "execution_geometry": 0.09089104338399709,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.07481913883812998,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.026077642726600948,
+        "logit_rank_percentile": -0.03885972077585017,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399709,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.045050948923649865,
+        "embedding_mean": -0.008000126832617527,
+        "embedding_std": -0.021768063081862587
+      },
+      "frozen_pair_margin": 0.003289826496617909,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "10199",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.03690300364459414,
+        "execution_geometry": 0.11117770617296534,
+        "current_proposal": 0.1566034954734105,
+        "embedding_statistics": -0.04299616216979583,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.005842689208841028,
+        "logit_rank_percentile": -0.042745692853435165,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.1566034954734105,
+        "ghost_distance_m": 0.012225321067570022,
+        "back_path_length_m": 0.07771940489698649,
+        "back_path_nodes": 0.021232980208408834,
+        "embedding_norm": -0.023262222381211672,
+        "embedding_mean": -0.00849937812704206,
+        "embedding_std": -0.011234561661542096
+      },
+      "frozen_pair_margin": 0.18788203583198582,
+      "largest_positive_group": "current_proposal"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "1490",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.05993171192601502,
+        "execution_geometry": 0.06816828253799787,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.007368398761370086,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0011335635788923923,
+        "logit_rank_percentile": -0.06106527550490741,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.06816828253799787,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.0031070103696470854,
+        "embedding_mean": -0.0027627643177370424,
+        "embedding_std": -0.0014986240739859578
+      },
+      "frozen_pair_margin": 0.0008681718506128311,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "7511",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.10520519488729513,
+        "execution_geometry": 0.15905932592199512,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.002310012747030334,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0016590372462928116,
+        "logit_rank_percentile": -0.10686423213358794,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.15905932592199512,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.0027571170179553177,
+        "embedding_mean": 0.0017822947399029846,
+        "embedding_std": -0.001335190468978001
+      },
+      "frozen_pair_margin": 0.051544118287669694,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "3161",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.02616220299042987,
+        "execution_geometry": -4.036373163884709e-17,
+        "current_proposal": 0.0,
+        "embedding_statistics": 0.028130393712614016,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.006719099204520244,
+        "logit_rank_percentile": -0.03288130219495011,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": -4.036373163884709e-17,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.016220010546143842,
+        "embedding_mean": 0.004074429105209894,
+        "embedding_std": 0.00783595406126028
+      },
+      "frozen_pair_margin": 0.0019681907221840156,
+      "largest_positive_group": "embedding_statistics"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "2615",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.07008958644589318,
+        "execution_geometry": 0.09089104338399723,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.013265398240399382,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0011532349764987653,
+        "logit_rank_percentile": -0.07124282142239194,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399723,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.009594209512891477,
+        "embedding_mean": 0.0009679494675840394,
+        "embedding_std": -0.0046391381950919445
+      },
+      "frozen_pair_margin": 0.007536058697704795,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "8285",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.030792964418149868,
+        "execution_geometry": 0.04544552169199859,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.012883711235293308,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.004828446293046124,
+        "logit_rank_percentile": -0.03562141071119599,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.04544552169199859,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.009477847891476283,
+        "embedding_mean": 0.0011773373085533785,
+        "embedding_std": -0.0045832006523704024
+      },
+      "frozen_pair_margin": 0.0017688460385555382,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "1284",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.041810765153301885,
+        "execution_geometry": 0.0908910433839972,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.032165406805858256,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.011621350913492081,
+        "logit_rank_percentile": -0.05343211606679397,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.0908910433839972,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.019846411655894354,
+        "embedding_mean": -0.0027283092914669104,
+        "embedding_std": -0.009590685858496992
+      },
+      "frozen_pair_margin": 0.016914871424837052,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "exploratory_full",
+      "episode_id": "25",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.01830506265317643,
+        "execution_geometry": 0.04544552169199865,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.008074458407826538,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.004192670427578946,
+        "logit_rank_percentile": -0.022497733080755377,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.04544552169199865,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.005005092213343631,
+        "embedding_mean": -0.0006506805705229375,
+        "embedding_std": -0.002418685623959969
+      },
+      "frozen_pair_margin": 0.019066000630995728,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "3203",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.04029032155426404,
+        "execution_geometry": 0.09089104338399731,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.027230970024182944,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0665739105793239,
+        "logit_rank_percentile": -0.10686423213358794,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399731,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.0135483571505352,
+        "embedding_mean": -0.04739907947460267,
+        "embedding_std": 0.00661975229988453
+      },
+      "frozen_pair_margin": 0.023369751805550232,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "4616",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.005740080454628701,
+        "execution_geometry": 0.0454455216919987,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.018883756451224348,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.015632765972088902,
+        "logit_rank_percentile": -0.021372846426717603,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.0454455216919987,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.013222522395946247,
+        "embedding_mean": 0.0007317052316357729,
+        "embedding_std": -0.006392939286913873
+      },
+      "frozen_pair_margin": 0.020821684786145545,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "2024",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.025875670909251768,
+        "execution_geometry": 0.06816828253799792,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.012037710141131634,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0008403871241452151,
+        "logit_rank_percentile": -0.026716058033396984,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.06816828253799792,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.007728235145034545,
+        "embedding_mean": -0.0005742675176590442,
+        "embedding_std": -0.003735207478438045
+      },
+      "frozen_pair_margin": 0.03025490148761467,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "4067",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.033521073459715965,
+        "execution_geometry": 0.08592955883370706,
+        "current_proposal": 0.1566034954734105,
+        "embedding_statistics": 0.005135995543604408,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.002100337251480027,
+        "logit_rank_percentile": -0.03562141071119599,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.1566034954734105,
+        "ghost_distance_m": -0.005414503890631691,
+        "back_path_length_m": 0.07011108251592993,
+        "back_path_nodes": 0.021232980208408834,
+        "embedding_norm": -0.0005874286121799725,
+        "embedding_mean": 0.006014316266170018,
+        "embedding_std": -0.00029089211038563716
+      },
+      "frozen_pair_margin": 0.2141479763910059,
+      "largest_positive_group": "current_proposal"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "10430",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.07782551140414774,
+        "execution_geometry": 0.1590593259219951,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.07554003456570008,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.007665874302722585,
+        "logit_rank_percentile": -0.08549138570687033,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.1590593259219951,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.04727548218584558,
+        "embedding_mean": -0.005417770670116319,
+        "embedding_std": -0.02284678170973817
+      },
+      "frozen_pair_margin": 0.005693779952147371,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "7661",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.026214058369548557,
+        "execution_geometry": 0.04544552169199859,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.013866856510846483,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.004318579382905124,
+        "logit_rank_percentile": -0.03053263775245368,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.04544552169199859,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.00912592093854117,
+        "embedding_mean": -0.00032978033836132545,
+        "embedding_std": -0.004411155233943989
+      },
+      "frozen_pair_margin": 0.005364606811603667,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "4790",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.05317734221491732,
+        "execution_geometry": 0.09089104338399723,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.018494811077055556,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.00788793328999009,
+        "logit_rank_percentile": -0.06106527550490741,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399723,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.008355949116630691,
+        "embedding_mean": -0.006107031810458477,
+        "embedding_std": -0.004031830149966388
+      },
+      "frozen_pair_margin": 0.019218890092024377,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "2378",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.06184012704688547,
+        "execution_geometry": 0.18178208676799446,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.10388694929442804,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.02365125865998486,
+        "logit_rank_percentile": -0.08549138570687033,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.18178208676799446,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.05908213209936933,
+        "embedding_mean": -0.016262365269488852,
+        "embedding_std": -0.02854245192556987
+      },
+      "frozen_pair_margin": 0.016055010426681005,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "1943",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.03872717905018055,
+        "execution_geometry": 0.15905932592199515,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.018463170019002443,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.004018513803254614,
+        "logit_rank_percentile": -0.042745692853435165,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.15905932592199515,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.011605202626559953,
+        "embedding_mean": -0.0012493813704736745,
+        "embedding_std": -0.0056085860219688135
+      },
+      "frozen_pair_margin": 0.10186897685281215,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "2477",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.027627231771841176,
+        "execution_geometry": 0.04544552169199852,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.006821208367272158,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0052540704231089355,
+        "logit_rank_percentile": -0.03288130219495011,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.04544552169199852,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.0038859911714874064,
+        "embedding_mean": -0.001058053506408837,
+        "embedding_std": -0.0018771636893759143
+      },
+      "frozen_pair_margin": 0.010997081552885257,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "4841",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.02506411393701246,
+        "execution_geometry": 0.03284088083713667,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.0056965632148848686,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 8.041127089058614e-05,
+        "logit_rank_percentile": -0.025144525207903046,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.03284088083713667,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.0018006612587824398,
+        "embedding_mean": -0.003029406786059551,
+        "embedding_std": -0.0008664951700428772
+      },
+      "frozen_pair_margin": 0.0020802036852394235,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "2228",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.027232744463433267,
+        "execution_geometry": 0.15905932592199518,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.05167612539406091,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.07963148767015467,
+        "logit_rank_percentile": -0.10686423213358794,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.15905932592199518,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.02187205289231657,
+        "embedding_mean": -0.08426065821938579,
+        "embedding_std": 0.01071247993300831
+      },
+      "frozen_pair_margin": 0.08015045606450111,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "6098",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.023340323378298077,
+        "execution_geometry": 0.045445521691998614,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.016662145793870146,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.003375734655098906,
+        "logit_rank_percentile": -0.026716058033396984,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.045445521691998614,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.01045073282099706,
+        "embedding_mean": -0.0011608216300074534,
+        "embedding_std": -0.005050591342865632
+      },
+      "frozen_pair_margin": 0.00544305251983046,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "10490",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.036224373969557605,
+        "execution_geometry": 0.11439138939567577,
+        "current_proposal": 0.0,
+        "embedding_statistics": 0.016970522008761937,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.008771092191953102,
+        "logit_rank_percentile": -0.044995466161510705,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.11439138939567577,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.01741487747478542,
+        "embedding_mean": -0.008874602966623362,
+        "embedding_std": 0.008430247500599876
+      },
+      "frozen_pair_margin": 0.09513753743488018,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "5192",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.02675421899969626,
+        "execution_geometry": 0.0706703873287177,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.028300009478306003,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.05096522255200404,
+        "logit_rank_percentile": -0.0777194415517003,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.0706703873287177,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.0053277514662418745,
+        "embedding_mean": -0.03625462414871998,
+        "embedding_std": 0.002626863204172102
+      },
+      "frozen_pair_margin": 0.015616158850715323,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "8057",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.06749436008351464,
+        "execution_geometry": 0.07701639019376902,
+        "current_proposal": 0.1566034954734105,
+        "embedding_statistics": -0.018977925427314368,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.031149546501335737,
+        "logit_rank_percentile": -0.09864390658485038,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.1566034954734105,
+        "ghost_distance_m": -1.0090932909711773e-17,
+        "back_path_length_m": 0.055783409985360195,
+        "back_path_nodes": 0.021232980208408834,
+        "embedding_norm": 0.010580108457765173,
+        "embedding_mean": -0.034720601225017377,
+        "embedding_std": 0.005162567339937837
+      },
+      "frozen_pair_margin": 0.14714760015635053,
+      "largest_positive_group": "current_proposal"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "1583",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.04632695466756001,
+        "execution_geometry": 0.06676950693957831,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.010723877709645863,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0011682596140346507,
+        "logit_rank_percentile": -0.04749521428159466,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.06676950693957831,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.0061461166536637395,
+        "embedding_mean": -0.001608642964054445,
+        "embedding_std": -0.002969118091927678
+      },
+      "frozen_pair_margin": 0.009718674562372409,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "8582",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.012430153901882249,
+        "execution_geometry": 0.09089104338399723,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.04829377381517561,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.07306123180498808,
+        "logit_rank_percentile": -0.08549138570687033,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399723,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.006236502036900443,
+        "embedding_mean": -0.05762464444945151,
+        "embedding_std": 0.0030943685973754535
+      },
+      "frozen_pair_margin": 0.030167115666939415,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "418",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.040886854717043106,
+        "execution_geometry": 0.09089104338399723,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.03502677285874616,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.10159878812774083,
+        "logit_rank_percentile": -0.14248564284478393,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399723,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.027803157387704048,
+        "embedding_mean": -0.0763804499194453,
+        "embedding_std": 0.013550519672995092
+      },
+      "frozen_pair_margin": 0.014977415808208105,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "9092",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.0004971715066211524,
+        "execution_geometry": 0.124202539769393,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.07437342245280458,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.07722227004507914,
+        "logit_rank_percentile": -0.0777194415517003,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.124202539769393,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.00019952079325585994,
+        "embedding_mean": -0.0747783487630002,
+        "embedding_std": 0.00020540551693976118
+      },
+      "frozen_pair_margin": 0.04933194580996736,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "4904",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.041577736338234667,
+        "execution_geometry": 0.012887238848353464,
+        "current_proposal": 0.0,
+        "embedding_statistics": 0.029445765023458758,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0011679565152004992,
+        "logit_rank_percentile": -0.042745692853435165,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.012887238848353464,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.015074291278135806,
+        "embedding_mean": 0.007093191483331076,
+        "embedding_std": 0.007278282261991877
+      },
+      "frozen_pair_margin": 0.0007552675335775749,
+      "largest_positive_group": "embedding_statistics"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "2519",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.02039166059051944,
+        "execution_geometry": 0.04544552169199863,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.022985570965768858,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0033559465502778878,
+        "logit_rank_percentile": -0.02374760714079733,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.04544552169199863,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.013111559445642325,
+        "embedding_mean": -0.0035401225919558283,
+        "embedding_std": -0.006333888928170704
+      },
+      "frozen_pair_margin": 0.0020682901357104155,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "7676",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.014375828075429385,
+        "execution_geometry": 0.09089104338399727,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.05408944686852353,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.018505474119520728,
+        "logit_rank_percentile": -0.03288130219495011,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.09089104338399727,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.03278837080583507,
+        "embedding_mean": -0.005457454895132293,
+        "embedding_std": -0.01584362116755617
+      },
+      "frozen_pair_margin": 0.02242576844004429,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "5573",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.1402321913930881,
+        "execution_geometry": 0.08954723085781553,
+        "current_proposal": 0.1566034954734105,
+        "embedding_statistics": -0.0359053785922051,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.002253451451695843,
+        "logit_rank_percentile": -0.14248564284478393,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.1566034954734105,
+        "ghost_distance_m": 0.012225317925106833,
+        "back_path_length_m": 0.056088932724299864,
+        "back_path_nodes": 0.021232980208408834,
+        "embedding_norm": -0.02219112527694561,
+        "embedding_mean": -0.002990658169131487,
+        "embedding_std": -0.010723595146128003
+      },
+      "frozen_pair_margin": 0.07001315634593253,
+      "largest_positive_group": "current_proposal"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "4010",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": 0.0015284522067379666,
+        "execution_geometry": 0.0454455216919986,
+        "current_proposal": 0.0,
+        "embedding_statistics": 0.0067642769657454745,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.054960568273531935,
+        "logit_rank_percentile": -0.05343211606679397,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.0454455216919986,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.027876573677208038,
+        "embedding_mean": -0.034634792525258355,
+        "embedding_std": 0.013522495813795792
+      },
+      "frozen_pair_margin": 0.05373825086448214,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "4280",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.04253481764660797,
+        "execution_geometry": 0.044473540234899536,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.0002411044760847579,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.00021087520682719013,
+        "logit_rank_percentile": -0.042745692853435165,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.044473540234899536,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.000604679309249908,
+        "embedding_mean": 0.0006566852552498038,
+        "embedding_std": -0.00029311042208465365
+      },
+      "frozen_pair_margin": 0.0016976181122067002,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "6020",
+      "cost_reversal": true,
+      "groups": {
+        "native_policy": -0.020594254073107422,
+        "execution_geometry": 0.06816828253799792,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.013537753291611828,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.0007785923536101792,
+        "logit_rank_percentile": -0.021372846426717603,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.06816828253799792,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": -0.007661721842035829,
+        "embedding_mean": -0.0021748404230914555,
+        "embedding_std": -0.003701191026484544
+      },
+      "frozen_pair_margin": 0.034036275173278674,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "7478",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": -0.11377556206437335,
+        "execution_geometry": 0.11361380422999652,
+        "current_proposal": 0.0,
+        "embedding_statistics": 0.050307948763085204,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.057207209349367336,
+        "logit_rank_percentile": -0.1709827714137407,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.11361380422999652,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.05649599290563853,
+        "embedding_mean": -0.03354725649017418,
+        "embedding_std": 0.02735921234762085
+      },
+      "frozen_pair_margin": 0.050146190928708534,
+      "largest_positive_group": "execution_geometry"
+    },
+    {
+      "batch": "replication_full",
+      "episode_id": "7091",
+      "cost_reversal": false,
+      "groups": {
+        "native_policy": 0.007199706937049417,
+        "execution_geometry": 0.02272276084599935,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.021974628551196508,
+        "constant_within_move_set": 0.0
+      },
+      "features": {
+        "graph_logit": 0.04436987463568872,
+        "logit_rank_percentile": -0.0371701676986393,
+        "policy_entropy": 0.0,
+        "stop_probability": 0.0,
+        "candidate_count": 0.0,
+        "action_is_stop": 0.0,
+        "current_proposal": 0.0,
+        "ghost_distance_m": 0.02272276084599935,
+        "back_path_length_m": -0.0,
+        "back_path_nodes": -0.0,
+        "embedding_norm": 0.0022759247759824622,
+        "embedding_mean": -0.025385057638396748,
+        "embedding_std": 0.00113450431121778
+      },
+      "frozen_pair_margin": 0.00794783923185216,
+      "largest_positive_group": "execution_geometry"
+    }
+  ],
+  "limits": "Specified after inspecting the mechanism census. No weights, thresholds, schedules or action sets are changed. Score contributions are not causal feature-importance estimates or held-out prediction evidence."
+}

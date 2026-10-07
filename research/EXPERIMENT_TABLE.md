@@ -130,3 +130,10 @@ NO-GO; see `CONTINUATION_LABEL_REPORT.md`.
 | GV-PROSPECTIVE-RANDOM_20261033-001 | all 96 routes | 25 changes; frozen one-action rule | 90.6250 | 77.5448 | 78.7259 | 2 rescued / 3 lost; primitive delta +19.9792/route | `results/graph_value_prospective_replication_001/paired_analysis_001/summary.json` |
 | GV-PROSPECTIVE-GATE-001 | all registered comparisons | unchanged point and feature gates | — | — | — | NO-GO for scaling: primitive gate fails; added-feature gate fails; all fidelity audits pass | `GRAPH_VALUE_PROSPECTIVE_REPLICATION_REPORT.md` |
 | GV-PROSPECTIVE-COST-ACCOUNTING-001 | 29 FULL changes / all 96 routes | post hoc exact-prefix cost decomposition | — | — | — | option −133, continuation +254, total +121 primitives; 14 cheaper-option/costlier-episode routes | `results/graph_value_prospective_replication_001/route_diagnostics_001/summary.json` |
+
+
+| Experiment | Population | Change | SR | SPL | nDTW | Result | Artifact |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| PREFERENCE-CONTINUATION-MECHANISM-001 | 27 + 29 FULL events; 97 overlapping COST events | retrospective exact-prefix decomposition, no rollout | unchanged | unchanged | unchanged | 153 checks pass; FULL reversals 10/27 and 14/29, immediate symptoms 2/10 and 2/14 | `PREFERENCE_CONTINUATION_MECHANISM_REPORT.md` |
+| PREFERENCE-SCORE-ATTRIBUTION-001 | all 56 FULL choices | exact frozen score decomposition, no ablation | unchanged | unchanged | unchanged | geometry largest positive group in 49/56 choices and 23/24 cost reversals; no policy fitted | `results/preference_continuation_mechanism_001/attribution_001/summary.json` |
+| PREFERENCE-TRAINING-SUPPORT-001 | old 47-state / 996-action development census | specified only, not run | — | — | — | planned in-sample postmortem; cannot grant training GO | `PREFERENCE_TRAINING_SUPPORT_PROTOCOL.md` |

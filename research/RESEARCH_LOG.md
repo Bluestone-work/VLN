@@ -1125,3 +1125,48 @@ Before further learning, separately register a development-only diagnostic of
 pre-action evidence for harmful early substitutions using full continuation
 cost, native-success routes and abstention. Do not tune on this replication,
 expand this recipe, pool it post hoc into a positive claim, or add RL/VLM.
+
+
+## 2026-10-08 / PREFERENCE-CONTINUATION-MECHANISM-001
+
+Question:
+What follows cheaper local replacements whose complete navigation costs more:
+execution symptoms, later graph navigation, displaced-target reselection, or
+STOP return execution? Can existing structural signals distinguish the harm?
+
+Change:
+Retrospective specification fixed before this derived census, after old outcomes
+were known. Analyze all 27 exploratory and 29 replication FULL events; retain
+74 COST-own and 23 COST-matched events as overlapping secondary controls.
+Use previous critical-census execution thresholds and 0.25 m stable-target drift.
+An explicitly post hoc attribution additionally decomposes the frozen pair score.
+
+Control:
+No model fit, weight/threshold tuning, candidate/action change, or new rollout.
+Existing seed-100 checkpoint/controller/STOP/15-decision traces reused. Protected
+replication outcomes remain excluded from fitting. All 153 actual action/prefix
+and cost/collision/path ties pass; four focused tests pass. Config/source/input
+hashes and durable analysis/test/attribution/plot stdout/stderr saved. Analysis
+execution Git HEAD is 72f78fb; new tool contents are pinned by source hashes.
+
+Result:
+FULL cost reversals 10/27 and 14/29; replacement symptoms only 2/10 and 2/14;
+stable next reselections 4/10 and 7/14. All 56 alternatives are current proposals
+with no back-path, 53 shorten final target segments. Geometry gives the largest
+positive frozen-score contribution in 49/56 choices and 23/24 reversals.
+Earlier total primitive delta −161 includes −155 from route 10199. Cost split:
+earlier immediate −106, later navigation +36, later STOP −91; replication
+immediate −133, later navigation +200, later STOP +54. No aggregate pooled claim.
+
+Interpretation:
+NO-GO remains for the failed frozen recipe. Cheap local actions do not establish
+cheap complete returns; repeated-target and execution symptoms are neither a
+complete causal partition nor demonstrated remedies. Score attribution is
+algebraic, not a causal ablation. Saturated structural flags cannot distinguish
+these treated choices, but other untested features are not ruled out.
+
+Next:
+The specified development-only training-support audit compares strict-pair
+accuracy with native-relative full-return choices on the old 47-state archive,
+including mixed/tied and STOP-involving pairs; no fit or new labels. It has not
+run. In-sample results cannot overturn the failed prospective navigation gate.

@@ -1,0 +1,1270 @@
+{
+  "experiment_id": "PREFERENCE-CONTINUATION-MECHANISM-001",
+  "all_accounting_checks_passed": true,
+  "analysis_type": "retrospective descriptive audit; no policy fitting or new rollout",
+  "batches": {
+    "exploratory_full": {
+      "role": "primary earlier exploratory cohort",
+      "population_routes": 96,
+      "all_events": {
+        "events": 27,
+        "scenes": 8,
+        "cost_reversal": 10,
+        "native_successes": 24,
+        "success_rescued": 3,
+        "success_lost": 0,
+        "quality_rescued": 3,
+        "ndtw_harmed": 13,
+        "primitive_delta": -161,
+        "cost_groups": {
+          "immediate": -106,
+          "later_navigation": 36,
+          "later_stop": -91,
+          "later_other": 0
+        },
+        "native_execution_symptom": 8,
+        "alternative_execution_symptom": 4,
+        "alternative_symptom_counts": {
+          "collision": 4,
+          "large_endpoint_deviation": 0,
+          "stall": 0
+        },
+        "displaced_ghost_reselected": 9,
+        "stable_next_reselection": 8,
+        "budget_stop_after": 2
+      },
+      "cost_reversals": {
+        "events": 10,
+        "scenes": 5,
+        "cost_reversal": 10,
+        "native_successes": 10,
+        "success_rescued": 0,
+        "success_lost": 0,
+        "quality_rescued": 0,
+        "ndtw_harmed": 9,
+        "primitive_delta": 131,
+        "cost_groups": {
+          "immediate": -44,
+          "later_navigation": 175,
+          "later_stop": 0,
+          "later_other": 0
+        },
+        "native_execution_symptom": 3,
+        "alternative_execution_symptom": 2,
+        "alternative_symptom_counts": {
+          "collision": 2,
+          "large_endpoint_deviation": 0,
+          "stall": 0
+        },
+        "displaced_ghost_reselected": 5,
+        "stable_next_reselection": 4,
+        "budget_stop_after": 0
+      },
+      "other_events": {
+        "events": 17,
+        "scenes": 6,
+        "cost_reversal": 0,
+        "native_successes": 14,
+        "success_rescued": 3,
+        "success_lost": 0,
+        "quality_rescued": 3,
+        "ndtw_harmed": 4,
+        "primitive_delta": -292,
+        "cost_groups": {
+          "immediate": -62,
+          "later_navigation": -139,
+          "later_stop": -91,
+          "later_other": 0
+        },
+        "native_execution_symptom": 5,
+        "alternative_execution_symptom": 2,
+        "alternative_symptom_counts": {
+          "collision": 2,
+          "large_endpoint_deviation": 0,
+          "stall": 0
+        },
+        "displaced_ghost_reselected": 4,
+        "stable_next_reselection": 4,
+        "budget_stop_after": 2
+      },
+      "structural_strata": {
+        "native_current_proposal": {
+          "False": {
+            "events": 1,
+            "scenes": 1,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 1,
+            "success_lost": 0,
+            "quality_rescued": 1,
+            "ndtw_harmed": 0,
+            "primitive_delta": -155,
+            "cost_groups": {
+              "immediate": -22,
+              "later_navigation": -133,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 26,
+            "scenes": 8,
+            "cost_reversal": 10,
+            "native_successes": 24,
+            "success_rescued": 2,
+            "success_lost": 0,
+            "quality_rescued": 2,
+            "ndtw_harmed": 13,
+            "primitive_delta": -6,
+            "cost_groups": {
+              "immediate": -84,
+              "later_navigation": 169,
+              "later_stop": -91,
+              "later_other": 0
+            },
+            "native_execution_symptom": 8,
+            "alternative_execution_symptom": 4,
+            "alternative_symptom_counts": {
+              "collision": 4,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 9,
+            "stable_next_reselection": 8,
+            "budget_stop_after": 2
+          }
+        },
+        "alternative_current_proposal": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 27,
+            "scenes": 8,
+            "cost_reversal": 10,
+            "native_successes": 24,
+            "success_rescued": 3,
+            "success_lost": 0,
+            "quality_rescued": 3,
+            "ndtw_harmed": 13,
+            "primitive_delta": -161,
+            "cost_groups": {
+              "immediate": -106,
+              "later_navigation": 36,
+              "later_stop": -91,
+              "later_other": 0
+            },
+            "native_execution_symptom": 8,
+            "alternative_execution_symptom": 4,
+            "alternative_symptom_counts": {
+              "collision": 4,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 9,
+            "stable_next_reselection": 8,
+            "budget_stop_after": 2
+          }
+        },
+        "same_front": {
+          "False": {
+            "events": 1,
+            "scenes": 1,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 1,
+            "success_lost": 0,
+            "quality_rescued": 1,
+            "ndtw_harmed": 0,
+            "primitive_delta": -155,
+            "cost_groups": {
+              "immediate": -22,
+              "later_navigation": -133,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 26,
+            "scenes": 8,
+            "cost_reversal": 10,
+            "native_successes": 24,
+            "success_rescued": 2,
+            "success_lost": 0,
+            "quality_rescued": 2,
+            "ndtw_harmed": 13,
+            "primitive_delta": -6,
+            "cost_groups": {
+              "immediate": -84,
+              "later_navigation": 169,
+              "later_stop": -91,
+              "later_other": 0
+            },
+            "native_execution_symptom": 8,
+            "alternative_execution_symptom": 4,
+            "alternative_symptom_counts": {
+              "collision": 4,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 9,
+            "stable_next_reselection": 8,
+            "budget_stop_after": 2
+          }
+        },
+        "alternative_back_path_empty": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 27,
+            "scenes": 8,
+            "cost_reversal": 10,
+            "native_successes": 24,
+            "success_rescued": 3,
+            "success_lost": 0,
+            "quality_rescued": 3,
+            "ndtw_harmed": 13,
+            "primitive_delta": -161,
+            "cost_groups": {
+              "immediate": -106,
+              "later_navigation": 36,
+              "later_stop": -91,
+              "later_other": 0
+            },
+            "native_execution_symptom": 8,
+            "alternative_execution_symptom": 4,
+            "alternative_symptom_counts": {
+              "collision": 4,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 9,
+            "stable_next_reselection": 8,
+            "budget_stop_after": 2
+          }
+        }
+      },
+      "execution_commit": "9a9a7ae98bf61138da8e12da6fdce00269c3f82b",
+      "simulator_seed": 100,
+      "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+      "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n"
+    },
+    "replication_full": {
+      "role": "primary protected replication; descriptive only",
+      "population_routes": 96,
+      "all_events": {
+        "events": 29,
+        "scenes": 8,
+        "cost_reversal": 14,
+        "native_successes": 23,
+        "success_rescued": 4,
+        "success_lost": 1,
+        "quality_rescued": 3,
+        "ndtw_harmed": 15,
+        "primitive_delta": 121,
+        "cost_groups": {
+          "immediate": -133,
+          "later_navigation": 200,
+          "later_stop": 54,
+          "later_other": 0
+        },
+        "native_execution_symptom": 3,
+        "alternative_execution_symptom": 3,
+        "alternative_symptom_counts": {
+          "collision": 3,
+          "large_endpoint_deviation": 3,
+          "stall": 1
+        },
+        "displaced_ghost_reselected": 10,
+        "stable_next_reselection": 9,
+        "budget_stop_after": 4
+      },
+      "cost_reversals": {
+        "events": 14,
+        "scenes": 7,
+        "cost_reversal": 14,
+        "native_successes": 12,
+        "success_rescued": 1,
+        "success_lost": 0,
+        "quality_rescued": 0,
+        "ndtw_harmed": 9,
+        "primitive_delta": 189,
+        "cost_groups": {
+          "immediate": -68,
+          "later_navigation": 203,
+          "later_stop": 54,
+          "later_other": 0
+        },
+        "native_execution_symptom": 3,
+        "alternative_execution_symptom": 2,
+        "alternative_symptom_counts": {
+          "collision": 2,
+          "large_endpoint_deviation": 2,
+          "stall": 1
+        },
+        "displaced_ghost_reselected": 8,
+        "stable_next_reselection": 7,
+        "budget_stop_after": 2
+      },
+      "other_events": {
+        "events": 15,
+        "scenes": 6,
+        "cost_reversal": 0,
+        "native_successes": 11,
+        "success_rescued": 3,
+        "success_lost": 1,
+        "quality_rescued": 3,
+        "ndtw_harmed": 6,
+        "primitive_delta": -68,
+        "cost_groups": {
+          "immediate": -65,
+          "later_navigation": -3,
+          "later_stop": 0,
+          "later_other": 0
+        },
+        "native_execution_symptom": 0,
+        "alternative_execution_symptom": 1,
+        "alternative_symptom_counts": {
+          "collision": 1,
+          "large_endpoint_deviation": 1,
+          "stall": 0
+        },
+        "displaced_ghost_reselected": 2,
+        "stable_next_reselection": 2,
+        "budget_stop_after": 2
+      },
+      "structural_strata": {
+        "native_current_proposal": {
+          "False": {
+            "events": 3,
+            "scenes": 3,
+            "cost_reversal": 1,
+            "native_successes": 3,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 2,
+            "primitive_delta": -2,
+            "cost_groups": {
+              "immediate": -56,
+              "later_navigation": 54,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 1,
+            "alternative_symptom_counts": {
+              "collision": 1,
+              "large_endpoint_deviation": 1,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 1,
+            "stable_next_reselection": 1,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 26,
+            "scenes": 7,
+            "cost_reversal": 13,
+            "native_successes": 20,
+            "success_rescued": 4,
+            "success_lost": 1,
+            "quality_rescued": 3,
+            "ndtw_harmed": 13,
+            "primitive_delta": 123,
+            "cost_groups": {
+              "immediate": -77,
+              "later_navigation": 146,
+              "later_stop": 54,
+              "later_other": 0
+            },
+            "native_execution_symptom": 3,
+            "alternative_execution_symptom": 2,
+            "alternative_symptom_counts": {
+              "collision": 2,
+              "large_endpoint_deviation": 2,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 9,
+            "stable_next_reselection": 8,
+            "budget_stop_after": 4
+          }
+        },
+        "alternative_current_proposal": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 29,
+            "scenes": 8,
+            "cost_reversal": 14,
+            "native_successes": 23,
+            "success_rescued": 4,
+            "success_lost": 1,
+            "quality_rescued": 3,
+            "ndtw_harmed": 15,
+            "primitive_delta": 121,
+            "cost_groups": {
+              "immediate": -133,
+              "later_navigation": 200,
+              "later_stop": 54,
+              "later_other": 0
+            },
+            "native_execution_symptom": 3,
+            "alternative_execution_symptom": 3,
+            "alternative_symptom_counts": {
+              "collision": 3,
+              "large_endpoint_deviation": 3,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 10,
+            "stable_next_reselection": 9,
+            "budget_stop_after": 4
+          }
+        },
+        "same_front": {
+          "False": {
+            "events": 3,
+            "scenes": 3,
+            "cost_reversal": 1,
+            "native_successes": 3,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 2,
+            "primitive_delta": -2,
+            "cost_groups": {
+              "immediate": -56,
+              "later_navigation": 54,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 1,
+            "alternative_symptom_counts": {
+              "collision": 1,
+              "large_endpoint_deviation": 1,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 1,
+            "stable_next_reselection": 1,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 26,
+            "scenes": 7,
+            "cost_reversal": 13,
+            "native_successes": 20,
+            "success_rescued": 4,
+            "success_lost": 1,
+            "quality_rescued": 3,
+            "ndtw_harmed": 13,
+            "primitive_delta": 123,
+            "cost_groups": {
+              "immediate": -77,
+              "later_navigation": 146,
+              "later_stop": 54,
+              "later_other": 0
+            },
+            "native_execution_symptom": 3,
+            "alternative_execution_symptom": 2,
+            "alternative_symptom_counts": {
+              "collision": 2,
+              "large_endpoint_deviation": 2,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 9,
+            "stable_next_reselection": 8,
+            "budget_stop_after": 4
+          }
+        },
+        "alternative_back_path_empty": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 29,
+            "scenes": 8,
+            "cost_reversal": 14,
+            "native_successes": 23,
+            "success_rescued": 4,
+            "success_lost": 1,
+            "quality_rescued": 3,
+            "ndtw_harmed": 15,
+            "primitive_delta": 121,
+            "cost_groups": {
+              "immediate": -133,
+              "later_navigation": 200,
+              "later_stop": 54,
+              "later_other": 0
+            },
+            "native_execution_symptom": 3,
+            "alternative_execution_symptom": 3,
+            "alternative_symptom_counts": {
+              "collision": 3,
+              "large_endpoint_deviation": 3,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 10,
+            "stable_next_reselection": 9,
+            "budget_stop_after": 4
+          }
+        }
+      },
+      "execution_commit": "6fb04822b81c5a08003b11271d6d9b9ecbaf763c",
+      "simulator_seed": 100,
+      "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+      "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n"
+    },
+    "replication_cost_own": {
+      "role": "secondary overlapping-episode control",
+      "population_routes": 96,
+      "all_events": {
+        "events": 74,
+        "scenes": 8,
+        "cost_reversal": 40,
+        "native_successes": 67,
+        "success_rescued": 4,
+        "success_lost": 1,
+        "quality_rescued": 3,
+        "ndtw_harmed": 37,
+        "primitive_delta": 329,
+        "cost_groups": {
+          "immediate": -238,
+          "later_navigation": 518,
+          "later_stop": 49,
+          "later_other": 0
+        },
+        "native_execution_symptom": 19,
+        "alternative_execution_symptom": 4,
+        "alternative_symptom_counts": {
+          "collision": 4,
+          "large_endpoint_deviation": 1,
+          "stall": 1
+        },
+        "displaced_ghost_reselected": 24,
+        "stable_next_reselection": 21,
+        "budget_stop_after": 4
+      },
+      "cost_reversals": {
+        "events": 40,
+        "scenes": 8,
+        "cost_reversal": 40,
+        "native_successes": 37,
+        "success_rescued": 1,
+        "success_lost": 1,
+        "quality_rescued": 0,
+        "ndtw_harmed": 23,
+        "primitive_delta": 465,
+        "cost_groups": {
+          "immediate": -166,
+          "later_navigation": 586,
+          "later_stop": 45,
+          "later_other": 0
+        },
+        "native_execution_symptom": 12,
+        "alternative_execution_symptom": 4,
+        "alternative_symptom_counts": {
+          "collision": 4,
+          "large_endpoint_deviation": 1,
+          "stall": 1
+        },
+        "displaced_ghost_reselected": 15,
+        "stable_next_reselection": 12,
+        "budget_stop_after": 3
+      },
+      "other_events": {
+        "events": 34,
+        "scenes": 8,
+        "cost_reversal": 0,
+        "native_successes": 30,
+        "success_rescued": 3,
+        "success_lost": 0,
+        "quality_rescued": 3,
+        "ndtw_harmed": 14,
+        "primitive_delta": -136,
+        "cost_groups": {
+          "immediate": -72,
+          "later_navigation": -68,
+          "later_stop": 4,
+          "later_other": 0
+        },
+        "native_execution_symptom": 7,
+        "alternative_execution_symptom": 0,
+        "alternative_symptom_counts": {
+          "collision": 0,
+          "large_endpoint_deviation": 0,
+          "stall": 0
+        },
+        "displaced_ghost_reselected": 9,
+        "stable_next_reselection": 9,
+        "budget_stop_after": 1
+      },
+      "structural_strata": {
+        "native_current_proposal": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 74,
+            "scenes": 8,
+            "cost_reversal": 40,
+            "native_successes": 67,
+            "success_rescued": 4,
+            "success_lost": 1,
+            "quality_rescued": 3,
+            "ndtw_harmed": 37,
+            "primitive_delta": 329,
+            "cost_groups": {
+              "immediate": -238,
+              "later_navigation": 518,
+              "later_stop": 49,
+              "later_other": 0
+            },
+            "native_execution_symptom": 19,
+            "alternative_execution_symptom": 4,
+            "alternative_symptom_counts": {
+              "collision": 4,
+              "large_endpoint_deviation": 1,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 24,
+            "stable_next_reselection": 21,
+            "budget_stop_after": 4
+          }
+        },
+        "alternative_current_proposal": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 74,
+            "scenes": 8,
+            "cost_reversal": 40,
+            "native_successes": 67,
+            "success_rescued": 4,
+            "success_lost": 1,
+            "quality_rescued": 3,
+            "ndtw_harmed": 37,
+            "primitive_delta": 329,
+            "cost_groups": {
+              "immediate": -238,
+              "later_navigation": 518,
+              "later_stop": 49,
+              "later_other": 0
+            },
+            "native_execution_symptom": 19,
+            "alternative_execution_symptom": 4,
+            "alternative_symptom_counts": {
+              "collision": 4,
+              "large_endpoint_deviation": 1,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 24,
+            "stable_next_reselection": 21,
+            "budget_stop_after": 4
+          }
+        },
+        "same_front": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 74,
+            "scenes": 8,
+            "cost_reversal": 40,
+            "native_successes": 67,
+            "success_rescued": 4,
+            "success_lost": 1,
+            "quality_rescued": 3,
+            "ndtw_harmed": 37,
+            "primitive_delta": 329,
+            "cost_groups": {
+              "immediate": -238,
+              "later_navigation": 518,
+              "later_stop": 49,
+              "later_other": 0
+            },
+            "native_execution_symptom": 19,
+            "alternative_execution_symptom": 4,
+            "alternative_symptom_counts": {
+              "collision": 4,
+              "large_endpoint_deviation": 1,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 24,
+            "stable_next_reselection": 21,
+            "budget_stop_after": 4
+          }
+        },
+        "alternative_back_path_empty": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 74,
+            "scenes": 8,
+            "cost_reversal": 40,
+            "native_successes": 67,
+            "success_rescued": 4,
+            "success_lost": 1,
+            "quality_rescued": 3,
+            "ndtw_harmed": 37,
+            "primitive_delta": 329,
+            "cost_groups": {
+              "immediate": -238,
+              "later_navigation": 518,
+              "later_stop": 49,
+              "later_other": 0
+            },
+            "native_execution_symptom": 19,
+            "alternative_execution_symptom": 4,
+            "alternative_symptom_counts": {
+              "collision": 4,
+              "large_endpoint_deviation": 1,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 24,
+            "stable_next_reselection": 21,
+            "budget_stop_after": 4
+          }
+        }
+      },
+      "execution_commit": "6fb04822b81c5a08003b11271d6d9b9ecbaf763c",
+      "simulator_seed": 100,
+      "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+      "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n"
+    },
+    "replication_cost_matched": {
+      "role": "secondary overlapping-episode control",
+      "population_routes": 96,
+      "all_events": {
+        "events": 23,
+        "scenes": 7,
+        "cost_reversal": 12,
+        "native_successes": 18,
+        "success_rescued": 3,
+        "success_lost": 1,
+        "quality_rescued": 2,
+        "ndtw_harmed": 11,
+        "primitive_delta": 98,
+        "cost_groups": {
+          "immediate": -79,
+          "later_navigation": 123,
+          "later_stop": 54,
+          "later_other": 0
+        },
+        "native_execution_symptom": 3,
+        "alternative_execution_symptom": 2,
+        "alternative_symptom_counts": {
+          "collision": 2,
+          "large_endpoint_deviation": 2,
+          "stall": 1
+        },
+        "displaced_ghost_reselected": 8,
+        "stable_next_reselection": 7,
+        "budget_stop_after": 3
+      },
+      "cost_reversals": {
+        "events": 12,
+        "scenes": 6,
+        "cost_reversal": 12,
+        "native_successes": 10,
+        "success_rescued": 1,
+        "success_lost": 0,
+        "quality_rescued": 0,
+        "ndtw_harmed": 7,
+        "primitive_delta": 156,
+        "cost_groups": {
+          "immediate": -39,
+          "later_navigation": 141,
+          "later_stop": 54,
+          "later_other": 0
+        },
+        "native_execution_symptom": 3,
+        "alternative_execution_symptom": 2,
+        "alternative_symptom_counts": {
+          "collision": 2,
+          "large_endpoint_deviation": 2,
+          "stall": 1
+        },
+        "displaced_ghost_reselected": 6,
+        "stable_next_reselection": 5,
+        "budget_stop_after": 2
+      },
+      "other_events": {
+        "events": 11,
+        "scenes": 6,
+        "cost_reversal": 0,
+        "native_successes": 8,
+        "success_rescued": 2,
+        "success_lost": 1,
+        "quality_rescued": 2,
+        "ndtw_harmed": 4,
+        "primitive_delta": -58,
+        "cost_groups": {
+          "immediate": -40,
+          "later_navigation": -18,
+          "later_stop": 0,
+          "later_other": 0
+        },
+        "native_execution_symptom": 0,
+        "alternative_execution_symptom": 0,
+        "alternative_symptom_counts": {
+          "collision": 0,
+          "large_endpoint_deviation": 0,
+          "stall": 0
+        },
+        "displaced_ghost_reselected": 2,
+        "stable_next_reselection": 2,
+        "budget_stop_after": 1
+      },
+      "structural_strata": {
+        "native_current_proposal": {
+          "False": {
+            "events": 1,
+            "scenes": 1,
+            "cost_reversal": 0,
+            "native_successes": 1,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 1,
+            "primitive_delta": -5,
+            "cost_groups": {
+              "immediate": -19,
+              "later_navigation": 14,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 22,
+            "scenes": 7,
+            "cost_reversal": 12,
+            "native_successes": 17,
+            "success_rescued": 3,
+            "success_lost": 1,
+            "quality_rescued": 2,
+            "ndtw_harmed": 10,
+            "primitive_delta": 103,
+            "cost_groups": {
+              "immediate": -60,
+              "later_navigation": 109,
+              "later_stop": 54,
+              "later_other": 0
+            },
+            "native_execution_symptom": 3,
+            "alternative_execution_symptom": 2,
+            "alternative_symptom_counts": {
+              "collision": 2,
+              "large_endpoint_deviation": 2,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 8,
+            "stable_next_reselection": 7,
+            "budget_stop_after": 3
+          }
+        },
+        "alternative_current_proposal": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 23,
+            "scenes": 7,
+            "cost_reversal": 12,
+            "native_successes": 18,
+            "success_rescued": 3,
+            "success_lost": 1,
+            "quality_rescued": 2,
+            "ndtw_harmed": 11,
+            "primitive_delta": 98,
+            "cost_groups": {
+              "immediate": -79,
+              "later_navigation": 123,
+              "later_stop": 54,
+              "later_other": 0
+            },
+            "native_execution_symptom": 3,
+            "alternative_execution_symptom": 2,
+            "alternative_symptom_counts": {
+              "collision": 2,
+              "large_endpoint_deviation": 2,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 8,
+            "stable_next_reselection": 7,
+            "budget_stop_after": 3
+          }
+        },
+        "same_front": {
+          "False": {
+            "events": 1,
+            "scenes": 1,
+            "cost_reversal": 0,
+            "native_successes": 1,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 1,
+            "primitive_delta": -5,
+            "cost_groups": {
+              "immediate": -19,
+              "later_navigation": 14,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 22,
+            "scenes": 7,
+            "cost_reversal": 12,
+            "native_successes": 17,
+            "success_rescued": 3,
+            "success_lost": 1,
+            "quality_rescued": 2,
+            "ndtw_harmed": 10,
+            "primitive_delta": 103,
+            "cost_groups": {
+              "immediate": -60,
+              "later_navigation": 109,
+              "later_stop": 54,
+              "later_other": 0
+            },
+            "native_execution_symptom": 3,
+            "alternative_execution_symptom": 2,
+            "alternative_symptom_counts": {
+              "collision": 2,
+              "large_endpoint_deviation": 2,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 8,
+            "stable_next_reselection": 7,
+            "budget_stop_after": 3
+          }
+        },
+        "alternative_back_path_empty": {
+          "False": {
+            "events": 0,
+            "scenes": 0,
+            "cost_reversal": 0,
+            "native_successes": 0,
+            "success_rescued": 0,
+            "success_lost": 0,
+            "quality_rescued": 0,
+            "ndtw_harmed": 0,
+            "primitive_delta": 0,
+            "cost_groups": {
+              "immediate": 0,
+              "later_navigation": 0,
+              "later_stop": 0,
+              "later_other": 0
+            },
+            "native_execution_symptom": 0,
+            "alternative_execution_symptom": 0,
+            "alternative_symptom_counts": {
+              "collision": 0,
+              "large_endpoint_deviation": 0,
+              "stall": 0
+            },
+            "displaced_ghost_reselected": 0,
+            "stable_next_reselection": 0,
+            "budget_stop_after": 0
+          },
+          "True": {
+            "events": 23,
+            "scenes": 7,
+            "cost_reversal": 12,
+            "native_successes": 18,
+            "success_rescued": 3,
+            "success_lost": 1,
+            "quality_rescued": 2,
+            "ndtw_harmed": 11,
+            "primitive_delta": 98,
+            "cost_groups": {
+              "immediate": -79,
+              "later_navigation": 123,
+              "later_stop": 54,
+              "later_other": 0
+            },
+            "native_execution_symptom": 3,
+            "alternative_execution_symptom": 2,
+            "alternative_symptom_counts": {
+              "collision": 2,
+              "large_endpoint_deviation": 2,
+              "stall": 1
+            },
+            "displaced_ghost_reselected": 8,
+            "stable_next_reselection": 7,
+            "budget_stop_after": 3
+          }
+        }
+      },
+      "execution_commit": "6fb04822b81c5a08003b11271d6d9b9ecbaf763c",
+      "simulator_seed": 100,
+      "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+      "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n"
+    }
+  },
+  "training_gate": "NO-GO unchanged; observational audit does not establish a remedy",
+  "registration_sha256": "d0128d7b7654930c57da263529d1a8b15e578bb073e48675df6b4496ac00926f",
+  "source_sha256": "f828d432a26ed0d7d9c094e67891020e703c5969ba2d1a4e1061386d0dc5b046"
+}

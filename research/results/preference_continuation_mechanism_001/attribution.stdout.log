@@ -1,0 +1,74 @@
+{
+  "exploratory_full": {
+    "all_events": {
+      "events": 27,
+      "largest_positive_group_counts": {
+        "native_policy": 0,
+        "execution_geometry": 24,
+        "current_proposal": 1,
+        "embedding_statistics": 2,
+        "constant_within_move_set": 0
+      },
+      "mean_group_contribution": {
+        "native_policy": -0.03942066051087843,
+        "execution_geometry": 0.08708116055907737,
+        "current_proposal": 0.005800129461978166,
+        "embedding_statistics": -0.02354152897782699,
+        "constant_within_move_set": 0.0
+      }
+    },
+    "cost_reversals": {
+      "events": 10,
+      "largest_positive_group_counts": {
+        "native_policy": 0,
+        "execution_geometry": 10,
+        "current_proposal": 0,
+        "embedding_statistics": 0,
+        "constant_within_move_set": 0
+      },
+      "mean_group_contribution": {
+        "native_policy": -0.03679599636034389,
+        "execution_geometry": 0.10578516397708296,
+        "current_proposal": 0.0,
+        "embedding_statistics": -0.037661900456838704,
+        "constant_within_move_set": 0.0
+      }
+    }
+  },
+  "replication_full": {
+    "all_events": {
+      "events": 29,
+      "largest_positive_group_counts": {
+        "native_policy": 0,
+        "execution_geometry": 25,
+        "current_proposal": 3,
+        "embedding_statistics": 1,
+        "constant_within_move_set": 0
+      },
+      "mean_group_contribution": {
+        "native_policy": -0.03730495713439907,
+        "execution_geometry": 0.08198242086196536,
+        "current_proposal": 0.016200361600697637,
+        "embedding_statistics": -0.02155398127711679,
+        "constant_within_move_set": 0.0
+      }
+    },
+    "cost_reversals": {
+      "events": 14,
+      "largest_positive_group_counts": {
+        "native_policy": 0,
+        "execution_geometry": 13,
+        "current_proposal": 1,
+        "embedding_statistics": 0,
+        "constant_within_move_set": 0
+      },
+      "mean_group_contribution": {
+        "native_policy": -0.038967916287134086,
+        "execution_geometry": 0.08425846864521729,
+        "current_proposal": 0.011185963962386464,
+        "embedding_statistics": -0.026513991225625425,
+        "constant_within_move_set": 0.0
+      }
+    }
+  }
+}

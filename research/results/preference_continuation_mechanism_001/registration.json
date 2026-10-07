@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-07T16:24:35.758148+00:00",
+  "git_commit": "72f78fb5e27c0b3ecc2773d6350eb3a490ca7ba1",
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "config": {
+    "experiment_id": "PREFERENCE-CONTINUATION-MECHANISM-001",
+    "analysis_type": "retrospective descriptive audit; no policy fitting or new rollout",
+    "protocol": "research/PREFERENCE_CONTINUATION_MECHANISM_PROTOCOL.md",
+    "output": "research/results/preference_continuation_mechanism_001",
+    "seed": 100,
+    "endpoint_deviation_m": 0.5,
+    "stall_primitives_min": 3,
+    "stall_path_m_max": 0.1,
+    "stable_target_drift_m": 0.25,
+    "batches": [
+      {
+        "name": "exploratory_full",
+        "role": "primary earlier exploratory cohort",
+        "root": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002",
+        "run": "intervention_cycle_001/learned_enabled",
+        "audit": "intervention_cycle_001/learned_enabled_audit",
+        "expected_events": 27
+      },
+      {
+        "name": "replication_full",
+        "role": "primary protected replication; descriptive only",
+        "root": "research/results/graph_value_prospective_replication_001",
+        "run": "replication_cycle_001/full_enabled",
+        "audit": "replication_cycle_001/full_enabled_audit",
+        "expected_events": 29
+      },
+      {
+        "name": "replication_cost_own",
+        "role": "secondary overlapping-episode control",
+        "root": "research/results/graph_value_prospective_replication_001",
+        "run": "replication_cycle_001/cost_own_enabled",
+        "audit": "replication_cycle_001/cost_own_enabled_audit",
+        "expected_events": 74
+      },
+      {
+        "name": "replication_cost_matched",
+        "role": "secondary overlapping-episode control",
+        "root": "research/results/graph_value_prospective_replication_001",
+        "run": "replication_cycle_001/cost_matched_enabled",
+        "audit": "replication_cycle_001/cost_matched_enabled_audit",
+        "expected_events": 23
+      }
+    ]
+  },
+  "scope": "Analysis specification frozen after navigation outcomes were known; not prospective outcome evidence.",
+  "hashes": {
+    "research/PREFERENCE_CONTINUATION_MECHANISM_PROTOCOL.md": "d5a29cbf161f02688af3a6b06c027a4c12401ef1e62b4aa57816e2baa5a3ad8f",
+    "research/configs/PREFERENCE_CONTINUATION_MECHANISM_001.json": "2f018b96ef3db68495f55ec6ecca60426048169abc1de173ebec22af2cf85c09",
+    "research/results/graph_value_prospective_replication_001/capture_001/graph_options/graph_options.jsonl": "9e6e0dbd246bdae8f3de0c2e7e40f2d0d6f80ff1d37b5da9a3fcda019d958f4b",
+    "research/results/graph_value_prospective_replication_001/capture_001/manifest.json": "4cf33898afa632fa68c8125f5290a259dee9b47f8ba864e34c65f08886b8d302",
+    "research/results/graph_value_prospective_replication_001/capture_001/traces/worker_seed100.jsonl": "96ab76cb022101d8bab39c91785d7c1f7f5a37a722f413e6f6ea62326f31af70",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled/hook/decisions.jsonl": "e9b08b9cd0b07908c84de609574f7ddd060273a1e79d5934657382a883c29eb2",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled/manifest.json": "55a5c06771786093fabcab5c424cbdfb17b6f1a3f99316c99aceb7a26e73b768",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled/traces/worker_seed100.jsonl": "030ebc656cf223730a31e3f0dd548fb213fdd3a5a653e4c5a193067868b3d1c5",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/paired_episodes.json": "b80c2d922e35e4b0535081ef6b8f92ae9ed8a0d60bbe38fd99acc83ead96b91e",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_matched_enabled_audit/summary.json": "a693e21ab275b5c9f92aa60abd92cb2de4f40139869da72c02a52b3640696657",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled/hook/decisions.jsonl": "720c811cc3957d8bd6d2b86861a245822203eaadd4bd3c366d40ced002e0a9ba",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled/manifest.json": "b9c93043bedf05363da8acde42f5f07b2a960bd85b01424188417ee60eb4df1d",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled/traces/worker_seed100.jsonl": "4eaf51a1c2ee40282bfb7ad7b6596b07456709ee7f7d263fefaf384569171028",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/paired_episodes.json": "d4c0778c06b744b1bd2e7844dba19367b101ca3ad0916c869ca25d9643f3df20",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/cost_own_enabled_audit/summary.json": "df30db790e25decff6f6abe71c69af6e7794196fbf766a3513893d5947d4230a",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled/hook/decisions.jsonl": "8bd441ffa1facca30893f9dbbe0862d703c2f3db7db759bf676dbecb3f8e6159",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled/manifest.json": "4e66cbf98fe42b1b2c68cd5e4b2f30c84bf63a3901561547c6e05f95ca404c22",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled/traces/worker_seed100.jsonl": "ce5a6c3e968cc3354732803810b1c5b473956e6653ea5730481f40e03e7e25f3",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/paired_episodes.json": "ecdde353462d1be48ac34c550565b543382a266627e3be40ae712b563c81b32c",
+    "research/results/graph_value_prospective_replication_001/replication_cycle_001/full_enabled_audit/summary.json": "b73b72094df69e3afb620b7abd47b4913c730b42b28c67d37ecbeb368bc2b9db",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001/graph_options/graph_options.jsonl": "94617919ed85ea783d8a9ec63d0af10fddd2210baf9fe0ff8e9fad7b0cd568b5",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001/manifest.json": "fa1920089be77a726504a6f511b17fd64a665f65718f36e20218c7e2e730ef18",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001/traces/worker_seed100.jsonl": "f788c859b85b0ea024a4eb98429b1beea720c24a7270ede22d7a075cc5ffdea8",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled/hook/decisions.jsonl": "edb73a62bcf12c70e76d5344ed28370de071edd8b9c7271e8338fcc3af586e20",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled/manifest.json": "a0af5dcd9b6fc597f59a3829803a78a7630045fa2ecc1d49b6014951d2f8fcc9",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled/traces/worker_seed100.jsonl": "427daf491a5c41646accece67795f6eb40a5a158edd096e1980506b3a11e7d49",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled_audit/paired_episodes.json": "a9603d5101e9eb0368daf9accabbb8a507cbf44a6c568ab5839c22c7c09316fb",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled_audit/summary.json": "414619ba621917f00e48352e7a441b596f6b668776a93048fae826f190270e77",
+    "research/tools/analyze_continuation_horizon.py": "7a846c1a1005190a6702b21d535d2b5f1f6e43d073cbce0afab4297c6f73e11f",
+    "research/tools/audit_preference_continuation_mechanisms.py": "f828d432a26ed0d7d9c094e67891020e703c5969ba2d1a4e1061386d0dc5b046",
+    "research/tools/audit_single_intervention.py": "16d8c8b8deb288ccb6c0f5ee3bb679dc4180982cdf0b35bc79bbcace5452e36f",
+    "research/tools/decompose_continuation_costs.py": "b704d59e0930b60f6bbbc32791a523cbafe6f275869403bfd7f3963a26316925",
+    "research/tools/graph_value_feasibility.py": "3154f554eb4e4e0500051440aeb326b480a978000cbd5c0784ba428fb5d12c97",
+    "research/tools/route_alignment.py": "de864d584766d90401c04d4bba1f2f2fab7debc6611c0961d853196cb48c6031"
+  }
+}
