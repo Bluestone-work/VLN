@@ -1,0 +1,93 @@
+{
+  "decision": "GO for a new prospective study",
+  "gates": {
+    "quality_rescue_in_two_scenes": true,
+    "positive_sr": true,
+    "nondecreasing_spl": true,
+    "nondecreasing_ndtw": true,
+    "no_primitive_increase": true,
+    "sr_beats_mean_random": true
+  },
+  "arms": {
+    "learned": {
+      "interventions": 27,
+      "rescued": [
+        "3161",
+        "3398",
+        "10199"
+      ],
+      "lost": [],
+      "deltas": {
+        "success": 0.03125,
+        "spl": 0.023024699916585987,
+        "ndtw": 0.0095576324139375,
+        "sdtw": 0.017035531784138896,
+        "distance_to_goal": -0.1962520613645514,
+        "path_length": -0.3698557714621226,
+        "primitive_action_count": -1.6770833333333333,
+        "high_level_steps": 0.07291666666666667,
+        "collision_events": -0.08333333333333333
+      }
+    },
+    "random_20261021": {
+      "interventions": 23,
+      "rescued": [
+        "3398",
+        "10199"
+      ],
+      "lost": [
+        "8285",
+        "454"
+      ],
+      "deltas": {
+        "success": 0.0,
+        "spl": -0.05222989066110223,
+        "ndtw": -0.04115409453842649,
+        "sdtw": -0.041125627124249754,
+        "distance_to_goal": -0.09019124624319375,
+        "path_length": 1.7791665842135747,
+        "primitive_action_count": 12.791666666666666,
+        "high_level_steps": 0.16666666666666666,
+        "collision_events": 0.4583333333333333
+      }
+    },
+    "random_20261022": {
+      "interventions": 20,
+      "rescued": [],
+      "lost": [
+        "8285"
+      ],
+      "deltas": {
+        "success": -0.010416666666666666,
+        "spl": -0.06111127944291725,
+        "ndtw": -0.043320097193283245,
+        "sdtw": -0.05006019332060616,
+        "distance_to_goal": 0.030375725279251736,
+        "path_length": 1.6373361597458522,
+        "primitive_action_count": 12.447916666666666,
+        "high_level_steps": 0.15625,
+        "collision_events": 0.041666666666666664
+      }
+    },
+    "random_20261023": {
+      "interventions": 25,
+      "rescued": [
+        "3161"
+      ],
+      "lost": [
+        "8285"
+      ],
+      "deltas": {
+        "success": 0.0,
+        "spl": -0.057915389066585055,
+        "ndtw": -0.03684038443368793,
+        "sdtw": -0.039402337611478204,
+        "distance_to_goal": 0.01989297413577636,
+        "path_length": 1.411991149187088,
+        "primitive_action_count": 12.489583333333334,
+        "high_level_steps": 0.19791666666666666,
+        "collision_events": 0.7395833333333334
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-TRAIN96-002",
+  "integrity_gate_passed": true,
+  "branches": 9740,
+  "forward_branches": 7829,
+  "reverse_branches": 1911,
+  "max_start_position_error_m": 0.0,
+  "max_start_rotation_error_rad": 4.2146848510894035e-08,
+  "max_start_goal_distance_error_m": 0.0,
+  "all_action_dictionaries_exact": true,
+  "all_start_rng_exact": true,
+  "all_admissibility_and_coverage_checks_passed": true,
+  "stop_branches": 912,
+  "branches_with_back_path": 6332,
+  "primitive_events_including_repeats": 307637,
+  "collision_events_including_repeats": 9505,
+  "raw_trace_sha256": "afaca93486ce23abce1a883ffce3927d86697fc1238490e6370fa7f1da55332e",
+  "audit_source_sha256": "4dbbafc0f6a79336900d2c155ff95ac52881f1985354ddbb6f32b8ebbb04ba7a"
+}

@@ -1,0 +1,1156 @@
+{
+  "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-TRAIN96-002-RANDOM-20261022",
+  "mode": "enabled",
+  "all_required_gates_passed": true,
+  "source_capture": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+  "schedule_sha256": "ccc7f86798285bc3bf02e449ad972778dc0c6b5cb6056ad7a2a3261416d256b4",
+  "source_capture_manifest_sha256": "fa1920089be77a726504a6f511b17fd64a665f65718f36e20218c7e2e730ef18",
+  "episodes": 96,
+  "decisions": 735,
+  "unchanged_metric_comparison": {
+    "passed": true,
+    "episodes": 76,
+    "metric_comparisons": 1368,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "aggregate_comparison": null,
+  "exact_trace_comparisons": 609,
+  "trace_differences": [],
+  "event_checks": [
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 50,
+      "replayed_primitives": 50,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "6080",
+        6
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -5.244652271270752,
+      "local_progress_gain_m": -7.363227367401123
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 2.9802322387695312e-08,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 32,
+      "replayed_primitives": 32,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "2906",
+        2
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -2.8423938751220703,
+      "local_progress_gain_m": -4.673107624053955
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 38,
+      "replayed_primitives": 38,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "8405",
+        3
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -2.142096996307373,
+      "local_progress_gain_m": -4.392093658447266
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 4.2146848510894035e-08,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 21,
+      "replayed_primitives": 21,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "8594",
+        1
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": 2.022974967956543,
+      "local_progress_gain_m": 4.0739946365356445
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 7,
+      "replayed_primitives": 7,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "927",
+        0
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -0.9006109237670898,
+      "local_progress_gain_m": -3.494150161743164
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 4.2146848510894035e-08,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 17,
+      "replayed_primitives": 17,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/1LXtFkjw3qL/1LXtFkjw3qL.glb",
+        "4907",
+        4
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -1.7495017051696777,
+      "local_progress_gain_m": -3.35483980178833
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 2.9802322387695312e-08,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 5,
+      "replayed_primitives": 5,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/1LXtFkjw3qL/1LXtFkjw3qL.glb",
+        "85",
+        5
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": 0.8928477764129639,
+      "local_progress_gain_m": -0.5873148441314697
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 49,
+      "replayed_primitives": 49,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/1LXtFkjw3qL/1LXtFkjw3qL.glb",
+        "8288",
+        4
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -3.627049446105957,
+      "local_progress_gain_m": -4.774783730506897
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 4.2146848510894035e-08,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 54,
+      "replayed_primitives": 54,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb",
+        "8285",
+        5
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -6.24641227722168,
+      "local_progress_gain_m": -7.154820442199707
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 12,
+      "replayed_primitives": 12,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb",
+        "1284",
+        2
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -0.6103434562683105,
+      "local_progress_gain_m": -2.1998116970062256
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 62,
+      "replayed_primitives": 62,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb",
+        "25",
+        10
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -5.2015239000320435,
+      "local_progress_gain_m": -6.3080750703811646
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 38,
+      "replayed_primitives": 38,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb",
+        "3161",
+        3
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -1.5943021774291992,
+      "local_progress_gain_m": -1.0804595947265625
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 32,
+      "replayed_primitives": 32,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "9656",
+        5
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -4.02582311630249,
+      "local_progress_gain_m": -6.015520334243774
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 45,
+      "replayed_primitives": 45,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "3398",
+        7
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -4.593363285064697,
+      "local_progress_gain_m": -6.622152328491211
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 104,
+      "replayed_primitives": 104,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "454",
+        10
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -17.937413930892944,
+      "local_progress_gain_m": -18.640042543411255
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 47,
+      "replayed_primitives": 47,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "10046",
+        3
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -5.625124931335449,
+      "local_progress_gain_m": -6.664868354797363
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 8,
+      "replayed_primitives": 8,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb",
+        "7511",
+        0
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": 0.9992218017578125,
+      "local_progress_gain_m": -0.2206273078918457
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 22,
+      "replayed_primitives": 22,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb",
+        "1490",
+        1
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -2.0994462966918945,
+      "local_progress_gain_m": -3.2997512817382812
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 30,
+      "replayed_primitives": 30,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb",
+        "10199",
+        4
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -3.2047629356384277,
+      "local_progress_gain_m": -1.6563997268676758
+    },
+    {
+      "endpoint_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "pre_pose_error_m": 0.0,
+      "progress_error_m": 0.0,
+      "primitive_sequence_exact": true,
+      "collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "sensor_hashes_exact": true,
+      "expected_primitives": 68,
+      "replayed_primitives": 68,
+      "max_primitive_position_error_m": 0.0,
+      "passed": true,
+      "decision_key": [
+        "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+        "1288",
+        7
+      ],
+      "start_matches_baseline_exact": true,
+      "alternative_action_exact": true,
+      "local_progress_m": -6.358699798583984,
+      "local_progress_gain_m": -7.352605581283569
+    }
+  ],
+  "interventions": 20,
+  "hook_summary": {
+    "hook_completed": true,
+    "enabled": true,
+    "decisions": 735,
+    "prefix_states_verified": 629,
+    "encountered_episodes": [
+      "10046",
+      "10199",
+      "1284",
+      "1288",
+      "1490",
+      "25",
+      "2906",
+      "3161",
+      "3398",
+      "454",
+      "4907",
+      "6080",
+      "7511",
+      "8285",
+      "8288",
+      "8405",
+      "85",
+      "8594",
+      "927",
+      "9656"
+    ],
+    "intervened_episodes": [
+      "10046",
+      "10199",
+      "1284",
+      "1288",
+      "1490",
+      "25",
+      "2906",
+      "3161",
+      "3398",
+      "454",
+      "4907",
+      "6080",
+      "7511",
+      "8285",
+      "8288",
+      "8405",
+      "85",
+      "8594",
+      "927",
+      "9656"
+    ],
+    "privileged_analysis_only": true,
+    "no_model_trained": true
+  },
+  "paired_groups": {
+    "targeted_20": {
+      "episodes": 20,
+      "metrics": {
+        "actual_stop_rate": {
+          "baseline_mean": 0.11574786324786328,
+          "intervention_mean": 0.10325632700632699,
+          "mean_delta": -0.012491536241536242,
+          "higher_count": 2,
+          "lower_count": 13,
+          "tie_count": 5,
+          "lower_is_better": false
+        },
+        "collision_events": {
+          "baseline_mean": 2.05,
+          "intervention_mean": 2.25,
+          "mean_delta": 0.2,
+          "higher_count": 8,
+          "lower_count": 4,
+          "tie_count": 8,
+          "lower_is_better": true
+        },
+        "collisions": {
+          "baseline_mean": 0.035161274876992166,
+          "intervention_mean": 0.024164752063014987,
+          "mean_delta": -0.010996522813977182,
+          "higher_count": 7,
+          "lower_count": 8,
+          "tie_count": 5,
+          "lower_is_better": true
+        },
+        "distance_to_goal": {
+          "baseline_mean": 2.1221141602844,
+          "intervention_mean": 2.267917641624808,
+          "mean_delta": 0.14580348134040833,
+          "higher_count": 9,
+          "lower_count": 11,
+          "tie_count": 0,
+          "lower_is_better": true
+        },
+        "forced_stop_count": {
+          "baseline_mean": 0.05,
+          "intervention_mean": 0.1,
+          "mean_delta": 0.05,
+          "higher_count": 1,
+          "lower_count": 0,
+          "tie_count": 19,
+          "lower_is_better": false
+        },
+        "forced_stop_max_len_count": {
+          "baseline_mean": 0.05,
+          "intervention_mean": 0.1,
+          "mean_delta": 0.05,
+          "higher_count": 1,
+          "lower_count": 0,
+          "tie_count": 19,
+          "lower_is_better": false
+        },
+        "forced_stop_no_vp_count": {
+          "baseline_mean": 0.0,
+          "intervention_mean": 0.0,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 20,
+          "lower_is_better": false
+        },
+        "forced_stop_rate": {
+          "baseline_mean": 0.003333333333333333,
+          "intervention_mean": 0.006666666666666666,
+          "mean_delta": 0.003333333333333333,
+          "higher_count": 1,
+          "lower_count": 0,
+          "tie_count": 19,
+          "lower_is_better": false
+        },
+        "ghost_cnt": {
+          "baseline_mean": 29.1,
+          "intervention_mean": 30.05,
+          "mean_delta": 0.95,
+          "higher_count": 12,
+          "lower_count": 7,
+          "tie_count": 1,
+          "lower_is_better": false
+        },
+        "high_level_steps": {
+          "baseline_mean": 9.65,
+          "intervention_mean": 10.4,
+          "mean_delta": 0.75,
+          "higher_count": 13,
+          "lower_count": 2,
+          "tie_count": 5,
+          "lower_is_better": true
+        },
+        "native_collision_count": {
+          "baseline_mean": 2.05,
+          "intervention_mean": 2.25,
+          "mean_delta": 0.2,
+          "higher_count": 8,
+          "lower_count": 4,
+          "tie_count": 8,
+          "lower_is_better": true
+        },
+        "ndtw": {
+          "baseline_mean": 0.7405004172794216,
+          "intervention_mean": 0.5325639507516621,
+          "mean_delta": -0.20793646652775957,
+          "higher_count": 4,
+          "lower_count": 16,
+          "tie_count": 0,
+          "lower_is_better": false
+        },
+        "oracle_success": {
+          "baseline_mean": 0.9,
+          "intervention_mean": 0.85,
+          "mean_delta": -0.05,
+          "higher_count": 0,
+          "lower_count": 1,
+          "tie_count": 19,
+          "lower_is_better": false
+        },
+        "path_length": {
+          "baseline_mean": 15.126579880714417,
+          "intervention_mean": 22.98579344749451,
+          "mean_delta": 7.85921356678009,
+          "higher_count": 15,
+          "lower_count": 5,
+          "tie_count": 0,
+          "lower_is_better": true
+        },
+        "policy_stop_count": {
+          "baseline_mean": 0.95,
+          "intervention_mean": 0.9,
+          "mean_delta": -0.05,
+          "higher_count": 0,
+          "lower_count": 1,
+          "tie_count": 19,
+          "lower_is_better": false
+        },
+        "policy_stop_rate": {
+          "baseline_mean": 0.11241452991452994,
+          "intervention_mean": 0.09658966033966034,
+          "mean_delta": -0.015824869574869574,
+          "higher_count": 2,
+          "lower_count": 14,
+          "tie_count": 4,
+          "lower_is_better": false
+        },
+        "primitive_action_count": {
+          "baseline_mean": 90.5,
+          "intervention_mean": 150.25,
+          "mean_delta": 59.75,
+          "higher_count": 17,
+          "lower_count": 3,
+          "tie_count": 0,
+          "lower_is_better": true
+        },
+        "sdtw": {
+          "baseline_mean": 0.7046065003024549,
+          "intervention_mean": 0.4643175723635453,
+          "mean_delta": -0.24028892793890955,
+          "higher_count": 2,
+          "lower_count": 15,
+          "tie_count": 3,
+          "lower_is_better": false
+        },
+        "spl": {
+          "baseline_mean": 0.7483468289195231,
+          "intervention_mean": 0.4550126875935202,
+          "mean_delta": -0.2933341413260028,
+          "higher_count": 3,
+          "lower_count": 14,
+          "tie_count": 3,
+          "lower_is_better": false
+        },
+        "steps_taken": {
+          "baseline_mean": 90.5,
+          "intervention_mean": 150.25,
+          "mean_delta": 59.75,
+          "higher_count": 17,
+          "lower_count": 3,
+          "tie_count": 0,
+          "lower_is_better": true
+        },
+        "success": {
+          "baseline_mean": 0.85,
+          "intervention_mean": 0.8,
+          "mean_delta": -0.05,
+          "higher_count": 0,
+          "lower_count": 1,
+          "tie_count": 19,
+          "lower_is_better": false
+        }
+      },
+      "success_rescued": [],
+      "success_lost": [
+        "8285"
+      ]
+    },
+    "unaffected_76": {
+      "episodes": 76,
+      "metrics": {
+        "actual_stop_rate": {
+          "baseline_mean": 0.16006303637882574,
+          "intervention_mean": 0.16006303637882574,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "collision_events": {
+          "baseline_mean": 3.526315789473684,
+          "intervention_mean": 3.526315789473684,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "collisions": {
+          "baseline_mean": 0.21167366462693163,
+          "intervention_mean": 0.21167366462693163,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "distance_to_goal": {
+          "baseline_mean": 1.5520391409334384,
+          "intervention_mean": 1.5520391409334384,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "forced_stop_count": {
+          "baseline_mean": 0.039473684210526314,
+          "intervention_mean": 0.039473684210526314,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "forced_stop_max_len_count": {
+          "baseline_mean": 0.039473684210526314,
+          "intervention_mean": 0.039473684210526314,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "forced_stop_no_vp_count": {
+          "baseline_mean": 0.0,
+          "intervention_mean": 0.0,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "forced_stop_rate": {
+          "baseline_mean": 0.002631578947368421,
+          "intervention_mean": 0.002631578947368421,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "ghost_cnt": {
+          "baseline_mean": 19.105263157894736,
+          "intervention_mean": 19.105263157894736,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "high_level_steps": {
+          "baseline_mean": 6.934210526315789,
+          "intervention_mean": 6.934210526315789,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "native_collision_count": {
+          "baseline_mean": 3.526315789473684,
+          "intervention_mean": 3.526315789473684,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "ndtw": {
+          "baseline_mean": 0.8629669805934929,
+          "intervention_mean": 0.8629669805934929,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "oracle_success": {
+          "baseline_mean": 0.9605263157894737,
+          "intervention_mean": 0.9605263157894737,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "path_length": {
+          "baseline_mean": 7.787209862156918,
+          "intervention_mean": 7.787209862156918,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "policy_stop_count": {
+          "baseline_mean": 0.9605263157894737,
+          "intervention_mean": 0.9605263157894737,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "policy_stop_rate": {
+          "baseline_mean": 0.15743145743145734,
+          "intervention_mean": 0.15743145743145734,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "primitive_action_count": {
+          "baseline_mean": 49.60526315789474,
+          "intervention_mean": 49.60526315789474,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "sdtw": {
+          "baseline_mean": 0.8403612547759446,
+          "intervention_mean": 0.8403612547759446,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "spl": {
+          "baseline_mean": 0.9013261494351469,
+          "intervention_mean": 0.9013261494351469,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "steps_taken": {
+          "baseline_mean": 49.60526315789474,
+          "intervention_mean": 49.60526315789474,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "success": {
+          "baseline_mean": 0.9473684210526315,
+          "intervention_mean": 0.9473684210526315,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 76,
+          "lower_is_better": false
+        }
+      },
+      "success_rescued": [],
+      "success_lost": []
+    },
+    "all_96": {
+      "episodes": 96,
+      "metrics": {
+        "actual_stop_rate": {
+          "baseline_mean": 0.1508307086432085,
+          "intervention_mean": 0.14822830525955513,
+          "mean_delta": -0.0026024033836533835,
+          "higher_count": 2,
+          "lower_count": 13,
+          "tie_count": 81,
+          "lower_is_better": false
+        },
+        "collision_events": {
+          "baseline_mean": 3.21875,
+          "intervention_mean": 3.2604166666666665,
+          "mean_delta": 0.041666666666666664,
+          "higher_count": 8,
+          "lower_count": 4,
+          "tie_count": 84,
+          "lower_is_better": true
+        },
+        "collisions": {
+          "baseline_mean": 0.17490025009569424,
+          "intervention_mean": 0.1726093078427823,
+          "mean_delta": -0.002290942252911913,
+          "higher_count": 7,
+          "lower_count": 8,
+          "tie_count": 81,
+          "lower_is_better": true
+        },
+        "distance_to_goal": {
+          "baseline_mean": 1.6708047699648887,
+          "intervention_mean": 1.7011804952441405,
+          "mean_delta": 0.030375725279251736,
+          "higher_count": 9,
+          "lower_count": 11,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "forced_stop_count": {
+          "baseline_mean": 0.041666666666666664,
+          "intervention_mean": 0.052083333333333336,
+          "mean_delta": 0.010416666666666666,
+          "higher_count": 1,
+          "lower_count": 0,
+          "tie_count": 95,
+          "lower_is_better": false
+        },
+        "forced_stop_max_len_count": {
+          "baseline_mean": 0.041666666666666664,
+          "intervention_mean": 0.052083333333333336,
+          "mean_delta": 0.010416666666666666,
+          "higher_count": 1,
+          "lower_count": 0,
+          "tie_count": 95,
+          "lower_is_better": false
+        },
+        "forced_stop_no_vp_count": {
+          "baseline_mean": 0.0,
+          "intervention_mean": 0.0,
+          "mean_delta": 0.0,
+          "higher_count": 0,
+          "lower_count": 0,
+          "tie_count": 96,
+          "lower_is_better": false
+        },
+        "forced_stop_rate": {
+          "baseline_mean": 0.002777777777777778,
+          "intervention_mean": 0.003472222222222222,
+          "mean_delta": 0.0006944444444444445,
+          "higher_count": 1,
+          "lower_count": 0,
+          "tie_count": 95,
+          "lower_is_better": false
+        },
+        "ghost_cnt": {
+          "baseline_mean": 21.1875,
+          "intervention_mean": 21.385416666666668,
+          "mean_delta": 0.19791666666666666,
+          "higher_count": 12,
+          "lower_count": 7,
+          "tie_count": 77,
+          "lower_is_better": false
+        },
+        "high_level_steps": {
+          "baseline_mean": 7.5,
+          "intervention_mean": 7.65625,
+          "mean_delta": 0.15625,
+          "higher_count": 13,
+          "lower_count": 2,
+          "tie_count": 81,
+          "lower_is_better": true
+        },
+        "native_collision_count": {
+          "baseline_mean": 3.21875,
+          "intervention_mean": 3.2604166666666665,
+          "mean_delta": 0.041666666666666664,
+          "higher_count": 8,
+          "lower_count": 4,
+          "tie_count": 84,
+          "lower_is_better": true
+        },
+        "ndtw": {
+          "baseline_mean": 0.8374531132363949,
+          "intervention_mean": 0.7941330160431117,
+          "mean_delta": -0.043320097193283245,
+          "higher_count": 4,
+          "lower_count": 16,
+          "tie_count": 76,
+          "lower_is_better": false
+        },
+        "oracle_success": {
+          "baseline_mean": 0.9479166666666666,
+          "intervention_mean": 0.9375,
+          "mean_delta": -0.010416666666666666,
+          "higher_count": 0,
+          "lower_count": 1,
+          "tie_count": 95,
+          "lower_is_better": false
+        },
+        "path_length": {
+          "baseline_mean": 9.31624528268973,
+          "intervention_mean": 10.953581442435583,
+          "mean_delta": 1.6373361597458522,
+          "higher_count": 15,
+          "lower_count": 5,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "policy_stop_count": {
+          "baseline_mean": 0.9583333333333334,
+          "intervention_mean": 0.9479166666666666,
+          "mean_delta": -0.010416666666666666,
+          "higher_count": 0,
+          "lower_count": 1,
+          "tie_count": 95,
+          "lower_is_better": false
+        },
+        "policy_stop_rate": {
+          "baseline_mean": 0.14805293086543073,
+          "intervention_mean": 0.14475608303733292,
+          "mean_delta": -0.003296847828097828,
+          "higher_count": 2,
+          "lower_count": 14,
+          "tie_count": 80,
+          "lower_is_better": false
+        },
+        "primitive_action_count": {
+          "baseline_mean": 58.125,
+          "intervention_mean": 70.57291666666667,
+          "mean_delta": 12.447916666666666,
+          "higher_count": 17,
+          "lower_count": 3,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "sdtw": {
+          "baseline_mean": 0.8120790142606346,
+          "intervention_mean": 0.7620188209400283,
+          "mean_delta": -0.050060193320606156,
+          "higher_count": 2,
+          "lower_count": 15,
+          "tie_count": 79,
+          "lower_is_better": false
+        },
+        "spl": {
+          "baseline_mean": 0.8694554576610586,
+          "intervention_mean": 0.8083441782181414,
+          "mean_delta": -0.06111127944291724,
+          "higher_count": 3,
+          "lower_count": 14,
+          "tie_count": 79,
+          "lower_is_better": false
+        },
+        "steps_taken": {
+          "baseline_mean": 58.125,
+          "intervention_mean": 70.57291666666667,
+          "mean_delta": 12.447916666666666,
+          "higher_count": 17,
+          "lower_count": 3,
+          "tie_count": 76,
+          "lower_is_better": true
+        },
+        "success": {
+          "baseline_mean": 0.9270833333333334,
+          "intervention_mean": 0.9166666666666666,
+          "mean_delta": -0.010416666666666666,
+          "higher_count": 0,
+          "lower_count": 1,
+          "tie_count": 95,
+          "lower_is_better": false
+        }
+      },
+      "success_rescued": [],
+      "success_lost": [
+        "8285"
+      ]
+    }
+  },
+  "intervention_source_hashes": {
+    "vlnce_baselines/adaptive_action/single_intervention.py": "2274f37666a7c531b334115f7cf616cf1150f7a68e42937e020df4477bd285cd",
+    "research/tools/run_single_intervention.py": "41e993beb9c735942218969e4ae311d9c4fab0659f9b33ebb53e873954942e6d"
+  },
+  "privileged_analysis_only": false,
+  "learned_model_evaluated": false,
+  "limits": "Exploratory development follow-up after target census inspection; route-disjoint, scene-overlapping, not checkpoint-training holdout or benchmark."
+}

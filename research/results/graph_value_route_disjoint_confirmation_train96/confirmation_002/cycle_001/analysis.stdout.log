@@ -1,0 +1,232 @@
+{
+  "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-TRAIN96-002",
+  "probe_dir": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/probe_full001",
+  "episodes": 96,
+  "scenes": 8,
+  "total_decisions": 720,
+  "eligible_nonstop_states": 624,
+  "stop_states_excluded": 96,
+  "masked_budget_options_skipped": 94,
+  "mean_selected_progress_m": 1.0907283469389837,
+  "mean_best_progress_m": 1.2806376315390644,
+  "cost_controls_include_selected": true,
+  "metrics": {
+    "gain_m": {
+      "mean": 0.18990928460008058,
+      "median": 0.0,
+      "p90": 0.24445462226867692,
+      "max": 6.742522120475769,
+      "positive_states": 83,
+      "states_at_least_025m": 62,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.18990928460008058,
+        "equal_cluster_mean_m": 0.12869283171906395,
+        "ci95_m": [
+          0.06585841885809827,
+          0.36333994318163376
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.18990928460008058,
+        "equal_cluster_mean_m": 0.19145629481079784,
+        "ci95_m": [
+          0.07791142602601953,
+          0.32402864615667953
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "primitive_capped_gain_m": {
+      "mean": 0.04798935124507317,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 4.837371349334717,
+      "positive_states": 28,
+      "states_at_least_025m": 21,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.04798935124507317,
+        "equal_cluster_mean_m": 0.029941988036308858,
+        "ci95_m": [
+          0.013074534085020423,
+          0.10209461624814602
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.04798935124507317,
+        "equal_cluster_mean_m": 0.046901943154314035,
+        "ci95_m": [
+          0.015026238169605376,
+          0.09066882705062089
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "path_capped_gain_m": {
+      "mean": 0.05168555619624945,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 4.837371349334717,
+      "positive_states": 31,
+      "states_at_least_025m": 23,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.05168555619624945,
+        "equal_cluster_mean_m": 0.0377592278906951,
+        "ci95_m": [
+          0.017001396291926377,
+          0.09699582493245786
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.05168555619624945,
+        "equal_cluster_mean_m": 0.053697197652748,
+        "ci95_m": [
+          0.01974305693839961,
+          0.0882616647470644
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "both_costs_capped_gain_m": {
+      "mean": 0.03203532118827869,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 4.837371349334717,
+      "positive_states": 22,
+      "states_at_least_025m": 17,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.03203532118827869,
+        "equal_cluster_mean_m": 0.020379759309819653,
+        "ci95_m": [
+          0.008552907276479641,
+          0.06674187590628007
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.03203532118827869,
+        "equal_cluster_mean_m": 0.03161521788903069,
+        "ci95_m": [
+          0.010517812439526882,
+          0.059465115571894295
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "current_plus_selected_gain_m": {
+      "mean": 0.08938723449141552,
+      "median": 0.0,
+      "p90": 0.12528058290481567,
+      "max": 3.7626664638519287,
+      "positive_states": 73,
+      "states_at_least_025m": 52,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.08938723449141552,
+        "equal_cluster_mean_m": 0.07574756883600832,
+        "ci95_m": [
+          0.048631671293417444,
+          0.14034797583800016
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.08938723449141552,
+        "equal_cluster_mean_m": 0.0945455728642228,
+        "ci95_m": [
+          0.04794690503062412,
+          0.13890026164776495
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    },
+    "historical_extra_gain_m": {
+      "mean": 0.10052205010866508,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 6.742522120475769,
+      "positive_states": 33,
+      "states_at_least_025m": 31,
+      "episode_bootstrap": {
+        "clusters": 96,
+        "decision_weighted_mean_m": 0.10052205010866508,
+        "equal_cluster_mean_m": 0.05294526288305562,
+        "ci95_m": [
+          0.012189189211374856,
+          0.24809224119353718
+        ]
+      },
+      "scene_bootstrap": {
+        "clusters": 8,
+        "decision_weighted_mean_m": 0.10052205010866508,
+        "equal_cluster_mean_m": 0.09691072194657506,
+        "ci95_m": [
+          0.017596510791778566,
+          0.21470757420002126
+        ],
+        "warning": "Few clusters; interval is exploratory."
+      }
+    }
+  },
+  "by_scene": {
+    "data/scene_datasets/mp3d/e9zR4mvMWw7/e9zR4mvMWw7.glb": {
+      "states": 74,
+      "episodes": 12,
+      "gain_m": 0.03793564358273068,
+      "both_costs_capped_gain_m": 0.0
+    },
+    "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb": {
+      "states": 65,
+      "episodes": 12,
+      "gain_m": 0.2675679647005521,
+      "both_costs_capped_gain_m": 0.03766378439389742
+    },
+    "data/scene_datasets/mp3d/1LXtFkjw3qL/1LXtFkjw3qL.glb": {
+      "states": 69,
+      "episodes": 12,
+      "gain_m": 0.026555244473443516,
+      "both_costs_capped_gain_m": 0.0
+    },
+    "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb": {
+      "states": 104,
+      "episodes": 12,
+      "gain_m": 0.18610510373344788,
+      "both_costs_capped_gain_m": 0.02568644629074977
+    },
+    "data/scene_datasets/mp3d/5q7pvUzZiYa/5q7pvUzZiYa.glb": {
+      "states": 55,
+      "episodes": 12,
+      "gain_m": 0.39669768160039726,
+      "both_costs_capped_gain_m": 0.06293707327409225
+    },
+    "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb": {
+      "states": 96,
+      "episodes": 12,
+      "gain_m": 0.08400819636881351,
+      "both_costs_capped_gain_m": 0.01978570098678271
+    },
+    "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb": {
+      "states": 89,
+      "episodes": 12,
+      "gain_m": 0.5219787372631973,
+      "both_costs_capped_gain_m": 0.10684873816672336
+    },
+    "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb": {
+      "states": 72,
+      "episodes": 12,
+      "gain_m": 0.010801786763800515,
+      "both_costs_capped_gain_m": 0.0
+    }
+  },
+  "best_uses_more_primitives_states": 84,
+  "best_uses_longer_path_states": 65,
+  "privileged_analysis_only": true,
+  "learned_model_evaluated": false,
+  "limits": "Local goal-progress comparisons, not episode success improvement or a certified optimal bound; bootstrap is descriptive, not independent training seeds."
+}

@@ -1,0 +1,61 @@
+{
+  "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-TRAIN96-002",
+  "base_config": "run_r2r/iter_train.yaml",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "split": "train",
+  "episodes": 96,
+  "seed": 100,
+  "dataset_path": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/train_route_disjoint96_bertidx.json.gz",
+  "sampling_manifest": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/manifest.json",
+  "capture_graph_options": true,
+  "allow_sliding": true,
+  "tryout_effective": false,
+  "back_algo": "control",
+  "replay_modes": [
+    "sequential",
+    "isolated_branch"
+  ],
+  "reverse_states_per_episode": 2,
+  "reverse_selection_seed": 20261012,
+  "gates": {
+    "endpoint_tolerance_m": 1e-05,
+    "rotation_tolerance_rad": 1e-05,
+    "progress_tolerance_m": 1e-05,
+    "primitive_action_sequence_exact": true,
+    "per_primitive_collision_sequence_exact": true,
+    "rng_post_exact": true,
+    "terminal_flag_exact": true,
+    "baseline_episode_metrics_tolerance": 1e-06
+  },
+  "analysis": {
+    "primary": "Native graph capture, exact controls, and route-disjoint confirmation after complete exclusion audit",
+    "no_outcome_sampling": true,
+    "bootstrap_seed": 20261012,
+    "bootstrap_samples": 5000
+  },
+  "purpose": "Route-disjoint but scene-overlapping graph-value confirmation after complete exclusion audit; no benchmark claim.",
+  "limits": "96 routes in 8 scenes selected by metadata only; all registered diagnostic and validation route sources excluded; scene overlap remains allowed; one simulator seed; no benchmark claim.",
+  "sampling": {
+    "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+    "exclude_sources": [
+      "research/results/graph_option_pilot/train8_sampling/manifest.json",
+      "research/results/graph_option_train64/sampling_001/manifest.json",
+      "research/results/continuation_label_train64/sampling_001/manifest.json",
+      "research/results/full_return_label_train16/sampling_001/manifest.json",
+      "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+      "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/manifest.json",
+      "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+      "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+      "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+      "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_seen/val_seen_bertidx.json.gz",
+      "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_unseen/val_unseen_bertidx.json.gz"
+    ],
+    "scenes": 8,
+    "routes_per_scene": 12,
+    "seed": 20261010
+  },
+  "protocol": "research/GRAPH_VALUE_CONFIRMATION_PROTOCOL.md",
+  "continuation_protocol": "research/GRAPH_VALUE_CONFIRMATION_PROTOCOL.md",
+  "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md"
+}

@@ -1,0 +1,1922 @@
+[
+  {
+    "episode_id": "9422",
+    "reconstructed": {
+      "distance_to_goal": 1.6828405857086182,
+      "success": 1.0,
+      "path_length": 7.500000953674316,
+      "spl": 1.0,
+      "ndtw": 0.9404048525740606,
+      "sdtw": 0.9404048525740606
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4448",
+    "reconstructed": {
+      "distance_to_goal": 0.8192304968833923,
+      "success": 1.0,
+      "path_length": 8.25,
+      "spl": 0.8798813675389145,
+      "ndtw": 0.8680731339812041,
+      "sdtw": 0.8680731339812041
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "478",
+    "reconstructed": {
+      "distance_to_goal": 1.237281084060669,
+      "success": 1.0,
+      "path_length": 5.742434978485107,
+      "spl": 1.0,
+      "ndtw": 0.9212175534022752,
+      "sdtw": 0.9212175534022752
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8255",
+    "reconstructed": {
+      "distance_to_goal": 0.2645638585090637,
+      "success": 1.0,
+      "path_length": 6.75,
+      "spl": 0.947742744728371,
+      "ndtw": 0.9368415980668344,
+      "sdtw": 0.9368415980668344
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5195",
+    "reconstructed": {
+      "distance_to_goal": 1.076809287071228,
+      "success": 1.0,
+      "path_length": 12.066259384155273,
+      "spl": 0.8888605235848721,
+      "ndtw": 0.7591474235612431,
+      "sdtw": 0.7591474235612431
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "6785",
+    "reconstructed": {
+      "distance_to_goal": 1.4034090042114258,
+      "success": 1.0,
+      "path_length": 6.1892852783203125,
+      "spl": 1.0,
+      "ndtw": 0.9260423872114911,
+      "sdtw": 0.9260423872114911
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5579",
+    "reconstructed": {
+      "distance_to_goal": 0.6011368632316589,
+      "success": 1.0,
+      "path_length": 7.249995231628418,
+      "spl": 0.9348372984506662,
+      "ndtw": 0.940608540509969,
+      "sdtw": 0.940608540509969
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10214",
+    "reconstructed": {
+      "distance_to_goal": 2.0255191326141357,
+      "success": 1.0,
+      "path_length": 4.749994277954102,
+      "spl": 1.0,
+      "ndtw": 0.8530742226806179,
+      "sdtw": 0.8530742226806179
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2060",
+    "reconstructed": {
+      "distance_to_goal": 0.3629779517650604,
+      "success": 1.0,
+      "path_length": 7.0475616455078125,
+      "spl": 0.8893796184632439,
+      "ndtw": 0.9350016147325065,
+      "sdtw": 0.9350016147325065
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "9416",
+    "reconstructed": {
+      "distance_to_goal": 1.415757417678833,
+      "success": 1.0,
+      "path_length": 5.499998569488525,
+      "spl": 1.0,
+      "ndtw": 0.9381806840619661,
+      "sdtw": 0.9381806840619661
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10424",
+    "reconstructed": {
+      "distance_to_goal": 0.6975177526473999,
+      "success": 1.0,
+      "path_length": 9.000000953674316,
+      "spl": 0.8701767529194352,
+      "ndtw": 0.8968926137746838,
+      "sdtw": 0.8968926137746838
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5270",
+    "reconstructed": {
+      "distance_to_goal": 5.83013391494751,
+      "success": 0.0,
+      "path_length": 3.590564727783203,
+      "spl": 0.0,
+      "ndtw": 0.5970802800882761,
+      "sdtw": 0.0
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "6080",
+    "reconstructed": {
+      "distance_to_goal": 0.5991325974464417,
+      "success": 1.0,
+      "path_length": 31.26226806640625,
+      "spl": 0.40128786721423815,
+      "ndtw": 0.1832024978484466,
+      "sdtw": 0.1832024978484466
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2765",
+    "reconstructed": {
+      "distance_to_goal": 1.6461753845214844,
+      "success": 1.0,
+      "path_length": 5.1327595710754395,
+      "spl": 1.0,
+      "ndtw": 0.893222565448004,
+      "sdtw": 0.893222565448004
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2906",
+    "reconstructed": {
+      "distance_to_goal": 0.7099270224571228,
+      "success": 1.0,
+      "path_length": 19.766639709472656,
+      "spl": 0.5712080635219366,
+      "ndtw": 0.7142799669805187,
+      "sdtw": 0.7142799669805187
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8405",
+    "reconstructed": {
+      "distance_to_goal": 1.7030514478683472,
+      "success": 1.0,
+      "path_length": 20.024444580078125,
+      "spl": 0.512733060178828,
+      "ndtw": 0.4742309256655198,
+      "sdtw": 0.4742309256655198
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "3533",
+    "reconstructed": {
+      "distance_to_goal": 0.7148879766464233,
+      "success": 1.0,
+      "path_length": 4.500000953674316,
+      "spl": 1.0,
+      "ndtw": 0.9436299765512224,
+      "sdtw": 0.9436299765512224
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5918",
+    "reconstructed": {
+      "distance_to_goal": 1.3007782697677612,
+      "success": 1.0,
+      "path_length": 6.500000476837158,
+      "spl": 1.0,
+      "ndtw": 0.9463457690620422,
+      "sdtw": 0.9463457690620422
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8594",
+    "reconstructed": {
+      "distance_to_goal": 0.0838589295744896,
+      "success": 1.0,
+      "path_length": 13.249996185302734,
+      "spl": 0.5822074694960884,
+      "ndtw": 0.8398607417493004,
+      "sdtw": 0.8398607417493004
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10184",
+    "reconstructed": {
+      "distance_to_goal": 2.1754515171051025,
+      "success": 1.0,
+      "path_length": 9.283029556274414,
+      "spl": 1.0,
+      "ndtw": 0.9033544526947129,
+      "sdtw": 0.9033544526947129
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8117",
+    "reconstructed": {
+      "distance_to_goal": 1.5510143041610718,
+      "success": 1.0,
+      "path_length": 9.25,
+      "spl": 0.8203632251636402,
+      "ndtw": 0.8792700243342241,
+      "sdtw": 0.8792700243342241
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "927",
+    "reconstructed": {
+      "distance_to_goal": 0.6942285299301147,
+      "success": 1.0,
+      "path_length": 12.524944305419922,
+      "spl": 0.3923774700084274,
+      "ndtw": 0.15591963851131088,
+      "sdtw": 0.15591963851131088
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1382",
+    "reconstructed": {
+      "distance_to_goal": 0.16149058938026428,
+      "success": 1.0,
+      "path_length": 6.750007629394531,
+      "spl": 0.92442641146465,
+      "ndtw": 0.9652858181209211,
+      "sdtw": 0.9652858181209211
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "626",
+    "reconstructed": {
+      "distance_to_goal": 1.2707034349441528,
+      "success": 1.0,
+      "path_length": 5.2906599044799805,
+      "spl": 1.0,
+      "ndtw": 0.9684427691984087,
+      "sdtw": 0.9684427691984087
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "127",
+    "reconstructed": {
+      "distance_to_goal": 2.5226831436157227,
+      "success": 1.0,
+      "path_length": 6.2573442459106445,
+      "spl": 1.0,
+      "ndtw": 0.6706051844722732,
+      "sdtw": 0.6706051844722732
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4907",
+    "reconstructed": {
+      "distance_to_goal": 0.640826404094696,
+      "success": 1.0,
+      "path_length": 19.329845428466797,
+      "spl": 0.5686954913785771,
+      "ndtw": 0.8383851707363502,
+      "sdtw": 0.8383851707363502
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1889",
+    "reconstructed": {
+      "distance_to_goal": 0.9944359064102173,
+      "success": 1.0,
+      "path_length": 10.500009536743164,
+      "spl": 1.0,
+      "ndtw": 0.9402706397685899,
+      "sdtw": 0.9402706397685899
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1412",
+    "reconstructed": {
+      "distance_to_goal": 2.0071301460266113,
+      "success": 1.0,
+      "path_length": 6.273004531860352,
+      "spl": 1.0,
+      "ndtw": 0.9241992577193009,
+      "sdtw": 0.9241992577193009
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2252",
+    "reconstructed": {
+      "distance_to_goal": 0.9369037747383118,
+      "success": 1.0,
+      "path_length": 3.4533846378326416,
+      "spl": 1.0,
+      "ndtw": 0.9334050267820874,
+      "sdtw": 0.9334050267820874
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2132",
+    "reconstructed": {
+      "distance_to_goal": 0.3562205731868744,
+      "success": 1.0,
+      "path_length": 7.250000476837158,
+      "spl": 0.9488024909708423,
+      "ndtw": 0.943463257966733,
+      "sdtw": 0.943463257966733
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "85",
+    "reconstructed": {
+      "distance_to_goal": 0.15655145049095154,
+      "success": 1.0,
+      "path_length": 10.054229736328125,
+      "spl": 0.9788810641449415,
+      "ndtw": 0.9124209349020349,
+      "sdtw": 0.9124209349020349
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4427",
+    "reconstructed": {
+      "distance_to_goal": 1.754090428352356,
+      "success": 1.0,
+      "path_length": 6.736298561096191,
+      "spl": 0.9931316831931271,
+      "ndtw": 0.933898469463647,
+      "sdtw": 0.933898469463647
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8288",
+    "reconstructed": {
+      "distance_to_goal": 0.9947575926780701,
+      "success": 1.0,
+      "path_length": 17.036497116088867,
+      "spl": 0.4515307604731779,
+      "ndtw": 0.6346259689968119,
+      "sdtw": 0.6346259689968119
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4019",
+    "reconstructed": {
+      "distance_to_goal": 0.25018396973609924,
+      "success": 1.0,
+      "path_length": 9.749999046325684,
+      "spl": 0.9464030091117477,
+      "ndtw": 0.953605386699505,
+      "sdtw": 0.953605386699505
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2093",
+    "reconstructed": {
+      "distance_to_goal": 1.1427810192108154,
+      "success": 1.0,
+      "path_length": 8.008405685424805,
+      "spl": 1.0,
+      "ndtw": 0.9522732022842451,
+      "sdtw": 0.9522732022842451
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8996",
+    "reconstructed": {
+      "distance_to_goal": 1.505192756652832,
+      "success": 1.0,
+      "path_length": 11.04804515838623,
+      "spl": 1.0,
+      "ndtw": 0.4036326402336687,
+      "sdtw": 0.4036326402336687
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8285",
+    "reconstructed": {
+      "distance_to_goal": 13.990776062011719,
+      "success": 0.0,
+      "path_length": 43.50151062011719,
+      "spl": 0.0,
+      "ndtw": 0.3786494264332773,
+      "sdtw": 0.0
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "6590",
+    "reconstructed": {
+      "distance_to_goal": 1.7000572681427002,
+      "success": 1.0,
+      "path_length": 8.754697799682617,
+      "spl": 0.8548097019095714,
+      "ndtw": 0.7206419526805148,
+      "sdtw": 0.7206419526805148
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "6410",
+    "reconstructed": {
+      "distance_to_goal": 1.038096308708191,
+      "success": 1.0,
+      "path_length": 6.500000476837158,
+      "spl": 1.0,
+      "ndtw": 0.9476808379501366,
+      "sdtw": 0.9476808379501366
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1284",
+    "reconstructed": {
+      "distance_to_goal": 1.4183224439620972,
+      "success": 1.0,
+      "path_length": 8.545166015625,
+      "spl": 0.8934485800405703,
+      "ndtw": 0.8507352197479692,
+      "sdtw": 0.8507352197479692
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "25",
+    "reconstructed": {
+      "distance_to_goal": 0.5997083783149719,
+      "success": 1.0,
+      "path_length": 31.409320831298828,
+      "spl": 0.30872714365785275,
+      "ndtw": 0.352349475576475,
+      "sdtw": 0.352349475576475
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "7547",
+    "reconstructed": {
+      "distance_to_goal": 0.5756849050521851,
+      "success": 1.0,
+      "path_length": 14.36726188659668,
+      "spl": 0.9594132583736549,
+      "ndtw": 0.9304396978746095,
+      "sdtw": 0.9304396978746095
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "6524",
+    "reconstructed": {
+      "distance_to_goal": 1.5720345973968506,
+      "success": 1.0,
+      "path_length": 9.724746704101562,
+      "spl": 1.0,
+      "ndtw": 0.9133848996250113,
+      "sdtw": 0.9133848996250113
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10484",
+    "reconstructed": {
+      "distance_to_goal": 0.5457721948623657,
+      "success": 1.0,
+      "path_length": 15.560751914978027,
+      "spl": 1.0,
+      "ndtw": 0.9394536355102243,
+      "sdtw": 0.9394536355102243
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2210",
+    "reconstructed": {
+      "distance_to_goal": 2.3249101638793945,
+      "success": 1.0,
+      "path_length": 7.781682968139648,
+      "spl": 0.9102769395783122,
+      "ndtw": 0.8211545415607645,
+      "sdtw": 0.8211545415607645
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2615",
+    "reconstructed": {
+      "distance_to_goal": 2.557382106781006,
+      "success": 1.0,
+      "path_length": 13.805782318115234,
+      "spl": 0.7627395517618593,
+      "ndtw": 0.8492517973424965,
+      "sdtw": 0.8492517973424965
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8864",
+    "reconstructed": {
+      "distance_to_goal": 13.835505485534668,
+      "success": 0.0,
+      "path_length": 3.2817251682281494,
+      "spl": 0.0,
+      "ndtw": 0.22324411521666399,
+      "sdtw": 0.0
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "3161",
+    "reconstructed": {
+      "distance_to_goal": 4.787482261657715,
+      "success": 0.0,
+      "path_length": 33.69966125488281,
+      "spl": 0.0,
+      "ndtw": 0.14056623654408015,
+      "sdtw": 0.0
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10265",
+    "reconstructed": {
+      "distance_to_goal": 8.434586524963379,
+      "success": 0.0,
+      "path_length": 15.023515701293945,
+      "spl": 0.0,
+      "ndtw": 0.4615250824189368,
+      "sdtw": 0.0
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "9089",
+    "reconstructed": {
+      "distance_to_goal": 1.5859341621398926,
+      "success": 1.0,
+      "path_length": 6.586406707763672,
+      "spl": 1.0,
+      "ndtw": 0.9086517680483551,
+      "sdtw": 0.9086517680483551
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5948",
+    "reconstructed": {
+      "distance_to_goal": 1.6902801990509033,
+      "success": 1.0,
+      "path_length": 4.770075798034668,
+      "spl": 1.0,
+      "ndtw": 0.9098507859539176,
+      "sdtw": 0.9098507859539176
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4076",
+    "reconstructed": {
+      "distance_to_goal": 1.4066340923309326,
+      "success": 1.0,
+      "path_length": 5.1346259117126465,
+      "spl": 1.0,
+      "ndtw": 0.8526398603076943,
+      "sdtw": 0.8526398603076943
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8828",
+    "reconstructed": {
+      "distance_to_goal": 0.22820188105106354,
+      "success": 1.0,
+      "path_length": 8.548714637756348,
+      "spl": 0.9593893424760015,
+      "ndtw": 0.9428565486298326,
+      "sdtw": 0.9428565486298326
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "3560",
+    "reconstructed": {
+      "distance_to_goal": 1.9676530361175537,
+      "success": 1.0,
+      "path_length": 5.000000476837158,
+      "spl": 1.0,
+      "ndtw": 0.8599449303883416,
+      "sdtw": 0.8599449303883416
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "740",
+    "reconstructed": {
+      "distance_to_goal": 0.31221804022789,
+      "success": 1.0,
+      "path_length": 8.287923812866211,
+      "spl": 0.8061727735907112,
+      "ndtw": 0.33844369647739364,
+      "sdtw": 0.33844369647739364
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4784",
+    "reconstructed": {
+      "distance_to_goal": 0.7770622968673706,
+      "success": 1.0,
+      "path_length": 6.0890655517578125,
+      "spl": 0.8198752734599164,
+      "ndtw": 0.9244479669846636,
+      "sdtw": 0.9244479669846636
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "9377",
+    "reconstructed": {
+      "distance_to_goal": 1.7087364196777344,
+      "success": 1.0,
+      "path_length": 6.322978496551514,
+      "spl": 0.9823529682365645,
+      "ndtw": 0.8496773630978162,
+      "sdtw": 0.8496773630978162
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "9086",
+    "reconstructed": {
+      "distance_to_goal": 0.2128005474805832,
+      "success": 1.0,
+      "path_length": 6.366131782531738,
+      "spl": 0.9515770879020543,
+      "ndtw": 0.9355599011504278,
+      "sdtw": 0.9355599011504278
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1278",
+    "reconstructed": {
+      "distance_to_goal": 0.2109629064798355,
+      "success": 1.0,
+      "path_length": 6.0751519203186035,
+      "spl": 1.0,
+      "ndtw": 0.9585911892199313,
+      "sdtw": 0.9585911892199313
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5657",
+    "reconstructed": {
+      "distance_to_goal": 1.5292092561721802,
+      "success": 1.0,
+      "path_length": 5.511608123779297,
+      "spl": 1.0,
+      "ndtw": 0.8654805279293073,
+      "sdtw": 0.8654805279293073
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "827",
+    "reconstructed": {
+      "distance_to_goal": 1.0864144563674927,
+      "success": 1.0,
+      "path_length": 13.087591171264648,
+      "spl": 1.0,
+      "ndtw": 0.8288400582775785,
+      "sdtw": 0.8288400582775785
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4193",
+    "reconstructed": {
+      "distance_to_goal": 1.3259769678115845,
+      "success": 1.0,
+      "path_length": 13.620988845825195,
+      "spl": 0.9765554580168011,
+      "ndtw": 0.905820037564001,
+      "sdtw": 0.905820037564001
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "3257",
+    "reconstructed": {
+      "distance_to_goal": 0.13032980263233185,
+      "success": 1.0,
+      "path_length": 11.600625991821289,
+      "spl": 0.726534259969757,
+      "ndtw": 0.7258425007631106,
+      "sdtw": 0.7258425007631106
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "9656",
+    "reconstructed": {
+      "distance_to_goal": 0.5277552604675293,
+      "success": 1.0,
+      "path_length": 23.579545974731445,
+      "spl": 0.5849161005245471,
+      "ndtw": 0.757709994072983,
+      "sdtw": 0.757709994072983
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "3398",
+    "reconstructed": {
+      "distance_to_goal": 3.05214262008667,
+      "success": 0.0,
+      "path_length": 26.055112838745117,
+      "spl": 0.0,
+      "ndtw": 0.4922753153539696,
+      "sdtw": 0.0
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1685",
+    "reconstructed": {
+      "distance_to_goal": 1.8782309293746948,
+      "success": 1.0,
+      "path_length": 7.590538024902344,
+      "spl": 0.9762058162220187,
+      "ndtw": 0.8421726849655012,
+      "sdtw": 0.8421726849655012
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5888",
+    "reconstructed": {
+      "distance_to_goal": 1.3032031059265137,
+      "success": 1.0,
+      "path_length": 14.18015193939209,
+      "spl": 0.8638948489158662,
+      "ndtw": 0.8813179442836608,
+      "sdtw": 0.8813179442836608
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "454",
+    "reconstructed": {
+      "distance_to_goal": 1.3107410669326782,
+      "success": 1.0,
+      "path_length": 59.722084045410156,
+      "spl": 0.3386520485142043,
+      "ndtw": 0.035165852170258804,
+      "sdtw": 0.035165852170258804
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2414",
+    "reconstructed": {
+      "distance_to_goal": 1.4700146913528442,
+      "success": 1.0,
+      "path_length": 12.944999694824219,
+      "spl": 0.7437033182120636,
+      "ndtw": 0.8387264474905141,
+      "sdtw": 0.8387264474905141
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10046",
+    "reconstructed": {
+      "distance_to_goal": 1.122876763343811,
+      "success": 1.0,
+      "path_length": 21.995922088623047,
+      "spl": 0.38281275607650855,
+      "ndtw": 0.45382090206707226,
+      "sdtw": 0.45382090206707226
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "3416",
+    "reconstructed": {
+      "distance_to_goal": 0.5115039348602295,
+      "success": 1.0,
+      "path_length": 6.212312698364258,
+      "spl": 0.9666096466086856,
+      "ndtw": 0.9456424459243874,
+      "sdtw": 0.9456424459243874
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "7394",
+    "reconstructed": {
+      "distance_to_goal": 1.1129553318023682,
+      "success": 1.0,
+      "path_length": 5.581607818603516,
+      "spl": 1.0,
+      "ndtw": 0.9422066956456344,
+      "sdtw": 0.9422066956456344
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4184",
+    "reconstructed": {
+      "distance_to_goal": 0.42274048924446106,
+      "success": 1.0,
+      "path_length": 4.509509563446045,
+      "spl": 0.9834026760981427,
+      "ndtw": 0.9781785410457168,
+      "sdtw": 0.9781785410457168
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "7511",
+    "reconstructed": {
+      "distance_to_goal": 0.8162840008735657,
+      "success": 1.0,
+      "path_length": 4.9297637939453125,
+      "spl": 1.0,
+      "ndtw": 0.9497628072415665,
+      "sdtw": 0.9497628072415665
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "524",
+    "reconstructed": {
+      "distance_to_goal": 1.2958731651306152,
+      "success": 1.0,
+      "path_length": 5.795639991760254,
+      "spl": 1.0,
+      "ndtw": 0.9290150272876103,
+      "sdtw": 0.9290150272876103
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "6659",
+    "reconstructed": {
+      "distance_to_goal": 2.241560697555542,
+      "success": 1.0,
+      "path_length": 9.753828048706055,
+      "spl": 1.0,
+      "ndtw": 0.8781741355285007,
+      "sdtw": 0.8781741355285007
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1544",
+    "reconstructed": {
+      "distance_to_goal": 0.1234550029039383,
+      "success": 1.0,
+      "path_length": 6.914712905883789,
+      "spl": 0.8870459308068489,
+      "ndtw": 0.9105185382393268,
+      "sdtw": 0.9105185382393268
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1490",
+    "reconstructed": {
+      "distance_to_goal": 1.8901965618133545,
+      "success": 1.0,
+      "path_length": 14.016874313354492,
+      "spl": 0.7182790055462881,
+      "ndtw": 0.8311917181165064,
+      "sdtw": 0.8311917181165064
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "4964",
+    "reconstructed": {
+      "distance_to_goal": 0.2904084026813507,
+      "success": 1.0,
+      "path_length": 6.504254341125488,
+      "spl": 0.8699574279658749,
+      "ndtw": 0.9395589624203344,
+      "sdtw": 0.9395589624203344
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "7457",
+    "reconstructed": {
+      "distance_to_goal": 9.875855445861816,
+      "success": 0.0,
+      "path_length": 2.136733055114746,
+      "spl": 0.0,
+      "ndtw": 0.4361856844097862,
+      "sdtw": 0.0
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10199",
+    "reconstructed": {
+      "distance_to_goal": 9.144740104675293,
+      "success": 0.0,
+      "path_length": 13.363238334655762,
+      "spl": 0.0,
+      "ndtw": 0.3534365894310071,
+      "sdtw": 0.0
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "10625",
+    "reconstructed": {
+      "distance_to_goal": 0.657738208770752,
+      "success": 1.0,
+      "path_length": 10.48752212524414,
+      "spl": 0.9996340808244893,
+      "ndtw": 0.9560868904214627,
+      "sdtw": 0.9560868904214627
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5591",
+    "reconstructed": {
+      "distance_to_goal": 0.2702295184135437,
+      "success": 1.0,
+      "path_length": 10.56245231628418,
+      "spl": 0.8834034548582488,
+      "ndtw": 0.9357768045667664,
+      "sdtw": 0.9357768045667664
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2294",
+    "reconstructed": {
+      "distance_to_goal": 1.6446914672851562,
+      "success": 1.0,
+      "path_length": 6.375034809112549,
+      "spl": 1.0,
+      "ndtw": 0.6442745292032147,
+      "sdtw": 0.6442745292032147
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "3332",
+    "reconstructed": {
+      "distance_to_goal": 0.24143418669700623,
+      "success": 1.0,
+      "path_length": 4.999999046325684,
+      "spl": 0.8925109658262188,
+      "ndtw": 0.9656859814258101,
+      "sdtw": 0.9656859814258101
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1288",
+    "reconstructed": {
+      "distance_to_goal": 1.1149933338165283,
+      "success": 1.0,
+      "path_length": 35.6488037109375,
+      "spl": 0.4144968710942182,
+      "ndtw": 0.30268963288778256,
+      "sdtw": 0.30268963288778256
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5555",
+    "reconstructed": {
+      "distance_to_goal": 1.3465906381607056,
+      "success": 1.0,
+      "path_length": 5.206639766693115,
+      "spl": 1.0,
+      "ndtw": 0.9418568846486526,
+      "sdtw": 0.9418568846486526
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "351",
+    "reconstructed": {
+      "distance_to_goal": 1.5709314346313477,
+      "success": 1.0,
+      "path_length": 6.500003337860107,
+      "spl": 1.0,
+      "ndtw": 0.9301919706925464,
+      "sdtw": 0.9301919706925464
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2501",
+    "reconstructed": {
+      "distance_to_goal": 0.8663641810417175,
+      "success": 1.0,
+      "path_length": 5.550285339355469,
+      "spl": 1.0,
+      "ndtw": 0.9275205210680516,
+      "sdtw": 0.9275205210680516
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "2597",
+    "reconstructed": {
+      "distance_to_goal": 0.5764771699905396,
+      "success": 1.0,
+      "path_length": 10.052629470825195,
+      "spl": 1.0,
+      "ndtw": 0.9460823441063134,
+      "sdtw": 0.9460823441063134
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8960",
+    "reconstructed": {
+      "distance_to_goal": 0.9009727835655212,
+      "success": 1.0,
+      "path_length": 8.749999046325684,
+      "spl": 0.9235486628449209,
+      "ndtw": 0.9290638406698509,
+      "sdtw": 0.9290638406698509
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "3284",
+    "reconstructed": {
+      "distance_to_goal": 0.937278151512146,
+      "success": 1.0,
+      "path_length": 11.040237426757812,
+      "spl": 0.9816375859843297,
+      "ndtw": 0.9138487222922983,
+      "sdtw": 0.9138487222922983
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "8054",
+    "reconstructed": {
+      "distance_to_goal": 0.19320325553417206,
+      "success": 1.0,
+      "path_length": 6.5,
+      "spl": 0.9202932944664588,
+      "ndtw": 0.9459322913905862,
+      "sdtw": 0.9459322913905862
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "1275",
+    "reconstructed": {
+      "distance_to_goal": 2.787252187728882,
+      "success": 1.0,
+      "path_length": 7.250000476837158,
+      "spl": 1.0,
+      "ndtw": 0.8581639222729648,
+      "sdtw": 0.8581639222729648
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "5663",
+    "reconstructed": {
+      "distance_to_goal": 0.7080601453781128,
+      "success": 1.0,
+      "path_length": 8.007757186889648,
+      "spl": 0.978365418396802,
+      "ndtw": 0.9422091821349028,
+      "sdtw": 0.9422091821349028
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  },
+  {
+    "episode_id": "6656",
+    "reconstructed": {
+      "distance_to_goal": 0.26420602202415466,
+      "success": 1.0,
+      "path_length": 7.000000953674316,
+      "spl": 0.8768724881754619,
+      "ndtw": 0.9462064925546192,
+      "sdtw": 0.9462064925546192
+    },
+    "differences": {
+      "distance_to_goal": 0.0,
+      "success": 0.0,
+      "path_length": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.0,
+      "sdtw": 0.0
+    },
+    "passed": true
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-CONFIRMATION-002",
+  "status": "registered_not_run",
+  "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+  "scenes": 8,
+  "routes_per_scene": 12,
+  "selection_seed": 20261010,
+  "output_dir": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002",
+  "exclude_sources": [
+    "research/results/graph_option_pilot/train8_sampling/manifest.json",
+    "research/results/graph_option_train64/sampling_001/manifest.json",
+    "research/results/continuation_label_train64/sampling_001/manifest.json",
+    "research/results/full_return_label_train16/sampling_001/manifest.json",
+    "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+    "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/manifest.json",
+    "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+    "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+    "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+    "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_seen/val_seen_bertidx.json.gz",
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_unseen/val_unseen_bertidx.json.gz"
+  ],
+  "scope": "route-disjoint against all registered diagnostic and validation route sources, scene-overlapping development confirmation; not scene-independent evidence",
+  "controls": [
+    "native_graph_logit",
+    "seeded_random_admissible",
+    "frozen_pairwise_ranker"
+  ],
+  "outcome_blind_sampling": true,
+  "unseen_labels_used": false,
+  "benchmark_evaluation": false,
+  "ranker_in_navigation": false,
+  "gate": {
+    "route_quality_rescue_scenes_min": 2,
+    "preserve_native_stop": true,
+    "primitive_budget_inflation_allowed": false
+  },
+  "invalid_sample_notice": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/INVALID_SAMPLE_NOTICE.md",
+  "audit": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/INVALID_OVERLAP_AUDIT.json",
+  "dataset_filename": "train_route_disjoint96_bertidx.json.gz",
+  "previous_invalid_sample": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/INVALID_OVERLAP_AUDIT.json"
+}

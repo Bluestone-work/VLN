@@ -1,0 +1,2887 @@
+{
+  "created_utc": "2026-10-07T15:10:29.222666+00:00",
+  "schedule": {
+    "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-TRAIN96-002-LEARNED-20261021",
+    "status": "frozen_before_this_arm_continuation",
+    "analysis_only_oracle": false,
+    "learned_model_evaluated": true,
+    "kind": "learned",
+    "random_seed": 20261021,
+    "expected_event_count": 27,
+    "base_experiment_config": "research/configs/GRAPH_VALUE_ROUTE_DISJOINT_TRAIN96_002.json",
+    "protocol": "research/GRAPH_VALUE_ROUTE_INTERVENTION_PROTOCOL.md",
+    "selection_rule": "First ranker/native disagreement; same states for random; preserve native STOP; no outcome features",
+    "events": [
+      {
+        "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "episode_id": "8405",
+        "high_level_step": 3,
+        "trajectory_id": "5625",
+        "baseline_index": 13,
+        "alternative_index": 11,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "3",
+          "front_pos": {
+            "__array__": [
+              -0.6843293309211731,
+              0.003321051597595215,
+              -2.367478370666504
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "3",
+          "ghost_pos": {
+            "__array__": [
+              -1.2344792627837968,
+              0.003321051597595215,
+              -0.18577374985470607
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g11",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "3",
+          "front_pos": {
+            "__array__": [
+              -0.6843293309211731,
+              0.003321051597595215,
+              -2.367478370666504
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "3",
+          "ghost_pos": {
+            "__array__": [
+              -1.7291931149926782,
+              0.003321051597595215,
+              -1.2912536391462814
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g9",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "g1",
+          "g2",
+          "g3",
+          "g5",
+          "g6",
+          "g7",
+          "g9",
+          "g10",
+          "g11"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -0.6843293309211731,
+            0.003321051597595215,
+            -2.367478370666504
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.8905091285705566,
+        "alternative_logit": 2.5356123447418213
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "episode_id": "927",
+        "high_level_step": 0,
+        "trajectory_id": "596",
+        "baseline_index": 3,
+        "alternative_index": 2,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "0",
+          "front_pos": {
+            "__array__": [
+              -7.983880043029785,
+              0.20332103967666626,
+              4.499820232391357
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "0",
+          "ghost_pos": {
+            "__array__": [
+              -6.299664875599337,
+              0.20332103967666626,
+              2.0171967672244735
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g1",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "0",
+          "front_pos": {
+            "__array__": [
+              -7.983880043029785,
+              0.20332103967666626,
+              4.499820232391357
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "0",
+          "ghost_pos": {
+            "__array__": [
+              -8.895792190914552,
+              0.20332103967666626,
+              3.644883840289469
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g0",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "g0",
+          "g1",
+          "g2",
+          "g3"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -7.983880043029785,
+            0.20332103967666626,
+            4.499820232391357
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 3.004133701324463,
+        "alternative_logit": 0.32388997077941895
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "episode_id": "2906",
+        "high_level_step": 2,
+        "trajectory_id": "1914",
+        "baseline_index": 11,
+        "alternative_index": 12,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              -3.97127628326416,
+              0.003321051597595215,
+              -6.787566661834717
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              -2.646352075515665,
+              0.003321051597595215,
+              -8.285757518742482
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g9",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              -3.97127628326416,
+              0.003321051597595215,
+              -6.787566661834717
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              -4.647021668332452,
+              0.003321051597595215,
+              -7.524701774659296
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g10",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "g0",
+          "g1",
+          "g2",
+          "g4",
+          "g5",
+          "g7",
+          "g8",
+          "g9",
+          "g10"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -3.97127628326416,
+            0.003321051597595215,
+            -6.787566661834717
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 1.5033663511276245,
+        "alternative_logit": -4.049447536468506
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "episode_id": "6080",
+        "high_level_step": 6,
+        "trajectory_id": "4005",
+        "baseline_index": 25,
+        "alternative_index": 23,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "6",
+          "front_pos": {
+            "__array__": [
+              -3.7701191902160645,
+              0.003321051597595215,
+              -2.98978853225708
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "6",
+          "ghost_pos": {
+            "__array__": [
+              -2.849786577990465,
+              0.003321051597595215,
+              -0.9366231996854419
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g23",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "6",
+          "front_pos": {
+            "__array__": [
+              -3.7701191902160645,
+              0.003321051597595215,
+              -2.98978853225708
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "6",
+          "ghost_pos": {
+            "__array__": [
+              -3.8640291404537273,
+              0.003321051597595215,
+              -1.8824420556659365
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g21",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "g0",
+          "g1",
+          "g2",
+          "g3",
+          "g6",
+          "g7",
+          "g8",
+          "g9",
+          "g10",
+          "g11",
+          "g13",
+          "g14",
+          "g16",
+          "g18",
+          "g19",
+          "g21",
+          "g22",
+          "g23"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -3.7701191902160645,
+            0.003321051597595215,
+            -2.98978853225708
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 0.8705216646194458,
+        "alternative_logit": -0.3954589366912842
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/mJXqzFtmKg4/mJXqzFtmKg4.glb",
+        "episode_id": "8594",
+        "high_level_step": 1,
+        "trajectory_id": "5749",
+        "baseline_index": 6,
+        "alternative_index": 7,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "1",
+          "front_pos": {
+            "__array__": [
+              2.0979080200195312,
+              0.003321051597595215,
+              -18.23284339904785
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "1",
+          "ghost_pos": {
+            "__array__": [
+              0.1192529174238921,
+              0.003321051597595215,
+              -19.760889204962137
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g4",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "1",
+          "front_pos": {
+            "__array__": [
+              2.0979080200195312,
+              0.003321051597595215,
+              -18.23284339904785
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "1",
+          "ghost_pos": {
+            "__array__": [
+              1.718713741548223,
+              0.003321051597595215,
+              -18.55874476322822
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g5",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "g1",
+          "g2",
+          "g3",
+          "g4",
+          "g5",
+          "g6"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            2.0979080200195312,
+            0.003321051597595215,
+            -18.23284339904785
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.600484848022461,
+        "alternative_logit": 1.8563512563705444
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/e9zR4mvMWw7/e9zR4mvMWw7.glb",
+        "episode_id": "2060",
+        "high_level_step": 2,
+        "trajectory_id": "1336",
+        "baseline_index": 10,
+        "alternative_index": 8,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              10.802865028381348,
+              2.8866939544677734,
+              -1.4204790592193604
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              10.223165999651846,
+              2.8866939544677734,
+              -3.594518855563961
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g8",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              10.802865028381348,
+              2.8866939544677734,
+              -1.4204790592193604
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              10.999909401491195,
+              2.8866939544677734,
+              -2.6548507678329964
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g6",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "g0",
+          "g2",
+          "g3",
+          "g5",
+          "g6",
+          "g7",
+          "g8"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            10.802865028381348,
+            2.8866939544677734,
+            -1.4204790592193604
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.645864486694336,
+        "alternative_logit": 0.8470534086227417
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+        "episode_id": "1288",
+        "high_level_step": 7,
+        "trajectory_id": "803",
+        "baseline_index": 26,
+        "alternative_index": 25,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "7",
+          "front_pos": {
+            "__array__": [
+              1.2546662092208862,
+              0.09863299131393433,
+              -7.873866081237793
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "7",
+          "ghost_pos": {
+            "__array__": [
+              0.11017893154023839,
+              0.09863299131393433,
+              -8.376507972873517
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g24",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "7",
+          "front_pos": {
+            "__array__": [
+              1.2546662092208862,
+              0.09863299131393433,
+              -7.873866081237793
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "7",
+          "ghost_pos": {
+            "__array__": [
+              0.7604329676654304,
+              0.09863299131393433,
+              -7.949585979161566
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g23",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "g0",
+          "g1",
+          "g3",
+          "g4",
+          "g5",
+          "g6",
+          "g8",
+          "g10",
+          "g12",
+          "g13",
+          "g14",
+          "g16",
+          "g17",
+          "g19",
+          "g21",
+          "g22",
+          "g23",
+          "g24"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            1.2546662092208862,
+            0.09863299131393433,
+            -7.873866081237793
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.1577823162078857,
+        "alternative_logit": 1.5530511140823364
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+        "episode_id": "3284",
+        "high_level_step": 4,
+        "trajectory_id": "2162",
+        "baseline_index": 15,
+        "alternative_index": 14,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              10.475926399230957,
+              0.09863299131393433,
+              -7.231157302856445
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "4",
+          "ghost_pos": {
+            "__array__": [
+              8.487406747078294,
+              0.09863299131393433,
+              -7.017172273000025
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g13",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              10.475926399230957,
+              0.09863299131393433,
+              -7.231157302856445
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "4",
+          "ghost_pos": {
+            "__array__": [
+              9.543236836858412,
+              0.09863299131393433,
+              -6.870477139496564
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g12",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "g1",
+          "g2",
+          "g4",
+          "g5",
+          "g7",
+          "g8",
+          "g9",
+          "g10",
+          "g12",
+          "g13",
+          "g14",
+          "g15"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            10.475926399230957,
+            0.09863299131393433,
+            -7.231157302856445
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 3.0340523719787598,
+        "alternative_logit": 1.7555700540542603
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "episode_id": "10046",
+        "high_level_step": 3,
+        "trajectory_id": "6760",
+        "baseline_index": 16,
+        "alternative_index": 14,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "3",
+          "front_pos": {
+            "__array__": [
+              8.782049179077148,
+              0.11969737708568573,
+              -9.960634231567383
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "3",
+          "ghost_pos": {
+            "__array__": [
+              8.293487450637736,
+              0.11969737708568573,
+              -11.900043274937113
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g14",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "3",
+          "front_pos": {
+            "__array__": [
+              8.782049179077148,
+              0.11969737708568573,
+              -9.960634231567383
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "3",
+          "ghost_pos": {
+            "__array__": [
+              8.866211956843287,
+              0.11969737708568573,
+              -11.207797663856306
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g12",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "g0",
+          "g2",
+          "g3",
+          "g4",
+          "g5",
+          "g6",
+          "g7",
+          "g9",
+          "g10",
+          "g12",
+          "g13",
+          "g14"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            8.782049179077148,
+            0.11969737708568573,
+            -9.960634231567383
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 1.875076174736023,
+        "alternative_logit": 1.267790675163269
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "episode_id": "3257",
+        "high_level_step": 0,
+        "trajectory_id": "2140",
+        "baseline_index": 4,
+        "alternative_index": 5,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "0",
+          "front_pos": {
+            "__array__": [
+              14.021599769592285,
+              0.13836514949798584,
+              -14.847000122070312
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "0",
+          "ghost_pos": {
+            "__array__": [
+              13.11336985802871,
+              0.13836514949798584,
+              -11.987783721071391
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g2",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "0",
+          "front_pos": {
+            "__array__": [
+              14.021599769592285,
+              0.13836514949798584,
+              -14.847000122070312
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "0",
+          "ghost_pos": {
+            "__array__": [
+              13.757443383430981,
+              0.13836514949798584,
+              -14.145058953844513
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g3",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "g0",
+          "g1",
+          "g2",
+          "g3"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            14.021599769592285,
+            0.13836514949798584,
+            -14.847000122070312
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": -1.3839346170425415,
+        "alternative_logit": -1.5807267427444458
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "episode_id": "5888",
+        "high_level_step": 3,
+        "trajectory_id": "3873",
+        "baseline_index": 11,
+        "alternative_index": 12,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "3",
+          "front_pos": {
+            "__array__": [
+              8.566307067871094,
+              0.11746666580438614,
+              -16.15973472595215
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "3",
+          "ghost_pos": {
+            "__array__": [
+              8.948251245186501,
+              0.11746666580438614,
+              -18.3770796800391
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g9",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "3",
+          "front_pos": {
+            "__array__": [
+              8.566307067871094,
+              0.11746666580438614,
+              -16.15973472595215
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "3",
+          "ghost_pos": {
+            "__array__": [
+              9.404369949528096,
+              0.11746666580438614,
+              -17.97567817396719
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g10",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "g1",
+          "g2",
+          "g3",
+          "g4",
+          "g6",
+          "g7",
+          "g9",
+          "g10",
+          "g11",
+          "g12"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            8.566307067871094,
+            0.11746666580438614,
+            -16.15973472595215
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 3.3455700874328613,
+        "alternative_logit": 3.1370632648468018
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "episode_id": "454",
+        "high_level_step": 10,
+        "trajectory_id": "305",
+        "baseline_index": 40,
+        "alternative_index": 41,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "10",
+          "front_pos": {
+            "__array__": [
+              7.7386369705200195,
+              0.20692041516304016,
+              -2.17207670211792
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "10",
+          "ghost_pos": {
+            "__array__": [
+              8.622301720552663,
+              0.20692041516304016,
+              -3.9662719561384367
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g38",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "10",
+          "front_pos": {
+            "__array__": [
+              7.7386369705200195,
+              0.20692041516304016,
+              -2.17207670211792
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "10",
+          "ghost_pos": {
+            "__array__": [
+              8.397600184272092,
+              0.20692041516304016,
+              -2.9242518698292326
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g39",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "g0",
+          "g1",
+          "g2",
+          "g4",
+          "g5",
+          "g6",
+          "g9",
+          "g10",
+          "g11",
+          "g13",
+          "g14",
+          "g16",
+          "g17",
+          "g18",
+          "g19",
+          "g20",
+          "g21",
+          "g22",
+          "g23",
+          "g26",
+          "g27",
+          "g28",
+          "g30",
+          "g31",
+          "g32",
+          "g34",
+          "g35",
+          "g37",
+          "g38",
+          "g39"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            7.7386369705200195,
+            0.20692041516304016,
+            -2.17207670211792
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 1.9171597957611084,
+        "alternative_logit": 0.7082761526107788
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "episode_id": "9656",
+        "high_level_step": 5,
+        "trajectory_id": "6475",
+        "baseline_index": 21,
+        "alternative_index": 22,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "5",
+          "front_pos": {
+            "__array__": [
+              7.920938491821289,
+              0.18613910675048828,
+              -2.3505420684814453
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "5",
+          "ghost_pos": {
+            "__array__": [
+              8.442221430566118,
+              0.18613910675048828,
+              -4.53932348693637
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g19",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "5",
+          "front_pos": {
+            "__array__": [
+              7.920938491821289,
+              0.18613910675048828,
+              -2.3505420684814453
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "5",
+          "ghost_pos": {
+            "__array__": [
+              8.396502432463615,
+              0.18613910675048828,
+              -3.230223225697366
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g20",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "g1",
+          "g2",
+          "g3",
+          "g5",
+          "g6",
+          "g7",
+          "g8",
+          "g10",
+          "g12",
+          "g13",
+          "g15",
+          "g16",
+          "g17",
+          "g18",
+          "g19",
+          "g20"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            7.920938491821289,
+            0.18613910675048828,
+            -2.3505420684814453
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.93377947807312,
+        "alternative_logit": -0.028234779834747314
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+        "episode_id": "3398",
+        "high_level_step": 7,
+        "trajectory_id": "2249",
+        "baseline_index": 26,
+        "alternative_index": 24,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "7",
+          "front_pos": {
+            "__array__": [
+              -0.22911837697029114,
+              0.011268138885498047,
+              -9.071320533752441
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "7",
+          "ghost_pos": {
+            "__array__": [
+              1.7666999882172372,
+              0.011268138885498047,
+              -8.032470663376465
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g24",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "7",
+          "front_pos": {
+            "__array__": [
+              -0.22911837697029114,
+              0.011268138885498047,
+              -9.071320533752441
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "7",
+          "ghost_pos": {
+            "__array__": [
+              1.3924877365616655,
+              0.011268138885498047,
+              -8.766735069121134
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g22",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "g0",
+          "g1",
+          "g2",
+          "g4",
+          "g5",
+          "g7",
+          "g8",
+          "g11",
+          "g12",
+          "g13",
+          "g14",
+          "g16",
+          "g17",
+          "g18",
+          "g20",
+          "g22",
+          "g23",
+          "g24"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -0.22911837697029114,
+            0.011268138885498047,
+            -9.071320533752441
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.5408754348754883,
+        "alternative_logit": 1.6550359725952148
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/1LXtFkjw3qL/1LXtFkjw3qL.glb",
+        "episode_id": "4907",
+        "high_level_step": 4,
+        "trajectory_id": "3230",
+        "baseline_index": 19,
+        "alternative_index": 18,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              -0.9962911605834961,
+              -2.915588855743408,
+              10.227931022644043
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "4",
+          "ghost_pos": {
+            "__array__": [
+              -0.6003267340391374,
+              -2.915588855743408,
+              8.5233160594012
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g17",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              -0.9962911605834961,
+              -2.915588855743408,
+              10.227931022644043
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "4",
+          "ghost_pos": {
+            "__array__": [
+              -2.091940847749517,
+              -2.915588855743408,
+              9.203454686649405
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g16",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "g0",
+          "g1",
+          "g2",
+          "g4",
+          "g6",
+          "g7",
+          "g9",
+          "g10",
+          "g12",
+          "g13",
+          "g14",
+          "g15",
+          "g16",
+          "g17"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -0.9962911605834961,
+            -2.915588855743408,
+            10.227931022644043
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.8002026081085205,
+        "alternative_logit": 2.0117616653442383
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/1LXtFkjw3qL/1LXtFkjw3qL.glb",
+        "episode_id": "8288",
+        "high_level_step": 4,
+        "trajectory_id": "5542",
+        "baseline_index": 18,
+        "alternative_index": 12,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              -1.0614204406738281,
+              -2.915588855743408,
+              13.691423416137695
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "4",
+          "ghost_pos": {
+            "__array__": [
+              -0.14837931287805406,
+              -2.915588855743408,
+              14.545153993634731
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g16",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              -1.0614204406738281,
+              -2.915588855743408,
+              13.691423416137695
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "4",
+          "ghost_pos": {
+            "__array__": [
+              -1.5899762781132292,
+              -2.915588855743408,
+              14.34900425071871
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g10",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "g0",
+          "g1",
+          "g2",
+          "g4",
+          "g6",
+          "g7",
+          "g10",
+          "g11",
+          "g12",
+          "g13",
+          "g14",
+          "g15",
+          "g16"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -1.0614204406738281,
+            -2.915588855743408,
+            13.691423416137695
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.2537331581115723,
+        "alternative_logit": -3.427805185317993
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/1LXtFkjw3qL/1LXtFkjw3qL.glb",
+        "episode_id": "85",
+        "high_level_step": 5,
+        "trajectory_id": "67",
+        "baseline_index": 18,
+        "alternative_index": 21,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "5",
+          "front_pos": {
+            "__array__": [
+              1.2882208824157715,
+              3.4844110012054443,
+              7.674075126647949
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "5",
+          "ghost_pos": {
+            "__array__": [
+              1.1948291819756978,
+              3.4844110012054443,
+              5.926568906261621
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g16",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "5",
+          "front_pos": {
+            "__array__": [
+              1.2882208824157715,
+              3.4844110012054443,
+              7.674075126647949
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "5",
+          "ghost_pos": {
+            "__array__": [
+              0.880541833440401,
+              3.4844110012054443,
+              6.760949837858652
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g19",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "g1",
+          "g2",
+          "g3",
+          "g5",
+          "g6",
+          "g7",
+          "g10",
+          "g11",
+          "g12",
+          "g13",
+          "g14",
+          "g16",
+          "g17",
+          "g18",
+          "g19"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            1.2882208824157715,
+            3.4844110012054443,
+            7.674075126647949
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 3.095358371734619,
+        "alternative_logit": 0.8643468618392944
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/5q7pvUzZiYa/5q7pvUzZiYa.glb",
+        "episode_id": "740",
+        "high_level_step": 2,
+        "trajectory_id": "474",
+        "baseline_index": 12,
+        "alternative_index": 11,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              5.995858192443848,
+              3.3951635360717773,
+              -3.81783390045166
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              3.7524513276169875,
+              3.3951635360717773,
+              -3.9899549010521627
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g10",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              5.995858192443848,
+              3.3951635360717773,
+              -3.81783390045166
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              5.0129635949735825,
+              3.3951635360717773,
+              -3.633664928407601
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g9",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "g0",
+          "g1",
+          "g3",
+          "g4",
+          "g6",
+          "g7",
+          "g8",
+          "g9",
+          "g10"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            5.995858192443848,
+            3.3951635360717773,
+            -3.81783390045166
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.009639024734497,
+        "alternative_logit": 0.9311221241950989
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/5q7pvUzZiYa/5q7pvUzZiYa.glb",
+        "episode_id": "9089",
+        "high_level_step": 4,
+        "trajectory_id": "6079",
+        "baseline_index": 15,
+        "alternative_index": 16,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              13.124916076660156,
+              0.003425121307373047,
+              -2.931915760040283
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "4",
+          "ghost_pos": {
+            "__array__": [
+              15.124248695925873,
+              0.003425121307373047,
+              -2.9835788758975865
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g13",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              13.124916076660156,
+              0.003425121307373047,
+              -2.931915760040283
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "4",
+          "ghost_pos": {
+            "__array__": [
+              14.067672859804343,
+              0.003425121307373047,
+              -3.2653968657053953
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g14",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "g0",
+          "g1",
+          "g3",
+          "g4",
+          "g6",
+          "g7",
+          "g8",
+          "g11",
+          "g12",
+          "g13",
+          "g14"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            13.124916076660156,
+            0.003425121307373047,
+            -2.931915760040283
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.2933757305145264,
+        "alternative_logit": -0.45020630955696106
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb",
+        "episode_id": "10199",
+        "high_level_step": 4,
+        "trajectory_id": "6868",
+        "baseline_index": 12,
+        "alternative_index": 15,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [
+            {
+              "__tuple__": [
+                "3",
+                {
+                  "__array__": [
+                    2.5421009063720703,
+                    -0.6815320253372192,
+                    8.678492546081543
+                  ],
+                  "dtype": "<f4"
+                }
+              ]
+            }
+          ],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              2.5421009063720703,
+              -0.6815320253372192,
+              8.678492546081543
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "3",
+          "ghost_pos": {
+            "__array__": [
+              3.7832550859851235,
+              -0.6815320253372192,
+              8.53004625131792
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g9",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "4",
+          "front_pos": {
+            "__array__": [
+              2.654949188232422,
+              -0.08360730111598969,
+              7.433596134185791
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "4",
+          "ghost_pos": {
+            "__array__": [
+              2.282914047158238,
+              -0.08360730111598969,
+              6.381969571871142
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g13",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "g0",
+          "g2",
+          "g3",
+          "g4",
+          "g5",
+          "g7",
+          "g9",
+          "g11",
+          "g12",
+          "g13"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            2.654949188232422,
+            -0.08360730111598969,
+            7.433596134185791
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 0.9397726058959961,
+        "alternative_logit": 0.3250737488269806
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb",
+        "episode_id": "1490",
+        "high_level_step": 1,
+        "trajectory_id": "935",
+        "baseline_index": 7,
+        "alternative_index": 6,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "1",
+          "front_pos": {
+            "__array__": [
+              5.514537334442139,
+              -0.8815320134162903,
+              7.910598278045654
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "1",
+          "ghost_pos": {
+            "__array__": [
+              4.122866529833463,
+              -0.8815320134162903,
+              8.47028780948236
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g5",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "1",
+          "front_pos": {
+            "__array__": [
+              5.514537334442139,
+              -0.8815320134162903,
+              7.910598278045654
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "1",
+          "ghost_pos": {
+            "__array__": [
+              4.914841079985386,
+              -0.8815320134162903,
+              8.361002987602006
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g4",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "g0",
+          "g2",
+          "g3",
+          "g4",
+          "g5",
+          "g6",
+          "g7"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            5.514537334442139,
+            -0.8815320134162903,
+            7.910598278045654
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 1.9165030717849731,
+        "alternative_logit": 1.7972428798675537
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb",
+        "episode_id": "7511",
+        "high_level_step": 0,
+        "trajectory_id": "5017",
+        "baseline_index": 4,
+        "alternative_index": 3,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "0",
+          "front_pos": {
+            "__array__": [
+              4.089066982269287,
+              -0.6815320253372192,
+              10.829469680786133
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "0",
+          "ghost_pos": {
+            "__array__": [
+              1.285588944686232,
+              -0.6815320253372192,
+              9.761522634912854
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g2",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "0",
+          "front_pos": {
+            "__array__": [
+              4.089066982269287,
+              -0.6815320253372192,
+              10.829469680786133
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "0",
+          "ghost_pos": {
+            "__array__": [
+              2.8406170400562276,
+              -0.6815320253372192,
+              10.767238323833155
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g1",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "g0",
+          "g1",
+          "g2",
+          "g3"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            4.089066982269287,
+            -0.6815320253372192,
+            10.829469680786133
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.5164101123809814,
+        "alternative_logit": 2.3418657779693604
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb",
+        "episode_id": "3161",
+        "high_level_step": 3,
+        "trajectory_id": "2081",
+        "baseline_index": 13,
+        "alternative_index": 14,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "3",
+          "front_pos": {
+            "__array__": [
+              7.181835651397705,
+              -0.3136729598045349,
+              -1.790561556816101
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "3",
+          "ghost_pos": {
+            "__array__": [
+              6.632989057049035,
+              -0.3136729598045349,
+              -3.9725944199673107
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g11",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "3",
+          "front_pos": {
+            "__array__": [
+              7.181835651397705,
+              -0.3136729598045349,
+              -1.790561556816101
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "3",
+          "ghost_pos": {
+            "__array__": [
+              7.49959059793754,
+              -0.3136729598045349,
+              0.43688805966223043
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g12",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "g0",
+          "g1",
+          "g2",
+          "g5",
+          "g6",
+          "g7",
+          "g8",
+          "g9",
+          "g11",
+          "g12",
+          "g13",
+          "g14",
+          "g15"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            7.181835651397705,
+            -0.3136729598045349,
+            -1.790561556816101
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 0.22018849849700928,
+        "alternative_logit": -0.4867158830165863
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb",
+        "episode_id": "2615",
+        "high_level_step": 2,
+        "trajectory_id": "1700",
+        "baseline_index": 9,
+        "alternative_index": 8,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              -3.0529165267944336,
+              -0.3136729598045349,
+              -6.648126602172852
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              -0.8529014614881474,
+              -0.3136729598045349,
+              -7.119755388852987
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g7",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              -3.0529165267944336,
+              -0.3136729598045349,
+              -6.648126602172852
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              -1.8095387574755115,
+              -0.3136729598045349,
+              -6.519628653693113
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g6",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "g1",
+          "g2",
+          "g4",
+          "g5",
+          "g6",
+          "g7"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -3.0529165267944336,
+            -0.3136729598045349,
+            -6.648126602172852
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 1.93034029006958,
+        "alternative_logit": 1.8090105056762695
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb",
+        "episode_id": "8285",
+        "high_level_step": 5,
+        "trajectory_id": "5541",
+        "baseline_index": 17,
+        "alternative_index": 16,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "5",
+          "front_pos": {
+            "__array__": [
+              -1.4871394634246826,
+              6.68632698059082,
+              3.7598018646240234
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "5",
+          "ghost_pos": {
+            "__array__": [
+              -0.6908704993013379,
+              6.68632698059082,
+              2.488599387921773
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g15",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "5",
+          "front_pos": {
+            "__array__": [
+              -1.4871394634246826,
+              6.68632698059082,
+              3.7598018646240234
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "5",
+          "ghost_pos": {
+            "__array__": [
+              -1.2441567126879123,
+              6.68632698059082,
+              2.78977125539337
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g14",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "g1",
+          "g3",
+          "g4",
+          "g6",
+          "g7",
+          "g8",
+          "g10",
+          "g11",
+          "g12",
+          "g14",
+          "g15",
+          "g16"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -1.4871394634246826,
+            6.68632698059082,
+            3.7598018646240234
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 0.8122551441192627,
+        "alternative_logit": 0.3042629659175873
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb",
+        "episode_id": "1284",
+        "high_level_step": 2,
+        "trajectory_id": "801",
+        "baseline_index": 8,
+        "alternative_index": 9,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              7.940418243408203,
+              -0.29539918899536133,
+              7.491177558898926
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              8.837290791913242,
+              -0.29539918899536133,
+              5.703547946328672
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g6",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "2",
+          "front_pos": {
+            "__array__": [
+              7.940418243408203,
+              -0.29539918899536133,
+              7.491177558898926
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "2",
+          "ghost_pos": {
+            "__array__": [
+              8.713632406025452,
+              -0.29539918899536133,
+              6.857032576479206
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g7",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "g0",
+          "g1",
+          "g2",
+          "g4",
+          "g6",
+          "g7",
+          "g8",
+          "g9"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            7.940418243408203,
+            -0.29539918899536133,
+            7.491177558898926
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 2.426903009414673,
+        "alternative_logit": 1.2042415142059326
+      },
+      {
+        "scene_id": "data/scene_datasets/mp3d/kEZ7cmS4wCh/kEZ7cmS4wCh.glb",
+        "episode_id": "25",
+        "high_level_step": 10,
+        "trajectory_id": "14",
+        "baseline_index": 28,
+        "alternative_index": 29,
+        "baseline_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "10",
+          "front_pos": {
+            "__array__": [
+              -6.371427536010742,
+              2.608050584793091,
+              -3.347736358642578
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "10",
+          "ghost_pos": {
+            "__array__": [
+              -6.148082395409467,
+              2.608050584793091,
+              -4.577621291540692
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g26",
+          "tryout": false
+        },
+        "alternative_action": {
+          "act": 4,
+          "back_path": [],
+          "cur_vp": "10",
+          "front_pos": {
+            "__array__": [
+              -6.371427536010742,
+              2.608050584793091,
+              -3.347736358642578
+            ],
+            "dtype": "<f4"
+          },
+          "front_vp": "10",
+          "ghost_pos": {
+            "__array__": [
+              -5.917012874367968,
+              2.608050584793091,
+              -3.944399844440128
+            ],
+            "dtype": "<f8"
+          },
+          "ghost_vp": "g27",
+          "tryout": false
+        },
+        "expected_graph_ids": [
+          null,
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "g0",
+          "g1",
+          "g2",
+          "g4",
+          "g7",
+          "g8",
+          "g10",
+          "g11",
+          "g13",
+          "g14",
+          "g15",
+          "g16",
+          "g19",
+          "g21",
+          "g22",
+          "g25",
+          "g26",
+          "g27",
+          "g28"
+        ],
+        "expected_graph_position": {
+          "__array__": [
+            -6.371427536010742,
+            2.608050584793091,
+            -3.347736358642578
+          ],
+          "dtype": "<f4"
+        },
+        "selection_kind": "learned",
+        "native_logit": 1.9532020092010498,
+        "alternative_logit": 1.5120986700057983
+      }
+    ],
+    "eligible_states": [
+      {
+        "episode_id": "8405",
+        "high_level_step": 3
+      },
+      {
+        "episode_id": "927",
+        "high_level_step": 0
+      },
+      {
+        "episode_id": "2906",
+        "high_level_step": 2
+      },
+      {
+        "episode_id": "6080",
+        "high_level_step": 6
+      },
+      {
+        "episode_id": "8594",
+        "high_level_step": 1
+      },
+      {
+        "episode_id": "2060",
+        "high_level_step": 2
+      },
+      {
+        "episode_id": "1288",
+        "high_level_step": 7
+      },
+      {
+        "episode_id": "3284",
+        "high_level_step": 4
+      },
+      {
+        "episode_id": "10046",
+        "high_level_step": 3
+      },
+      {
+        "episode_id": "3257",
+        "high_level_step": 0
+      },
+      {
+        "episode_id": "5888",
+        "high_level_step": 3
+      },
+      {
+        "episode_id": "454",
+        "high_level_step": 10
+      },
+      {
+        "episode_id": "9656",
+        "high_level_step": 5
+      },
+      {
+        "episode_id": "3398",
+        "high_level_step": 7
+      },
+      {
+        "episode_id": "4907",
+        "high_level_step": 4
+      },
+      {
+        "episode_id": "8288",
+        "high_level_step": 4
+      },
+      {
+        "episode_id": "85",
+        "high_level_step": 5
+      },
+      {
+        "episode_id": "740",
+        "high_level_step": 2
+      },
+      {
+        "episode_id": "9089",
+        "high_level_step": 4
+      },
+      {
+        "episode_id": "10199",
+        "high_level_step": 4
+      },
+      {
+        "episode_id": "1490",
+        "high_level_step": 1
+      },
+      {
+        "episode_id": "7511",
+        "high_level_step": 0
+      },
+      {
+        "episode_id": "3161",
+        "high_level_step": 3
+      },
+      {
+        "episode_id": "2615",
+        "high_level_step": 2
+      },
+      {
+        "episode_id": "8285",
+        "high_level_step": 5
+      },
+      {
+        "episode_id": "1284",
+        "high_level_step": 2
+      },
+      {
+        "episode_id": "25",
+        "high_level_step": 10
+      }
+    ],
+    "omitted_routes_retained_as_controls": [
+      {
+        "episode_id": "8117",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "3533",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "10184",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "626",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "5918",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "1382",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "2765",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "10424",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "4448",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "6785",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "10214",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "478",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "5270",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "9416",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "8255",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "5579",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "5195",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "9422",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "3332",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "8960",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "8054",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "5663",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "351",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "5555",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "2597",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "1275",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "6656",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "2501",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "7394",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "2414",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "827",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "3416",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "1685",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "4193",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "127",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "8996",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "2132",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "4019",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "1889",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "2093",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "4427",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "2252",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "1412",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "9086",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "1278",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "10265",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "9377",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "5657",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "4076",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "4784",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "8828",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "5948",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "3560",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "2294",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "7457",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "6659",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "4184",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "10625",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "524",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "4964",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "5591",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "1544",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "6410",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "8864",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "10484",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "6590",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "2210",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "6524",
+        "reason": "no_ranker_disagreement"
+      },
+      {
+        "episode_id": "7547",
+        "reason": "no_ranker_disagreement"
+      }
+    ],
+    "limits": "Exploratory development follow-up after target census inspection; route-disjoint, scene-overlapping, not checkpoint-training holdout or benchmark.",
+    "hashes": {
+      "research/configs/GRAPH_VALUE_ROUTE_DISJOINT_TRAIN96_002.json": "ea538258ddb87ea5e2dc926e0f3b128012da21a4e98e34e408a0eb98838ac9ee",
+      "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/frozen_ranker_fresh.json": "18cf29c67222ab884b87154df332fc6c006f4e85eee007f11d310263d7d3353f",
+      "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001/graph_options/graph_options.jsonl": "94617919ed85ea783d8a9ec63d0af10fddd2210baf9fe0ff8e9fad7b0cd568b5",
+      "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/manifest.json": "341628153102ab5bf6f91bbd5e0f88901ddad06c16d1747fea64a621824a2db6",
+      "research/GRAPH_VALUE_ROUTE_INTERVENTION_PROTOCOL.md": "10d8d2102d6a3d01816fccc9034d26e5a445cc1c9447656ff82cdeeea9e57d0f",
+      "research/tools/prepare_ranker_intervention_schedule.py": "8bf7951555788dd90880661b7bd1b9d46d4cb65140342d79b227564fb512ac53",
+      "research/tools/graph_value_feasibility.py": "3154f554eb4e4e0500051440aeb326b480a978000cbd5c0784ba428fb5d12c97",
+      "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001/manifest.json": "fa1920089be77a726504a6f511b17fd64a665f65718f36e20218c7e2e730ef18"
+    }
+  },
+  "schedule_path": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_ranker_002.json",
+  "source_capture": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+  "config": {
+    "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-TRAIN96-002",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 96,
+    "seed": 100,
+    "dataset_path": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/train_route_disjoint96_bertidx.json.gz",
+    "sampling_manifest": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "replay_modes": [
+      "sequential",
+      "isolated_branch"
+    ],
+    "reverse_states_per_episode": 2,
+    "reverse_selection_seed": 20261012,
+    "gates": {
+      "endpoint_tolerance_m": 1e-05,
+      "rotation_tolerance_rad": 1e-05,
+      "progress_tolerance_m": 1e-05,
+      "primitive_action_sequence_exact": true,
+      "per_primitive_collision_sequence_exact": true,
+      "rng_post_exact": true,
+      "terminal_flag_exact": true,
+      "baseline_episode_metrics_tolerance": 1e-06
+    },
+    "analysis": {
+      "primary": "Native graph capture, exact controls, and route-disjoint confirmation after complete exclusion audit",
+      "no_outcome_sampling": true,
+      "bootstrap_seed": 20261012,
+      "bootstrap_samples": 5000
+    },
+    "purpose": "Route-disjoint but scene-overlapping graph-value confirmation after complete exclusion audit; no benchmark claim.",
+    "limits": "96 routes in 8 scenes selected by metadata only; all registered diagnostic and validation route sources excluded; scene overlap remains allowed; one simulator seed; no benchmark claim.",
+    "sampling": {
+      "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+      "exclude_sources": [
+        "research/results/graph_option_pilot/train8_sampling/manifest.json",
+        "research/results/graph_option_train64/sampling_001/manifest.json",
+        "research/results/continuation_label_train64/sampling_001/manifest.json",
+        "research/results/full_return_label_train16/sampling_001/manifest.json",
+        "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+        "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/manifest.json",
+        "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+        "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+        "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_seen/val_seen_bertidx.json.gz",
+        "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_unseen/val_unseen_bertidx.json.gz"
+      ],
+      "scenes": 8,
+      "routes_per_scene": 12,
+      "seed": 20261010
+    },
+    "protocol": "research/GRAPH_VALUE_CONFIRMATION_PROTOCOL.md",
+    "continuation_protocol": "research/GRAPH_VALUE_CONFIRMATION_PROTOCOL.md",
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md"
+  },
+  "enabled": true,
+  "output_dir": "/home/wj/VLN-CE/ETPNav/research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled",
+  "exp_name": "aaa_gv_route96_frozen_002_learned_enabled",
+  "overrides": {
+    "TRAINER_NAME": "SS-ETP-SingleIntervention",
+    "ENV_NAME": "VLNCEOptionTraceEnv",
+    "SIMULATOR_GPU_IDS": "[0]",
+    "TORCH_GPU_IDS": "[0]",
+    "GPU_NUMBERS": "1",
+    "NUM_ENVIRONMENTS": "1",
+    "EVAL.SPLIT": "train",
+    "EVAL.EPISODE_COUNT": "96",
+    "TASK_CONFIG.SEED": "100",
+    "EVAL.CKPT_PATH_DIR": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "IL.back_algo": "control",
+    "RL_TOPO.ENABLED": "False",
+    "ACTION_ABSTRACTION.LEVEL": "default",
+    "ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED": "False",
+    "ACTION_ABSTRACTION.ORACLE_ENABLED": "False",
+    "ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED": "False",
+    "ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS": "False",
+    "TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING": "True",
+    "TASK_CONFIG.DATASET.DATA_PATH": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/train_route_disjoint96_bertidx.json.gz"
+  },
+  "hashes": {
+    "research/configs/GRAPH_VALUE_ROUTE_DISJOINT_TRAIN96_002.json": "ea538258ddb87ea5e2dc926e0f3b128012da21a4e98e34e408a0eb98838ac9ee",
+    "research/tools/run_option_capture.py": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8",
+    "vlnce_baselines/adaptive_action/option_calibration.py": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec",
+    "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+    "vlnce_baselines/ss_trainer_ETP.py": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59",
+    "run_r2r/iter_train.yaml": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129",
+    "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+    "vlnce_baselines/adaptive_action/graph_option_capture.py": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db",
+    "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/train_route_disjoint96_bertidx.json.gz": "ad10ada23dc5c952f387c5df7ba6a617a5e3a0b4a531d786bb8b87616890572d",
+    "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/manifest.json": "341628153102ab5bf6f91bbd5e0f88901ddad06c16d1747fea64a621824a2db6",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_ranker_002.json": "344736af0dc1cc30e6e60295998ae32863981efe22c6d5100d8ddb92369a7c5a",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001/manifest.json": "fa1920089be77a726504a6f511b17fd64a665f65718f36e20218c7e2e730ef18",
+    "research/tools/run_single_intervention.py": "41e993beb9c735942218969e4ae311d9c4fab0659f9b33ebb53e873954942e6d",
+    "vlnce_baselines/adaptive_action/single_intervention.py": "2274f37666a7c531b334115f7cf616cf1150f7a68e42937e020df4477bd285cd"
+  },
+  "git_commit": "9a9a7ae98bf61138da8e12da6fdce00269c3f82b",
+  "git_status": " M pretrain_src/run_pt/r2r_model_config_dep.json\n M research/tools/audit_single_intervention.py\n M research/tools/prepare_outcome_blind_sample.py\n M run_r2r/iter_train.yaml\n M vlnce_baselines/common/environments.py\n M vlnce_baselines/config/default.py\n M vlnce_baselines/models/Policy_ViewSelection_ETP.py\n M vlnce_baselines/models/graph_utils.py\n M vlnce_baselines/ss_trainer_ETP.py\n?? \"log/\\347\\247\\221\\347\\240\\224\\345\\256\\241\\346\\237\\245\\344\\270\\216\\344\\270\\213\\344\\270\\200\\346\\255\\245\\350\\267\\257\\347\\272\\277_20261006.md\"\n?? pretrain_src/datasets-download.log\n?? pretrain_src/pretrain_src/datasets/\n?? pretrain_src/pretrain_src/img_features/\n?? research/GRAPH_VALUE_ROUTE_INTERVENTION_PROTOCOL.md\n?? research/configs/CRITICAL_GRAPH_VALUE_ROUTE_DISJOINT_002.json\n?? research/configs/GRAPH_VALUE_ROUTE_DISJOINT_CONFIRMATION_001.json\n?? research/configs/GRAPH_VALUE_ROUTE_DISJOINT_CONFIRMATION_002.json\n?? research/configs/GRAPH_VALUE_ROUTE_DISJOINT_TRAIN96_001.json\n?? research/configs/GRAPH_VALUE_ROUTE_DISJOINT_TRAIN96_002.json\n?? research/results/action_abstraction/FULL_RUN_COMMANDS.txt\n?? research/results/action_abstraction/coarse_8.stdout\n?? research/results/action_abstraction/coarse_full.stdout\n?? research/results/action_abstraction/default_8.stdout\n?? research/results/action_abstraction/default_diag1.stdout\n?? research/results/action_abstraction/default_diag2.stdout\n?? research/results/action_abstraction/default_val_seen_16.stdout\n?? research/results/action_abstraction/embedding_ranker_train960_val64.stdout\n?? research/results/action_abstraction/embedding_ranker_train960_valunseen64.stdout\n?? research/results/action_abstraction/final_compat_smoke.stdout\n?? research/results/action_abstraction/final_control_smoke.stdout\n?? research/results/action_abstraction/fine_8.stdout\n?? research/results/action_abstraction/fine_full.stdout\n?? research/results/action_abstraction/fixed_coarse_valseen64.stdout\n?? research/results/action_abstraction/fixed_fine_valseen64.jsonl\n?? research/results/action_abstraction/fixed_fine_valseen64.stdout\n?? research/results/action_abstraction/graph_aliasing_no_merge_valseen64.stdout\n?? research/results/action_abstraction/graph_aliasing_train960.stdout\n?? research/results/action_abstraction/graph_aliasing_valseen64.stdout\n?? research/results/action_abstraction/graph_no_merge_oracle_valseen64.jsonl\n?? research/results/action_abstraction/graph_no_merge_oracle_valseen64.stdout\n?? research/results/action_abstraction/graph_no_merge_oracle_valseen64_oracle.jsonl\n?? research/results/action_abstraction/graph_no_merge_valseen64.jsonl\n?? research/results/action_abstraction/graph_no_merge_valseen64.stdout\n?? research/results/action_abstraction/graph_no_merge_valseen64.yaml\n?? research/results/action_abstraction/graph_rank_only_valseen64.jsonl\n?? research/results/action_abstraction/graph_rank_only_valseen64.stdout\n?? research/results/action_abstraction/graph_rank_only_valseen64_diagnostics.jsonl\n?? research/results/action_abstraction/graph_selection_oracle_valseen64.jsonl\n?? research/results/action_abstraction/graph_selection_oracle_valseen64.stdout\n?? research/results/action_abstraction/graph_selection_oracle_valseen64.yaml\n?? research/results/action_abstraction/graph_selection_oracle_valseen64_diagnostics.jsonl\n?? research/results/action_abstraction/graph_selection_oracle_valseen8.jsonl\n?? research/results/action_abstraction/graph_selection_oracle_valseen8.stdout\n?? research/results/action_abstraction/graph_selection_oracle_valseen8.yaml\n?? research/results/action_abstraction/graph_selection_oracle_valseen8_diagnostics.jsonl\n?? research/results/action_abstraction/graph_selection_rank_only_valseen64.yaml\n?? research/results/action_abstraction/graph_selection_stop_only_valseen64.yaml\n?? research/results/action_abstraction/graph_selection_valseen64.jsonl\n?? research/results/action_abstraction/graph_selection_valseen64.stdout\n?? research/results/action_abstraction/graph_selection_valseen64.yaml\n?? research/results/action_abstraction/graph_stop_only_valseen64.stdout\n?? research/results/action_abstraction/graph_stop_only_valseen64_retry.jsonl\n?? research/results/action_abstraction/graph_stop_only_valseen64_retry.stdout\n?? research/results/action_abstraction/graph_stop_only_valseen64_retry_diagnostics.jsonl\n?? research/results/action_abstraction/graphsel_smoke.jsonl\n?? research/results/action_abstraction/graphsel_smoke.stdout\n?? research/results/action_abstraction/oracle_valseen64.jsonl\n?? research/results/action_abstraction/oracle_valseen64.stdout\n?? research/results/action_abstraction/oracle_valseen64.yaml\n?? research/results/action_abstraction/oracle_valseen64_diagnostics.jsonl\n?? research/results/action_abstraction/oracle_valseen64_selection.jsonl\n?? research/results/action_abstraction/oracle_valseen64_selection.stdout\n?? research/results/action_abstraction/oracle_valseen64_selection.yaml\n?? research/results/action_abstraction/oracle_valseen8.jsonl\n?? research/results/action_abstraction/oracle_valseen8.yaml\n?? research/results/action_abstraction/oracle_valseen8_recorded.jsonl\n?? research/results/action_abstraction/oracle_valseen8_recorded.stdout\n?? research/results/action_abstraction/postoracle_smoke.stdout\n?? research/results/action_abstraction/ranker_embedding_train320.stdout\n?? research/results/action_abstraction/ranker_embedding_train320.yaml\n?? research/results/action_abstraction/ranker_embedding_train320_diagnostics.jsonl\n?? research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl\n?? research/results/action_abstraction/ranker_embedding_train64.stdout\n?? research/results/action_abstraction/ranker_embedding_train64.yaml\n?? research/results/action_abstraction/ranker_embedding_train64_diagnostics.jsonl\n?? research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl\n?? research/results/action_abstraction/ranker_embedding_train960.stdout\n?? research/results/action_abstraction/ranker_embedding_train960.yaml\n?? research/results/action_abstraction/ranker_embedding_train960_diagnostics.jsonl\n?? research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl\n?? research/results/action_abstraction/ranker_embedding_val64.stdout\n?? research/results/action_abstraction/ranker_embedding_val64.yaml\n?? research/results/action_abstraction/ranker_embedding_val64_diagnostics.jsonl\n?? research/results/action_abstraction/ranker_embedding_val64_oracle.jsonl\n?? research/results/action_abstraction/ranker_embedding_valunseen64.stdout\n?? research/results/action_abstraction/ranker_embedding_valunseen64.yaml\n?? research/results/action_abstraction/ranker_embedding_valunseen64_diagnostics.jsonl\n?? research/results/action_abstraction/ranker_embedding_valunseen64_oracle.jsonl\n?? research/results/action_abstraction/ranker_train64.stdout\n?? research/results/action_abstraction/ranker_train64.yaml\n?? research/results/action_abstraction/ranker_train64_diagnostics.jsonl\n?? research/results/action_abstraction/ranker_train64_oracle.jsonl\n?? research/results/baseline/BASELINE_COMMAND_ARCHIVE.txt\n?? research/results/baseline/R2R_FULL_CURRENT_COMMAND.txt\n?? research/results/baseline/SMOKE_COMMAND.txt\n?? research/results/baseline/aaa_baseline_full_current.stdout\n?? research/results/baseline/aaa_baseline_smoke.stdout\n?? research/results/baseline/aaa_baseline_smoke2.stdout\n?? research/results/baseline/aaa_baseline_smoke3.stdout\n?? research/results/baseline/aaa_baseline_smoke4.stdout\n?? research/results/baseline/current_vs_reference_sha256.txt\n?? research/results/baseline/reference_sha256.txt\n?? research/results/continuation_label_train64/analysis_001/states.jsonl\n?? research/results/continuation_label_train64/capture_001/graph_options/\n?? research/results/continuation_label_train64/capture_001/traces/\n?? research/results/continuation_label_train64/continuation_cycle_001/disabled.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/disabled.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/disabled_audit.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/disabled_audit.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/enabled.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/enabled.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/enabled_audit.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/enabled_audit.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_analysis.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_analysis.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_disabled.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_disabled.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_disabled_audit.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_disabled_audit.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_enabled.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_enabled.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_enabled_audit.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_enabled_audit.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_native_reconstruction.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/h2_native_reconstruction.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/native_reconstruction.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/native_reconstruction.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/route.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/route.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/schedule.stderr.log\n?? research/results/continuation_label_train64/continuation_cycle_001/schedule.stdout.log\n?? research/results/continuation_label_train64/continuation_cycle_001/sources/research/CONTINUATION_LABEL_PROTOCOL.md\n?? research/results/continuation_label_train64/continuation_cycle_001/sources/research/tools/\n?? research/results/continuation_label_train64/continuation_cycle_001/sources/vlnce_baselines/\n?? research/results/continuation_label_train64/cost_decomposition_001/paired_table.md\n?? research/results/continuation_label_train64/cycle_001/analysis.stderr.log\n?? research/results/continuation_label_train64/cycle_001/analysis.stdout.log\n?? research/results/continuation_label_train64/cycle_001/capture.stderr.log\n?? research/results/continuation_label_train64/cycle_001/capture.stdout.log\n?? research/results/continuation_label_train64/cycle_001/control.stderr.log\n?? research/results/continuation_label_train64/cycle_001/control.stdout.log\n?? research/results/continuation_label_train64/cycle_001/git_diff.patch\n?? research/results/continuation_label_train64/cycle_001/git_status.txt\n?? research/results/continuation_label_train64/cycle_001/integrity.stderr.log\n?? research/results/continuation_label_train64/cycle_001/integrity.stdout.log\n?? research/results/continuation_label_train64/cycle_001/noninterference.stderr.log\n?? research/results/continuation_label_train64/cycle_001/noninterference.stdout.log\n?? research/results/continuation_label_train64/cycle_001/pip_freeze.txt\n?? research/results/continuation_label_train64/cycle_001/probe.stderr.log\n?? research/results/continuation_label_train64/cycle_001/probe.stdout.log\n?? research/results/continuation_label_train64/disabled_001/hook/decisions.jsonl\n?? research/results/continuation_label_train64/disabled_001/traces/\n?? research/results/continuation_label_train64/enabled_001/hook/decisions.jsonl\n?? research/results/continuation_label_train64/enabled_001/traces/\n?? research/results/continuation_label_train64/figures_001/all_five_horizon_profiles.pdf\n?? research/results/continuation_label_train64/h2_analysis_001/paired_table.md\n?? research/results/continuation_label_train64/h2_disabled_001/hook/decisions.jsonl\n?? research/results/continuation_label_train64/h2_disabled_001/traces/\n?? research/results/continuation_label_train64/h2_enabled_001/hook/decisions.jsonl\n?? research/results/continuation_label_train64/h2_enabled_001/traces/\n?? research/results/continuation_label_train64/logs/\n?? research/results/continuation_label_train64/probe_full001/branch_traces.jsonl\n?? research/results/continuation_label_train64/probe_full001/decisions.jsonl\n?? research/results/continuation_label_train64/probe_full001/order_checks.jsonl\n?? research/results/continuation_label_train64/probe_full001/sentinel_checks.jsonl\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/AAA_CODE_AUDIT.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/BASELINE_REPORT.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/CONTINUATION_LABEL_PROTOCOL.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/CONTINUATION_LABEL_REPORT.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/EXPERIMENT_TABLE.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/FAILURE_ANALYSIS.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/FULL_RETURN_LABEL_NEXT_GATE.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/GRAPH_DECISION_NEXT_GATE.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/OPTION_LABEL_PROTOCOL.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/REPORT.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/RESEARCH_LOG.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/RESEARCH_STATUS_CN.md\n?? research/results/continuation_label_train64/provenance/final_sources_001/research/tools/\n?? research/results/continuation_label_train64/provenance/final_sources_001/vlnce_baselines/\n?? research/results/continuation_label_train64/provenance/git_diff.patch\n?? research/results/continuation_label_train64/provenance/git_status.txt\n?? research/results/continuation_label_train64/provenance/prospective_sources_001/research/tools/\n?? research/results/continuation_label_train64/provenance/research/CONTINUATION_LABEL_PROTOCOL.md\n?? research/results/continuation_label_train64/provenance/research/tools/\n?? research/results/continuation_label_train64/route_001/options.jsonl\n?? research/results/continuation_label_train64/route_001/states.jsonl\n?? research/results/continuation_label_train64/sampling_001/train64_bertidx.json.gz\n?? research/results/critical_causal_train64/analysis_001.stderr.log\n?? research/results/critical_causal_train64/analysis_001.stdout.log\n?? research/results/critical_causal_train64/failure_routes_9.json.gz\n?? research/results/critical_causal_train64/figures_001/\n?? research/results/critical_causal_train64/full_001.stderr.log\n?? research/results/critical_causal_train64/full_001.stdout.log\n?? research/results/critical_causal_train64/full_001/cases/\n?? research/results/critical_causal_train64/full_001/git_diff.patch\n?? research/results/critical_causal_train64/full_001/source_snapshot/\n?? research/results/critical_causal_train64/independent_audit_001.stderr.log\n?? research/results/critical_causal_train64/independent_audit_001.stdout.log\n?? research/results/critical_causal_train64/independent_audit_001/\n?? research/results/critical_causal_train64/independent_audit_003.stderr.log\n?? research/results/critical_causal_train64/independent_audit_003.stdout.log\n?? research/results/critical_causal_train64/plot_001.stderr.log\n?? research/results/critical_causal_train64/plot_001.stdout.log\n?? research/results/critical_causal_train64/smoke_001.stderr.log\n?? research/results/critical_causal_train64/smoke_001.stdout.log\n?? research/results/critical_causal_train64/smoke_001/\n?? research/results/critical_causal_train64/smoke_002.stderr.log\n?? research/results/critical_causal_train64/smoke_002.stdout.log\n?? research/results/critical_causal_train64/smoke_002/\n?? research/results/critical_causal_train64/smoke_003.stderr.log\n?? research/results/critical_causal_train64/smoke_003.stdout.log\n?? research/results/critical_causal_train64/smoke_003/cases/\n?? research/results/critical_causal_train64/smoke_003/git_diff.patch\n?? research/results/critical_causal_train64/smoke_003/interrupt_plan.json\n?? research/results/critical_causal_train64/smoke_003/results.jsonl\n?? research/results/critical_causal_train64/smoke_003/status.json\n?? research/results/critical_causal_train64/tests_001.stderr.log\n?? research/results/critical_causal_train64/tests_001.stdout.log\n?? research/results/critical_causal_train64_new/analysis_001/\n?? research/results/critical_causal_train64_new/failure_routes_8.json.gz\n?? research/results/critical_causal_train64_new/feasibility_005.json\n?? research/results/critical_causal_train64_new/full_001/\n?? research/results/critical_causal_train64_new/independent_audit_001/\n?? research/results/critical_causal_train64_new/plan_001.json\n?? research/results/critical_causal_train64_new/smoke_001/\n?? research/results/critical_causal_train64_new/transfer_005.json\n?? research/results/critical_causal_unseen/analysis_001.stderr.log\n?? research/results/critical_causal_unseen/analysis_001.stdout.log\n?? research/results/critical_causal_unseen/failure_routes_22.json.gz\n?? research/results/critical_causal_unseen/figures_001/\n?? research/results/critical_causal_unseen/figures_002/\n?? research/results/critical_causal_unseen/full_001.stderr.log\n?? research/results/critical_causal_unseen/full_001.stdout.log\n?? research/results/critical_causal_unseen/full_001/cases/\n?? research/results/critical_causal_unseen/full_001/git_diff.patch\n?? research/results/critical_causal_unseen/full_001/source_snapshot/\n?? research/results/critical_causal_unseen/independent_audit_001.stderr.log\n?? research/results/critical_causal_unseen/independent_audit_001.stdout.log\n?? research/results/critical_causal_unseen/independent_audit_002.stderr.log\n?? research/results/critical_causal_unseen/independent_audit_002.stdout.log\n?? research/results/critical_causal_unseen/independent_audit_003.stderr.log\n?? research/results/critical_causal_unseen/independent_audit_003.stdout.log\n?? research/results/critical_causal_unseen/plan_001.json\n?? research/results/critical_causal_unseen/plot_001.stderr.log\n?? research/results/critical_causal_unseen/plot_001.stdout.log\n?? research/results/critical_causal_unseen/plot_002.stderr.log\n?? research/results/critical_causal_unseen/plot_002.stdout.log\n?? research/results/critical_causal_unseen/smoke_001.stderr.log\n?? research/results/critical_causal_unseen/smoke_001.stdout.log\n?? research/results/critical_causal_unseen/smoke_001/cases/\n?? research/results/critical_causal_unseen/smoke_001/git_diff.patch\n?? research/results/critical_causal_unseen/smoke_001/interrupt_plan.json\n?? research/results/critical_causal_unseen/smoke_001/results.jsonl\n?? research/results/critical_causal_unseen/smoke_001/source_snapshot/\n?? research/results/critical_causal_unseen/smoke_001/status.json\n?? research/results/critical_graph_value_fresh/failure_routes_10.json.gz\n?? research/results/critical_graph_value_fresh/feasibility_001.json\n?? research/results/critical_graph_value_fresh/full_001/\n?? research/results/critical_graph_value_fresh/full_002/cases/\n?? research/results/critical_graph_value_fresh/full_002/git_diff.patch\n?? research/results/critical_graph_value_fresh/full_002/interrupt_plan.json\n?? research/results/critical_graph_value_fresh/full_002/manifest.json\n?? research/results/critical_graph_value_fresh/full_002/source_snapshot/\n?? research/results/critical_graph_value_fresh/plan_001.json\n?? research/results/critical_graph_value_fresh/smoke_001/\n?? research/results/diagnostics/\n?? research/results/failure_critical_census/analysis_001/\n?? research/results/failure_critical_census/analysis_002/candidates.jsonl\n?? research/results/failure_critical_census/analysis_002/states.jsonl\n?? research/results/failure_critical_census_001.stderr.log\n?? research/results/failure_critical_census_001.stdout.log\n?? research/results/failure_critical_census_002.stderr.log\n?? research/results/failure_critical_census_002.stdout.log\n?? research/results/failure_critical_full_return_train64/\n?? research/results/full_return_branch_alignment.stderr.log\n?? research/results/full_return_branch_alignment.stdout.log\n?? research/results/full_return_branch_alignment/analysis_001/events.jsonl\n?? research/results/full_return_feature_audit/analysis_001/git_diff.patch\n?? research/results/full_return_feature_audit/analysis_001/git_status.txt\n?? research/results/full_return_feature_audit/analysis_001/stdout_capture_note.txt\n?? research/results/full_return_feature_audit/cost_001.stderr.log\n?? research/results/full_return_feature_audit/cost_001.stdout.log\n?? research/results/full_return_feature_audit/tests_001.stderr.log\n?? research/results/full_return_feature_audit/tests_001.stdout.log\n?? research/results/full_return_label_train16/analysis_001/states.jsonl\n?? research/results/full_return_label_train16/capture_001/graph_options/\n?? research/results/full_return_label_train16/capture_001/traces/\n?? research/results/full_return_label_train16/cycle_001/analysis.stderr.log\n?? research/results/full_return_label_train16/cycle_001/analysis.stdout.log\n?? research/results/full_return_label_train16/cycle_001/capture.stderr.log\n?? research/results/full_return_label_train16/cycle_001/capture.stdout.log\n?? research/results/full_return_label_train16/cycle_001/control.stderr.log\n?? research/results/full_return_label_train16/cycle_001/control.stdout.log\n?? research/results/full_return_label_train16/cycle_001/git_diff.patch\n?? research/results/full_return_label_train16/cycle_001/git_status.txt\n?? research/results/full_return_label_train16/cycle_001/integrity.stderr.log\n?? research/results/full_return_label_train16/cycle_001/integrity.stdout.log\n?? research/results/full_return_label_train16/cycle_001/noninterference.stderr.log\n?? research/results/full_return_label_train16/cycle_001/noninterference.stdout.log\n?? research/results/full_return_label_train16/cycle_001/pip_freeze.txt\n?? research/results/full_return_label_train16/cycle_001/probe.stderr.log\n?? research/results/full_return_label_train16/cycle_001/probe.stdout.log\n?? research/results/full_return_label_train16/descriptive_002/full_return_diagnostics.pdf\n?? research/results/full_return_label_train16/full_return_analysis_001/paired_table.md\n?? research/results/full_return_label_train16/full_return_cycle_001/top_logit_disabled.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_001/top_logit_disabled.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_001/top_logit_disabled_audit.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_001/top_logit_disabled_audit.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_002/top_logit_disabled.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_002/top_logit_disabled.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_disabled.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_disabled.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_disabled_audit.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_disabled_audit.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_enabled.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_enabled.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_enabled_audit.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_enabled_audit.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_reconstruction.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/seeded_graph_id_reconstruction.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_disabled.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_disabled.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_disabled_audit.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_disabled_audit.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_enabled.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_enabled.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_enabled_audit.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_enabled_audit.stdout.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_reconstruction.stderr.log\n?? research/results/full_return_label_train16/full_return_cycle_003/top_logit_reconstruction.stdout.log\n?? research/results/full_return_label_train16/logs/\n?? research/results/full_return_label_train16/probe_full001/branch_traces.jsonl\n?? research/results/full_return_label_train16/probe_full001/decisions.jsonl\n?? research/results/full_return_label_train16/probe_full001/order_checks.jsonl\n?? research/results/full_return_label_train16/probe_full001/sentinel_checks.jsonl\n?? research/results/full_return_label_train16/provenance/descriptive_failed_v1.py\n?? research/results/full_return_label_train16/provenance/preflight_v1/\n?? research/results/full_return_label_train16/sampling_001/train16_bertidx.json.gz\n?? research/results/full_return_label_train16/seeded_graph_id_disabled_003/hook/decisions.jsonl\n?? research/results/full_return_label_train16/seeded_graph_id_disabled_003/traces/\n?? research/results/full_return_label_train16/seeded_graph_id_enabled_003/hook/decisions.jsonl\n?? research/results/full_return_label_train16/seeded_graph_id_enabled_003/traces/\n?? research/results/full_return_label_train16/top_logit_disabled_001/hook/decisions.jsonl\n?? research/results/full_return_label_train16/top_logit_disabled_001/traces/\n?? research/results/full_return_label_train16/top_logit_disabled_003/hook/decisions.jsonl\n?? research/results/full_return_label_train16/top_logit_disabled_003/traces/\n?? research/results/full_return_label_train16/top_logit_enabled_003/hook/decisions.jsonl\n?? research/results/full_return_label_train16/top_logit_enabled_003/traces/\n?? research/results/graph_option_pilot/action_tests_final.stderr\n?? research/results/graph_option_pilot/action_tests_final.stdout\n?? research/results/graph_option_pilot/analysis_001.stderr\n?? research/results/graph_option_pilot/analysis_001.stdout\n?? research/results/graph_option_pilot/analysis_001/states.jsonl\n?? research/results/graph_option_pilot/capture_001.stderr\n?? research/results/graph_option_pilot/capture_001.stdout\n?? research/results/graph_option_pilot/capture_001/graph_options/\n?? research/results/graph_option_pilot/capture_001/traces/\n?? research/results/graph_option_pilot/control_001.stderr\n?? research/results/graph_option_pilot/control_001.stdout\n?? research/results/graph_option_pilot/integrity_001.stderr\n?? research/results/graph_option_pilot/integrity_001.stdout\n?? research/results/graph_option_pilot/probe_full001.stderr\n?? research/results/graph_option_pilot/probe_full001.stdout\n?? research/results/graph_option_pilot/probe_full001/branch_traces.jsonl\n?? research/results/graph_option_pilot/probe_full001/decisions.jsonl\n?? research/results/graph_option_pilot/probe_full001/order_checks.jsonl\n?? research/results/graph_option_pilot/probe_full001/sentinel_checks.jsonl\n?? research/results/graph_option_pilot/probe_smoke001.stderr\n?? research/results/graph_option_pilot/probe_smoke001.stdout\n?? research/results/graph_option_pilot/probe_smoke001/branch_traces.jsonl\n?? research/results/graph_option_pilot/probe_smoke001/decisions.jsonl\n?? research/results/graph_option_pilot/probe_smoke001/order_checks.jsonl\n?? research/results/graph_option_pilot/probe_smoke001/sentinel_checks.jsonl\n?? research/results/graph_option_pilot/tests_final.stderr\n?? research/results/graph_option_pilot/tests_final.stdout\n?? research/results/graph_option_pilot/tests_initial.stderr\n?? research/results/graph_option_pilot/tests_initial.stdout\n?? research/results/graph_option_pilot/train8_sampling/train_pilot8_bertidx.json.gz\n?? research/results/graph_option_train64/analysis_001/states.jsonl\n?? research/results/graph_option_train64/capture_001/graph_options/\n?? research/results/graph_option_train64/capture_001/traces/\n?? research/results/graph_option_train64/cycle_001/analysis.stderr.log\n?? research/results/graph_option_train64/cycle_001/analysis.stdout.log\n?? research/results/graph_option_train64/cycle_001/capture.stderr.log\n?? research/results/graph_option_train64/cycle_001/capture.stdout.log\n?? research/results/graph_option_train64/cycle_001/control.stderr.log\n?? research/results/graph_option_train64/cycle_001/control.stdout.log\n?? research/results/graph_option_train64/cycle_001/git_diff.patch\n?? research/results/graph_option_train64/cycle_001/git_status.txt\n?? research/results/graph_option_train64/cycle_001/integrity.stderr.log\n?? research/results/graph_option_train64/cycle_001/integrity.stdout.log\n?? research/results/graph_option_train64/cycle_001/noninterference.stderr.log\n?? research/results/graph_option_train64/cycle_001/noninterference.stdout.log\n?? research/results/graph_option_train64/cycle_001/pip_freeze.txt\n?? research/results/graph_option_train64/cycle_001/probe.stderr.log\n?? research/results/graph_option_train64/cycle_001/probe.stdout.log\n?? research/results/graph_option_train64/probe_full001/branch_traces.jsonl\n?? research/results/graph_option_train64/probe_full001/decisions.jsonl\n?? research/results/graph_option_train64/probe_full001/order_checks.jsonl\n?? research/results/graph_option_train64/probe_full001/sentinel_checks.jsonl\n?? research/results/graph_option_train64/provenance/research/\n?? research/results/graph_option_train64/provenance/vlnce_baselines/\n?? research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz\n?? research/results/graph_option_unseen/analysis_001.stderr\n?? research/results/graph_option_unseen/analysis_001.stdout\n?? research/results/graph_option_unseen/analysis_001/states.jsonl\n?? research/results/graph_option_unseen/capture_001.stderr\n?? research/results/graph_option_unseen/capture_001.stdout\n?? research/results/graph_option_unseen/capture_001/graph_options/\n?? research/results/graph_option_unseen/capture_001/traces/\n?? research/results/graph_option_unseen/control_001.stderr\n?? research/results/graph_option_unseen/control_001.stdout\n?? research/results/graph_option_unseen/integrity_001.stderr\n?? research/results/graph_option_unseen/integrity_001.stdout\n?? research/results/graph_option_unseen/noninterference_001.stderr\n?? research/results/graph_option_unseen/noninterference_001.stdout\n?? research/results/graph_option_unseen/noninterference_002.stderr\n?? research/results/graph_option_unseen/noninterference_002.stdout\n?? research/results/graph_option_unseen/probe_full001.stderr\n?? research/results/graph_option_unseen/probe_full001.stdout\n?? research/results/graph_option_unseen/probe_full002.stderr\n?? research/results/graph_option_unseen/probe_full002.stdout\n?? research/results/graph_option_unseen/probe_full002/branch_traces.jsonl\n?? research/results/graph_option_unseen/probe_full002/decisions.jsonl\n?? research/results/graph_option_unseen/probe_full002/order_checks.jsonl\n?? research/results/graph_option_unseen/probe_full002/sentinel_checks.jsonl\n?? research/results/graph_option_unseen/provenance/pip_freeze.txt\n?? research/results/graph_option_unseen/provenance/source_snapshots/0f2227866556dd884c98d2ab73bcf5ff2a0d9c5d8eaca4b17f7e165563a8274a.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/4dbbafc0f6a79336900d2c155ff95ac52881f1985354ddbb6f32b8ebbb04ba7a.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/51465e1ea29bb3d6a8e8d1eee5500bbc923fb04c1f8604ff1c51e90e1b8ca74d.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/8865d182b821265893a06ad0fd60918bf696d0084299fe995ec3e322faa053b5.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129.yaml\n?? research/results/graph_option_unseen/provenance/source_snapshots/c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/f2f0d3da42612435bcd8dfaa91d1cc4c65fd2caf0ae70bf39fd54032dff802c8.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db.py\n?? research/results/graph_option_unseen/provenance/source_snapshots/fb533e9ea704c52053ad771fb79fbd07344632a42fbd4140d9934f6e5f83c146.py\n?? research/results/graph_option_unseen/provenance/tracked_working_tree.diff\n?? research/results/graph_value_feature_correction_001/\n?? research/results/graph_value_fresh_train64/\n?? research/results/graph_value_fresh_train64_retry/\n?? research/results/graph_value_route_disjoint_confirmation_train96/\n?? research/results/interruptible_execution_audit.stderr.log\n?? research/results/interruptible_execution_audit.stdout.log\n?? research/results/interruptible_execution_audit/archive_001/diff_check.stderr.log\n?? research/results/interruptible_execution_audit/archive_001/diff_check.stdout.log\n?? research/results/interruptible_execution_audit/archive_001/git_status.txt\n?? research/results/interruptible_execution_audit/archive_001/legacy_compile.stderr.log\n?? research/results/interruptible_execution_audit/archive_001/legacy_compile.stdout.log\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/EXPERIMENT_TABLE.md\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/INTERRUPTIBLE_EXECUTION_AUDIT.md\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/LITERATURE_METHOD_AUDIT_20261007.md\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/REPORT.md\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/RESEARCH_LOG.md\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/RESEARCH_STATUS_CN.md\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/interruptible_execution_audit.stderr.log\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/interruptible_execution_audit.stdout.log\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/interruptible_execution_audit/preflight_failed_001/\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/interruptible_execution_audit/run_001.stderr.log\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/interruptible_execution_audit/run_001.stdout.log\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/interruptible_execution_audit/run_002.stderr.log\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/interruptible_execution_audit/run_002.stdout.log\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/literature_methods_20261007/2304.03047v3.html\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/literature_methods_20261007/2508.09444v1.html\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/literature_methods_20261007/2606.07244v1.html\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/literature_methods_20261007/2606.10577v3.html\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/literature_methods_20261007/2609.03906v1.html\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/results/literature_methods_20261007/2609.26408v1.html\n?? research/results/interruptible_execution_audit/archive_001/snapshot/research/tools/\n?? research/results/interruptible_execution_audit/archive_001/snapshot/vlnce_baselines/\n?? research/results/interruptible_execution_audit/archive_002/git_diff.patch\n?? research/results/interruptible_execution_audit/archive_002/git_status.txt\n?? research/results/interruptible_execution_audit/archive_002/snapshot/research/EXPERIMENT_TABLE.md\n?? research/results/interruptible_execution_audit/archive_002/snapshot/research/INTERRUPTIBLE_EXECUTION_AUDIT.md\n?? research/results/interruptible_execution_audit/archive_002/snapshot/research/LITERATURE_METHOD_AUDIT_20261007.md\n?? research/results/interruptible_execution_audit/archive_002/snapshot/research/REPORT.md\n?? research/results/interruptible_execution_audit/archive_002/snapshot/research/RESEARCH_LOG.md\n?? research/results/interruptible_execution_audit/archive_002/snapshot/research/RESEARCH_STATUS_CN.md\n?? research/results/interruptible_execution_audit/archive_002/snapshot/research/results/interruptible_execution_audit/run_003.stdout.log\n?? research/results/interruptible_execution_audit/archive_002/snapshot/research/tools/\n?? research/results/interruptible_execution_audit/preflight_failed_001/\n?? research/results/literature_methods_20261007/2304.03047v3.html\n?? research/results/literature_methods_20261007/2508.09444v1.html\n?? research/results/literature_methods_20261007/2606.07244v1.html\n?? research/results/literature_methods_20261007/2606.10577v3.html\n?? research/results/literature_methods_20261007/2609.03906v1.html\n?? research/results/literature_methods_20261007/2609.26408v1.html\n?? research/results/native_stop_feasibility/analysis_001/summary.md\n?? research/results/native_stop_feasibility/archive_001/git_diff.patch\n?? research/results/native_stop_feasibility/archive_001/git_status.txt\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/AAA_CODE_AUDIT.md\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/EXPERIMENT_TABLE.md\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/FAILURE_ANALYSIS.md\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/FULL_RETURN_BRANCH_ALIGNMENT_REPORT.md\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/NATIVE_STOP_FEASIBILITY_PROTOCOL.md\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/NATIVE_STOP_FEASIBILITY_REPORT.md\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/REPORT.md\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/RESEARCH_LOG.md\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/RESEARCH_STATUS_CN.md\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/full_return_branch_alignment.stderr.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/full_return_branch_alignment.stdout.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/native_stop_feasibility/plot_001.stderr.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/native_stop_feasibility/plot_001.stdout.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/native_stop_feasibility/primitive_001.stderr.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/native_stop_feasibility/primitive_001.stdout.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/native_stop_feasibility/run_001.stderr.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/native_stop_feasibility/run_001.stdout.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/native_stop_feasibility/tests_001.stderr.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/results/native_stop_feasibility/tests_001.stdout.log\n?? research/results/native_stop_feasibility/archive_001/snapshot/research/tools/\n?? research/results/native_stop_feasibility/figures_001/\n?? research/results/native_stop_feasibility/plot_001.stderr.log\n?? research/results/native_stop_feasibility/plot_001.stdout.log\n?? research/results/native_stop_feasibility/primitive_001.stderr.log\n?? research/results/native_stop_feasibility/primitive_001.stdout.log\n?? research/results/native_stop_feasibility/run_001.stderr.log\n?? research/results/native_stop_feasibility/run_001.stdout.log\n?? research/results/native_stop_feasibility/tests_001.stderr.log\n?? research/results/native_stop_feasibility/tests_001.stdout.log\n?? research/results/option_calibration/action_tests_20261007.stderr\n?? research/results/option_calibration/action_tests_20261007.stdout\n?? research/results/option_calibration/capture_001.stderr\n?? research/results/option_calibration/capture_001.stdout\n?? research/results/option_calibration/capture_001/traces/\n?? research/results/option_calibration/capture_002.stderr\n?? research/results/option_calibration/capture_002.stdout\n?? research/results/option_calibration/capture_002/traces/\n?? research/results/option_calibration/control_001.stderr\n?? research/results/option_calibration/control_001.stdout\n?? research/results/option_calibration/control_002.stderr\n?? research/results/option_calibration/control_002.stdout\n?? research/results/option_calibration/cycle_20261007/pip_freeze.txt\n?? research/results/option_calibration/cycle_20261007/source_snapshots/0345e48f4d124449e9371f51b4e535cf317a80900fb81b18c0d8ee678e400bb9.py\n?? research/results/option_calibration/cycle_20261007/source_snapshots/0f2227866556dd884c98d2ab73bcf5ff2a0d9c5d8eaca4b17f7e165563a8274a.py\n?? research/results/option_calibration/cycle_20261007/source_snapshots/3ed138ebf09e33b608d975d5d8c5a46eb306698d055d25f65340ee2c9998da98.py\n?? research/results/option_calibration/cycle_20261007/source_snapshots/81f31cc2779fb6311a1c929c54edeed20c22adc00e5abd953903ebe9c6e28960.py\n?? research/results/option_calibration/cycle_20261007/source_snapshots/844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec.py\n?? research/results/option_calibration/cycle_20261007/source_snapshots/bf08d30c59f04d9260e35decf18eb151a855ddbe65485ac91843e86bcb580938.py\n?? research/results/option_calibration/cycle_20261007/source_snapshots/c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129.yaml\n?? research/results/option_calibration/cycle_20261007/source_snapshots/c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed.py\n?? research/results/option_calibration/cycle_20261007/source_snapshots/db8bb0ac65a93d5f4db307faed1caa14fc488b579e239b1996502d1746b47da7.py\n?? research/results/option_calibration/cycle_20261007/source_snapshots/f88f412844749cc8754ef231dc4a8f58e11692d67834879870ed474161b2e735.py\n?? research/results/option_calibration/cycle_20261007/tracked_working_tree.diff\n?? research/results/option_calibration/cycle_20261007/working_tree_status.txt\n?? research/results/option_calibration/execution_001.stderr\n?? research/results/option_calibration/execution_001.stdout\n?? research/results/option_calibration/execution_001/options.jsonl\n?? research/results/option_calibration/execution_002.stderr\n?? research/results/option_calibration/execution_002.stdout\n?? research/results/option_calibration/execution_002/options.jsonl\n?? research/results/option_calibration/replay_full001.stderr\n?? research/results/option_calibration/replay_full001.stdout\n?? research/results/option_calibration/replay_full001/comparisons.jsonl\n?? research/results/option_calibration/replay_full002.stderr\n?? research/results/option_calibration/replay_full002.stdout\n?? research/results/option_calibration/replay_full002/comparisons.jsonl\n?? research/results/option_calibration/replay_smoke001.stderr\n?? research/results/option_calibration/replay_smoke001.stdout\n?? research/results/option_calibration/replay_smoke001/comparisons.jsonl\n?? research/results/option_calibration/unit_tests_20261007.stderr\n?? research/results/option_calibration/unit_tests_20261007.stdout\n?? research/results/option_calibration/unseen_balanced66_sampling.stderr\n?? research/results/option_calibration/unseen_balanced66_sampling.stdout\n?? research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz\n?? research/results/ranker_validity/selected_target_geometry_20261007.stderr\n?? research/results/ranker_validity/selected_target_geometry_20261007.stdout\n?? research/results/ranker_validity/validity_001_20261007.stderr\n?? research/results/ranker_validity/validity_001_20261007.stdout\n?? research/results/ranker_validity/validity_001_20261007/frozen_rankers.npz\n?? research/results/ranker_validity/validity_001_rowwise_20261007.stderr\n?? research/results/ranker_validity/validity_001_rowwise_20261007.stdout\n?? research/results/ranker_validity/validity_001_rowwise_20261007/frozen_rankers.npz\n?? research/results/route_compatibility_001/logs/\n?? research/results/route_compatibility_001/provenance/git_diff.patch\n?? research/results/route_compatibility_001/provenance/research/ROUTE_COMPATIBILITY_PROTOCOL.md\n?? research/results/route_compatibility_001/provenance/research/tools/\n?? research/results/route_compatibility_001/source_v1/\n?? research/results/route_compatibility_001/train64_interpretation/largest_fully_rejected.pdf\n?? research/results/route_compatibility_001/train64_interpretation/largest_retained.pdf\n?? research/results/route_compatibility_001/train64_interpretation/less_negative_not_forward.pdf\n?? research/results/route_compatibility_001/train64_v2/options.jsonl\n?? research/results/route_compatibility_001/train64_v2/states.jsonl\n?? research/results/route_compatibility_001/train_pilot8/options.jsonl\n?? research/results/route_compatibility_001/train_pilot8/states.jsonl\n?? research/results/route_compatibility_001/train_pilot8_v2/options.jsonl\n?? research/results/route_compatibility_001/train_pilot8_v2/states.jsonl\n?? research/results/route_compatibility_001/unseen66_interpretation/largest_fully_rejected.pdf\n?? research/results/route_compatibility_001/unseen66_interpretation/largest_retained.pdf\n?? research/results/route_compatibility_001/unseen66_interpretation/less_negative_not_forward.pdf\n?? research/results/route_compatibility_001/unseen66_v2/options.jsonl\n?? research/results/route_compatibility_001/unseen66_v2/states.jsonl\n?? research/results/single_intervention_train7/disabled_001/hook/decisions.jsonl\n?? research/results/single_intervention_train7/disabled_001/traces/\n?? research/results/single_intervention_train7/enabled_001/hook/decisions.jsonl\n?? research/results/single_intervention_train7/enabled_001/traces/\n?? research/results/single_intervention_train7/interpretation_001/largest_ndtw_delta.pdf\n?? research/results/single_intervention_train7/interpretation_001/paired_table.md\n?? research/results/single_intervention_train7/interpretation_001/smallest_ndtw_delta.pdf\n?? research/results/single_intervention_train7/logs/\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/AAA_CODE_AUDIT.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/BASELINE_REPORT.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/EXPERIMENT_TABLE.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/FAILURE_ANALYSIS.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/GRAPH_DECISION_NEXT_GATE.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/GRAPH_OPTION_REPORT.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/OPTION_LABEL_PROTOCOL.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/REPORT.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/RESEARCH_LOG.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/RESEARCH_STATUS_CN.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/ROUTE_COMPATIBILITY_REPORT.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/SINGLE_INTERVENTION_PROTOCOL.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/SINGLE_INTERVENTION_REPORT.md\n?? research/results/single_intervention_train7/provenance/final_sources_001/research/tools/\n?? research/results/single_intervention_train7/provenance/final_sources_001/vlnce_baselines/\n?? research/results/single_intervention_train7/provenance/git_diff.patch\n?? research/results/single_intervention_train7/provenance/git_status.txt\n?? research/results/single_intervention_train7/provenance/research/SINGLE_INTERVENTION_PROTOCOL.md\n?? research/results/single_intervention_train7/provenance/research/tools/\n?? research/results/single_intervention_train7/provenance/vlnce_baselines/\n?? research/results/terminal_recovery_census_001.stderr.log\n?? research/results/terminal_recovery_census_001.stdout.log\n?? research/results/terminal_recovery_census_002.stderr.log\n?? research/results/terminal_recovery_census_002.stdout.log\n?? research/results/terminal_recovery_census_003.stderr.log\n?? research/results/terminal_recovery_census_003.stdout.log\n?? research/results/terminal_recovery_census_valunseen_001.stderr.log\n?? research/results/terminal_recovery_census_valunseen_001.stdout.log\n?? research/tools/analyze_frozen_preference_cycle.py\n?? research/tools/audit_route_disjoint_sample.py\n?? research/tools/freeze_graph_preference_model.py\n?? research/tools/prepare_ranker_intervention_schedule.py\n?? research/tools/prepare_route_disjoint_confirmation.py\n?? research/tools/run_frozen_preference_cycle.py\n?? research/tools/test_route_confirmation.py\n?? results/rxr_baseline_result.json\n?? results/rxr_baseline_sha256.txt\n",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "argv": [
+    "research/tools/run_single_intervention.py",
+    "--schedule",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_ranker_002.json",
+    "--source-capture",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+    "--output-dir",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled",
+    "--exp-name",
+    "aaa_gv_route96_frozen_002_learned_enabled",
+    "--enabled",
+    "--control-gate",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_disabled_audit/summary.json"
+  ],
+  "environment": {
+    "EGL_PLATFORM": null,
+    "CUDA_VISIBLE_DEVICES": null
+  },
+  "control_gate": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_disabled_audit/summary.json",
+  "analysis_only_oracle": true
+}

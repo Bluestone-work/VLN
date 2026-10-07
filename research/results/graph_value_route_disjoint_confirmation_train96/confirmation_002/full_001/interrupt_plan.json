@@ -1,0 +1,38 @@
+{
+  "events": [
+    {
+      "episode_id": "10199",
+      "scene_id": "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb",
+      "high_level_step": 11,
+      "cut_primitive": 26,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 29
+    },
+    {
+      "episode_id": "3398",
+      "scene_id": "data/scene_datasets/mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+      "high_level_step": 0,
+      "cut_primitive": 11,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 18
+    },
+    {
+      "episode_id": "5270",
+      "scene_id": "data/scene_datasets/mp3d/e9zR4mvMWw7/e9zR4mvMWw7.glb",
+      "high_level_step": 2,
+      "cut_primitive": 4,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 8
+    },
+    {
+      "episode_id": "7457",
+      "scene_id": "data/scene_datasets/mp3d/cV4RVeZvu5T/cV4RVeZvu5T.glb",
+      "high_level_step": 2,
+      "cut_primitive": 3,
+      "cut_reason": "collision",
+      "baseline_primitive_count": 8
+    }
+  ],
+  "frozen_before_intervention": true,
+  "rule": "research/GRAPH_VALUE_CONFIRMATION_PROTOCOL.md"
+}

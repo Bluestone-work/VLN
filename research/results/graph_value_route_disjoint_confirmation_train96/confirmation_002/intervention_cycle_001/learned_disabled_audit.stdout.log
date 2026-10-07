@@ -1,0 +1,72 @@
+{
+  "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-TRAIN96-002-LEARNED-20261021",
+  "mode": "disabled",
+  "all_required_gates_passed": true,
+  "source_capture": "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+  "schedule_sha256": "344736af0dc1cc30e6e60295998ae32863981efe22c6d5100d8ddb92369a7c5a",
+  "source_capture_manifest_sha256": "fa1920089be77a726504a6f511b17fd64a665f65718f36e20218c7e2e730ef18",
+  "episodes": 96,
+  "decisions": 720,
+  "unchanged_metric_comparison": {
+    "passed": true,
+    "episodes": 96,
+    "metric_comparisons": 1728,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "aggregate_comparison": {
+    "passed": true,
+    "episodes": 1,
+    "metric_comparisons": 18,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "exact_trace_comparisons": 720,
+  "trace_differences": [],
+  "interventions": 0,
+  "hook_summary": {
+    "hook_completed": true,
+    "enabled": false,
+    "decisions": 720,
+    "prefix_states_verified": 720,
+    "encountered_episodes": [
+      "10046",
+      "10199",
+      "1284",
+      "1288",
+      "1490",
+      "2060",
+      "25",
+      "2615",
+      "2906",
+      "3161",
+      "3257",
+      "3284",
+      "3398",
+      "454",
+      "4907",
+      "5888",
+      "6080",
+      "740",
+      "7511",
+      "8285",
+      "8288",
+      "8405",
+      "85",
+      "8594",
+      "9089",
+      "927",
+      "9656"
+    ],
+    "intervened_episodes": [],
+    "privileged_analysis_only": true,
+    "no_model_trained": true
+  },
+  "intervention_source_hashes": {
+    "vlnce_baselines/adaptive_action/single_intervention.py": "2274f37666a7c531b334115f7cf616cf1150f7a68e42937e020df4477bd285cd",
+    "research/tools/run_single_intervention.py": "41e993beb9c735942218969e4ae311d9c4fab0659f9b33ebb53e873954942e6d"
+  },
+  "privileged_analysis_only": false,
+  "learned_model_evaluated": false,
+  "limits": "Exploratory development follow-up after target census inspection; route-disjoint, scene-overlapping, not checkpoint-training holdout or benchmark."
+}

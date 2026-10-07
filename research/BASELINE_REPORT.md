@@ -207,3 +207,28 @@ records against the earlier offline composition. Released checkpoint hash,
 seed 100, sensors, controller, sliding, STOP, 3 m success distance and horizon 15
 are unchanged. See `CONTINUATION_LABEL_REPORT.md` for intervention outcomes;
 they do not replace this control baseline or the standard validation scores.
+
+
+## 2026-10-07 — route-disjoint execution update
+
+**CONDITIONAL GO for a prospective replication**, not a benchmark improvement.
+The invalid first 96-route sample had 12 historical diagnostic overlaps and is
+retained only as a pilot. The replacement 96-route / 8-scene training sample
+passes the declared-route exclusion audit. Its complete census has 561 native
+full returns at 57 critical states: 4/7 SR rescue opportunities, 3/7 also preserve
+nDTW, 0/4 interrupt rescues, three unresolved routes. Independently audited.
+
+A scorer trained only on the prior fresh 47-state census was actually executed
+with one first-disagreement action per route: 27 changes, 3 rescues, 0 success
+losses across all 96 routes. SR/SPL/nDTW change = **+3.125/+2.302/+0.956 pp**;
+primitive count **−1.677/route**. Three matched random seeds have SR changes
+0/−1.042/0 pp and all worsen mean SPL/nDTW/cost. All disabled/enabled and metric
+reconstruction gates pass. SPL/nDTW/cost confidence intervals vs native still
+cross zero; 13 treated routes lose nDTW. This is scene-overlapping, one-seed,
+exploratory training follow-up after target census inspection, not untouched
+validation. Late critical-state non-rescue missed an earlier step-3 rescue on
+route 3161. Next: unchanged frozen scorer vs a simple cost-aware scorer on a
+new prospectively frozen route sample; no adaptive density, RL, VLM or interrupt
+policy training. Full evidence: `GRAPH_VALUE_ROUTE_EXECUTION_REPORT.md`;
+protocol: `GRAPH_VALUE_ROUTE_INTERVENTION_PROTOCOL.md`; next gate:
+`GRAPH_VALUE_ROUTE_NEXT_GATE.md`.

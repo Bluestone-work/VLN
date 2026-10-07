@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-07T15:12:56.323102+00:00",
+  "git_commit": "9a9a7ae98bf61138da8e12da6fdce00269c3f82b",
+  "hashes": {
+    "research/tools/audit_single_intervention.py": "16d8c8b8deb288ccb6c0f5ee3bb679dc4180982cdf0b35bc79bbcace5452e36f",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_disabled/manifest.json": "8e971c57cb1d515a2c24bf86ac91d7e3378e0f84018aecb8a1770540fb490b56",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001/manifest.json": "fa1920089be77a726504a6f511b17fd64a665f65718f36e20218c7e2e730ef18",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001/summary.json": "22d341b10987bf06871af048ed971cd975fc0b01a293e198c62b1fa87bfed352",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_disabled/traces/worker_seed100.jsonl": "f788c859b85b0ea024a4eb98429b1beea720c24a7270ede22d7a075cc5ffdea8",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001/traces/worker_seed100.jsonl": "f788c859b85b0ea024a4eb98429b1beea720c24a7270ede22d7a075cc5ffdea8",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001/capture_episodes.json": "4d125e10276e44a206a4f79129cc763f577e8aca7fe422ab0ee330b761ed0c60",
+    "data/logs/eval_results/aaa_gv_route96_frozen_002_random_20261021_disabled/stats_ep_ckpt_59_train_r0_w1.json": "4d125e10276e44a206a4f79129cc763f577e8aca7fe422ab0ee330b761ed0c60",
+    "data/logs/eval_results/aaa_gv_route96_frozen_002_random_20261021_disabled/stats_ckpt_59_train.json": "0d26d9ab5dd95ee8268b7e9e995cad75b05ac40e2ca973498c8b05f775e5b240",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_disabled/hook/decisions.jsonl": "8757cf85661cd4b1767da0de28e83dd64433d9c69cfe7c4f396c9ac1d85b8635",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_disabled/hook/summary.json": "137ee6cbfe3394282328b15d6c698f95c2c72e5e41778a105ac2114ebb105611"
+  }
+}

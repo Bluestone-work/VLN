@@ -1,0 +1,13 @@
+{
+  "sample_scope": "Route-disjoint against declared sources only; scene overlap allowed; checkpoint trained on R2R train.",
+  "sampling_001": "Invalid: 12/96 overlap; retained pilot and excluded from sampling_002.",
+  "historical_protocol_reference": "Frozen capture/critical configs refer to strict scene-independent protocol; the implemented population differs and is explicitly superseded by GRAPH_VALUE_ROUTE_INTERVENTION_PROTOCOL.md for this exploratory study.",
+  "target_outcomes_inspected_before_ranker_schedule": true,
+  "ranker_fit_source": "critical_graph_value_fresh/full_002 only; target labels not used in fit or schedule code.",
+  "deprecated_schedule": "schedule_ranker_001.json never executed; generated with earlier script, superseded by audited schedule_ranker_002.json.",
+  "logging_limitation": "Native foundation and intervention cycles have separate durable stdout/stderr. Critical smoke/full001 were launched through terminal without separate full stdout/stderr archives; native running logs, per-case primitive traces, manifests and results remain available. Do not claim complete stderr archival for those two runs.",
+  "probe_scope": "9,740 complete single-option executions, not 9,740 full-episode continuations. Only critical full001 has 561 native action-to-STOP cases.",
+  "legacy_harness_flags": "run_single_intervention and hook still use legacy analysis_only_oracle/privileged flags. Schedules identify non-oracle learned/random action choice; audit summary uses schedule metadata. This is an offline replay harness, not a released online model.",
+  "census_interpretation": "Overlapping rescue opportunities, not disjoint causal failure classes. Critical timing is retrospective; later unrecoverable states do not imply lack of earlier ranking rescue.",
+  "collision_metric": "Native collision normalization can exceed one; it is not a probability. Use primitive collision-event count for causal comparisons."
+}

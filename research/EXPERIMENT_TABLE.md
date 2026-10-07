@@ -55,10 +55,14 @@ released R2R IL checkpoint, two RTX 4090 GPUs, eight environments per process,
 | INTERRUPTIBLE-EXECUTION-AUDIT-001 | released ETPNav code / existing cohorts | read-only execution/observability and literature audit | — | — | — | 13 static source anchors pass; front-node render is overwritten before high-level return; graph transaction required; NO-GO prototype | `research/INTERRUPTIBLE_EXECUTION_AUDIT.md`, `research/results/interruptible_execution_audit/analysis_002/`, `archive_001/` |
 
 
+| Experiment | Population | Change | SR | SPL | nDTW | Result | Artifact |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | CRITICAL-FULL-RETURN-TRAIN64-001 | train64 / all 9 failures / 8 scenes | exhaustive 509 native actions at 46 critical states, full native continuation | — | — | — | 6/9 SR rescues; 4/9 also preserve nDTW; termination rescue 2/9 overlaps; 3 unresolved | `research/CRITICAL_CAUSAL_REPORT.md`, `research/results/critical_causal_train64/analysis_001/` |
 | CRITICAL-INTERRUPT-TRAIN4-001 | four failed training routes | matched sensing + ghost consume/retain interruption at frozen collision cuts | — | — | — | 0/4 rescued in both arms; matched sensing exact; no learned model | `research/results/critical_causal_train64/full_001/interrupt_plan.json` |
 
 
+| Experiment | Population | Change | SR | SPL | nDTW | Result | Artifact |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | CRITICAL-FULL-RETURN-UNSEEN66-001 | val_unseen diagnostic / 22 failures in 10 scenes (parent cohort: 11 scenes) | exhaustive 985 native actions at 71 critical states, full native continuation | — | — | — | 7/22 SR rescues; 6/22 also preserve nDTW; termination 6/22 overlaps; 14 unresolved | `research/CRITICAL_CAUSAL_REPORT.md`, `research/results/critical_causal_unseen/analysis_001/` |
 | CRITICAL-INTERRUPT-UNSEEN4-001 | four unseen diagnostic failures | matched sensing + ghost consume/retain interruption at frozen collision cuts | — | — | — | 0/4 rescued; sensing exact; no labels/training | `research/results/critical_causal_unseen/full_001/interrupt_plan.json` |
 
@@ -98,8 +102,18 @@ NO-GO; see `CONTINUATION_LABEL_REPORT.md`.
 
 * FULL-RETURN values are the unchanged 16-route baseline aggregate, repeated for context; they are not a learned or adaptive-policy score. Alternative aggregates decrease SPL/nDTW and increase primitive cost. Dominance is descriptive, not an exhaustive oracle upper bound.
 
+| Experiment | Population | Change | SR | SPL | nDTW | Result | Artifact |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | CRITICAL-GRAPH-VALUE-FRESH-001 | train / 64 routes / 16 new scenes; 10 failures | exhaustive 996 native actions at 47 critical states; full native continuation | — | — | — | 9/10 graph-choice rescue; 7/10 SR+nDTW rescue across 5 scenes; 6/10 termination overlap; no model trained | `research/GRAPH_VALUE_FEASIBILITY_REPORT.md`, `research/results/critical_graph_value_fresh/analysis_001/summary.json` |
 | GRAPH-VALUE-FEASIBILITY-FRESH-002 | same fresh cohort / six scenes | corrected frozen-feature scene-grouped pairwise feasibility | — | — | — | 5,668 strict pairs; learned 0.9386 vs native logit 0.8520; predictions not executed | `research/results/critical_graph_value_fresh/feasibility_002.json` |
 | GRAPH-VALUE-FEATURE-CORRECTION-001 | same fresh cohort + prior train-new cohort | corrected STOP-probability indexing and back-path cost extraction | — | — | — | rollout results unchanged; unit tests pass; prior JSON retained as superseded audit | `research/tools/test_graph_value_features.py` |
 | GRAPH-VALUE-CONFIRMATION-POOL-AUDIT-001 | local R2R/RxR train pool | pre-sampling scene/route availability audit | — | — | — | 59/61 R2R scenes already excluded; 2 scenes/4 routes remain; no dataset written; independent confirmation NO-GO with current pool | `research/results/graph_value_confirmation_train96/scene_pool_audit_001.json` |
 | GRAPH-VALUE-CROSS-COHORT-TRANSFER-001 | fresh 47-state train cohort -> prior 16-state / 8-scene cohort | corrected schema v2 offline transfer | — | — | — | learned 0.8421 = native logit 0.8421 over 19 strict pairs; no predicted action executed | `research/results/critical_graph_value_fresh/transfer_002.json` |
+
+| Experiment | Population | Change | SR | SPL | nDTW | Result | Artifact |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| GRAPH-VALUE-ROUTE-SAMPLING-001 | 96 train routes | retrospective exclusion audit | — | — | — | INVALID: 12/96 overlap with historical ranker; pilot only | `sampling_001/INVALID_OVERLAP_AUDIT.json` |
+| GRAPH-VALUE-ROUTE-BASELINE-002 | 96 routes / 8 overlapping train scenes | corrected route-disjoint sample, native trace/control | 92.7083 | 86.9455 | 83.7453 | exact 1,728 episode and 18 aggregate comparisons | `GRAPH_VALUE_ROUTE_EXECUTION_REPORT.md` |
+| CRITICAL-GRAPH-VALUE-ROUTE-DISJOINT-002 | all 7 failures / 5 scenes | 57 critical states / 561 native full returns | — | — | — | 4/7 SR rescue, 3/7 SR+nDTW; interrupt 0/4; independent audit passed | `confirmation_002/full_return_analysis_001/summary.json` |
+| GRAPH-VALUE-ROUTE-EXECUTION-002 | all 96 routes, 27 changed | frozen old-cohort linear scorer, one early disagreement | 95.8333 | 89.2480 | 84.7011 | 3 rescues, 0 lost; −1.677 primitives/route; exploratory, not benchmark | `confirmation_002/paired_analysis_001/summary.json` |
+| GRAPH-VALUE-ROUTE-RANDOM-002 | same 27 eligible states, 3 seeds | uniform native-admissible actions including abstention | Δ 0/−1.042/0 pp | Δ −5.223/−6.111/−5.792 pp | Δ −4.115/−4.332/−3.684 pp | all-route controls; +12.792/+12.448/+12.490 primitives/route | `confirmation_002/paired_analysis_001/summary.json` |

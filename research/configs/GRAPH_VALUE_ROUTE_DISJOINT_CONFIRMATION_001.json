@@ -1,0 +1,33 @@
+{
+  "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-CONFIRMATION-001",
+  "status": "invalidated_sampling_bug",
+  "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+  "scenes": 8,
+  "routes_per_scene": 12,
+  "selection_seed": 20261010,
+  "output_dir": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001",
+  "exclude_sources": [
+    "research/results/graph_option_pilot/train8_sampling/manifest.json",
+    "research/results/graph_option_train64/sampling_001/manifest.json",
+    "research/results/continuation_label_train64/sampling_001/manifest.json",
+    "research/results/full_return_label_train16/sampling_001/manifest.json",
+    "research/results/graph_value_fresh_train64/sampling_001/manifest.json"
+  ],
+  "scope": "route-disjoint but scene-overlapping development confirmation; not scene-independent evidence",
+  "controls": [
+    "native_graph_logit",
+    "seeded_random_admissible",
+    "frozen_pairwise_ranker"
+  ],
+  "outcome_blind_sampling": true,
+  "unseen_labels_used": false,
+  "benchmark_evaluation": false,
+  "ranker_in_navigation": false,
+  "gate": {
+    "route_quality_rescue_scenes_min": 2,
+    "preserve_native_stop": true,
+    "primitive_budget_inflation_allowed": false
+  },
+  "invalid_sample_notice": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/INVALID_SAMPLE_NOTICE.md",
+  "audit": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/INVALID_OVERLAP_AUDIT.json"
+}

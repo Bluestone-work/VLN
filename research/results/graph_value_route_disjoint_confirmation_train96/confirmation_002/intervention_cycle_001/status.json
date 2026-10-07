@@ -1,0 +1,371 @@
+{
+  "git_commit": "9a9a7ae98bf61138da8e12da6fdce00269c3f82b",
+  "argv": [
+    "research/tools/run_frozen_preference_cycle.py",
+    "--root",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002",
+    "--output",
+    "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001",
+    "--exp-prefix",
+    "aaa_gv_route96_frozen_002"
+  ],
+  "stages": [
+    {
+      "name": "learned_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_ranker_002.json",
+        "--source-capture",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_disabled",
+        "--exp-name",
+        "aaa_gv_route96_frozen_002_learned_disabled"
+      ],
+      "started_utc": "2026-10-07T15:09:14.572205+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:10:23.900632+00:00"
+    },
+    {
+      "name": "learned_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_disabled",
+        "--source-noninterference",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_disabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:10:23.901049+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:10:28.610961+00:00"
+    },
+    {
+      "name": "learned_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_ranker_002.json",
+        "--source-capture",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled",
+        "--exp-name",
+        "aaa_gv_route96_frozen_002_learned_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_disabled_audit/summary.json"
+      ],
+      "started_utc": "2026-10-07T15:10:28.611395+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:11:36.640706+00:00"
+    },
+    {
+      "name": "learned_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled",
+        "--source-noninterference",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:11:36.641146+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:11:41.861673+00:00"
+    },
+    {
+      "name": "learned_enabled_metrics",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/learned_enabled_metrics"
+      ],
+      "started_utc": "2026-10-07T15:11:41.862138+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:11:45.671359+00:00"
+    },
+    {
+      "name": "random_20261021_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_random_20261021.json",
+        "--source-capture",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_disabled",
+        "--exp-name",
+        "aaa_gv_route96_frozen_002_random_20261021_disabled"
+      ],
+      "started_utc": "2026-10-07T15:11:45.671827+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:12:52.549241+00:00"
+    },
+    {
+      "name": "random_20261021_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_disabled",
+        "--source-noninterference",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_disabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:12:52.549718+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:12:56.880309+00:00"
+    },
+    {
+      "name": "random_20261021_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_random_20261021.json",
+        "--source-capture",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_enabled",
+        "--exp-name",
+        "aaa_gv_route96_frozen_002_random_20261021_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_disabled_audit/summary.json"
+      ],
+      "started_utc": "2026-10-07T15:12:56.880906+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:14:06.061081+00:00"
+    },
+    {
+      "name": "random_20261021_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_enabled",
+        "--source-noninterference",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_enabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:14:06.062055+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:14:11.110725+00:00"
+    },
+    {
+      "name": "random_20261021_enabled_metrics",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_enabled",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261021_enabled_metrics"
+      ],
+      "started_utc": "2026-10-07T15:14:11.111209+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:14:15.682711+00:00"
+    },
+    {
+      "name": "random_20261022_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_random_20261022.json",
+        "--source-capture",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261022_disabled",
+        "--exp-name",
+        "aaa_gv_route96_frozen_002_random_20261022_disabled"
+      ],
+      "started_utc": "2026-10-07T15:14:15.683434+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:15:24.637123+00:00"
+    },
+    {
+      "name": "random_20261022_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261022_disabled",
+        "--source-noninterference",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261022_disabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:15:24.637648+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:15:29.546883+00:00"
+    },
+    {
+      "name": "random_20261022_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_random_20261022.json",
+        "--source-capture",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261022_enabled",
+        "--exp-name",
+        "aaa_gv_route96_frozen_002_random_20261022_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261022_disabled_audit/summary.json"
+      ],
+      "started_utc": "2026-10-07T15:15:29.547412+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:16:38.742842+00:00"
+    },
+    {
+      "name": "random_20261022_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261022_enabled",
+        "--source-noninterference",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261022_enabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:16:38.743380+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:16:45.399933+00:00"
+    },
+    {
+      "name": "random_20261022_enabled_metrics",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261022_enabled",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261022_enabled_metrics"
+      ],
+      "started_utc": "2026-10-07T15:16:45.400452+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:16:50.729177+00:00"
+    },
+    {
+      "name": "random_20261023_disabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_random_20261023.json",
+        "--source-capture",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261023_disabled",
+        "--exp-name",
+        "aaa_gv_route96_frozen_002_random_20261023_disabled"
+      ],
+      "started_utc": "2026-10-07T15:16:50.729769+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:17:58.514968+00:00"
+    },
+    {
+      "name": "random_20261023_disabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261023_disabled",
+        "--source-noninterference",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261023_disabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:17:58.515695+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:18:04.005521+00:00"
+    },
+    {
+      "name": "random_20261023_enabled",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_single_intervention.py",
+        "--schedule",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/schedule_random_20261023.json",
+        "--source-capture",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/capture_001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261023_enabled",
+        "--exp-name",
+        "aaa_gv_route96_frozen_002_random_20261023_enabled",
+        "--enabled",
+        "--control-gate",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261023_disabled_audit/summary.json"
+      ],
+      "started_utc": "2026-10-07T15:18:04.006061+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:19:15.725202+00:00"
+    },
+    {
+      "name": "random_20261023_enabled_audit",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/audit_single_intervention.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261023_enabled",
+        "--source-noninterference",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/noninterference_001",
+        "--source-probe",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/probe_full001",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261023_enabled_audit"
+      ],
+      "started_utc": "2026-10-07T15:19:15.725915+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:19:22.485402+00:00"
+    },
+    {
+      "name": "random_20261023_enabled_metrics",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/verify_intervention_metrics.py",
+        "--run-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261023_enabled",
+        "--output-dir",
+        "research/results/graph_value_route_disjoint_confirmation_train96/confirmation_002/intervention_cycle_001/random_20261023_enabled_metrics"
+      ],
+      "started_utc": "2026-10-07T15:19:22.485955+00:00",
+      "returncode": 0,
+      "finished_utc": "2026-10-07T15:19:27.923822+00:00"
+    }
+  ],
+  "status": "complete"
+}

@@ -1009,3 +1009,43 @@ confirmation and rules out treating the current ranker as deployable.
 **Next:** Do not fit more features or tune thresholds on existing outcomes.
 Obtain new scene data or explicitly downgrade the next study to an
 episode-level overlap analysis with wider uncertainty.
+
+
+## 2026-10-07 / GRAPH-VALUE-ROUTE-EXECUTION-002
+
+Question:
+Does a frozen full-return graph preference yield real navigation gains on routes
+excluded from prior research diagnostics, rather than just offline pair accuracy?
+
+Change:
+Correct route exclusions (invalid pilot 12/96 overlaps preserved), capture 96 new
+routes in eight scenes, census 561 actions at 57 failure-critical states, then
+execute one first-disagreement action from an old-cohort ridge-10 scorer. Three
+random controls use identical eligible states and native-action abstention.
+
+Control:
+Released checkpoint, native STOP, 15 decisions, masks, sensors, sliding/controller,
+seed 100 and all 96 routes are identical. Every disabled hook exactly matches
+native; every enabled branch/prefix and all final metric reconstructions pass.
+Training uses only prior 47-state/996-action/5,668-pair fresh census, not target labels.
+
+Result:
+Census: 4/7 graph SR opportunities, 3/7 SR+nDTW, 0/4 interrupt rescues.
+Learned: 3 rescued/0 lost, SR +3.125 pp, SPL +2.302 pp, nDTW +0.956 pp,
+primitive count −1.677/route. Random seeds 20261021/22/23: SR 0/−1.042/0 pp,
+SPL −5.223/−6.111/−5.792 pp, nDTW −4.115/−4.332/−3.684 pp.
+Scene bootstrap learned-native SR CI +1.042 to +6.250 pp; SPL/nDTW/cost CIs cross zero.
+
+Interpretation:
+CONDITIONAL GO for prospective replication. Point gates pass; stable multi-seed
+or benchmark gains are not established. Target census was inspected before this
+schedule was written, so this is exploratory. Primitive savings and gains may
+be explained by execution-distance preference. State features cancel in this
+linear scorer. Route 3161 rescued at step 3 despite no late census rescue.
+Incomplete critical smoke/full stdout/stderr archival is explicitly documented;
+foundation/intervention logs and every case result/trace are retained.
+
+Next:
+Prospectively freeze a fresh route-disjoint sample and compare the unchanged
+full scorer with a graph-logit/rank plus distance-only preference fit on the old
+training cohort. No target tuning, RL/VLM, density selector or interrupt model.

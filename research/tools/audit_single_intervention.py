@@ -227,8 +227,9 @@ def main():
               'hook_summary': hook_summary, 'paired_groups': groups,
               'intervention_source_hashes': {name: manifest['hashes'][name] for name in
                   ['vlnce_baselines/adaptive_action/single_intervention.py', 'research/tools/run_single_intervention.py']},
-              'privileged_analysis_only': True, 'learned_model_evaluated': False,
-              'limits': '{} training routes selected for local gains, one simulator seed. Paired descriptive continuation outcomes; not an unbiased benchmark or deployable method.'.format(len(selected))}
+              'privileged_analysis_only': schedule.get('analysis_only_oracle', True),
+              'learned_model_evaluated': bool(manifest['enabled'] and schedule.get('learned_model_evaluated', False)),
+              'limits': schedule.get('limits', '{} training routes selected for local gains, one simulator seed. Paired descriptive continuation outcomes; not an unbiased benchmark or deployable method.'.format(len(selected)))}
     for name, payload in [('summary.json', result), ('paired_episodes.json', rows), ('event_checks.json', event_checks)]:
         (args.output_dir / name).write_text(json.dumps(payload, indent=2) + '\n')
     provenance = {'created_utc': datetime.now(timezone.utc).isoformat(),

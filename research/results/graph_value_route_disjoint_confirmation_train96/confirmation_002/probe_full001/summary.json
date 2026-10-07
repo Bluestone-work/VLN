@@ -1,0 +1,21 @@
+{
+  "experiment_id": "GRAPH-VALUE-ROUTE-DISJOINT-TRAIN96-002",
+  "episodes": 96,
+  "scenes": 8,
+  "decisions": 720,
+  "forward_branches": 7829,
+  "reversed_decisions": 192,
+  "reversed_branches": 1911,
+  "selected_sentinels_passed": 720,
+  "order_checks_passed": 1911,
+  "max_sentinel_endpoint_error_m": 0.0,
+  "max_order_endpoint_error_m": 0.0,
+  "sentinel_sensor_matches": 720,
+  "order_sensor_matches": 1911,
+  "all_required_gates_passed": true,
+  "baseline_noninterference_passed": true,
+  "all_admissible_options_complete": true,
+  "masked_budget_options_skipped": 94,
+  "limits": "96 routes in 8 scenes selected by metadata only; all registered diagnostic and validation route sources excluded; scene overlap remains allowed; one simulator seed; no benchmark claim.",
+  "privileged_analysis_only": true
+}

@@ -1,0 +1,144 @@
+{
+  "manifest": "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/manifest.json",
+  "manifest_sha256": "1e569e8b395c1c5e0cb8c4a0c4c173efe95a8a6a6cd447ddbb94c02f1142662d",
+  "selected_routes": 96,
+  "sources": [
+    {
+      "source": "research/results/graph_option_pilot/train8_sampling/manifest.json",
+      "records": 8,
+      "routes": 8,
+      "overlap_routes": 0,
+      "unresolved_records": 0,
+      "sha256": "4558c98cbb2628a4dfdc310d61d7ee95869fcfedd8e93acba3df7941564bf780"
+    },
+    {
+      "source": "research/results/graph_option_train64/sampling_001/manifest.json",
+      "records": 64,
+      "routes": 64,
+      "overlap_routes": 0,
+      "unresolved_records": 0,
+      "sha256": "add89444e76a5aff6e8535416b6995b1c300f56c437112aa147759258d5bacf2"
+    },
+    {
+      "source": "research/results/continuation_label_train64/sampling_001/manifest.json",
+      "records": 64,
+      "routes": 64,
+      "overlap_routes": 0,
+      "unresolved_records": 0,
+      "sha256": "d6380b5d04f12d4f5a0ba207e593254a64719ad16533f17ac6cabfbf2eb187d4"
+    },
+    {
+      "source": "research/results/full_return_label_train16/sampling_001/manifest.json",
+      "records": 16,
+      "routes": 16,
+      "overlap_routes": 0,
+      "unresolved_records": 0,
+      "sha256": "a6326b56df738feb18bbf4b0058d27583e867198a1a893a0a503e7590880b2d2"
+    },
+    {
+      "source": "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+      "records": 64,
+      "routes": 64,
+      "overlap_routes": 0,
+      "unresolved_records": 0,
+      "sha256": "c04f69c57626a187c2401b1b5b8cb6ba5c6720d8a3de0555082520d56bda2dd2"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+      "records": 489,
+      "routes": 41,
+      "overlap_routes": 0,
+      "unresolved_records": 0,
+      "sha256": "20017ce953b9defd543ef20f28e3888818ec0a0d7af39ce22bb29eeeb586f86b"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+      "records": 489,
+      "routes": 41,
+      "overlap_routes": 0,
+      "unresolved_records": 0,
+      "sha256": "20017ce953b9defd543ef20f28e3888818ec0a0d7af39ce22bb29eeeb586f86b"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+      "records": 2928,
+      "routes": 118,
+      "overlap_routes": 0,
+      "unresolved_records": 0,
+      "sha256": "532d8b461d5166d248a9363c9e1c4b9a14b83fe959de97c05e922004d5c1892c"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "records": 7813,
+      "routes": 328,
+      "overlap_routes": 12,
+      "unresolved_records": 0,
+      "sha256": "6000a51c1cb264e4e4658c8b869129e32f7bf47158db4724ba3ac9d38e129513"
+    }
+  ],
+  "overlaps": [
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "2460"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "2636"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "3051"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "314"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "3629"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "533"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "5539"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "6064"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "6717"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "6883"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "825"
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "scene_id": "mp3d/gTV8FGcVJC9/gTV8FGcVJC9.glb",
+      "trajectory_id": "924"
+    }
+  ],
+  "overlap_route_count": 12,
+  "valid_for_confirmation": false,
+  "interpretation": "A nonzero overlap invalidates confirmation; retain this sample only as pipeline debugging."
+}

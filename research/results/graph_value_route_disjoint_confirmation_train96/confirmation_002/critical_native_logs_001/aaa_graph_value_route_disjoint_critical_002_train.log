@@ -1,0 +1,24 @@
+2026-10-07 22:19:28,221 checkpoint_path: data/logs/checkpoints/release_r2r/ckpt.iter12000.pth
+2026-10-07 22:19:28,221 Initializing dataset VLN-CE-v1
+2026-10-07 22:19:28,242 SPLTI: train, NUMBER OF SCENES: 5
+2026-10-07 22:19:38,712 Agent parameters: 299.54 MB. Trainable: 140.79 MB.
+2026-10-07 22:19:38,713 Finished setting up policy.
+2026-10-07 22:27:31,121 Episodes evaluated: 1
+2026-10-07 22:27:31,121 Average episode steps_taken: 213.000000
+2026-10-07 22:27:31,121 Average episode distance_to_goal: 10.315319
+2026-10-07 22:27:31,121 Average episode success: 0.000000
+2026-10-07 22:27:31,122 Average episode oracle_success: 0.000000
+2026-10-07 22:27:31,122 Average episode path_length: 25.501226
+2026-10-07 22:27:31,122 Average episode collisions: 0.029412
+2026-10-07 22:27:31,122 Average episode spl: 0.000000
+2026-10-07 22:27:31,122 Average episode ndtw: 0.123435
+2026-10-07 22:27:31,122 Average episode sdtw: 0.000000
+2026-10-07 22:27:31,122 Average episode ghost_cnt: 28.000000
+2026-10-07 22:27:31,122 Average episode high_level_steps: 15.000000
+2026-10-07 22:27:31,122 Average episode policy_stop_count: 1.000000
+2026-10-07 22:27:31,123 Average episode forced_stop_count: 0.000000
+2026-10-07 22:27:31,123 Average episode forced_stop_max_len_count: 0.000000
+2026-10-07 22:27:31,123 Average episode forced_stop_no_vp_count: 0.000000
+2026-10-07 22:27:31,123 Average episode policy_stop_rate: 0.066667
+2026-10-07 22:27:31,123 Average episode forced_stop_rate: 0.000000
+2026-10-07 22:27:31,123 Average episode actual_stop_rate: 0.066667
