@@ -57,7 +57,7 @@ def find_interrupts(controls,states,max_routes):
 
 def drive_cases(trainer,native_rollout):
     manifest=trainer.manifest;plan=manifest['plan'];cfg=plan['config'];root=Path(cfg['source_root']);out=Path(manifest['output']);gates=manifest['source']['config']['gates']
-    fail=set(plan['failed_episodes'])
+    fail=set(plan.get('replay_episodes', plan.get('failed_episodes', [])))
     baseline={};traces={};branches={}
     for line in (root/'capture_001/graph_options/graph_options.jsonl').open():
         r=json.loads(line);ep=str(r['episode_id'])
@@ -68,9 +68,10 @@ def drive_cases(trainer,native_rollout):
         r=json.loads(line);ep=str(r['episode_id'])
         if ep in fail:traces.setdefault(ep,[]).append(r)
     required={(c['episode_id'],c['high_level_step'],c['action_index']) for c in plan['cases']}
-    for line in (root/cfg['probe']/'branch_traces.jsonl').open():
-        r=json.loads(line);ep=str(r['decision_key'][1]);k=(ep,r['decision_key'][2],r['index'])
-        if r['order']=='forward' and k in required:branches[k]=r['trace']
+    if required:
+        for line in (root/cfg['probe']/'branch_traces.jsonl').open():
+            r=json.loads(line);ep=str(r['decision_key'][1]);k=(ep,r['decision_key'][2],r['index'])
+            if r['order']=='forward' and k in required:branches[k]=r['trace']
     if set(branches)!=required:raise ValueError('Missing isolated branch evidence')
     baseline_metrics=json.loads((root/cfg['noninterference']/'capture_episodes.json').read_text())
     controls={};results=[];started=time.monotonic()
@@ -122,14 +123,32 @@ def drive_cases(trainer,native_rollout):
         return rows
     try:
         for ep in sorted(fail):controls[ep]=execute({'case_id':'control_'+ep,'episode_id':ep,'mode':'control'})
-        events=find_interrupts(controls,plan['states'],cfg['max_interrupt_routes'])
+        if 'interrupt_events' in plan:
+            # Frozen timing-oracle schedules may include successful native routes.
+            # Validate every cut against the newly reproduced native controls.
+            events=plan['interrupt_events'];seen=set()
+            for event in events:
+                ep=event['episode_id'];step=event['high_level_step'];cut=event['cut_primitive']
+                rec=controls[ep][step];key=(ep,step,cut)
+                if key in seen or rec['action']['act']!=4 or not 0<cut<len(rec['primitives']):
+                    raise ValueError('Invalid or duplicate scheduled interrupt: '+str(key))
+                if rec['phases'][cut-1]!='ghost' or len(rec['primitives'])!=event['baseline_primitive_count']:
+                    raise ValueError('Scheduled ghost phase/count mismatch: '+str(key))
+                seen.add(key)
+            if manifest['smoke']:
+                smoke_keys={tuple(k) for k in plan['smoke_event_keys']}
+                events=[e for e in events if (e['episode_id'],e['high_level_step'],e['cut_primitive']) in smoke_keys]
+                if len(events)!=len(smoke_keys):raise ValueError('Missing scheduled smoke event')
+        else:
+            events=find_interrupts(controls,plan['states'],cfg['max_interrupt_routes'])
         (out/'interrupt_plan.json').write_text(json.dumps({'events':events,'frozen_before_intervention':True,'rule':cfg['protocol']},indent=2)+'\n')
         # Pilot interrupt controls run after all baseline controls, while the same
         # checkpoint remains loaded; full-return census follows unchanged plan.
         for event in events:
             sensing=None
             for mode in ['sense_only','interrupt_consume','interrupt_retain']:
-                case=dict(event,mode=mode,case_id='{}_{}_s{}'.format(mode,event['episode_id'],event['high_level_step']))
+                suffix='_p{}'.format(event['cut_primitive']) if 'interrupt_events' in plan else ''
+                case=dict(event,mode=mode,case_id='{}_{}_s{}{}'.format(mode,event['episode_id'],event['high_level_step'],suffix))
                 execute(case)
                 hashes=results[-1]['cut_sensor_hashes']
                 if mode=='sense_only':sensing=hashes

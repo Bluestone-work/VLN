@@ -1,0 +1,14 @@
+{
+  "experiment_id": "INTERRUPT-TIMING-ORACLE-001",
+  "source_root": "research/results/graph_value_fresh_train64_retry",
+  "failure_subset_dataset": "research/results/interrupt_timing_oracle_001/replay_routes_19.json.gz",
+  "probe": "probe_full001",
+  "noninterference": "noninterference_001",
+  "protocol": "research/INTERRUPT_TIMING_ORACLE_PROTOCOL.md",
+  "seed": 100,
+  "max_interrupt_routes": 19,
+  "training": false,
+  "oracle_analysis_only": true,
+  "max_high_level_decisions": 15,
+  "success_distance_m": 3.0
+}
