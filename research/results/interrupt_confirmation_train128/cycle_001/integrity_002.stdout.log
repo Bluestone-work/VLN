@@ -1,0 +1,19 @@
+{
+  "experiment_id": "INTERRUPT-CONFIRMATION-CAPTURE-001",
+  "integrity_gate_passed": true,
+  "branches": 15502,
+  "forward_branches": 12464,
+  "reverse_branches": 3038,
+  "max_start_position_error_m": 0.0,
+  "max_start_rotation_error_rad": 4.2146848510894035e-08,
+  "max_start_goal_distance_error_m": 0.0,
+  "all_action_dictionaries_exact": true,
+  "all_start_rng_exact": true,
+  "all_admissibility_and_coverage_checks_passed": true,
+  "stop_branches": 1285,
+  "branches_with_back_path": 10478,
+  "primitive_events_including_repeats": 527538,
+  "collision_events_including_repeats": 12284,
+  "raw_trace_sha256": "f510f303b8a40321d33bfeffa33c3c9b3af415b9512d74b1526f526642d9f8a4",
+  "audit_source_sha256": "36fedcf5fb7752c865bcaa83dd7c5e4434a675e1dc34045439fb9cb162d2fc30"
+}

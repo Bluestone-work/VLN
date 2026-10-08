@@ -1,0 +1,21 @@
+{
+  "experiment_id": "INTERRUPT-CONFIRMATION-CAPTURE-001",
+  "episodes": 128,
+  "scenes": 8,
+  "decisions": 1029,
+  "forward_branches": 12464,
+  "reversed_decisions": 256,
+  "reversed_branches": 3038,
+  "selected_sentinels_passed": 1029,
+  "order_checks_passed": 3038,
+  "max_sentinel_endpoint_error_m": 0.0,
+  "max_order_endpoint_error_m": 0.0,
+  "sentinel_sensor_matches": 1029,
+  "order_sensor_matches": 3038,
+  "all_required_gates_passed": true,
+  "baseline_noninterference_passed": true,
+  "all_admissible_options_complete": true,
+  "masked_budget_options_skipped": 160,
+  "limits": "Confirmation capture; no outcome-based intervention labels.",
+  "privileged_analysis_only": true
+}

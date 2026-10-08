@@ -1,0 +1,75 @@
+{
+  "experiment_id": "INTERRUPT-CONFIRMATION-CAPTURE-001",
+  "baseline_noninterference_gate_passed": true,
+  "episode_comparison": {
+    "passed": true,
+    "episodes": 128,
+    "metric_comparisons": 2304,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "aggregate_comparison": {
+    "passed": true,
+    "episodes": 1,
+    "metric_comparisons": 18,
+    "max_absolute_delta": 0.0,
+    "issues": []
+  },
+  "sources": {
+    "capture_episodes": {
+      "path": "data/logs/eval_results/aaa_interrupt_confirmation_001_capture/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "8fa0ce9079e3a7b74c58e783fa1dcc4b5320e571985f2d1fea8730e3ce3d0b54"
+    },
+    "capture_aggregate": {
+      "path": "data/logs/eval_results/aaa_interrupt_confirmation_001_capture/stats_ckpt_59_train.json",
+      "sha256": "8186f5578ed6425de6371de0bc8068db2df198f599cc4aca4c0777052dce28ea"
+    },
+    "control_episodes": {
+      "path": "data/logs/eval_results/aaa_interrupt_confirmation_001_control/stats_ep_ckpt_59_train_r0_w1.json",
+      "sha256": "8fa0ce9079e3a7b74c58e783fa1dcc4b5320e571985f2d1fea8730e3ce3d0b54"
+    },
+    "control_aggregate": {
+      "path": "data/logs/eval_results/aaa_interrupt_confirmation_001_control/stats_ckpt_59_train.json",
+      "sha256": "8186f5578ed6425de6371de0bc8068db2df198f599cc4aca4c0777052dce28ea"
+    }
+  },
+  "config": {
+    "experiment_id": "INTERRUPT-CONFIRMATION-CAPTURE-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 128,
+    "seed": 100,
+    "dataset_path": "research/results/interrupt_confirmation_train128/sampling_001/train_interrupt_confirmation128_bertidx.json.gz",
+    "sampling_manifest": "research/results/interrupt_confirmation_train128/sampling_001/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "protocol": "research/INTERRUPT_CONFIRMATION_PROTOCOL.md",
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+    "purpose": "Native capture and exact controls before freezing event/uniform timing schedules."
+  },
+  "git_commit": "5519fcd0b5327c3695e0c88fad46bc4fa2e241f9",
+  "metrics": {
+    "steps_taken": 64.1953125,
+    "distance_to_goal": 1.716285788177629,
+    "success": 0.875,
+    "oracle_success": 0.9140625,
+    "path_length": 10.463693011552095,
+    "collisions": 0.06467085582928639,
+    "spl": 0.8142487079081078,
+    "ndtw": 0.8161156051221168,
+    "sdtw": 0.7573564862084604,
+    "ghost_cnt": 24.3125,
+    "high_level_steps": 8.0390625,
+    "policy_stop_count": 0.953125,
+    "forced_stop_count": 0.046875,
+    "forced_stop_max_len_count": 0.046875,
+    "forced_stop_no_vp_count": 0.0,
+    "policy_stop_rate": 0.13617337523587517,
+    "forced_stop_rate": 0.0031249999999999997,
+    "actual_stop_rate": 0.13929837523587515
+  },
+  "limits": "Metric equality tests tracing only; does not establish alternative-action validity or runtime neutrality."
+}
