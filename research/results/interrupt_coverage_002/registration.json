@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-08T04:54:51.665351+00:00",
+  "git_commit": "21403dd35f6734c95b67dd78fc149f17137ba45d",
+  "python": "3.14.6",
+  "hardware": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+  "config": {
+    "experiment_id": "INTERRUPT-COVERAGE-001",
+    "protocol": "research/INTERRUPT_COVERAGE_PROTOCOL.md",
+    "output": "research/results/interrupt_coverage_002",
+    "seed": 100,
+    "analysis": "deterministic retrospective enumeration; no rollout or training",
+    "cohorts": [
+      {
+        "name": "train64",
+        "source": "research/results/graph_option_train64",
+        "census": "research/results/critical_causal_train64",
+        "run": "full_001"
+      },
+      {
+        "name": "fresh64",
+        "source": "research/results/graph_value_fresh_train64_retry",
+        "census": "research/results/critical_graph_value_fresh",
+        "run": "full_002"
+      }
+    ],
+    "operational_amendment": "Retry after excluding STOP from move-phase length check; all original eligibility and analysis rules unchanged."
+  },
+  "hashes": {
+    "/home/wj/VLN-CE/ETPNav/research/tools/audit_interrupt_coverage.py": "bc4701d5a8537db003de5152654f9d009e8dd70d8d06cb7171401746fcc62908",
+    "research/INTERRUPT_COVERAGE_PROTOCOL.md": "5bacc5bb7028abd1ab9a025859f9cdb0d1b5f1fc052eb1ea6ba0191028e4c45d",
+    "research/results/critical_causal_train64/full_001/cases/control_3208/trace.jsonl": "ca9bfd29f56830ef259ccb44ef89d12411f536e86b358b64d6326218dea46e5b",
+    "research/results/critical_causal_train64/full_001/cases/control_6068/trace.jsonl": "71b0a15ab2c965e4e9e5676b44771d5bfd97c35dc66b24cfc360652c765534ac",
+    "research/results/critical_causal_train64/full_001/cases/control_6962/trace.jsonl": "39548736626c6e1e75319565ee13ec1e71b558654c57c5ab0323d278f7fe0b18",
+    "research/results/critical_causal_train64/full_001/cases/control_7221/trace.jsonl": "bfbdf5056c62144dad0e6f1f1cdd60778351fd841dcd40b3662a62240747c127",
+    "research/results/critical_causal_train64/full_001/cases/control_8219/trace.jsonl": "b300b1be268fbacc9cdc7a01f3eaa4b93650bc35c56dfed6c53debc83aa074ab",
+    "research/results/critical_causal_train64/full_001/cases/control_8343/trace.jsonl": "e5f097662b0d601af5b5d03aa9509ba7548274cc05d91d5cbb2361d52b8d0c41",
+    "research/results/critical_causal_train64/full_001/cases/control_875/trace.jsonl": "7ce23bded2aae1df1e6abcbd703dde6f0ccf6d3148e5a81b74555c98b515b863",
+    "research/results/critical_causal_train64/full_001/cases/control_9045/trace.jsonl": "504d55e74bf62565afb50b376fb677dca4faef4bc5a03b6b2902da6b3bf18a37",
+    "research/results/critical_causal_train64/full_001/cases/control_9747/trace.jsonl": "4ba8ab2115a8afb7eb7652f0c7aa57e36d636d600a0493bb5696e4cbd1669ae5",
+    "research/results/critical_causal_train64/full_001/interrupt_plan.json": "83e1b5e78cdca1feba459db805d80bbcf54b05cdbde324a9a844fbdd6eda0373",
+    "research/results/critical_causal_train64/independent_audit_001/summary.json": "cea188295cc9d299c2c3414084762c0cc048a66182da0313fb28330b8c825ff1",
+    "research/results/critical_causal_train64/plan_001.json": "dbc80e51cc35e59cd9cdee9c257e4ebcee58f8f8b37fc1b10bcbb5ad04cf6387",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_10506/trace.jsonl": "80b38f1d84eaba64f8e2911d2f4a5c578446d18191a22144f250c4c369273636",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_10754/trace.jsonl": "0e0dab1aa2857b8eef0e9e1b9226f8eaaeb736d9bde332c4c44065434eaf1acc",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_3865/trace.jsonl": "8c8abedd9d4681ab4280faf544eefbd68afe90a935389ce0abd4467ecd12644c",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_4702/trace.jsonl": "a8709899308a6c1f38e6a2f10299c4b93348233120e0fb10eecd47c1a0d68c90",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_5247/trace.jsonl": "33191acfd6ff74b6f944197f4132010593604bdc5d0bbcd942712e7cef2f31cc",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_5475/trace.jsonl": "f5d21fc6a5ab07d993f962dfe4ef0dfba66e5e84890a826081649fe00d99acc1",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_5648/trace.jsonl": "d0465701ac02e8143c056462df0533eff93edf964a6d7f368555329c6358a04e",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_7362/trace.jsonl": "cc2f87b5333b385b0ab00e0b9a62abef145fed1298801f4153938d69ef1f26bf",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_8008/trace.jsonl": "fd786d785e7620e80659a3965705c5abecd1695e3d9d77f8105320768b5e979b",
+    "research/results/critical_graph_value_fresh/full_002/cases/control_9916/trace.jsonl": "24c69843127517a5769be35d0528f30704e2b351f1cbf7571a67b95aeef514c2",
+    "research/results/critical_graph_value_fresh/full_002/interrupt_plan.json": "74a5eca22ee28caceb3be5956aeacba2d594599970b5ad3306c11f29d74655f1",
+    "research/results/critical_graph_value_fresh/independent_audit_001/summary.json": "8407290d3440449f75e776bd1f9178533d119364ebe8644e6b612dad3454f2b3",
+    "research/results/critical_graph_value_fresh/plan_001.json": "78e12f23274993e360102e34e241a93be55049a9eeb826c605b29fc749d9f9db",
+    "research/results/graph_option_train64/capture_001/manifest.json": "83410401b55b71114941f43f2ff6aaf008f1a9598e43b70b7f7999cfb3169a76",
+    "research/results/graph_option_train64/capture_001/traces/worker_seed100.jsonl": "4dcc4cf8c7499ec19cc1b2aab272a64433105862ab86b18c6bbce85bcde4cf12",
+    "research/results/graph_option_train64/noninterference_001/capture_episodes.json": "b11921013fa49e907041fa9cec1cac3f5fe6037cf5d80f5c47690e4b261b9e98",
+    "research/results/graph_option_train64/noninterference_001/summary.json": "e1350a3d6106f9044afe6b1ba5a92cc598240102bcb76d7ed80d2e452e9d9e3e",
+    "research/results/graph_value_fresh_train64_retry/capture_001/manifest.json": "15981d030b7ad758ce7e291040909ba16a1444c6c16e63efa682865f509aa389",
+    "research/results/graph_value_fresh_train64_retry/capture_001/traces/worker_seed100.jsonl": "170f3e9bd5923adbb9f9d5ca4ede5fa07e294e30bd01bfec0bcafa46efcbbf78",
+    "research/results/graph_value_fresh_train64_retry/noninterference_001/capture_episodes.json": "94c887a32baddd4ca7860f1d44197ac8ec57f34a610723f06b17946858181c98",
+    "research/results/graph_value_fresh_train64_retry/noninterference_001/summary.json": "ec0466cf2300c954932e84f1ab72e30b588c0474c42bf4bb2ef5d41cb9371182",
+    "research/tools/critical_case_driver.py": "df36c22723e0bf7aeb86527750ecf088d14915759b4f84b9388b15e2c45cdd8e",
+    "research/tools/test_interrupt_coverage.py": "d6ce855cff10d290fde85819ce956c3dceb64b5baeace2697298c25f82c7b8cd",
+    "vlnce_baselines/adaptive_action/critical_census.py": "caadaa3c18734f0c4e1d43e38edc055ec9ab7a0ef9b215eb68b3cf8286a5fb2f",
+    "vlnce_baselines/common/environments.py": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed",
+    "research/configs/INTERRUPT_COVERAGE_002.json": "6694f34372d1deaf7de36b8a8a02d433d518cf10aa447c706b0fe4b45a596750"
+  }
+}

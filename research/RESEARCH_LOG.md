@@ -1216,3 +1216,28 @@ Close this recipe as an unsupported method candidate. Before any new training,
 require an independently justified mechanism and a native-relative full-return
 evaluation with abstention and successful-route controls. Do not launch new
 labels, losses, RL/VLM, interrupt or proposal training on this audit alone.
+
+## 2026-10-08 / INTERRUPT-COVERAGE-001
+
+Question: Did the first-event/four-route interrupt pilot cover the available
+collision timing opportunities, and do successful native routes face the same exposure?
+
+Change: Deterministic enumeration of all eligible interior ghost cuts on old
+train64 and fresh64 captures. No rollout, model or returned-action labels added.
+
+Control: Original threshold and first-event eligibility rules, seed100, training
+cohorts, native checkpoint/physics and source metrics. Prospective/validation
+outcomes excluded; successful nonempty-back-path phases marked unknown.
+
+Result: Failed routes: 156 cuts / 56 options / 11 eligible routes, of which only
+8 cuts/options/routes historically tested. Successful routes: at least 128 cuts /
+43 options / 27 routes; three move phases unknown. 217 native-control checks,
+188 empty-path phase checks, 7 tests and independent 878-option/284-cut/two-plan
+verification pass. Attempt001 STOP-phase assertion failure retained; attempt002
+corrects only that assertion, not eligibility or population.
+
+Interpretation: Timing opportunity was undersampled; symptom alone does not justify
+interrupting successful routes. No causal benefit inferred and no model gate passed.
+
+Next: Bounded fresh-cohort timing oracle over all 175 known cuts, with matched
+sensing, both pending-ghost semantics and 19 native route controls.

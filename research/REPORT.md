@@ -1,5 +1,19 @@
 # Adaptive Action Abstraction in VLN-CE
 
+## 2026-10-08 — 中断实验覆盖审计（已完成）
+
+两批旧训练集的失败路线有 156 个合格碰撞中断点、56 个动作；历史 pilot
+只覆盖 8 个点、8 个动作和 11 条合格失败路线中的 8 条。Fresh cohort
+另有 5247、5648、7362 三条路线因四路线限额未测，不能由旧 pilot 否定其他时机。
+同时至少 27/109 条原本成功路线也有合格事件，必须纳入干预风险对照。
+成功路线有 3 个回溯动作缺少阶段标签，保留未知，不当成阴性。
+
+217 个原生控制动作一致；7 项测试、878 个可判定动作、284 个切点及两个历史
+计划复核通过。本轮仅离线统计，未新增 rollout 或训练，也未读取复验结果。
+**CONDITIONAL GO 仅限一个有成功路线对照的碰撞时机 oracle；中断策略训练仍 NO-GO。**
+下一受控问题是 fresh cohort 全部 175 个已知合格切点的完整返回，不能据覆盖量
+直接宣称有收益。详见 `INTERRUPT_COVERAGE_REPORT.md`。
+
 ## 2026-10-08 — training-support audit completed: metric mismatch
 
 **NO-GO remains for the frozen strict-pair linear scorer plus first-disagreement

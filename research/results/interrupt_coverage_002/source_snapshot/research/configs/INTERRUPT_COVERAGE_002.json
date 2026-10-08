@@ -1,0 +1,22 @@
+{
+  "experiment_id": "INTERRUPT-COVERAGE-001",
+  "protocol": "research/INTERRUPT_COVERAGE_PROTOCOL.md",
+  "output": "research/results/interrupt_coverage_002",
+  "seed": 100,
+  "analysis": "deterministic retrospective enumeration; no rollout or training",
+  "cohorts": [
+    {
+      "name": "train64",
+      "source": "research/results/graph_option_train64",
+      "census": "research/results/critical_causal_train64",
+      "run": "full_001"
+    },
+    {
+      "name": "fresh64",
+      "source": "research/results/graph_value_fresh_train64_retry",
+      "census": "research/results/critical_graph_value_fresh",
+      "run": "full_002"
+    }
+  ],
+  "operational_amendment": "Retry after excluding STOP from move-phase length check; all original eligibility and analysis rules unchanged."
+}

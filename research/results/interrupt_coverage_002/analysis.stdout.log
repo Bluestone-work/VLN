@@ -1,0 +1,127 @@
+{
+  "experiment_id": "INTERRUPT-COVERAGE-001",
+  "status": "complete",
+  "cohorts": [
+    {
+      "cohort": "train64",
+      "native_control_options_exact": 94,
+      "empty_path_phase_checks": 79,
+      "historical_plan_exact": true,
+      "historically_tested_cuts": 4,
+      "strata": {
+        "failure": {
+          "routes": 9,
+          "scenes": 8,
+          "routes_with_symptoms": 4,
+          "move_options": 85,
+          "symptom_options": 30,
+          "symptom_type_counts": {
+            "collision": 30,
+            "deviation": 25,
+            "stall": 23
+          },
+          "phase_unknown_options": 0,
+          "known_eligible_cuts": 69,
+          "known_eligible_options": 28,
+          "known_eligible_routes": 4,
+          "known_eligible_scenes": 4,
+          "cut_reasons_overlapping": {
+            "collision": 69,
+            "stall": 15
+          },
+          "empty_back_path_options": 79,
+          "empty_back_path_eligible_options": 26,
+          "empty_back_path_eligible_routes": 3
+        },
+        "success": {
+          "routes": 55,
+          "scenes": 16,
+          "routes_with_symptoms": 17,
+          "move_options": 325,
+          "symptom_options": 18,
+          "symptom_type_counts": {
+            "collision": 18,
+            "deviation": 6,
+            "stall": 0
+          },
+          "phase_unknown_options": 1,
+          "known_eligible_cuts": 40,
+          "known_eligible_options": 15,
+          "known_eligible_routes": 15,
+          "known_eligible_scenes": 11,
+          "cut_reasons_overlapping": {
+            "collision": 40
+          },
+          "empty_back_path_options": 324,
+          "empty_back_path_eligible_options": 15,
+          "empty_back_path_eligible_routes": 15
+        }
+      }
+    },
+    {
+      "cohort": "fresh64",
+      "native_control_options_exact": 123,
+      "empty_path_phase_checks": 109,
+      "historical_plan_exact": true,
+      "historically_tested_cuts": 4,
+      "strata": {
+        "failure": {
+          "routes": 10,
+          "scenes": 6,
+          "routes_with_symptoms": 7,
+          "move_options": 113,
+          "symptom_options": 31,
+          "symptom_type_counts": {
+            "collision": 31,
+            "deviation": 21,
+            "stall": 15
+          },
+          "phase_unknown_options": 0,
+          "known_eligible_cuts": 87,
+          "known_eligible_options": 28,
+          "known_eligible_routes": 7,
+          "known_eligible_scenes": 5,
+          "cut_reasons_overlapping": {
+            "collision": 87,
+            "stall": 23
+          },
+          "empty_back_path_options": 109,
+          "empty_back_path_eligible_options": 27,
+          "empty_back_path_eligible_routes": 6
+        },
+        "success": {
+          "routes": 54,
+          "scenes": 16,
+          "routes_with_symptoms": 12,
+          "move_options": 358,
+          "symptom_options": 30,
+          "symptom_type_counts": {
+            "collision": 30,
+            "deviation": 15,
+            "stall": 4
+          },
+          "phase_unknown_options": 2,
+          "known_eligible_cuts": 88,
+          "known_eligible_options": 28,
+          "known_eligible_routes": 12,
+          "known_eligible_scenes": 10,
+          "cut_reasons_overlapping": {
+            "collision": 88,
+            "stall": 7
+          },
+          "empty_back_path_options": 356,
+          "empty_back_path_eligible_options": 28,
+          "empty_back_path_eligible_routes": 12
+        }
+      }
+    }
+  ],
+  "no_training_or_rollouts": true,
+  "future_interrupt_outcomes_not_read": true,
+  "limits": [
+    "Old training cohorts, not held-out evidence.",
+    "Success eligibility is a lower bound; nonempty back-path phases unknown.",
+    "Symptoms are not failure labels; untested cuts have no inferred returns.",
+    "No online trigger or causal benefit is established."
+  ]
+}

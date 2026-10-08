@@ -1,0 +1,5 @@
+{
+  "status": "failed_before_results",
+  "reason": "Phase-length assertion incorrectly applied to STOP; Habitat STOP bypasses wrap_act. Move-option eligibility unchanged.",
+  "retry_config": "research/configs/INTERRUPT_COVERAGE_002.json"
+}
