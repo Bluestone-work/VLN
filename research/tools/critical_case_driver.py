@@ -67,7 +67,8 @@ def drive_cases(trainer,native_rollout):
     for line in (root/'capture_001/traces/worker_seed100.jsonl').open():
         r=json.loads(line);ep=str(r['episode_id'])
         if ep in fail:traces.setdefault(ep,[]).append(r)
-    required={(c['episode_id'],c['high_level_step'],c['action_index']) for c in plan['cases']}
+    required={(c['episode_id'],c['high_level_step'],c['action_index'])
+              for c in plan['cases'] if c.get('mode') == 'action'}
     if required:
         for line in (root/cfg['probe']/'branch_traces.jsonl').open():
             r=json.loads(line);ep=str(r['decision_key'][1]);k=(ep,r['decision_key'][2],r['index'])
@@ -155,13 +156,16 @@ def drive_cases(trainer,native_rollout):
                 elif hashes!=sensing:raise ValueError('Intermediate observations differ across arms')
         cases=plan['cases']
         if manifest['smoke']:
+            if any(c.get('mode') == 'dense_action' for c in cases):
+                cases = cases[:1]
+            else:
             # Exercise native selected, STOP override, non-STOP replacement,
             # and overriding a learned STOP without changing forced-stop masks.
-            take=[]
-            for predicate in [lambda c:c['action_index']==c['effective_index'],lambda c:c['action_index']==0 and c['effective_index']>0,lambda c:c['action_index']>0 and c['effective_index']>0 and c['action_index']!=c['effective_index'],lambda c:c['action_index']>0 and c['effective_index']==0]:
-                matching=[c for c in cases if predicate(c)]
-                if matching:take.append(matching[0])
-            cases=take
+                take=[]
+                for predicate in [lambda c:c['action_index']==c['effective_index'],lambda c:c['action_index']==0 and c['effective_index']>0,lambda c:c['action_index']>0 and c['effective_index']>0 and c['action_index']!=c['effective_index'],lambda c:c['action_index']>0 and c['effective_index']==0]:
+                    matching=[c for c in cases if predicate(c)]
+                    if matching:take.append(matching[0])
+                cases=take
         for case in cases:execute(case)
         summary={'status':'smoke_complete' if manifest['smoke'] else 'complete','controls':len(controls),'interrupt_events':events,'native_cases_planned':len(plan['cases']),'native_cases_completed':len(cases),'all_validity_checks_passed':True,'no_model_trained':True,'oracle_analysis_only':True,'elapsed_seconds':time.monotonic()-started,'scope':plan['scope']}
         (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n');(out/'status.json').write_text(json.dumps(summary,indent=2)+'\n')

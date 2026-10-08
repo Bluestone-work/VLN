@@ -11,7 +11,7 @@ import numpy as np
 from habitat_baselines.common.baseline_registry import baseline_registry
 from vlnce_baselines.ss_trainer_ETP import RLTrainer
 from vlnce_baselines.adaptive_action.option_calibration import (
-    OptionTraceEnv, pack, restore_rng, observation_hashes)
+    OptionTraceEnv, pack, unpack, restore_rng, observation_hashes)
 from vlnce_baselines.adaptive_action.graph_option_capture import GraphOptionCapture
 
 
@@ -100,11 +100,13 @@ class CriticalHook(GraphOptionCapture):
         super().__init__(output)
         self.case=case;self.baseline=baseline;self.applied=False;self.encountered=False
         self.saved_ghost=None
+        self.override_action=None
+        self.override_front_vp=None
 
     def prepare(self, trainer, step, current, positions, nav_inputs, logits,
-                chosen, policy_chosen, no_vp, embeddings):
+                chosen, policy_chosen, no_vp, embeddings, waypoint_heatmap=None):
         # Use the audited native option builder without copying the trainer loop.
-        super().prepare(trainer,step,current,positions,nav_inputs,logits,chosen,policy_chosen,no_vp,None)
+        super().prepare(trainer,step,current,positions,nav_inputs,logits,chosen,policy_chosen,no_vp,None,waypoint_heatmap)
         if len(self.pending)!=1 or trainer.max_len!=15:
             raise ValueError('One worker and native horizon required')
         row=self.pending[0];ep=str(row['episode_id'])
@@ -129,6 +131,10 @@ class CriticalHook(GraphOptionCapture):
                 if idx!=row['effective_index']:
                     chosen[0]=idx;row['effective_index']=idx;self.applied=True
                     row['oracle_intervention']=True
+            elif self.case['mode']=='dense_action':
+                self.override_action=unpack(self.case['action'])
+                self.override_front_vp=self.override_action['front_vp']
+                self.applied=True;row['oracle_intervention']=True
             elif self.case['mode'].startswith('interrupt'):
                 if row['effective_index']==0:raise ValueError('Cannot interrupt STOP')
                 self.applied=True;row['oracle_intervention']=True
@@ -141,11 +147,21 @@ class CriticalHook(GraphOptionCapture):
 
     def commit(self, env_actions):
         super().commit(env_actions)
+        if self.override_action is not None:
+            env_actions[0]['action']=self.override_action
+            self.override_action=None
         if self.saved_ghost:
             gmap,vp,values=self.saved_ghost
             if vp in gmap.ghost_pos:raise ValueError('Native ghost consumption did not occur')
             for name,value in values.items():getattr(gmap,name)[vp]=value
             self.saved_ghost=None
+
+    def override_prev_vp(self, env_index, default):
+        if env_index == 0 and self.override_front_vp is not None:
+            value = self.override_front_vp
+            self.override_front_vp = None
+            return value
+        return default
 
 
 @baseline_registry.register_trainer(name='SS-ETP-CriticalCensus')

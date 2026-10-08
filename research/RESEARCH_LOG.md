@@ -1311,3 +1311,36 @@ The empty-proposal hypothesis is rejected in its narrow form. Proposal coverage 
 
 Next:
 Do not change the waypoint predictor from this evidence. If proposal coverage is revisited, run a matched dense-candidate experiment. Otherwise prioritize long-horizon graph value with safe abstention once an independent data protocol is available.
+## 2026-10-08 / GATE-A-DENSE-CANDIDATE-002 + GATE-B-NATIVE-RELATIVE-001
+
+Question: Does a nested dense candidate set add full-return rescue ceiling, and can pre-action deployable signals safely identify native-relative overrides?
+
+Change: Captured frozen `[120,12]` waypoint heatmaps, built A1 as native A0 union dense NMS, and executed 667 A1-new full-return branches over train/unseen audited critical states. Then built 1,377 native-relative samples with strict INTERVENE/KEEP/AMBIGUOUS labels and fitted only logistic, ridge, and small MLP feasibility models.
+
+Control: Released checkpoint, seed 100, sensors, low-level controller, STOP, graph semantics, 15-decision budget, route cohorts, and metric definitions. Candidate generation read no route/outcome information. Model split was train scenes versus disjoint val_unseen scenes; ambiguous samples were not forced into binary labels.
+
+Result: Gate A A0/A1 quality rescue was 10/31 versus 13/31 routes, cost-capped 4/31 versus 6/31, with three incremental quality routes across three scenes. Gate A is GO for a limited proposal-coverage oracle opportunity. Gate B held-out logistic precision was 0.350 at threshold 0.95 and 0.625 coverage, with 0.650 ambiguous interventions; MLP precision was 0.314 and ridge abstained at higher thresholds. Native-success harm was not estimable because every audited route was a native failure. Gate B is NO-GO for selective graph-value intervention.
+
+Interpretation: Dense proposals occasionally contain useful actions absent from A0, but the incremental ceiling is small and expensive. Pre-action features do not reliably separate beneficial overrides from incomparable alternatives on unseen scenes. Privileged oracle results remain diagnostic only.
+
+Next: Stop the proposal and selective-intervention branches. Do not run online intervention, RL/PPO, VLM/LLM, or waypoint training from these data. Any future continuation requires a new pre-registered cohort containing native-success routes and a safety-valid abstention signal.
+
+## 2026-10-08 / GATE-B-NATIVE-RELATIVE-004-CORRECTION
+
+Question:
+Does the Gate B result remain the same when the label implementation is checked against the registered native-relative definition?
+
+Change:
+The dataset builder now labels INTERVENE only when the alternative full continuation strictly dominates the native full continuation from the same captured state. It also emits a per-route CSV. No candidates, features, thresholds, cohorts, or full-return data changed.
+
+Control:
+Same frozen train/unseen graph captures, critical full-return branches, checkpoint, seed, route split, and fixed thresholds. AMBIGUOUS rows remain excluded from binary fitting and visible in held-out evaluation.
+
+Result:
+The rebuilt dataset has 1,377 samples with 76 INTERVENE, 533 KEEP, and 768 AMBIGUOUS rows, exactly matching the prior run. Held-out results are unchanged: maximum nonzero-coverage intervention precision is 0.396, while 0.604-0.686 of selected interventions are AMBIGUOUS depending on model and threshold. Figure and per-route table are in `research/results/gate_b_native_relative_004/`.
+
+Interpretation:
+The Gate B NO-GO is robust to the protocol correction. The zero reported KEEP harm remains unestimable as a safety result because all audited routes are native failures.
+
+Next:
+Do not run online intervention, feature/threshold search, PPO/RL, VLM/LLM, or waypoint training from this cohort.

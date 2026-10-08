@@ -22,6 +22,19 @@ _C.VIDEO_DIR = "videos/debug"
 _C.TENSORBOARD_DIR = "data/tensorboard_dirs/debug"
 _C.RESULTS_DIR = "data/checkpoints/pretrained/evals"
 
+_C.ACTION_ABSTRACTION = CN()
+_C.ACTION_ABSTRACTION.LEVEL = "default"
+_C.ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED = False
+_C.ACTION_ABSTRACTION.DIAGNOSTICS_PATH = "data/logs/action_diagnostics.jsonl"
+_C.ACTION_ABSTRACTION.DIAGNOSTICS_MAX_RECORDS = -1
+_C.ACTION_ABSTRACTION.ORACLE_ENABLED = False
+_C.ACTION_ABSTRACTION.ORACLE_PATH = "data/logs/action_oracle.jsonl"
+_C.ACTION_ABSTRACTION.ORACLE_MAX_RECORDS = -1
+_C.ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED = False
+_C.ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_MODE = "legacy_joint"
+_C.ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_PATH = "data/logs/graph_selection_oracle.jsonl"
+_C.ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS = False
+
 # -----------------------------------------------------------------------------
 # EVAL CONFIG
 # -----------------------------------------------------------------------------

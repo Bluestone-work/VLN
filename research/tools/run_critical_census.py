@@ -9,7 +9,7 @@ from run_option_capture import digest
 def main():
     p=argparse.ArgumentParser();p.add_argument('--plan',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--exp-name',required=True);p.add_argument('--smoke',action='store_true');p.add_argument('--smoke-gate',type=Path);a=p.parse_args()
     plan=json.loads(a.plan.read_text());cfg=plan['config'];root=Path(cfg['source_root']);source=json.loads((root/'capture_001/manifest.json').read_text())
-    for name,h in list(plan['hashes'].items())+list(source['hashes'].items()):
+    for name,h in list(plan.get('hashes', {}).items())+list(source['hashes'].items()):
         if digest(name)!=h:raise ValueError('Frozen input changed: '+name)
     if not a.smoke:
         if not a.smoke_gate:raise ValueError('Smoke gate required')
@@ -28,7 +28,10 @@ def main():
     opts['TASK_CONFIG.DATASET.DATA_PATH']=str(Path(cfg.get('failure_subset_dataset',a.plan.parent/('failure_routes_{}.json.gz'.format(len(plan['failed_episodes']))))))
     paths=[a.plan,Path(__file__),Path('research/tools/critical_case_driver.py'),Path('vlnce_baselines/adaptive_action/critical_census.py'),Path(cfg['protocol'])]
     paths.append(Path(opts['TASK_CONFIG.DATASET.DATA_PATH']))
-    paths.extend([root/'capture_001/traces/worker_seed100.jsonl',root/cfg['probe']/'branch_traces.jsonl'])
+    paths.append(root/'capture_001/traces/worker_seed100.jsonl')
+    branch_path = root/cfg['probe']/'branch_traces.jsonl'
+    if branch_path.exists():
+        paths.append(branch_path)
     manifest={'created_utc':datetime.now(timezone.utc).isoformat(),'plan':plan,'plan_path':str(a.plan),'source':source,'overrides':opts,'smoke':a.smoke,'output':str(a.output.resolve()),'exp_name':a.exp_name,'git_commit':subprocess.check_output(['git','rev-parse','HEAD']).decode().strip(),'hashes':{str(p):digest(p) for p in paths},'hardware':subprocess.check_output(['nvidia-smi','--query-gpu=name,uuid,driver_version','--format=csv,noheader']).decode(),'python':sys.version,'argv':sys.argv,'oracle_analysis_only':True}
     manifest_path=a.output/'manifest.json';manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
     for name in list(source['hashes'])+[str(p) for p in paths]:

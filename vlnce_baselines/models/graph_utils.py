@@ -159,6 +159,11 @@ class GraphMap(object):
         self.shortest_dist = None
         
         self.node_stop_scores = {}  # viewpoint to stop_score
+        # Mapping from the candidates generated at the most recent observation
+        # to the real/ghost graph node that represented each candidate. This
+        # is used only by action-abstraction diagnostics; the graph contract is
+        # unchanged.
+        self.last_candidate_vps = []
 
     def _localize(self, qpos, kpos_dict, ignore_height=False):
         min_dis = 10000
@@ -194,6 +199,7 @@ class GraphMap(object):
                            cur_vp, cur_pos, cur_embeds,
                            cand_vp, cand_pos, cand_embeds, 
                            cand_real_pos):
+        self.last_candidate_vps = []
         # 1. connect prev_vp
         self.graph_nx.add_node(cur_vp)
         if prev_vp is not None:
@@ -211,6 +217,7 @@ class GraphMap(object):
             if localized_nvp is not None :
                 dis = calc_position_distance(cur_pos, self.node_pos[localized_nvp])
                 self.graph_nx.add_edge(cur_vp, localized_nvp, weight=dis)
+                self.last_candidate_vps.append(localized_nvp)
             # cand not overlap with node, create/update ghost
             else:
                 if self.merge_ghost:
@@ -235,6 +242,7 @@ class GraphMap(object):
                         self.ghost_fronts[gvp].append(cur_vp)
                         if self.has_real_pos:
                             self.ghost_real_pos[gvp].append(cand_real_pos[i])
+                    self.last_candidate_vps.append(gvp)
                 else:
                     gvp = f'g{str(self.ghost_cnt)}'
                     self.ghost_cnt += 1
@@ -244,6 +252,7 @@ class GraphMap(object):
                     self.ghost_fronts[gvp] = [cur_vp]
                     if self.has_real_pos:
                         self.ghost_real_pos[gvp] = [cand_real_pos[i]]
+                    self.last_candidate_vps.append(gvp)
         
         self.ghost_aug_pos = deepcopy(self.ghost_mean_pos)
         if self.ghost_aug != 0:

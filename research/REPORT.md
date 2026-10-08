@@ -1,5 +1,30 @@
 # Adaptive Action Abstraction in VLN-CE
 
+## 2026-10-08 — Dense-candidate and native-relative gates
+
+The registered next direction was tested in two gates. Gate A kept the native
+ETPNav controller and predictor fixed, captured the raw waypoint heatmap, and
+compared native A0 branches with an outcome-blind nested A1 dense union. Across
+31 audited failure routes and 18 scenes, quality rescue rose from 10/31 to
+13/31 routes and cost-capped rescue from 4/31 to 6/31. The three incremental
+quality routes span three scenes. This is a finite privileged opportunity, so
+Gate A is **GO for proposal-coverage oracle analysis**, not a claim for a new
+waypoint model.
+
+Gate B built native-relative labels from the same full-return data. The final
+dataset builder compares each alternative directly with the native continuation
+from the same state; the episode control is only a stratification field. It retained
+AMBIGUOUS alternatives as a third class and used only pre-action graph/logit and
+geometry features. A train-cohort fit evaluated on disjoint val_unseen scenes
+did not find a high-precision, nonzero-coverage intervention region: logistic
+precision was 0.350 at threshold 0.95 with 0.625 state coverage and 0.650
+AMBIGUOUS interventions; the small MLP reached 0.314 precision. Native-success
+harm is not estimable because the audited routes are all native failures.
+Gate B is therefore **NO-GO for graph-value selective intervention**. The
+online intervention, RL/PPO, VLM/LLM, and waypoint-predictor branches remain
+stopped. The corrected run and fixed-threshold figure are under
+`research/results/gate_b_native_relative_004/`.
+
 ## 2026-10-08 — Independent interrupt confirmation: NO-GO
 
 ## 2026-10-08 — Unresolved coverage census

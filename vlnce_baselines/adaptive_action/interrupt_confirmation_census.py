@@ -102,9 +102,9 @@ class CriticalHook(GraphOptionCapture):
         self.saved_ghost=None
 
     def prepare(self, trainer, step, current, positions, nav_inputs, logits,
-                chosen, policy_chosen, no_vp, embeddings):
+                chosen, policy_chosen, no_vp, embeddings, waypoint_heatmap=None):
         # Use the audited native option builder without copying the trainer loop.
-        super().prepare(trainer,step,current,positions,nav_inputs,logits,chosen,policy_chosen,no_vp,None)
+        super().prepare(trainer,step,current,positions,nav_inputs,logits,chosen,policy_chosen,no_vp,None,waypoint_heatmap)
         if len(self.pending)!=1 or trainer.max_len!=15:
             raise ValueError('One worker and native horizon required')
         row=self.pending[0];ep=str(row['episode_id'])

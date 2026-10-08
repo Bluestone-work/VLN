@@ -27,6 +27,7 @@ from vlnce_baselines.models.policy import ILPolicy
 
 from vlnce_baselines.waypoint_pred.TRM_net import BinaryDistPredictor_TRM
 from vlnce_baselines.waypoint_pred.utils import nms
+from vlnce_baselines.adaptive_action.action_generators import get_action_abstraction_spec
 from vlnce_baselines.models.utils import (
     angle_feature_with_ele, dir_angle_feature_with_ele, angle_feature_torch, length2mask)
 import math
@@ -186,7 +187,9 @@ class ETP(Net):
                 gmap_img_fts=None, gmap_pos_fts=None,
                 gmap_masks=None, gmap_visited_masks=None, gmap_pair_dists=None,
                 gmap_embeds=None, rl_topo_debug=False,
-                residual_alpha=0.0, valid_action_mask=None):
+                residual_alpha=0.0, valid_action_mask=None,
+                action_abstraction="default",
+                return_waypoint_heatmap=False):
 
         if mode == 'language':
             encoded_sentence = self.vln_bert.forward_txt(
@@ -255,10 +258,11 @@ class ETP(Net):
                 batch_x_norm, 
                 batch_x_norm[:,:1,:]), 
                 dim=1)
+            abstraction_spec = get_action_abstraction_spec(action_abstraction)
             batch_output_map = nms(
-                batch_x_norm_wrap.unsqueeze(1), 
-                max_predictions=5,
-                sigma=(7.0,5.0))
+                batch_x_norm_wrap.unsqueeze(1),
+                max_predictions=abstraction_spec.max_predictions,
+                sigma=abstraction_spec.sigma)
 
             # predicted waypoints before sampling
             batch_output_map = batch_output_map.squeeze(1)[:,1:-1,:]
@@ -321,6 +325,7 @@ class ETP(Net):
             cand_img_idxes = []
             cand_angles = []
             cand_distances = []
+            cand_scores = []
             for j in range(batch_size):
                 if in_train:
                     angle_idxes = torch.tensor(batch_sample_angle_idxes[j])
@@ -334,6 +339,12 @@ class ETP(Net):
                 cand_angle_fts.append( angle_feature_torch(angle_rad_c) )
                 cand_angles.append(angle_rad_cc.tolist())
                 cand_distances.append( ((distance_idxes + 1)*0.25).tolist() )
+                score_angle_idxes = angle_idxes.to(batch_output_map.device)
+                score_distance_idxes = distance_idxes.to(batch_output_map.device)
+                cand_scores.append(
+                    batch_output_map[j, score_angle_idxes, score_distance_idxes]
+                    .detach().cpu().tolist()
+                )
                 # for img idxes
                 img_idxes = 12 - (angle_idxes.cpu().numpy()+5) // 10        # 逆时针
                 img_idxes[img_idxes==12] = 0
@@ -357,13 +368,19 @@ class ETP(Net):
                 'cand_img_idxes': cand_img_idxes,   # [K]
                 'cand_angles': cand_angles,         # [K]
                 'cand_distances': cand_distances,   # [K]
+                'cand_scores': cand_scores,         # NMS heatmap mass [K]
+                'action_abstraction': abstraction_spec.name,
 
                 'pano_rgb': pano_rgb,               # B x 12 x 2048
                 'pano_depth': pano_depth,           # B x 12 x 128
                 'pano_angle_fts': pano_angle_fts,   # 12 x 4
                 'pano_img_idxes': pano_img_idxes,   # 12 
             }
-            
+            if return_waypoint_heatmap:
+                # Analysis-only output; ordinary runs keep the original
+                # waypoint tensor contract and memory footprint.
+                outputs['waypoint_heatmap_probs'] = batch_x_norm.detach()
+
             return outputs
 
         elif mode == 'panorama':

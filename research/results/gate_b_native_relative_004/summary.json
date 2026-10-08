@@ -1,0 +1,46 @@
+{
+  "protocol": "Gate B native-relative long-horizon intervention feasibility",
+  "privileged_labels_analysis_only": true,
+  "sample_count": 1377,
+  "state_count": 117,
+  "route_count": 31,
+  "scene_count": 18,
+  "class_counts": {
+    "AMBIGUOUS": 768,
+    "KEEP": 533,
+    "INTERVENE": 76
+  },
+  "cohort_counts": {
+    "train": {
+      "AMBIGUOUS": 250,
+      "KEEP": 178,
+      "INTERVENE": 35
+    },
+    "val_unseen": {
+      "AMBIGUOUS": 518,
+      "KEEP": 355,
+      "INTERVENE": 41
+    }
+  },
+  "state_counts_by_class": {
+    "INTERVENE": 48,
+    "KEEP": 88,
+    "AMBIGUOUS": 103
+  },
+  "route_counts_by_class": {
+    "INTERVENE": 18,
+    "KEEP": 30,
+    "AMBIGUOUS": 30
+  },
+  "scene_counts_by_class": {
+    "INTERVENE": 13,
+    "KEEP": 18,
+    "AMBIGUOUS": 18
+  },
+  "native_success_samples": 0,
+  "native_failure_samples": 1377,
+  "positive_scene_support_sufficient": true,
+  "split": "train cohort versus held-out val_unseen scenes; no random row split",
+  "feature_policy": "pre-action graph/logit/geometry only; no goal/reference/future outcome fields",
+  "next_gate": "fit only simple selective models if INTERVENE support is not sparse or scene-concentrated"
+}

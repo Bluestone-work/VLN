@@ -1,5 +1,40 @@
 # VLN-CE 科研进展（2026-10-08）
 
+## 2026-10-08 — Gate A 通过，Gate B NO-GO（协议修正后复核）
+
+按新的研究顺序完成了 dense-candidate full-return oracle 和 native-relative
+intervention feasibility。Gate A 使用同一 waypoint heatmap 构造嵌套候选：A0 是
+原生 graph candidates，A1 是 A0 加冻结 dense-NMS proposals；未训练 predictor，未
+使用 GT/reference/outcome 生成候选。train 与 val_unseen 两个已审计 cohort 共覆盖
+31 条 unresolved routes、86 个 critical states、18 个 scenes 和 1,760 个完整
+branch（A0 1,093、A1 新增 667），全部通过 prefix/RNG/metric reconstruction gate。
+
+| full-return ceiling | A0 | A1 |
+| --- | ---: | ---: |
+| strict rescue routes | 18/31 | 20/31 |
+| quality rescue routes | 10/31 | 13/31 |
+| cost-capped quality rescue | 4/31 | 6/31 |
+
+A1 新增 3 条 quality-rescue routes，跨 3 个 scenes；新增 2 条 cost-capped routes，
+跨 2 个 scenes。因此 Gate A 给出 **GO for proposal-coverage oracle opportunity**，
+仅表示 native set 存在有限的 proposal-coverage 上界，不表示 dense candidates 已是
+可部署方法，也不启动 waypoint predictor 训练。
+
+Gate B 随后只用执行前 graph/logit/几何特征构造 1,377 个 native-relative samples：
+INTERVENE 76、KEEP 533、AMBIGUOUS 768，train/val_unseen scene 完全 disjoint。
+收尾审计时修正了数据构建器的参考对象：INTERVENE 明确比较同一 state 的
+alternative continuation 与 native continuation；修正前后样本计数和所有指标逐行
+一致。AMBIGUOUS 仍不参加二元拟合，并在 held-out 评估中单独报告。
+仅训练 logistic、ridge 和小 MLP，并在 held-out unseen scenes 做固定阈值评估。最高
+阈值下 logistic precision=0.350、coverage=0.625，AMBIGUOUS intervention=0.650；
+MLP precision=0.314，ridge 在更高阈值直接零覆盖。所有 cohort 都是 native-failure
+routes，所以 native-success harm 无法估计，不能当作安全证据。
+
+Gate B 决定：**NO-GO for graph-value selective intervention**。不进行 single-
+intervention online test，不上 PPO/RL/VLM/LLM，也不继续调 threshold 或派生新
+features。完整报告见 `GATE_A_DENSE_CANDIDATE_REPORT.md` 和
+`GATE_B_NATIVE_RELATIVE_REPORT.md`。
+
 ## 2026-10-08 — 独立中断确认：NO-GO
 
 本轮冻结了 128 条 R2R-CE train 路线，包含 128 条 native control、43 个已知事件切点和 129 个同一 option 内 outcome-blind 均匀切点，共完成 **472 次完整 rollout**；另有 132 次 smoke。checkpoint、seed=100、传感器、控制器、STOP 逻辑和 15 次高层预算保持不变。

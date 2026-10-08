@@ -42,7 +42,7 @@ class SingleInterventionHook:
         self.rows, self.prefix_checks = 0, 0
 
     def prepare(self, trainer, step, current, positions, nav_inputs, logits,
-                chosen, policy_chosen, no_vp, embeddings):
+                chosen, policy_chosen, no_vp, embeddings, waypoint_heatmap=None):
         if self.pending is not None or not np.array_equal(chosen, policy_chosen):
             raise ValueError('Uncommitted step or unexpected upstream intervention')
         if trainer.max_len != 15:

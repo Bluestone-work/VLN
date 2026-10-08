@@ -11,6 +11,19 @@ EVAL_CKPT_PATH_DIR: data/logs/checkpoints/
 RESULTS_DIR: data/logs/eval_results/
 VIDEO_DIR: data/logs/video/
 
+ACTION_ABSTRACTION:
+  LEVEL: default
+  DIAGNOSTICS_ENABLED: False
+  DIAGNOSTICS_PATH: data/logs/action_diagnostics.jsonl
+  DIAGNOSTICS_MAX_RECORDS: -1
+  ORACLE_ENABLED: False
+  ORACLE_PATH: data/logs/action_oracle.jsonl
+  ORACLE_MAX_RECORDS: -1
+  GRAPH_SELECTION_ORACLE_ENABLED: False
+  GRAPH_SELECTION_ORACLE_MODE: legacy_joint
+  GRAPH_SELECTION_ORACLE_PATH: data/logs/graph_selection_oracle.jsonl
+  INCLUDE_RANKER_EMBEDDINGS: False
+
 INFERENCE:
   SPLIT: test
   USE_CKPT_CONFIG: False

@@ -1,0 +1,23 @@
+{
+  "protocol": "Gate A Dense-Candidate Full-Return Oracle",
+  "privileged_analysis_only": true,
+  "unresolved_routes_total": 22,
+  "critical_states_with_nonstop": 49,
+  "scenes_with_critical_states": 10,
+  "native_a0_branch_count": 696,
+  "dense_a1_new_branch_count": 393,
+  "a0_rescue_routes_strict": 12,
+  "a1_rescue_routes_strict": 13,
+  "a0_rescue_routes_quality": 6,
+  "a1_rescue_routes_quality": 8,
+  "a0_rescue_routes_cost_capped": 3,
+  "a1_rescue_routes_cost_capped": 4,
+  "new_candidate_rescue_routes_quality": 7,
+  "new_candidate_rescue_routes_cost_capped": 4,
+  "native_rescue_but_not_policy_selected_routes": 6,
+  "a1_rescue_scene_coverage_quality": 6,
+  "a1_rescue_scene_coverage_cost_capped": 4,
+  "routes_with_no_dense_rescue": 14,
+  "decision": "GO for proposal-coverage mechanism",
+  "interpretation_rule": "A1 must add route-level quality or cost-capped rescue over A0 across multiple scenes; otherwise NO-GO."
+}

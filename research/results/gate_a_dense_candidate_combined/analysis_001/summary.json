@@ -1,0 +1,45 @@
+{
+  "protocol": "Gate A Dense-Candidate Full-Return Oracle, combined audited cohorts",
+  "privileged_analysis_only": true,
+  "routes": 31,
+  "scenes": 18,
+  "critical_nonstop_states": 86,
+  "a0_native_branches": 1093,
+  "a1_new_branches": 667,
+  "mean_a0_candidates_per_state": 12.709302325581396,
+  "mean_a1_candidates_per_state": 20.46511627906977,
+  "route_rescue_counts": {
+    "strict": {
+      "A0": 18,
+      "A1": 20
+    },
+    "quality_rescue": {
+      "A0": 10,
+      "A1": 13
+    },
+    "cost_capped_rescue": {
+      "A0": 4,
+      "A1": 6
+    }
+  },
+  "incremental_quality_routes": 3,
+  "incremental_quality_scenes": 3,
+  "incremental_quality_route_ids": [
+    "8343",
+    "1052",
+    "1584"
+  ],
+  "incremental_cost_capped_routes": 2,
+  "incremental_cost_capped_scenes": 2,
+  "native_rescue_but_policy_missed_routes": 10,
+  "dense_still_no_quality_rescue_routes": 18,
+  "new_candidate_full_episode_primitive_proxy": {
+    "min_of_state_ranges": 32.0,
+    "median_of_state_range_endpoints": 113.0,
+    "p90_of_state_range_endpoints": 226.0,
+    "max_of_state_ranges": 374.0
+  },
+  "gate_a_decision": "GO for proposal-coverage oracle opportunity; no waypoint model training claim",
+  "evidence": "A1 adds 3 quality rescues in 3 scenes and 2 cost-capped rescues over A0 across 31 audited failed routes.",
+  "a2_status": "not run because changing ghost merge would alter persistent graph semantics"
+}

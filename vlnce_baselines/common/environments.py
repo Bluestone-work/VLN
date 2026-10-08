@@ -157,6 +157,19 @@ class VLNCEDaggerEnv(habitat.RLEnv):
         # circle_dists = np.linalg.norm(np.array(path)-current_pos, axis=1).tolist()
         return circle_dists
 
+    def current_episode_ref_distance(self):
+        """Return distance to the closest reference-path point, if present.
+
+        This runs inside the Habitat worker and avoids sending a large route
+        object through ``VectorEnv.call_at`` for every diagnostic decision.
+        It is only used by the opt-in action-abstraction logger.
+        """
+        path = getattr(self._env.current_episode, "reference_path", None)
+        if not path:
+            return None
+        distances = self.current_dist_to_refpath(path)
+        return float(min(distances)) if distances else None
+
     def ghost_dist_to_ref(self, ghost_vp_pos, ref_path):
         episode_id = self._env.current_episode.episode_id
         if episode_id != self.prev_episode_id:

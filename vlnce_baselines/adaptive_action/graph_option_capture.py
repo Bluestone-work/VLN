@@ -68,8 +68,13 @@ class GraphOptionCapture:
             pass
         self.pending = None
 
+    def override_prev_vp(self, env_index, default):
+        """Optional hook for research interventions; native capture is inert."""
+        return default
+
     def prepare(self, trainer, step, current, positions, nav_inputs, logits,
-                chosen, policy_chosen, no_vp, embeddings):
+                chosen, policy_chosen, no_vp, embeddings,
+                waypoint_heatmap=None):
         if self.pending is not None:
             raise RuntimeError('Uncommitted previous decision')
         if not np.array_equal(chosen, policy_chosen):
@@ -90,7 +95,7 @@ class GraphOptionCapture:
             valid = {o['index']: o for o in options}
             if policy_index not in valid or not valid[effective_index]['admissible']:
                 raise ValueError('Selected action violates graph masks or episode budget')
-            self.pending.append({'schema_version': 1, 'episode_id': str(episode.episode_id),
+            row = {'schema_version': 1, 'episode_id': str(episode.episode_id),
                                  'scene_id': str(episode.scene_id), 'trajectory_id': str(episode.trajectory_id),
                                  'high_level_step': step, 'current_vp': current[i],
                                  'graph_position': pack(positions[i]),
@@ -100,7 +105,16 @@ class GraphOptionCapture:
                                  'policy_index': policy_index, 'effective_index': effective_index,
                                  'budget_stop': bool(budget_stop), 'no_vp_left': bool(no_vp[i]),
                                  'forced_stop': policy_index != 0 and effective_index == 0,
-                                 'options': options, 'privileged_labels_in_features': False})
+                                 'options': options, 'privileged_labels_in_features': False}
+            if waypoint_heatmap is not None:
+                heatmap = waypoint_heatmap[i].detach().cpu().tolist()
+                if len(heatmap) != 120 or any(len(x) != 12 for x in heatmap):
+                    raise ValueError('Waypoint heatmap shape is not [120, 12]')
+                from vlnce_baselines.adaptive_action.dense_candidate_specs import candidate_sets_from_heatmap
+                provenance = candidate_sets_from_heatmap(waypoint_heatmap[i])
+                row['waypoint_heatmap_probs'] = heatmap
+                row['dense_candidate_provenance'] = provenance
+            self.pending.append(row)
 
     def commit(self, env_actions):
         if self.pending is None or len(env_actions) != len(self.pending):
