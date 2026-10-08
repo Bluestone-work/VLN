@@ -444,3 +444,12 @@ consume loses no binary success on the12 exposed successful routes, but degrades
 nDTW on8/12; first-event retain loses5822. These concrete counterexamples prohibit
 an unconditional collision rule or interpreting oracle opportunities as a deployable
 policy score. See `INTERRUPT_TIMING_ORACLE_REPORT.md` and its complete cut records.
+
+
+## 2026-10-08 — Interrupt timing failure decomposition
+
+The independent confirmation does not support a collision-specific trigger. Among seven exposed native failures, both event and uniform timing produce 3/7 quality rescues. Event-only route `9186` and uniform-only route `5660` prevent attributing recovery to the collision event. Among 36 exposed native-success routes, event timing loses SR on 2 and nDTW on 15; uniform timing loses SR on 2 and nDTW on 25. Thus the observed opportunity is a generic replanning-boundary effect with unresolved timing, and the intervention has a measurable success-route harm.
+
+This is not a mutually exclusive failure partition: the 172 cuts are correlated within 43 routes, and the cut choice is an oracle analysis arm. No trigger classifier label is created from these outcomes. Proposal, ranking, execution, recovery, and termination remain separate hypotheses; this experiment only rejects event-trigger learning under the registered safety comparison.
+
+Artifacts: `research/INTERRUPT_CONFIRMATION_REPORT.md`, `research/results/interrupt_confirmation_train128/analysis_003/summary.json`, `verification_003/summary.json`, `archive_manifest.json`, and `study_status.json`.

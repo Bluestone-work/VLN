@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "research/tools/verify_interrupt_confirmation.py", line 77, in <module>
+    if __name__ == '__main__': main()
+  File "research/tools/verify_interrupt_confirmation.py", line 42, in main
+    old = baseline[(ep, i)]
+KeyError: ('9186', 7)

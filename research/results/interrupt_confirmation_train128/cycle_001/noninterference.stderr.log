@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "research/tools/check_option_noninterference.py", line 90, in <module>
+    main()
+  File "research/tools/check_option_noninterference.py", line 74, in main
+    tolerance = capture['config']['gates']['baseline_episode_metrics_tolerance']
+KeyError: 'gates'

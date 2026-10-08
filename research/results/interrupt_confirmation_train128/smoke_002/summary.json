@@ -1,0 +1,79 @@
+{
+  "status": "smoke_complete",
+  "controls": 128,
+  "interrupt_events": [
+    {
+      "episode_id": "10396",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 0,
+      "cut_primitive": 5,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            0.4368950128555298,
+            1.9900290966033936,
+            -7.556089878082275
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.5349843252621849,
+            1.9900290966033936,
+            -7.752376688317284
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "9186",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 1,
+      "cut_primitive": 18,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -6.593238830566406,
+            0.07484699785709381,
+            6.089354991912842
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -9.584719254371004,
+            0.07484699785709381,
+            5.863423865252823
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 24,
+      "empty_back_path": true
+    }
+  ],
+  "native_cases_planned": 0,
+  "native_cases_completed": 0,
+  "all_validity_checks_passed": true,
+  "no_model_trained": true,
+  "oracle_analysis_only": true,
+  "elapsed_seconds": 302.6535296209622,
+  "scope": "All phase-known event cuts plus three outcome-blind same-option timing cuts per exposed route; native controls for all 128 routes."
+}

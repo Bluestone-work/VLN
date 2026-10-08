@@ -1,0 +1,20 @@
+{
+  "steps_taken": 64.1953125,
+  "distance_to_goal": 1.716285788177629,
+  "success": 0.875,
+  "oracle_success": 0.9140625,
+  "path_length": 10.463693011552095,
+  "collisions": 0.06467085582928639,
+  "spl": 0.8142487079081078,
+  "ndtw": 0.8161156051221168,
+  "sdtw": 0.7573564862084604,
+  "ghost_cnt": 24.3125,
+  "high_level_steps": 8.0390625,
+  "policy_stop_count": 0.953125,
+  "forced_stop_count": 0.046875,
+  "forced_stop_max_len_count": 0.046875,
+  "forced_stop_no_vp_count": 0.0,
+  "policy_stop_rate": 0.13617337523587517,
+  "forced_stop_rate": 0.0031249999999999997,
+  "actual_stop_rate": 0.13929837523587515
+}

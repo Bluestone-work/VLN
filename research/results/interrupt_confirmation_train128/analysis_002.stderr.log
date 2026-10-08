@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "research/tools/analyze_interrupt_confirmation.py", line 63, in <module>
+    if __name__ == '__main__': main()
+  File "research/tools/analyze_interrupt_confirmation.py", line 60, in main
+    args.output.mkdir(parents=True, exist_ok=False); (args.output/'summary.json').write_text(json.dumps(result, indent=2)+'\n'); print(json.dumps({k:v for k,v in result.items() if k not in ['event_route_results','uniform_route_results']}, indent=2))
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/pathlib.py", line 1248, in mkdir
+    self._accessor.mkdir(self, mode)
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/pathlib.py", line 387, in wrapped
+    return strfunc(str(pathobj), *args)
+FileExistsError: [Errno 17] File exists: 'research/results/interrupt_confirmation_train128/analysis_002'

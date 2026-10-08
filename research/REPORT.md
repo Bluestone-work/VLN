@@ -1,5 +1,21 @@
 # Adaptive Action Abstraction in VLN-CE
 
+## 2026-10-08 — Independent interrupt confirmation: NO-GO
+
+The frozen confirmation cohort contains 128 R2R-CE training routes sampled before outcomes, 43 phase-known event cuts, 129 outcome-blind uniform cuts, and 128 native controls. The experiment completed **472 full rollouts** (plus 132 smoke rollouts) with the unchanged checkpoint, seed 100, sensors, controller, STOP logic, and 15-decision budget.
+
+| Arm | exposed native failures | quality rescue | cost-capped quality rescue | native-success SR loss | native-success nDTW loss |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| event first collision | 7 | 3/7, 3 scenes | 1/7 | 2/36 | 15/36 |
+| uniform same-option timing | 7 | 3/7, 3 scenes | 2/7 | 2/36 | 25/36 |
+
+Event rescues are routes `7411`, `9186`, `6154`; uniform rescues are `7411`, `5660`, `6154`. The overlap and the uniform-only rescue show that the event itself has no demonstrated route-level advantage over an outcome-blind timing boundary. The event arm also harms native-success routes, so unconditional collision interruption fails the safety gate.
+
+Independent verification passes 472 rollouts, 172 interrupted prefixes, 172 sensor pairs, 3,776 metric components, and 4,171 path-continuity checks. The complete evidence is archived under `research/results/interrupt_confirmation_train128/`, with a SHA256 manifest and compressed case traces. **Decision: NO-GO for event-trigger learning.** No model was trained and no follow-up confirmation was started.
+
+This does not show that replanning is useless. It shows that the collision event is not yet a validated trigger, and timing/abstention must be solved before any deployable interrupt policy. Adaptive coarse/default/fine, frozen graph-ranking, RL/PPO, VLM, and waypoint-predictor expansion remain paused.
+
+
 ## 2026-10-08 — 完整中断时机 oracle：仅独立复验为 CONDITIONAL GO
 
 已经新增 **544 次完整 rollout + 25 次 smoke**。在旧 fresh64 的 19 条有事件

@@ -1269,3 +1269,24 @@ claim or benchmark improvement. All-cut oracle is privileged and correlated.
 Next: Independently registered route sample, comparing event cuts with outcome-blind
 within-option timing controls, native abstention and successful-route controls.
 Do not fit a trigger or select thresholds from this sweep.
+
+
+## 2026-10-08 / INTERRUPT-CONFIRMATION-001 — completed
+
+Question:
+Does a first forward collision provide a useful trigger for interrupting a native graph option, beyond an outcome-blind replanning boundary within the same option?
+
+Change:
+Run the frozen 128-route confirmation: 128 native controls, 43 event cuts, and three uniform interior cuts for each event route (129 uniform cuts). Each cut has matched sensing-only and interrupt-consume returns with the unchanged navigator.
+
+Control:
+Route sample and schedule were frozen before outcomes. Checkpoint, seed 100, simulator, sensors, controller, graph semantics, STOP, high-level budget and evaluation definitions stayed fixed. Routes without a phase-known event remain unsupported and are not treated as negative examples.
+
+Result:
+472 full rollouts completed. Event timing gives 3/7 quality rescues across 3 scenes and 1/7 cost-capped rescue; uniform timing gives 3/7 and 2/7. Event timing loses SR on 2/36 native-success routes and nDTW on 15/36. Independent verification passes 472 rollouts, 172 interrupted prefixes, 172 sensor pairs, 3,776 metric components and 4,171 continuity checks.
+
+Interpretation:
+**NO-GO for event-trigger learning.** Event-only and uniform-only rescues show no event-specific advantage. Successful-route harm remains, so the event is not a safe deployable trigger. Replanning may still have generic value, but its timing and abstention mechanism are unresolved.
+
+Next:
+Do not train a trigger, RL/PPO or VLM from this cohort. Keep the archived evidence and stop the interrupt branch unless a separately justified safe-replanning mechanism and independent data source are defined.

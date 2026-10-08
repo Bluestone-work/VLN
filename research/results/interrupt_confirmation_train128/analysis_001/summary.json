@@ -1,0 +1,3341 @@
+{
+  "status": "complete",
+  "experiment_id": "INTERRUPT-CONFIRMATION-001",
+  "rollouts": 472,
+  "exposed_routes": 43,
+  "event_route_results": {
+    "failed_routes": 7,
+    "failed_routes_sr_rescue": [
+      "7411",
+      "9186",
+      "6154"
+    ],
+    "failed_routes_quality_rescue": [
+      "7411",
+      "9186",
+      "6154"
+    ],
+    "failed_routes_cost_capped_quality_rescue": [
+      "7411"
+    ],
+    "successful_routes": 36,
+    "successful_routes_sr_loss": [
+      "1271",
+      "4049"
+    ],
+    "successful_routes_ndtw_loss": [
+      "10396",
+      "8715",
+      "6073",
+      "10638",
+      "3037",
+      "7531",
+      "2053",
+      "9125",
+      "7819",
+      "1690",
+      "1271",
+      "3950",
+      "2249",
+      "80",
+      "4049"
+    ],
+    "successful_routes_cost_increase": [
+      "10396",
+      "5488",
+      "10638",
+      "9125",
+      "7819",
+      "44",
+      "1271",
+      "8644",
+      "5779",
+      "2249",
+      "779",
+      "80",
+      "10610",
+      "4049"
+    ],
+    "scene_count_quality_rescues": 3,
+    "route_details": {
+      "10396": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.04749732743610724,
+            "ndtw": -0.007815848676714032,
+            "steps_taken": 3.0,
+            "path_length": 0.648193359375
+          }
+        ]
+      },
+      "5684": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.013872641251917894,
+            "steps_taken": -5.0,
+            "path_length": -0.4948616027832031
+          }
+        ]
+      },
+      "2365": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.17739682410627522,
+            "ndtw": 0.044508166795919624,
+            "steps_taken": -31.0,
+            "path_length": -2.0115652084350586
+          }
+        ]
+      },
+      "8715": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.003635876900973445,
+            "ndtw": -0.0014971863733971302,
+            "steps_taken": -1.0,
+            "path_length": -0.25
+          }
+        ]
+      },
+      "5488": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.04692757564137928,
+            "ndtw": 0.006822879503104007,
+            "steps_taken": 5.0,
+            "path_length": -0.7389774322509766
+          }
+        ]
+      },
+      "5307": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.043427698315364416,
+            "ndtw": 0.02488446374944231,
+            "steps_taken": -3.0,
+            "path_length": -0.5000009536743164
+          }
+        ]
+      },
+      "6073": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.13930460083603713,
+            "ndtw": -0.019052312545675076,
+            "steps_taken": -2.0,
+            "path_length": -1.461195468902588
+          }
+        ]
+      },
+      "10713": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0,
+            "steps_taken": 0.0,
+            "path_length": 0.0
+          }
+        ]
+      },
+      "7411": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": true,
+          "quality_rescue": true,
+          "cost_capped_quality_rescue": true,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 1,
+          "quality_rescue": 1,
+          "cost_capped_quality_rescue": 1,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 1.0,
+            "spl": 0.6834853411990364,
+            "ndtw": 0.8209787742482573,
+            "steps_taken": -205.0,
+            "path_length": -22.171064376831055
+          }
+        ]
+      },
+      "9186": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": true,
+          "quality_rescue": true,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 1,
+          "quality_rescue": 1,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 1.0,
+            "spl": 0.6678096245920507,
+            "ndtw": 0.6072474669826844,
+            "steps_taken": 80.0,
+            "path_length": 6.83403205871582
+          }
+        ]
+      },
+      "10638": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.1368422657581394,
+            "ndtw": -0.04898716150982474,
+            "steps_taken": 6.0,
+            "path_length": 1.0121383666992188
+          }
+        ]
+      },
+      "6582": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.22211921433565773,
+            "ndtw": 0.025839932816873135,
+            "steps_taken": -38.0,
+            "path_length": -3.5905990600585938
+          }
+        ]
+      },
+      "3037": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.014157241746974969,
+            "steps_taken": -2.0,
+            "path_length": -0.5699796676635742
+          }
+        ]
+      },
+      "10680": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.1643111020507626,
+            "ndtw": 0.01600219363094546,
+            "steps_taken": -29.0,
+            "path_length": -2.2497711181640625
+          }
+        ]
+      },
+      "1509": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.019740955447814623,
+            "steps_taken": -6.0,
+            "path_length": 0.05919361114501953
+          }
+        ]
+      },
+      "7531": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.004865318140073849,
+            "ndtw": -0.012238306058849235,
+            "steps_taken": -5.0,
+            "path_length": -0.7499995231628418
+          }
+        ]
+      },
+      "2053": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0003926474237248012,
+            "ndtw": -0.005313397388748586,
+            "steps_taken": 0.0,
+            "path_length": -0.008189201354980469
+          }
+        ]
+      },
+      "6052": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.3446566353654188,
+            "ndtw": 0.028960696787774354,
+            "steps_taken": -34.0,
+            "path_length": -3.419212818145752
+          }
+        ]
+      },
+      "9125": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.0016260428699960139,
+            "steps_taken": 1.0,
+            "path_length": 0.17957115173339844
+          }
+        ]
+      },
+      "2476": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.004064554531382325,
+            "ndtw": 0.010722629302755582,
+            "steps_taken": -4.0,
+            "path_length": -0.03629302978515625
+          }
+        ]
+      },
+      "7819": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.04218449157991999,
+            "ndtw": -0.012150538156669,
+            "steps_taken": 3.0,
+            "path_length": 0.5270223617553711
+          }
+        ]
+      },
+      "4573": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.013647330466789287,
+            "steps_taken": -4.0,
+            "path_length": -0.7492752075195312
+          }
+        ]
+      },
+      "44": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.05379654101325104,
+            "ndtw": 0.01584061045911145,
+            "steps_taken": 9.0,
+            "path_length": 1.0072689056396484
+          }
+        ]
+      },
+      "6649": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.04311903193046762,
+            "ndtw": 0.025576080118544953,
+            "steps_taken": -2.0,
+            "path_length": -0.4664745330810547
+          }
+        ]
+      },
+      "3039": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.006824133111476671,
+            "ndtw": 0.004867972160731759,
+            "steps_taken": -1.0,
+            "path_length": -0.24200439453125
+          }
+        ]
+      },
+      "1690": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.04068327401312022,
+            "ndtw": -0.012336837092445374,
+            "steps_taken": 0.0,
+            "path_length": 0.7173137664794922
+          }
+        ]
+      },
+      "1271": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": true,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 1,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": -1.0,
+            "spl": -0.9521247672181347,
+            "ndtw": -0.30308039133724485,
+            "steps_taken": 31.0,
+            "path_length": 5.516324996948242
+          }
+        ]
+      },
+      "8644": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.006955818173843831,
+            "steps_taken": 10.0,
+            "path_length": 0.5853104591369629
+          }
+        ]
+      },
+      "5779": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.050634456288100704,
+            "steps_taken": 5.0,
+            "path_length": 1.2686872482299805
+          }
+        ]
+      },
+      "3950": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.0011323460884103964,
+            "steps_taken": -3.0,
+            "path_length": -0.5000019073486328
+          }
+        ]
+      },
+      "2249": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.09616230744593257,
+            "ndtw": -0.14927716811270492,
+            "steps_taken": 9.0,
+            "path_length": 1.523843765258789
+          }
+        ]
+      },
+      "779": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.046530132858724205,
+            "ndtw": 0.03984171745881482,
+            "steps_taken": 8.0,
+            "path_length": 0.8324480056762695
+          }
+        ]
+      },
+      "8704": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.2277917400848365,
+            "ndtw": 0.04231071761741778,
+            "steps_taken": -26.0,
+            "path_length": -2.44034481048584
+          }
+        ]
+      },
+      "8145": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.017933433000858034,
+            "steps_taken": -2.0,
+            "path_length": -0.1836862564086914
+          }
+        ]
+      },
+      "3092": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.004262995230934374,
+            "steps_taken": -16.0,
+            "path_length": -0.4136695861816406
+          }
+        ]
+      },
+      "80": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.023024556603035817,
+            "ndtw": -0.0037045842906191506,
+            "steps_taken": 2.0,
+            "path_length": 0.2499990463256836
+          }
+        ]
+      },
+      "505": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.015137875196577166,
+            "steps_taken": 0.0,
+            "path_length": -0.4463062286376953
+          }
+        ]
+      },
+      "7012": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.11915505717124608,
+            "ndtw": 0.022792958461074986,
+            "steps_taken": -17.0,
+            "path_length": -1.7683162689208984
+          }
+        ]
+      },
+      "5660": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0,
+            "steps_taken": 0.0,
+            "path_length": 0.0
+          }
+        ]
+      },
+      "6415": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0,
+            "steps_taken": 0.0,
+            "path_length": 0.0
+          }
+        ]
+      },
+      "10610": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.022587122016363037,
+            "steps_taken": 1.0,
+            "path_length": 0.022548675537109375
+          }
+        ]
+      },
+      "4049": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": true,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 1,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": -1.0,
+            "spl": -0.7697393604064446,
+            "ndtw": -0.7274737311182993,
+            "steps_taken": 114.0,
+            "path_length": 16.184694290161133
+          }
+        ]
+      },
+      "6154": {
+        "cuts": 1,
+        "any": {
+          "sr_rescue": true,
+          "quality_rescue": true,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 1,
+          "quality_rescue": 1,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 1.0,
+            "spl": 0.8739325461346595,
+            "ndtw": 0.39622851789046376,
+            "steps_taken": 18.0,
+            "path_length": 9.459628582000732
+          }
+        ]
+      }
+    }
+  },
+  "uniform_route_results": {
+    "failed_routes": 7,
+    "failed_routes_sr_rescue": [
+      "7411",
+      "5660",
+      "6154"
+    ],
+    "failed_routes_quality_rescue": [
+      "7411",
+      "5660",
+      "6154"
+    ],
+    "failed_routes_cost_capped_quality_rescue": [
+      "7411",
+      "5660"
+    ],
+    "successful_routes": 36,
+    "successful_routes_sr_loss": [
+      "5307",
+      "4049"
+    ],
+    "successful_routes_ndtw_loss": [
+      "10396",
+      "5684",
+      "2365",
+      "8715",
+      "5307",
+      "6073",
+      "10638",
+      "6582",
+      "3037",
+      "7531",
+      "2053",
+      "9125",
+      "2476",
+      "7819",
+      "44",
+      "6649",
+      "1690",
+      "1271",
+      "5779",
+      "3950",
+      "2249",
+      "80",
+      "6415",
+      "10610",
+      "4049"
+    ],
+    "successful_routes_cost_increase": [
+      "10396",
+      "5684",
+      "2365",
+      "5488",
+      "5307",
+      "6073",
+      "10638",
+      "6582",
+      "3037",
+      "10680",
+      "7531",
+      "2053",
+      "9125",
+      "2476",
+      "7819",
+      "44",
+      "6649",
+      "1690",
+      "1271",
+      "8644",
+      "5779",
+      "3950",
+      "2249",
+      "779",
+      "8145",
+      "505",
+      "6415",
+      "10610",
+      "4049"
+    ],
+    "scene_count_quality_rescues": 3,
+    "route_details": {
+      "10396": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 3,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.04749732743610724,
+            "ndtw": -0.007815848676714032,
+            "steps_taken": 3.0,
+            "path_length": 0.648193359375
+          },
+          {
+            "success": 0.0,
+            "spl": -0.11557901802260873,
+            "ndtw": -0.022443398606946552,
+            "steps_taken": 53.0,
+            "path_length": 1.7076215744018555
+          },
+          {
+            "success": 0.0,
+            "spl": -0.04749732743610724,
+            "ndtw": -0.007815848676714032,
+            "steps_taken": 3.0,
+            "path_length": 0.648193359375
+          }
+        ]
+      },
+      "5684": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 2,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.04094738332014025,
+            "ndtw": -0.011725690927523957,
+            "steps_taken": 4.0,
+            "path_length": 1.0051727294921875
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.020595358484759907,
+            "steps_taken": 3.0,
+            "path_length": -0.09760379791259766
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.013872641251917894,
+            "steps_taken": -5.0,
+            "path_length": -0.4948616027832031
+          }
+        ]
+      },
+      "2365": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 2,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.39726783633372753,
+            "ndtw": -0.5913000494616567,
+            "steps_taken": 166.0,
+            "path_length": 13.27766227722168
+          },
+          {
+            "success": 0.0,
+            "spl": 0.17739682410627522,
+            "ndtw": 0.044508166795919624,
+            "steps_taken": -31.0,
+            "path_length": -2.0115652084350586
+          },
+          {
+            "success": 0.0,
+            "spl": -0.39726783633372753,
+            "ndtw": -0.5913000494616567,
+            "steps_taken": 166.0,
+            "path_length": 13.27766227722168
+          }
+        ]
+      },
+      "8715": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.003635876900973445,
+            "ndtw": -0.0014971863733971302,
+            "steps_taken": -1.0,
+            "path_length": -0.25
+          },
+          {
+            "success": 0.0,
+            "spl": 0.003635876900973445,
+            "ndtw": -0.005268087479068817,
+            "steps_taken": 0.0,
+            "path_length": -0.24126911163330078
+          },
+          {
+            "success": 0.0,
+            "spl": 0.003635876900973445,
+            "ndtw": -0.005593511703870013,
+            "steps_taken": -1.0,
+            "path_length": -0.4912691116333008
+          }
+        ]
+      },
+      "5488": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.19044707649430626,
+            "ndtw": 0.04704581777706596,
+            "steps_taken": -20.0,
+            "path_length": -2.4999990463256836
+          },
+          {
+            "success": 0.0,
+            "spl": 0.15276703853126983,
+            "ndtw": 0.020633065083301205,
+            "steps_taken": -11.0,
+            "path_length": -2.0969791412353516
+          },
+          {
+            "success": 0.0,
+            "spl": 0.04692757564137928,
+            "ndtw": 0.006822879503104007,
+            "steps_taken": 5.0,
+            "path_length": -0.7389774322509766
+          }
+        ]
+      },
+      "5307": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": true,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 1,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.04342761110400628,
+            "ndtw": 0.028982421770984312,
+            "steps_taken": -3.0,
+            "path_length": -0.5
+          },
+          {
+            "success": -1.0,
+            "spl": -0.8213195760119688,
+            "ndtw": -0.34547520744402926,
+            "steps_taken": 22.0,
+            "path_length": 4.249999046325684
+          },
+          {
+            "success": 0.0,
+            "spl": 0.043427698315364416,
+            "ndtw": 0.02488446374944231,
+            "steps_taken": -3.0,
+            "path_length": -0.5000009536743164
+          }
+        ]
+      },
+      "6073": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.04208515650546896,
+            "ndtw": -0.04326104028108413,
+            "steps_taken": -4.0,
+            "path_length": -0.3378314971923828
+          },
+          {
+            "success": 0.0,
+            "spl": -0.11912713391642937,
+            "ndtw": -0.017909834302509586,
+            "steps_taken": 8.0,
+            "path_length": 1.1641607284545898
+          },
+          {
+            "success": 0.0,
+            "spl": 0.13930460083603713,
+            "ndtw": -0.08744308980842252,
+            "steps_taken": -4.0,
+            "path_length": -1.8971333503723145
+          }
+        ]
+      },
+      "10713": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0,
+            "steps_taken": 0.0,
+            "path_length": 0.0
+          },
+          {
+            "success": 0.0,
+            "spl": 0.04679667024859213,
+            "ndtw": 0.004403088924378684,
+            "steps_taken": -2.0,
+            "path_length": -0.5
+          },
+          {
+            "success": 0.0,
+            "spl": 0.04679667024859213,
+            "ndtw": 0.004403088924378684,
+            "steps_taken": -2.0,
+            "path_length": -0.5
+          }
+        ]
+      },
+      "7411": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": true,
+          "quality_rescue": true,
+          "cost_capped_quality_rescue": true,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 1,
+          "quality_rescue": 1,
+          "cost_capped_quality_rescue": 1,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 1.0,
+            "spl": 0.6834853411990364,
+            "ndtw": 0.8209787742482573,
+            "steps_taken": -205.0,
+            "path_length": -22.171064376831055
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.00034887887413295043,
+            "steps_taken": -1.0,
+            "path_length": -0.003055572509765625
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.03210959912398875,
+            "steps_taken": -201.0,
+            "path_length": -20.770605087280273
+          }
+        ]
+      },
+      "9186": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.010010311296211272,
+            "steps_taken": 94.0,
+            "path_length": 0.31247711181640625
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.1500315069405403,
+            "steps_taken": 70.0,
+            "path_length": 9.71476936340332
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0009588516098482103,
+            "steps_taken": -1.0,
+            "path_length": 0.48848819732666016
+          }
+        ]
+      },
+      "10638": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 3,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.18958331709493892,
+            "ndtw": -0.09818429029350195,
+            "steps_taken": 7.0,
+            "path_length": 1.5
+          },
+          {
+            "success": 0.0,
+            "spl": -0.16344521992005356,
+            "ndtw": -0.09542625397555327,
+            "steps_taken": 6.0,
+            "path_length": 1.25
+          },
+          {
+            "success": 0.0,
+            "spl": -0.1368422657581394,
+            "ndtw": -0.04898716150982474,
+            "steps_taken": 6.0,
+            "path_length": 1.0121383666992188
+          }
+        ]
+      },
+      "6582": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.22211921433565773,
+            "ndtw": 0.025839932816873135,
+            "steps_taken": -38.0,
+            "path_length": -3.5905990600585938
+          },
+          {
+            "success": 0.0,
+            "spl": -0.10074281079065428,
+            "ndtw": -0.06311265755817907,
+            "steps_taken": 5.0,
+            "path_length": 2.535573959350586
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0,
+            "steps_taken": 0.0,
+            "path_length": 0.0
+          }
+        ]
+      },
+      "3037": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.0007576860362097371,
+            "steps_taken": 6.0,
+            "path_length": 0.1989130973815918
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.036084992541110195,
+            "steps_taken": -1.0,
+            "path_length": -0.8201251029968262
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.007666689516521608,
+            "steps_taken": 2.0,
+            "path_length": -0.3010869026184082
+          }
+        ]
+      },
+      "10680": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.08866143279342042,
+            "ndtw": 0.03296905984917542,
+            "steps_taken": -12.0,
+            "path_length": -1.3155622482299805
+          },
+          {
+            "success": 0.0,
+            "spl": 0.18116734418844926,
+            "ndtw": 0.0614254538246104,
+            "steps_taken": -27.0,
+            "path_length": -2.4386062622070312
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0557811546116449,
+            "ndtw": 0.017937083717520896,
+            "steps_taken": 2.0,
+            "path_length": -0.8589267730712891
+          }
+        ]
+      },
+      "1509": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.017016678574505062,
+            "steps_taken": -3.0,
+            "path_length": 0.18249225616455078
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.08450611811792297,
+            "steps_taken": 54.0,
+            "path_length": 4.958662986755371
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.017016678574505062,
+            "steps_taken": -3.0,
+            "path_length": 0.18249225616455078
+          }
+        ]
+      },
+      "7531": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 3,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.0023272895428050333,
+            "steps_taken": 2.0,
+            "path_length": 0.0
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0002537093442459559,
+            "steps_taken": 1.0,
+            "path_length": 0.0
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0002537093442459559,
+            "steps_taken": 1.0,
+            "path_length": 0.0
+          }
+        ]
+      },
+      "2053": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.03851245798795844,
+            "ndtw": -0.026719595293104748,
+            "steps_taken": 6.0,
+            "path_length": 0.8500404357910156
+          },
+          {
+            "success": 0.0,
+            "spl": -0.023370136712329348,
+            "ndtw": -0.02588260338709103,
+            "steps_taken": 4.0,
+            "path_length": 0.5043811798095703
+          },
+          {
+            "success": 0.0,
+            "spl": 0.012382076628191574,
+            "ndtw": -0.006393049135421824,
+            "steps_taken": -3.0,
+            "path_length": -0.2539358139038086
+          }
+        ]
+      },
+      "6052": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.3446566353654188,
+            "ndtw": 0.028960696787774354,
+            "steps_taken": -34.0,
+            "path_length": -3.419212818145752
+          },
+          {
+            "success": 0.0,
+            "spl": 0.07942074106398089,
+            "ndtw": 0.07237748102260422,
+            "steps_taken": -14.0,
+            "path_length": -0.8144092559814453
+          },
+          {
+            "success": 0.0,
+            "spl": 0.07616921853199454,
+            "ndtw": 0.052577371797610684,
+            "steps_taken": -18.0,
+            "path_length": -0.784538745880127
+          }
+        ]
+      },
+      "9125": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 3,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.0016260428699960139,
+            "steps_taken": 1.0,
+            "path_length": 0.17957115173339844
+          },
+          {
+            "success": 0.0,
+            "spl": -0.09821472537602027,
+            "ndtw": -0.024709094239352303,
+            "steps_taken": 13.0,
+            "path_length": 1.8551826477050781
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.0014702906867054555,
+            "steps_taken": 4.0,
+            "path_length": 0.6787948608398438
+          }
+        ]
+      },
+      "2476": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.053209812817573976,
+            "ndtw": 0.009343524893756117,
+            "steps_taken": 1.0,
+            "path_length": 0.5099363327026367
+          },
+          {
+            "success": 0.0,
+            "spl": 0.05844146806477979,
+            "ndtw": 0.0048415450546978045,
+            "steps_taken": -8.0,
+            "path_length": -0.4900646209716797
+          },
+          {
+            "success": 0.0,
+            "spl": 0.09288872610465104,
+            "ndtw": -0.011816480618036973,
+            "steps_taken": -10.0,
+            "path_length": -0.75
+          }
+        ]
+      },
+      "7819": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.033750084259972724,
+            "ndtw": -0.010924688948042216,
+            "steps_taken": -4.0,
+            "path_length": -1.0618009567260742
+          },
+          {
+            "success": 0.0,
+            "spl": -0.02632572145702039,
+            "ndtw": -0.01998008090605763,
+            "steps_taken": 3.0,
+            "path_length": 0.3233451843261719
+          },
+          {
+            "success": 0.0,
+            "spl": 0.021967513090748847,
+            "ndtw": -0.007769850606982098,
+            "steps_taken": 1.0,
+            "path_length": -0.25662994384765625
+          }
+        ]
+      },
+      "4573": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 2,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.03762256506106504,
+            "steps_taken": 5.0,
+            "path_length": 1.0020408630371094
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.013647330466789287,
+            "steps_taken": -4.0,
+            "path_length": -0.7492752075195312
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.012628040512401906,
+            "steps_taken": 1.0,
+            "path_length": 0.2544593811035156
+          }
+        ]
+      },
+      "44": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.05379654101325104,
+            "ndtw": 0.01584061045911145,
+            "steps_taken": 9.0,
+            "path_length": 1.0072689056396484
+          },
+          {
+            "success": 0.0,
+            "spl": -0.07947603998398045,
+            "ndtw": 0.001068122197636301,
+            "steps_taken": 12.0,
+            "path_length": 1.5320606231689453
+          },
+          {
+            "success": 0.0,
+            "spl": 0.036867431989501376,
+            "ndtw": -0.014466603347490281,
+            "steps_taken": -3.0,
+            "path_length": -0.6267738342285156
+          }
+        ]
+      },
+      "6649": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.04311903193046762,
+            "ndtw": 0.019710950049083076,
+            "steps_taken": -7.0,
+            "path_length": -0.9991464614868164
+          },
+          {
+            "success": 0.0,
+            "spl": 0.04311903193046762,
+            "ndtw": 0.028169612799410104,
+            "steps_taken": -3.0,
+            "path_length": -0.5020332336425781
+          },
+          {
+            "success": 0.0,
+            "spl": -0.06628159839345149,
+            "ndtw": -0.01253258417284342,
+            "steps_taken": 29.0,
+            "path_length": 0.7053203582763672
+          }
+        ]
+      },
+      "3039": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.006824133111476671,
+            "ndtw": 0.013877558044120386,
+            "steps_taken": -1.0,
+            "path_length": -0.2722358703613281
+          },
+          {
+            "success": 0.0,
+            "spl": 0.006824133111476671,
+            "ndtw": 0.0015590828712852556,
+            "steps_taken": -4.0,
+            "path_length": -0.7355518341064453
+          },
+          {
+            "success": 0.0,
+            "spl": 0.006824133111476671,
+            "ndtw": 0.0015590828712852556,
+            "steps_taken": -4.0,
+            "path_length": -0.7355518341064453
+          }
+        ]
+      },
+      "1690": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.06866485705880954,
+            "ndtw": -0.09479296751684618,
+            "steps_taken": 26.0,
+            "path_length": 1.250406265258789
+          },
+          {
+            "success": 0.0,
+            "spl": -0.04000506443984464,
+            "ndtw": -0.006127508303763296,
+            "steps_taken": -9.0,
+            "path_length": 0.7048130035400391
+          },
+          {
+            "success": 0.0,
+            "spl": -0.04068327401312022,
+            "ndtw": -0.012336837092445374,
+            "steps_taken": 0.0,
+            "path_length": 0.7173137664794922
+          }
+        ]
+      },
+      "1271": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 2,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.40401190751299676,
+            "ndtw": -0.34736564114171076,
+            "steps_taken": 70.0,
+            "path_length": 7.64532470703125
+          },
+          {
+            "success": 0.0,
+            "spl": -0.02123421484164789,
+            "ndtw": -0.005826630058847537,
+            "steps_taken": -1.0,
+            "path_length": 0.23659706115722656
+          },
+          {
+            "success": 0.0,
+            "spl": 0.04787523278186534,
+            "ndtw": 0.007653871132026535,
+            "steps_taken": -1.0,
+            "path_length": -0.5605745315551758
+          }
+        ]
+      },
+      "8644": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 3,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.008855031209529796,
+            "steps_taken": 8.0,
+            "path_length": 0.38911867141723633
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.011552036217108652,
+            "steps_taken": 8.0,
+            "path_length": 0.7499470710754395
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 4.944111537086293e-05,
+            "steps_taken": 9.0,
+            "path_length": 0.9999470710754395
+          }
+        ]
+      },
+      "5779": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 2,
+          "cost_increase": 3,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.003846452374600018,
+            "steps_taken": 10.0,
+            "path_length": 1.5295286178588867
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.010985553468246145,
+            "steps_taken": 8.0,
+            "path_length": 1.279526710510254
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.003846452374600018,
+            "steps_taken": 10.0,
+            "path_length": 1.5295286178588867
+          }
+        ]
+      },
+      "3950": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.0011323460884103964,
+            "steps_taken": -3.0,
+            "path_length": -0.5000019073486328
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.027116655580181837,
+            "steps_taken": -2.0,
+            "path_length": -0.7500019073486328
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.006635557605552789,
+            "steps_taken": 4.0,
+            "path_length": 1.0000019073486328
+          }
+        ]
+      },
+      "2249": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 3,
+          "cost_increase": 3,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.1018464727409083,
+            "ndtw": -0.18700629816626213,
+            "steps_taken": 12.0,
+            "path_length": 1.6248245239257812
+          },
+          {
+            "success": 0.0,
+            "spl": -0.08499281297775374,
+            "ndtw": -0.1410999039283547,
+            "steps_taken": 7.0,
+            "path_length": 1.3293123245239258
+          },
+          {
+            "success": 0.0,
+            "spl": -0.09616230744593257,
+            "ndtw": -0.14927716811270492,
+            "steps_taken": 9.0,
+            "path_length": 1.523843765258789
+          }
+        ]
+      },
+      "779": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.01701969333871678,
+            "ndtw": 0.0259057945011979,
+            "steps_taken": 20.0,
+            "path_length": -0.2827625274658203
+          },
+          {
+            "success": 0.0,
+            "spl": 0.05037248032126329,
+            "ndtw": 0.03648394689238599,
+            "steps_taken": -7.0,
+            "path_length": -0.8066692352294922
+          },
+          {
+            "success": 0.0,
+            "spl": -0.046530132858724205,
+            "ndtw": 0.03984171745881482,
+            "steps_taken": 8.0,
+            "path_length": 0.8324480056762695
+          }
+        ]
+      },
+      "8704": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.11011928168300578,
+            "ndtw": 0.04387264189283824,
+            "steps_taken": -1.0,
+            "path_length": -1.3467788696289062
+          },
+          {
+            "success": 0.0,
+            "spl": 0.21073611146330407,
+            "ndtw": 0.06520126231187806,
+            "steps_taken": -16.0,
+            "path_length": -2.298961639404297
+          },
+          {
+            "success": 0.0,
+            "spl": 0.1374604617677354,
+            "ndtw": 0.04721724018237561,
+            "steps_taken": -14.0,
+            "path_length": -1.6276111602783203
+          }
+        ]
+      },
+      "8145": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.008962421597912051,
+            "steps_taken": 1.0,
+            "path_length": 0.2632617950439453
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.03974315646740911,
+            "steps_taken": 2.0,
+            "path_length": 0.7897882461547852
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0356480980454118,
+            "steps_taken": 0.0,
+            "path_length": 0.3030509948730469
+          }
+        ]
+      },
+      "3092": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.008616129762288982,
+            "steps_taken": -14.0,
+            "path_length": -0.16205787658691406
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.004262995230934374,
+            "steps_taken": -16.0,
+            "path_length": -0.4136695861816406
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.008616129762288982,
+            "steps_taken": -14.0,
+            "path_length": -0.16205787658691406
+          }
+        ]
+      },
+      "80": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.015428826149388564,
+            "ndtw": -0.0019978338687117736,
+            "steps_taken": -1.0,
+            "path_length": -0.25
+          },
+          {
+            "success": 0.0,
+            "spl": 0.015428826149388564,
+            "ndtw": 0.019414758833846246,
+            "steps_taken": -1.0,
+            "path_length": -0.25
+          },
+          {
+            "success": 0.0,
+            "spl": 0.015428826149388564,
+            "ndtw": 0.019414758833846246,
+            "steps_taken": -1.0,
+            "path_length": -0.25
+          }
+        ]
+      },
+      "505": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 3,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.016098462843643135,
+            "steps_taken": 3.0,
+            "path_length": 0.30890893936157227
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.01601147176841977,
+            "steps_taken": 3.0,
+            "path_length": 0.25
+          },
+          {
+            "success": 0.0,
+            "spl": -0.008810829234979556,
+            "ndtw": 0.01840549263623681,
+            "steps_taken": 5.0,
+            "path_length": 0.7902712821960449
+          }
+        ]
+      },
+      "7012": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": false,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 0,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.08868856281832493,
+            "ndtw": 0.020067529047330557,
+            "steps_taken": -12.0,
+            "path_length": -1.1578865051269531
+          },
+          {
+            "success": 0.0,
+            "spl": 0.11915505717124608,
+            "ndtw": 0.013026293734383576,
+            "steps_taken": -18.0,
+            "path_length": -2.172565460205078
+          },
+          {
+            "success": 0.0,
+            "spl": 0.11915505717124608,
+            "ndtw": 0.003096374846183969,
+            "steps_taken": -10.0,
+            "path_length": -1.6573925018310547
+          }
+        ]
+      },
+      "5660": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": true,
+          "quality_rescue": true,
+          "cost_capped_quality_rescue": true,
+          "success_loss": false,
+          "ndtw_loss": false,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 3,
+          "quality_rescue": 3,
+          "cost_capped_quality_rescue": 1,
+          "success_loss": 0,
+          "ndtw_loss": 0,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 1.0,
+            "spl": 0.9629178845918435,
+            "ndtw": 0.15409615485111572,
+            "steps_taken": 3.0,
+            "path_length": 0.7744579315185547
+          },
+          {
+            "success": 1.0,
+            "spl": 0.9629178845918435,
+            "ndtw": 0.15409615485111572,
+            "steps_taken": 3.0,
+            "path_length": 0.7744579315185547
+          },
+          {
+            "success": 1.0,
+            "spl": 1.0,
+            "ndtw": 0.22231336887663222,
+            "steps_taken": -3.0,
+            "path_length": -0.2255401611328125
+          }
+        ]
+      },
+      "6415": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 2,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.024982900448001888,
+            "steps_taken": 3.0,
+            "path_length": 0.5085287094116211
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.0,
+            "steps_taken": 0.0,
+            "path_length": 0.0
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.03725192461540017,
+            "steps_taken": 8.0,
+            "path_length": -0.10599517822265625
+          }
+        ]
+      },
+      "10610": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 1,
+          "cost_increase": 2,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.02044437280425271,
+            "steps_taken": 0.0,
+            "path_length": -0.22394657135009766
+          },
+          {
+            "success": 0.0,
+            "spl": -0.020873910253572214,
+            "ndtw": -0.004889708254670055,
+            "steps_taken": 5.0,
+            "path_length": 0.5260534286499023
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": 0.022587122016363037,
+            "steps_taken": 1.0,
+            "path_length": 0.022548675537109375
+          }
+        ]
+      },
+      "4049": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": false,
+          "quality_rescue": false,
+          "cost_capped_quality_rescue": false,
+          "success_loss": true,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 0,
+          "quality_rescue": 0,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 1,
+          "ndtw_loss": 3,
+          "cost_increase": 3,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": -0.11154754790743138,
+            "ndtw": -0.4313490105630407,
+            "steps_taken": 8.0,
+            "path_length": 3.1862010955810547
+          },
+          {
+            "success": 0.0,
+            "spl": -0.11154754790743138,
+            "ndtw": -0.4313490105630407,
+            "steps_taken": 8.0,
+            "path_length": 3.1862010955810547
+          },
+          {
+            "success": -1.0,
+            "spl": -0.7697393604064446,
+            "ndtw": -0.7274737311182993,
+            "steps_taken": 114.0,
+            "path_length": 16.184694290161133
+          }
+        ]
+      },
+      "6154": {
+        "cuts": 3,
+        "any": {
+          "sr_rescue": true,
+          "quality_rescue": true,
+          "cost_capped_quality_rescue": false,
+          "success_loss": false,
+          "ndtw_loss": true,
+          "cost_increase": true,
+          "same_return": false
+        },
+        "counts": {
+          "sr_rescue": 1,
+          "quality_rescue": 1,
+          "cost_capped_quality_rescue": 0,
+          "success_loss": 0,
+          "ndtw_loss": 2,
+          "cost_increase": 1,
+          "same_return": 0
+        },
+        "deltas": [
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.007383642176178484,
+            "steps_taken": -10.0,
+            "path_length": -0.46330690383911133
+          },
+          {
+            "success": 0.0,
+            "spl": 0.0,
+            "ndtw": -0.007383642176178484,
+            "steps_taken": -10.0,
+            "path_length": -0.46330690383911133
+          },
+          {
+            "success": 1.0,
+            "spl": 0.8493047582998877,
+            "ndtw": 0.3757581894978995,
+            "steps_taken": 32.0,
+            "path_length": 9.889188289642334
+          }
+        ]
+      }
+    }
+  },
+  "all_route_native_controls": 128,
+  "verification_required": "research/results/interrupt_confirmation_train128/verification_001/summary.json",
+  "limits": [
+    "Previously registered route sample; route-level correlated arms.",
+    "Event and uniform cuts are privileged analysis arms, not deployable policies.",
+    "Unexposed routes remain native and are not omitted from population denominators."
+  ],
+  "hashes": {
+    "research/results/interrupt_confirmation_train128/full_001/manifest.json": "263b583f26160d43288e66f34bd542673dd74380d515ca7d58198946ef7030eb",
+    "research/results/interrupt_confirmation_train128/full_001/results.jsonl": "63477283be44e1483790045880ca4b52bcdc90c05c21fd56544dcabc87335b92",
+    "/home/wj/VLN-CE/ETPNav/research/tools/analyze_interrupt_confirmation.py": "c5efd1eea165f1b68c43ef8bb01f7dd0a02e43b0f7e223b7008c3251c0d16d04"
+  },
+  "decision": "NO-GO for event-trigger learning; report opportunity/harm"
+}

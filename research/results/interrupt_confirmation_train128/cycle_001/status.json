@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-10-08T06:42:03.154805+00:00",
+  "config": {
+    "experiment_id": "INTERRUPT-CONFIRMATION-CAPTURE-001",
+    "base_config": "run_r2r/iter_train.yaml",
+    "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+    "split": "train",
+    "episodes": 128,
+    "seed": 100,
+    "dataset_path": "research/results/interrupt_confirmation_train128/sampling_001/train_interrupt_confirmation128_bertidx.json.gz",
+    "sampling_manifest": "research/results/interrupt_confirmation_train128/sampling_001/manifest.json",
+    "capture_graph_options": true,
+    "allow_sliding": true,
+    "tryout_effective": false,
+    "back_algo": "control",
+    "protocol": "research/INTERRUPT_CONFIRMATION_PROTOCOL.md",
+    "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+    "purpose": "Native capture and exact controls before freezing event/uniform timing schedules."
+  },
+  "python": "3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \n[GCC 7.5.0]",
+  "argv": [
+    "research/tools/run_graph_option_cycle.py",
+    "--config",
+    "research/configs/INTERRUPT_CONFIRMATION_CAPTURE_001.json",
+    "--root",
+    "research/results/interrupt_confirmation_train128",
+    "--exp-prefix",
+    "aaa_interrupt_confirmation_001"
+  ],
+  "git_commit": "5519fcd0b5327c3695e0c88fad46bc4fa2e241f9",
+  "hardware": "NVIDIA GeForce RTX 4090, GPU-87704b96-d1d7-84b6-3f06-e6453d8ac460, 595.84\nNVIDIA GeForce RTX 4090, GPU-7528159c-c555-9288-8b5c-c5c9436a9c94, 595.84\n",
+  "hashes": {
+    "research/configs/INTERRUPT_CONFIRMATION_CAPTURE_001.json": "2cf828b44aefac841fbfdbbcfdac1cfcdb2e1e38804ccb59a49792433f1c212b",
+    "research/results/interrupt_confirmation_train128/sampling_001/manifest.json": "8b9b0f8ef61defb9481e2a9ffc85ead30f2adc44e1a927c86eae9931be5b436d",
+    "research/ROUTE_COMPATIBILITY_PROTOCOL.md": "376b871ebbcbfa716a76d723727d19d2cea826b189ccf22626178b86b62d12ed",
+    "research/tools/run_graph_option_cycle.py": "bbaa5aa56861c2f641909715d42e14d8695e03140afaaa7c91273c6873b2ddba"
+  },
+  "stages": [
+    {
+      "name": "capture",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/INTERRUPT_CONFIRMATION_CAPTURE_001.json",
+        "--output-dir",
+        "research/results/interrupt_confirmation_train128/capture_001",
+        "--exp-name",
+        "aaa_interrupt_confirmation_001_capture",
+        "--trace"
+      ],
+      "started_utc": "2026-10-08T06:42:03.184179+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-08T06:43:51.989234+00:00"
+    },
+    {
+      "name": "control",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/run_option_capture.py",
+        "--config",
+        "research/configs/INTERRUPT_CONFIRMATION_CAPTURE_001.json",
+        "--output-dir",
+        "research/results/interrupt_confirmation_train128/control_001",
+        "--exp-name",
+        "aaa_interrupt_confirmation_001_control"
+      ],
+      "started_utc": "2026-10-08T06:43:51.989716+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-10-08T06:45:30.273767+00:00"
+    },
+    {
+      "name": "noninterference",
+      "command": [
+        "/home/wj/miniconda3/envs/etpnav_legacy/bin/python",
+        "research/tools/check_option_noninterference.py",
+        "--capture-dir",
+        "research/results/interrupt_confirmation_train128/capture_001",
+        "--control-dir",
+        "research/results/interrupt_confirmation_train128/control_001",
+        "--output-dir",
+        "research/results/interrupt_confirmation_train128/noninterference_001"
+      ],
+      "started_utc": "2026-10-08T06:45:30.274168+00:00",
+      "status": "failed",
+      "returncode": 1,
+      "finished_utc": "2026-10-08T06:45:30.303162+00:00"
+    }
+  ]
+}

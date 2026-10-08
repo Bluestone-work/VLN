@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "experiment_id": "INTERRUPT-CONFIRMATION-001",
+  "rollouts": 472,
+  "exposed_routes": 43,
+  "all_route_native_controls": 128,
+  "verification_required": "research/results/interrupt_confirmation_train128/verification_001/summary.json",
+  "limits": [
+    "Previously registered route sample; route-level correlated arms.",
+    "Event and uniform cuts are privileged analysis arms, not deployable policies.",
+    "Unexposed routes remain native and are not omitted from population denominators."
+  ],
+  "hashes": {
+    "research/results/interrupt_confirmation_train128/full_001/manifest.json": "263b583f26160d43288e66f34bd542673dd74380d515ca7d58198946ef7030eb",
+    "research/results/interrupt_confirmation_train128/full_001/results.jsonl": "63477283be44e1483790045880ca4b52bcdc90c05c21fd56544dcabc87335b92",
+    "research/tools/analyze_interrupt_confirmation.py": "c5efd1eea165f1b68c43ef8bb01f7dd0a02e43b0f7e223b7008c3251c0d16d04"
+  },
+  "decision": "NO-GO for event-trigger learning; report opportunity/harm"
+}

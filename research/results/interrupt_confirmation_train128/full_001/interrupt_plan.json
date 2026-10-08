@@ -1,0 +1,5940 @@
+{
+  "events": [
+    {
+      "episode_id": "10396",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 0,
+      "cut_primitive": 5,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            0.4368950128555298,
+            1.9900290966033936,
+            -7.556089878082275
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.5349843252621849,
+            1.9900290966033936,
+            -7.752376688317284
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "10610",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 8,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            6.383321285247803,
+            3.0079219341278076,
+            1.8935606479644775
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            5.761011304458145,
+            3.0079219341278076,
+            -0.26866743616762356
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "10638",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 2,
+      "cut_primitive": 8,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.4613137245178223,
+            -3.0999951362609863,
+            -0.4103795886039734
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.389935399656658,
+            -3.0999951362609863,
+            -2.6592471113229115
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 14,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "10680",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 7,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.0218700170516968,
+            0.13123798370361328,
+            11.060099601745605
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.4217722763527756,
+            0.13123798370361328,
+            12.049239090742924
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 12,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "10713",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 3,
+      "cut_primitive": 2,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -5.772168159484863,
+            3.0079219341278076,
+            1.371461272239685
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -5.152124950706654,
+            3.0079219341278076,
+            -0.5299977515754541
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "1271",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 3,
+      "cut_primitive": 11,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -7.130655765533447,
+            -1.9967597723007202,
+            -10.336515426635742
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -5.417679264941443,
+            -1.9967597723007202,
+            -8.877676330498142
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g10",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "1509",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 6,
+      "cut_primitive": 1,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -7.087491035461426,
+            0.11554622650146484,
+            -9.42278003692627
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            -6.882038179059421,
+            0.11554622650146484,
+            -10.40144705067316
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g23",
+        "tryout": false
+      },
+      "baseline_primitive_count": 4,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "1690",
+      "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "high_level_step": 0,
+      "cut_primitive": 13,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            10.899100303649902,
+            0.09357202053070068,
+            2.4586100578308105
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            9.826646826461213,
+            0.09357202053070068,
+            1.8164702449661287
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "2053",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 6,
+      "cut_primitive": 7,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -0.5020316243171692,
+            -3.188046932220459,
+            -3.8945555686950684
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            0.8020476383321316,
+            -3.188046932220459,
+            -2.378185799566161
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g16",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "2249",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 7,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -0.14639031887054443,
+            -3.192077875137329,
+            -0.6534560918807983
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            0.9321263534045883,
+            -3.192077875137329,
+            -1.2853593974779236
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "2365",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 0,
+      "cut_primitive": 2,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.850902557373047,
+            2.674846887588501,
+            -2.29544997215271
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -7.638681290171838,
+            2.674846887588501,
+            -3.39057129260416
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 5,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "2476",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 2,
+      "cut_primitive": 5,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.031747341156006,
+            -0.7661948204040527,
+            3.530635118484497
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            0.33351866658981,
+            -0.7661948204040527,
+            3.1081195934666086
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "3037",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 0,
+      "cut_primitive": 14,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.408254623413086,
+            0.5000050067901611,
+            0.12031936645507812
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -5.57308655222845,
+            0.5000050067901611,
+            -1.1814709970460733
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 15,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "3039",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 6,
+      "cut_primitive": 7,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            3.7988970279693604,
+            0.13123798370361328,
+            7.544342994689941
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            4.300639945096204,
+            0.13123798370361328,
+            9.480383811695885
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g18",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "3092",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 12,
+      "cut_primitive": 8,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "12",
+        "front_pos": {
+          "__array__": [
+            -7.947042465209961,
+            0.11554622650146484,
+            -8.857012748718262
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "12",
+        "ghost_pos": {
+          "__array__": [
+            -7.477746509129242,
+            0.11554622650146484,
+            -10.015572762531221
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g43",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "3950",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 2,
+      "cut_primitive": 5,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -5.62024450302124,
+            0.07484699785709381,
+            -2.5152227878570557
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -6.869073599940488,
+            0.07484699785709381,
+            -2.5693142538000044
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "4049",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 2,
+      "cut_primitive": 5,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            3.3224101066589355,
+            0.13123798370361328,
+            8.86398983001709
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            2.871655147652973,
+            0.13123798370361328,
+            7.433318670409987
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "44",
+      "scene_id": "data/scene_datasets/mp3d/ur6pFq6Qu1A/ur6pFq6Qu1A.glb",
+      "high_level_step": 6,
+      "cut_primitive": 8,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -14.618964195251465,
+            0.12697899341583252,
+            -5.416015148162842
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            -14.421298321486036,
+            0.12697899341583252,
+            -7.6573157086295875
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g23",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "4573",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 5,
+      "cut_primitive": 2,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            2.5755269527435303,
+            -3.192077875137329,
+            0.2763533592224121
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            3.204893065536377,
+            -3.192077875137329,
+            -0.6446390109750704
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g17",
+        "tryout": false
+      },
+      "baseline_primitive_count": 5,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "505",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 3,
+      "cut_primitive": 3,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -3.715836763381958,
+            0.3000051975250244,
+            -5.754739761352539
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -4.443199224998971,
+            0.3000051975250244,
+            -7.883928303833087
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "5307",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 2,
+      "cut_primitive": 9,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -7.727684497833252,
+            0.11554622650146484,
+            1.1664066314697266
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -7.106732772217203,
+            0.11554622650146484,
+            -0.7347558956316393
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "baseline_primitive_count": 11,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "5488",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 15,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            6.165460109710693,
+            -0.5069980621337891,
+            -1.9156099557876587
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            8.94400014114044,
+            -0.5069980621337891,
+            -0.7843649364649745
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 23,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "5660",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 1,
+      "cut_primitive": 2,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            11.937019348144531,
+            0.13123798370361328,
+            10.94112777709961
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            9.977250228155107,
+            0.13123798370361328,
+            11.340258077046725
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "5684",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 1,
+      "cut_primitive": 3,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -11.909087181091309,
+            0.07484699785709381,
+            -3.856968402862549
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -10.960100555563567,
+            0.07484699785709381,
+            -4.172284727478754
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "5779",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 0,
+      "cut_primitive": 9,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -15.530599594116211,
+            0.11554622650146484,
+            -4.0335798263549805
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -14.044261525804712,
+            0.11554622650146484,
+            -3.831591839860633
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "6052",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 13,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.764849901199341,
+            -0.7661948204040527,
+            1.9177000522613525
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.5530891607972599,
+            -0.7661948204040527,
+            3.0830817181614294
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "6073",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 13,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.764849901199341,
+            -0.7661948204040527,
+            1.9177000522613525
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.5530891607972599,
+            -0.7661948204040527,
+            3.0830817181614294
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "6154",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 3,
+      "cut_primitive": 7,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -1.150905728340149,
+            0.033804893493652344,
+            -1.4459353685379028
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -1.0734496500836794,
+            0.033804893493652344,
+            -2.4429311337952724
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "6415",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 0,
+      "cut_primitive": 2,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.9391798973083496,
+            3.0079219341278076,
+            8.014430046081543
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -2.3927068596936025,
+            3.0079219341278076,
+            6.351941784721448
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "6582",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 3,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.9080300331115723,
+            0.033804893493652344,
+            -1.4471499919891357
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -1.9016229054707348,
+            0.033804893493652344,
+            -2.4471294661361775
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "baseline_primitive_count": 4,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "6649",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 14,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            4.233429908752441,
+            -0.7661948204040527,
+            1.3887799978256226
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            3.2810470943403462,
+            -0.7661948204040527,
+            3.9685991726540633
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 21,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "7012",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 0,
+      "cut_primitive": 15,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.6529600620269775,
+            -3.0999951362609863,
+            -3.9200100898742676
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -5.4389004571076125,
+            -3.0999951362609863,
+            -5.032905464587431
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "7411",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 8,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -10.0789794921875,
+            2.370152235031128,
+            -3.186432361602783
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -9.069643685240674,
+            2.370152235031128,
+            -1.1755267872868234
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "7531",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "cut_primitive": 3,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -3.5869998931884766,
+            -3.0999951362609863,
+            -8.183874130249023
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -4.536163529168124,
+            -3.0999951362609863,
+            -7.038992056870715
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "779",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 8,
+      "cut_primitive": 4,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "8",
+        "front_pos": {
+          "__array__": [
+            2.80014705657959,
+            -3.192077875137329,
+            5.145984649658203
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "8",
+        "ghost_pos": {
+          "__array__": [
+            0.3118157952654146,
+            -3.192077875137329,
+            4.904722273879042
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g28",
+        "tryout": false
+      },
+      "baseline_primitive_count": 13,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "7819",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 6,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            4.547118186950684,
+            3.0079219341278076,
+            -2.741170644760132
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            2.5394945406341525,
+            3.0079219341278076,
+            -4.230951600052123
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 11,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "80",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 3,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -12.874855041503906,
+            0.11554622650146484,
+            -2.8441483974456787
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -11.802499310631031,
+            0.11554622650146484,
+            -2.5369321277624897
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "8145",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "cut_primitive": 4,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -3.620518684387207,
+            0.3000051975250244,
+            -5.332192897796631
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -4.3436342403655965,
+            0.3000051975250244,
+            -7.462827519852244
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "8644",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 0,
+      "cut_primitive": 10,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.9798500537872314,
+            2.674846887588501,
+            5.83896017074585
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -4.490948899280319,
+            2.674846887588501,
+            3.2473235682976096
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "8704",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 7,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.0218700170516968,
+            0.13123798370361328,
+            11.060099601745605
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.4217722763527756,
+            0.13123798370361328,
+            12.049239090742924
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 12,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "8715",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 10,
+      "cut_primitive": 7,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "10",
+        "front_pos": {
+          "__array__": [
+            -2.3419675827026367,
+            -3.192077875137329,
+            -2.492938995361328
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "10",
+        "ghost_pos": {
+          "__array__": [
+            -3.1260059445630466,
+            -3.192077875137329,
+            -4.332853082249965
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g30",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "9125",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 5,
+      "cut_primitive": 2,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            -16.60792350769043,
+            0.11554622650146484,
+            1.5177576541900635
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            -16.139920992925134,
+            0.11554622650146484,
+            2.6768407599997204
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g16",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "9186",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 1,
+      "cut_primitive": 18,
+      "cut_kind": "event_first_forward_collision",
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -6.593238830566406,
+            0.07484699785709381,
+            6.089354991912842
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -9.584719254371004,
+            0.07484699785709381,
+            5.863423865252823
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 24,
+      "empty_back_path": true
+    },
+    {
+      "episode_id": "10396",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 0,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            0.4368950128555298,
+            1.9900290966033936,
+            -7.556089878082275
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.5349843252621849,
+            1.9900290966033936,
+            -7.752376688317284
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "10396",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 0,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            0.4368950128555298,
+            1.9900290966033936,
+            -7.556089878082275
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.5349843252621849,
+            1.9900290966033936,
+            -7.752376688317284
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "10396",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 0,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            0.4368950128555298,
+            1.9900290966033936,
+            -7.556089878082275
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.5349843252621849,
+            1.9900290966033936,
+            -7.752376688317284
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "10610",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            6.383321285247803,
+            3.0079219341278076,
+            1.8935606479644775
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            5.761011304458145,
+            3.0079219341278076,
+            -0.26866743616762356
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "10610",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            6.383321285247803,
+            3.0079219341278076,
+            1.8935606479644775
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            5.761011304458145,
+            3.0079219341278076,
+            -0.26866743616762356
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "10610",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            6.383321285247803,
+            3.0079219341278076,
+            1.8935606479644775
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            5.761011304458145,
+            3.0079219341278076,
+            -0.26866743616762356
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "10638",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 2,
+      "cut_primitive": 13,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.4613137245178223,
+            -3.0999951362609863,
+            -0.4103795886039734
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.389935399656658,
+            -3.0999951362609863,
+            -2.6592471113229115
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 14,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "10638",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 2,
+      "cut_primitive": 11,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.4613137245178223,
+            -3.0999951362609863,
+            -0.4103795886039734
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.389935399656658,
+            -3.0999951362609863,
+            -2.6592471113229115
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 14,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "10638",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 2,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.4613137245178223,
+            -3.0999951362609863,
+            -0.4103795886039734
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.389935399656658,
+            -3.0999951362609863,
+            -2.6592471113229115
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 14,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "10680",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 9,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.0218700170516968,
+            0.13123798370361328,
+            11.060099601745605
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.4217722763527756,
+            0.13123798370361328,
+            12.049239090742924
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 12,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "10680",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 6,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.0218700170516968,
+            0.13123798370361328,
+            11.060099601745605
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.4217722763527756,
+            0.13123798370361328,
+            12.049239090742924
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 12,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "10680",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 11,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.0218700170516968,
+            0.13123798370361328,
+            11.060099601745605
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.4217722763527756,
+            0.13123798370361328,
+            12.049239090742924
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 12,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "10713",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 3,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -5.772168159484863,
+            3.0079219341278076,
+            1.371461272239685
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -5.152124950706654,
+            3.0079219341278076,
+            -0.5299977515754541
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "10713",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 3,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -5.772168159484863,
+            3.0079219341278076,
+            1.371461272239685
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -5.152124950706654,
+            3.0079219341278076,
+            -0.5299977515754541
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "10713",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 3,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -5.772168159484863,
+            3.0079219341278076,
+            1.371461272239685
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -5.152124950706654,
+            3.0079219341278076,
+            -0.5299977515754541
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "1271",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 3,
+      "cut_primitive": 15,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -7.130655765533447,
+            -1.9967597723007202,
+            -10.336515426635742
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -5.417679264941443,
+            -1.9967597723007202,
+            -8.877676330498142
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g10",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true,
+      "event_cut_primitive": 11
+    },
+    {
+      "episode_id": "1271",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 3,
+      "cut_primitive": 14,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -7.130655765533447,
+            -1.9967597723007202,
+            -10.336515426635742
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -5.417679264941443,
+            -1.9967597723007202,
+            -8.877676330498142
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g10",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true,
+      "event_cut_primitive": 11
+    },
+    {
+      "episode_id": "1271",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 3,
+      "cut_primitive": 9,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -7.130655765533447,
+            -1.9967597723007202,
+            -10.336515426635742
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -5.417679264941443,
+            -1.9967597723007202,
+            -8.877676330498142
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g10",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true,
+      "event_cut_primitive": 11
+    },
+    {
+      "episode_id": "1509",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 6,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -7.087491035461426,
+            0.11554622650146484,
+            -9.42278003692627
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            -6.882038179059421,
+            0.11554622650146484,
+            -10.40144705067316
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g23",
+        "tryout": false
+      },
+      "baseline_primitive_count": 4,
+      "empty_back_path": true,
+      "event_cut_primitive": 1
+    },
+    {
+      "episode_id": "1509",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 6,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -7.087491035461426,
+            0.11554622650146484,
+            -9.42278003692627
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            -6.882038179059421,
+            0.11554622650146484,
+            -10.40144705067316
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g23",
+        "tryout": false
+      },
+      "baseline_primitive_count": 4,
+      "empty_back_path": true,
+      "event_cut_primitive": 1
+    },
+    {
+      "episode_id": "1509",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 6,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -7.087491035461426,
+            0.11554622650146484,
+            -9.42278003692627
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            -6.882038179059421,
+            0.11554622650146484,
+            -10.40144705067316
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g23",
+        "tryout": false
+      },
+      "baseline_primitive_count": 4,
+      "empty_back_path": true,
+      "event_cut_primitive": 1
+    },
+    {
+      "episode_id": "1690",
+      "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "high_level_step": 0,
+      "cut_primitive": 15,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            10.899100303649902,
+            0.09357202053070068,
+            2.4586100578308105
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            9.826646826461213,
+            0.09357202053070068,
+            1.8164702449661287
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true,
+      "event_cut_primitive": 13
+    },
+    {
+      "episode_id": "1690",
+      "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "high_level_step": 0,
+      "cut_primitive": 12,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            10.899100303649902,
+            0.09357202053070068,
+            2.4586100578308105
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            9.826646826461213,
+            0.09357202053070068,
+            1.8164702449661287
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true,
+      "event_cut_primitive": 13
+    },
+    {
+      "episode_id": "1690",
+      "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "high_level_step": 0,
+      "cut_primitive": 13,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            10.899100303649902,
+            0.09357202053070068,
+            2.4586100578308105
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            9.826646826461213,
+            0.09357202053070068,
+            1.8164702449661287
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true,
+      "event_cut_primitive": 13
+    },
+    {
+      "episode_id": "2053",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 6,
+      "cut_primitive": 6,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -0.5020316243171692,
+            -3.188046932220459,
+            -3.8945555686950684
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            0.8020476383321316,
+            -3.188046932220459,
+            -2.378185799566161
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g16",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "2053",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 6,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -0.5020316243171692,
+            -3.188046932220459,
+            -3.8945555686950684
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            0.8020476383321316,
+            -3.188046932220459,
+            -2.378185799566161
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g16",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "2053",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 6,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -0.5020316243171692,
+            -3.188046932220459,
+            -3.8945555686950684
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            0.8020476383321316,
+            -3.188046932220459,
+            -2.378185799566161
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g16",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "2249",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 6,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -0.14639031887054443,
+            -3.192077875137329,
+            -0.6534560918807983
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            0.9321263534045883,
+            -3.192077875137329,
+            -1.2853593974779236
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "2249",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -0.14639031887054443,
+            -3.192077875137329,
+            -0.6534560918807983
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            0.9321263534045883,
+            -3.192077875137329,
+            -1.2853593974779236
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "2249",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -0.14639031887054443,
+            -3.192077875137329,
+            -0.6534560918807983
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            0.9321263534045883,
+            -3.192077875137329,
+            -1.2853593974779236
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "2365",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 0,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.850902557373047,
+            2.674846887588501,
+            -2.29544997215271
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -7.638681290171838,
+            2.674846887588501,
+            -3.39057129260416
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 5,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "2365",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 0,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.850902557373047,
+            2.674846887588501,
+            -2.29544997215271
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -7.638681290171838,
+            2.674846887588501,
+            -3.39057129260416
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 5,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "2365",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 0,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.850902557373047,
+            2.674846887588501,
+            -2.29544997215271
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -7.638681290171838,
+            2.674846887588501,
+            -3.39057129260416
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 5,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "2476",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 2,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.031747341156006,
+            -0.7661948204040527,
+            3.530635118484497
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            0.33351866658981,
+            -0.7661948204040527,
+            3.1081195934666086
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "2476",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 2,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.031747341156006,
+            -0.7661948204040527,
+            3.530635118484497
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            0.33351866658981,
+            -0.7661948204040527,
+            3.1081195934666086
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "2476",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 2,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.031747341156006,
+            -0.7661948204040527,
+            3.530635118484497
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            0.33351866658981,
+            -0.7661948204040527,
+            3.1081195934666086
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "3037",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 0,
+      "cut_primitive": 12,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.408254623413086,
+            0.5000050067901611,
+            0.12031936645507812
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -5.57308655222845,
+            0.5000050067901611,
+            -1.1814709970460733
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 15,
+      "empty_back_path": true,
+      "event_cut_primitive": 14
+    },
+    {
+      "episode_id": "3037",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 0,
+      "cut_primitive": 13,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.408254623413086,
+            0.5000050067901611,
+            0.12031936645507812
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -5.57308655222845,
+            0.5000050067901611,
+            -1.1814709970460733
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 15,
+      "empty_back_path": true,
+      "event_cut_primitive": 14
+    },
+    {
+      "episode_id": "3037",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 0,
+      "cut_primitive": 10,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -7.408254623413086,
+            0.5000050067901611,
+            0.12031936645507812
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -5.57308655222845,
+            0.5000050067901611,
+            -1.1814709970460733
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 15,
+      "empty_back_path": true,
+      "event_cut_primitive": 14
+    },
+    {
+      "episode_id": "3039",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 6,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            3.7988970279693604,
+            0.13123798370361328,
+            7.544342994689941
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            4.300639945096204,
+            0.13123798370361328,
+            9.480383811695885
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g18",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "3039",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 6,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            3.7988970279693604,
+            0.13123798370361328,
+            7.544342994689941
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            4.300639945096204,
+            0.13123798370361328,
+            9.480383811695885
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g18",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "3039",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 6,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            3.7988970279693604,
+            0.13123798370361328,
+            7.544342994689941
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            4.300639945096204,
+            0.13123798370361328,
+            9.480383811695885
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g18",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "3092",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 12,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "12",
+        "front_pos": {
+          "__array__": [
+            -7.947042465209961,
+            0.11554622650146484,
+            -8.857012748718262
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "12",
+        "ghost_pos": {
+          "__array__": [
+            -7.477746509129242,
+            0.11554622650146484,
+            -10.015572762531221
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g43",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "3092",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 12,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "12",
+        "front_pos": {
+          "__array__": [
+            -7.947042465209961,
+            0.11554622650146484,
+            -8.857012748718262
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "12",
+        "ghost_pos": {
+          "__array__": [
+            -7.477746509129242,
+            0.11554622650146484,
+            -10.015572762531221
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g43",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "3092",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 12,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "12",
+        "front_pos": {
+          "__array__": [
+            -7.947042465209961,
+            0.11554622650146484,
+            -8.857012748718262
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "12",
+        "ghost_pos": {
+          "__array__": [
+            -7.477746509129242,
+            0.11554622650146484,
+            -10.015572762531221
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g43",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "3950",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 2,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -5.62024450302124,
+            0.07484699785709381,
+            -2.5152227878570557
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -6.869073599940488,
+            0.07484699785709381,
+            -2.5693142538000044
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "3950",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 2,
+      "cut_primitive": 6,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -5.62024450302124,
+            0.07484699785709381,
+            -2.5152227878570557
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -6.869073599940488,
+            0.07484699785709381,
+            -2.5693142538000044
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "3950",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 2,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -5.62024450302124,
+            0.07484699785709381,
+            -2.5152227878570557
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -6.869073599940488,
+            0.07484699785709381,
+            -2.5693142538000044
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "4049",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 2,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            3.3224101066589355,
+            0.13123798370361328,
+            8.86398983001709
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            2.871655147652973,
+            0.13123798370361328,
+            7.433318670409987
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "4049",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 2,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            3.3224101066589355,
+            0.13123798370361328,
+            8.86398983001709
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            2.871655147652973,
+            0.13123798370361328,
+            7.433318670409987
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "4049",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 2,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            3.3224101066589355,
+            0.13123798370361328,
+            8.86398983001709
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            2.871655147652973,
+            0.13123798370361328,
+            7.433318670409987
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 5
+    },
+    {
+      "episode_id": "44",
+      "scene_id": "data/scene_datasets/mp3d/ur6pFq6Qu1A/ur6pFq6Qu1A.glb",
+      "high_level_step": 6,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -14.618964195251465,
+            0.12697899341583252,
+            -5.416015148162842
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            -14.421298321486036,
+            0.12697899341583252,
+            -7.6573157086295875
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g23",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "44",
+      "scene_id": "data/scene_datasets/mp3d/ur6pFq6Qu1A/ur6pFq6Qu1A.glb",
+      "high_level_step": 6,
+      "cut_primitive": 1,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -14.618964195251465,
+            0.12697899341583252,
+            -5.416015148162842
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            -14.421298321486036,
+            0.12697899341583252,
+            -7.6573157086295875
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g23",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "44",
+      "scene_id": "data/scene_datasets/mp3d/ur6pFq6Qu1A/ur6pFq6Qu1A.glb",
+      "high_level_step": 6,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "6",
+        "front_pos": {
+          "__array__": [
+            -14.618964195251465,
+            0.12697899341583252,
+            -5.416015148162842
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "6",
+        "ghost_pos": {
+          "__array__": [
+            -14.421298321486036,
+            0.12697899341583252,
+            -7.6573157086295875
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g23",
+        "tryout": false
+      },
+      "baseline_primitive_count": 9,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "4573",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 5,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            2.5755269527435303,
+            -3.192077875137329,
+            0.2763533592224121
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            3.204893065536377,
+            -3.192077875137329,
+            -0.6446390109750704
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g17",
+        "tryout": false
+      },
+      "baseline_primitive_count": 5,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "4573",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 5,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            2.5755269527435303,
+            -3.192077875137329,
+            0.2763533592224121
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            3.204893065536377,
+            -3.192077875137329,
+            -0.6446390109750704
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g17",
+        "tryout": false
+      },
+      "baseline_primitive_count": 5,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "4573",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 5,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            2.5755269527435303,
+            -3.192077875137329,
+            0.2763533592224121
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            3.204893065536377,
+            -3.192077875137329,
+            -0.6446390109750704
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g17",
+        "tryout": false
+      },
+      "baseline_primitive_count": 5,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "505",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 3,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -3.715836763381958,
+            0.3000051975250244,
+            -5.754739761352539
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -4.443199224998971,
+            0.3000051975250244,
+            -7.883928303833087
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "505",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 3,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -3.715836763381958,
+            0.3000051975250244,
+            -5.754739761352539
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -4.443199224998971,
+            0.3000051975250244,
+            -7.883928303833087
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "505",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 3,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -3.715836763381958,
+            0.3000051975250244,
+            -5.754739761352539
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -4.443199224998971,
+            0.3000051975250244,
+            -7.883928303833087
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "5307",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 2,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -7.727684497833252,
+            0.11554622650146484,
+            1.1664066314697266
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -7.106732772217203,
+            0.11554622650146484,
+            -0.7347558956316393
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "baseline_primitive_count": 11,
+      "empty_back_path": true,
+      "event_cut_primitive": 9
+    },
+    {
+      "episode_id": "5307",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 2,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -7.727684497833252,
+            0.11554622650146484,
+            1.1664066314697266
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -7.106732772217203,
+            0.11554622650146484,
+            -0.7347558956316393
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "baseline_primitive_count": 11,
+      "empty_back_path": true,
+      "event_cut_primitive": 9
+    },
+    {
+      "episode_id": "5307",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 2,
+      "cut_primitive": 9,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -7.727684497833252,
+            0.11554622650146484,
+            1.1664066314697266
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -7.106732772217203,
+            0.11554622650146484,
+            -0.7347558956316393
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "baseline_primitive_count": 11,
+      "empty_back_path": true,
+      "event_cut_primitive": 9
+    },
+    {
+      "episode_id": "5488",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 21,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            6.165460109710693,
+            -0.5069980621337891,
+            -1.9156099557876587
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            8.94400014114044,
+            -0.5069980621337891,
+            -0.7843649364649745
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 23,
+      "empty_back_path": true,
+      "event_cut_primitive": 15
+    },
+    {
+      "episode_id": "5488",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 16,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            6.165460109710693,
+            -0.5069980621337891,
+            -1.9156099557876587
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            8.94400014114044,
+            -0.5069980621337891,
+            -0.7843649364649745
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 23,
+      "empty_back_path": true,
+      "event_cut_primitive": 15
+    },
+    {
+      "episode_id": "5488",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 15,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            6.165460109710693,
+            -0.5069980621337891,
+            -1.9156099557876587
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            8.94400014114044,
+            -0.5069980621337891,
+            -0.7843649364649745
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 23,
+      "empty_back_path": true,
+      "event_cut_primitive": 15
+    },
+    {
+      "episode_id": "5660",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 1,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            11.937019348144531,
+            0.13123798370361328,
+            10.94112777709961
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            9.977250228155107,
+            0.13123798370361328,
+            11.340258077046725
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "5660",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 1,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            11.937019348144531,
+            0.13123798370361328,
+            10.94112777709961
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            9.977250228155107,
+            0.13123798370361328,
+            11.340258077046725
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "5660",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 1,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            11.937019348144531,
+            0.13123798370361328,
+            10.94112777709961
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            9.977250228155107,
+            0.13123798370361328,
+            11.340258077046725
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "5684",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 1,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -11.909087181091309,
+            0.07484699785709381,
+            -3.856968402862549
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -10.960100555563567,
+            0.07484699785709381,
+            -4.172284727478754
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "5684",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 1,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -11.909087181091309,
+            0.07484699785709381,
+            -3.856968402862549
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -10.960100555563567,
+            0.07484699785709381,
+            -4.172284727478754
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "5684",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 1,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -11.909087181091309,
+            0.07484699785709381,
+            -3.856968402862549
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -10.960100555563567,
+            0.07484699785709381,
+            -4.172284727478754
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "5779",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 0,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -15.530599594116211,
+            0.11554622650146484,
+            -4.0335798263549805
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -14.044261525804712,
+            0.11554622650146484,
+            -3.831591839860633
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 9
+    },
+    {
+      "episode_id": "5779",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 0,
+      "cut_primitive": 6,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -15.530599594116211,
+            0.11554622650146484,
+            -4.0335798263549805
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -14.044261525804712,
+            0.11554622650146484,
+            -3.831591839860633
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 9
+    },
+    {
+      "episode_id": "5779",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 0,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -15.530599594116211,
+            0.11554622650146484,
+            -4.0335798263549805
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -14.044261525804712,
+            0.11554622650146484,
+            -3.831591839860633
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 9
+    },
+    {
+      "episode_id": "6052",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 13,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.764849901199341,
+            -0.7661948204040527,
+            1.9177000522613525
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.5530891607972599,
+            -0.7661948204040527,
+            3.0830817181614294
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 13
+    },
+    {
+      "episode_id": "6052",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 14,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.764849901199341,
+            -0.7661948204040527,
+            1.9177000522613525
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.5530891607972599,
+            -0.7661948204040527,
+            3.0830817181614294
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 13
+    },
+    {
+      "episode_id": "6052",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 12,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.764849901199341,
+            -0.7661948204040527,
+            1.9177000522613525
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.5530891607972599,
+            -0.7661948204040527,
+            3.0830817181614294
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 13
+    },
+    {
+      "episode_id": "6073",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.764849901199341,
+            -0.7661948204040527,
+            1.9177000522613525
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.5530891607972599,
+            -0.7661948204040527,
+            3.0830817181614294
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 13
+    },
+    {
+      "episode_id": "6073",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 12,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.764849901199341,
+            -0.7661948204040527,
+            1.9177000522613525
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.5530891607972599,
+            -0.7661948204040527,
+            3.0830817181614294
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 13
+    },
+    {
+      "episode_id": "6073",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 16,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            2.764849901199341,
+            -0.7661948204040527,
+            1.9177000522613525
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.5530891607972599,
+            -0.7661948204040527,
+            3.0830817181614294
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 13
+    },
+    {
+      "episode_id": "6154",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 3,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -1.150905728340149,
+            0.033804893493652344,
+            -1.4459353685379028
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -1.0734496500836794,
+            0.033804893493652344,
+            -2.4429311337952724
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "6154",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 3,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -1.150905728340149,
+            0.033804893493652344,
+            -1.4459353685379028
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -1.0734496500836794,
+            0.033804893493652344,
+            -2.4429311337952724
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "6154",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 3,
+      "cut_primitive": 9,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -1.150905728340149,
+            0.033804893493652344,
+            -1.4459353685379028
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -1.0734496500836794,
+            0.033804893493652344,
+            -2.4429311337952724
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "6415",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 0,
+      "cut_primitive": 6,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.9391798973083496,
+            3.0079219341278076,
+            8.014430046081543
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -2.3927068596936025,
+            3.0079219341278076,
+            6.351941784721448
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "6415",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 0,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.9391798973083496,
+            3.0079219341278076,
+            8.014430046081543
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -2.3927068596936025,
+            3.0079219341278076,
+            6.351941784721448
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "6415",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 0,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.9391798973083496,
+            3.0079219341278076,
+            8.014430046081543
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -2.3927068596936025,
+            3.0079219341278076,
+            6.351941784721448
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "6582",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.9080300331115723,
+            0.033804893493652344,
+            -1.4471499919891357
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -1.9016229054707348,
+            0.033804893493652344,
+            -2.4471294661361775
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "baseline_primitive_count": 4,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "6582",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.9080300331115723,
+            0.033804893493652344,
+            -1.4471499919891357
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -1.9016229054707348,
+            0.033804893493652344,
+            -2.4471294661361775
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "baseline_primitive_count": 4,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "6582",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 1,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.9080300331115723,
+            0.033804893493652344,
+            -1.4471499919891357
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -1.9016229054707348,
+            0.033804893493652344,
+            -2.4471294661361775
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "baseline_primitive_count": 4,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "6649",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 18,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            4.233429908752441,
+            -0.7661948204040527,
+            1.3887799978256226
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            3.2810470943403462,
+            -0.7661948204040527,
+            3.9685991726540633
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 21,
+      "empty_back_path": true,
+      "event_cut_primitive": 14
+    },
+    {
+      "episode_id": "6649",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 16,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            4.233429908752441,
+            -0.7661948204040527,
+            1.3887799978256226
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            3.2810470943403462,
+            -0.7661948204040527,
+            3.9685991726540633
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 21,
+      "empty_back_path": true,
+      "event_cut_primitive": 14
+    },
+    {
+      "episode_id": "6649",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "high_level_step": 0,
+      "cut_primitive": 13,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            4.233429908752441,
+            -0.7661948204040527,
+            1.3887799978256226
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            3.2810470943403462,
+            -0.7661948204040527,
+            3.9685991726540633
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 21,
+      "empty_back_path": true,
+      "event_cut_primitive": 14
+    },
+    {
+      "episode_id": "7012",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 0,
+      "cut_primitive": 14,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.6529600620269775,
+            -3.0999951362609863,
+            -3.9200100898742676
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -5.4389004571076125,
+            -3.0999951362609863,
+            -5.032905464587431
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 15
+    },
+    {
+      "episode_id": "7012",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 0,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.6529600620269775,
+            -3.0999951362609863,
+            -3.9200100898742676
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -5.4389004571076125,
+            -3.0999951362609863,
+            -5.032905464587431
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 15
+    },
+    {
+      "episode_id": "7012",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 0,
+      "cut_primitive": 9,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.6529600620269775,
+            -3.0999951362609863,
+            -3.9200100898742676
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -5.4389004571076125,
+            -3.0999951362609863,
+            -5.032905464587431
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 15
+    },
+    {
+      "episode_id": "7411",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -10.0789794921875,
+            2.370152235031128,
+            -3.186432361602783
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -9.069643685240674,
+            2.370152235031128,
+            -1.1755267872868234
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "7411",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 15,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -10.0789794921875,
+            2.370152235031128,
+            -3.186432361602783
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -9.069643685240674,
+            2.370152235031128,
+            -1.1755267872868234
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "7411",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 9,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -10.0789794921875,
+            2.370152235031128,
+            -3.186432361602783
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -9.069643685240674,
+            2.370152235031128,
+            -1.1755267872868234
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "baseline_primitive_count": 16,
+      "empty_back_path": true,
+      "event_cut_primitive": 8
+    },
+    {
+      "episode_id": "7531",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "cut_primitive": 6,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -3.5869998931884766,
+            -3.0999951362609863,
+            -8.183874130249023
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -4.536163529168124,
+            -3.0999951362609863,
+            -7.038992056870715
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "7531",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -3.5869998931884766,
+            -3.0999951362609863,
+            -8.183874130249023
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -4.536163529168124,
+            -3.0999951362609863,
+            -7.038992056870715
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "7531",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -3.5869998931884766,
+            -3.0999951362609863,
+            -8.183874130249023
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -4.536163529168124,
+            -3.0999951362609863,
+            -7.038992056870715
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "baseline_primitive_count": 7,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "779",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 8,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "8",
+        "front_pos": {
+          "__array__": [
+            2.80014705657959,
+            -3.192077875137329,
+            5.145984649658203
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "8",
+        "ghost_pos": {
+          "__array__": [
+            0.3118157952654146,
+            -3.192077875137329,
+            4.904722273879042
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g28",
+        "tryout": false
+      },
+      "baseline_primitive_count": 13,
+      "empty_back_path": true,
+      "event_cut_primitive": 4
+    },
+    {
+      "episode_id": "779",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 8,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "8",
+        "front_pos": {
+          "__array__": [
+            2.80014705657959,
+            -3.192077875137329,
+            5.145984649658203
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "8",
+        "ghost_pos": {
+          "__array__": [
+            0.3118157952654146,
+            -3.192077875137329,
+            4.904722273879042
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g28",
+        "tryout": false
+      },
+      "baseline_primitive_count": 13,
+      "empty_back_path": true,
+      "event_cut_primitive": 4
+    },
+    {
+      "episode_id": "779",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 8,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "8",
+        "front_pos": {
+          "__array__": [
+            2.80014705657959,
+            -3.192077875137329,
+            5.145984649658203
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "8",
+        "ghost_pos": {
+          "__array__": [
+            0.3118157952654146,
+            -3.192077875137329,
+            4.904722273879042
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g28",
+        "tryout": false
+      },
+      "baseline_primitive_count": 13,
+      "empty_back_path": true,
+      "event_cut_primitive": 4
+    },
+    {
+      "episode_id": "7819",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            4.547118186950684,
+            3.0079219341278076,
+            -2.741170644760132
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            2.5394945406341525,
+            3.0079219341278076,
+            -4.230951600052123
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 11,
+      "empty_back_path": true,
+      "event_cut_primitive": 6
+    },
+    {
+      "episode_id": "7819",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 9,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            4.547118186950684,
+            3.0079219341278076,
+            -2.741170644760132
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            2.5394945406341525,
+            3.0079219341278076,
+            -4.230951600052123
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 11,
+      "empty_back_path": true,
+      "event_cut_primitive": 6
+    },
+    {
+      "episode_id": "7819",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 1,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            4.547118186950684,
+            3.0079219341278076,
+            -2.741170644760132
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            2.5394945406341525,
+            3.0079219341278076,
+            -4.230951600052123
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 11,
+      "empty_back_path": true,
+      "event_cut_primitive": 6
+    },
+    {
+      "episode_id": "80",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -12.874855041503906,
+            0.11554622650146484,
+            -2.8441483974456787
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -11.802499310631031,
+            0.11554622650146484,
+            -2.5369321277624897
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "80",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -12.874855041503906,
+            0.11554622650146484,
+            -2.8441483974456787
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -11.802499310631031,
+            0.11554622650146484,
+            -2.5369321277624897
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "80",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 1,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -12.874855041503906,
+            0.11554622650146484,
+            -2.8441483974456787
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -11.802499310631031,
+            0.11554622650146484,
+            -2.5369321277624897
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 3
+    },
+    {
+      "episode_id": "8145",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -3.620518684387207,
+            0.3000051975250244,
+            -5.332192897796631
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -4.3436342403655965,
+            0.3000051975250244,
+            -7.462827519852244
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 4
+    },
+    {
+      "episode_id": "8145",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "cut_primitive": 6,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -3.620518684387207,
+            0.3000051975250244,
+            -5.332192897796631
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -4.3436342403655965,
+            0.3000051975250244,
+            -7.462827519852244
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 4
+    },
+    {
+      "episode_id": "8145",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "cut_primitive": 5,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -3.620518684387207,
+            0.3000051975250244,
+            -5.332192897796631
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -4.3436342403655965,
+            0.3000051975250244,
+            -7.462827519852244
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 10,
+      "empty_back_path": true,
+      "event_cut_primitive": 4
+    },
+    {
+      "episode_id": "8644",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 0,
+      "cut_primitive": 9,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.9798500537872314,
+            2.674846887588501,
+            5.83896017074585
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -4.490948899280319,
+            2.674846887588501,
+            3.2473235682976096
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 10
+    },
+    {
+      "episode_id": "8644",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 0,
+      "cut_primitive": 15,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.9798500537872314,
+            2.674846887588501,
+            5.83896017074585
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -4.490948899280319,
+            2.674846887588501,
+            3.2473235682976096
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 10
+    },
+    {
+      "episode_id": "8644",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 0,
+      "cut_primitive": 13,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -2.9798500537872314,
+            2.674846887588501,
+            5.83896017074585
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -4.490948899280319,
+            2.674846887588501,
+            3.2473235682976096
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 17,
+      "empty_back_path": true,
+      "event_cut_primitive": 10
+    },
+    {
+      "episode_id": "8704",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 11,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.0218700170516968,
+            0.13123798370361328,
+            11.060099601745605
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.4217722763527756,
+            0.13123798370361328,
+            12.049239090742924
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 12,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "8704",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 8,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.0218700170516968,
+            0.13123798370361328,
+            11.060099601745605
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.4217722763527756,
+            0.13123798370361328,
+            12.049239090742924
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 12,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "8704",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 0,
+      "cut_primitive": 9,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "0",
+        "front_pos": {
+          "__array__": [
+            -1.0218700170516968,
+            0.13123798370361328,
+            11.060099601745605
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.4217722763527756,
+            0.13123798370361328,
+            12.049239090742924
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "baseline_primitive_count": 12,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "8715",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 10,
+      "cut_primitive": 7,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "10",
+        "front_pos": {
+          "__array__": [
+            -2.3419675827026367,
+            -3.192077875137329,
+            -2.492938995361328
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "10",
+        "ghost_pos": {
+          "__array__": [
+            -3.1260059445630466,
+            -3.192077875137329,
+            -4.332853082249965
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g30",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "8715",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 10,
+      "cut_primitive": 1,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "10",
+        "front_pos": {
+          "__array__": [
+            -2.3419675827026367,
+            -3.192077875137329,
+            -2.492938995361328
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "10",
+        "ghost_pos": {
+          "__array__": [
+            -3.1260059445630466,
+            -3.192077875137329,
+            -4.332853082249965
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g30",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "8715",
+      "scene_id": "data/scene_datasets/mp3d/D7N2EKCX4Sj/D7N2EKCX4Sj.glb",
+      "high_level_step": 10,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "10",
+        "front_pos": {
+          "__array__": [
+            -2.3419675827026367,
+            -3.192077875137329,
+            -2.492938995361328
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "10",
+        "ghost_pos": {
+          "__array__": [
+            -3.1260059445630466,
+            -3.192077875137329,
+            -4.332853082249965
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g30",
+        "tryout": false
+      },
+      "baseline_primitive_count": 8,
+      "empty_back_path": true,
+      "event_cut_primitive": 7
+    },
+    {
+      "episode_id": "9125",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 5,
+      "cut_primitive": 2,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            -16.60792350769043,
+            0.11554622650146484,
+            1.5177576541900635
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            -16.139920992925134,
+            0.11554622650146484,
+            2.6768407599997204
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g16",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "9125",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 5,
+      "cut_primitive": 3,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            -16.60792350769043,
+            0.11554622650146484,
+            1.5177576541900635
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            -16.139920992925134,
+            0.11554622650146484,
+            2.6768407599997204
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g16",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "9125",
+      "scene_id": "data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb",
+      "high_level_step": 5,
+      "cut_primitive": 4,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            -16.60792350769043,
+            0.11554622650146484,
+            1.5177576541900635
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            -16.139920992925134,
+            0.11554622650146484,
+            2.6768407599997204
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g16",
+        "tryout": false
+      },
+      "baseline_primitive_count": 6,
+      "empty_back_path": true,
+      "event_cut_primitive": 2
+    },
+    {
+      "episode_id": "9186",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 1,
+      "cut_primitive": 14,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261011,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -6.593238830566406,
+            0.07484699785709381,
+            6.089354991912842
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -9.584719254371004,
+            0.07484699785709381,
+            5.863423865252823
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 24,
+      "empty_back_path": true,
+      "event_cut_primitive": 18
+    },
+    {
+      "episode_id": "9186",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 1,
+      "cut_primitive": 21,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261012,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -6.593238830566406,
+            0.07484699785709381,
+            6.089354991912842
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -9.584719254371004,
+            0.07484699785709381,
+            5.863423865252823
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 24,
+      "empty_back_path": true,
+      "event_cut_primitive": 18
+    },
+    {
+      "episode_id": "9186",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "high_level_step": 1,
+      "cut_primitive": 22,
+      "cut_kind": "uniform_interior_forward",
+      "timing_seed": 20261013,
+      "action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            -6.593238830566406,
+            0.07484699785709381,
+            6.089354991912842
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -9.584719254371004,
+            0.07484699785709381,
+            5.863423865252823
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "baseline_primitive_count": 24,
+      "empty_back_path": true,
+      "event_cut_primitive": 18
+    }
+  ],
+  "frozen_before_intervention": true,
+  "rule": "research/INTERRUPT_CONFIRMATION_PROTOCOL.md"
+}

@@ -1,0 +1,20 @@
+{
+  "experiment_id": "INTERRUPT-CONFIRMATION-001",
+  "status": "complete",
+  "decision": "NO-GO for event-trigger learning",
+  "date": "2026-10-08",
+  "git_commit": "f7d9fba62f58f7b804b08dbbe4ac4d99b5754745",
+  "rollouts": 472,
+  "smoke_rollouts": 132,
+  "event_cuts": 43,
+  "uniform_cuts": 129,
+  "total_cuts": 172,
+  "verifier": "verification_003/summary.json",
+  "verifier_all_checks_passed": true,
+  "analysis": "analysis_003/summary.json",
+  "archive": "trace_archives/full_001_cases.tar.gz",
+  "archive_sha256": "b813bb2630cfb21acdae9d477d287ec07c09872f0dd5b37db693d6868f1da964",
+  "no_model_trained": true,
+  "no_next_confirmation_started": true,
+  "reason": "Event timing and outcome-blind uniform timing have equal route-level quality rescue (3/7); event timing has no demonstrated advantage and causes successful-route harm (2/36 SR loss, 15/36 nDTW loss)."
+}

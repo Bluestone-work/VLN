@@ -1,0 +1,17 @@
+{
+  "experiment_id": "INTERRUPT-CONFIRMATION-CAPTURE-001",
+  "base_config": "run_r2r/iter_train.yaml",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "split": "train",
+  "episodes": 128,
+  "seed": 100,
+  "dataset_path": "research/results/interrupt_confirmation_train128/sampling_001/train_interrupt_confirmation128_bertidx.json.gz",
+  "sampling_manifest": "research/results/interrupt_confirmation_train128/sampling_001/manifest.json",
+  "capture_graph_options": true,
+  "allow_sliding": true,
+  "tryout_effective": false,
+  "back_algo": "control",
+  "protocol": "research/INTERRUPT_CONFIRMATION_PROTOCOL.md",
+  "route_protocol": "research/ROUTE_COMPATIBILITY_PROTOCOL.md",
+  "purpose": "Native capture and exact controls before freezing event/uniform timing schedules."
+}

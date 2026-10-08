@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "research/tools/verify_interrupt_confirmation.py", line 77, in <module>
+    if __name__ == '__main__': main()
+  File "research/tools/verify_interrupt_confirmation.py", line 70, in main
+    args.output.mkdir(parents=True, exist_ok=False)
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/pathlib.py", line 1248, in mkdir
+    self._accessor.mkdir(self, mode)
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/pathlib.py", line 387, in wrapped
+    return strfunc(str(pathobj), *args)
+FileExistsError: [Errno 17] File exists: 'research/results/interrupt_confirmation_train128/verification_002'

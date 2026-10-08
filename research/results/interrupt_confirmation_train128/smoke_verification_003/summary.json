@@ -1,0 +1,15 @@
+{
+  "all_checks_passed": true,
+  "rollouts": 132,
+  "events": 2,
+  "checks": {
+    "native_rows": 1046,
+    "prefix_rows": 1,
+    "interrupted_prefixes": 2,
+    "sensor_pairs": 2,
+    "metric_components": 1056,
+    "path_continuity": 1069
+  },
+  "independence": "Separate prefix equality and primitive-pose metric reconstruction; no simulator import.",
+  "reference_sha256": "e1f380f83e898dc50383f2fae5fbefac1a9c62a766dde1c30b254db47e93b0ac"
+}

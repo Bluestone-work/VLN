@@ -1,5 +1,21 @@
 # VLN-CE 科研进展（2026-10-08）
 
+## 2026-10-08 — 独立中断确认：NO-GO
+
+本轮冻结了 128 条 R2R-CE train 路线，包含 128 条 native control、43 个已知事件切点和 129 个同一 option 内 outcome-blind 均匀切点，共完成 **472 次完整 rollout**；另有 132 次 smoke。checkpoint、seed=100、传感器、控制器、STOP 逻辑和 15 次高层预算保持不变。
+
+| 干预臂 | 暴露的原生失败路线 | quality rescue | cost-capped quality rescue | 原生成功路线 SR 损失 | 原生成功路线 nDTW 损失 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 首次碰撞事件 | 7 | 3/7，3 个场景 | 1/7 | 2/36 | 15/36 |
+| 同一 option 内均匀时机 | 7 | 3/7，3 个场景 | 2/7 | 2/36 | 25/36 |
+
+事件臂救回路线为 `7411`、`9186`、`6154`；均匀臂救回 `7411`、`5660`、`6154`。两者救回数量和场景覆盖相同，且存在 uniform-only 路线，因此没有证据表明碰撞事件本身优于 outcome-blind 的重规划边界。事件臂还在原本成功路线造成 SR 和 nDTW 损失，不能采用无条件碰撞中断。
+
+独立核验通过：472 次 rollout、172 个中断前缀、172 对传感器、3,776 个指标分量和 4,171 个路径连续性检查。结果、源文件哈希和压缩 trace 已归档在 `research/results/interrupt_confirmation_train128/`。**当前决定：NO-GO for event-trigger learning。** 本轮没有训练模型，也没有启动下一轮确认。
+
+这不是“重规划没有价值”的结论，而是“碰撞事件尚未成为有效触发器”。在解决安全的 abstention 和时机选择之前，不启动 interrupt classifier、RL/PPO、VLM、waypoint predictor 或 adaptive coarse/default/fine selector。
+
+
 ## 2026-10-08 — 完整中断时机 oracle：仅独立复验为 CONDITIONAL GO
 
 已经新增 **544 次完整 rollout + 25 次 smoke**。在旧 fresh64 的 19 条有事件
