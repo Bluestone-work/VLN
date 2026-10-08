@@ -1,0 +1,92 @@
+{
+  "gate": "C",
+  "decision": "NO-GO",
+  "claim": "NO-GO for instruction-progress selective intervention",
+  "reason": "No F2/F3 held-out fixed-threshold region reaches precision >= 0.70 with nonzero coverage; ambiguity remains high.",
+  "best_nonbaseline_regions": [
+    {
+      "level": "F3",
+      "model": "logistic",
+      "threshold": 0.9,
+      "precision": 0.46153846153846156,
+      "coverage": 0.40625,
+      "ambiguous_rate": 0.5384615384615384
+    },
+    {
+      "level": "F3",
+      "model": "logistic",
+      "threshold": 0.8,
+      "precision": 0.4482758620689655,
+      "coverage": 0.453125,
+      "ambiguous_rate": 0.5172413793103449
+    },
+    {
+      "level": "F1",
+      "model": "small_mlp",
+      "threshold": 0.8,
+      "precision": 0.4444444444444444,
+      "coverage": 0.5625,
+      "ambiguous_rate": 0.5555555555555556
+    },
+    {
+      "level": "F3",
+      "model": "logistic",
+      "threshold": 0.95,
+      "precision": 0.43478260869565216,
+      "coverage": 0.359375,
+      "ambiguous_rate": 0.5652173913043478
+    },
+    {
+      "level": "F1",
+      "model": "small_mlp",
+      "threshold": 0.95,
+      "precision": 0.43333333333333335,
+      "coverage": 0.46875,
+      "ambiguous_rate": 0.5666666666666667
+    },
+    {
+      "level": "F2",
+      "model": "logistic",
+      "threshold": 0.7,
+      "precision": 0.43243243243243246,
+      "coverage": 0.578125,
+      "ambiguous_rate": 0.5675675675675675
+    },
+    {
+      "level": "F2",
+      "model": "logistic",
+      "threshold": 0.8,
+      "precision": 0.43243243243243246,
+      "coverage": 0.578125,
+      "ambiguous_rate": 0.5675675675675675
+    },
+    {
+      "level": "F1",
+      "model": "small_mlp",
+      "threshold": 0.9,
+      "precision": 0.42424242424242425,
+      "coverage": 0.515625,
+      "ambiguous_rate": 0.5757575757575758
+    },
+    {
+      "level": "F3",
+      "model": "logistic",
+      "threshold": 0.7,
+      "precision": 0.41935483870967744,
+      "coverage": 0.484375,
+      "ambiguous_rate": 0.5483870967741935
+    },
+    {
+      "level": "F1",
+      "model": "logistic",
+      "threshold": 0.95,
+      "precision": 0.4074074074074074,
+      "coverage": 0.421875,
+      "ambiguous_rate": 0.5925925925925926
+    }
+  ],
+  "strong_go_precision": 0.8,
+  "required_precision": 0.7,
+  "required_positive_scene_count": 3,
+  "online_navigation_run": false
+}

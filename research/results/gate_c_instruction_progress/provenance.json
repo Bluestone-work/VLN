@@ -1,0 +1,27 @@
+{
+  "experiment_id": "GATE-C-INSTRUCTION-PROGRESS-001",
+  "branch": "research/adaptive-action-audit-20261007",
+  "source_head_before_gate_c": "0c9b08a",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "base_language_pretrained": "data/pretrained/ETP/mlm.sap_r2r/ckpts/model_step_82500.pt",
+  "split": "train versus val_unseen scene-disjoint",
+  "seed": 0,
+  "simulator_rollouts": 0,
+  "feature_levels": ["F0", "F1", "F2", "F3"],
+  "models": ["logistic", "ridge", "small_mlp_16"],
+  "thresholds": [0.5, 0.7, 0.8, 0.9, 0.95],
+  "label_source": "research/results/gate_b_native_relative_004/samples.csv",
+  "graph_sources": [
+    "research/results/graph_option_train64_dense_v2/capture_001/graph_options/graph_options.jsonl",
+    "research/results/graph_option_unseen_dense_v2/capture_001/graph_options/graph_options.jsonl"
+  ],
+  "token_sources": [
+    "research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz",
+    "research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz"
+  ],
+  "padding_mask": "exact BERT token ids != 0",
+  "privileged_features_used": false,
+  "outcome_features_used": false,
+  "online_intervention_enabled": false,
+  "decision": "NO-GO for instruction-progress selective intervention"
+}

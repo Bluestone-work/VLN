@@ -1,5 +1,33 @@
 # VLN-CE 科研进展（2026-10-08）
 
+## 2026-10-08 — Gate C 指令进度表征 NO-GO
+
+Gate B 的 1,377 条 native-relative full-return 样本保持不变，新增审计了
+ETPNav 已有 frozen semantic representation。F0 完整复现 Gate B 的 19 维
+geometry/logit/policy 特征；F1 加入 action-time `gmap_embeds`；F2 加入同一
+checkpoint 的 frozen `forward_txt` token alignment progress；F3 加入
+candidate 对当前/后缀 instruction 的 compatibility。所有模型仍是
+logistic、ridge 和 16-unit MLP，split 与五个预注册阈值不变。
+
+| Level | held-out 最佳示例 | coverage | precision | AMBIGUOUS intervention |
+| --- | --- | ---: | ---: | ---: |
+| F0 | logistic, 0.95 | 0.641 | 0.366 | 0.634 |
+| F1 | small MLP, 0.80 | 0.563 | 0.444 | 0.556 |
+| F2 | logistic, 0.70 | 0.578 | 0.432 | 0.568 |
+| F3 | logistic, 0.90 | 0.406 | 0.462 | 0.538 |
+
+F2/F3 没有任何非零 coverage 的 precision 达到预注册的 0.70，且
+INTERVENE/KEEP/AMBIGUOUS 的 progress 与 compatibility 分布没有机制性分离。
+因此 Gate C 为 **NO-GO for instruction-progress selective intervention**。
+本轮不启动 online intervention、waypoint 训练、PPO/RL、VLM/LLM 或新的
+feature mining。Gate C 的完整协议、审计和机器可读结果见
+`GATE_C_INSTRUCTION_PROGRESS_PROTOCOL.md`、`GATE_C_INSTRUCTION_PROGRESS_REPORT.md`
+和 `results/gate_c_instruction_progress/`。
+
+审计还发现：Gate B 历史 summary 记录 117 states，而 authoritative CSV 中
+唯一 `(episode_id, high_level_step)` join key 为 107；1,377 行及三类标签完全
+一致，Gate C 已明确保留该 bookkeeping discrepancy，未静默修正。
+
 ## 2026-10-08 — Gate A 通过，Gate B NO-GO（协议修正后复核）
 
 按新的研究顺序完成了 dense-candidate full-return oracle 和 native-relative

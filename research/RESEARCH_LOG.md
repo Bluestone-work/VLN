@@ -1344,3 +1344,44 @@ The Gate B NO-GO is robust to the protocol correction. The zero reported KEEP ha
 
 Next:
 Do not run online intervention, feature/threshold search, PPO/RL, VLM/LLM, or waypoint training from this cohort.
+
+## 2026-10-08 / GATE-C-INSTRUCTION-PROGRESS-001
+
+Question:
+Does the Gate B failure primarily reflect missing instruction execution progress
+and candidate semantic compatibility in the deployable pre-action representation?
+
+Change:
+Reused the corrected Gate B CSV and scene-disjoint split. F0 retained the exact
+19 Gate B features. F1 added frozen 768-D action-time graph embedding summaries;
+F2 added token alignment progress reconstructed with the released ETPNav
+`forward_txt`; F3 added fixed current/suffix candidate compatibility and
+alternative-minus-native deltas. Fit only logistic, ridge, and a 16-unit MLP.
+
+Control:
+Same native-relative full-return labels, checkpoint, graph captures, route
+cohorts, AMBIGUOUS exclusion from fitting, and thresholds 0.50/0.70/0.80/0.90/0.95.
+No rollout, action, waypoint predictor, controller, RL, VLM, or threshold search.
+
+Result:
+All 1,377 rows joined and class counts remained INTERVENE=76, KEEP=533,
+AMBIGUOUS=768. F0 reproduced Gate B (logistic precision 0.366 at .95;
+ridge precision 0.396 at .70). After correcting padding detection to use the
+exact BERT token mask, F2 peaked at logistic precision 0.432 (threshold .70)
+and F3 peaked at logistic precision 0.462 (threshold .90, coverage .406,
+ambiguity .538). No F2/F3 fixed-threshold region reached precision 0.70 with
+nonzero coverage.
+
+Interpretation:
+The pre-registered hypothesis is not supported. Exact token masking does not
+change the decision: semantic/progress features alter confidence but do not
+separate beneficial alternatives from incomparable long-horizon continuations.
+Progress and alternative-minus-native suffix compatibility distributions remain
+close across labels. Gate C is
+**NO-GO for instruction-progress selective intervention**. The zero KEEP harm
+remains unestimable because the inherited cohort contains only native failures.
+
+Next:
+Close the selective-intervention branch. Do not run online intervention,
+feature mining, waypoint retraining, PPO/RL, VLM/LLM, or adaptive density from
+this cohort. Preserve Gate A as oracle-only proposal coverage evidence.
