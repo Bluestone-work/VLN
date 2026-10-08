@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "decision": "CONDITIONAL GO for independent confirmation only",
+  "no_model_trained": true,
+  "active_rollout_processes": 0,
+  "main_rollouts": 544,
+  "smoke_rollouts": 25,
+  "main_verification_passed": true,
+  "next_design": "research/INTERRUPT_NEXT_GATE.md",
+  "next_study_started": false,
+  "execution_commit": "30bc545",
+  "analysis_tools_commit": "c230986"
+}

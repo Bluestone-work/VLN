@@ -1,0 +1,18 @@
+{
+  "all_checks_passed": true,
+  "rollouts": 25,
+  "events": 2,
+  "checks": {
+    "native_or_sensing_option_checks": 248,
+    "interrupted_prefix_checks": 4,
+    "cut_sensor_checks": 4,
+    "return_components": 200,
+    "physical_continuity_checks": 278,
+    "graph_retain_records": 2,
+    "graph_consume_records": 2
+  },
+  "subset_identity_passed": true,
+  "reference_path": "data/datasets/R2R_VLNCE_v1-2_preprocessed/train/train_gt.json.gz",
+  "reference_sha256": "e1f380f83e898dc50383f2fae5fbefac1a9c62a766dde1c30b254db47e93b0ac",
+  "independence": "Separately written prefix checks and metric reconstruction from primitive poses; same prescribed fastdtw metric. Goal geodesic distance is the recorded simulator measurement, not an independent navmesh computation."
+}

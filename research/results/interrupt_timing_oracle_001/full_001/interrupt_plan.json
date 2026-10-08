@@ -1,0 +1,2486 @@
+{
+  "events": [
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10193",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10193",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 3,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10193",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10193",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 9,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 8,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": true
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 7,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10754",
+      "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "high_level_step": 5,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": true
+    },
+    {
+      "cut_primitive": 15,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "1905",
+      "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+      "high_level_step": 3,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 17,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 11,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "212",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 13,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "212",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 12,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 9,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "212",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 12,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 10,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "212",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 12,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 11,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "212",
+      "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 12,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 14,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "2308",
+      "scene_id": "data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 21,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 15,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "2308",
+      "scene_id": "data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 21,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 16,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "2308",
+      "scene_id": "data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 21,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 19,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "2308",
+      "scene_id": "data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 21,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 20,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "2308",
+      "scene_id": "data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 21,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "3404",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "3404",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "3404",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 7,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "3404",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "3404",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 8,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "3404",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 8,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "3404",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 8,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 23,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "3865",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": false,
+      "baseline_primitive_count": 27,
+      "historically_tested": true
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4603",
+      "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+      "high_level_step": 5,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 8,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": true
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 8,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "4702",
+      "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5247",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 0,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 12,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5247",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 0,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 12,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5247",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 2,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 12,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5607",
+      "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 19,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 13,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5607",
+      "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 19,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 14,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5607",
+      "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 19,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 15,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5607",
+      "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 19,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 7,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5607",
+      "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 11,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 8,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5607",
+      "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 11,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 17,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 3,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 18,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 7,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 4,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 8,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 4,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 5,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 5,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 5,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 6,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 6,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 6,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 7,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 7,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 7,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 7,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 8,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 8,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 8,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 8,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 9,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 10,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 5,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 3,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 11,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 3,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 12,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5648",
+      "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+      "high_level_step": 13,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 9,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 13,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 10,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 13,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 11,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 13,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 12,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 0,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 13,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 7,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 3,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 3,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "5822",
+      "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+      "high_level_step": 3,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "7362",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 1,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "7362",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 1,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "7362",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 1,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "7362",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 1,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "7362",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 1,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 7,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "7362",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 1,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 8,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "7362",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 1,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "7565",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 7,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 1,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 3,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 3,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 3,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 4,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 4,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 4,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 4,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 7,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 4,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 8,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 5,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 5,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 5,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 5,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 6,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 7,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 7,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 7,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 7,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 5,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 7,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 6,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 7,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 7,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 7,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 8,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 7,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 9,
+      "reasons": [
+        "collision",
+        "stall"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 7,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 10,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 11,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 17,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 12,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "8928",
+      "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+      "high_level_step": 11,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 17,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 7,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "9182",
+      "scene_id": "data/scene_datasets/mp3d/B6ByNegPMKs/B6ByNegPMKs.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 8,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "9182",
+      "scene_id": "data/scene_datasets/mp3d/B6ByNegPMKs/B6ByNegPMKs.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 9,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "9182",
+      "scene_id": "data/scene_datasets/mp3d/B6ByNegPMKs/B6ByNegPMKs.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 2,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "9182",
+      "scene_id": "data/scene_datasets/mp3d/B6ByNegPMKs/B6ByNegPMKs.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "9182",
+      "scene_id": "data/scene_datasets/mp3d/B6ByNegPMKs/B6ByNegPMKs.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 9,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 4,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "9295",
+      "scene_id": "data/scene_datasets/mp3d/e9zR4mvMWw7/e9zR4mvMWw7.glb",
+      "high_level_step": 1,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 6,
+      "historically_tested": false
+    }
+  ],
+  "frozen_before_intervention": true,
+  "rule": "research/INTERRUPT_TIMING_ORACLE_PROTOCOL.md"
+}

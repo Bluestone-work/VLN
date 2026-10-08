@@ -1,5 +1,25 @@
 # Adaptive Action Abstraction in VLN-CE
 
+## 2026-10-08 — 完整中断时机 oracle：仅独立复验为 CONDITIONAL GO
+
+已经新增 **544 次完整 rollout + 25 次 smoke**。在旧 fresh64 的 19 条有事件
+路线、175 个合格碰撞切点上，逐一运行 matched sensing、interrupt consume、
+interrupt retain；固定原 navigator、checkpoint、seed100 和 15 次高层决策预算。
+
+- consume 的最佳切点在 7 条合格失败路线中救回 4 条且 nDTW 不降，跨 3 个场景；
+  其中 3 条还不增加原子动作。retain 为 3 条／2 场景。此处是事后 ORACLE 选择。
+- 这相当于原 fresh64 全部 10 条失败中的 4 条，不能宣称 execution failure 占多数。
+- 首次碰撞直接中断，consume 在 12 条原本成功的路线中虽未损失 SR，但 8 条 nDTW
+  下降；retain 损失 1 条成功路线。选择不同切点，两种语义均可能损害 2 条成功路线。
+- 独立核验全部通过：4,590 个原生／前缀记录，350 次中断前缀和观测匹配，
+  4,352 项返回指标、7,118 项路径连续性。没有训练新模型。
+
+**新的结论仅是中途重规划有恢复机会，值得独立因果复验；没有安全、有效的触发器。**
+旧 adaptive density 和冻结 ranking recipe 仍 NO-GO。下一问题收紧为：独立路线
+上，事件触发相对“同一 option 内不看结果选取的重规划时机”是否有额外价值；
+继续纳入成功路线、原生不干预、观测和成本对照，不直接上 RL/VLM。
+详见 `INTERRUPT_TIMING_ORACLE_REPORT.md`。下文保留按时间倒序的历史诊断。
+
 ## 2026-10-08 — 中断实验覆盖审计（已完成）
 
 两批旧训练集的失败路线有 156 个合格碰撞中断点、56 个动作；历史 pilot

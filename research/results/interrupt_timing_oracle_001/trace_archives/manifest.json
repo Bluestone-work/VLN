@@ -1,0 +1,15 @@
+{
+  "scope": "Complete per-case graph logs, primitive traces and results, including controls and every registered cut. Archives exclude simulator assets/checkpoint.",
+  "archives": [
+    {
+      "path": "research/results/interrupt_timing_oracle_001/trace_archives/smoke_001_cases.tar.gz",
+      "bytes": 985068,
+      "sha256": "1e879dc2a284450ba23da8d440728279ed1afba75f7b517749bea282ad1be602"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/trace_archives/full_001_cases.tar.gz",
+      "bytes": 25393745,
+      "sha256": "9460332d82fa229bb45b5e3050e84650c30e3ad2317a450b91cf87ea666fc053"
+    }
+  ]
+}

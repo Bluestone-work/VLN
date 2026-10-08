@@ -145,4 +145,7 @@ NO-GO; see `CONTINUATION_LABEL_REPORT.md`.
 | PREFERENCE-NATIVE-DIRECTION-001 | 418 audited strict native-move pairs | post hoc direction/class-balance split | — | — | — | native preferred 404, alternative preferred 14; model identifies 0/14 native improvements | `results/preference_training_support_001/directional_support_001/summary.json` |
 | PREFERENCE-SUPPORT-VERIFICATION-001 | same archived fitting data | independent vector inequalities and masked sorting | — | — | — | 12,159 labels, 47 choices, 564 metrics all pass; six unit tests pass | `results/preference_training_support_001/verification_001/summary.json` |
 
+| Experiment | Population | Change | Findings | Verification | Decision | Artifact |
+| --- | --- | --- | --- | --- | --- | --- |
 | INTERRUPT-COVERAGE-001 (attempt002) | Two old training cohorts, seed100 | Offline eligibility enumeration; no new rollouts/model | Failed:156 cuts/56 options/11 routes,8 tested; success:>=128 cuts/43 options/27 routes | 7 tests;878 options/284 cuts/2 plans verified | CONDITIONAL GO for bounded timing oracle only; no interrupt learning | `INTERRUPT_COVERAGE_REPORT.md` |
+| INTERRUPT-TIMING-ORACLE-001 | Old fresh64,19 exposed routes,seed100 | 175 cuts x3 arms +19 controls;25 smoke rollouts | Consume:4/7 SR+nDTW rescues,3 scenes;retain:3/7,2 scenes;first-consume nDTW harm8/12 native successes | 544 full rollouts;4352 metrics/350 cut checks pass | CONDITIONAL GO for independent causal confirmation only | `INTERRUPT_TIMING_ORACLE_REPORT.md` |

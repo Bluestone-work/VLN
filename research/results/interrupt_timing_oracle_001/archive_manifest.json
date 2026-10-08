@@ -1,0 +1,360 @@
+{
+  "description": "Completed timing oracle, source snapshots, logs, all outcomes and compressed complete per-case traces; no simulator/checkpoint assets bundled. Does not self-hash or hash evolving central reports.",
+  "files": [
+    {
+      "path": "research/INTERRUPT_NEXT_GATE.md",
+      "bytes": 4153,
+      "sha256": "275c8a76ba710d2155e3b0ac8ab30b606c186124e5fc533bd34def45120274f6"
+    },
+    {
+      "path": "research/INTERRUPT_TIMING_ORACLE_REPORT.md",
+      "bytes": 7615,
+      "sha256": "7ed50299a65f150e87d8efd4b6fd15bd5266b6d390457086eaae179ef02c3192"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/analysis_001/cases.json",
+      "bytes": 928828,
+      "sha256": "c3dbf7ee749a4786cb6ce0f9290aebe52327c46b69cfeb6a075200b1abdffced"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/analysis_001/routes.json",
+      "bytes": 64890,
+      "sha256": "6cd9c810c7d4b8276124f42350ed5e6574f79e08de2c2d2fb132e50c13bd4386"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/analysis_001/summary.json",
+      "bytes": 7759,
+      "sha256": "8371734bd54a3bffde98eb5bb054463be77ca37bd27ba5c54168980a5ac4be57"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/analysis_001.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/analysis_001.stdout.log",
+      "bytes": 7759,
+      "sha256": "8371734bd54a3bffde98eb5bb054463be77ca37bd27ba5c54168980a5ac4be57"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/analysis_registration.json",
+      "bytes": 550,
+      "sha256": "fc175e957f4bde5016d7bcdaf90002529f29d78cc422e3173304b9ae39378594"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/analysis_tests.stderr.log",
+      "bytes": 102,
+      "sha256": "e6ec182765cd965f2837d8eeaef5a64af48a104f245cd1a0b7281559194c57c1"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/analysis_tests.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/figures_001/all_cut_returns.pdf",
+      "bytes": 22540,
+      "sha256": "4cc174fbc99b2b55d6f8dadc7a05fd85131e298f8765cfbfd78220c4be283fa5"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/figures_001/all_cut_returns.png",
+      "bytes": 106620,
+      "sha256": "26f175d8c2be0524a4895108d3b05f1ffc4b1dbdb9afad79295960ab257efc5e"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/git_diff.patch",
+      "bytes": 38309,
+      "sha256": "7100b90c405f97ed795a537f1292b2c30942fd2ca7d74e74e92a2ffb858d5cd4"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/interrupt_plan.json",
+      "bytes": 66810,
+      "sha256": "06ec419c82db205fb01ae67cbbba1a80183901eea4eb4376a26281bc5655c5fa"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/manifest.json",
+      "bytes": 133043,
+      "sha256": "de3f09beed5acb0c3806e422153d5ead2b52e97bfb3722816048d2cb9be62e6e"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/results.jsonl",
+      "bytes": 2158688,
+      "sha256": "f6bf01600a1761c4e85b5c8bb333fbb875793fa49cfa4751684f259d65e44c7b"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/research/INTERRUPT_TIMING_ORACLE_PROTOCOL.md",
+      "bytes": 3573,
+      "sha256": "9a875d3c1f7093e9c395bc6588e04513f4e93171520a9a4d8994f1afe699f4aa"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/research/configs/GRAPH_VALUE_FRESH_TRAIN64_001.json",
+      "bytes": 2486,
+      "sha256": "7153e15c07dd158a4332d62c5bcfc0913979c648795761f94226a8cd2b07aa93"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+      "bytes": 13582,
+      "sha256": "c04f69c57626a187c2401b1b5b8cb6ba5c6720d8a3de0555082520d56bda2dd2"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/research/results/interrupt_timing_oracle_001/plan_001.json",
+      "bytes": 69135,
+      "sha256": "3639cf6753b28fe7640400ef8f6d8d3c58efe995d82112eaf948f64b9f71c97d"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/research/tools/critical_case_driver.py",
+      "bytes": 12321,
+      "sha256": "95a627672f72663e012eb80b476a3a0d6324bf3beb5f595e964d4002ba1e781c"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/research/tools/run_critical_census.py",
+      "bytes": 3995,
+      "sha256": "b6117d3b312cdb916235394cdd40a0108ba9265dc90ec1e065034031ff8f9394"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/research/tools/run_option_capture.py",
+      "bytes": 4280,
+      "sha256": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/run_r2r/iter_train.yaml",
+      "bytes": 2223,
+      "sha256": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/vlnce_baselines/adaptive_action/critical_census.py",
+      "bytes": 8011,
+      "sha256": "caadaa3c18734f0c4e1d43e38edc055ec9ab7a0ef9b215eb68b3cf8286a5fb2f"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/vlnce_baselines/adaptive_action/graph_option_capture.py",
+      "bytes": 7247,
+      "sha256": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/vlnce_baselines/adaptive_action/option_calibration.py",
+      "bytes": 5958,
+      "sha256": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/vlnce_baselines/common/environments.py",
+      "bytes": 22297,
+      "sha256": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/source_snapshot/vlnce_baselines/ss_trainer_ETP.py",
+      "bytes": 99288,
+      "sha256": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/status.json",
+      "bytes": 67103,
+      "sha256": "4e458e028e4724aa3866ece26bb04e108547ad50fbd93a8b10799887bf2fc234"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001/summary.json",
+      "bytes": 67103,
+      "sha256": "4e458e028e4724aa3866ece26bb04e108547ad50fbd93a8b10799887bf2fc234"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001.stderr.log",
+      "bytes": 204449,
+      "sha256": "f4e8d9f7acfbbebb0c01b38195546a2b238ed1f97d02df4da79f5f17e41a2a5d"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/full_001.stdout.log",
+      "bytes": 67595,
+      "sha256": "7a75bd3db6c5146602c8569811634f26be9c6afbd91550603327e7b1cb939c8d"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/legacy_tests.stderr.log",
+      "bytes": 103,
+      "sha256": "888a0c0ed615e57d32cf72be501b0c355f33b8613c81dfdaa99db33d7959487e"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/legacy_tests.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/plan_001.json",
+      "bytes": 69135,
+      "sha256": "3639cf6753b28fe7640400ef8f6d8d3c58efe995d82112eaf948f64b9f71c97d"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/plot_001.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/plot_001.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/plot_registration.json",
+      "bytes": 209,
+      "sha256": "7dd66f805b3f307eae7bef11dde5cb285d2d282bef2ca408dc09ba6e3e8a589e"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/replay_routes_19.json.gz",
+      "bytes": 629446,
+      "sha256": "2412859f7393c0582cee18db0540c3d8da9cf6139349b5e80df5c677e29c7068"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/git_diff.patch",
+      "bytes": 38309,
+      "sha256": "7100b90c405f97ed795a537f1292b2c30942fd2ca7d74e74e92a2ffb858d5cd4"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/interrupt_plan.json",
+      "bytes": 874,
+      "sha256": "7d81028b4b17039f4a70b38a8b3a8bbcb4f3269e839dda725c945a1dbfe569d8"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/manifest.json",
+      "bytes": 132979,
+      "sha256": "db68583a0c7ed8cc46c53f383ec9da41aa665d95cd95d0ae7cbc743cb907e449"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/results.jsonl",
+      "bytes": 58141,
+      "sha256": "dc0cfdf1632c987bc7b3ac5bb62f9c7fa49508b12ed7c0ed83f961c80be35fe6"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/research/INTERRUPT_TIMING_ORACLE_PROTOCOL.md",
+      "bytes": 3573,
+      "sha256": "9a875d3c1f7093e9c395bc6588e04513f4e93171520a9a4d8994f1afe699f4aa"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/research/configs/GRAPH_VALUE_FRESH_TRAIN64_001.json",
+      "bytes": 2486,
+      "sha256": "7153e15c07dd158a4332d62c5bcfc0913979c648795761f94226a8cd2b07aa93"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+      "bytes": 13582,
+      "sha256": "c04f69c57626a187c2401b1b5b8cb6ba5c6720d8a3de0555082520d56bda2dd2"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/research/results/interrupt_timing_oracle_001/plan_001.json",
+      "bytes": 69135,
+      "sha256": "3639cf6753b28fe7640400ef8f6d8d3c58efe995d82112eaf948f64b9f71c97d"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/research/tools/critical_case_driver.py",
+      "bytes": 12321,
+      "sha256": "95a627672f72663e012eb80b476a3a0d6324bf3beb5f595e964d4002ba1e781c"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/research/tools/run_critical_census.py",
+      "bytes": 3995,
+      "sha256": "b6117d3b312cdb916235394cdd40a0108ba9265dc90ec1e065034031ff8f9394"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/research/tools/run_option_capture.py",
+      "bytes": 4280,
+      "sha256": "ba233cd5920897c7f3e6b9c7e3704dd480a61363a85aa961e890a1ee1bb9d5b8"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/run_r2r/iter_train.yaml",
+      "bytes": 2223,
+      "sha256": "c19338b2c790076fc4f6d913911391f6d38695d942c27dab69ba2232f1e28129"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/vlnce_baselines/adaptive_action/critical_census.py",
+      "bytes": 8011,
+      "sha256": "caadaa3c18734f0c4e1d43e38edc055ec9ab7a0ef9b215eb68b3cf8286a5fb2f"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/vlnce_baselines/adaptive_action/graph_option_capture.py",
+      "bytes": 7247,
+      "sha256": "f66f5b9855cbe40b1a3f48c7f1ce60344bcdb343be7446748dc42b1aa78840db"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/vlnce_baselines/adaptive_action/option_calibration.py",
+      "bytes": 5958,
+      "sha256": "844e69679ebc6ae5cb8fdc9c6504e695359a7fdf279f19df192816ec32098aec"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/vlnce_baselines/common/environments.py",
+      "bytes": 22297,
+      "sha256": "c5fc486e0a3da1c1c1a7c8bc20f832c04c9002a0e6e7c159fe3e957df08389ed"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/source_snapshot/vlnce_baselines/ss_trainer_ETP.py",
+      "bytes": 99288,
+      "sha256": "413293a658ad0a266af4bd8ae1202a5a28581bcc8386c749a1f01788b5101d59"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/status.json",
+      "bytes": 1173,
+      "sha256": "4662cd755fa52c76b0a172ec7d05083827355851b9351406cb08c06eecb012f7"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001/summary.json",
+      "bytes": 1173,
+      "sha256": "4662cd755fa52c76b0a172ec7d05083827355851b9351406cb08c06eecb012f7"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001.stderr.log",
+      "bytes": 119806,
+      "sha256": "9648cf64a3afcc3ba5f4d44061d180096a9ceb3b0ac6c4b9fc28a5da47478f08"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_001.stdout.log",
+      "bytes": 20060,
+      "sha256": "7d88b3ca56dd2848645a34f70a1ed59e9c4b460c2a2386ba2b69befe0da8c076"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_verification_001/summary.json",
+      "bytes": 771,
+      "sha256": "a45ec0d0d0734bd92f5fa9987fe3b1a2f53561fd9ea9f11af3982859d8e31236"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_verification_001.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/smoke_verification_001.stdout.log",
+      "bytes": 771,
+      "sha256": "a45ec0d0d0734bd92f5fa9987fe3b1a2f53561fd9ea9f11af3982859d8e31236"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/study_status.json",
+      "bytes": 393,
+      "sha256": "8def9f3dbe01b920bace3c16a176c62aa9355de30e84ef4c2343e9b172ab02ed"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/trace_archives/full_001_cases.tar.gz",
+      "bytes": 25393745,
+      "sha256": "9460332d82fa229bb45b5e3050e84650c30e3ad2317a450b91cf87ea666fc053"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/trace_archives/manifest.json",
+      "bytes": 627,
+      "sha256": "86928ba54579e3af77f139419e14e1900592a63c3e808a6f4b333492cc3bd7b3"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/trace_archives/smoke_001_cases.tar.gz",
+      "bytes": 985068,
+      "sha256": "1e879dc2a284450ba23da8d440728279ed1afba75f7b517749bea282ad1be602"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/verification_001/summary.json",
+      "bytes": 785,
+      "sha256": "6ea99b473c9b5bbbe7fe9edbff1dba980c3db75ec8aa66ffa590068c92db5c2b"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/verification_001.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/results/interrupt_timing_oracle_001/verification_001.stdout.log",
+      "bytes": 785,
+      "sha256": "6ea99b473c9b5bbbe7fe9edbff1dba980c3db75ec8aa66ffa590068c92db5c2b"
+    }
+  ]
+}

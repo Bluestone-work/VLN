@@ -1,0 +1,775 @@
+diff --git a/pretrain_src/run_pt/r2r_model_config_dep.json b/pretrain_src/run_pt/r2r_model_config_dep.json
+index 67a1652..be98f4d 100644
+--- a/pretrain_src/run_pt/r2r_model_config_dep.json
++++ b/pretrain_src/run_pt/r2r_model_config_dep.json
+@@ -33,6 +33,6 @@
+     "use_lang2visn_attn": true,
+     "graph_sprels": true,
+     "glocal_fuse": true,
+-    "lang_bert_name": "bert-base-uncased"
++    "lang_bert_name": "/home/wj/VLN-CE/ETPNav/bert_config/bert-base-uncased"
+   }
+   
+\ No newline at end of file
+diff --git a/research/tools/prepare_outcome_blind_sample.py b/research/tools/prepare_outcome_blind_sample.py
+index 14d1c34..22bf10d 100644
+--- a/research/tools/prepare_outcome_blind_sample.py
++++ b/research/tools/prepare_outcome_blind_sample.py
+@@ -27,7 +27,16 @@ def main():
+                 for line in f:
+                     row=json.loads(line);local.add(norm(row['scene_id']))
+         else:
+-            obj=json.loads(path.read_text());local={norm(e['scene_id']) for e in obj['episodes']}
++            obj=json.loads(path.read_text())
++            records=obj.get('episodes', obj.get('route_episode_ids', []))
++            if isinstance(records, int):
++                # Some historical manifests keep only a route count; their
++                # sampled and explicitly excluded scenes are still enough to
++                # enforce scene disjointness.
++                local={norm(s) for s in obj.get('scenes', [])}
++                local.update(norm(s) for s in obj.get('excluded_scenes', []))
++            else:
++                local={norm(e['scene_id']) for e in records}
+         excluded |= local;excluded_counts[str(path)]=len(local);source_hashes[str(path)]=digest(path)
+     available=[e for e in data['episodes'] if norm(e['scene_id']) not in excluded]
+     grouped=collections.defaultdict(set)
+diff --git a/run_r2r/iter_train.yaml b/run_r2r/iter_train.yaml
+index e85f05c..3cc53cf 100644
+--- a/run_r2r/iter_train.yaml
++++ b/run_r2r/iter_train.yaml
+@@ -11,6 +11,19 @@ EVAL_CKPT_PATH_DIR: data/logs/checkpoints/
+ RESULTS_DIR: data/logs/eval_results/
+ VIDEO_DIR: data/logs/video/
+ 
++ACTION_ABSTRACTION:
++  LEVEL: default
++  DIAGNOSTICS_ENABLED: False
++  DIAGNOSTICS_PATH: data/logs/action_diagnostics.jsonl
++  DIAGNOSTICS_MAX_RECORDS: -1
++  ORACLE_ENABLED: False
++  ORACLE_PATH: data/logs/action_oracle.jsonl
++  ORACLE_MAX_RECORDS: -1
++  GRAPH_SELECTION_ORACLE_ENABLED: False
++  GRAPH_SELECTION_ORACLE_MODE: legacy_joint
++  GRAPH_SELECTION_ORACLE_PATH: data/logs/graph_selection_oracle.jsonl
++  INCLUDE_RANKER_EMBEDDINGS: False
++
+ INFERENCE:
+   SPLIT: test
+   USE_CKPT_CONFIG: False
+diff --git a/vlnce_baselines/common/environments.py b/vlnce_baselines/common/environments.py
+index 6ef6986..0ed875d 100755
+--- a/vlnce_baselines/common/environments.py
++++ b/vlnce_baselines/common/environments.py
+@@ -157,6 +157,19 @@ class VLNCEDaggerEnv(habitat.RLEnv):
+         # circle_dists = np.linalg.norm(np.array(path)-current_pos, axis=1).tolist()
+         return circle_dists
+ 
++    def current_episode_ref_distance(self):
++        """Return distance to the closest reference-path point, if present.
++
++        This runs inside the Habitat worker and avoids sending a large route
++        object through ``VectorEnv.call_at`` for every diagnostic decision.
++        It is only used by the opt-in action-abstraction logger.
++        """
++        path = getattr(self._env.current_episode, "reference_path", None)
++        if not path:
++            return None
++        distances = self.current_dist_to_refpath(path)
++        return float(min(distances)) if distances else None
++
+     def ghost_dist_to_ref(self, ghost_vp_pos, ref_path):
+         episode_id = self._env.current_episode.episode_id
+         if episode_id != self.prev_episode_id:
+diff --git a/vlnce_baselines/config/default.py b/vlnce_baselines/config/default.py
+index 7600340..38d817e 100755
+--- a/vlnce_baselines/config/default.py
++++ b/vlnce_baselines/config/default.py
+@@ -22,6 +22,19 @@ _C.VIDEO_DIR = "videos/debug"
+ _C.TENSORBOARD_DIR = "data/tensorboard_dirs/debug"
+ _C.RESULTS_DIR = "data/checkpoints/pretrained/evals"
+ 
++_C.ACTION_ABSTRACTION = CN()
++_C.ACTION_ABSTRACTION.LEVEL = "default"
++_C.ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED = False
++_C.ACTION_ABSTRACTION.DIAGNOSTICS_PATH = "data/logs/action_diagnostics.jsonl"
++_C.ACTION_ABSTRACTION.DIAGNOSTICS_MAX_RECORDS = -1
++_C.ACTION_ABSTRACTION.ORACLE_ENABLED = False
++_C.ACTION_ABSTRACTION.ORACLE_PATH = "data/logs/action_oracle.jsonl"
++_C.ACTION_ABSTRACTION.ORACLE_MAX_RECORDS = -1
++_C.ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED = False
++_C.ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_MODE = "legacy_joint"
++_C.ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_PATH = "data/logs/graph_selection_oracle.jsonl"
++_C.ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS = False
++
+ # -----------------------------------------------------------------------------
+ # EVAL CONFIG
+ # -----------------------------------------------------------------------------
+diff --git a/vlnce_baselines/models/Policy_ViewSelection_ETP.py b/vlnce_baselines/models/Policy_ViewSelection_ETP.py
+index a764c93..6763a8a 100755
+--- a/vlnce_baselines/models/Policy_ViewSelection_ETP.py
++++ b/vlnce_baselines/models/Policy_ViewSelection_ETP.py
+@@ -25,8 +25,9 @@ from vlnce_baselines.models.encoders.resnet_encoders import (
+ )
+ from vlnce_baselines.models.policy import ILPolicy
+ 
+-from vlnce_baselines.waypoint_pred.TRM_net import BinaryDistPredictor_TRM
+-from vlnce_baselines.waypoint_pred.utils import nms
++from vlnce_baselines.waypoint_pred.TRM_net import BinaryDistPredictor_TRM
++from vlnce_baselines.waypoint_pred.utils import nms
++from vlnce_baselines.adaptive_action.action_generators import get_action_abstraction_spec
+ from vlnce_baselines.models.utils import (
+     angle_feature_with_ele, dir_angle_feature_with_ele, angle_feature_torch, length2mask)
+ import math
+@@ -186,7 +187,9 @@ class ETP(Net):
+                 gmap_img_fts=None, gmap_pos_fts=None,
+                 gmap_masks=None, gmap_visited_masks=None, gmap_pair_dists=None,
+                 gmap_embeds=None, rl_topo_debug=False,
+-                residual_alpha=0.0, valid_action_mask=None):
++                residual_alpha=0.0, valid_action_mask=None,
++                action_abstraction="default",
++                return_waypoint_heatmap=False):
+ 
+         if mode == 'language':
+             encoded_sentence = self.vln_bert.forward_txt(
+@@ -255,10 +258,11 @@ class ETP(Net):
+                 batch_x_norm, 
+                 batch_x_norm[:,:1,:]), 
+                 dim=1)
+-            batch_output_map = nms(
+-                batch_x_norm_wrap.unsqueeze(1), 
+-                max_predictions=5,
+-                sigma=(7.0,5.0))
++            abstraction_spec = get_action_abstraction_spec(action_abstraction)
++            batch_output_map = nms(
++                batch_x_norm_wrap.unsqueeze(1),
++                max_predictions=abstraction_spec.max_predictions,
++                sigma=abstraction_spec.sigma)
+ 
+             # predicted waypoints before sampling
+             batch_output_map = batch_output_map.squeeze(1)[:,1:-1,:]
+@@ -320,7 +324,8 @@ class ETP(Net):
+             cand_angle_fts = []
+             cand_img_idxes = []
+             cand_angles = []
+-            cand_distances = []
++            cand_distances = []
++            cand_scores = []
+             for j in range(batch_size):
+                 if in_train:
+                     angle_idxes = torch.tensor(batch_sample_angle_idxes[j])
+@@ -333,7 +338,13 @@ class ETP(Net):
+                 angle_rad_cc = 2*math.pi-angle_idxes.float()/120*2*math.pi  # 逆时针
+                 cand_angle_fts.append( angle_feature_torch(angle_rad_c) )
+                 cand_angles.append(angle_rad_cc.tolist())
+-                cand_distances.append( ((distance_idxes + 1)*0.25).tolist() )
++                cand_distances.append( ((distance_idxes + 1)*0.25).tolist() )
++                score_angle_idxes = angle_idxes.to(batch_output_map.device)
++                score_distance_idxes = distance_idxes.to(batch_output_map.device)
++                cand_scores.append(
++                    batch_output_map[j, score_angle_idxes, score_distance_idxes]
++                    .detach().cpu().tolist()
++                )
+                 # for img idxes
+                 img_idxes = 12 - (angle_idxes.cpu().numpy()+5) // 10        # 逆时针
+                 img_idxes[img_idxes==12] = 0
+@@ -356,15 +367,21 @@ class ETP(Net):
+                 'cand_angle_fts': cand_angle_fts,   # [K x 4]
+                 'cand_img_idxes': cand_img_idxes,   # [K]
+                 'cand_angles': cand_angles,         # [K]
+-                'cand_distances': cand_distances,   # [K]
++                'cand_distances': cand_distances,   # [K]
++                'cand_scores': cand_scores,         # NMS heatmap mass [K]
++                'action_abstraction': abstraction_spec.name,
+ 
+                 'pano_rgb': pano_rgb,               # B x 12 x 2048
+                 'pano_depth': pano_depth,           # B x 12 x 128
+                 'pano_angle_fts': pano_angle_fts,   # 12 x 4
+                 'pano_img_idxes': pano_img_idxes,   # 12 
+-            }
+-            
+-            return outputs
++            }
++            if return_waypoint_heatmap:
++                # Analysis-only output; ordinary runs keep the original
++                # waypoint tensor contract and memory footprint.
++                outputs['waypoint_heatmap_probs'] = batch_x_norm.detach()
++
++            return outputs
+ 
+         elif mode == 'panorama':
+             rgb_fts = self.drop_env(rgb_fts)
+diff --git a/vlnce_baselines/models/graph_utils.py b/vlnce_baselines/models/graph_utils.py
+index 30f0e4f..b6c9785 100644
+--- a/vlnce_baselines/models/graph_utils.py
++++ b/vlnce_baselines/models/graph_utils.py
+@@ -159,6 +159,11 @@ class GraphMap(object):
+         self.shortest_dist = None
+         
+         self.node_stop_scores = {}  # viewpoint to stop_score
++        # Mapping from the candidates generated at the most recent observation
++        # to the real/ghost graph node that represented each candidate. This
++        # is used only by action-abstraction diagnostics; the graph contract is
++        # unchanged.
++        self.last_candidate_vps = []
+ 
+     def _localize(self, qpos, kpos_dict, ignore_height=False):
+         min_dis = 10000
+@@ -194,6 +199,7 @@ class GraphMap(object):
+                            cur_vp, cur_pos, cur_embeds,
+                            cand_vp, cand_pos, cand_embeds, 
+                            cand_real_pos):
++        self.last_candidate_vps = []
+         # 1. connect prev_vp
+         self.graph_nx.add_node(cur_vp)
+         if prev_vp is not None:
+@@ -211,6 +217,7 @@ class GraphMap(object):
+             if localized_nvp is not None :
+                 dis = calc_position_distance(cur_pos, self.node_pos[localized_nvp])
+                 self.graph_nx.add_edge(cur_vp, localized_nvp, weight=dis)
++                self.last_candidate_vps.append(localized_nvp)
+             # cand not overlap with node, create/update ghost
+             else:
+                 if self.merge_ghost:
+@@ -235,6 +242,7 @@ class GraphMap(object):
+                         self.ghost_fronts[gvp].append(cur_vp)
+                         if self.has_real_pos:
+                             self.ghost_real_pos[gvp].append(cand_real_pos[i])
++                    self.last_candidate_vps.append(gvp)
+                 else:
+                     gvp = f'g{str(self.ghost_cnt)}'
+                     self.ghost_cnt += 1
+@@ -244,6 +252,7 @@ class GraphMap(object):
+                     self.ghost_fronts[gvp] = [cur_vp]
+                     if self.has_real_pos:
+                         self.ghost_real_pos[gvp] = [cand_real_pos[i]]
++                    self.last_candidate_vps.append(gvp)
+         
+         self.ghost_aug_pos = deepcopy(self.ghost_mean_pos)
+         if self.ghost_aug != 0:
+@@ -319,4 +328,4 @@ class GraphMap(object):
+         rel_angles = np.array(rel_angles).astype(np.float32)
+         rel_dists = np.array(rel_dists).astype(np.float32)
+         rel_ang_fts = get_angle_fts(rel_angles[:, 0], rel_angles[:, 1], angle_feat_size=4)
+-        return np.concatenate([rel_ang_fts, rel_dists], 1)
+\ No newline at end of file
++        return np.concatenate([rel_ang_fts, rel_dists], 1)
+diff --git a/vlnce_baselines/ss_trainer_ETP.py b/vlnce_baselines/ss_trainer_ETP.py
+index 251e91e..53337cc 100755
+--- a/vlnce_baselines/ss_trainer_ETP.py
++++ b/vlnce_baselines/ss_trainer_ETP.py
+@@ -55,6 +55,13 @@ import json
+ from copy import deepcopy
+ from torch.cuda.amp import autocast, GradScaler
+ from vlnce_baselines.common.ops import pad_tensors_wgrad, gen_seq_masks
++from vlnce_baselines.adaptive_action.diagnostics import DecisionLogger
++from vlnce_baselines.adaptive_action.action_generators import (
++    ACTION_ABSTRACTIONS,
++    candidate_geometry_from_heatmap,
++)
++from vlnce_baselines.adaptive_action.oracle_selector import select_oracle_level
++from vlnce_baselines.adaptive_action.graph_oracle_controls import controlled_graph_action
+ from torch.nn.utils.rnn import pad_sequence
+ 
+ 
+@@ -65,6 +72,44 @@ class RLTrainer(BaseVLNCETrainer):
+         self.max_len = int(config.IL.max_traj_len) #  * 0.97 transfered gt path got 0.96 spl
+         self._rl_topo_debug_transition_count = 0
+         self._rl_topo_rollout_id = 0
++        abstraction_cfg = getattr(config, "ACTION_ABSTRACTION", None)
++        self.action_abstraction = (
++            str(abstraction_cfg.LEVEL) if abstraction_cfg is not None else "default"
++        )
++        self.aaa_diagnostics_enabled = bool(
++            abstraction_cfg is not None and abstraction_cfg.DIAGNOSTICS_ENABLED
++        )
++        self.aaa_diagnostic_max_records = int(
++            abstraction_cfg.DIAGNOSTICS_MAX_RECORDS
++        ) if abstraction_cfg is not None else -1
++        self.aaa_logger = DecisionLogger(
++            abstraction_cfg.DIAGNOSTICS_PATH
++            if self.aaa_diagnostics_enabled else None,
++            rank=getattr(config, "local_rank", 0),
++        )
++        self.aaa_oracle_enabled = bool(
++            abstraction_cfg is not None and abstraction_cfg.ORACLE_ENABLED
++        )
++        self.aaa_oracle_max_records = int(
++            abstraction_cfg.ORACLE_MAX_RECORDS
++        ) if abstraction_cfg is not None else -1
++        self.aaa_oracle_logger = DecisionLogger(
++            abstraction_cfg.ORACLE_PATH
++            if self.aaa_oracle_enabled else None,
++            rank=getattr(config, "local_rank", 0),
++        )
++        self.graph_selection_oracle_enabled = bool(
++            abstraction_cfg is not None and abstraction_cfg.GRAPH_SELECTION_ORACLE_ENABLED
++        )
++        self.graph_selection_oracle_mode = str(abstraction_cfg.GRAPH_SELECTION_ORACLE_MODE)
++        self.aaa_include_ranker_embeddings = bool(
++            abstraction_cfg is not None and abstraction_cfg.INCLUDE_RANKER_EMBEDDINGS
++        )
++        self.graph_selection_oracle_logger = DecisionLogger(
++            abstraction_cfg.GRAPH_SELECTION_ORACLE_PATH
++            if self.graph_selection_oracle_enabled else None,
++            rank=getattr(config, "local_rank", 0),
++        )
+ 
+     def _make_dirs(self):
+         if self.config.local_rank == 0:
+@@ -218,6 +263,7 @@ class RLTrainer(BaseVLNCETrainer):
+         load_from_ckpt: bool,
+         observation_space: Space,
+         action_space: Space,
++        load_optimizer: bool = True,
+     ):
+         start_iter = 0
+         policy = baseline_registry.get_policy(self.config.MODEL.policy_name)
+@@ -249,11 +295,11 @@ class RLTrainer(BaseVLNCETrainer):
+                     or "net.residual_sap_head." in name
+                 )
+         else:
+-            # The critic output is not part of the original IL loss.  Keep it
+-            # frozen in the compatibility path so baseline DDP sees no
+-            # unused trainable parameters.
++            # The optional heads are not part of the original IL loss. Keep
++            # them frozen so released IL checkpoints retain their optimizer
++            # parameter set.
+             for name, param in self.policy.named_parameters():
+-                if "net.critic." in name:
++                if "net.critic." in name or "net.residual_sap_head." in name:
+                     param.requires_grad_(False)
+ 
+         if self.config.GPU_NUMBERS > 1:
+@@ -294,7 +340,8 @@ class RLTrainer(BaseVLNCETrainer):
+         else:
+             self.critic_optimizer = None
+             self.optimizer = torch.optim.AdamW(
+-                self.policy.parameters(), lr=self.config.IL.lr
++                [p for p in self.policy.parameters() if p.requires_grad],
++                lr=self.config.IL.lr,
+             )
+ 
+         if load_from_ckpt:
+@@ -330,7 +377,7 @@ class RLTrainer(BaseVLNCETrainer):
+                                 "Skipping incompatible PPO optimizer state: %s",
+                                 exc,
+                             )
+-            elif not config.IL.is_requeue:
++            elif load_optimizer and not config.IL.is_requeue:
+                 self.optimizer.load_state_dict(ckpt_dict["optim_state"])
+         if rl_topo_enabled:
+             # Snapshot the frozen IL reference for diagnostics.  This is
+@@ -740,6 +787,7 @@ class RLTrainer(BaseVLNCETrainer):
+             load_from_ckpt=True,
+             observation_space=observation_space,
+             action_space=self.envs.action_spaces[0],
++            load_optimizer=False,
+         )
+         self.policy.eval()
+         self.waypoint_predictor.eval()
+@@ -865,6 +913,7 @@ class RLTrainer(BaseVLNCETrainer):
+             load_from_ckpt=True,
+             observation_space=observation_space,
+             action_space=self.envs.action_spaces[0],
++            load_optimizer=False,
+         )
+         self.policy.eval()
+         self.waypoint_predictor.eval()
+@@ -1000,6 +1049,269 @@ class RLTrainer(BaseVLNCETrainer):
+ 
+         return len(self.rl_topo_transitions) - 1
+ 
++    def _make_aaa_diagnostic(self, env_index, stepk, cur_pos, cur_ori,
++                             wp_outputs, nav_inputs, nav_logits, action_index,
++                             selected_target, dist_before,
++                             policy_action_index=None,
++                             graph_oracle_record=None,
++                             gmap_embeds=None):
++        """Build one pre-execution decision record.
++
++        Scenario labels are deliberately geometric proxies. They are useful
++        for the first diagnostic cycle and do not claim semantic perception.
++        """
++        episode = self.envs.current_episodes()[env_index]
++        episode_id = str(episode.episode_id)
++        angles = list(wp_outputs["cand_angles"][env_index])
++        distances = list(wp_outputs["cand_distances"][env_index])
++        scores = list(wp_outputs.get("cand_scores", [[]])[env_index])
++        cand_count = len(angles)
++        if cand_count:
++            unit_x = [math.cos(float(a)) for a in angles]
++            unit_y = [math.sin(float(a)) for a in angles]
++            mean_x = sum(unit_x) / cand_count
++            mean_y = sum(unit_y) / cand_count
++            angular_dispersion = 1.0 - math.sqrt(mean_x * mean_x + mean_y * mean_y)
++        else:
++            angular_dispersion = 0.0
++        if cand_count <= 2:
++            geometry_proxy = "low_proposal_count"
++        elif angular_dispersion >= 0.55:
++            geometry_proxy = "dispersed_proposals"
++        else:
++            geometry_proxy = "concentrated_proposals"
++
++        reference_distance = None
++        try:
++            reference_distance = self.envs.call_at(
++                env_index, "current_episode_ref_distance"
++            )
++        except (TypeError, ValueError):
++            reference_distance = None
++
++        graph_ids = nav_inputs["gmap_vp_ids"][env_index]
++        graph_scores = nav_logits[env_index].detach().float().cpu().tolist()
++        graph_visited = nav_inputs["gmap_visited_masks"][env_index].detach().cpu().tolist()
++        graph_valid = nav_inputs["gmap_masks"][env_index].detach().cpu().tolist()
++        graph_candidates = []
++        for idx, vp_id in enumerate(graph_ids):
++            if idx >= len(graph_scores) or not math.isfinite(graph_scores[idx]):
++                continue
++            graph_candidates.append({
++                "id": "STOP" if vp_id is None else vp_id,
++                "index": idx,
++                "logit": graph_scores[idx],
++                "visited": bool(graph_visited[idx]) if idx < len(graph_visited) else None,
++            })
++        graph_index_by_id = {vp_id: idx for idx, vp_id in enumerate(graph_ids)}
++        candidate_graph_mapping = []
++        candidate_vps = list(getattr(self.gmaps[env_index], "last_candidate_vps", []))
++        for candidate_index, (angle, distance) in enumerate(zip(angles, distances)):
++            graph_id = candidate_vps[candidate_index] if candidate_index < len(candidate_vps) else None
++            graph_index = graph_index_by_id.get(graph_id)
++            logit = graph_scores[graph_index] if graph_index is not None and graph_index < len(graph_scores) else None
++            candidate_graph_mapping.append({
++                "candidate_index": candidate_index,
++                "graph_id": graph_id,
++                "graph_index": graph_index,
++                "graph_logit": logit,
++                "graph_valid": bool(graph_valid[graph_index]) if graph_index is not None and graph_index < len(graph_valid) else False,
++                "graph_visited": bool(graph_visited[graph_index]) if graph_index is not None and graph_index < len(graph_visited) else None,
++                "selected_by_policy": graph_id == selected_target.get("id"),
++            })
++            if (
++                self.aaa_include_ranker_embeddings
++                and graph_index is not None
++                and gmap_embeds is not None
++            ):
++                candidate_graph_mapping[-1]["graph_embedding"] = (
++                    gmap_embeds[env_index, graph_index]
++                    .detach().float().cpu().tolist()
++                )
++        instruction = getattr(episode, "instruction", None)
++        if isinstance(instruction, dict):
++            instruction = instruction.get("instruction_text", instruction)
++        else:
++            instruction = getattr(instruction, "instruction_text", str(instruction))
++        return {
++            "episode_id": episode_id,
++            "scene_id": str(episode.scene_id),
++            "schema_version": 2,
++            "privileged_analysis_only": ["distance_to_goal_before", "distance_to_goal_after", "distance_to_reference_path", "progress", "near_goal"],
++            "near_goal": float(dist_before) <= 3.0,
++            "high_level_step": int(stepk),
++            "abstraction": self.action_abstraction,
++            "pose": {"position": list(cur_pos[env_index]), "rotation": list(cur_ori[env_index])},
++            "instruction": instruction,
++            "waypoint_candidates": [
++                {"angle": float(a), "distance": float(d),
++                 "score": float(scores[k]) if k < len(scores) else None}
++                for k, (a, d) in enumerate(zip(angles, distances))
++            ],
++            "waypoint_candidate_count": cand_count,
++            "candidate_angular_dispersion": float(angular_dispersion),
++            "proposal_distribution_label": geometry_proxy,
++            "graph_candidates": graph_candidates,
++            "candidate_graph_mapping": candidate_graph_mapping,
++            "selected_action_index": int(action_index),
++            "policy_action_index": (
++                int(policy_action_index) if policy_action_index is not None else int(action_index)
++            ),
++            "graph_selection_oracle": graph_oracle_record,
++            "selected_target": selected_target,
++            "policy_entropy": float(torch.distributions.Categorical(
++                logits=nav_logits[env_index]
++            ).entropy().detach().cpu().item()),
++            "distance_to_goal_before": float(dist_before),
++            "distance_to_reference_path": (
++                float(reference_distance) if reference_distance is not None else None
++            ),
++        }
++
++    def _write_aaa_diagnostic(self, record):
++        if not self.aaa_diagnostics_enabled:
++            return
++        if self.aaa_diagnostic_max_records >= 0 and self.aaa_logger.count >= self.aaa_diagnostic_max_records:
++            return
++        self.aaa_logger.write(record)
++
++    def _probe_aaa_oracle(self, env_index, stepk, wp_outputs):
++        """Probe all fixed waypoint abstractions at the current simulator state.
++
++        ``cand_dist_to_goal`` restores the worker simulator after each probe,
++        so every level sees the identical pose and predicted heatmap.  This is
++        privileged analysis only; the selected oracle level never changes the
++        action executed by the rollout.
++        """
++        if not self.aaa_oracle_enabled:
++            return
++        if (self.aaa_oracle_max_records >= 0 and
++                self.aaa_oracle_logger.count >= self.aaa_oracle_max_records):
++            return
++        heatmap = wp_outputs.get("waypoint_heatmap_probs")
++        if heatmap is None:
++            return
++        heatmap = heatmap[env_index].detach().cpu()
++        before = float(self.envs.call_at(env_index, "current_dist_to_goal"))
++        level_outcomes = {}
++        for level in ACTION_ABSTRACTIONS:
++            geometry = candidate_geometry_from_heatmap(heatmap, level)
++            candidates = []
++            for angle, distance, score in zip(
++                    geometry["angles"], geometry["distances"], geometry["scores"]):
++                after = float(self.envs.call_at(
++                    env_index, "cand_dist_to_goal",
++                    {"angle": angle, "forward": distance},
++                ))
++                candidates.append({
++                    "angle": float(angle),
++                    "distance": float(distance),
++                    "score": float(score),
++                    "distance_to_goal_after": after,
++                    "progress": float(before - after),
++                })
++            level_outcomes[level] = candidates
++        oracle_level, oracle_value = select_oracle_level(level_outcomes)
++        best_by_level = {
++            level: (max(items, key=lambda item: item["progress"])
++                    if items else None)
++            for level, items in level_outcomes.items()
++        }
++        episode = self.envs.current_episodes()[env_index]
++        self.aaa_oracle_logger.write({
++            "schema_version": 1,
++            "privileged_analysis_only": True,
++            "episode_id": str(episode.episode_id),
++            "scene_id": str(episode.scene_id),
++            "high_level_step": int(stepk),
++            "fixed_execution_abstraction": self.action_abstraction,
++            "distance_to_goal_before": before,
++            "levels": level_outcomes,
++            "best_by_level": best_by_level,
++            "oracle_level": oracle_level,
++            "oracle_best_progress": oracle_value,
++            "fixed_level_best_progress": (
++                best_by_level.get(self.action_abstraction, {}).get("progress")
++                if best_by_level.get(self.action_abstraction) else None
++            ),
++        })
++
++    def _graph_selection_oracle_action(self, env_index, stepk, wp_outputs,
++                                       nav_inputs, policy_action_index, nav_logits):
++        """Choose a current graph candidate by privileged one-step progress.
++
++        This is an analysis-only intervention. It keeps the default waypoint
++        generator and all graph construction unchanged, but replaces the
++        learned graph ranking for one evaluation rollout. Goal distance is
++        privileged and the resulting trajectory must never be treated as a
++        deployable method.
++        """
++        gmap = self.gmaps[env_index]
++        graph_ids = nav_inputs["gmap_vp_ids"][env_index]
++        graph_valid = nav_inputs["gmap_masks"][env_index].detach().cpu().tolist()
++        graph_visited = nav_inputs["gmap_visited_masks"][env_index].detach().cpu().tolist()
++        graph_index_by_id = {vp_id: idx for idx, vp_id in enumerate(graph_ids)}
++        angles = wp_outputs["cand_angles"][env_index]
++        distances = wp_outputs["cand_distances"][env_index]
++        current_distance = float(self.envs.call_at(env_index, "current_dist_to_goal"))
++        outcomes = []
++        by_graph_index = {}
++        for candidate_index, (angle, distance) in enumerate(zip(angles, distances)):
++            if candidate_index >= len(gmap.last_candidate_vps):
++                continue
++            graph_id = gmap.last_candidate_vps[candidate_index]
++            graph_index = graph_index_by_id.get(graph_id)
++            if graph_index is None or graph_index >= len(graph_valid):
++                continue
++            if not graph_valid[graph_index] or graph_visited[graph_index] or not str(graph_id).startswith("g"):
++                continue
++            after = float(self.envs.call_at(
++                env_index, "cand_dist_to_goal",
++                {"angle": angle, "forward": distance},
++            ))
++            outcome = {
++                "candidate_index": int(candidate_index),
++                "graph_id": graph_id,
++                "graph_index": int(graph_index),
++                "angle": float(angle),
++                "distance": float(distance),
++                "progress": float(current_distance - after),
++            }
++            outcomes.append(outcome)
++            previous = by_graph_index.get(graph_index)
++            if previous is None or outcome["progress"] > previous["progress"]:
++                by_graph_index[graph_index] = outcome
++        best_candidate_action = None
++        if by_graph_index:
++            best_candidate_action = max(
++                by_graph_index,
++                key=lambda index: by_graph_index[index]["progress"],
++            )
++        valid_nonstop = [idx for idx, vp in enumerate(graph_ids)
++                         if idx > 0 and graph_valid[idx] and not graph_visited[idx]
++                         and math.isfinite(float(nav_logits[env_index, idx].item()))]
++        best_nonstop = max(valid_nonstop,
++                           key=lambda idx: float(nav_logits[env_index, idx].item())) if valid_nonstop else 0
++        oracle_action = controlled_graph_action(
++            self.graph_selection_oracle_mode, int(policy_action_index),
++            best_nonstop, best_candidate_action, current_distance,
++        )
++        record = {
++            "schema_version": 1,
++            "privileged_analysis_only": True,
++            "intervention_mode": self.graph_selection_oracle_mode,
++            "best_learned_nonstop_action": int(best_nonstop),
++            "episode_id": str(self.envs.current_episodes()[env_index].episode_id),
++            "high_level_step": int(stepk),
++            "policy_action_index": int(policy_action_index),
++            "oracle_action_index": int(oracle_action),
++            "distance_to_goal_before": current_distance,
++            "candidate_outcomes": outcomes,
++            "oracle_selected_candidate": by_graph_index.get(oracle_action),
++        }
++        self.graph_selection_oracle_logger.write(record)
++        return oracle_action, record
++
+     def _link_rl_topo_next_values(self, trajectory_ids, values):
+         """Attach V(s_{t+1}) to the preceding transition in each env slot."""
+         for env_index, trajectory_id in enumerate(trajectory_ids):
+@@ -1259,6 +1571,8 @@ class RLTrainer(BaseVLNCETrainer):
+         self.logs["ppo/il_head_l2_change"].append(self._il_head_l2_change())
+ 
+     def rollout(self, mode, ml_weight=None, sample_ratio=None):
++        if self.graph_selection_oracle_enabled and mode != 'eval':
++            raise ValueError('Privileged graph interventions are evaluation-only')
+         if mode == 'train':
+             feedback = 'sample'
+         elif mode == 'eval' or mode == 'infer':
+@@ -1352,8 +1666,16 @@ class RLTrainer(BaseVLNCETrainer):
+                 waypoint_predictor = self.waypoint_predictor,
+                 observations = batch,
+                 in_train = (mode == 'train' and self.config.IL.waypoint_aug),
++                action_abstraction=self.action_abstraction,
++                return_waypoint_heatmap=self.aaa_oracle_enabled,
+             )
+ 
++            # The oracle is evaluated before graph updates and before the
++            # actual action is stepped, ensuring a matched navigation state.
++            if self.aaa_oracle_enabled:
++                for i in range(self.envs.num_envs):
++                    self._probe_aaa_oracle(i, stepk, wp_outputs)
++
+             # pano encoder
+             vp_inputs = self._vp_feature_variable(wp_outputs)
+             vp_inputs.update({
+@@ -1403,6 +1725,7 @@ class RLTrainer(BaseVLNCETrainer):
+                 ),
+                 'residual_alpha': float(self.config.RL_TOPO.RESIDUAL_ALPHA)
+                 if self.config.RL_TOPO.ENABLED else 0.0,
++                'action_abstraction': self.action_abstraction,
+             })
+             no_vp_left = nav_inputs.pop('no_vp_left')
+             nav_outs = self.policy.net(**nav_inputs)
+@@ -1455,10 +1778,23 @@ class RLTrainer(BaseVLNCETrainer):
+             else:
+                 raise NotImplementedError
+             cpu_a_t = a_t.cpu().numpy()
++            policy_cpu_a_t = cpu_a_t.copy()
++            graph_oracle_records = [None] * self.envs.num_envs
++            if self.graph_selection_oracle_enabled and mode == 'eval':
++                for i in range(self.envs.num_envs):
++                    cpu_a_t[i], graph_oracle_records[i] = self._graph_selection_oracle_action(
++                        i, stepk, wp_outputs, nav_inputs, policy_cpu_a_t[i], nav_logits
++                    )
+ 
+             # make equiv action
+             env_actions = []
++            diagnostic_records = []
+             use_tryout = (self.config.IL.tryout and not self.config.TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING)
++            graph_option_capture = getattr(self, '_graph_option_capture', None)
++            if mode == 'eval' and graph_option_capture is not None:
++                graph_option_capture.prepare(
++                    self, stepk, cur_vp, cur_pos, nav_inputs, nav_logits,
++                    cpu_a_t, policy_cpu_a_t, no_vp_left, nav_outs.get('gmap_embeds'))
+             for i, gmap in enumerate(self.gmaps):
+                 policy_stop = int(cpu_a_t[i]) == 0
+                 forced_by_max_len = (not policy_stop) and stepk == self.max_len - 1
+@@ -1479,6 +1815,11 @@ class RLTrainer(BaseVLNCETrainer):
+                     stop_scores = [s[1] for s in vp_stop_scores]
+                     stop_vp = vp_stop_scores[np.argmax(stop_scores)][0]
+                     stop_pos = gmap.node_pos[stop_vp]
++                    selected_target = {
++                        "type": "stop_node",
++                        "id": stop_vp,
++                        "position": list(stop_pos),
++                    }
+                     if self.config.IL.back_algo == 'control':
+                         back_path = [(vp, gmap.node_pos[vp]) for vp in gmap.shortest_path[cur_vp[i]][stop_vp]]
+                         back_path = back_path[1:]
+@@ -1504,6 +1845,11 @@ class RLTrainer(BaseVLNCETrainer):
+                 else:
+                     ghost_vp = nav_inputs['gmap_vp_ids'][i][cpu_a_t[i]]
+                     ghost_pos = gmap.ghost_aug_pos[ghost_vp]
++                    selected_target = {
++                        "type": "ghost",
++                        "id": ghost_vp,
++                        "position": list(ghost_pos),
++                    }
+                     _, front_vp = gmap.front_to_ghost_dist(ghost_vp)
+                     front_pos = gmap.node_pos[front_vp]
+                     if self.config.VIDEO_OPTION:
+@@ -1543,9 +1889,44 @@ class RLTrainer(BaseVLNCETrainer):
+                     if self.config.MODEL.consume_ghost:
+                         gmap.delete_ghost(ghost_vp)
+ 
++                if self.aaa_diagnostics_enabled:
++                    diagnostic_records.append(self._make_aaa_diagnostic(
++                        env_index=i,
++                        stepk=stepk,
++                        cur_pos=cur_pos,
++                        cur_ori=cur_ori,
++                        wp_outputs=wp_outputs,
++                        nav_inputs=nav_inputs,
++                        nav_logits=nav_logits,
++                        action_index=cpu_a_t[i],
++                        policy_action_index=policy_cpu_a_t[i],
++                        graph_oracle_record=graph_oracle_records[i],
++                        gmap_embeds=nav_outs.get('gmap_embeds'),
++                        selected_target=selected_target,
++                        dist_before=self.envs.call_at(i, "current_dist_to_goal"),
++                    ))
++
++            if mode == 'eval' and graph_option_capture is not None:
++                graph_option_capture.commit(env_actions)
+             outputs = self.envs.step(env_actions)
+             observations, _, dones, infos = [list(x) for x in zip(*outputs)]
+ 
++            if self.aaa_diagnostics_enabled:
++                for i, record in enumerate(diagnostic_records):
++                    after = self.envs.call_at(i, "current_dist_to_goal")
++                    record["distance_to_goal_after"] = float(after)
++                    record["progress"] = float(
++                        record["distance_to_goal_before"] - after
++                    )
++                    record["done"] = bool(dones[i])
++                    record["selected_action_succeeded_progress"] = bool(
++                        record["progress"] > 0.0
++                    )
++                    collision_info = infos[i].get("collisions") if isinstance(infos[i], dict) else None
++                    if isinstance(collision_info, dict):
++                        record["collision_count_after"] = collision_info.get("count")
++                    self._write_aaa_diagnostic(record)
++
+             if collect_rl_topo:
+                 # Match RLTrainer's existing evaluation criterion exactly.
+                 success_distance = 3.0

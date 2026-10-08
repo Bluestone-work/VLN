@@ -1,0 +1,41 @@
+{
+  "status": "smoke_complete",
+  "controls": 19,
+  "interrupt_events": [
+    {
+      "cut_primitive": 3,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10193",
+      "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+      "high_level_step": 2,
+      "native_success": true,
+      "empty_back_path": true,
+      "baseline_primitive_count": 4,
+      "historically_tested": false
+    },
+    {
+      "cut_primitive": 9,
+      "reasons": [
+        "collision"
+      ],
+      "cohort": "fresh64",
+      "episode_id": "10506",
+      "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+      "high_level_step": 8,
+      "native_success": false,
+      "empty_back_path": true,
+      "baseline_primitive_count": 10,
+      "historically_tested": true
+    }
+  ],
+  "native_cases_planned": 0,
+  "native_cases_completed": 0,
+  "all_validity_checks_passed": true,
+  "no_model_trained": true,
+  "oracle_analysis_only": true,
+  "elapsed_seconds": 71.76013122103177,
+  "scope": "All known eligible fresh-cohort ghost collision cuts, including successful-route controls; ORACLE single-event full returns."
+}

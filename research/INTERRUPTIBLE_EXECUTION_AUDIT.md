@@ -1,5 +1,15 @@
 # Interruptible execution and observability audit
 
+## 2026-10-08 — separate interrupt timing result
+
+The frozen graph-preference recipe remains NO-GO. A separate175-cut collision
+oracle now completes544 full rollouts with successful-route controls: consume
+has4/7 quality rescues in3 scenes (4/10 of all fresh64 failures), but first-event
+consume lowers nDTW on8/12 native-successful routes. No execution-majority or safe
+trigger is established. CONDITIONAL GO applies only to independent causal
+confirmation, not learning. See `INTERRUPT_TIMING_ORACLE_REPORT.md` and
+`INTERRUPT_NEXT_GATE.md`. Earlier entries below describe historical decisions.
+
 Date: 2026-10-07  
 Scope: released ETPNav execution loop, research tracing hooks and literature overlap. Read-only audit; no controller or graph code changed.
 

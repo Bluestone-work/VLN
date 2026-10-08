@@ -1,0 +1,2235 @@
+[
+  {
+    "episode_id": "10193",
+    "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 4,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": false,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 0,
+      "cost_increase": 2,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_10193_s2_p3",
+      "delta": {
+        "steps_taken": 3.0,
+        "distance_to_goal": -0.8263942152261734,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.8797121047973633,
+        "collisions": -0.03157894736842104,
+        "spl": -0.0689417675476438,
+        "ndtw": 0.01591600472229826,
+        "sdtw": 0.01591600472229826,
+        "ghost_cnt": 2,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.0111111111111111,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.0111111111111111
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "10506",
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "mode": "interrupt_consume",
+    "native_success": false,
+    "tested_cuts": 19,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": false,
+      "cost_increase": false,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 0,
+      "cost_increase": 0,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_10506_s8_p9",
+      "delta": {
+        "steps_taken": -4.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.0,
+        "collisions": -0.030303030303030276,
+        "spl": 0.0,
+        "ndtw": 0.0,
+        "sdtw": 0.0,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "10754",
+    "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+    "mode": "interrupt_consume",
+    "native_success": false,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": false,
+      "cost_increase": false,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 0,
+      "cost_increase": 0,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_10754_s5_p7",
+      "delta": {
+        "steps_taken": -25.0,
+        "distance_to_goal": -4.213551759719849,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -3.7525863647460938,
+        "collisions": 0.0022222222222222227,
+        "spl": 0.0,
+        "ndtw": 0.27992376529568164,
+        "sdtw": 0.0,
+        "ghost_cnt": -4,
+        "high_level_steps": -1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.005494505494505503,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.005494505494505503
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "1905",
+    "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": false,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 0,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_1905_s3_p15",
+      "delta": {
+        "steps_taken": -2.0,
+        "distance_to_goal": 0.46850574016571045,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.8087592124938965,
+        "collisions": -0.036521739130434785,
+        "spl": 0.09797785390258273,
+        "ndtw": -0.0010444150145487718,
+        "sdtw": -0.0010444150145487718,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "212",
+    "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 5,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_212_s0_p11",
+      "delta": {
+        "steps_taken": 37.0,
+        "distance_to_goal": 0.09171253442764282,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 3.034210443496704,
+        "collisions": -0.2995689655172414,
+        "spl": -0.4143069406646669,
+        "ndtw": -0.11472035677969405,
+        "sdtw": -0.11472035677969405,
+        "ghost_cnt": 5,
+        "high_level_steps": 2,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.08333333333333334,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.08333333333333334
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "2308",
+    "scene_id": "data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 5,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 4,
+      "cost_increase": 2,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_2308_s0_p14",
+      "delta": {
+        "steps_taken": 5.0,
+        "distance_to_goal": 0.02142500877380371,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.6494045257568359,
+        "collisions": -0.05451127819548872,
+        "spl": -0.04340211328633514,
+        "ndtw": 0.003660284235100897,
+        "sdtw": 0.003660284235100897,
+        "ghost_cnt": 1,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.009090909090909094,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.009090909090909094
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "3404",
+    "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 7,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 2,
+      "cost_increase": 3,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_3404_s6_p4",
+      "delta": {
+        "steps_taken": -2.0,
+        "distance_to_goal": -0.23185443878173828,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.22432994842529297,
+        "collisions": -0.055806938159879346,
+        "spl": 0.0,
+        "ndtw": 0.007990264021513593,
+        "sdtw": 0.007990264021513593,
+        "ghost_cnt": 2,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "3865",
+    "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+    "mode": "interrupt_consume",
+    "native_success": false,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": true,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 1,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_3865_s9_p23",
+      "delta": {
+        "steps_taken": 97.0,
+        "distance_to_goal": -0.7262635231018066,
+        "success": 1.0,
+        "oracle_success": 0.0,
+        "path_length": 8.952685356140137,
+        "collisions": -0.0064327485380116945,
+        "spl": 0.3174529424591778,
+        "ndtw": -0.17897980382850143,
+        "sdtw": 0.5632586229553267,
+        "ghost_cnt": 8,
+        "high_level_steps": 4,
+        "policy_stop_count": -1,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.09090909090909091,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": -0.024242424242424246
+      },
+      "classification": {
+        "sr_rescue": true,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "4603",
+    "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_4603_s5_p3",
+      "delta": {
+        "steps_taken": 6.0,
+        "distance_to_goal": 1.0362475216388702,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 1.2967100143432617,
+        "collisions": 0.04594820384294068,
+        "spl": -0.07714156911939563,
+        "ndtw": -0.06483631481447805,
+        "sdtw": -0.06483631481447805,
+        "ghost_cnt": 1,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.007575757575757583,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.007575757575757583
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "4702",
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "mode": "interrupt_consume",
+    "native_success": false,
+    "tested_cuts": 27,
+    "any": {
+      "sr_rescue": true,
+      "quality_rescue": true,
+      "cost_capped_quality_rescue": true,
+      "success_loss": false,
+      "ndtw_loss": false,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 2,
+      "quality_rescue": 2,
+      "cost_capped_quality_rescue": 1,
+      "success_loss": 0,
+      "ndtw_loss": 0,
+      "cost_increase": 6,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_4702_s8_p2",
+      "delta": {
+        "steps_taken": 9.0,
+        "distance_to_goal": -0.018314838409423828,
+        "success": 1.0,
+        "oracle_success": 0.0,
+        "path_length": 0.6191787719726562,
+        "collisions": -0.04409479409479411,
+        "spl": 0.8843010265470128,
+        "ndtw": 0.033968205552618536,
+        "sdtw": 0.4716912188502071,
+        "ghost_cnt": 1,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": true,
+        "quality_rescue": true,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": [
+      "interrupt_consume_4702_s8_p2",
+      "interrupt_consume_4702_s8_p3"
+    ]
+  },
+  {
+    "episode_id": "5247",
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "mode": "interrupt_consume",
+    "native_success": false,
+    "tested_cuts": 3,
+    "any": {
+      "sr_rescue": true,
+      "quality_rescue": true,
+      "cost_capped_quality_rescue": true,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 3,
+      "quality_rescue": 2,
+      "cost_capped_quality_rescue": 1,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 2,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_5247_s0_p5",
+      "delta": {
+        "steps_taken": -14.0,
+        "distance_to_goal": -1.8505089282989502,
+        "success": 1.0,
+        "oracle_success": 0.0,
+        "path_length": -2.4056053161621094,
+        "collisions": 0.014945054945054943,
+        "spl": 0.7742545673041061,
+        "ndtw": 0.0236029789898885,
+        "sdtw": 0.7093087638388977,
+        "ghost_cnt": 5,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.005494505494505503,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.005494505494505503
+      },
+      "classification": {
+        "sr_rescue": true,
+        "quality_rescue": true,
+        "cost_capped_quality_rescue": true,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": [
+      "interrupt_consume_5247_s0_p5",
+      "interrupt_consume_5247_s0_p6"
+    ]
+  },
+  {
+    "episode_id": "5607",
+    "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 6,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": false,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 6,
+      "cost_increase": 0,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_5607_s0_p12",
+      "delta": {
+        "steps_taken": -2.0,
+        "distance_to_goal": 0.2885071635246277,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.055469512939453125,
+        "collisions": -0.041079812206572766,
+        "spl": 0.003033692862288384,
+        "ndtw": -0.12919696102275469,
+        "sdtw": -0.12919696102275469,
+        "ghost_cnt": 2,
+        "high_level_steps": -1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.006410256410256401,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.006410256410256401
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "5648",
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "mode": "interrupt_consume",
+    "native_success": false,
+    "tested_cuts": 29,
+    "any": {
+      "sr_rescue": true,
+      "quality_rescue": true,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 2,
+      "quality_rescue": 2,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 10,
+      "cost_increase": 17,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_5648_s3_p17",
+      "delta": {
+        "steps_taken": 126.0,
+        "distance_to_goal": 0.77099609375,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 12.598245620727539,
+        "collisions": -0.10542603672374667,
+        "spl": 0.0,
+        "ndtw": -0.15835539328807874,
+        "sdtw": 0.0,
+        "ghost_cnt": 3,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": [
+      "interrupt_consume_5648_s4_p7",
+      "interrupt_consume_5648_s5_p4"
+    ]
+  },
+  {
+    "episode_id": "5822",
+    "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 18,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": true,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 8,
+      "ndtw_loss": 14,
+      "cost_increase": 12,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_5822_s0_p9",
+      "delta": {
+        "steps_taken": -17.0,
+        "distance_to_goal": 0.5018131732940674,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.8211050033569336,
+        "collisions": -0.11098484848484849,
+        "spl": 0.052498680706433154,
+        "ndtw": -0.014902751243624057,
+        "sdtw": -0.014902751243624057,
+        "ghost_cnt": 4,
+        "high_level_steps": -1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.009090909090909094,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.009090909090909094
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "7362",
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "mode": "interrupt_consume",
+    "native_success": false,
+    "tested_cuts": 7,
+    "any": {
+      "sr_rescue": true,
+      "quality_rescue": true,
+      "cost_capped_quality_rescue": true,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 6,
+      "quality_rescue": 6,
+      "cost_capped_quality_rescue": 5,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_7362_s1_p2",
+      "delta": {
+        "steps_taken": -15.0,
+        "distance_to_goal": -1.9564292430877686,
+        "success": 1.0,
+        "oracle_success": 0.0,
+        "path_length": -2.6125783920288086,
+        "collisions": -0.03790389395194699,
+        "spl": 0.7525178451227241,
+        "ndtw": 0.025999047451193635,
+        "sdtw": 0.6771568864838924,
+        "ghost_cnt": -2,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.009090909090909094,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.009090909090909094
+      },
+      "classification": {
+        "sr_rescue": true,
+        "quality_rescue": true,
+        "cost_capped_quality_rescue": true,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": [
+      "interrupt_consume_7362_s1_p2",
+      "interrupt_consume_7362_s1_p3",
+      "interrupt_consume_7362_s1_p5",
+      "interrupt_consume_7362_s1_p6",
+      "interrupt_consume_7362_s1_p7",
+      "interrupt_consume_7362_s1_p8"
+    ]
+  },
+  {
+    "episode_id": "7565",
+    "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": false,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 0,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_7565_s7_p4",
+      "delta": {
+        "steps_taken": -4.0,
+        "distance_to_goal": 0.9992974996566772,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.9993896484375,
+        "collisions": -0.019780219780219786,
+        "spl": 7.636201532257303e-05,
+        "ndtw": -0.04000711735877427,
+        "sdtw": -0.04000711735877427,
+        "ghost_cnt": 1,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "8928",
+    "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 34,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": true,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 16,
+      "ndtw_loss": 12,
+      "cost_increase": 12,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_8928_s1_p3",
+      "delta": {
+        "steps_taken": 2.0,
+        "distance_to_goal": -1.2803603410720825,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 2.010298728942871,
+        "collisions": -0.17715617715617715,
+        "spl": -0.13335500204944928,
+        "ndtw": -0.021539168444242085,
+        "sdtw": -0.021539168444242085,
+        "ghost_cnt": -1,
+        "high_level_steps": -2,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.010256410256410262,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.010256410256410262
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "9182",
+    "scene_id": "data/scene_datasets/mp3d/B6ByNegPMKs/B6ByNegPMKs.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 5,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 3,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_9182_s1_p7",
+      "delta": {
+        "steps_taken": -4.0,
+        "distance_to_goal": -1.3537558317184448,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.010380268096923828,
+        "collisions": -0.006048387096774188,
+        "spl": 0.0,
+        "ndtw": 0.04573943004070513,
+        "sdtw": 0.04573943004070513,
+        "ghost_cnt": -3,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "9295",
+    "scene_id": "data/scene_datasets/mp3d/e9zR4mvMWw7/e9zR4mvMWw7.glb",
+    "mode": "interrupt_consume",
+    "native_success": true,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_consume_9295_s1_p4",
+      "delta": {
+        "steps_taken": 4.0,
+        "distance_to_goal": 0.027896054089069366,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.2606468200683594,
+        "collisions": -0.0008912655971479513,
+        "spl": -0.030711184366907673,
+        "ndtw": -0.001125720551043985,
+        "sdtw": -0.001125720551043985,
+        "ghost_cnt": 1,
+        "high_level_steps": 2,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.031746031746031744,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.031746031746031744
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "10193",
+    "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 4,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": false,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 0,
+      "cost_increase": 2,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_10193_s2_p3",
+      "delta": {
+        "steps_taken": 3.0,
+        "distance_to_goal": -0.8263942152261734,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.8797121047973633,
+        "collisions": -0.03157894736842104,
+        "spl": -0.0689417675476438,
+        "ndtw": 0.01591600472229826,
+        "sdtw": 0.01591600472229826,
+        "ghost_cnt": 2,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.0111111111111111,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.0111111111111111
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "10506",
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "mode": "interrupt_retain",
+    "native_success": false,
+    "tested_cuts": 19,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": false,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 0,
+      "cost_increase": 10,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_10506_s8_p9",
+      "delta": {
+        "steps_taken": -4.0,
+        "distance_to_goal": 0.0,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.0,
+        "collisions": -0.030303030303030276,
+        "spl": 0.0,
+        "ndtw": 0.0,
+        "sdtw": 0.0,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "10754",
+    "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+    "mode": "interrupt_retain",
+    "native_success": false,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": false,
+      "cost_increase": false,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 0,
+      "cost_increase": 0,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_10754_s5_p7",
+      "delta": {
+        "steps_taken": -25.0,
+        "distance_to_goal": -4.213551759719849,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -3.7525863647460938,
+        "collisions": 0.0022222222222222227,
+        "spl": 0.0,
+        "ndtw": 0.27992376529568164,
+        "sdtw": 0.0,
+        "ghost_cnt": -4,
+        "high_level_steps": -1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.005494505494505503,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.005494505494505503
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "1905",
+    "scene_id": "data/scene_datasets/mp3d/2n8kARJN3HM/2n8kARJN3HM.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": false,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 0,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_1905_s3_p15",
+      "delta": {
+        "steps_taken": -2.0,
+        "distance_to_goal": 0.46850574016571045,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.8087592124938965,
+        "collisions": -0.036521739130434785,
+        "spl": 0.09797785390258273,
+        "ndtw": -0.0010444150145487718,
+        "sdtw": -0.0010444150145487718,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "212",
+    "scene_id": "data/scene_datasets/mp3d/qoiz87JEwZ2/qoiz87JEwZ2.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 5,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_212_s0_p11",
+      "delta": {
+        "steps_taken": 37.0,
+        "distance_to_goal": 0.09171253442764282,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 3.034210443496704,
+        "collisions": -0.2995689655172414,
+        "spl": -0.4143069406646669,
+        "ndtw": -0.11472035677969405,
+        "sdtw": -0.11472035677969405,
+        "ghost_cnt": 5,
+        "high_level_steps": 2,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.08333333333333334,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.08333333333333334
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "2308",
+    "scene_id": "data/scene_datasets/mp3d/8WUmhLawc2A/8WUmhLawc2A.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 5,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 4,
+      "cost_increase": 2,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_2308_s0_p14",
+      "delta": {
+        "steps_taken": 5.0,
+        "distance_to_goal": 0.02142500877380371,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.6494045257568359,
+        "collisions": -0.05451127819548872,
+        "spl": -0.04340211328633514,
+        "ndtw": 0.003660284235100897,
+        "sdtw": 0.003660284235100897,
+        "ghost_cnt": 1,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.009090909090909094,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.009090909090909094
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "3404",
+    "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 7,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 3,
+      "cost_increase": 3,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_3404_s6_p4",
+      "delta": {
+        "steps_taken": -2.0,
+        "distance_to_goal": -0.23185443878173828,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.22432994842529297,
+        "collisions": -0.055806938159879346,
+        "spl": 0.0,
+        "ndtw": 0.007990264021513593,
+        "sdtw": 0.007990264021513593,
+        "ghost_cnt": 2,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "3865",
+    "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+    "mode": "interrupt_retain",
+    "native_success": false,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": true,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 1,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_3865_s9_p23",
+      "delta": {
+        "steps_taken": 97.0,
+        "distance_to_goal": -0.7262635231018066,
+        "success": 1.0,
+        "oracle_success": 0.0,
+        "path_length": 8.952685356140137,
+        "collisions": -0.0064327485380116945,
+        "spl": 0.3174529424591778,
+        "ndtw": -0.17897980382850143,
+        "sdtw": 0.5632586229553267,
+        "ghost_cnt": 8,
+        "high_level_steps": 4,
+        "policy_stop_count": -1,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.09090909090909091,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": -0.024242424242424246
+      },
+      "classification": {
+        "sr_rescue": true,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "4603",
+    "scene_id": "data/scene_datasets/mp3d/ZMojNkEp431/ZMojNkEp431.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_4603_s5_p3",
+      "delta": {
+        "steps_taken": 6.0,
+        "distance_to_goal": 1.0362475216388702,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 1.2967100143432617,
+        "collisions": 0.04594820384294068,
+        "spl": -0.07714156911939563,
+        "ndtw": -0.06483631481447805,
+        "sdtw": -0.06483631481447805,
+        "ghost_cnt": 1,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.007575757575757583,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.007575757575757583
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "4702",
+    "scene_id": "data/scene_datasets/mp3d/dhjEzFoUFzH/dhjEzFoUFzH.glb",
+    "mode": "interrupt_retain",
+    "native_success": false,
+    "tested_cuts": 27,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": false,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 0,
+      "cost_increase": 4,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_4702_s8_p2",
+      "delta": {
+        "steps_taken": -28.0,
+        "distance_to_goal": 0.0018534660339355469,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.011484146118164062,
+        "collisions": -0.1805816135084428,
+        "spl": 0.0,
+        "ndtw": 0.1664224944129722,
+        "sdtw": 0.0,
+        "ghost_cnt": -2,
+        "high_level_steps": -3,
+        "policy_stop_count": 1,
+        "forced_stop_count": -1,
+        "forced_stop_max_len_count": -1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.08333333333333333,
+        "forced_stop_rate": -0.06666666666666667,
+        "actual_stop_rate": 0.016666666666666663
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "5247",
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "mode": "interrupt_retain",
+    "native_success": false,
+    "tested_cuts": 3,
+    "any": {
+      "sr_rescue": true,
+      "quality_rescue": true,
+      "cost_capped_quality_rescue": true,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 3,
+      "quality_rescue": 2,
+      "cost_capped_quality_rescue": 1,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 2,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_5247_s0_p5",
+      "delta": {
+        "steps_taken": -14.0,
+        "distance_to_goal": -1.8505089282989502,
+        "success": 1.0,
+        "oracle_success": 0.0,
+        "path_length": -2.4056053161621094,
+        "collisions": 0.014945054945054943,
+        "spl": 0.7742545673041061,
+        "ndtw": 0.0236029789898885,
+        "sdtw": 0.7093087638388977,
+        "ghost_cnt": 4,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.005494505494505503,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.005494505494505503
+      },
+      "classification": {
+        "sr_rescue": true,
+        "quality_rescue": true,
+        "cost_capped_quality_rescue": true,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": [
+      "interrupt_retain_5247_s0_p5",
+      "interrupt_retain_5247_s0_p6"
+    ]
+  },
+  {
+    "episode_id": "5607",
+    "scene_id": "data/scene_datasets/mp3d/1pXnuDYAj8r/1pXnuDYAj8r.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 6,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 6,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_5607_s0_p12",
+      "delta": {
+        "steps_taken": -2.0,
+        "distance_to_goal": 0.2885071635246277,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.055469512939453125,
+        "collisions": -0.041079812206572766,
+        "spl": 0.003033692862288384,
+        "ndtw": -0.12919696102275469,
+        "sdtw": -0.12919696102275469,
+        "ghost_cnt": 1,
+        "high_level_steps": -1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.006410256410256401,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.006410256410256401
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "5648",
+    "scene_id": "data/scene_datasets/mp3d/vyrNrziPKCB/vyrNrziPKCB.glb",
+    "mode": "interrupt_retain",
+    "native_success": false,
+    "tested_cuts": 29,
+    "any": {
+      "sr_rescue": true,
+      "quality_rescue": true,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 1,
+      "quality_rescue": 1,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 13,
+      "cost_increase": 20,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_5648_s3_p17",
+      "delta": {
+        "steps_taken": 23.0,
+        "distance_to_goal": 0.9976363182067871,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 2.1758909225463867,
+        "collisions": -0.14054054054054055,
+        "spl": 0.0,
+        "ndtw": -0.009328534198673855,
+        "sdtw": 0.0,
+        "ghost_cnt": -3,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": [
+      "interrupt_retain_5648_s4_p7"
+    ]
+  },
+  {
+    "episode_id": "5822",
+    "scene_id": "data/scene_datasets/mp3d/E9uDoFAP3SH/E9uDoFAP3SH.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 18,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": true,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 9,
+      "ndtw_loss": 9,
+      "cost_increase": 8,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_5822_s0_p9",
+      "delta": {
+        "steps_taken": 27.0,
+        "distance_to_goal": 12.494876861572266,
+        "success": -1.0,
+        "oracle_success": -1.0,
+        "path_length": -11.438076734542847,
+        "collisions": 0.6868670886075949,
+        "spl": -0.9237669298546229,
+        "ndtw": -0.6878481878767284,
+        "sdtw": -0.8010584871250853,
+        "ghost_cnt": -9,
+        "high_level_steps": 4,
+        "policy_stop_count": -1,
+        "forced_stop_count": 1,
+        "forced_stop_max_len_count": 1,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.09090909090909091,
+        "forced_stop_rate": 0.06666666666666667,
+        "actual_stop_rate": -0.024242424242424246
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": true,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "7362",
+    "scene_id": "data/scene_datasets/mp3d/PuKPg4mmafe/PuKPg4mmafe.glb",
+    "mode": "interrupt_retain",
+    "native_success": false,
+    "tested_cuts": 7,
+    "any": {
+      "sr_rescue": true,
+      "quality_rescue": true,
+      "cost_capped_quality_rescue": true,
+      "success_loss": false,
+      "ndtw_loss": false,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 7,
+      "quality_rescue": 7,
+      "cost_capped_quality_rescue": 6,
+      "success_loss": 0,
+      "ndtw_loss": 0,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_7362_s1_p2",
+      "delta": {
+        "steps_taken": -15.0,
+        "distance_to_goal": -1.9564292430877686,
+        "success": 1.0,
+        "oracle_success": 0.0,
+        "path_length": -2.6125783920288086,
+        "collisions": -0.03790389395194699,
+        "spl": 0.7525178451227241,
+        "ndtw": 0.025999047451193635,
+        "sdtw": 0.6771568864838924,
+        "ghost_cnt": -2,
+        "high_level_steps": 1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.009090909090909094,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.009090909090909094
+      },
+      "classification": {
+        "sr_rescue": true,
+        "quality_rescue": true,
+        "cost_capped_quality_rescue": true,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": [
+      "interrupt_retain_7362_s1_p2",
+      "interrupt_retain_7362_s1_p3",
+      "interrupt_retain_7362_s1_p4",
+      "interrupt_retain_7362_s1_p5",
+      "interrupt_retain_7362_s1_p6",
+      "interrupt_retain_7362_s1_p7",
+      "interrupt_retain_7362_s1_p8"
+    ]
+  },
+  {
+    "episode_id": "7565",
+    "scene_id": "data/scene_datasets/mp3d/s8pcmisQ38h/s8pcmisQ38h.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": false,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 0,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_7565_s7_p4",
+      "delta": {
+        "steps_taken": -4.0,
+        "distance_to_goal": 0.9992974996566772,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.9993896484375,
+        "collisions": -0.019780219780219786,
+        "spl": 7.636201532257303e-05,
+        "ndtw": -0.04000711735877427,
+        "sdtw": -0.04000711735877427,
+        "ghost_cnt": 0,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "8928",
+    "scene_id": "data/scene_datasets/mp3d/XcA2TqTSSAj/XcA2TqTSSAj.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 34,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": true,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 16,
+      "ndtw_loss": 9,
+      "cost_increase": 18,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_8928_s1_p3",
+      "delta": {
+        "steps_taken": -4.0,
+        "distance_to_goal": -0.357715368270874,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.46652889251708984,
+        "collisions": 0.05544005544005537,
+        "spl": 0.03734132584772898,
+        "ndtw": 0.1458027961433691,
+        "sdtw": 0.1458027961433691,
+        "ghost_cnt": 0,
+        "high_level_steps": -1,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.004761904761904759,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.004761904761904759
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "9182",
+    "scene_id": "data/scene_datasets/mp3d/B6ByNegPMKs/B6ByNegPMKs.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 5,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 3,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_9182_s1_p7",
+      "delta": {
+        "steps_taken": -4.0,
+        "distance_to_goal": -1.3537558317184448,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.010380268096923828,
+        "collisions": -0.006048387096774188,
+        "spl": 0.0,
+        "ndtw": 0.04573943004070513,
+        "sdtw": 0.04573943004070513,
+        "ghost_cnt": -3,
+        "high_level_steps": 0,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": 0.0,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": 0.0
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": false,
+        "cost_increase": false,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  },
+  {
+    "episode_id": "9295",
+    "scene_id": "data/scene_datasets/mp3d/e9zR4mvMWw7/e9zR4mvMWw7.glb",
+    "mode": "interrupt_retain",
+    "native_success": true,
+    "tested_cuts": 1,
+    "any": {
+      "sr_rescue": false,
+      "quality_rescue": false,
+      "cost_capped_quality_rescue": false,
+      "success_loss": false,
+      "ndtw_loss": true,
+      "cost_increase": true,
+      "identical_metrics": false
+    },
+    "case_counts": {
+      "sr_rescue": 0,
+      "quality_rescue": 0,
+      "cost_capped_quality_rescue": 0,
+      "success_loss": 0,
+      "ndtw_loss": 1,
+      "cost_increase": 1,
+      "identical_metrics": 0
+    },
+    "earliest": {
+      "case_id": "interrupt_retain_9295_s1_p4",
+      "delta": {
+        "steps_taken": 4.0,
+        "distance_to_goal": 0.027896054089069366,
+        "success": 0.0,
+        "oracle_success": 0.0,
+        "path_length": 0.2606468200683594,
+        "collisions": -0.0008912655971479513,
+        "spl": -0.030711184366907673,
+        "ndtw": -0.001125720551043985,
+        "sdtw": -0.001125720551043985,
+        "ghost_cnt": 1,
+        "high_level_steps": 2,
+        "policy_stop_count": 0,
+        "forced_stop_count": 0,
+        "forced_stop_max_len_count": 0,
+        "forced_stop_no_vp_count": 0,
+        "policy_stop_rate": -0.031746031746031744,
+        "forced_stop_rate": 0.0,
+        "actual_stop_rate": -0.031746031746031744
+      },
+      "classification": {
+        "sr_rescue": false,
+        "quality_rescue": false,
+        "cost_capped_quality_rescue": false,
+        "success_loss": false,
+        "ndtw_loss": true,
+        "cost_increase": true,
+        "identical_metrics": false
+      }
+    },
+    "quality_rescue_examples": []
+  }
+]

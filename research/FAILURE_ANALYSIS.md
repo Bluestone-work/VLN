@@ -429,3 +429,18 @@ these observations alone do not authorize a new loss, RL/VLM, interrupt policy
 or waypoint predictor. Report: `PREFERENCE_TRAINING_SUPPORT_REPORT.md`.
 Earlier protocol/config status remains the immutable pre-run specification;
 `results/preference_training_support_001/status.json` records completion.
+
+## 2026-10-08 — bounded interruption timing opportunity and harm
+
+The expanded175-cut training oracle completes544 full rollouts. Consume rescues
+SR without nDTW loss on4702,5247,5648,7362 (4/7 eligible failures,3 scenes); retain
+rescues the last three. This is4/10 of all fresh64 failures, not execution-failure
+majority. Replanning couples new observation, graph semantics and later selection.
+Three consume routes also have no primitive increase; representative best-nDTW
+cuts need not be cost-capped. Route5648 requires a later option to rescue.
+
+Both arms have some cuts that destroy native success on5822 and8928. First-event
+consume loses no binary success on the12 exposed successful routes, but degrades
+nDTW on8/12; first-event retain loses5822. These concrete counterexamples prohibit
+an unconditional collision rule or interpreting oracle opportunities as a deployable
+policy score. See `INTERRUPT_TIMING_ORACLE_REPORT.md` and its complete cut records.

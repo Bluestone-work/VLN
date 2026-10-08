@@ -1241,3 +1241,31 @@ interrupting successful routes. No causal benefit inferred and no model gate pas
 
 Next: Bounded fresh-cohort timing oracle over all 175 known cuts, with matched
 sensing, both pending-ghost semantics and 19 native route controls.
+
+## 2026-10-08 / INTERRUPT-TIMING-ORACLE-001
+
+Question: Does expanding collision cut timing reveal route-quality rescue, and
+what harm occurs on successful native routes?
+
+Change: All 175 known eligible fresh64 cuts, each followed by original navigator
+under sense-only / interrupt-consume / interrupt-retain, plus 19 native controls.
+25-rollout smoke precedes 544 complete main rollouts. No learning or new predictor.
+
+Control: Plan/protocol committed in30bc545 before execution; release checkpoint,
+seed100, sensors, sliding, effective tryout, physical prefixes, STOP and 15 decisions
+unchanged. Fresh64 is old training data; unknown-phase success options excluded.
+
+Result: Consume timing oracle quality-rescues4/7 failed routes in3 scenes, with
+3/7 also primitive-cost-capped. Retain rescues3/7 in2 scenes,2/7 cost-capped.
+First-event consume preserves all12 native successes but lowers nDTW on8/12;
+retain loses1/12 success. Both have any-cut success harm on2/12. Full verifier
+passes4590 native/prefix records,350 actual cuts/panoramas,4352 return components,
+7118 path continuities. Five legacy and four return-gate tests pass.
+
+Interpretation: Registered gate passes for independent confirmation only. There
+is a bounded mid-option replan opportunity, but no safe trigger, execution-majority
+claim or benchmark improvement. All-cut oracle is privileged and correlated.
+
+Next: Independently registered route sample, comparing event cuts with outcome-blind
+within-option timing controls, native abstention and successful-route controls.
+Do not fit a trigger or select thresholds from this sweep.
