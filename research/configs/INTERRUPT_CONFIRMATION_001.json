@@ -1,0 +1,43 @@
+{
+  "experiment_id": "INTERRUPT-CONFIRMATION-001",
+  "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+  "dataset_path": "research/results/interrupt_confirmation_train128/sampling_001/train_interrupt_confirmation128_bertidx.json.gz",
+  "sampling_manifest": "research/results/interrupt_confirmation_train128/sampling_001/manifest.json",
+  "selection_seed": 20261009,
+  "scenes": 8,
+  "routes_per_scene": 16,
+  "protocol": "research/INTERRUPT_CONFIRMATION_PROTOCOL.md",
+  "base_config": "run_r2r/iter_train.yaml",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "split": "train",
+  "seed": 100,
+  "allow_sliding": true,
+  "tryout_effective": false,
+  "back_algo": "control",
+  "max_high_level_decisions": 15,
+  "timing_seeds": [20261011, 20261012, 20261013],
+  "outcome_blind": true,
+  "excluded_route_sources": [
+    "research/results/graph_option_pilot/train8_sampling/manifest.json",
+    "research/results/graph_option_train64/sampling_001/manifest.json",
+    "research/results/continuation_label_train64/sampling_001/manifest.json",
+    "research/results/full_return_label_train16/sampling_001/manifest.json",
+    "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+    "research/results/graph_value_route_disjoint_confirmation_train96/sampling_001/manifest.json",
+    "research/results/graph_value_route_disjoint_confirmation_train96/sampling_002/manifest.json",
+    "research/results/graph_value_prospective_replication_001/sampling_001/manifest.json",
+    "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+    "research/results/action_abstraction/ranker_embedding_train64_oracle.jsonl",
+    "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+    "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+    "research/results/route_compatibility_001/train_pilot8/manifest.json",
+    "research/results/route_compatibility_001/train_pilot8_v2/manifest.json",
+    "research/results/route_compatibility_001/train64_v2/manifest.json",
+    "research/results/continuation_label_train64/sampling_001/manifest.json",
+    "research/results/interrupt_timing_oracle_001/plan_001.json"
+  ],
+  "excluded_validation_sources": [
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_seen/val_seen_bertidx.json.gz",
+    "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/val_unseen/val_unseen_bertidx.json.gz"
+  ]
+}

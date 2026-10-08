@@ -1,0 +1,10 @@
+{
+  "config": "research/configs/INTERRUPT_CONFIRMATION_001.json",
+  "sampling_manifest": "research/results/interrupt_confirmation_train128/sampling_001/manifest.json",
+  "registered_source_hashes": {
+    "research/configs/INTERRUPT_CONFIRMATION_001.json": "8f67647c6343dd6a2bae2523fb0cae83b843b369d8baa0f207946e2e19edc576",
+    "research/results/interrupt_confirmation_train128/sampling_001/manifest.json": "8b9b0f8ef61defb9481e2a9ffc85ead30f2adc44e1a927c86eae9931be5b436d",
+    "research/tools/prepare_interrupt_confirmation_sample.py": "e8dc788bd3c459d8a0e1484c70bf0114da9aa1ea6b52b12c6630787d2565a447",
+    "research/INTERRUPT_CONFIRMATION_PROTOCOL.md": "a7acd21516a9cc31d6e60928028062f26d4ec9a42b6ae57b82c6e932629512d0"
+  }
+}
