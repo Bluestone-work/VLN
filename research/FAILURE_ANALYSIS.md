@@ -453,3 +453,12 @@ The independent confirmation does not support a collision-specific trigger. Amon
 This is not a mutually exclusive failure partition: the 172 cuts are correlated within 43 routes, and the cut choice is an oracle analysis arm. No trigger classifier label is created from these outcomes. Proposal, ranking, execution, recovery, and termination remain separate hypotheses; this experiment only rejects event-trigger learning under the registered safety comparison.
 
 Artifacts: `research/INTERRUPT_CONFIRMATION_REPORT.md`, `research/results/interrupt_confirmation_train128/analysis_003/summary.json`, `verification_003/summary.json`, `archive_manifest.json`, and `study_status.json`.
+
+
+## 2026-10-08 — Unresolved coverage census
+
+The unresolved-route census joins three completed exhaustive cohorts: 18 routes, 56 critical states, and 909 full native action returns. All 18 routes retain at least one non-STOP branch, with at least 11 non-STOP branches on the least-covered route. Critical states expose 8–29 distinct ghost targets. Four routes reach forced STOP and seven have at least two native primitive collision events.
+
+This is evidence against an empty proposal/action-list failure, not evidence that proposal coverage is complete. A useful waypoint could still be absent because of NMS, ghost aliasing, or temporal resolution. Since unresolved routes include both collision-heavy and low-collision cases, the census does not support a single proposal or interrupt remedy.
+
+Machine-readable output: `research/results/unresolved_coverage_census_001/summary.json`; report: `research/UNRESOLVED_COVERAGE_REPORT.md`.

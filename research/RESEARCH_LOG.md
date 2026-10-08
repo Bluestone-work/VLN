@@ -1290,3 +1290,24 @@ Interpretation:
 
 Next:
 Do not train a trigger, RL/PPO or VLM from this cohort. Keep the archived evidence and stop the interrupt branch unless a separately justified safe-replanning mechanism and independent data source are defined.
+
+
+## 2026-10-08 / UNRESOLVED-COVERAGE-CENSUS-001 — completed
+
+Question:
+Are unresolved exhaustive full-return failures simply proposal-empty states?
+
+Change:
+Aggregate existing train64, unseen66 diagnostic, and fresh train64 full-return cases by route and critical state. Count native action branches, non-STOP branches, distinct ghost targets, collision symptoms, and forced STOP. No simulator rollout or fitting.
+
+Control:
+Use only already completed exhaustive cases and their native controls. Preserve each cohort separately and retain the registered route-level unresolved definition.
+
+Result:
+18 unresolved routes, 56 critical states, and 909 action returns were audited. Every route had non-STOP branches; the minimum route-level count was 11. Critical states exposed 8–29 distinct ghost targets. Four routes had forced STOP and seven had at least two primitive collision events.
+
+Interpretation:
+The empty-proposal hypothesis is rejected in its narrow form. Proposal coverage is not proven complete, and unresolved routes remain heterogeneous across ranking, execution, recovery, and termination symptoms.
+
+Next:
+Do not change the waypoint predictor from this evidence. If proposal coverage is revisited, run a matched dense-candidate experiment. Otherwise prioritize long-horizon graph value with safe abstention once an independent data protocol is available.

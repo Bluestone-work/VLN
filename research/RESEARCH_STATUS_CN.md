@@ -474,3 +474,12 @@ rescue，同时保留 native STOP 和 primitive budget，就停止 graph-value f
 上 learned 与 native logit 都是 **0.8421**（`transfer_002.json`）。因此 fresh
 cohort 内的 0.9386 不能当作泛化结果；此前 train-new 到 train16 的 0.8947
 仍只保留为可行性信号。当前不增加特征、不调阈值，也不把 ranker 接入导航。
+
+
+## 2026-10-08 — unresolved failure coverage census
+
+把 train64、unseen66 diagnostic 和 fresh train64 三个已完成的 exhaustive full-return cohort 合并做只读普查：18 条 unresolved routes、56 个关键状态、909 个 native action returns。18/18 路线都有 non-STOP graph actions，最少一条路线也有 11 个；关键状态最多暴露 8–29 个不同 ghost target。4 条路线出现 forced STOP，7 条路线至少有两个 primitive collision event。
+
+因此可以拒绝“action list 为空”这个狭义 proposal failure 解释，但不能证明正确 waypoint 一定在候选集中。NMS、ghost 合并和时间分辨率仍可能遗漏有用动作。unresolved routes 的碰撞、预算和终止症状不一致，不能用一个 proposal 或 interrupt 机制统一解释。下一步不改 waypoint predictor；若要重新研究 proposal coverage，必须做 matched dense-candidate 实验。
+
+报告：`research/UNRESOLVED_COVERAGE_REPORT.md`；机器结果：`research/results/unresolved_coverage_census_001/summary.json`。

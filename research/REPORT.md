@@ -2,6 +2,13 @@
 
 ## 2026-10-08 — Independent interrupt confirmation: NO-GO
 
+## 2026-10-08 — Unresolved coverage census
+
+A post-hoc census across the train64, unseen66 diagnostic, and fresh train64 exhaustive cohorts covers 18 unresolved routes, 56 critical states, and 909 native full-return action branches. Every unresolved route retains multiple non-STOP native actions; the minimum is 11 branches on a route, and critical states expose 8–29 distinct ghost targets depending on route. Four routes have forced STOP and seven have at least two primitive collision events.
+
+This rejects the narrow “empty proposal list” explanation. It does not prove that the correct waypoint is present, because NMS, ghost merging, and temporal horizon can still omit a useful action. The unresolved routes are heterogeneous, so proposal, ranking, execution, and termination cannot be collapsed into one label. The next deployable mechanism should therefore focus on long-horizon graph action selection with abstention; proposal changes require a separate matched dense-candidate experiment. Details: `UNRESOLVED_COVERAGE_REPORT.md`.
+
+
 The frozen confirmation cohort contains 128 R2R-CE training routes sampled before outcomes, 43 phase-known event cuts, 129 outcome-blind uniform cuts, and 128 native controls. The experiment completed **472 full rollouts** (plus 132 smoke rollouts) with the unchanged checkpoint, seed 100, sensors, controller, STOP logic, and 15-decision budget.
 
 | Arm | exposed native failures | quality rescue | cost-capped quality rescue | native-success SR loss | native-success nDTW loss |
