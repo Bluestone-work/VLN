@@ -14,6 +14,7 @@ VIDEO_DIR: data/logs/video/
 ACTION_ABSTRACTION:
   LEVEL: default
   DIAGNOSTICS_ENABLED: False
+  DENSE_ISOLATION_MODE: "off"
   DIAGNOSTICS_PATH: data/logs/action_diagnostics.jsonl
   DIAGNOSTICS_MAX_RECORDS: -1
   ORACLE_ENABLED: False

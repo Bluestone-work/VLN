@@ -1,0 +1,17 @@
+{
+  "experiment_id": "DENSE-A0-SMOKE-001",
+  "base_config": "run_r2r/iter_train.yaml",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "split": "val_unseen",
+  "episodes": 1,
+  "seed": 100,
+  "dataset_path": "research/results/gate_a_native_policy_replication_001/val_unseen_replication.json.gz",
+  "capture_graph_options": true,
+  "capture_waypoint_provenance": true,
+  "action_abstraction": "default",
+  "dense_isolation_mode": "off",
+  "allow_sliding": true,
+  "tryout_effective": false,
+  "back_algo": "control",
+  "purpose": "One-episode A0 baseline non-interference smoke"
+}

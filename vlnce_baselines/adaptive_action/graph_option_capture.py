@@ -74,7 +74,8 @@ class GraphOptionCapture:
 
     def prepare(self, trainer, step, current, positions, nav_inputs, logits,
                 chosen, policy_chosen, no_vp, embeddings,
-                waypoint_heatmap=None, candidate_metadata=None):
+                waypoint_heatmap=None, candidate_metadata=None,
+                isolated_native_embeds=None, isolated_native_logits=None):
         if self.pending is not None:
             raise RuntimeError('Uncommitted previous decision')
         if not np.array_equal(chosen, policy_chosen):
@@ -106,6 +107,18 @@ class GraphOptionCapture:
                                  'budget_stop': bool(budget_stop), 'no_vp_left': bool(no_vp[i]),
                                  'forced_stop': policy_index != 0 and effective_index == 0,
                                  'options': options, 'privileged_labels_in_features': False}
+            if isolated_native_embeds is not None or isolated_native_logits is not None:
+                if isolated_native_embeds is None or isolated_native_logits is None:
+                    raise ValueError('A2 capture requires both isolated embeddings and logits')
+                row['dense_isolation'] = {
+                    'mode': 'capture',
+                    'native_mask': nav_inputs.get('gmap_native_masks')[i, :n].detach().cpu().tolist(),
+                    'isolated_native_logits': [
+                        float(x) if math.isfinite(float(x)) else None
+                        for x in isolated_native_logits[i, :n].detach().cpu().tolist()
+                    ],
+                    'isolated_native_embeddings': isolated_native_embeds[i, :n].detach().cpu().tolist(),
+                }
             if waypoint_heatmap is not None:
                 heatmap = waypoint_heatmap[i].detach().cpu().tolist()
                 if len(heatmap) != 120 or any(len(x) != 12 for x in heatmap):

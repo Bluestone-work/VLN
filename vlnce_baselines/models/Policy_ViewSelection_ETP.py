@@ -187,6 +187,7 @@ class ETP(Net):
                 gmap_img_fts=None, gmap_pos_fts=None,
                 gmap_masks=None, gmap_visited_masks=None, gmap_pair_dists=None,
                 gmap_embeds=None, rl_topo_debug=False,
+                gmap_native_masks=None, dense_isolation_mode='off',
                 residual_alpha=0.0, valid_action_mask=None,
                 action_abstraction="default",
                 return_waypoint_heatmap=False):
@@ -438,6 +439,8 @@ class ETP(Net):
                 gmap_vp_ids, gmap_step_ids,
                 gmap_img_fts, gmap_pos_fts, 
                 gmap_masks, gmap_visited_masks, gmap_pair_dists,
+                gmap_native_masks=gmap_native_masks,
+                dense_isolation_mode=dense_isolation_mode,
             )
 
             # Keep the navigation dictionary and logits untouched; only

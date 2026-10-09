@@ -723,6 +723,7 @@ class GlocalTextPathNavCMT(BertPreTrainedModel):
         gmap_vpids, gmap_step_ids, 
         gmap_img_fts, gmap_pos_fts, 
         gmap_masks, gmap_visited_masks, gmap_pair_dists,
+        gmap_native_masks=None, dense_isolation_mode='off',
     ):
         # global branch
         gmap_embeds = gmap_img_fts + \
@@ -743,10 +744,27 @@ class GlocalTextPathNavCMT(BertPreTrainedModel):
         global_logits.masked_fill_(gmap_visited_masks, -float('inf'))
         global_logits.masked_fill_(gmap_masks.logical_not(), -float('inf'))
 
+        isolated_embeds = isolated_logits = None
+        if dense_isolation_mode in ('capture', 'a2') and gmap_native_masks is not None:
+            if gmap_native_masks.shape != gmap_masks.shape:
+                raise ValueError('dense isolation mask shape mismatch')
+            isolated_embeds = self.global_encoder.encoder(
+                txt_embeds, txt_masks, gmap_embeds.detach(), gmap_native_masks,
+                graph_sprels=graph_sprels)
+            isolated_logits = self.global_sap_head(isolated_embeds).squeeze(2)
+            isolated_logits.masked_fill_(gmap_visited_masks, -float('inf'))
+            isolated_logits.masked_fill_(gmap_native_masks.logical_not(), -float('inf'))
+
         outs = {
             'gmap_embeds': gmap_embeds,
             'global_logits': global_logits,
         }
+        if isolated_embeds is not None:
+            outs['isolated_native_embeds'] = isolated_embeds
+            outs['isolated_native_logits'] = isolated_logits
+            if dense_isolation_mode == 'a2':
+                outs['global_logits'] = torch.where(
+                    gmap_native_masks, isolated_logits, global_logits)
         return outs
 
     def forward(self, mode, batch, **kwargs):

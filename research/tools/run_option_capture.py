@@ -60,6 +60,7 @@ def main():
         'ACTION_ABSTRACTION.ORACLE_ENABLED': 'False',
         'ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED': 'False',
         'ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS': 'False',
+        'ACTION_ABSTRACTION.DENSE_ISOLATION_MODE': cfg.get('dense_isolation_mode', 'off'),
         'TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING': str(cfg['allow_sliding'])}
     if cfg.get('dataset_path'):
         overrides['TASK_CONFIG.DATASET.DATA_PATH'] = cfg['dataset_path']

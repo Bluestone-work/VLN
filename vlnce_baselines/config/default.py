@@ -34,6 +34,7 @@ _C.ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED = False
 _C.ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_MODE = "legacy_joint"
 _C.ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_PATH = "data/logs/graph_selection_oracle.jsonl"
 _C.ACTION_ABSTRACTION.INCLUDE_RANKER_EMBEDDINGS = False
+_C.ACTION_ABSTRACTION.DENSE_ISOLATION_MODE = "off"
 
 # -----------------------------------------------------------------------------
 # EVAL CONFIG

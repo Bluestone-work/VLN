@@ -497,6 +497,7 @@ class RLTrainer(BaseVLNCETrainer):
         batch_gmap_vp_ids, batch_gmap_step_ids, batch_gmap_lens = [], [], []
         batch_gmap_img_fts, batch_gmap_pos_fts = [], []
         batch_gmap_pair_dists, batch_gmap_visited_masks = [], []
+        batch_gmap_native_masks = []
         batch_no_vp_left = []
 
         for i, gmap in enumerate(self.gmaps):
@@ -510,6 +511,10 @@ class RLTrainer(BaseVLNCETrainer):
             gmap_vp_ids = [None] + node_vp_ids + ghost_vp_ids
             gmap_step_ids = [0] + [gmap.node_stepId[vp] for vp in node_vp_ids] + [0]*len(ghost_vp_ids)
             gmap_visited_masks = [0] + [1] * len(node_vp_ids) + [0] * len(ghost_vp_ids)
+            native_ghosts = set(gmap.native_ghosts) or set(ghost_vp_ids)
+            batch_gmap_native_masks.append(torch.BoolTensor(
+                [True] + [True] * len(node_vp_ids) +
+                [vp in native_ghosts for vp in ghost_vp_ids]))
 
             gmap_img_fts = [gmap.get_node_embeds(vp) for vp in node_vp_ids] + \
                            [gmap.get_node_embeds(vp) for vp in ghost_vp_ids]
@@ -553,6 +558,7 @@ class RLTrainer(BaseVLNCETrainer):
         batch_gmap_lens = torch.LongTensor(batch_gmap_lens)
         batch_gmap_masks = gen_seq_masks(batch_gmap_lens).cuda()
         batch_gmap_visited_masks = pad_sequence(batch_gmap_visited_masks, batch_first=True).cuda()
+        batch_gmap_native_masks = pad_sequence(batch_gmap_native_masks, batch_first=True).cuda()
 
         bs = self.envs.num_envs
         max_gmap_len = max(batch_gmap_lens)
@@ -565,6 +571,7 @@ class RLTrainer(BaseVLNCETrainer):
             'gmap_vp_ids': batch_gmap_vp_ids, 'gmap_step_ids': batch_gmap_step_ids,
             'gmap_img_fts': batch_gmap_img_fts, 'gmap_pos_fts': batch_gmap_pos_fts, 
             'gmap_masks': batch_gmap_masks, 'gmap_visited_masks': batch_gmap_visited_masks, 'gmap_pair_dists': gmap_pair_dists,
+            'gmap_native_masks': batch_gmap_native_masks,
             'no_vp_left': batch_no_vp_left,
         }
 
@@ -1730,6 +1737,7 @@ class RLTrainer(BaseVLNCETrainer):
                 'residual_alpha': float(self.config.RL_TOPO.RESIDUAL_ALPHA)
                 if self.config.RL_TOPO.ENABLED else 0.0,
                 'action_abstraction': self.action_abstraction,
+                'dense_isolation_mode': str(getattr(self.config.ACTION_ABSTRACTION, 'DENSE_ISOLATION_MODE', 'off')),
             })
             no_vp_left = nav_inputs.pop('no_vp_left')
             nav_outs = self.policy.net(**nav_inputs)
@@ -1810,7 +1818,9 @@ class RLTrainer(BaseVLNCETrainer):
                     self, stepk, cur_vp, cur_pos, nav_inputs, nav_logits,
                     cpu_a_t, policy_cpu_a_t, no_vp_left, nav_outs.get('gmap_embeds'),
                     waypoint_heatmap=wp_outputs.get('waypoint_heatmap_probs'),
-                    candidate_metadata=candidate_metadata)
+                    candidate_metadata=candidate_metadata,
+                    isolated_native_embeds=nav_outs.get('isolated_native_embeds'),
+                    isolated_native_logits=nav_outs.get('isolated_native_logits'))
             for i, gmap in enumerate(self.gmaps):
                 policy_stop = int(cpu_a_t[i]) == 0
                 forced_by_max_len = (not policy_stop) and stepk == self.max_len - 1
