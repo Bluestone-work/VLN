@@ -1,0 +1,20 @@
+{
+  "experiment_id": "DENSE-A1-ISOLATION-CAPTURE-CONTROL-VAL-UNSEEN-001",
+  "base_config": "run_r2r/iter_train.yaml",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "split": "val_unseen",
+  "episodes": 44,
+  "seed": 100,
+  "dataset_path": "research/results/gate_a_native_policy_replication_001/val_unseen_replication.json.gz",
+  "capture_graph_options": true,
+  "capture_waypoint_provenance": true,
+  "action_abstraction": "dense_native_union",
+  "dense_isolation_mode": "capture",
+  "allow_sliding": true,
+  "tryout_effective": false,
+  "back_algo": "control",
+  "cohort": "val_unseen_control_replication",
+  "arm": "a1_capture",
+  "frozen_manifest": "research/results/gate_a_native_policy_replication_001/manifest.json",
+  "protocol": "research/DENSE_ACTION_OOD_NEXT_PROTOCOL.md"
+}
