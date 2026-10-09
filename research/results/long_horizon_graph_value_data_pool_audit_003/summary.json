@@ -1,0 +1,30 @@
+{
+  "experiment_id": "LONG-HORIZON-GRAPH-VALUE-DATA-POOL-AUDIT-003",
+  "date": "2026-10-09",
+  "excluded_scene_count": 59,
+  "r2r_remaining": {
+    "scenes": 2,
+    "routes": 4
+  },
+  "rxr": {
+    "train_guide": {
+      "records": 60300,
+      "scenes": 59,
+      "scenes_outside_exclusion": 1,
+      "outside_scene_ids": ["mp3d/YmJkqBEsHnH/YmJkqBEsHnH.glb"],
+      "sha256": "f06b2ef4dc947ca15d6c4a5a3d629c9212328f4cbdd38a13bed9c5c1fc224a94"
+    },
+    "train_follower": {
+      "records": 58752,
+      "scenes": 59,
+      "scenes_outside_exclusion": 1,
+      "outside_scene_ids": ["mp3d/YmJkqBEsHnH/YmJkqBEsHnH.glb"],
+      "sha256": "c329fd107a261381659b79373cf8e42471e19957ef2790382cb7b6676b8657ab"
+    },
+    "gt_variants": "empty in local checkout"
+  },
+  "decision": "NO-GO for expanded local scene-disjoint confirmation",
+  "reason": "RxR adds only one scene outside the frozen exclusion set and changes task distribution if mixed with R2R",
+  "outcomes_read": false,
+  "dataset_written": false
+}
