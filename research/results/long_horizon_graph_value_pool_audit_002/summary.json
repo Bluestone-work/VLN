@@ -1,0 +1,77 @@
+{
+  "experiment_id": "LONG-HORIZON-GRAPH-VALUE-POOL-AUDIT-002",
+  "status": "blocked_before_sampling",
+  "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+  "source_sha256": "b43db098cbf6bdf05fdccd9992b87a9aee58eef5c74adc62d92cfe636baf2f4d",
+  "requested_minimum_scenes": 6,
+  "requested_minimum_routes": 96,
+  "configured_routes_per_scene": 12,
+  "excluded_scene_count": 59,
+  "excluded_route_count": 136,
+  "available_scene_count": 2,
+  "available_route_count": 4,
+  "eligible_scene_count": 0,
+  "eligible_routes_by_scene": {},
+  "sources": [
+    {
+      "source": "research/results/graph_option_pilot/train8_sampling/manifest.json",
+      "sha256": "4558c98cbb2628a4dfdc310d61d7ee95869fcfedd8e93acba3df7941564bf780",
+      "rows": 8,
+      "routes": 8,
+      "scenes": 4
+    },
+    {
+      "source": "research/results/graph_option_train64/sampling_001/manifest.json",
+      "sha256": "add89444e76a5aff6e8535416b6995b1c300f56c437112aa147759258d5bacf2",
+      "rows": 64,
+      "routes": 64,
+      "scenes": 16
+    },
+    {
+      "source": "research/results/continuation_label_train64/sampling_001/manifest.json",
+      "sha256": "d6380b5d04f12d4f5a0ba207e593254a64719ad16533f17ac6cabfbf2eb187d4",
+      "rows": 64,
+      "routes": 64,
+      "scenes": 35
+    },
+    {
+      "source": "research/results/full_return_label_train16/sampling_001/manifest.json",
+      "sha256": "a6326b56df738feb18bbf4b0058d27583e867198a1a893a0a503e7590880b2d2",
+      "rows": 0,
+      "routes": 0,
+      "scenes": 43
+    },
+    {
+      "source": "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+      "sha256": "c04f69c57626a187c2401b1b5b8cb6ba5c6720d8a3de0555082520d56bda2dd2",
+      "rows": 0,
+      "routes": 0,
+      "scenes": 59
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+      "sha256": "20017ce953b9defd543ef20f28e3888818ec0a0d7af39ce22bb29eeeb586f86b",
+      "rows": 489,
+      "routes": 0,
+      "scenes": 1
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+      "sha256": "532d8b461d5166d248a9363c9e1c4b9a14b83fe959de97c05e922004d5c1892c",
+      "rows": 2928,
+      "routes": 0,
+      "scenes": 2
+    },
+    {
+      "source": "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl",
+      "sha256": "6000a51c1cb264e4e4658c8b869129e32f7bf47158db4724ba3ac9d38e129513",
+      "rows": 7813,
+      "routes": 0,
+      "scenes": 6
+    }
+  ],
+  "decision": "NO-GO for independent scene-disjoint confirmation with current R2R train pool",
+  "git_commit": "ff318058ad534e165ec693b5062d010842b24a1b",
+  "config_sha256": "265a13d19df0e69fab77fdd2b36dbfff77cf3cc378d2c4b276c0ef82466ce0ae",
+  "script_sha256": "7d64895e24c6e4a6536dea9679b674348e1b3375f4d15ce1760ef5513443b1e7"
+}

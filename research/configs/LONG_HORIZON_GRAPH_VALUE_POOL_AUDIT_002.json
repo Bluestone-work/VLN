@@ -1,0 +1,19 @@
+{
+  "experiment_id": "LONG-HORIZON-GRAPH-VALUE-POOL-AUDIT-002",
+  "sampling": {
+    "source": "data/datasets/R2R_VLNCE_v1-2_preprocessed_BERTidx/train/train_bertidx.json.gz",
+    "minimum_scenes": 6,
+    "minimum_routes": 96,
+    "routes_per_scene": 12,
+    "exclude_sources": [
+      "research/results/graph_option_pilot/train8_sampling/manifest.json",
+      "research/results/graph_option_train64/sampling_001/manifest.json",
+      "research/results/continuation_label_train64/sampling_001/manifest.json",
+      "research/results/full_return_label_train16/sampling_001/manifest.json",
+      "research/results/graph_value_fresh_train64/sampling_001/manifest.json",
+      "research/results/action_abstraction/ranker_train64_oracle.jsonl",
+      "research/results/action_abstraction/ranker_embedding_train320_oracle.jsonl",
+      "research/results/action_abstraction/ranker_embedding_train960_oracle.jsonl"
+    ]
+  }
+}
