@@ -1,0 +1,9 @@
+{
+  "experiment_id": "GATE-A-NATIVE-POLICY-REPLICATION-001",
+  "manifest": "/home/wj/VLN-CE/ETPNav/research/results/gate_a_native_policy_replication_001/manifest.json",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "seed": 100,
+  "train_dataset": "/home/wj/VLN-CE/ETPNav/research/results/gate_a_native_policy_replication_001/train_replication.json.gz",
+  "val_unseen_dataset": "/home/wj/VLN-CE/ETPNav/research/results/gate_a_native_policy_replication_001/val_unseen_replication.json.gz",
+  "selection_frozen_before_a1": true
+}

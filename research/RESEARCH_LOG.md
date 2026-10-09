@@ -1331,6 +1331,26 @@ The proposal-coverage opportunity is real and can sometimes be realized by the u
 
 Next:
 Run only a larger outcome-blind native-success control replication and provenance/cost decomposition. Keep waypoint training, classifier/reranker, RL/PPO, VLM, and navigator redesign closed.
+
+## 2026-10-09 / GATE-A-NATIVE-POLICY-REPLICATION-001
+
+Question:
+Does the online dense-candidate gain remain safe on a larger outcome-blind native-success control cohort?
+
+Change:
+Frozen all 99 routes remaining after excluding the 31 Gate-A routes from the already frozen train64 and unseen66 source samplers. Ran A0 released NMS and A1 native-union-dense NMS from reset through native termination. Added paired route, scene, first-divergence, candidate provenance, and cost analysis.
+
+Control:
+Same checkpoint, seed 100, sensors, graph encoder, SAP head, argmax, controller, STOP, sliding setting, 15-decision budget, evaluator, and nested native/dense ghost provenance protocol. Selection read no outcome.
+
+Result:
+A0 succeeded on 99/99 controls. A1 succeeded on 81/99 and destroyed 18 native successes: 3/55 train and 15/44 unseen. All-route SPL/nDTW changed by -0.1734/-0.0593; primitive count increased by 14.01 on average and collisions by 0.0325. A1 exposed 12.95 candidates versus 4.68 for A0 and directly selected a new target at first divergence on 96/99 routes. New-candidate count was similar on retained and harmed routes, so count alone is not a safety signal.
+
+Interpretation:
+The online proposal-coverage opportunity does not safely transfer to native-success routes. Direct dense expansion with unchanged native argmax is a robust NO-GO, especially on unseen scenes. The earlier unresolved-route rescues remain diagnostic evidence of opportunity, not a deployable method.
+
+Next:
+Close unconditional proposal expansion. Do not train a waypoint predictor, selector, PPO/RL, VLM, or generic reranker. Any future continuation requires a separately justified abstention/safety mechanism and a new frozen validation protocol.
 ## 2026-10-08 / GATE-A-DENSE-CANDIDATE-002 + GATE-B-NATIVE-RELATIVE-001
 
 Question: Does a nested dense candidate set add full-return rescue ceiling, and can pre-action deployable signals safely identify native-relative overrides?

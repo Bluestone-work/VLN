@@ -570,3 +570,26 @@ native-success control replication 与新增候选 provenance/cost 分析；不�
 classifier、RL/PPO、VLM 或 navigator 重设计。报告见
 `GATE_A_NATIVE_POLICY_REPORT.md`，结果见
 `results/gate_a_native_policy/analysis_002/`。
+
+## 2026-10-09 — Gate A native-policy larger control replication
+
+按 outcome-blind 规则从既有 train64（16 scenes）和 unseen66（11 scenes）中
+冻结所有排除 31 条 Gate-A route 后的剩余路线，共 99 条 control route、27 个
+场景（train 55，unseen 44）。A0/A1 使用同一 checkpoint、seed、controller、
+STOP、15-decision budget 和 nested ghost provenance protocol，完成四个完整
+闭环 arm。
+
+A0 在 99/99 条路线成功；A1 只在 81/99 条成功，破坏 18 条 native success。
+train 为 3/55，unseen 为 15/44。全体 SPL/nDTW 分别下降 0.1734/0.0593，
+primitive 增加 14.01，collision 增加 0.0325。A1 平均暴露 12.95 个 heatmap
+候选（A0 为 4.68），96/99 条路线在首次 matched divergence 直接选中新 target；
+harm route 与 retained route 的新增候选数量相近，不能用“候选更多”本身解释。
+
+结论：**NO-GO for unconditional proposal expansion with unchanged native policy**。
+Gate-A 的 31-route rescue opportunity 仍保留为有限 oracle/diagnostic 证据，但
+更大 outcome-blind control replication 证明直接把 dense candidates 交给原始
+argmax 会系统性破坏 native-success routes，尤其在 unseen scenes。当前不训练
+waypoint predictor、PPO/RL、VLM 或 generic reranker；proposal expansion 分支
+关闭，除非未来先提出并独立验证安全 abstention 机制。报告见
+`GATE_A_NATIVE_POLICY_REPLICATION_REPORT.md`，结果见
+`results/gate_a_native_policy_replication_001/analysis_001/`。

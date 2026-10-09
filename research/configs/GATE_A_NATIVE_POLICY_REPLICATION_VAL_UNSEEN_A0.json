@@ -1,0 +1,18 @@
+{
+  "experiment_id": "GATE-A-NATIVE-POLICY-REPLICATION-001-VAL_UNSEEN-A0",
+  "base_config": "run_r2r/iter_train.yaml",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "split": "val_unseen",
+  "episodes": 44,
+  "seed": 100,
+  "dataset_path": "/home/wj/VLN-CE/ETPNav/research/results/gate_a_native_policy_replication_001/val_unseen_replication.json.gz",
+  "capture_graph_options": true,
+  "capture_waypoint_provenance": true,
+  "action_abstraction": "default",
+  "allow_sliding": true,
+  "tryout_effective": false,
+  "back_algo": "control",
+  "cohort": "val_unseen",
+  "arm": "a0",
+  "frozen_manifest": "/home/wj/VLN-CE/ETPNav/research/configs/GATE_A_NATIVE_POLICY_REPLICATION_001.json"
+}

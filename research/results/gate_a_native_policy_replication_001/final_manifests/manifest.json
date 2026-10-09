@@ -1,0 +1,739 @@
+{
+  "experiment_id": "GATE-A-NATIVE-POLICY-REPLICATION-001",
+  "selection_frozen_utc": "2026-10-09",
+  "selection_rule": "all routes in the already frozen outcome-blind train64 and unseen66 source samplers except the 31 Gate-A routes; sorted metadata only; no evaluator outcome read",
+  "no_outcome_selection": true,
+  "excluded_gate_a_route_count": 31,
+  "control_route_count": 99,
+  "control_scene_count": 27,
+  "counts_by_cohort": {
+    "train": 55,
+    "val_unseen": 44
+  },
+  "route_rows": [
+    {
+      "episode_id": "6",
+      "trajectory_id": "5",
+      "scene_id": "mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "3633",
+      "trajectory_id": "2423",
+      "scene_id": "mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7202",
+      "trajectory_id": "4794",
+      "scene_id": "mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7651",
+      "trajectory_id": "5103",
+      "scene_id": "mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "3324",
+      "trajectory_id": "2191",
+      "scene_id": "mp3d/759xd9YjKW5/759xd9YjKW5.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "3888",
+      "trajectory_id": "2565",
+      "scene_id": "mp3d/759xd9YjKW5/759xd9YjKW5.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "8474",
+      "trajectory_id": "5673",
+      "scene_id": "mp3d/759xd9YjKW5/759xd9YjKW5.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "8",
+      "trajectory_id": "6",
+      "scene_id": "mp3d/7y3sRwLe3Va/7y3sRwLe3Va.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "2408",
+      "trajectory_id": "1558",
+      "scene_id": "mp3d/7y3sRwLe3Va/7y3sRwLe3Va.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "8786",
+      "trajectory_id": "5871",
+      "scene_id": "mp3d/7y3sRwLe3Va/7y3sRwLe3Va.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "9155",
+      "trajectory_id": "6131",
+      "scene_id": "mp3d/7y3sRwLe3Va/7y3sRwLe3Va.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7520",
+      "trajectory_id": "5022",
+      "scene_id": "mp3d/JeFG25nYj2p/JeFG25nYj2p.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7840",
+      "trajectory_id": "5240",
+      "scene_id": "mp3d/JeFG25nYj2p/JeFG25nYj2p.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "10171",
+      "trajectory_id": "6844",
+      "scene_id": "mp3d/JeFG25nYj2p/JeFG25nYj2p.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "10574",
+      "trajectory_id": "7136",
+      "scene_id": "mp3d/JeFG25nYj2p/JeFG25nYj2p.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "3793",
+      "trajectory_id": "2515",
+      "scene_id": "mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "10429",
+      "trajectory_id": "7020",
+      "scene_id": "mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "844",
+      "trajectory_id": "541",
+      "scene_id": "mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7210",
+      "trajectory_id": "4798",
+      "scene_id": "mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "8195",
+      "trajectory_id": "5478",
+      "scene_id": "mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1331",
+      "trajectory_id": "829",
+      "scene_id": "mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "3671",
+      "trajectory_id": "2441",
+      "scene_id": "mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "6301",
+      "trajectory_id": "4163",
+      "scene_id": "mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7246",
+      "trajectory_id": "4817",
+      "scene_id": "mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "2346",
+      "trajectory_id": "1506",
+      "scene_id": "mp3d/ac26ZMwG7aT/ac26ZMwG7aT.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "9257",
+      "trajectory_id": "6207",
+      "scene_id": "mp3d/ac26ZMwG7aT/ac26ZMwG7aT.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "9467",
+      "trajectory_id": "6344",
+      "scene_id": "mp3d/ac26ZMwG7aT/ac26ZMwG7aT.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1587",
+      "trajectory_id": "1005",
+      "scene_id": "mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "6499",
+      "trajectory_id": "4281",
+      "scene_id": "mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7993",
+      "trajectory_id": "5336",
+      "scene_id": "mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "569",
+      "trajectory_id": "375",
+      "scene_id": "mp3d/jh4fc5c5qoQ/jh4fc5c5qoQ.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7892",
+      "trajectory_id": "5278",
+      "scene_id": "mp3d/jh4fc5c5qoQ/jh4fc5c5qoQ.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "8523",
+      "trajectory_id": "5702",
+      "scene_id": "mp3d/jh4fc5c5qoQ/jh4fc5c5qoQ.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "8838",
+      "trajectory_id": "5906",
+      "scene_id": "mp3d/jh4fc5c5qoQ/jh4fc5c5qoQ.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "189",
+      "trajectory_id": "124",
+      "scene_id": "mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "2557",
+      "trajectory_id": "1651",
+      "scene_id": "mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7300",
+      "trajectory_id": "4851",
+      "scene_id": "mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7922",
+      "trajectory_id": "5292",
+      "scene_id": "mp3d/p5wJjkQkbXX/p5wJjkQkbXX.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1006",
+      "trajectory_id": "640",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "6014",
+      "trajectory_id": "3957",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "10366",
+      "trajectory_id": "6975",
+      "scene_id": "mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "5547",
+      "trajectory_id": "3679",
+      "scene_id": "mp3d/r1Q1Z4BcV1o/r1Q1Z4BcV1o.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "8943",
+      "trajectory_id": "5964",
+      "scene_id": "mp3d/r1Q1Z4BcV1o/r1Q1Z4BcV1o.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "9153",
+      "trajectory_id": "6130",
+      "scene_id": "mp3d/r1Q1Z4BcV1o/r1Q1Z4BcV1o.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1608",
+      "trajectory_id": "1015",
+      "scene_id": "mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "5280",
+      "trajectory_id": "3487",
+      "scene_id": "mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7928",
+      "trajectory_id": "5297",
+      "scene_id": "mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "3448",
+      "trajectory_id": "2289",
+      "scene_id": "mp3d/rPc6DW4iMge/rPc6DW4iMge.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "6214",
+      "trajectory_id": "4110",
+      "scene_id": "mp3d/rPc6DW4iMge/rPc6DW4iMge.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7334",
+      "trajectory_id": "4875",
+      "scene_id": "mp3d/rPc6DW4iMge/rPc6DW4iMge.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "10811",
+      "trajectory_id": "7308",
+      "scene_id": "mp3d/rPc6DW4iMge/rPc6DW4iMge.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "3983",
+      "trajectory_id": "2621",
+      "scene_id": "mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "4758",
+      "trajectory_id": "3145",
+      "scene_id": "mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7732",
+      "trajectory_id": "5156",
+      "scene_id": "mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "8802",
+      "trajectory_id": "5885",
+      "scene_id": "mp3d/uNb9QFRL6hY/uNb9QFRL6hY.glb",
+      "cohort": "train",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "159",
+      "trajectory_id": "654",
+      "scene_id": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "166",
+      "trajectory_id": "668",
+      "scene_id": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "833",
+      "trajectory_id": "3411",
+      "scene_id": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "931",
+      "trajectory_id": "3856",
+      "scene_id": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1608",
+      "trajectory_id": "6417",
+      "scene_id": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1803",
+      "trajectory_id": "7170",
+      "scene_id": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "730",
+      "trajectory_id": "2978",
+      "scene_id": "mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1149",
+      "trajectory_id": "4597",
+      "scene_id": "mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1507",
+      "trajectory_id": "5938",
+      "scene_id": "mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "776",
+      "trajectory_id": "3202",
+      "scene_id": "mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "783",
+      "trajectory_id": "3263",
+      "scene_id": "mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "885",
+      "trajectory_id": "3557",
+      "scene_id": "mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1552",
+      "trajectory_id": "6092",
+      "scene_id": "mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "381",
+      "trajectory_id": "1511",
+      "scene_id": "mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "500",
+      "trajectory_id": "1998",
+      "scene_id": "mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1093",
+      "trajectory_id": "4447",
+      "scene_id": "mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "107",
+      "trajectory_id": "329",
+      "scene_id": "mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1174",
+      "trajectory_id": "4654",
+      "scene_id": "mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1278",
+      "trajectory_id": "4976",
+      "scene_id": "mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1708",
+      "trajectory_id": "6766",
+      "scene_id": "mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "370",
+      "trajectory_id": "1473",
+      "scene_id": "mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "382",
+      "trajectory_id": "1539",
+      "scene_id": "mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1186",
+      "trajectory_id": "4720",
+      "scene_id": "mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1568",
+      "trajectory_id": "6169",
+      "scene_id": "mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1677",
+      "trajectory_id": "6655",
+      "scene_id": "mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "392",
+      "trajectory_id": "1574",
+      "scene_id": "mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1657",
+      "trajectory_id": "6623",
+      "scene_id": "mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "268",
+      "trajectory_id": "1047",
+      "scene_id": "mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1689",
+      "trajectory_id": "6703",
+      "scene_id": "mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "413",
+      "trajectory_id": "1654",
+      "scene_id": "mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "651",
+      "trajectory_id": "2690",
+      "scene_id": "mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1483",
+      "trajectory_id": "5873",
+      "scene_id": "mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1624",
+      "trajectory_id": "6523",
+      "scene_id": "mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1778",
+      "trajectory_id": "7042",
+      "scene_id": "mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "7",
+      "trajectory_id": "42",
+      "scene_id": "mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "553",
+      "trajectory_id": "2250",
+      "scene_id": "mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "640",
+      "trajectory_id": "2662",
+      "scene_id": "mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1054",
+      "trajectory_id": "4239",
+      "scene_id": "mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1605",
+      "trajectory_id": "6396",
+      "scene_id": "mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "14",
+      "trajectory_id": "62",
+      "scene_id": "mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "507",
+      "trajectory_id": "2027",
+      "scene_id": "mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "893",
+      "trajectory_id": "3618",
+      "scene_id": "mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1026",
+      "trajectory_id": "4156",
+      "scene_id": "mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    },
+    {
+      "episode_id": "1263",
+      "trajectory_id": "4951",
+      "scene_id": "mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control_replication"
+    }
+  ],
+  "source_manifests": [
+    {
+      "cohort": "train",
+      "path": "/home/wj/VLN-CE/ETPNav/research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz",
+      "sha256": "2a9b8b94279ad8a062c4c7eaa4424d2516bd4f476b7c71a82d3fa1e31f03a283"
+    },
+    {
+      "cohort": "val_unseen",
+      "path": "/home/wj/VLN-CE/ETPNav/research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz",
+      "sha256": "b17f5606d63a5d069aa81163bdb9b928fc11f54488179b0c67a871f5503e3c0d"
+    }
+  ],
+  "gate_a_table_sha256": "9f06fccac7b9c08eb24285952abcba1ffbcf49b0e42c7ab62e7f94cf4b957874",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "seed": 100,
+  "a0": {
+    "max_predictions": 5,
+    "sigma": [
+      7.0,
+      5.0
+    ]
+  },
+  "a1": {
+    "construction": "A0 union dense NMS from same heatmap",
+    "max_predictions": 12,
+    "sigma": [
+      4.0,
+      3.0
+    ]
+  },
+  "controller": "native ETPNav control; no reranker/oracle/recovery"
+}
