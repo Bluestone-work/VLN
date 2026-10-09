@@ -74,7 +74,7 @@ class GraphOptionCapture:
 
     def prepare(self, trainer, step, current, positions, nav_inputs, logits,
                 chosen, policy_chosen, no_vp, embeddings,
-                waypoint_heatmap=None):
+                waypoint_heatmap=None, candidate_metadata=None):
         if self.pending is not None:
             raise RuntimeError('Uncommitted previous decision')
         if not np.array_equal(chosen, policy_chosen):
@@ -114,6 +114,8 @@ class GraphOptionCapture:
                 provenance = candidate_sets_from_heatmap(waypoint_heatmap[i])
                 row['waypoint_heatmap_probs'] = heatmap
                 row['dense_candidate_provenance'] = provenance
+            if candidate_metadata is not None:
+                row['candidate_metadata'] = candidate_metadata[i]
             self.pending.append(row)
 
     def commit(self, env_actions):
@@ -137,6 +139,7 @@ class GraphOptionTraceTrainer(RLTrainer):
         if (config.IL.back_algo != 'control' or config.VIDEO_OPTION or config.RL_TOPO.ENABLED
                 or not config.TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING
                 or self.aaa_oracle_enabled or self.graph_selection_oracle_enabled
-                or self.aaa_diagnostics_enabled or self.action_abstraction != 'default'):
+                or self.aaa_diagnostics_enabled
+                or self.action_abstraction not in ('default', 'dense_native_union')):
             raise ValueError('Graph option capture requires the calibrated frozen baseline protocol')
         self._graph_option_capture = GraphOptionCapture(os.environ['ETPNAV_GRAPH_OPTION_DIR'])

@@ -1311,6 +1311,26 @@ The empty-proposal hypothesis is rejected in its narrow form. Proposal coverage 
 
 Next:
 Do not change the waypoint predictor from this evidence. If proposal coverage is revisited, run a matched dense-candidate experiment. Otherwise prioritize long-horizon graph value with safe abstention once an independent data protocol is available.
+
+## 2026-10-09 / GATE-A-NATIVE-POLICY-001
+
+Question:
+Can the unchanged native ETPNav policy exploit dense candidates in a complete closed-loop rollout?
+
+Change:
+A0 used released NMS (5, `(7,5)`). A1 used the same heatmap with `A0 union dense-NMS` (12, `(4,3)`). Native and dense ghost merge pools were provenance-separated only to enforce final graph-action nesting. No oracle scores, route labels, selector, or model training were used.
+
+Control:
+Same released checkpoint, seed 100, sensors, controller, STOP, sliding/tryout settings, 15-decision budget, evaluator, and frozen 31-route unresolved plus 16-route metadata-only success-control cohort.
+
+Result:
+On Gate-A unresolved routes, A0 solved 0/31 and A1 solved 9/31. On controls, A0 solved 16/16 and A1 solved 13/16, destroying 3 native successes. Across all 47 routes, SR was 0.3404 -> 0.4681, SPL delta +0.0756, nDTW delta +0.0178. Matched-prefix candidate-set nesting had zero violations; A1 directly selected a new target at first divergence on all 31 unresolved routes. Required routes: 8343 fail/fail, 1052 fail/success, 1584 fail/fail.
+
+Interpretation:
+The proposal-coverage opportunity is real and can sometimes be realized by the unchanged policy, but it is unsafe on native-success controls and costs more path/primitive budget. This is a limited GO for proposal-coverage follow-up, not a benchmark claim.
+
+Next:
+Run only a larger outcome-blind native-success control replication and provenance/cost decomposition. Keep waypoint training, classifier/reranker, RL/PPO, VLM, and navigator redesign closed.
 ## 2026-10-08 / GATE-A-DENSE-CANDIDATE-002 + GATE-B-NATIVE-RELATIVE-001
 
 Question: Does a nested dense candidate set add full-return rescue ceiling, and can pre-action deployable signals safely identify native-relative overrides?

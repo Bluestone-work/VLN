@@ -546,3 +546,27 @@ cohort 内的 0.9386 不能当作泛化结果；此前 train-new 到 train16 的
 因此可以拒绝“action list 为空”这个狭义 proposal failure 解释，但不能证明正确 waypoint 一定在候选集中。NMS、ghost 合并和时间分辨率仍可能遗漏有用动作。unresolved routes 的碰撞、预算和终止症状不一致，不能用一个 proposal 或 interrupt 机制统一解释。下一步不改 waypoint predictor；若要重新研究 proposal coverage，必须做 matched dense-candidate 实验。
 
 报告：`research/UNRESOLVED_COVERAGE_REPORT.md`；机器结果：`research/results/unresolved_coverage_census_001/summary.json`。
+
+## 2026-10-09 — Gate A native-policy closed-loop realization
+
+在不修改 checkpoint、graph encoder、SAP head、argmax、controller、STOP 或
+15-decision budget 的条件下，完成了 A0 native 与 A1 `A0 union dense-NMS`
+的完整 reset-to-termination 配对运行。A1 的 native/dense ghost 合并空间被
+隔离，以保证每个 matched prefix state 的最终 graph action 满足真正的
+`A0 ⊆ A1`；47 条路线、所有 matched prefix 的 nested audit 均通过。
+
+冻结 cohort 为 31 条 Gate-A unresolved route（18 scenes）和 16 条
+metadata-only native-success control（16 scenes）。Unresolved 上 A0 为
+0/31，A1 为 9/31，救回 9 条；control 上 A0 为 16/16，A1 为 13/16，破坏
+3 条。A1 在 31 条 unresolved route 的首次 target divergence 都直接选到
+新增 candidate；`8343`、`1584` 仍失败，`1052` 被在线救回。全体 47 条 route
+的平均 SPL/nDTW 分别 +0.0756/+0.0178，但 native-success control 的平均
+SPL/nDTW 为 -0.2130/-0.0954，且 path/primitive cost 上升。
+
+结论：**GO（仅限 proposal-coverage opportunity）**。原始 native policy
+确实能利用部分新增 candidate，但 control harm 明确存在，不能声称 benchmark
+改进或直接训练 waypoint predictor。下一步只做更大的 outcome-blind
+native-success control replication 与新增候选 provenance/cost 分析；不启动
+classifier、RL/PPO、VLM 或 navigator 重设计。报告见
+`GATE_A_NATIVE_POLICY_REPORT.md`，结果见
+`results/gate_a_native_policy/analysis_002/`。

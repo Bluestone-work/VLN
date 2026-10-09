@@ -1,0 +1,328 @@
+{
+  "experiment_id": "GATE-A-NATIVE-POLICY-001",
+  "selection_frozen_utc": "2026-10-09",
+  "selection_rule": "all 31 Gate-A unresolved routes from the frozen Gate-A per-route table; controls are first eight non-Gate-A episodes per source selected by sorted scene_id/episode_id, first unseen scene per route then deterministic fill",
+  "no_outcome_selection": true,
+  "gate_a_route_count": 31,
+  "native_success_control_route_count": 16,
+  "total_route_count": 47,
+  "route_rows": [
+    {
+      "episode_id": "3208",
+      "scene_id": "data/scene_datasets/mp3d/ac26ZMwG7aT/ac26ZMwG7aT.glb",
+      "cohort": "train",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "6068",
+      "scene_id": "data/scene_datasets/mp3d/759xd9YjKW5/759xd9YjKW5.glb",
+      "cohort": "train",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "6962",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "cohort": "train",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "7221",
+      "scene_id": "data/scene_datasets/mp3d/b8cTxDM8gDG/b8cTxDM8gDG.glb",
+      "cohort": "train",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "8219",
+      "scene_id": "data/scene_datasets/mp3d/pRbA3pwrgk9/pRbA3pwrgk9.glb",
+      "cohort": "train",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "8343",
+      "scene_id": "data/scene_datasets/mp3d/r47D5H71a5s/r47D5H71a5s.glb",
+      "cohort": "train",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "875",
+      "scene_id": "data/scene_datasets/mp3d/r1Q1Z4BcV1o/r1Q1Z4BcV1o.glb",
+      "cohort": "train",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "9045",
+      "scene_id": "data/scene_datasets/mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "cohort": "train",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "9747",
+      "scene_id": "data/scene_datasets/mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "cohort": "train",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1052",
+      "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1126",
+      "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1151",
+      "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1238",
+      "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1305",
+      "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "131",
+      "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1496",
+      "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1584",
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1593",
+      "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1702",
+      "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "1793",
+      "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "221",
+      "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "350",
+      "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "397",
+      "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "429",
+      "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "442",
+      "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "540",
+      "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "548",
+      "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "603",
+      "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "724",
+      "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "73",
+      "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "793",
+      "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "cohort": "val_unseen",
+      "role": "gate_a_unresolved"
+    },
+    {
+      "episode_id": "6",
+      "scene_id": "mp3d/5LpN3gDmAk7/5LpN3gDmAk7.glb",
+      "cohort": "train",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "3324",
+      "scene_id": "mp3d/759xd9YjKW5/759xd9YjKW5.glb",
+      "cohort": "train",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "8",
+      "scene_id": "mp3d/7y3sRwLe3Va/7y3sRwLe3Va.glb",
+      "cohort": "train",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "7520",
+      "scene_id": "mp3d/JeFG25nYj2p/JeFG25nYj2p.glb",
+      "cohort": "train",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "3793",
+      "scene_id": "mp3d/JmbYfDe2QKZ/JmbYfDe2QKZ.glb",
+      "cohort": "train",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "844",
+      "scene_id": "mp3d/SN83YJsR3w2/SN83YJsR3w2.glb",
+      "cohort": "train",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "1331",
+      "scene_id": "mp3d/VFuaQ6m2Qom/VFuaQ6m2Qom.glb",
+      "cohort": "train",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "2346",
+      "scene_id": "mp3d/ac26ZMwG7aT/ac26ZMwG7aT.glb",
+      "cohort": "train",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "159",
+      "scene_id": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "730",
+      "scene_id": "mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "776",
+      "scene_id": "mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "381",
+      "scene_id": "mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "107",
+      "scene_id": "mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "370",
+      "scene_id": "mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "392",
+      "scene_id": "mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control"
+    },
+    {
+      "episode_id": "268",
+      "scene_id": "mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "cohort": "val_unseen",
+      "role": "metadata_control"
+    }
+  ],
+  "sources": [
+    {
+      "cohort": "train",
+      "path": "/home/wj/VLN-CE/ETPNav/research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz",
+      "sha256": "2a9b8b94279ad8a062c4c7eaa4424d2516bd4f476b7c71a82d3fa1e31f03a283"
+    },
+    {
+      "cohort": "val_unseen",
+      "path": "/home/wj/VLN-CE/ETPNav/research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz",
+      "sha256": "b17f5606d63a5d069aa81163bdb9b928fc11f54488179b0c67a871f5503e3c0d"
+    }
+  ],
+  "route_table_sha256": "9f06fccac7b9c08eb24285952abcba1ffbcf49b0e42c7ab62e7f94cf4b957874",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "seed": 100,
+  "a0": {
+    "max_predictions": 5,
+    "sigma": [
+      7.0,
+      5.0
+    ]
+  },
+  "a1": {
+    "construction": "A0 union dense NMS from same heatmap",
+    "max_predictions": 12,
+    "sigma": [
+      4.0,
+      3.0
+    ]
+  },
+  "controller": "native ETPNav control; no reranker/oracle/recovery",
+  "source_split": {
+    "train": "/home/wj/VLN-CE/ETPNav/research/results/graph_option_train64/sampling_001/train64_bertidx.json.gz",
+    "val_unseen": "/home/wj/VLN-CE/ETPNav/research/results/option_calibration/unseen_balanced66_sampling/val_unseen_balanced66_bertidx.json.gz"
+  }
+}

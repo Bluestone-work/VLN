@@ -259,13 +259,23 @@ class ETP(Net):
                 batch_x_norm[:,:1,:]), 
                 dim=1)
             abstraction_spec = get_action_abstraction_spec(action_abstraction)
+            native_output_map = None
             batch_output_map = nms(
                 batch_x_norm_wrap.unsqueeze(1),
                 max_predictions=abstraction_spec.max_predictions,
                 sigma=abstraction_spec.sigma)
+            if abstraction_spec.name == 'dense_native_union':
+                native_map = nms(
+                    batch_x_norm_wrap.unsqueeze(1),
+                    max_predictions=5,
+                    sigma=(7.0, 5.0))
+                native_output_map = native_map
+                batch_output_map = torch.maximum(batch_output_map, native_map)
 
             # predicted waypoints before sampling
             batch_output_map = batch_output_map.squeeze(1)[:,1:-1,:]
+            if native_output_map is not None:
+                native_output_map = native_output_map.squeeze(1)[:,1:-1,:]
 
             # candidate_lengths = ((batch_output_map!=0).sum(-1).sum(-1) + 1).tolist()
             # if isinstance(candidate_lengths, int):
@@ -326,13 +336,40 @@ class ETP(Net):
             cand_angles = []
             cand_distances = []
             cand_scores = []
+            cand_angle_indices = []
+            cand_distance_indices = []
+            cand_native_masks = []
             for j in range(batch_size):
                 if in_train:
                     angle_idxes = torch.tensor(batch_sample_angle_idxes[j])
                     distance_idxes = torch.tensor(batch_sample_distance_idxes[j])
                 else:
-                    angle_idxes = batch_output_map[j].nonzero()[:, 0]
-                    distance_idxes = batch_output_map[j].nonzero()[:, 1]
+                    dense_indices = batch_output_map[j].nonzero()
+                    if native_output_map is not None:
+                        # Process native proposals first. GraphMap merges
+                        # ghosts in insertion order; preserving this order
+                        # keeps every A0 ghost identity/mean position intact
+                        # when A1 adds dense proposals.
+                        native_indices = native_output_map[j].nonzero()
+                        native_set = set((int(x[0]), int(x[1])) for x in native_indices)
+                        extra_indices = [x for x in dense_indices
+                                         if (int(x[0]), int(x[1])) not in native_set]
+                        ordered = list(native_indices) + extra_indices
+                        if ordered:
+                            angle_idxes = torch.stack([x[0] for x in ordered])
+                            distance_idxes = torch.stack([x[1] for x in ordered])
+                            native_mask = [True] * len(native_indices) + [False] * len(extra_indices)
+                        else:
+                            angle_idxes = dense_indices[:, 0]
+                            distance_idxes = dense_indices[:, 1]
+                            native_mask = [False] * int(angle_idxes.numel())
+                    else:
+                        angle_idxes = dense_indices[:, 0]
+                        distance_idxes = dense_indices[:, 1]
+                        native_mask = [False] * int(angle_idxes.numel())
+                if in_train:
+                    native_mask = [False] * int(angle_idxes.numel())
+                cand_native_masks.append(native_mask)
                 # for angle & distance
                 angle_rad_c = angle_idxes.cpu().float()/120*2*math.pi       # 顺时针
                 angle_rad_cc = 2*math.pi-angle_idxes.float()/120*2*math.pi  # 逆时针
@@ -345,6 +382,8 @@ class ETP(Net):
                     batch_output_map[j, score_angle_idxes, score_distance_idxes]
                     .detach().cpu().tolist()
                 )
+                cand_angle_indices.append(angle_idxes.cpu().tolist())
+                cand_distance_indices.append(distance_idxes.cpu().tolist())
                 # for img idxes
                 img_idxes = 12 - (angle_idxes.cpu().numpy()+5) // 10        # 逆时针
                 img_idxes[img_idxes==12] = 0
@@ -369,6 +408,9 @@ class ETP(Net):
                 'cand_angles': cand_angles,         # [K]
                 'cand_distances': cand_distances,   # [K]
                 'cand_scores': cand_scores,         # NMS heatmap mass [K]
+                'cand_angle_indices': cand_angle_indices,
+                'cand_distance_indices': cand_distance_indices,
+                'cand_native_masks': cand_native_masks,
                 'action_abstraction': abstraction_spec.name,
 
                 'pano_rgb': pano_rgb,               # B x 12 x 2048

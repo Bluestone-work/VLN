@@ -1716,7 +1716,8 @@ class RLTrainer(BaseVLNCETrainer):
                 self.gmaps[i].update_graph(prev_vp[i], stepk+1,
                                            cur_vp[i], cur_pos[i], cur_embeds,
                                            cand_vp[i], cand_pos[i], cand_embeds,
-                                           cand_real_pos[i])
+                                           cand_real_pos[i],
+                                           wp_outputs.get('cand_native_masks', [None] * self.envs.num_envs)[i])
 
             nav_inputs = self._nav_gmap_variable(cur_vp, cur_pos, cur_ori)
             nav_inputs.update({
@@ -1795,10 +1796,21 @@ class RLTrainer(BaseVLNCETrainer):
             use_tryout = (self.config.IL.tryout and not self.config.TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING)
             graph_option_capture = getattr(self, '_graph_option_capture', None)
             if mode == 'eval' and graph_option_capture is not None:
+                candidate_metadata = []
+                for i in range(self.envs.num_envs):
+                    candidate_metadata.append([
+                        {'angle_index': int(a), 'distance_index': int(d),
+                         'heatmap_score': float(s)}
+                        for a, d, s in zip(
+                            wp_outputs.get('cand_angle_indices', [[]])[i],
+                            wp_outputs.get('cand_distance_indices', [[]])[i],
+                            wp_outputs.get('cand_scores', [[]])[i])
+                    ])
                 graph_option_capture.prepare(
                     self, stepk, cur_vp, cur_pos, nav_inputs, nav_logits,
                     cpu_a_t, policy_cpu_a_t, no_vp_left, nav_outs.get('gmap_embeds'),
-                    waypoint_heatmap=wp_outputs.get('waypoint_heatmap_probs'))
+                    waypoint_heatmap=wp_outputs.get('waypoint_heatmap_probs'),
+                    candidate_metadata=candidate_metadata)
             for i, gmap in enumerate(self.gmaps):
                 policy_stop = int(cpu_a_t[i]) == 0
                 forced_by_max_len = (not policy_stop) and stepk == self.max_len - 1

@@ -1,0 +1,18 @@
+{
+  "experiment_id": "GATE-A-NATIVE-POLICY-TRAIN-A1",
+  "base_config": "run_r2r/iter_train.yaml",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "split": "train",
+  "episodes": 17,
+  "seed": 100,
+  "dataset_path": "/home/wj/VLN-CE/ETPNav/research/results/gate_a_native_policy/train_gate_a_policy.json.gz",
+  "capture_graph_options": true,
+  "capture_waypoint_provenance": true,
+  "action_abstraction": "dense_native_union",
+  "allow_sliding": true,
+  "tryout_effective": false,
+  "back_algo": "control",
+  "cohort": "train",
+  "arm": "a1",
+  "frozen_manifest": "research/configs/GATE_A_POLICY_COHORT_001.json"
+}

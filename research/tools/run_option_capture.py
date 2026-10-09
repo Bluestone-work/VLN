@@ -33,6 +33,8 @@ def main():
     args.output_dir.mkdir(parents=True, exist_ok=False)
     if args.trace:
         os.environ['ETPNAV_OPTION_TRACE_DIR'] = str(args.output_dir.resolve() / 'traces')
+        if cfg.get('capture_waypoint_provenance', False):
+            os.environ['ETPNAV_DENSE_CANDIDATE_CAPTURE'] = '1'
     else:
         os.environ.pop('ETPNAV_OPTION_TRACE_DIR', None)
     from run import run_exp
@@ -44,6 +46,7 @@ def main():
         os.environ['ETPNAV_GRAPH_OPTION_DIR'] = str(args.output_dir.resolve() / 'graph_options')
     else:
         os.environ.pop('ETPNAV_GRAPH_OPTION_DIR', None)
+        os.environ.pop('ETPNAV_DENSE_CANDIDATE_CAPTURE', None)
     overrides = {
         'TRAINER_NAME': 'SS-ETP-OptionCapture' if graph_capture else 'SS-ETP',
         'ENV_NAME': 'VLNCEOptionTraceEnv' if args.trace else 'VLNCEDaggerEnv',
@@ -51,7 +54,8 @@ def main():
         'NUM_ENVIRONMENTS': '1', 'EVAL.SPLIT': cfg['split'],
         'EVAL.EPISODE_COUNT': str(cfg['episodes']), 'TASK_CONFIG.SEED': str(cfg['seed']),
         'EVAL.CKPT_PATH_DIR': cfg['checkpoint'], 'IL.back_algo': cfg['back_algo'],
-        'RL_TOPO.ENABLED': 'False', 'ACTION_ABSTRACTION.LEVEL': 'default',
+        'RL_TOPO.ENABLED': 'False',
+        'ACTION_ABSTRACTION.LEVEL': cfg.get('action_abstraction', 'default'),
         'ACTION_ABSTRACTION.DIAGNOSTICS_ENABLED': 'False',
         'ACTION_ABSTRACTION.ORACLE_ENABLED': 'False',
         'ACTION_ABSTRACTION.GRAPH_SELECTION_ORACLE_ENABLED': 'False',

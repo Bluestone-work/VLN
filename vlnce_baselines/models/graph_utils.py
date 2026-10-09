@@ -164,6 +164,7 @@ class GraphMap(object):
         # is used only by action-abstraction diagnostics; the graph contract is
         # unchanged.
         self.last_candidate_vps = []
+        self.native_ghosts = set()
 
     def _localize(self, qpos, kpos_dict, ignore_height=False):
         min_dis = 10000
@@ -194,11 +195,12 @@ class GraphMap(object):
         self.ghost_fronts.pop(vp)
         if self.has_real_pos:
             self.ghost_real_pos.pop(vp)
+        self.native_ghosts.discard(vp)
 
     def update_graph(self, prev_vp, step_id,
                            cur_vp, cur_pos, cur_embeds,
                            cand_vp, cand_pos, cand_embeds, 
-                           cand_real_pos):
+                           cand_real_pos, cand_native_mask=None):
         self.last_candidate_vps = []
         # 1. connect prev_vp
         self.graph_nx.add_node(cur_vp)
@@ -211,6 +213,14 @@ class GraphMap(object):
         self.node_pos[cur_vp] = cur_pos
         self.node_embeds[cur_vp] = cur_embeds
         self.node_stepId[cur_vp] = step_id
+        if cand_native_mask is None:
+            cand_native_mask = [False] * len(cand_vp)
+        if len(cand_native_mask) != len(cand_vp):
+            raise ValueError('candidate native mask length mismatch')
+        # Existing ghosts are part of the native graph action set as well;
+        # dense proposals must not move their running means.
+        preserve_native = any(cand_native_mask)
+        protected_native_ghosts = set(self.ghost_pos.keys()) if preserve_native else set()
         for i, (cvp, cpos, cembeds) in enumerate(zip(cand_vp, cand_pos, cand_embeds)):
             localized_nvp = self._localize(cpos, self.node_pos)
             # cand overlap with node, connect cur_vp with localized_nvp
@@ -221,7 +231,29 @@ class GraphMap(object):
             # cand not overlap with node, create/update ghost
             else:
                 if self.merge_ghost:
-                    localized_gvp = self._localize(cpos, self.ghost_mean_pos)
+                    merge_pool = self.ghost_mean_pos
+                    if preserve_native:
+                        if cand_native_mask[i]:
+                            merge_pool = {k: v for k, v in self.ghost_mean_pos.items()
+                                          if k in self.native_ghosts}
+                        else:
+                            merge_pool = {k: v for k, v in self.ghost_mean_pos.items()
+                                          if k not in self.native_ghosts}
+                    localized_gvp = self._localize(cpos, merge_pool)
+                    # In the dense A1 arm, native proposals are inserted
+                    # first and become protected identities. A newly added
+                    # dense proposal may be nearby, but must not alter the
+                    # native ghost mean or remove the A0 action from A1.
+                    if (preserve_native and localized_gvp is not None and
+                            not cand_native_mask[i] and localized_gvp in protected_native_ghosts):
+                        # A dense proposal that falls inside a native ghost's
+                        # merge radius is omitted. Keeping it as a separate
+                        # ghost would change nearest-ghost localization for a
+                        # later native proposal and violate A0 subsethood.
+                        continue
+                    if (preserve_native and localized_gvp is not None and
+                            cand_native_mask[i] and localized_gvp not in self.native_ghosts):
+                        localized_gvp = None
                     # create ghost
                     if localized_gvp is None:
                         gvp = f'g{str(self.ghost_cnt)}'
@@ -243,6 +275,9 @@ class GraphMap(object):
                         if self.has_real_pos:
                             self.ghost_real_pos[gvp].append(cand_real_pos[i])
                     self.last_candidate_vps.append(gvp)
+                    if cand_native_mask[i]:
+                        protected_native_ghosts.add(gvp)
+                        self.native_ghosts.add(gvp)
                 else:
                     gvp = f'g{str(self.ghost_cnt)}'
                     self.ghost_cnt += 1

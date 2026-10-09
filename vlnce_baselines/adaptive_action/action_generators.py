@@ -17,6 +17,7 @@ ACTION_ABSTRACTIONS = {
     "default": ActionAbstractionSpec("default", 5, (7.0, 5.0)),
     "coarse": ActionAbstractionSpec("coarse", 3, (12.0, 7.0)),
     "fine": ActionAbstractionSpec("fine", 8, (4.0, 3.0)),
+    "dense_native_union": ActionAbstractionSpec("dense_native_union", 12, (4.0, 3.0)),
 }
 
 
@@ -56,6 +57,13 @@ def candidate_indices_from_heatmap(heatmap_probs, abstraction):
         max_predictions=spec.max_predictions,
         sigma=spec.sigma,
     ).squeeze(0).squeeze(0)[1:-1, :]
+    if str(abstraction).lower() == "dense_native_union":
+        native = nms(
+            wrapped.unsqueeze(0).unsqueeze(0),
+            max_predictions=ACTION_ABSTRACTIONS["default"].max_predictions,
+            sigma=ACTION_ABSTRACTIONS["default"].sigma,
+        ).squeeze(0).squeeze(0)[1:-1, :]
+        output = torch.maximum(output, native)
     indices = output.nonzero(as_tuple=False)
     return [
         (int(angle), int(distance), float(output[angle, distance].item()))

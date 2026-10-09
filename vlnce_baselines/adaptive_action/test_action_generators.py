@@ -38,6 +38,14 @@ class ActionAbstractionSmokeTest(unittest.TestCase):
         self.assertEqual(len(geometry["angles"]), len(geometry["scores"]))
         self.assertTrue(all(0.25 <= d <= 3.0 for d in geometry["distances"]))
 
+    def test_dense_native_union_contains_default_candidates(self):
+        torch.manual_seed(7)
+        heatmap = torch.rand(120, 12)
+        native = {(a, d) for a, d, _ in candidate_indices_from_heatmap(heatmap, "default")}
+        dense = {(a, d) for a, d, _ in candidate_indices_from_heatmap(heatmap, "dense_native_union")}
+        self.assertTrue(native.issubset(dense))
+        self.assertGreaterEqual(len(dense), len(native))
+
     def test_oracle_selector_is_analysis_only_and_stable(self):
         level, value = select_oracle_level({
             "coarse": [{"progress": 0.2}],
