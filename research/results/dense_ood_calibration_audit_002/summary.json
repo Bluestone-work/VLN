@@ -1,0 +1,41 @@
+{
+  "experiment_id": "DENSE-OOD-CALIBRATION-AUDIT-001",
+  "question": "H1 native representation contamination versus H2 new-action ranking/calibration",
+  "state_count_before_first_divergence": 154,
+  "divergent_states": 97,
+  "divergent_states_with_dense_action": 97,
+  "native_option_comparisons": 915,
+  "all_common_option_comparisons": 915,
+  "native_logit_delta_abs_mean": 0.5993437591492315,
+  "native_logit_delta_abs_max": 5.050083637237549,
+  "native_embedding_l2_mean": 2.6256358837550415,
+  "native_embedding_l2_max": 16.761305908854247,
+  "native_embedding_maxabs_mean": 0.3103544302013082,
+  "native_embedding_maxabs_max": 1.8103433847427368,
+  "posthoc_success_stratification": {
+    "retained": {
+      "states": 128,
+      "divergent_states": 78,
+      "native_option_comparisons": 774,
+      "native_logit_delta_abs_mean": 0.5928919931960314,
+      "native_embedding_l2_mean": 2.5984890329952077
+    },
+    "destroyed": {
+      "states": 26,
+      "divergent_states": 19,
+      "native_option_comparisons": 141,
+      "native_logit_delta_abs_mean": 0.6347598360838197,
+      "native_embedding_l2_mean": 2.774654766649447
+    }
+  },
+  "method": "Matched prefixes only; stop at first selected-action divergence; no rollout or label fitting",
+  "interpretation": "H1 supported if native embeddings/logits shift materially before divergence; H2 supported if native values remain stable while dense actions outrank them",
+  "source_sha256": {
+    "research/results/gate_a_native_policy_replication_001/manifest.json": "07535f9d63272bd76e45a759c74b6cef238f64d8a140e9c43eae21331a586022",
+    "research/results/gate_a_native_policy_replication_001/runs/train_a0/graph_options/graph_options.jsonl": "99e321fa422b099682caa7176133bf75817a2f03c5409588e7578b7d6a87ccaa",
+    "research/results/gate_a_native_policy_replication_001/runs/train_a1/graph_options/graph_options.jsonl": "038972cdcc64341a9e8b932a1194eaec0ca58d88bb10f495e43f67297a425821",
+    "research/results/gate_a_native_policy_replication_001/runs/unseen_a0/graph_options/graph_options.jsonl": "5d405b3d02d7f1884aeb226c324ecffe6624a23a815bbff727e847086567d1d4",
+    "research/results/gate_a_native_policy_replication_001/runs/unseen_a1/graph_options/graph_options.jsonl": "f0d09d0860a6b2fba3d0dcd9ad0d622e8c561282f5b6c1ded8dbb0d75caf3bb6"
+  },
+  "git_commit": "1dc2d4fa4d18dc6ceea813b0d62e9123789bd1e9"
+}
