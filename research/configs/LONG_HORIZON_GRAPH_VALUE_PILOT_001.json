@@ -1,0 +1,13 @@
+{
+  "experiment_id": "LONG-HORIZON-GRAPH-VALUE-PILOT-001",
+  "capture_root": "research/results/full_return_label_train16",
+  "states": 8,
+  "purpose": "Native graph identity, full admissible-set coverage, raw trace alignment, serialization and deployable-feature leakage checks",
+  "model_fit": false,
+  "privileged_input_to_model": false,
+  "success_threshold_m": 3.0,
+  "decision_horizon": 15,
+  "seed": 100,
+  "preference_rule": "research/LONG_HORIZON_GRAPH_VALUE_PROTOCOL.md",
+  "result_policy": "new directory only; never overwrite historical artifacts"
+}
