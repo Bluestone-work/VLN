@@ -73,7 +73,10 @@ class Viewer:
         self.draw_graph()
         state = self.sim.get_agent(0).get_state()
         mode = "ETPNav replay: Space step, P play" if self.trace else "manual: W/Up forward, A/Left, D/Right"
-        self.status.configure(text="{}   R reset   Esc/Q quit   |   decision {}/{} primitive {}/{}   position: {}".format(mode, self.graph_index, len(self.graph_rows), self.trace_index, len(self.trace), [round(float(x), 2) for x in state.position]))
+        finished = bool(self.graph_rows and self.graph_index >= len(self.graph_rows))
+        shown_decision = min(self.graph_index, len(self.graph_rows))
+        suffix = "   |   trajectory finished" if finished else ""
+        self.status.configure(text="{}   R reset   Esc/Q quit   |   decision {}/{} primitive {}/{}   position: {}{}".format(mode, shown_decision, len(self.graph_rows), self.trace_index, len(self.trace), [round(float(x), 2) for x in state.position], suffix))
         if self.playing:
             self.root.after(80, self.advance_trace)
 
@@ -125,10 +128,10 @@ class Viewer:
 
     def draw_graph(self):
         self.graph.delete("all")
-        if not self.graph_rows or self.graph_index >= len(self.graph_rows):
+        if not self.graph_rows:
             self.graph.create_text(210, 25, text="No graph trace loaded")
             return
-        row = self.graph_rows[self.graph_index]
+        row = self.graph_rows[min(self.graph_index, len(self.graph_rows) - 1)]
         points = []
         for option in row.get("options", []):
             action = unpack(option.get("action", {})); pos = action.get("ghost_pos", action.get("stop_pos"))
