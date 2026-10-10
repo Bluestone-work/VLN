@@ -40,6 +40,12 @@ def build_sim(scene, width, height):
     sensor.resolution = [height, width]
     sensor.position = [0.0, 1.5, 0.0]
     agent_cfg.sensor_specifications = [sensor]
+    depth = SensorSpec()
+    depth.uuid = "depth_sensor"
+    depth.sensor_type = SensorType.DEPTH
+    depth.resolution = [height, width]
+    depth.position = [0.0, 1.5, 0.0]
+    agent_cfg.sensor_specifications.append(depth)
     return habitat_sim.Simulator(habitat_sim.Configuration(sim_cfg, [agent_cfg]))
 
 
@@ -137,18 +143,40 @@ class Viewer:
             action = unpack(option.get("action", {})); pos = action.get("ghost_pos", action.get("stop_pos"))
             if pos is not None: points.append((float(pos[0]), float(pos[2])))
         gp = unpack(row.get("graph_position"))
-        if gp and "position" in gp: points.append((float(gp["position"][0]), float(gp["position"][2])))
+        if isinstance(gp, dict): gp = gp.get("position")
+        if gp is None: gp = self.sim.get_agent(0).get_state().position
+        points.append((float(gp[0]), float(gp[2])))
+        obstacle_points = []
+        depth = self.sim.get_sensor_observations().get("depth_sensor")
+        if depth is not None:
+            h, w = depth.shape[:2]
+            rotation = self.sim.get_agent(0).get_state().rotation
+            for v in range(8, h - 4, 12):
+                for u in range(4, w - 4, 12):
+                    d = float(depth[v, u])
+                    if not (0.15 < d < 3.0): continue
+                    lateral = (u - (w - 1) / 2.0) / max(w, 1) * d * 1.6
+                    world_ray = quaternion.rotate_vectors(rotation, np.asarray([lateral, 0.0, -d]))
+                    obstacle_points.append((float(gp[0] + world_ray[0]), float(gp[2] + world_ray[2])))
+            points.extend(obstacle_points)
         if not points: return
         xs, ys = zip(*points); xmin, xmax = min(xs), max(xs); ymin, ymax = min(ys), max(ys); scale = min(360/max(xmax-xmin,1e-3), 520/max(ymax-ymin,1e-3))
         def xy(p): return (30+(p[0]-xmin)*scale, 570-(p[1]-ymin)*scale)
         self.graph.create_text(210, 15, text="ETPNav graph decision {}  selected index {}".format(row.get("high_level_step"), row.get("effective_index")), fill="black")
-        if gp and "position" in gp:
-            x,y=xy((gp["position"][0],gp["position"][2])); self.graph.create_oval(x-7,y-7,x+7,y+7,fill="blue"); self.graph.create_text(x+10,y,text="current",anchor="w")
+        x,y=xy((gp[0],gp[2])); self.graph.create_oval(x-7,y-7,x+7,y+7,fill="blue"); self.graph.create_text(x+10,y,text="current",anchor="w")
         for option in row.get("options", []):
             action=unpack(option.get("action",{})); pos=action.get("ghost_pos",action.get("stop_pos"))
             if pos is None: continue
             x,y=xy((float(pos[0]),float(pos[2]))); idx=int(option.get("index",-1)); selected=idx==int(row.get("effective_index",-99)); color="red" if selected else ("orange" if option.get("current_proposal") else "gray")
             self.graph.create_oval(x-5,y-5,x+5,y+5,fill=color); self.graph.create_text(x+8,y,text="{}:{:.2f}".format(idx,float(option.get("logit",0))),anchor="w",fill="black")
+        # Project the current depth observation into a small local top-down
+        # obstacle cloud around the current node. This is observation-derived
+        # geometry, not privileged map or reference-path information.
+        if obstacle_points:
+            for obstacle in obstacle_points:
+                ox, oy = xy(obstacle)
+                self.graph.create_oval(ox - 1, oy - 1, ox + 1, oy + 1, fill="#00a6a6", outline="")
+            self.graph.create_text(210, 590, text="cyan: observed depth obstacles", fill="#007777")
 
     def close(self):
         self.sim.close()
