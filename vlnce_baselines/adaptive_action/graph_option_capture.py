@@ -29,7 +29,8 @@ def full_action(gmap, current, graph_id, tryout=False):
             'tryout': bool(tryout)}
 
 
-def enumerate_options(gmap, current, ids, mask, visited, logits, budget_stop, no_vp, embeddings=None):
+def enumerate_options(gmap, current, ids, mask, visited, logits, budget_stop, no_vp,
+                      embeddings=None, native_mask=None):
     n = len(ids)
     if not n or ids[0] is not None or any(len(x) != n for x in [mask, visited, logits]):
         raise ValueError('Graph ID, tensor length or STOP index mismatch')
@@ -45,9 +46,12 @@ def enumerate_options(gmap, current, ids, mask, visited, logits, budget_stop, no
             raise ValueError('Valid unvisited action has nonfinite logit')
         if i > 0 and graph_id not in gmap.ghost_pos:
             raise ValueError('Visited or unknown graph ID exposed as a valid action')
+        executable = i == 0 or not (budget_stop or no_vp)
+        if native_mask is not None:
+            executable = executable and bool(native_mask[i])
         option = {'index': i, 'graph_id': graph_id, 'logit': float(logits[i]),
                   'current_proposal': graph_id in gmap.last_candidate_vps,
-                  'admissible': i == 0 or not (budget_stop or no_vp),
+                  'admissible': executable,
                   'action': pack(full_action(gmap, current, graph_id))}
         if embeddings is not None:
             if not np.isfinite(embeddings[i]).all():
@@ -75,7 +79,8 @@ class GraphOptionCapture:
     def prepare(self, trainer, step, current, positions, nav_inputs, logits,
                 chosen, policy_chosen, no_vp, embeddings,
                 waypoint_heatmap=None, candidate_metadata=None,
-                isolated_native_embeds=None, isolated_native_logits=None):
+                isolated_native_embeds=None, isolated_native_logits=None,
+                full_logits=None):
         if self.pending is not None:
             raise RuntimeError('Uncommitted previous decision')
         if not np.array_equal(chosen, policy_chosen):
@@ -87,12 +92,18 @@ class GraphOptionCapture:
             mask = nav_inputs['gmap_masks'][i, :n].detach().cpu().numpy().astype(bool)
             visited = nav_inputs['gmap_visited_masks'][i, :n].detach().cpu().numpy().astype(bool)
             scores = logits[i, :n].detach().cpu().numpy()
+            full_scores = (full_logits[i, :n].detach().cpu().numpy()
+                           if full_logits is not None else None)
+            option_scores = full_scores if full_scores is not None else scores
+            native_mask = (nav_inputs['gmap_native_masks'][i, :n].detach().cpu().numpy().astype(bool)
+                           if full_scores is not None else None)
             features = embeddings[i, :n].detach().cpu().numpy() if embeddings is not None else None
             budget_stop = step >= trainer.max_len - 1
             policy_index = int(chosen[i])
             effective_index = 0 if policy_index == 0 or budget_stop or no_vp[i] else policy_index
             options = enumerate_options(trainer.gmaps[i], current[i], ids, mask, visited,
-                                        scores, budget_stop, no_vp[i], features)
+                                        option_scores, budget_stop, no_vp[i], features,
+                                        native_mask=native_mask)
             valid = {o['index']: o for o in options}
             if policy_index not in valid or not valid[effective_index]['admissible']:
                 raise ValueError('Selected action violates graph masks or episode budget')
@@ -107,6 +118,13 @@ class GraphOptionCapture:
                                  'budget_stop': bool(budget_stop), 'no_vp_left': bool(no_vp[i]),
                                  'forced_stop': policy_index != 0 and effective_index == 0,
                                  'options': options, 'privileged_labels_in_features': False}
+            if full_scores is not None:
+                row['dense_context'] = {
+                    'full_context_logits': [float(s) if math.isfinite(float(s)) else None
+                                            for s in full_scores],
+                    'native_mask': nav_inputs['gmap_native_masks'][i, :n].detach().cpu().tolist(),
+                    'dense_executable_count': 0,
+                }
             if isolated_native_embeds is not None or isolated_native_logits is not None:
                 if isolated_native_embeds is None or isolated_native_logits is None:
                     raise ValueError('A2 capture requires both isolated embeddings and logits')
@@ -153,6 +171,8 @@ class GraphOptionTraceTrainer(RLTrainer):
                 or not config.TASK_CONFIG.SIMULATOR.HABITAT_SIM_V0.ALLOW_SLIDING
                 or self.aaa_oracle_enabled or self.graph_selection_oracle_enabled
                 or self.aaa_diagnostics_enabled
-                or self.action_abstraction not in ('default', 'dense_native_union')):
+                or self.action_abstraction not in ('default', 'dense_native_union')
+                or str(getattr(config.ACTION_ABSTRACTION, 'DENSE_ISOLATION_MODE', 'off'))
+                not in ('off', 'capture', 'a2', 'context_mask')):
             raise ValueError('Graph option capture requires the calibrated frozen baseline protocol')
         self._graph_option_capture = GraphOptionCapture(os.environ['ETPNAV_GRAPH_OPTION_DIR'])

@@ -1820,7 +1820,8 @@ class RLTrainer(BaseVLNCETrainer):
                     waypoint_heatmap=wp_outputs.get('waypoint_heatmap_probs'),
                     candidate_metadata=candidate_metadata,
                     isolated_native_embeds=nav_outs.get('isolated_native_embeds'),
-                    isolated_native_logits=nav_outs.get('isolated_native_logits'))
+                    isolated_native_logits=nav_outs.get('isolated_native_logits'),
+                    full_logits=nav_outs.get('full_global_logits'))
             for i, gmap in enumerate(self.gmaps):
                 policy_stop = int(cpu_a_t[i]) == 0
                 forced_by_max_len = (not policy_stop) and stepk == self.max_len - 1

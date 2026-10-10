@@ -755,6 +755,7 @@ class GlocalTextPathNavCMT(BertPreTrainedModel):
             isolated_logits.masked_fill_(gmap_visited_masks, -float('inf'))
             isolated_logits.masked_fill_(gmap_native_masks.logical_not(), -float('inf'))
 
+        full_global_logits = global_logits
         outs = {
             'gmap_embeds': gmap_embeds,
             'global_logits': global_logits,
@@ -765,6 +766,14 @@ class GlocalTextPathNavCMT(BertPreTrainedModel):
             if dense_isolation_mode == 'a2':
                 outs['global_logits'] = torch.where(
                     gmap_native_masks, isolated_logits, global_logits)
+        if dense_isolation_mode == 'context_mask':
+            if gmap_native_masks is None:
+                raise ValueError('context_mask requires native action mask')
+            # Dense nodes participate in encoding and SAP scoring above. Mask
+            # them only after full-context logits have been computed.
+            outs['full_global_logits'] = full_global_logits
+            outs['global_logits'] = full_global_logits.masked_fill(
+                gmap_native_masks.logical_not(), -float('inf'))
         return outs
 
     def forward(self, mode, batch, **kwargs):
