@@ -6,12 +6,16 @@ windowed simulator, displays the RGB sensor, and accepts keyboard motion.
 Keys: W/Up forward, A/Left turn left, D/Right turn right, R reset, Esc/Q quit.
 """
 import argparse
+import json
 import tkinter as tk
+import numpy as np
+import quaternion
 from pathlib import Path
 
 import habitat_sim
 from habitat_sim.agent import AgentConfiguration
 from habitat_sim.sensor import SensorSpec, SensorType
+from habitat_sim.agent import AgentState
 from PIL import Image, ImageTk
 
 
@@ -30,8 +34,11 @@ def build_sim(scene, width, height):
 
 
 class Viewer:
-    def __init__(self, sim, width, height):
+    def __init__(self, sim, width, height, trace=None):
         self.sim, self.width, self.height = sim, width, height
+        self.trace = trace or []
+        self.trace_index = 0
+        self.playing = False
         self.root = tk.Tk()
         self.root.title("ETPNav Habitat Viewer")
         self.label = tk.Label(self.root, bg="black")
@@ -48,12 +55,30 @@ class Viewer:
         self.label.configure(image=image)
         self.label.image = image
         state = self.sim.get_agent(0).get_state()
-        self.status.configure(text="W/Up forward   A/Left turn   D/Right turn   R reset   Esc/Q quit   |   position: {}".format([round(float(x), 2) for x in state.position]))
+        mode = "ETPNav replay: Space step, P play" if self.trace else "manual: W/Up forward, A/Left, D/Right"
+        self.status.configure(text="{}   R reset   Esc/Q quit   |   primitive {}/{}   position: {}".format(mode, self.trace_index, len(self.trace), [round(float(x), 2) for x in state.position]))
+        if self.playing:
+            self.root.after(80, self.advance_trace)
+
+    def advance_trace(self):
+        if self.trace_index >= len(self.trace):
+            self.playing = False
+            return
+        action = int(self.trace[self.trace_index]["action"])
+        self.sim.step({1: "move_forward", 2: "turn_left", 3: "turn_right"}.get(action, "move_forward"))
+        self.trace_index += 1
+        self.update()
 
     def key(self, event):
         key = event.keysym.lower()
         if key in ("escape", "q"):
             self.close(); return
+        if key == "space" and self.trace:
+            self.advance_trace(); return
+        if key == "p" and self.trace:
+            self.playing = not self.playing
+            if self.playing: self.advance_trace()
+            return
         if key in ("w", "up"):
             self.sim.step("move_forward")
         elif key in ("a", "left"):
@@ -62,6 +87,15 @@ class Viewer:
             self.sim.step("turn_right")
         elif key == "r":
             self.sim.reset()
+            self.trace_index = 0
+            self.playing = False
+            if self.trace:
+                first = self.trace[0]["pre_pose"]
+                state = AgentState()
+                state.position = np.asarray(first["position"], dtype=np.float32)
+                q = first["rotation"]
+                state.rotation = quaternion.quaternion(q[3], q[0], q[1], q[2])
+                self.sim.get_agent(0).set_state(state)
         self.update()
 
     def close(self):
@@ -77,11 +111,25 @@ def main():
     p.add_argument("--scene", default="data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb")
     p.add_argument("--width", type=int, default=800)
     p.add_argument("--height", type=int, default=600)
+    p.add_argument("--trace", type=Path, help="ETPNav primitive trace JSONL for replay")
     args = p.parse_args()
     scene = Path(args.scene)
     if not scene.exists():
         raise FileNotFoundError(scene)
-    Viewer(build_sim(scene, args.width, args.height), args.width, args.height).run()
+    trace = []
+    if args.trace:
+        for line in args.trace.open():
+            row = json.loads(line)
+            trace.extend({"action": x["action"], "pre_pose": row["pre_pose"]} for x in row.get("primitives", []))
+    viewer = Viewer(build_sim(scene, args.width, args.height), args.width, args.height, trace)
+    if trace:
+        state = AgentState()
+        state.position = np.asarray(trace[0]["pre_pose"]["position"], dtype=np.float32)
+        q = trace[0]["pre_pose"]["rotation"]
+        state.rotation = quaternion.quaternion(q[3], q[0], q[1], q[2])
+        viewer.sim.get_agent(0).set_state(state)
+        viewer.update()
+    viewer.run()
 
 
 if __name__ == "__main__":
