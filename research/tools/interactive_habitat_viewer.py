@@ -50,13 +50,14 @@ def build_sim(scene, width, height):
 
 
 class Viewer:
-    def __init__(self, sim, width, height, trace=None, graph_rows=None):
+    def __init__(self, sim, width, height, trace=None, graph_rows=None, top_k=5):
         self.sim, self.width, self.height = sim, width, height
         self.trace = trace or []
         self.trace_index = 0
         self.playing = False
         self.graph_rows = graph_rows or []
         self.graph_index = 0
+        self.top_k = top_k
         self.root = tk.Tk()
         self.root.title("ETPNav Habitat Viewer")
         self.frame = tk.Frame(self.root)
@@ -139,7 +140,24 @@ class Viewer:
             return
         row = self.graph_rows[min(self.graph_index, len(self.graph_rows) - 1)]
         points = []
-        for option in row.get("options", []):
+        admissible = [o for o in row.get("options", []) if o.get("admissible", True)]
+        selected_index = int(row.get("effective_index", -99))
+        ranked = sorted(admissible, key=lambda o: (-float(o.get("logit", float("-inf"))), int(o.get("index", -1))))
+        visible_options = {}
+        for option in ranked[:self.top_k]:
+            action = unpack(option.get("action", {}))
+            pos = action.get("ghost_pos", action.get("stop_pos"))
+            if pos is not None and hasattr(self.sim, "pathfinder"):
+                try:
+                    if not self.sim.pathfinder.is_navigable(np.asarray(pos, dtype=np.float32)):
+                        continue
+                except Exception:
+                    pass
+            visible_options[int(option.get("index", -1))] = option
+        for option in admissible:
+            if int(option.get("index", -1)) == selected_index:
+                visible_options[selected_index] = option
+        for option in visible_options.values():
             action = unpack(option.get("action", {})); pos = action.get("ghost_pos", action.get("stop_pos"))
             if pos is not None: points.append((float(pos[0]), float(pos[2])))
         gp = unpack(row.get("graph_position"))
@@ -158,13 +176,13 @@ class Viewer:
                     lateral = (u - (w - 1) / 2.0) / max(w, 1) * d * 1.6
                     world_ray = quaternion.rotate_vectors(rotation, np.asarray([lateral, 0.0, -d]))
                     obstacle_points.append((float(gp[0] + world_ray[0]), float(gp[2] + world_ray[2])))
-            points.extend(obstacle_points)
+        points.extend(obstacle_points)
         if not points: return
         xs, ys = zip(*points); xmin, xmax = min(xs), max(xs); ymin, ymax = min(ys), max(ys); scale = min(360/max(xmax-xmin,1e-3), 520/max(ymax-ymin,1e-3))
         def xy(p): return (30+(p[0]-xmin)*scale, 570-(p[1]-ymin)*scale)
         self.graph.create_text(210, 15, text="ETPNav graph decision {}  selected index {}".format(row.get("high_level_step"), row.get("effective_index")), fill="black")
         x,y=xy((gp[0],gp[2])); self.graph.create_oval(x-7,y-7,x+7,y+7,fill="blue"); self.graph.create_text(x+10,y,text="current",anchor="w")
-        for option in row.get("options", []):
+        for option in visible_options.values():
             action=unpack(option.get("action",{})); pos=action.get("ghost_pos",action.get("stop_pos"))
             if pos is None: continue
             x,y=xy((float(pos[0]),float(pos[2]))); idx=int(option.get("index",-1)); selected=idx==int(row.get("effective_index",-99)); color="red" if selected else ("orange" if option.get("current_proposal") else "gray")
@@ -176,7 +194,7 @@ class Viewer:
             for obstacle in obstacle_points:
                 ox, oy = xy(obstacle)
                 self.graph.create_oval(ox - 1, oy - 1, ox + 1, oy + 1, fill="#00a6a6", outline="")
-            self.graph.create_text(210, 590, text="cyan: observed depth obstacles", fill="#007777")
+            self.graph.create_text(210, 590, text="cyan: visible depth returns; top-{} admissible actions".format(self.top_k), fill="#007777")
 
     def close(self):
         self.sim.close()
@@ -194,6 +212,7 @@ def main():
     p.add_argument("--trace", type=Path, help="ETPNav primitive trace JSONL for replay")
     p.add_argument("--graph-options", type=Path, help="ETPNav graph_options.jsonl for decision visualization")
     p.add_argument("--episode-id", default="1778")
+    p.add_argument("--top-k", type=int, default=5)
     args = p.parse_args()
     scene = Path(args.scene)
     if not scene.exists():
@@ -215,7 +234,7 @@ def main():
     for row in trace_rows:
         match = next((g for g in graph_rows if int(g.get("high_level_step", -1)) == int(row.get("high_level_step", -2))), None)
         if match is not None: match["primitives"] = row.get("primitives", [])
-    viewer = Viewer(build_sim(scene, args.width, args.height), args.width, args.height, trace, graph_rows)
+    viewer = Viewer(build_sim(scene, args.width, args.height), args.width, args.height, trace, graph_rows, args.top_k)
     if trace:
         state = AgentState()
         state.position = np.asarray(trace[0]["pre_pose"]["position"], dtype=np.float32)
