@@ -1,0 +1,8 @@
+{
+  "tool": "/home/wj/VLN-CE/ETPNav/research/tools/build_dense_single_override_dataset.py",
+  "a0": "research/results/gate_a_native_policy_replication_001/runs/unseen_a0",
+  "a1": "research/results/gate_a_native_policy_replication_001/runs/unseen_a1",
+  "a0_options_sha256": "5d405b3d02d7f1884aeb226c324ecffe6624a23a815bbff727e847086567d1d4",
+  "a1_options_sha256": "f0d09d0860a6b2fba3d0dcd9ad0d622e8c561282f5b6c1ded8dbb0d75caf3bb6",
+  "semantic_guard": "dense full-return outcomes are not used as single-override labels"
+}

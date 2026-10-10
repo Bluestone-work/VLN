@@ -1,0 +1,9 @@
+# Dense Single-Override Causal Dataset Protocol
+
+This protocol freezes the causal unit before any continuation outcomes are inspected. A state is an exact A0/A1 matched prefix: episode, high-level step, pre-pose, and observation hashes must agree. The intervention is the highest-scoring newly introduced A1 dense candidate at that state. The control executes the native A0 action and then the native navigator. The intervention executes that one dense action once and immediately returns to the native navigator. No later dense action is allowed.
+
+The three sampling pools are native-success controls, native-failure/unresolved routes, and outcome-blind ordinary states. A state is eligible only when the exact simulator, GraphMap, visited/history, controller, instruction, and RNG state can be restored or deterministically replayed and the native control passes the post-replay equality gate. Prefix reconstruction from episode start is acceptable only when pose, observation hashes, graph state, RNG, primitive trace, and final metrics are identical.
+
+Raw continuation metrics are retained: success, final goal distance, SPL, nDTW, SDTW, path length, primitive steps, collisions, high-level decisions, stop reason, and action identities. Labels are frozen lexicographically: success gain is `BENEFIT`; success loss is `HARM`; same-success changes are `BENEFIT` or `HARM` only when trajectory quality/efficiency changes exceed the deadband; otherwise `UNCERTAIN`. The deadband is |nDTW| <= 0.02, |SPL| <= 0.02, path length <= 0.5 m, primitive steps <= 3, and collision count <= 1. No classifier or threshold search is permitted.
+
+The current A0/A1 captures contain prefix traces but no complete simulator/GraphMap snapshot at each state. Therefore this protocol requires a fidelity runner before any pair receives a label. Dense full-return trajectories are explicitly excluded because subsequent decisions remain dense and create cascading confounding.
