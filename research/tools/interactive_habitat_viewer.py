@@ -185,8 +185,14 @@ class Viewer:
         for option in visible_options.values():
             action=unpack(option.get("action",{})); pos=action.get("ghost_pos",action.get("stop_pos"))
             if pos is None: continue
-            x,y=xy((float(pos[0]),float(pos[2]))); idx=int(option.get("index",-1)); selected=idx==int(row.get("effective_index",-99)); color="red" if selected else ("orange" if option.get("current_proposal") else "gray")
-            self.graph.create_oval(x-5,y-5,x+5,y+5,fill=color); self.graph.create_text(x+8,y,text="{}:{:.2f}".format(idx,float(option.get("logit",0))),anchor="w",fill="black")
+            x,y=xy((float(pos[0]),float(pos[2]))); idx=int(option.get("index",-1)); selected=idx==int(row.get("effective_index",-99)); is_stop=int(action.get("act",-1)) == 0; color="red" if selected else ("orange" if option.get("current_proposal") else "gray")
+            if is_stop:
+                self.graph.create_rectangle(x-6,y-6,x+6,y+6,fill=color,outline="black")
+                label="STOP" if selected else "STOP:{:.2f}".format(float(option.get("logit",0)))
+            else:
+                self.graph.create_oval(x-5,y-5,x+5,y+5,fill=color)
+                label="{}:{:.2f}".format(idx,float(option.get("logit",0)))
+            self.graph.create_text(x+8,y,text=label,anchor="w",fill="black")
         # Project the current depth observation into a small local top-down
         # obstacle cloud around the current node. This is observation-derived
         # geometry, not privileged map or reference-path information.
