@@ -1,0 +1,9 @@
+{
+  "head": "8a11e50eac5370ec285b2132c6ac92d8041b5d18",
+  "stop": {"valid_records": 0, "top1_goal_node_recall": null, "mrr": null, "status": "NO-GO_ALIGNMENT_MISSING"},
+  "instruction_progress": {"valid_records": 0, "ordered_phrase_evidence": null, "status": "NO-GO_ALIGNMENT_MISSING"},
+  "native_ghost_selection": {"valid_records": 0, "semantic_logit_disagreements": 0, "status": "NO-GO_ALIGNMENT_MISSING"},
+  "negative_evidence": ["no panorama/viewpoint join", "no object/place/relation evidence", "no hallucination test possible", "no complementarity test possible"],
+  "model_training": false,
+  "policy_modified": false
+}
