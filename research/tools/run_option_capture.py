@@ -28,6 +28,7 @@ def main():
     parser.add_argument('--output-dir', type=Path, required=True)
     parser.add_argument('--exp-name', required=True)
     parser.add_argument('--trace', action='store_true')
+    parser.add_argument('--semantic-capture', action='store_true', help='save opt-in current RGB-D observations alongside graph rows')
     args = parser.parse_args()
     cfg = json.loads(args.config.read_text())
     args.output_dir.mkdir(parents=True, exist_ok=False)
@@ -35,6 +36,8 @@ def main():
         os.environ['ETPNAV_OPTION_TRACE_DIR'] = str(args.output_dir.resolve() / 'traces')
         if cfg.get('capture_waypoint_provenance', False):
             os.environ['ETPNAV_DENSE_CANDIDATE_CAPTURE'] = '1'
+        if args.semantic_capture:
+            os.environ['ETPNAV_SEMANTIC_CAPTURE'] = '1'
     else:
         os.environ.pop('ETPNAV_OPTION_TRACE_DIR', None)
     from run import run_exp
@@ -47,6 +50,7 @@ def main():
     else:
         os.environ.pop('ETPNAV_GRAPH_OPTION_DIR', None)
         os.environ.pop('ETPNAV_DENSE_CANDIDATE_CAPTURE', None)
+        os.environ.pop('ETPNAV_SEMANTIC_CAPTURE', None)
     overrides = {
         'TRAINER_NAME': 'SS-ETP-OptionCapture' if graph_capture else 'SS-ETP',
         'ENV_NAME': 'VLNCEOptionTraceEnv' if args.trace else 'VLNCEDaggerEnv',

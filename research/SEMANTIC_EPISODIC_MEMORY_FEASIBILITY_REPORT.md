@@ -1,44 +1,88 @@
 # Semantic Episodic Memory Feasibility Report
 
-`HEAD: 8a11e50eac5370ec285b2132c6ac92d8041b5d18` was audited without changing any existing dense-action, A2, or single-override implementation.
+## Scope
 
-## Current ETP node stores
+This experiment audited the released ETPNav checkpoint without changing policy,
+GraphMap, waypoint prediction, controller, STOP mechanism, evaluator, or action
+set. The alignment cohort is the frozen 44-episode val-unseen native-success
+control set (`seed=100`, `ckpt.iter12000.pth`). It produced 373 decision states
+across 11 scenes. RGB-D observations were captured before each high-level action
+and were written independently from the existing post-action trace.
 
-Real nodes store position, panorama visual embedding, visit step, graph edges, weighted shortest paths, and a policy-generated stop score. Ghosts store proposal/mean positions, running visual embedding sum and count, front-node identities, and optional real positions. Runtime graph inputs add relative bearing/elevation/distance, graph distance, graph step, visited mask, and native provenance. Instruction context is recomputed by the graph/language transformer; it is not persisted as a structured node memory.
+## Current ETP node memory
 
-## Missing explicit information
+Visited and ghost nodes retain position/geometry, visual feature tensors, graph
+connectivity and graph distance, step/visit state, stop-related scores, and the
+front-node/ghost aggregation relationships used by GraphMap. Language-conditioned
+information exists inside the policy's contextual latent representations and
+logits, but the persistent node schema has no explicit object or landmark
+identity, place category, instruction-progress index, or transition relation such
+as “pass the sofa” or “turn at the painting”. These omissions are documented in
+`SEMANTIC_MEMORY_AUDIT.md`.
 
-There is no object or landmark identity, place category, instruction progress, completed sub-instruction, or transition relation. These may be implicit in latent visual/contextual embeddings, but the implementation has no field that can be inspected or audited as semantic evidence. Node orientation is also not persisted as a node field.
+## Capture fidelity
 
-## Offline extraction
+All 373 graph rows match a unique trace key. All 373 RGB and 373 depth files are
+present and their 746 stored SHA-256 values match. No row advertises privileged
+labels in features. The post-action trace hashes intentionally do not match the
+pre-action semantic hashes (0/746 matches), which confirms the two timestamps are
+distinct rather than indicating file corruption. The machine-readable audit is
+`research/results/semantic_memory_alignment_val_unseen_001/alignment_audit.json`.
 
-The frozen native A0 captures were processed by `research/tools/extract_semantic_memory.py`.
+The frozen policy reproduction remained 44/44 successful, with SPL 0.818203 and
+nDTW 0.745077. This is an analysis-only capture, not a new policy result.
 
-| Cohort | Decision states | Records | Instruction phrase hypotheses | Valid visual semantic records |
-|---|---:|---:|---:|---:|
-| train A0 | 380 | 4,099 | 3,979 | 0 |
-| val-unseen A0 | 373 | 4,251 | 3,649 | 0 |
+## Offline semantic probe
 
-The output is under `research/semantic_memory/`. Every record retains raw node/action metadata, instruction text, candidate hypotheses, native logit/position where available, and an explicit `unavailable_no_panorama_join` status. The CLIP view feature HDF5 exists in the repository, but the frozen traces expose observation hashes and runtime numeric graph ids rather than a stable simulator viewpoint-to-HDF5 key. Joining it would require a new validated panorama capture/replay step.
+The local `openai_clip` ViT-B/32 checkpoint was used only as an image/text probe
+over the saved pre-action RGB frames. It did not generate labels, alter policy,
+or consume outcome/reference-path information. Every decision node received a
+probe record, but the probe is not a validated object detector or relation model.
 
-## STOP
+STOP feasibility is currently weak. The Spearman correlation between native STOP
+logit and the instruction-phrase CLIP score is 0.0126 over 314 valid node pairs;
+the 10,000 scene bootstrap CI is [-0.0869, 0.1216]. This does not show an
+independent goal-node signal. A privileged goal-node semantic label was not
+invented for this audit.
 
-Semantic STOP feasibility is not estimable from this frozen extraction. There are 0 valid instruction-grounded visual evidence records, so node ranking, top-1 goal-node recall, MRR, and scene bootstrap CIs are undefined. The existing `node_stop_score` is a policy output and is not silently reused as semantic evidence. No representative semantic STOP failure can be claimed.
+Instruction-progress feasibility is also weak. The strongest prompted phrase
+sequence was monotone in 21/44 episodes (47.7%), with 164 lexical-order
+inversions overall. This is a descriptive consistency check, not a claim that
+the phrases were actually visible or completed.
 
-## Instruction progress
+Native ghost selection was not validly testable from this capture. One current
+panorama is shared by all native ghosts; there is no action-conditioned corridor,
+endpoint view, or per-ghost semantic observation. Reusing the current image score
+for every ghost would be leakage of an unobserved relation and would not answer
+the selection question.
 
-The phrase list is a lexical hypothesis from the instruction only; it contains no observation-grounded match or ordering evidence. Therefore strongest-evidence node, phrase-order recovery, progress confusion, and “passed landmark then failed” analyses all have zero valid samples. Treating instruction text alone as progress would be leakage and was rejected.
+The broad CLIP label agreed with one instruction landmark phrase in only 26.1%
+of 314 pairs. This low agreement, together with the near-zero STOP correlation,
+is negative evidence against treating generic image/text similarity as semantic
+memory.
 
-## Native ghost selection
+## Failure analysis
 
-The native action set and logits are available, but semantic evidence for any native ghost is absent. The number of actions with a semantic-vs-logit disagreement is zero by construction, and no claim about a better native action is valid. This also means the experiment cannot distinguish semantic usefulness from existing instruction-conditioned graph embeddings.
-
-## Negative evidence and failure analysis
-
-The main negative result is infrastructure-level: object/place/relation recognition cannot be recovered from these artifacts. A generic caption would be unsupported. The current cohort cannot test hallucination, relation accuracy, complementarity, or whether latent ETP features already encode the same signal. The CLIP feature store is not enough without a deterministic viewpoint join. This is a data/interface failure, not evidence that semantic memory has no value.
+The smoke and full cohort show three limitations. First, generic CLIP prompts can
+rank scene categories while missing the instruction's relation and transition.
+Second, a landmark-like score does not establish that the landmark was reached,
+passed, or should trigger STOP. Third, current capture has no per-action future
+view, so it cannot distinguish a useful native ghost from a visually plausible
+but wrong branch. The MP3D scenes also have no semantic annotations, preventing a
+direct object-level ground-truth audit.
 
 ## Decision
 
-Semantic memory is **PARTIAL / UNTESTED**, not demonstrated complementary. Current status is **NO-GO for model changes**. Do not add semantic nodes/tokens to the Graph Transformer, and do not start PPO/GRPO or dense-action experiments.
+**PARTIAL / NO-GO for changing the model.** The capture infrastructure is valid
+and reproducible, and explicit memory remains structurally absent from GraphMap.
+However, this first offline probe does not demonstrate complementary semantic
+signal for STOP, instruction progress, or native ghost selection. Do not add
+semantic nodes to the Graph Transformer, train a fusion head, or start RL.
 
-The single highest-value next experiment is a small, frozen, scene-balanced panorama replay capture that records `(episode, high_level_step, real node/ghost id, RGB panorama pixels or CLIP key, instruction, graph state)` with deterministic observation hashes. Once this alignment gate passes, run the same three offline tests before considering a read-only late/residual fusion branch. The preferred future architecture remains a shadow semantic side memory with confidence-gated late fusion, because adding graph nodes risks the already demonstrated representation contamination.
+The single highest-value next experiment is a small, preregistered
+action-conditioned semantic capture: render or replay each native ghost's
+controller corridor/endpoint observation from the same state, then test whether
+instruction-grounded evidence separates the native action selected by ETPNav from
+another admissible native ghost. It must preserve the current graph and remain a
+read-only side-memory analysis. If that experiment still fails to add signal,
+stop this semantic-memory direction.

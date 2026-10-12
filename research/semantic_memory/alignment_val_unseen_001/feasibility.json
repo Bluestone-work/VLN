@@ -1,0 +1,380 @@
+{
+  "summary": {
+    "decision_nodes": 373,
+    "episodes": 44,
+    "scenes": 11,
+    "stop_vs_instruction_semantic_spearman": 0.012612298332979638,
+    "stop_vs_instruction_semantic_pairs": 314,
+    "scene_bootstrap_10000_spearman_ci": [
+      -0.0869436509687692,
+      0.12156826413458446
+    ],
+    "top_broad_label_matches_instruction_phrase_rate": 0.2611464968152866,
+    "broad_label_pairs": 314,
+    "progress_episode_count": 44,
+    "progress_monotone_episode_rate": 0.4772727272727273,
+    "progress_total_inversions": 164,
+    "native_ghost_selection_tested": false,
+    "native_ghost_selection_reason": "single current panorama is not action-conditioned; no per-ghost visual corridor or endpoint observation was captured",
+    "future_outcomes_used_as_input": false,
+    "notes": [
+      "STOP comparison is correlation only; no privileged goal-node semantic label is inferred.",
+      "CLIP prompt scores are probes and are not object, relation, or instruction-completion ground truth.",
+      "Progress order uses lexical phrase order from the instruction and is descriptive, not a learned label."
+    ]
+  },
+  "progress_by_episode": [
+    {
+      "episode_id": "1778",
+      "steps": 4,
+      "phrase_count": 4,
+      "matched_steps": 4,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "413",
+      "steps": 15,
+      "phrase_count": 2,
+      "matched_steps": 15,
+      "inversions": 13,
+      "monotone": false
+    },
+    {
+      "episode_id": "651",
+      "steps": 9,
+      "phrase_count": 0,
+      "matched_steps": 0,
+      "inversions": 0,
+      "monotone": false
+    },
+    {
+      "episode_id": "1624",
+      "steps": 6,
+      "phrase_count": 0,
+      "matched_steps": 0,
+      "inversions": 0,
+      "monotone": false
+    },
+    {
+      "episode_id": "1483",
+      "steps": 5,
+      "phrase_count": 2,
+      "matched_steps": 5,
+      "inversions": 2,
+      "monotone": false
+    },
+    {
+      "episode_id": "783",
+      "steps": 6,
+      "phrase_count": 1,
+      "matched_steps": 6,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "885",
+      "steps": 7,
+      "phrase_count": 1,
+      "matched_steps": 7,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "1552",
+      "steps": 9,
+      "phrase_count": 1,
+      "matched_steps": 9,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "776",
+      "steps": 9,
+      "phrase_count": 3,
+      "matched_steps": 9,
+      "inversions": 19,
+      "monotone": false
+    },
+    {
+      "episode_id": "507",
+      "steps": 6,
+      "phrase_count": 2,
+      "matched_steps": 6,
+      "inversions": 2,
+      "monotone": false
+    },
+    {
+      "episode_id": "893",
+      "steps": 8,
+      "phrase_count": 2,
+      "matched_steps": 8,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "14",
+      "steps": 9,
+      "phrase_count": 3,
+      "matched_steps": 9,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "1263",
+      "steps": 7,
+      "phrase_count": 2,
+      "matched_steps": 7,
+      "inversions": 10,
+      "monotone": false
+    },
+    {
+      "episode_id": "1026",
+      "steps": 12,
+      "phrase_count": 2,
+      "matched_steps": 12,
+      "inversions": 24,
+      "monotone": false
+    },
+    {
+      "episode_id": "833",
+      "steps": 7,
+      "phrase_count": 0,
+      "matched_steps": 0,
+      "inversions": 0,
+      "monotone": false
+    },
+    {
+      "episode_id": "159",
+      "steps": 7,
+      "phrase_count": 2,
+      "matched_steps": 7,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "1608",
+      "steps": 10,
+      "phrase_count": 1,
+      "matched_steps": 10,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "1803",
+      "steps": 8,
+      "phrase_count": 4,
+      "matched_steps": 8,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "931",
+      "steps": 15,
+      "phrase_count": 1,
+      "matched_steps": 15,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "166",
+      "steps": 8,
+      "phrase_count": 0,
+      "matched_steps": 0,
+      "inversions": 0,
+      "monotone": false
+    },
+    {
+      "episode_id": "382",
+      "steps": 10,
+      "phrase_count": 0,
+      "matched_steps": 0,
+      "inversions": 0,
+      "monotone": false
+    },
+    {
+      "episode_id": "1677",
+      "steps": 7,
+      "phrase_count": 1,
+      "matched_steps": 7,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "1568",
+      "steps": 5,
+      "phrase_count": 2,
+      "matched_steps": 5,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "370",
+      "steps": 6,
+      "phrase_count": 4,
+      "matched_steps": 6,
+      "inversions": 4,
+      "monotone": false
+    },
+    {
+      "episode_id": "1186",
+      "steps": 6,
+      "phrase_count": 1,
+      "matched_steps": 6,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "500",
+      "steps": 10,
+      "phrase_count": 2,
+      "matched_steps": 10,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "381",
+      "steps": 15,
+      "phrase_count": 4,
+      "matched_steps": 15,
+      "inversions": 33,
+      "monotone": false
+    },
+    {
+      "episode_id": "1093",
+      "steps": 7,
+      "phrase_count": 1,
+      "matched_steps": 7,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "1507",
+      "steps": 7,
+      "phrase_count": 2,
+      "matched_steps": 7,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "730",
+      "steps": 11,
+      "phrase_count": 1,
+      "matched_steps": 11,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "1149",
+      "steps": 9,
+      "phrase_count": 2,
+      "matched_steps": 9,
+      "inversions": 10,
+      "monotone": false
+    },
+    {
+      "episode_id": "1174",
+      "steps": 8,
+      "phrase_count": 3,
+      "matched_steps": 8,
+      "inversions": 4,
+      "monotone": false
+    },
+    {
+      "episode_id": "1708",
+      "steps": 10,
+      "phrase_count": 1,
+      "matched_steps": 10,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "107",
+      "steps": 8,
+      "phrase_count": 4,
+      "matched_steps": 8,
+      "inversions": 7,
+      "monotone": false
+    },
+    {
+      "episode_id": "1278",
+      "steps": 8,
+      "phrase_count": 0,
+      "matched_steps": 0,
+      "inversions": 0,
+      "monotone": false
+    },
+    {
+      "episode_id": "268",
+      "steps": 14,
+      "phrase_count": 1,
+      "matched_steps": 14,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "1689",
+      "steps": 11,
+      "phrase_count": 2,
+      "matched_steps": 11,
+      "inversions": 12,
+      "monotone": false
+    },
+    {
+      "episode_id": "7",
+      "steps": 5,
+      "phrase_count": 0,
+      "matched_steps": 0,
+      "inversions": 0,
+      "monotone": false
+    },
+    {
+      "episode_id": "640",
+      "steps": 6,
+      "phrase_count": 0,
+      "matched_steps": 0,
+      "inversions": 0,
+      "monotone": false
+    },
+    {
+      "episode_id": "1054",
+      "steps": 5,
+      "phrase_count": 2,
+      "matched_steps": 5,
+      "inversions": 6,
+      "monotone": false
+    },
+    {
+      "episode_id": "1605",
+      "steps": 9,
+      "phrase_count": 2,
+      "matched_steps": 9,
+      "inversions": 6,
+      "monotone": false
+    },
+    {
+      "episode_id": "553",
+      "steps": 15,
+      "phrase_count": 1,
+      "matched_steps": 15,
+      "inversions": 0,
+      "monotone": true
+    },
+    {
+      "episode_id": "392",
+      "steps": 9,
+      "phrase_count": 2,
+      "matched_steps": 9,
+      "inversions": 12,
+      "monotone": false
+    },
+    {
+      "episode_id": "1657",
+      "steps": 5,
+      "phrase_count": 1,
+      "matched_steps": 5,
+      "inversions": 0,
+      "monotone": true
+    }
+  ]
+}

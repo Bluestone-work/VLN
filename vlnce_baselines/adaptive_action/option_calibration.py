@@ -109,6 +109,15 @@ class OptionTraceEnv(VLNCEDaggerEnv):
                                           'pose': state_snapshot(self._env.sim)})
         return result
 
+    def get_current_visual(self):
+        """Return the current base RGB-D sensors for opt-in semantic capture."""
+        observations = self._env.sim.get_sensor_observations()
+        result = {}
+        for key in ('rgb', 'depth'):
+            if key in observations:
+                result[key] = np.asarray(observations[key])
+        return result
+
     def step(self, action, vis_info, *args, **kwargs):
         # Capture typed action values before any execution or serialization.
         record = {'schema_version': 1, 'privileged_analysis_only': True,

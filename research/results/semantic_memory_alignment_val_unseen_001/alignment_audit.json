@@ -1,0 +1,20 @@
+{
+  "capture": "research/results/semantic_memory_alignment_val_unseen_001",
+  "graph_rows": 373,
+  "trace_rows": 373,
+  "unique_graph_keys": 373,
+  "unique_trace_keys": 373,
+  "key_sets_equal": true,
+  "semantic_visual_rows": 373,
+  "rgb_files": 373,
+  "depth_files": 373,
+  "file_hash_matches": 746,
+  "file_hash_mismatches": [],
+  "state_metadata_mismatches": [],
+  "trace_post_hash_comparisons": 746,
+  "trace_post_hash_matches": 0,
+  "trace_post_hash_nonmatches_expected_timing": 746,
+  "selected_action_records": 373,
+  "privileged_input_violations": [],
+  "status": "PASS_WITH_EXPLICIT_PRE_ACTION_TIMING"
+}

@@ -1,0 +1,17 @@
+{
+  "experiment_id": "SEMANTIC-MEMORY-ALIGNMENT-VAL-UNSEEN-001",
+  "base_config": "run_r2r/iter_train.yaml",
+  "checkpoint": "data/logs/checkpoints/release_r2r/ckpt.iter12000.pth",
+  "split": "val_unseen",
+  "episodes": 44,
+  "seed": 100,
+  "dataset_path": "research/results/gate_a_native_policy_replication_001/val_unseen_replication.json.gz",
+  "capture_graph_options": true,
+  "capture_waypoint_provenance": false,
+  "action_abstraction": "default",
+  "dense_isolation_mode": "off",
+  "allow_sliding": true,
+  "back_algo": "control",
+  "cohort": "semantic_alignment_val_unseen",
+  "protocol": "research/SEMANTIC_MEMORY_PROTOCOL.md"
+}

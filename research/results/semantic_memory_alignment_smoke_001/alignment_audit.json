@@ -1,0 +1,20 @@
+{
+  "capture": "research/results/semantic_memory_alignment_smoke_001",
+  "graph_rows": 34,
+  "trace_rows": 34,
+  "unique_graph_keys": 34,
+  "unique_trace_keys": 34,
+  "key_sets_equal": true,
+  "semantic_visual_rows": 34,
+  "rgb_files": 34,
+  "depth_files": 34,
+  "file_hash_matches": 68,
+  "file_hash_mismatches": [],
+  "state_metadata_mismatches": [],
+  "trace_post_hash_comparisons": 68,
+  "trace_post_hash_matches": 0,
+  "trace_post_hash_nonmatches_expected_timing": 68,
+  "selected_action_records": 34,
+  "privileged_input_violations": [],
+  "status": "PASS_WITH_EXPLICIT_PRE_ACTION_TIMING"
+}

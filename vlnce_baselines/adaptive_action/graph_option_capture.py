@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 
 import numpy as np
+import hashlib
 from habitat_baselines.common.baseline_registry import baseline_registry
 
 from vlnce_baselines.ss_trainer_ETP import RLTrainer
@@ -71,6 +72,14 @@ class GraphOptionCapture:
         with self.path.open('x'):
             pass
         self.pending = None
+        self.semantic_dir = None
+        if os.environ.get('ETPNAV_SEMANTIC_CAPTURE'):
+            self.semantic_dir = self.directory.parent / 'semantic_memory' / 'panoramas'
+            self.semantic_dir.mkdir(parents=True, exist_ok=True)
+
+    @staticmethod
+    def _sha256(array):
+        return hashlib.sha256(np.asarray(array).tobytes()).hexdigest()
 
     def override_prev_vp(self, env_index, default):
         """Optional hook for research interventions; native capture is inert."""
@@ -118,6 +127,20 @@ class GraphOptionCapture:
                                  'budget_stop': bool(budget_stop), 'no_vp_left': bool(no_vp[i]),
                                  'forced_stop': policy_index != 0 and effective_index == 0,
                                  'options': options, 'privileged_labels_in_features': False}
+            if self.semantic_dir is not None:
+                visual = trainer.envs.call_at(i, 'get_current_visual')
+                visual_record = {'episode_id': str(episode.episode_id), 'high_level_step': int(step),
+                                 'current_vp': current[i], 'graph_ids': ids,
+                                 'graph_position': pack(positions[i]), 'instruction': episode.instruction.instruction_text,
+                                 'observation_hashes': {}, 'files': {}}
+                stem = '{}_step{:03d}'.format(episode.episode_id, int(step))
+                for sensor, value in visual.items():
+                    value = np.asarray(value)
+                    path = self.semantic_dir / '{}_{}.npy'.format(stem, sensor)
+                    np.save(str(path), value, allow_pickle=False)
+                    visual_record['files'][sensor] = str(path)
+                    visual_record['observation_hashes'][sensor] = self._sha256(value)
+                row['semantic_visual'] = visual_record
             if full_scores is not None:
                 row['dense_context'] = {
                     'full_context_logits': [float(s) if math.isfinite(float(s)) else None

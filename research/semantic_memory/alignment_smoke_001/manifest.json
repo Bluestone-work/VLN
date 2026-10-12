@@ -1,0 +1,7 @@
+{
+  "capture": "research/results/semantic_memory_alignment_smoke_001",
+  "dataset": "research/results/gate_a_native_policy_replication_001/val_unseen_replication.json.gz",
+  "semantic_encoder": "openai_clip_vit_b32_local",
+  "raw_outcomes_not_used": true,
+  "privileged_future_input_used": false
+}
