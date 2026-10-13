@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "states": 10,
+    "action_branches": 80,
+    "selected_native_semantic_top1_rate": 0.1,
+    "mean_selected_rank": 6.2,
+    "diagnostic_scope": "CLIP endpoint probe only; no outcome labels or policy changes"
+  },
+  "states": [
+    {
+      "episode_id": "1624",
+      "high_level_step": 0,
+      "actions": 5,
+      "selected_native_rank_by_endpoint_semantics": 2,
+      "selected_score": 0.22909164428710938,
+      "best_score": 0.23678810894489288,
+      "selected_is_best": false
+    },
+    {
+      "episode_id": "1624",
+      "high_level_step": 1,
+      "actions": 6,
+      "selected_native_rank_by_endpoint_semantics": 4,
+      "selected_score": 0.22461079061031342,
+      "best_score": 0.23554253578186035,
+      "selected_is_best": false
+    },
+    {
+      "episode_id": "1624",
+      "high_level_step": 2,
+      "actions": 7,
+      "selected_native_rank_by_endpoint_semantics": 6,
+      "selected_score": 0.21714822947978973,
+      "best_score": 0.24412590265274048,
+      "selected_is_best": false
+    },
+    {
+      "episode_id": "1624",
+      "high_level_step": 3,
+      "actions": 7,
+      "selected_native_rank_by_endpoint_semantics": 1,
+      "selected_score": 0.24445512890815735,
+      "best_score": 0.24445512890815735,
+      "selected_is_best": true
+    },
+    {
+      "episode_id": "1624",
+      "high_level_step": 4,
+      "actions": 8,
+      "selected_native_rank_by_endpoint_semantics": 7,
+      "selected_score": 0.22814255952835083,
+      "best_score": 0.2559886872768402,
+      "selected_is_best": false
+    },
+    {
+      "episode_id": "1624",
+      "high_level_step": 5,
+      "actions": 10,
+      "selected_native_rank_by_endpoint_semantics": 7,
+      "selected_score": 0.22814255952835083,
+      "best_score": 0.26659733057022095,
+      "selected_is_best": false
+    },
+    {
+      "episode_id": "1778",
+      "high_level_step": 0,
+      "actions": 5,
+      "selected_native_rank_by_endpoint_semantics": 5,
+      "selected_score": 0.2744995355606079,
+      "best_score": 0.302879273891449,
+      "selected_is_best": false
+    },
+    {
+      "episode_id": "1778",
+      "high_level_step": 1,
+      "actions": 9,
+      "selected_native_rank_by_endpoint_semantics": 9,
+      "selected_score": 0.2619256377220154,
+      "best_score": 0.3000190258026123,
+      "selected_is_best": false
+    },
+    {
+      "episode_id": "1778",
+      "high_level_step": 2,
+      "actions": 11,
+      "selected_native_rank_by_endpoint_semantics": 10,
+      "selected_score": 0.25277242064476013,
+      "best_score": 0.29085859656333923,
+      "selected_is_best": false
+    },
+    {
+      "episode_id": "1778",
+      "high_level_step": 3,
+      "actions": 12,
+      "selected_native_rank_by_endpoint_semantics": 11,
+      "selected_score": 0.25277242064476013,
+      "best_score": 0.29390856623649597,
+      "selected_is_best": false
+    }
+  ]
+}
