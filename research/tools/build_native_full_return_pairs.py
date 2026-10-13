@@ -58,75 +58,9 @@ def unpack(v):
     if isinstance(v,dict) and '__array__' in v: return v['__array__']
     return v
 
-def action_features(event, graph, semantic):
-    idx=int(event['alternative_index'])
-    opt=next(o for o in graph['options'] if int(o['index'])==idx)
-    act=opt['action']; pos=unpack(graph['graph_position'])
-    if act['act']==0:
-        dist=0.; bearing=0.; stop=1.
-    else:
-        gp=unpack(act['ghost_pos']); dx=float(gp[0])-float(pos[0]); dz=float(gp[2])-float(pos[2])
-        dist=(dx*dx+dz*dz)**.5; bearing=(math.degrees(math.atan2(dx,-dz))+360.)%360.; stop=0.
-    # F2: explicit observed landmark/relation support in the current sector.
-    sec=min((0,30,60,90,120,150,180,210,240,270,300,330), key=lambda b: min((b-bearing)%360,(bearing-b)%360))
-    lm=[]; rel=[]
-    if semantic:
-        for x in semantic.get('landmarks',[]):
-            if x.get('bearing_deg') is not None and min((int(x['bearing_deg'])-bearing)%360,(bearing-int(x['bearing_deg']))%360)<=30:
-                lm.append(x)
-        for x in semantic.get('relations',[]):
-            if x.get('bearing_deg') is not None and min((int(x['bearing_deg'])-bearing)%360,(bearing-int(x['bearing_deg']))%360)<=30:
-                rel.append(x)
-    ev=semantic.get('instruction_evidence',[]) if semantic else []
-    evidence=max([float(x.get('score',0))*float(x.get('confidence',0)) for x in ev] or [0.])
-    return {'native_logit':float(opt['logit']), 'action_index':idx, 'is_stop':stop,
-            'bearing_deg':bearing, 'distance':dist, 'sector_deg':sec,
-            'semantic_landmark_count':len(lm), 'semantic_relation_count':len(rel),
-            'semantic_landmark_confidence':max([float(x.get('confidence',0)) for x in lm] or [0.]),
-            'semantic_relation_confidence':max([float(x.get('confidence',0)) for x in rel] or [0.]),
-            'instruction_evidence':evidence,
-            'semantic_global_confidence':float((semantic or {}).get('global_confidence',0.))}
-
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--root',type=Path,required=True); ap.add_argument('--source',type=Path,required=True); ap.add_argument('--semantic',type=Path,required=True); ap.add_argument('--output',type=Path,required=True); a=ap.parse_args()
-    graph={(str(x['episode_id']),int(x['high_level_step'])):x for x in rows(a.source/'graph_options/graph_options.jsonl')}
-    sem={(str(x['episode_id']),int(x['high_level_step'])):x for x in rows(a.semantic/'semantic_node_memory.jsonl')}
-    endpoint={(str(x['episode_id']),int(x['high_level_step']),int(x['index'])):x for x in rows(Path('research/results/semantic_native_endpoint_enum_002/native_endpoint_options.jsonl'))}
-    out=[]; audit=[]
-    for sp in sorted((a.root/'schedules').glob('schedule_rank*.json')):
-        rank=sp.stem.replace('schedule_','')
-        schedule=json.loads(sp.read_text())
-        dr=trace(a.root/'runs'/(rank+'_disabled')); ar=trace(a.root/'runs'/(rank+'_enabled'))
-        dm=metrics('native_full_return_001_'+rank+'_disabled'); am=metrics('native_full_return_001_'+rank+'_enabled')
-        dby={(str(x['episode_id']),int(x['high_level_step'])):x for x in dr}; aby={(str(x['episode_id']),int(x['high_level_step'])):x for x in ar}
-        for e in schedule['events']:
-            k=(str(e['episode_id']),int(e['high_level_step']))
-            if k not in dby or k not in aby: raise ValueError('event trace missing '+str(k))
-            nfull=outcome(dm[str(e['episode_id'])],[x for x in dr if str(x['episode_id'])==str(e['episode_id'])])
-            afull=outcome(am[str(e['episode_id'])],[x for x in ar if str(x['episode_id'])==str(e['episode_id'])])
-            # Disabled event row is the native single-action immediate return;
-            # enabled event row is the alternative immediate return.
-            nr, rr=dby[k], aby[k]
-            if nr['action'] != e['baseline_action'] or rr['action'] != e['alternative_action']:
-                raise ValueError('action identity mismatch '+str(k))
-            g=graph[k]; semrow=sem.get(k)
-            feat=action_features(e,g,semrow)
-            out.append({'pair_id':rank+'_'+str(e['episode_id'])+'_'+str(e['high_level_step']),
-                        'scene_id':e['scene_id'],'episode_id':str(e['episode_id']),'high_level_step':int(e['high_level_step']),
-                        'alternative_index':int(e['alternative_index']),'native_index':int(e['baseline_index']),
-                        'instruction':g['instruction'],'graph_ids':g['graph_ids'],'current_vp':g['current_vp'],
-                        'pre_pose':nr['pre_pose'],'pre_rng':nr['pre_rng'],
-                        'immediate_native':{'action':nr['action'],'endpoint_pose':nr['post_pose'],'distance_after':nr['distance_after'],'primitives':nr['primitives']},
-                        'immediate_alternative':{'action':rr['action'],'endpoint_pose':rr['post_pose'],'distance_after':rr['distance_after'],'primitives':rr['primitives']},
-                        'native_outcome':nfull,'alternative_outcome':afull,
-                        'delta':{m:float(afull[m])-float(nfull[m]) for m in ('ndtw','sdtw','spl','goal_distance','path_length','primitive_action_count','collision_events')},
-                        'label':label(nfull,afull),'features':feat,
-                        'online_feature_provenance':{'semantic_source':'current_node_observed_360_only','alternative_endpoint_used':False,'goal_distance_used':False,'reference_path_used':False,'final_outcome_used':False},
-                        'run_ids':{'native':rank+'_disabled','alternative':rank+'_enabled'}})
-            audit.append({'pair_id':out[-1]['pair_id'],'prefix_exact':True,'pre_pose_exact':nr['pre_pose']==rr['pre_pose'],'pre_rng_exact':nr['pre_rng']==rr['pre_rng'],'native_action_exact':nr['action']==e['baseline_action'],'alternative_action_exact':rr['action']==e['alternative_action']})
-    a.output.mkdir(parents=True,exist_ok=False)
-    (a.output/'pairs.jsonl').write_text('\n'.join(json.dumps(x,sort_keys=True,allow_nan=False) for x in out)+'\n')
-    (a.output/'exact_audit.json').write_text(json.dumps({'pairs':len(out),'audit':audit,'all_exact_prefix_and_action_identity':all(x['prefix_exact'] and x['native_action_exact'] and x['alternative_action_exact'] for x in audit),'source_graph_sha256':digest(a.source/'graph_options/graph_options.jsonl')},indent=2)+'\n')
-    from collections import Counter
-    print(json.dumps({'pairs':len(out),'labels':Counter(x['label'] for x in out),'episodes':len(set(x['episode_id'] for x in out)),'scenes':len(set(x['scene_id'] for x in out))},indent=2))
-if __name__=='__main__': main()
+    raise SystemExit('Deprecated unsafe assembler. Use audit_native_full_return.py, then '
+                     'build_directional_causal_pairs.py. Previous prefix_exact values '
+                     'were not checked and are not admissible scientific evidence.')
+
+if __name__ == '__main__': main()

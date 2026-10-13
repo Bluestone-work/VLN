@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "runs": 430,
+  "attempted_pairs": 3878,
+  "valid_pairs": 3878,
+  "invalid_states": 0,
+  "states": 369,
+  "episodes": 44,
+  "routes": 44,
+  "scenes": 11,
+  "labels": {
+    "HARM": 3447,
+    "BENEFIT": 430,
+    "UNCERTAIN": 1
+  },
+  "source_trace_sha256": "d5bd3e0678174c571804ac59cdca0bbb776eb2110ac59df71329ba6a9324efce",
+  "source_graph_sha256": "42274af584abb95d979f03a0f5dc63ee94d750546ba238d35464808757cc9447",
+  "checkpoint_sha256_current": "4e70d2a1b4a6cfb32158901b7300cbc2be657641f16c9a17f35ca8570470d8b3",
+  "checkpoint_note": "Manifests record same checkpoint path, not a contemporaneous file hash. Current hash is provenance, not proof of historical byte identity.",
+  "failure_counts": {}
+}

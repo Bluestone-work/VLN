@@ -1,119 +1,107 @@
 # Directional semantic waypoint memory validation
 
-HEAD: `32deb0b4772edf7f3f992f55a624ee700714d2a5`
+HEAD: `2963a0f33d757250c709d401ef0f7309ada71b84`
 
-## Causal dataset
+Causal dataset: `research/results/native_single_action_full_return_44_002/exact_audit_003/`
+Directional join: `research/results/native_single_action_full_return_44_002/directional_pairs_002/`
+Probe: `research/results/native_single_action_full_return_44_002/probe_002/summary.json`
 
-states: 10
-actions: 70 alternatives (80 including 10 native sentinels)
-routes: 2 episodes
-scenes: 1
-BENEFIT: 2
-HARM: 68
-UNCERTAIN: 0
+Causal dataset:
+states: 369 alternative-bearing states (373 source decision states)
+actions: 3,878 alternatives
+routes: 44
+scenes: 11
+BENEFIT: 430
+HARM: 3,447
+UNCERTAIN: 1 (excluded from classifier fitting)
 
-The exact native/alternative full-return table is
-`research/results/native_single_action_full_return_003/causal_pairs/pairs.jsonl`.
-All 37 disabled sentinel schedules reproduced the original 34-row source trace
-and evaluator metrics exactly. The two episodes are in one scene, so the
-required scene-disjoint probe is not estimable from this causal cohort.
+Representation:
+F0 native: native logits, action identity/geometry controls and the frozen 768d
+native action embedding.
+F1 geometry: F0 plus local bearing, sine/cosine bearing, distance and STOP flag.
+F2 directional semantic: F0 plus current-node observed semantic landmark/relation
+fields in the nearest 30° local sector.
+F3 instruction-grounded directional semantic: F2 plus sector-filtered phrase and
+relation evidence from the instruction-conditioned extractor.
+A STOP action has no sector; it receives an explicit semantic abstention.
+All bearings are computed by inverse-rotating the ghost displacement by the
+pre-action quaternion. Synthetic front/left/right and rotated-agent tests pass.
 
-## Representation
+Causal prediction (leave-one-scene-out, fixed unweighted logistic probe):
 
-F0 native: native action logit and native graph/action identity.
-F1 geometry: action type, current-node-to-ghost bearing, distance and sector.
-F2 directional semantic: current visited node's observed 360° semantic landmark
-and relation support in the action's nearest 30° sector.
-F3 instruction-grounded semantic: the same sector record plus frozen ordered
-instruction evidence and phrase/relation confidence.
+| arm | AUROC | AUPRC | within-state pairwise | benefit precision | harm precision |
+|---|---:|---:|---:|---:|---:|
+| F0 | 0.714 | 0.209 | 0.779 | 0.243 | 0.893 |
+| F0+F1 | 0.719 | 0.211 | 0.782 | 0.262 | 0.893 |
+| F0+F2 | 0.720 | 0.216 | 0.778 | 0.278 | 0.893 |
+| F0+F3 | 0.720 | 0.216 | 0.778 | 0.278 | 0.893 |
+| F3 without native | 0.383 | 0.113 | 0.543 | 0.000 | 0.889 |
+| F0+F1+F3 | 0.726 | 0.218 | 0.783 | 0.278 | 0.893 |
 
-All semantic inputs come from the current node's pre-action 360° observation.
-Alternative endpoint images occur only in the causal audit, never as online
-features. Goal distance, reference path and final outcome occur only as labels.
+Scene bootstrap on fixed OOF predictions:
 
-## Causal prediction
+- F0+F3 minus F0 AUROC 95% CI: **[-0.0016, 0.0130]**; pairwise CI
+  **[-0.0036, 0.0026]**.
+- F0+F1+F3 minus F0+F1 AUROC 95% CI: **[-0.0014, 0.0132]**.
+- F0+F3 and F0+F2 are identical on this extractor because all instruction
+  evidence is zero.
 
-AUROC: **NOT ESTIMABLE** (scene-disjoint split has one scene)
-AUPRC: **NOT ESTIMABLE** (scene-disjoint split has one scene)
-pairwise accuracy: **NOT ESTIMABLE** (scene-disjoint split has one scene)
-benefit precision: **NOT ESTIMABLE**
-harm precision: **NOT ESTIMABLE**
+Complementarity:
 
-The native logit orders the alternative below the selected native action in 68/70
-rows and therefore agrees with the fixed label on 68/70 rows (0.9714) in this
-same-scene descriptive audit. This is not a held-out probe result. The semantic
-extractor has zero instruction evidence/confidence on these rows, so F3 has no
-validated independent score to fit.
+| definition | native correct / semantic correct | native correct / semantic wrong | native wrong / semantic correct | native wrong / semantic wrong |
+|---|---:|---:|---:|---:|
+| F3 without native | 3,366 | 26 | 80 | 405 |
+| F0+F3 | 3,388 | 4 | 16 | 469 |
 
-## Complementarity
+On native-wrong rows, F0+F3 AUROC is 0.032; semantic-only is 0.319. The
+semantic-only result is below chance and does not supply a reliable rescue signal.
+The combined model changes little relative to native and its bootstrap interval
+includes no improvement.
 
-Using the descriptive native-logit ordering, native predicts HARM on 68 rows and
-is wrong on the 2 BENEFIT rows. F3 abstains (zero evidence) on all 70 rows.
+Semantic description quality:
 
-```text
-native correct / semantic correct: 0 (no semantic prediction)
-native correct / semantic wrong: 68 (semantic abstention; no rescue signal)
-native wrong / semantic correct: 0
-native wrong / semantic wrong: 2 (semantic abstention)
-```
+- source rows: 373; parse errors: 3
+- object/direction/relation precision: **NOT MEASURED** (no held-out annotations)
+- all 373 global confidences are 0
+- all 373 rows abstain under the confidence gate; 3,877 causal alternatives
+  therefore have no deployable semantic confidence
+- 389 emitted landmarks and 381 relations have zero confidence; 760 instruction
+  evidence entries have no bearing and zero score/confidence
 
-These counts are not a scene-disjoint classifier confusion matrix. They record
-the required native-error audit without converting abstention into a positive
-semantic claim. The larger 44-episode semantic validation independently reports
-native-correct/semantic-correct 0, native-correct/semantic-wrong 33,
-native-wrong/semantic-correct 0 and native-wrong/semantic-wrong 11 for the same
-zero-confidence extractor.
+The extractor is a frozen Qwen2-VL structured hypothesis generator. Its generic
+text output is retained for an outcome-blind diagnostic only. F2 is a visual-field
+ablation of an instruction-conditioned extractor, not an independent visual-only
+semantic model.
 
-## Semantic description quality
+Shadow deployment:
+Does semantic branch alter native trajectory? **NOT RUN**. The offline GO gate
+failed, so no shadow branch was started.
 
-object precision: **NOT MEASURED** (no held-out human object labels)
-direction accuracy: **NOT MEASURED** (no held-out bearing labels)
-relation accuracy: **NOT MEASURED** (no held-out relation labels)
-hallucination rate: **NOT MEASURED** (no held-out annotation protocol)
+Online intervention:
+native-success retention: NOT RUN
+rescued failures: NOT RUN
+destroyed successes: NOT RUN
+risk-coverage: NOT RUN
 
-The frozen Qwen2-VL extractor emits structured fields and abstains with zero
-confidence in the audited 44-episode run. Generic CLIP similarity is retained as
-a probe only and cannot fill these quality metrics.
+A0/A1/A2/A3 paired benchmark: **NOT RUN** because the offline complementarity
+and semantic-quality gates failed.
 
-## Shadow deployment
-
-trajectory unchanged? **NOT RUN**. The offline scene-disjoint GO gate failed, so
-no shadow policy was started and no action, graph state or controller was changed.
-
-## Online intervention
-
-native-success retention: **NOT RUN**
-rescued failures: **NOT RUN**
-destroyed successes: **NOT RUN**
-risk-coverage: **NOT RUN**
-
-No A0/A1/A2/A3 paired benchmark was run because the causal probe gate did not
-pass.
-
-```text
-A0: released ETPNav — NOT RUN
-A1: geometry-only side memory — NOT RUN
-A2: directional semantic memory — NOT RUN
-A3: instruction-grounded directional semantic memory — NOT RUN
-```
-
-## Conclusion
-
+Conclusion:
 Does Directional Semantic Waypoint Memory provide complementary deployable signal?
-**NO-GO / UNRESOLVED FOR DEPLOYMENT.** Exact causal joining now works, but the
-available causal cohort has one scene and the frozen textual extractor supplies
-no calibrated instruction-grounded signal. The required complementarity and
-safety conditions therefore do not hold.
+**NO**.
 
-GO / NO-GO: **NO-GO**.
+GO / NO-GO: **NO-GO**. Exact causal outcomes and strict semantic joins pass, but
+explicit directional semantic memory adds no stable scene-disjoint signal beyond
+native ETP features. The textual representation itself is uncalibrated and
+abstains on every row. Shadow and online intervention are therefore prohibited.
 
 If GO: not applicable.
-If NO-GO: the scene-disjoint causal probe and held-out description-quality gate
-failed; semantic evidence cannot yet predict long-term BENEFIT/HARM beyond native
-ETP memory.
 
-Next single highest-value experiment: repeat exact native single-action
-full-return collection for the frozen 44-episode, 11-scene native-success
-cohort, then run the preregistered F0/F1/F2/F3 scene-disjoint probe with a
-held-out viewpoint annotation audit. Do not start shadow or intervention before
-both gates pass.
+If NO-GO: the complementary-signal and representation-quality hypotheses failed;
+keep this direction offline and do not insert semantic nodes into the native
+Graph Transformer.
+
+Next single highest-value experiment: obtain held-out viewpoint annotations and
+regenerate a genuinely confidence-calibrated, instruction-grounded extractor on
+the same 44-route pre-action capture; rerun only the offline causal probe before
+considering shadow deployment.
