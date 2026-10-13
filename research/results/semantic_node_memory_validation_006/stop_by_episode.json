@@ -1,0 +1,706 @@
+[
+  {
+    "episode_id": "1778",
+    "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+    "target_key": [
+      "1778",
+      3
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 4,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.755125347155275,
+    "semantic_retrieved_distance_m": 4.593968646594724
+  },
+  {
+    "episode_id": "413",
+    "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+    "target_key": [
+      "413",
+      1
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 15,
+    "semantic_rank": 2,
+    "fusion_rank": 15,
+    "native_target_distance_m": 1.7973705881415079,
+    "semantic_retrieved_distance_m": 3.7302305359518595
+  },
+  {
+    "episode_id": "651",
+    "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+    "target_key": [
+      "651",
+      7
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 2,
+    "semantic_rank": 8,
+    "fusion_rank": 2,
+    "native_target_distance_m": 1.5189344435129832,
+    "semantic_retrieved_distance_m": 4.140225373350352
+  },
+  {
+    "episode_id": "1624",
+    "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+    "target_key": [
+      "1624",
+      4
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 3,
+    "semantic_rank": 5,
+    "fusion_rank": 3,
+    "native_target_distance_m": 0.8945270752927172,
+    "semantic_retrieved_distance_m": 3.811239083510443
+  },
+  {
+    "episode_id": "1483",
+    "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+    "target_key": [
+      "1483",
+      4
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 5,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.6515936693461122,
+    "semantic_retrieved_distance_m": 6.489290435154905
+  },
+  {
+    "episode_id": "783",
+    "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+    "target_key": [
+      "783",
+      4
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 2,
+    "semantic_rank": 5,
+    "fusion_rank": 2,
+    "native_target_distance_m": 0.3890672118009732,
+    "semantic_retrieved_distance_m": 5.612799368607163
+  },
+  {
+    "episode_id": "885",
+    "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+    "target_key": [
+      "885",
+      6
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 7,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.6347161572497703,
+    "semantic_retrieved_distance_m": 4.33415494392761
+  },
+  {
+    "episode_id": "1552",
+    "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+    "target_key": [
+      "1552",
+      8
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 9,
+    "fusion_rank": 1,
+    "native_target_distance_m": 2.7197994655871702,
+    "semantic_retrieved_distance_m": 5.51863899470552
+  },
+  {
+    "episode_id": "776",
+    "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+    "target_key": [
+      "776",
+      8
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 9,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.6426762515802099,
+    "semantic_retrieved_distance_m": 5.412093426755444
+  },
+  {
+    "episode_id": "507",
+    "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+    "target_key": [
+      "507",
+      5
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 6,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.653829155059529,
+    "semantic_retrieved_distance_m": 6.121436937554943
+  },
+  {
+    "episode_id": "893",
+    "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+    "target_key": [
+      "893",
+      7
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 8,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.6185379154343629,
+    "semantic_retrieved_distance_m": 11.034787767243305
+  },
+  {
+    "episode_id": "14",
+    "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+    "target_key": [
+      "14",
+      8
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 9,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.966177000207295,
+    "semantic_retrieved_distance_m": 11.815252498201657
+  },
+  {
+    "episode_id": "1263",
+    "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+    "target_key": [
+      "1263",
+      6
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 7,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.9337621243811063,
+    "semantic_retrieved_distance_m": 9.150233916707784
+  },
+  {
+    "episode_id": "1026",
+    "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+    "target_key": [
+      "1026",
+      11
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 12,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.7419396437472163,
+    "semantic_retrieved_distance_m": 14.580356405928665
+  },
+  {
+    "episode_id": "833",
+    "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "target_key": [
+      "833",
+      6
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 7,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.917935259834909,
+    "semantic_retrieved_distance_m": 9.627859802435793
+  },
+  {
+    "episode_id": "159",
+    "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "target_key": [
+      "159",
+      6
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 7,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.8803056928051011,
+    "semantic_retrieved_distance_m": 8.478389475707546
+  },
+  {
+    "episode_id": "1608",
+    "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "target_key": [
+      "1608",
+      5
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 5,
+    "semantic_rank": 6,
+    "fusion_rank": 5,
+    "native_target_distance_m": 0.9756549212596975,
+    "semantic_retrieved_distance_m": 6.822232476990761
+  },
+  {
+    "episode_id": "1803",
+    "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "target_key": [
+      "1803",
+      7
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 8,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.2973104035347409,
+    "semantic_retrieved_distance_m": 8.424138621473817
+  },
+  {
+    "episode_id": "931",
+    "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "target_key": [
+      "931",
+      14
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 15,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.2452682356116793,
+    "semantic_retrieved_distance_m": 6.996988825866966
+  },
+  {
+    "episode_id": "166",
+    "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "target_key": [
+      "166",
+      6
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 2,
+    "semantic_rank": 7,
+    "fusion_rank": 2,
+    "native_target_distance_m": 0.24338209446064565,
+    "semantic_retrieved_distance_m": 5.982823067266951
+  },
+  {
+    "episode_id": "382",
+    "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+    "target_key": [
+      "382",
+      9
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 10,
+    "fusion_rank": 1,
+    "native_target_distance_m": 2.366823969391129,
+    "semantic_retrieved_distance_m": 8.302580888640822
+  },
+  {
+    "episode_id": "1677",
+    "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+    "target_key": [
+      "1677",
+      6
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 7,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.43968805677161,
+    "semantic_retrieved_distance_m": 3.3463545704001785
+  },
+  {
+    "episode_id": "1568",
+    "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+    "target_key": [
+      "1568",
+      4
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 5,
+    "fusion_rank": 1,
+    "native_target_distance_m": 2.3454883226473973,
+    "semantic_retrieved_distance_m": 7.011305933984033
+  },
+  {
+    "episode_id": "370",
+    "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+    "target_key": [
+      "370",
+      5
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 6,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.739786757545982,
+    "semantic_retrieved_distance_m": 9.105017575650294
+  },
+  {
+    "episode_id": "1186",
+    "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+    "target_key": [
+      "1186",
+      5
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 6,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.2461505482450848,
+    "semantic_retrieved_distance_m": 9.493899770473282
+  },
+  {
+    "episode_id": "500",
+    "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+    "target_key": [
+      "500",
+      9
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 10,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.21917586115072152,
+    "semantic_retrieved_distance_m": 9.312154779157131
+  },
+  {
+    "episode_id": "381",
+    "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+    "target_key": [
+      "381",
+      12
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 13,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.5377631556485648,
+    "semantic_retrieved_distance_m": 12.451371901616048
+  },
+  {
+    "episode_id": "1093",
+    "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+    "target_key": [
+      "1093",
+      6
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 7,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.8325922471886068,
+    "semantic_retrieved_distance_m": 8.343179220119257
+  },
+  {
+    "episode_id": "1507",
+    "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+    "target_key": [
+      "1507",
+      6
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 7,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.8343723901890598,
+    "semantic_retrieved_distance_m": 5.5995896476896805
+  },
+  {
+    "episode_id": "730",
+    "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+    "target_key": [
+      "730",
+      10
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 11,
+    "fusion_rank": 1,
+    "native_target_distance_m": 2.9921071435340636,
+    "semantic_retrieved_distance_m": 10.582500649804127
+  },
+  {
+    "episode_id": "1149",
+    "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+    "target_key": [
+      "1149",
+      8
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 9,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.747993469854228,
+    "semantic_retrieved_distance_m": 7.503030738300573
+  },
+  {
+    "episode_id": "1174",
+    "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+    "target_key": [
+      "1174",
+      7
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 8,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.8304413761092028,
+    "semantic_retrieved_distance_m": 8.351346670619389
+  },
+  {
+    "episode_id": "1708",
+    "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+    "target_key": [
+      "1708",
+      8
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 2,
+    "semantic_rank": 9,
+    "fusion_rank": 2,
+    "native_target_distance_m": 1.5588167810287794,
+    "semantic_retrieved_distance_m": 9.166546272504906
+  },
+  {
+    "episode_id": "107",
+    "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+    "target_key": [
+      "107",
+      7
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 8,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.4338000588808183,
+    "semantic_retrieved_distance_m": 4.668231924430687
+  },
+  {
+    "episode_id": "1278",
+    "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+    "target_key": [
+      "1278",
+      7
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 8,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.3719134666243469,
+    "semantic_retrieved_distance_m": 5.461832791730459
+  },
+  {
+    "episode_id": "268",
+    "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+    "target_key": [
+      "268",
+      6
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 6,
+    "semantic_rank": 7,
+    "fusion_rank": 6,
+    "native_target_distance_m": 0.15984850085816127,
+    "semantic_retrieved_distance_m": 3.1371704139126244
+  },
+  {
+    "episode_id": "1689",
+    "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+    "target_key": [
+      "1689",
+      9
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 2,
+    "semantic_rank": 10,
+    "fusion_rank": 2,
+    "native_target_distance_m": 0.6143686802047009,
+    "semantic_retrieved_distance_m": 3.8739239483416648
+  },
+  {
+    "episode_id": "7",
+    "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+    "target_key": [
+      "7",
+      4
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 5,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.8418853147379188,
+    "semantic_retrieved_distance_m": 10.445640994262055
+  },
+  {
+    "episode_id": "640",
+    "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+    "target_key": [
+      "640",
+      5
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 6,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.9604812986639353,
+    "semantic_retrieved_distance_m": 6.902399386557015
+  },
+  {
+    "episode_id": "1054",
+    "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+    "target_key": [
+      "1054",
+      4
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 5,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.2420212971339066,
+    "semantic_retrieved_distance_m": 6.445227758742284
+  },
+  {
+    "episode_id": "1605",
+    "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+    "target_key": [
+      "1605",
+      6
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 3,
+    "semantic_rank": 7,
+    "fusion_rank": 3,
+    "native_target_distance_m": 0.36055375645564225,
+    "semantic_retrieved_distance_m": 2.9763117856103003
+  },
+  {
+    "episode_id": "553",
+    "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+    "target_key": [
+      "553",
+      3
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 4,
+    "fusion_rank": 1,
+    "native_target_distance_m": 1.069711962289562,
+    "semantic_retrieved_distance_m": 6.050762461510929
+  },
+  {
+    "episode_id": "392",
+    "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+    "target_key": [
+      "392",
+      7
+    ],
+    "native_top1": false,
+    "semantic_top1": false,
+    "fusion_top1": false,
+    "native_rank": 2,
+    "semantic_rank": 8,
+    "fusion_rank": 2,
+    "native_target_distance_m": 0.3698756050410316,
+    "semantic_retrieved_distance_m": 11.19169593028221
+  },
+  {
+    "episode_id": "1657",
+    "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+    "target_key": [
+      "1657",
+      4
+    ],
+    "native_top1": true,
+    "semantic_top1": false,
+    "fusion_top1": true,
+    "native_rank": 1,
+    "semantic_rank": 5,
+    "fusion_rank": 1,
+    "native_target_distance_m": 0.03608112197272701,
+    "semantic_retrieved_distance_m": 8.03559964498934
+  }
+]

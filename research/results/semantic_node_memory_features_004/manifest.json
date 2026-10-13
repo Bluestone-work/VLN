@@ -1,0 +1,20 @@
+{
+  "model": "Qwen/Qwen2-VL-2B-Instruct",
+  "revision": "895c3a49bc3fa70a340399125c650a463535e71c",
+  "model_path": "/home/wj/.cache/semantic-node-model/Qwen2-VL-2B-Instruct",
+  "graph_sha256": "42274af584abb95d979f03a0f5dc63ee94d750546ba238d35464808757cc9447",
+  "script_sha256": "0b2dd2a73717d8dd0b3cfe1ee59ec7dc39c436a499df030e05cdde8ed41cccee",
+  "prompt": "These 12 numbered tiles show real views at one visited navigation node BEFORE action. Tile numbers are camera local bearings in degrees, positive LEFT: 0 front, 90 left, 180 behind, 270 right. They are not future viewpoints. Extract only visually supported facts; do not infer an object from its mention in the instruction. Return ONLY compact JSON with this schema:\n{\"place\":{\"label\":\"hallway\",\"confidence\":0.0},\"landmarks\":[{\"name\":\"doorway\",\"bearing_deg\":0,\"confidence\":0.0}],\"relations\":[{\"subject\":\"doorway\",\"relation\":\"ahead\",\"bearing_deg\":0,\"confidence\":0.0}],\"evidence\":[{\"phrase_index\":0,\"score\":0.0,\"confidence\":0.0,\"relation\":\"visible cue or unknown\",\"bearing_deg\":null}]}\nList at most 6 objects, 3 spatial relations and exactly one evidence entry for every ordered phrase. Scores/confidences are 0 to 1; score means visible support for the phrase's required object AND spatial relation, NOT generic scene resemblance. Unknown evidence is score 0 and confidence 0. A still panorama cannot establish that an object was passed, a room was entered, or a turn completed: describe only visible cues, never claim completion. Say unknown for uncertain place or bearing. Do not output extra text.\nOrdered instruction phrases: ",
+  "phrase_prompt": "Split this navigation instruction into ordered short navigation subgoals, preserving every landmark and spatial relation. Use only the instruction text. The last phrase must express the stopping destination/goal. Return ONLY JSON {\"phrases\": [\"exit bedroom\", \"pass sofa\", \"turn left at painting\", \"stop in kitchen\"]}. At most 8 phrases. Instruction: ",
+  "do_sample": false,
+  "seed": 100,
+  "confidence_calibrated": false,
+  "privileged_inputs": false,
+  "feature_inputs": [
+    "pre_action_12_rgb_views",
+    "instruction_text",
+    "node_identity",
+    "position"
+  ],
+  "embedding": "sha256 signed hashing of structures, 256 dimensions"
+}

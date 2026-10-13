@@ -1,0 +1,78 @@
+{
+  "head": "0abb78b4e368ad3807081d3f52bd8680ffb334f2",
+  "dataset": {
+    "episodes": 44,
+    "scenes": 11,
+    "decision_nodes": 373
+  },
+  "representation": {
+    "visited_nodes_only": true,
+    "coverage_histogram_sector_count": {
+      "12": 373
+    },
+    "complete_360_node_count": 373,
+    "central_only_capture": false,
+    "what_where_relation_instruction_fields": true,
+    "future_or_gt_used_as_feature": false,
+    "generic_clip_is_probe_only": true
+  },
+  "stop": {
+    "episodes": 44,
+    "goal_node_top1_recall": 0.0,
+    "native_top1_recall": 0.75,
+    "fusion_top1_recall": 0.75,
+    "native_mrr": 0.8431818181818183,
+    "semantic_mrr": 0.15250664739301104,
+    "fusion_mrr": 0.8431818181818183,
+    "spearman_native_vs_goal": 0.6825579493690904,
+    "spearman_semantic_vs_goal": 0.0,
+    "scene_bootstrap_ci_semantic_spearman": [
+      0.0,
+      0.0
+    ]
+  },
+  "progress": {
+    "episodes": 44,
+    "ordered_evidence_consistency": 0.0,
+    "phrase_recovery": 0.0,
+    "monotone_episode_rate": 0.0,
+    "inversion_count": 0
+  },
+  "backtracking": {
+    "states": 373,
+    "native_retrieval_mrr": 0.7586417901431306,
+    "semantic_retrieval_mrr": 0.3948452575128176,
+    "semantic_distance_improvement_rate": 0.07506702412868632,
+    "semantic_median_distance_gain_m": -1.7241816026941938,
+    "scene_bootstrap_ci_improvement_rate": [
+      0.05093833780160858,
+      0.09919571045576407
+    ]
+  },
+  "complementarity": {
+    "native_correct_semantic_correct": 0,
+    "native_correct_semantic_wrong": 33,
+    "native_wrong_semantic_correct": 0,
+    "native_wrong_semantic_wrong": 11
+  },
+  "safety": {
+    "native_success_retention": "44/44 cohort is native-success by construction; no intervention run",
+    "beneficial_intervention_rate": 0.0,
+    "harmful_intervention_rate": 0.75,
+    "risk_coverage": "not applicable: no action was changed"
+  },
+  "shadow_deployment": {
+    "run": false,
+    "trajectory_changed": false,
+    "status": "NOT_RUN_GATED_NO_GO"
+  },
+  "limits": [
+    "The 44-cohort multiview rerun has 12 RGB + 12 depth views per pre-action state and was action/pose/graph aligned to the original trace.",
+    "Model confidence is uncalibrated; the frozen 2B extractor returned zero phrase confidence in this run, so semantic scores abstain.",
+    "Goal positions and outcome cohort membership are evaluation labels only."
+  ],
+  "files": {
+    "capture_graph_sha256": "42274af584abb95d979f03a0f5dc63ee94d750546ba238d35464808757cc9447",
+    "semantic_input": "research/results/semantic_node_memory_features_004/semantic_node_memory.jsonl"
+  }
+}
