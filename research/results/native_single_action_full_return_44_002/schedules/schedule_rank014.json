@@ -1,0 +1,6245 @@
+{
+  "experiment_id": "NATIVE-SINGLE-ACTION-FULL-RETURN-44-RANK014",
+  "status": "frozen_before_outcomes",
+  "analysis_only_oracle": true,
+  "expected_event_count": 44,
+  "source_capture": "research/results/semantic_node_memory_multiview_001",
+  "events": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "episode_id": "1026",
+      "high_level_step": 3,
+      "trajectory_id": "4156",
+      "baseline_index": 10,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g0",
+        "g1",
+        "g3",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          2.429934501647949,
+          0.17162801325321198,
+          -3.969031810760498
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            2.429934501647949,
+            0.17162801325321198,
+            -3.969031810760498
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            3.823782800771376,
+            0.17162801325321198,
+            -3.4147873529345945
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  0.9363848567008972,
+                  0.17162801325321198,
+                  -3.830073356628418
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -0.5571649074554443,
+                  0.17162801325321198,
+                  -3.691114902496338
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -2.035788059234619,
+                  0.17162801325321198,
+                  -3.9434499740600586
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -2.035788059234619,
+            0.17162801325321198,
+            -3.9434499740600586
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -1.4938662440890693,
+            0.17162801325321198,
+            -3.716320484255481
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  0.9363848567008972,
+                  0.17162801325321198,
+                  -3.830073356628418
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -0.5571649074554443,
+                  0.17162801325321198,
+                  -3.691114902496338
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -2.035788059234619,
+                  0.17162801325321198,
+                  -3.9434499740600586
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -2.035788059234619,
+            0.17162801325321198,
+            -3.9434499740600586
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -1.4938662440890693,
+            0.17162801325321198,
+            -3.716320484255481
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "episode_id": "1054",
+      "high_level_step": 2,
+      "trajectory_id": "4239",
+      "baseline_index": 10,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g5",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          0.20765851438045502,
+          0.04610800743103027,
+          2.567976713180542
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            0.20765851438045502,
+            0.04610800743103027,
+            2.567976713180542
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -0.539173986369367,
+            0.04610800743103027,
+            3.5569765522975842
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  1.366058111190796,
+                  0.04610800743103027,
+                  1.6150286197662354
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.6744890213012695,
+                  0.04610800743103027,
+                  -0.21541137993335724
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.6744890213012695,
+            0.04610800743103027,
+            -0.21541137993335724
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.9368890342589831,
+            0.04610800743103027,
+            1.2140102810997493
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  1.366058111190796,
+                  0.04610800743103027,
+                  1.6150286197662354
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.6744890213012695,
+                  0.04610800743103027,
+                  -0.21541137993335724
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.6744890213012695,
+            0.04610800743103027,
+            -0.21541137993335724
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.9368890342589831,
+            0.04610800743103027,
+            1.2140102810997493
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "target_graph_id": "g3"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "episode_id": "107",
+      "high_level_step": 2,
+      "trajectory_id": "329",
+      "baseline_index": 9,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          1.7609049081802368,
+          3.5076699256896973,
+          -7.053236484527588
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            1.7609049081802368,
+            3.5076699256896973,
+            -7.053236484527588
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            0.6060992781208194,
+            3.5076699256896973,
+            -6.574776500011566
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  2.334803581237793,
+                  3.6032440662384033,
+                  -8.439107894897461
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.334803581237793,
+            3.6032440662384033,
+            -8.439107894897461
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            1.7807014205423624,
+            3.6032440662384033,
+            -9.245174593107615
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  2.334803581237793,
+                  3.6032440662384033,
+                  -8.439107894897461
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.334803581237793,
+            3.6032440662384033,
+            -8.439107894897461
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            1.7807014205423624,
+            3.6032440662384033,
+            -9.245174593107615
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_graph_id": "g5"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "episode_id": "1093",
+      "high_level_step": 2,
+      "trajectory_id": "4447",
+      "baseline_index": 9,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g2",
+        "g3",
+        "g4",
+        "g6",
+        "g7"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -10.627195358276367,
+          0.15480518341064453,
+          8.224905967712402
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -10.627195358276367,
+            0.15480518341064453,
+            8.224905967712402
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -11.023092326974481,
+            0.15480518341064453,
+            9.41055582756802
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -10.215185165405273,
+                  0.15480518341064453,
+                  7.355975151062012
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -9.849260330200195,
+                  0.15480518341064453,
+                  6.42533016204834
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -9.849260330200195,
+            0.15480518341064453,
+            6.42533016204834
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -8.862715084063074,
+            0.15480518341064453,
+            6.7244859047854515
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -10.215185165405273,
+                  0.15480518341064453,
+                  7.355975151062012
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -9.849260330200195,
+                  0.15480518341064453,
+                  6.42533016204834
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -9.849260330200195,
+            0.15480518341064453,
+            6.42533016204834
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -8.862715084063074,
+            0.15480518341064453,
+            6.7244859047854515
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_graph_id": "g4"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "episode_id": "1149",
+      "high_level_step": 2,
+      "trajectory_id": "4597",
+      "baseline_index": 10,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g2",
+        "g3",
+        "g5",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          2.323397397994995,
+          0.0985960066318512,
+          1.1493439674377441
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.323397397994995,
+            0.0985960066318512,
+            1.1493439674377441
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            2.1630567917377097,
+            0.0985960066318512,
+            -0.5932950915716211
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  2.7236859798431396,
+                  0.0985960066318512,
+                  1.7835909128189087
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.802449941635132,
+                  0.0985960066318512,
+                  3.7820401191711426
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.802449941635132,
+            0.0985960066318512,
+            3.7820401191711426
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.3393961433430523,
+            0.0985960066318512,
+            3.4511721949126564
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  2.7236859798431396,
+                  0.0985960066318512,
+                  1.7835909128189087
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.802449941635132,
+                  0.0985960066318512,
+                  3.7820401191711426
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.802449941635132,
+            0.0985960066318512,
+            3.7820401191711426
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.3393961433430523,
+            0.0985960066318512,
+            3.4511721949126564
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_graph_id": "g2"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "episode_id": "1174",
+      "high_level_step": 2,
+      "trajectory_id": "4654",
+      "baseline_index": 9,
+      "alternative_index": 10,
+      "target_index": 10,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -2.8170089721679688,
+          3.4244003295898438,
+          -6.405109882354736
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.8170089721679688,
+            3.4244003295898438,
+            -6.405109882354736
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -1.0732891383033714,
+            3.4244003295898438,
+            -6.256984459191727
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.8170089721679688,
+            3.4244003295898438,
+            -6.405109882354736
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -1.8835393481319551,
+            3.4244003295898438,
+            -5.802059503883315
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.8170089721679688,
+            3.4244003295898438,
+            -6.405109882354736
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -1.8835393481319551,
+            3.4244003295898438,
+            -5.802059503883315
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "target_graph_id": "g8"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "episode_id": "1186",
+      "high_level_step": 2,
+      "trajectory_id": "4720",
+      "baseline_index": 9,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -2.4776101112365723,
+          -0.5138647556304932,
+          11.008028984069824
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.4776101112365723,
+            -0.5138647556304932,
+            11.008028984069824
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.292937138910835,
+            -0.5138647556304932,
+            9.519440426646257
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.75462007522583,
+                  -0.535740852355957,
+                  13.240914344787598
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.75462007522583,
+            -0.535740852355957,
+            13.240914344787598
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -2.0487507970865435,
+            -0.535740852355957,
+            11.917377959878168
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.75462007522583,
+                  -0.535740852355957,
+                  13.240914344787598
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.75462007522583,
+            -0.535740852355957,
+            13.240914344787598
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -2.0487507970865435,
+            -0.535740852355957,
+            11.917377959878168
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_graph_id": "g5"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "episode_id": "1263",
+      "high_level_step": 2,
+      "trajectory_id": "4951",
+      "baseline_index": 11,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          10.36949348449707,
+          0.17162801325321198,
+          -0.3190525770187378
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            10.36949348449707,
+            0.17162801325321198,
+            -0.3190525770187378
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            9.126971592289594,
+            0.17162801325321198,
+            -0.18252658174620545
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  11.364496231079102,
+                  0.17162801325321198,
+                  -0.2192191332578659
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            11.364496231079102,
+            0.17162801325321198,
+            -0.2192191332578659
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            12.73191972569891,
+            0.17162801325321198,
+            -0.8357846093930033
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  11.364496231079102,
+                  0.17162801325321198,
+                  -0.2192191332578659
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            11.364496231079102,
+            0.17162801325321198,
+            -0.2192191332578659
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            12.73191972569891,
+            0.17162801325321198,
+            -0.8357846093930033
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_graph_id": "g4"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "episode_id": "1278",
+      "high_level_step": 3,
+      "trajectory_id": "4976",
+      "baseline_index": 11,
+      "alternative_index": 5,
+      "target_index": 5,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g1",
+        "g2",
+        "g4",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -2.910304307937622,
+          3.4244003295898438,
+          -6.634137153625488
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -2.910304307937622,
+            3.4244003295898438,
+            -6.634137153625488
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -1.2289523730743428,
+            3.4244003295898438,
+            -6.148796375273301
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -2.632967233657837,
+                  3.451793909072876,
+                  -7.594910621643066
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.3724899291992188,
+                  3.4244003295898438,
+                  -9.637767791748047
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -2.6582400798797607,
+                  3.6244001388549805,
+                  -10.536199569702148
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -2.6582400798797607,
+            3.6244001388549805,
+            -10.536199569702148
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -2.9476160843661794,
+            3.6244001388549805,
+            -9.463214540893704
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -2.632967233657837,
+                  3.451793909072876,
+                  -7.594910621643066
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.3724899291992188,
+                  3.4244003295898438,
+                  -9.637767791748047
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -2.6582400798797607,
+                  3.6244001388549805,
+                  -10.536199569702148
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -2.6582400798797607,
+            3.6244001388549805,
+            -10.536199569702148
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -2.9476160843661794,
+            3.6244001388549805,
+            -9.463214540893704
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "episode_id": "14",
+      "high_level_step": 2,
+      "trajectory_id": "62",
+      "baseline_index": 10,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          13.36597728729248,
+          0.17162801325321198,
+          -0.6786731481552124
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            13.36597728729248,
+            0.17162801325321198,
+            -0.6786731481552124
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            12.331773590929282,
+            0.17162801325321198,
+            -2.0903822946966306
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  15.257805824279785,
+                  0.17162801325321198,
+                  0.5393086075782776
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  17.45949935913086,
+                  0.17162801325321198,
+                  0.21568399667739868
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            17.45949935913086,
+            0.17162801325321198,
+            0.21568399667739868
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            18.097012245154943,
+            0.17162801325321198,
+            -2.2016652375362353
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  15.257805824279785,
+                  0.17162801325321198,
+                  0.5393086075782776
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  17.45949935913086,
+                  0.17162801325321198,
+                  0.21568399667739868
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            17.45949935913086,
+            0.17162801325321198,
+            0.21568399667739868
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            18.097012245154943,
+            0.17162801325321198,
+            -2.2016652375362353
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "target_graph_id": "g3"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "episode_id": "1483",
+      "high_level_step": 2,
+      "trajectory_id": "5873",
+      "baseline_index": 9,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          6.039084434509277,
+          0.07521799951791763,
+          2.075183629989624
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            6.039084434509277,
+            0.07521799951791763,
+            2.075183629989624
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            6.931532116067915,
+            0.07521799951791763,
+            0.8695563510677293
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  4.555521011352539,
+                  0.07521799951791763,
+                  2.296635389328003
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            4.555521011352539,
+            0.07521799951791763,
+            2.296635389328003
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            3.0761364700971807,
+            0.07521799951791763,
+            2.048802019713108
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  4.555521011352539,
+                  0.07521799951791763,
+                  2.296635389328003
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            4.555521011352539,
+            0.07521799951791763,
+            2.296635389328003
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            3.0761364700971807,
+            0.07521799951791763,
+            2.048802019713108
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_graph_id": "g4"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "episode_id": "1507",
+      "high_level_step": 2,
+      "trajectory_id": "5938",
+      "baseline_index": 11,
+      "alternative_index": 9,
+      "target_index": 9,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          7.265786647796631,
+          0.7711027264595032,
+          5.766931056976318
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            7.265786647796631,
+            0.7711027264595032,
+            5.766931056976318
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            10.163596466755777,
+            0.7711027264595032,
+            4.990594626590652
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            7.265786647796631,
+            0.7711027264595032,
+            5.766931056976318
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            5.092477685623001,
+            0.7711027264595032,
+            5.184498095223826
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            7.265786647796631,
+            0.7711027264595032,
+            5.766931056976318
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            5.092477685623001,
+            0.7711027264595032,
+            5.184498095223826
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_graph_id": "g7"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "episode_id": "1552",
+      "high_level_step": 4,
+      "trajectory_id": "6092",
+      "baseline_index": 10,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -1.9443047046661377,
+          -1.9640676975250244,
+          8.640401840209961
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "4",
+        "front_pos": {
+          "__array__": [
+            -1.9443047046661377,
+            -1.9640676975250244,
+            8.640401840209961
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "4",
+        "ghost_pos": {
+          "__array__": [
+            -2.4005165217340596,
+            -1.9640676975250244,
+            9.235692339015028
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -1.9713560342788696,
+                  -1.5819389820098877,
+                  9.507975578308105
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -1.6084611415863037,
+                  -1.5819389820098877,
+                  9.851933479309082
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "4",
+        "front_pos": {
+          "__array__": [
+            -1.6084611415863037,
+            -1.5819389820098877,
+            9.851933479309082
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.0122651063129724,
+            -1.5819389820098877,
+            8.946447285525574
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -1.9713560342788696,
+                  -1.5819389820098877,
+                  9.507975578308105
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -1.6084611415863037,
+                  -1.5819389820098877,
+                  9.851933479309082
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "4",
+        "front_pos": {
+          "__array__": [
+            -1.6084611415863037,
+            -1.5819389820098877,
+            9.851933479309082
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.0122651063129724,
+            -1.5819389820098877,
+            8.946447285525574
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_graph_id": "g4"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "episode_id": "1568",
+      "high_level_step": 2,
+      "trajectory_id": "6169",
+      "baseline_index": 11,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -2.393622398376465,
+          3.2642593383789062,
+          6.974055767059326
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.393622398376465,
+            3.2642593383789062,
+            6.974055767059326
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.1752496513129347,
+            3.2642593383789062,
+            4.986013176132278
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.8470444679260254,
+                  3.2642593383789062,
+                  8.13891887664795
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.8470444679260254,
+            3.2642593383789062,
+            8.13891887664795
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -1.2162346453045032,
+            3.2642593383789062,
+            8.773709647249696
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.8470444679260254,
+                  3.2642593383789062,
+                  8.13891887664795
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -2.8470444679260254,
+            3.2642593383789062,
+            8.13891887664795
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -1.2162346453045032,
+            3.2642593383789062,
+            8.773709647249696
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_graph_id": "g4"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "episode_id": "159",
+      "high_level_step": 2,
+      "trajectory_id": "654",
+      "baseline_index": 8,
+      "alternative_index": 9,
+      "target_index": 9,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g2",
+        "g4",
+        "g6",
+        "g7"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          15.219938278198242,
+          0.12711000442504883,
+          0.344635009765625
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            15.219938278198242,
+            0.12711000442504883,
+            0.344635009765625
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            14.011708370681607,
+            0.12711000442504883,
+            1.2335559795837185
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            15.219938278198242,
+            0.12711000442504883,
+            0.344635009765625
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            16.333262745205037,
+            0.12711000442504883,
+            -1.6106165421232974
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            15.219938278198242,
+            0.12711000442504883,
+            0.344635009765625
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            16.333262745205037,
+            0.12711000442504883,
+            -1.6106165421232974
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_graph_id": "g7"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "episode_id": "1605",
+      "high_level_step": 3,
+      "trajectory_id": "6396",
+      "baseline_index": 11,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g0",
+        "g1",
+        "g3",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -0.7494853734970093,
+          0.04610800743103027,
+          3.6336100101470947
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -0.7494853734970093,
+            0.04610800743103027,
+            3.6336100101470947
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            0.21605912354341772,
+            0.04610800743103027,
+            1.8821181248576
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -1.4993387460708618,
+                  0.04610800743103027,
+                  3.6484451293945312
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.1561484336853027,
+                  0.04610800743103027,
+                  3.286365509033203
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -2.673180103302002,
+                  0.04610800743103027,
+                  2.4303998947143555
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -2.673180103302002,
+            0.04610800743103027,
+            2.4303998947143555
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -2.951054217636507,
+            0.04610800743103027,
+            1.4697823971728967
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -1.4993387460708618,
+                  0.04610800743103027,
+                  3.6484451293945312
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.1561484336853027,
+                  0.04610800743103027,
+                  3.286365509033203
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -2.673180103302002,
+                  0.04610800743103027,
+                  2.4303998947143555
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -2.673180103302002,
+            0.04610800743103027,
+            2.4303998947143555
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -2.951054217636507,
+            0.04610800743103027,
+            1.4697823971728967
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "episode_id": "1608",
+      "high_level_step": 2,
+      "trajectory_id": "6417",
+      "baseline_index": 10,
+      "alternative_index": 9,
+      "target_index": 9,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g4",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -3.766338348388672,
+          0.12711000442504883,
+          1.1502732038497925
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -3.766338348388672,
+            0.12711000442504883,
+            1.1502732038497925
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -2.281303645607193,
+            0.12711000442504883,
+            1.3616305589021414
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -3.766338348388672,
+            0.12711000442504883,
+            1.1502732038497925
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -4.6134583393739215,
+            0.12711000442504883,
+            0.6188715470278078
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -3.766338348388672,
+            0.12711000442504883,
+            1.1502732038497925
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -4.6134583393739215,
+            0.12711000442504883,
+            0.6188715470278078
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_graph_id": "g7"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "episode_id": "1624",
+      "high_level_step": 2,
+      "trajectory_id": "6523",
+      "baseline_index": 9,
+      "alternative_index": 8,
+      "target_index": 8,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g7"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          2.551344156265259,
+          0.07521799951791763,
+          -2.0720462799072266
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.551344156265259,
+            0.07521799951791763,
+            -2.0720462799072266
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            2.5099298805457715,
+            0.07521799951791763,
+            -3.3213600346408523
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.551344156265259,
+            0.07521799951791763,
+            -2.0720462799072266
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            3.789485004953254,
+            0.07521799951791763,
+            -2.2438229919789476
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.551344156265259,
+            0.07521799951791763,
+            -2.0720462799072266
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            3.789485004953254,
+            0.07521799951791763,
+            -2.2438229919789476
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "target_graph_id": "g6"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "episode_id": "1657",
+      "high_level_step": 2,
+      "trajectory_id": "6623",
+      "baseline_index": 9,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g4",
+        "g5",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          10.865815162658691,
+          0.20952606201171875,
+          -13.751428604125977
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            10.865815162658691,
+            0.20952606201171875,
+            -13.751428604125977
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            8.865820956308076,
+            0.20952606201171875,
+            -13.756242600799432
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            10.865815162658691,
+            0.20952606201171875,
+            -13.751428604125977
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            10.958453305841928,
+            0.20952606201171875,
+            -14.886091786857538
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            10.865815162658691,
+            0.20952606201171875,
+            -13.751428604125977
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            10.958453305841928,
+            0.20952606201171875,
+            -14.886091786857538
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "target_graph_id": "g4"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "episode_id": "166",
+      "high_level_step": 3,
+      "trajectory_id": "668",
+      "baseline_index": 11,
+      "alternative_index": 5,
+      "target_index": 5,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g0",
+        "g2",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          7.817941188812256,
+          0.12711000442504883,
+          7.185989856719971
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            7.817941188812256,
+            0.12711000442504883,
+            7.185989856719971
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            9.813417133414987,
+            0.12711000442504883,
+            7.05154375409206
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            7.817941188812256,
+            0.12711000442504883,
+            7.185989856719971
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            7.4008171272315915,
+            0.12711000442504883,
+            6.778988067611327
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            7.817941188812256,
+            0.12711000442504883,
+            7.185989856719971
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            7.4008171272315915,
+            0.12711000442504883,
+            6.778988067611327
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "target_graph_id": "g0"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "episode_id": "1677",
+      "high_level_step": 3,
+      "trajectory_id": "6655",
+      "baseline_index": 10,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g0",
+        "g2",
+        "g4",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -0.8751267790794373,
+          1.2407530546188354,
+          6.33251953125
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -0.8751267790794373,
+            1.2407530546188354,
+            6.33251953125
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -0.576874081029888,
+            1.2407530546188354,
+            5.118622777771285
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -0.7185483574867249,
+                  1.8642592430114746,
+                  7.5726728439331055
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  0.2054619938135147,
+                  2.100384473800659,
+                  7.190179824829102
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            0.2054619938135147,
+            2.100384473800659,
+            7.190179824829102
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -0.6445316539083195,
+            2.100384473800659,
+            5.1069105674280015
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  -0.7185483574867249,
+                  1.8642592430114746,
+                  7.5726728439331055
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  0.2054619938135147,
+                  2.100384473800659,
+                  7.190179824829102
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            0.2054619938135147,
+            2.100384473800659,
+            7.190179824829102
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -0.6445316539083195,
+            2.100384473800659,
+            5.1069105674280015
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_graph_id": "g2"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "episode_id": "1689",
+      "high_level_step": 3,
+      "trajectory_id": "6703",
+      "baseline_index": 10,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g1",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g8",
+        "g9",
+        "g10"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -0.5491678714752197,
+          0.10810885578393936,
+          0.738979160785675
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            -0.5491678714752197,
+            0.10810885578393936,
+            0.738979160785675
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            -1.7983947320002747,
+            0.10810885578393936,
+            0.782936537216885
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  0.6461158990859985,
+                  0.05937479808926582,
+                  0.37319591641426086
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  1.864153504371643,
+                  0.009996175765991211,
+                  0.6540602445602417
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            1.864153504371643,
+            0.009996175765991211,
+            0.6540602445602417
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            1.6898575634644324,
+            0.009996175765991211,
+            -0.583728479327349
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  0.6461158990859985,
+                  0.05937479808926582,
+                  0.37319591641426086
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  1.864153504371643,
+                  0.009996175765991211,
+                  0.6540602445602417
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            1.864153504371643,
+            0.009996175765991211,
+            0.6540602445602417
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            1.6898575634644324,
+            0.009996175765991211,
+            -0.583728479327349
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "target_graph_id": "g3"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "episode_id": "1708",
+      "high_level_step": 3,
+      "trajectory_id": "6766",
+      "baseline_index": 11,
+      "alternative_index": 0,
+      "target_index": 0,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g1",
+        "g2",
+        "g4",
+        "g5",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          5.892788887023926,
+          -2.5755999088287354,
+          -3.8805081844329834
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            5.892788887023926,
+            -2.5755999088287354,
+            -3.8805081844329834
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            4.807016659617016,
+            -2.5755999088287354,
+            -3.624720688742415
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 0,
+        "back_path": [],
+        "cur_vp": "3",
+        "stop_pos": {
+          "__array__": [
+            5.892788887023926,
+            -2.5755999088287354,
+            -3.8805081844329834
+          ],
+          "dtype": "<f4"
+        },
+        "stop_vp": "3",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 0,
+        "back_path": [],
+        "cur_vp": "3",
+        "stop_pos": {
+          "__array__": [
+            5.892788887023926,
+            -2.5755999088287354,
+            -3.8805081844329834
+          ],
+          "dtype": "<f4"
+        },
+        "stop_vp": "3",
+        "tryout": false
+      },
+      "target_graph_id": null
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "episode_id": "1778",
+      "high_level_step": 2,
+      "trajectory_id": "7042",
+      "baseline_index": 12,
+      "alternative_index": 5,
+      "target_index": 5,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          5.189840316772461,
+          0.07521799951791763,
+          0.2708057761192322
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            5.189840316772461,
+            0.07521799951791763,
+            0.2708057761192322
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            6.614158719236842,
+            0.07521799951791763,
+            -0.7459621858078305
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g10",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  3.7034194469451904,
+                  0.07521799951791763,
+                  0.3247520923614502
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.4858200550079346,
+                  0.07521799951791763,
+                  1.197890043258667
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.4858200550079346,
+            0.07521799951791763,
+            1.197890043258667
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            3.0625874693817856,
+            0.07521799951791763,
+            0.08890882172400882
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  3.7034194469451904,
+                  0.07521799951791763,
+                  0.3247520923614502
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.4858200550079346,
+                  0.07521799951791763,
+                  1.197890043258667
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.4858200550079346,
+            0.07521799951791763,
+            1.197890043258667
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            3.0625874693817856,
+            0.07521799951791763,
+            0.08890882172400882
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "episode_id": "1803",
+      "high_level_step": 2,
+      "trajectory_id": "7170",
+      "baseline_index": 10,
+      "alternative_index": 5,
+      "target_index": 5,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g4",
+        "g5",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          17.820724487304688,
+          0.12711000442504883,
+          -0.3736417293548584
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            17.820724487304688,
+            0.12711000442504883,
+            -0.3736417293548584
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            19.279877398820645,
+            0.12711000442504883,
+            -0.7213093591602608
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  16.447948455810547,
+                  0.12711000442504883,
+                  1.4090527296066284
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  16.67340087890625,
+                  0.12711000442504883,
+                  3.144469976425171
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            16.67340087890625,
+            0.12711000442504883,
+            3.144469976425171
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            14.690066528990736,
+            0.12711000442504883,
+            3.402122565089062
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  16.447948455810547,
+                  0.12711000442504883,
+                  1.4090527296066284
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  16.67340087890625,
+                  0.12711000442504883,
+                  3.144469976425171
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            16.67340087890625,
+            0.12711000442504883,
+            3.144469976425171
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            14.690066528990736,
+            0.12711000442504883,
+            3.402122565089062
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "episode_id": "268",
+      "high_level_step": 2,
+      "trajectory_id": "1047",
+      "baseline_index": 11,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -0.5092945694923401,
+          0.22887098789215088,
+          -0.23530521988868713
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -0.5092945694923401,
+            0.22887098789215088,
+            -0.23530521988868713
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -1.752122430455301,
+            0.22887098789215088,
+            -0.3690172538057262
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  0.11870399862527847,
+                  0.058393243700265884,
+                  0.1747169941663742
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -0.9964439868927002,
+                  0.11572682112455368,
+                  0.7394692897796631
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -0.9964439868927002,
+            0.11572682112455368,
+            0.7394692897796631
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            0.25199977604587165,
+            0.11572682112455368,
+            0.67711409128123
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  0.11870399862527847,
+                  0.058393243700265884,
+                  0.1747169941663742
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -0.9964439868927002,
+                  0.11572682112455368,
+                  0.7394692897796631
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -0.9964439868927002,
+            0.11572682112455368,
+            0.7394692897796631
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            0.25199977604587165,
+            0.11572682112455368,
+            0.67711409128123
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_graph_id": "g5"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "episode_id": "370",
+      "high_level_step": 2,
+      "trajectory_id": "1473",
+      "baseline_index": 11,
+      "alternative_index": 4,
+      "target_index": 4,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g9",
+        "g10",
+        "g11",
+        "g12"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -1.1614723205566406,
+          -0.535740852355957,
+          12.04166030883789
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -1.1614723205566406,
+            -0.535740852355957,
+            12.04166030883789
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -1.7238254141715985,
+            -0.535740852355957,
+            10.122348192974062
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -0.7477025985717773,
+                  -0.535740852355957,
+                  13.221193313598633
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -0.6155629754066467,
+                  -0.535740852355957,
+                  14.96619987487793
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -0.6155629754066467,
+            -0.535740852355957,
+            14.96619987487793
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.328062272505674,
+            -0.535740852355957,
+            14.635184178116566
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -0.7477025985717773,
+                  -0.535740852355957,
+                  13.221193313598633
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -0.6155629754066467,
+                  -0.535740852355957,
+                  14.96619987487793
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -0.6155629754066467,
+            -0.535740852355957,
+            14.96619987487793
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            0.328062272505674,
+            -0.535740852355957,
+            14.635184178116566
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "episode_id": "381",
+      "high_level_step": 2,
+      "trajectory_id": "1511",
+      "baseline_index": 11,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          6.963240146636963,
+          0.15480518341064453,
+          -11.771470069885254
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            6.963240146636963,
+            0.15480518341064453,
+            -11.771470069885254
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            5.744781329835716,
+            0.15480518341064453,
+            -12.050500734435415
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  8.586971282958984,
+                  0.15480518341064453,
+                  -11.11878490447998
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            8.586971282958984,
+            0.15480518341064453,
+            -11.11878490447998
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            9.624504783770965,
+            0.15480518341064453,
+            -10.421630520793816
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  8.586971282958984,
+                  0.15480518341064453,
+                  -11.11878490447998
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            8.586971282958984,
+            0.15480518341064453,
+            -11.11878490447998
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            9.624504783770965,
+            0.15480518341064453,
+            -10.421630520793816
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_graph_id": "g5"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "episode_id": "382",
+      "high_level_step": 2,
+      "trajectory_id": "1539",
+      "baseline_index": 11,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g2",
+        "g3",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          2.747344970703125,
+          -0.535740852355957,
+          18.692766189575195
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.747344970703125,
+            -0.535740852355957,
+            18.692766189575195
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            3.0570796008535117,
+            -0.535740852355957,
+            18.00971095104349
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  2.5461320877075195,
+                  -0.535740852355957,
+                  17.713220596313477
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  1.9862799644470215,
+                  -0.535740852355957,
+                  16.595600128173828
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            1.9862799644470215,
+            -0.535740852355957,
+            16.595600128173828
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            2.2545313566161775,
+            -0.535740852355957,
+            15.374722906419196
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  2.5461320877075195,
+                  -0.535740852355957,
+                  17.713220596313477
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  1.9862799644470215,
+                  -0.535740852355957,
+                  16.595600128173828
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            1.9862799644470215,
+            -0.535740852355957,
+            16.595600128173828
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            2.2545313566161775,
+            -0.535740852355957,
+            15.374722906419196
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_graph_id": "g2"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+      "episode_id": "392",
+      "high_level_step": 2,
+      "trajectory_id": "1574",
+      "baseline_index": 12,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g8",
+        "g9",
+        "g10"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          13.179532051086426,
+          0.00952601432800293,
+          -1.2630338668823242
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            13.179532051086426,
+            0.00952601432800293,
+            -1.2630338668823242
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            11.179594286028058,
+            0.00952601432800293,
+            -1.2788115692923636
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g10",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  15.16686725616455,
+                  0.00952601432800293,
+                  -1.0382928848266602
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  16.37339973449707,
+                  0.00952601432800293,
+                  -0.1470700055360794
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            16.37339973449707,
+            0.00952601432800293,
+            -0.1470700055360794
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            15.046904933038475,
+            0.00952601432800293,
+            -1.6438704403647575
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  15.16686725616455,
+                  0.00952601432800293,
+                  -1.0382928848266602
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  16.37339973449707,
+                  0.00952601432800293,
+                  -0.1470700055360794
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            16.37339973449707,
+            0.00952601432800293,
+            -0.1470700055360794
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            15.046904933038475,
+            0.00952601432800293,
+            -1.6438704403647575
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g3",
+        "tryout": false
+      },
+      "target_graph_id": "g3"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "episode_id": "413",
+      "high_level_step": 3,
+      "trajectory_id": "1654",
+      "baseline_index": 10,
+      "alternative_index": 5,
+      "target_index": 5,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g0",
+        "g2",
+        "g4",
+        "g5",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          2.195918083190918,
+          0.07521799951791763,
+          -1.9921919107437134
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            2.195918083190918,
+            0.07521799951791763,
+            -1.9921919107437134
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            1.2424145931245647,
+            0.07521799951791763,
+            -2.2935738850409226
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  2.195918083190918,
+                  0.07521799951791763,
+                  -2.067617893218994
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  2.195918083190918,
+                  0.07521799951791763,
+                  -1.7175074815750122
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  4.564879894256592,
+                  0.07521799951791763,
+                  -2.0490400791168213
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            4.564879894256592,
+            0.07521799951791763,
+            -2.0490400791168213
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            5.636509078034528,
+            0.07521799951791763,
+            -2.3587811683661934
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  2.195918083190918,
+                  0.07521799951791763,
+                  -2.067617893218994
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  2.195918083190918,
+                  0.07521799951791763,
+                  -1.7175074815750122
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  4.564879894256592,
+                  0.07521799951791763,
+                  -2.0490400791168213
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            4.564879894256592,
+            0.07521799951791763,
+            -2.0490400791168213
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            5.636509078034528,
+            0.07521799951791763,
+            -2.3587811683661934
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "target_graph_id": "g0"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "episode_id": "500",
+      "high_level_step": 2,
+      "trajectory_id": "1998",
+      "baseline_index": 10,
+      "alternative_index": 5,
+      "target_index": 5,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g2",
+        "g4",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -1.4189841747283936,
+          0.15480518341064453,
+          -12.255298614501953
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -1.4189841747283936,
+            0.15480518341064453,
+            -12.255298614501953
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            0.5782270943653434,
+            0.15480518341064453,
+            -12.149718566173755
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.641786575317383,
+                  0.15480518341064453,
+                  -11.995965957641602
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -4.353710174560547,
+                  0.15480518341064453,
+                  -11.63290023803711
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -4.353710174560547,
+            0.15480518341064453,
+            -11.63290023803711
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -3.381919907944797,
+            0.15480518341064453,
+            -12.419108656785529
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -2.641786575317383,
+                  0.15480518341064453,
+                  -11.995965957641602
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  -4.353710174560547,
+                  0.15480518341064453,
+                  -11.63290023803711
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -4.353710174560547,
+            0.15480518341064453,
+            -11.63290023803711
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            -3.381919907944797,
+            0.15480518341064453,
+            -12.419108656785529
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "episode_id": "507",
+      "high_level_step": 2,
+      "trajectory_id": "2027",
+      "baseline_index": 8,
+      "alternative_index": 9,
+      "target_index": 9,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          4.840403079986572,
+          0.17162801325321198,
+          -2.0122921466827393
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            4.840403079986572,
+            0.17162801325321198,
+            -2.0122921466827393
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            3.935668964408469,
+            0.17162801325321198,
+            -2.664814046700709
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            4.840403079986572,
+            0.17162801325321198,
+            -2.0122921466827393
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            3.7888927590807775,
+            0.17162801325321198,
+            -4.00146937484231
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            4.840403079986572,
+            0.17162801325321198,
+            -2.0122921466827393
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            3.7888927590807775,
+            0.17162801325321198,
+            -4.00146937484231
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_graph_id": "g7"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "episode_id": "553",
+      "high_level_step": 2,
+      "trajectory_id": "2250",
+      "baseline_index": 9,
+      "alternative_index": 8,
+      "target_index": 8,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          -5.371700286865234,
+          1.0461080074310303,
+          -0.34880349040031433
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -5.371700286865234,
+            1.0461080074310303,
+            -0.34880349040031433
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -6.59006676130804,
+            1.0461080074310303,
+            -0.6282370852914951
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -3.3719561100006104,
+                  0.8688504695892334,
+                  -0.31678029894828796
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -3.3719561100006104,
+            0.8688504695892334,
+            -0.31678029894828796
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -2.1343729696286777,
+            0.8688504695892334,
+            -0.4925300376881942
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  -3.3719561100006104,
+                  0.8688504695892334,
+                  -0.31678029894828796
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            -3.3719561100006104,
+            0.8688504695892334,
+            -0.31678029894828796
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -2.1343729696286777,
+            0.8688504695892334,
+            -0.4925300376881942
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "target_graph_id": "g6"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "episode_id": "640",
+      "high_level_step": 2,
+      "trajectory_id": "2662",
+      "baseline_index": 10,
+      "alternative_index": 9,
+      "target_index": 9,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          0.0444989874958992,
+          0.04610800743103027,
+          0.9444454908370972
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            0.0444989874958992,
+            0.04610800743103027,
+            0.9444454908370972
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -0.24751845564572034,
+            0.04610800743103027,
+            2.4157462122740956
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            0.0444989874958992,
+            0.04610800743103027,
+            0.9444454908370972
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            1.5928850183645473,
+            0.04610800743103027,
+            0.12896974048590892
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            0.0444989874958992,
+            0.04610800743103027,
+            0.9444454908370972
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            1.5928850183645473,
+            0.04610800743103027,
+            0.12896974048590892
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "target_graph_id": "g7"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "episode_id": "651",
+      "high_level_step": 3,
+      "trajectory_id": "2690",
+      "baseline_index": 13,
+      "alternative_index": 5,
+      "target_index": 5,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "g0",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g8",
+        "g9",
+        "g10",
+        "g11"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          7.227878093719482,
+          0.19006529450416565,
+          -1.4211925268173218
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            7.227878093719482,
+            0.19006529450416565,
+            -1.4211925268173218
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "3",
+        "ghost_pos": {
+          "__array__": [
+            6.938094822541274,
+            0.19006529450416565,
+            -2.1129480152272486
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g11",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  7.280689716339111,
+                  0.07521799951791763,
+                  0.3280104398727417
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  6.688641548156738,
+                  0.09624644368886948,
+                  1.4289100170135498
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  5.965390205383301,
+                  0.07521799951791763,
+                  2.0332300662994385
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            5.965390205383301,
+            0.07521799951791763,
+            2.0332300662994385
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            4.719646028240683,
+            0.07521799951791763,
+            2.136290461773462
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "2",
+              {
+                "__array__": [
+                  7.280689716339111,
+                  0.07521799951791763,
+                  0.3280104398727417
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  6.688641548156738,
+                  0.09624644368886948,
+                  1.4289100170135498
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  5.965390205383301,
+                  0.07521799951791763,
+                  2.0332300662994385
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "3",
+        "front_pos": {
+          "__array__": [
+            5.965390205383301,
+            0.07521799951791763,
+            2.0332300662994385
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            4.719646028240683,
+            0.07521799951791763,
+            2.136290461773462
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "target_graph_id": "g0"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "episode_id": "7",
+      "high_level_step": 2,
+      "trajectory_id": "42",
+      "baseline_index": 12,
+      "alternative_index": 5,
+      "target_index": 5,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g8",
+        "g9",
+        "g10"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          1.0426115989685059,
+          0.04610800743103027,
+          1.3511018753051758
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            1.0426115989685059,
+            0.04610800743103027,
+            1.3511018753051758
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            0.37871072152501095,
+            0.04610800743103027,
+            -0.5354917812435145
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g10",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  0.1017737090587616,
+                  0.04610800743103027,
+                  3.3902993202209473
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            0.1017737090587616,
+            0.04610800743103027,
+            3.3902993202209473
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -1.0971855841612936,
+            0.04610800743103027,
+            3.7553749096536913
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  0.1017737090587616,
+                  0.04610800743103027,
+                  3.3902993202209473
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            0.1017737090587616,
+            0.04610800743103027,
+            3.3902993202209473
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            -1.0971855841612936,
+            0.04610800743103027,
+            3.7553749096536913
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "episode_id": "730",
+      "high_level_step": 2,
+      "trajectory_id": "2978",
+      "baseline_index": 9,
+      "alternative_index": 8,
+      "target_index": 8,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          3.4591188430786133,
+          0.0985960066318512,
+          5.006143569946289
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            3.4591188430786133,
+            0.0985960066318512,
+            5.006143569946289
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            2.9415609128366764,
+            0.0985960066318512,
+            3.0742704403532297
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  4.2954936027526855,
+                  0.0985960066318512,
+                  5.935108184814453
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            4.2954936027526855,
+            0.0985960066318512,
+            5.935108184814453
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            4.752274781205774,
+            0.0985960066318512,
+            5.731758842521422
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  4.2954936027526855,
+                  0.0985960066318512,
+                  5.935108184814453
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            4.2954936027526855,
+            0.0985960066318512,
+            5.935108184814453
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            4.752274781205774,
+            0.0985960066318512,
+            5.731758842521422
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g6",
+        "tryout": false
+      },
+      "target_graph_id": "g6"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "episode_id": "776",
+      "high_level_step": 2,
+      "trajectory_id": "3202",
+      "baseline_index": 12,
+      "alternative_index": 4,
+      "target_index": 4,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          0.11470924317836761,
+          -0.6162347197532654,
+          9.993794441223145
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            0.11470924317836761,
+            -0.6162347197532654,
+            9.993794441223145
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -1.1344808545097615,
+            -0.6162347197532654,
+            9.948804444135765
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g10",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  1.0893245935440063,
+                  0.007885053753852844,
+                  9.769909858703613
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  1.7519199848175049,
+                  0.09474099427461624,
+                  9.418530464172363
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            1.7519199848175049,
+            0.09474099427461624,
+            9.418530464172363
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.648921509650199,
+            0.09474099427461624,
+            7.92207087096137
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  1.0893245935440063,
+                  0.007885053753852844,
+                  9.769909858703613
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  1.7519199848175049,
+                  0.09474099427461624,
+                  9.418530464172363
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            1.7519199848175049,
+            0.09474099427461624,
+            9.418530464172363
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            1.648921509650199,
+            0.09474099427461624,
+            7.92207087096137
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "episode_id": "783",
+      "high_level_step": 2,
+      "trajectory_id": "3263",
+      "baseline_index": 9,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g3",
+        "g5",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          9.878927230834961,
+          3.6180613040924072,
+          4.693725109100342
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            9.878927230834961,
+            3.6180613040924072,
+            4.693725109100342
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            10.204648370312254,
+            3.6180613040924072,
+            3.229516879613288
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  9.801712989807129,
+                  3.6180613040924072,
+                  5.941338539123535
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            9.801712989807129,
+            3.6180613040924072,
+            5.941338539123535
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            10.597880949909563,
+            3.6180613040924072,
+            7.776036492277223
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  9.801712989807129,
+                  3.6180613040924072,
+                  5.941338539123535
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            9.801712989807129,
+            3.6180613040924072,
+            5.941338539123535
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            10.597880949909563,
+            3.6180613040924072,
+            7.776036492277223
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_graph_id": "g5"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "episode_id": "833",
+      "high_level_step": 2,
+      "trajectory_id": "3411",
+      "baseline_index": 11,
+      "alternative_index": 5,
+      "target_index": 5,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g8",
+        "g9",
+        "g10"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          2.7141470909118652,
+          0.12711000442504883,
+          1.3356338739395142
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            2.7141470909118652,
+            0.12711000442504883,
+            1.3356338739395142
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            1.2185553153240862,
+            0.12711000442504883,
+            1.2207198156429147
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  4.7076873779296875,
+                  0.12711000442504883,
+                  1.17501699924469
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  5.9737701416015625,
+                  0.12711000442504883,
+                  2.353569984436035
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            5.9737701416015625,
+            0.12711000442504883,
+            2.353569984436035
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            6.640913781863963,
+            0.12711000442504883,
+            1.4595632656965243
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  4.7076873779296875,
+                  0.12711000442504883,
+                  1.17501699924469
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  5.9737701416015625,
+                  0.12711000442504883,
+                  2.353569984436035
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            5.9737701416015625,
+            0.12711000442504883,
+            2.353569984436035
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            6.640913781863963,
+            0.12711000442504883,
+            1.4595632656965243
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_graph_id": "g2"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "episode_id": "885",
+      "high_level_step": 2,
+      "trajectory_id": "3557",
+      "baseline_index": 11,
+      "alternative_index": 6,
+      "target_index": 6,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g1",
+        "g2",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          0.5034277439117432,
+          -0.3481530547142029,
+          9.822539329528809
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            0.5034277439117432,
+            -0.3481530547142029,
+            9.822539329528809
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            -0.7440291341436962,
+            -0.3481530547142029,
+            9.90223460788441
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g9",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  1.4508869647979736,
+                  0.18403682112693787,
+                  9.50266170501709
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  1.7459499835968018,
+                  0.044711098074913025,
+                  8.031970024108887
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            1.7459499835968018,
+            0.044711098074913025,
+            8.031970024108887
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            2.0217926079118134,
+            -0.15172097831964493,
+            9.097276093868008
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  1.4508869647979736,
+                  0.18403682112693787,
+                  9.50266170501709
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          },
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  1.7459499835968018,
+                  0.044711098074913025,
+                  8.031970024108887
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            1.7459499835968018,
+            0.044711098074913025,
+            8.031970024108887
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            2.0217926079118134,
+            -0.15172097831964493,
+            9.097276093868008
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g2",
+        "tryout": false
+      },
+      "target_graph_id": "g2"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "episode_id": "893",
+      "high_level_step": 2,
+      "trajectory_id": "3618",
+      "baseline_index": 9,
+      "alternative_index": 7,
+      "target_index": 7,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g7"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          5.013885974884033,
+          0.17162801325321198,
+          -2.5148203372955322
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            5.013885974884033,
+            0.17162801325321198,
+            -2.5148203372955322
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            6.2551273971626316,
+            0.17162801325321198,
+            -2.3671053021102066
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g7",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  4.0180230140686035,
+                  0.17162801325321198,
+                  -2.423955202102661
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            4.0180230140686035,
+            0.17162801325321198,
+            -2.423955202102661
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            4.075954689638128,
+            0.17162801325321198,
+            -0.9250743125835148
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "1",
+              {
+                "__array__": [
+                  4.0180230140686035,
+                  0.17162801325321198,
+                  -2.423955202102661
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            4.0180230140686035,
+            0.17162801325321198,
+            -2.423955202102661
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            4.075954689638128,
+            0.17162801325321198,
+            -0.9250743125835148
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "target_graph_id": "g5"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "episode_id": "931",
+      "high_level_step": 2,
+      "trajectory_id": "3856",
+      "baseline_index": 7,
+      "alternative_index": 10,
+      "target_index": 10,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "g0",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          7.122614860534668,
+          0.12711000442504883,
+          6.937919616699219
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            7.122614860534668,
+            0.12711000442504883,
+            6.937919616699219
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            8.843716589612594,
+            0.12711000442504883,
+            7.254635322285438
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g5",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            7.122614860534668,
+            0.12711000442504883,
+            6.937919616699219
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            6.091554370667122,
+            0.12711000442504883,
+            6.2312271332001385
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "2",
+        "front_pos": {
+          "__array__": [
+            7.122614860534668,
+            0.12711000442504883,
+            6.937919616699219
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "2",
+        "ghost_pos": {
+          "__array__": [
+            6.091554370667122,
+            0.12711000442504883,
+            6.2312271332001385
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g8",
+        "tryout": false
+      },
+      "target_graph_id": "g8"
+    }
+  ],
+  "label_rule": "success, then nDTW, then SDTW, then path/primitive/collision cost; fixed deadband 1e-6/1e-5; no tuning",
+  "hashes": {
+    "source_graph": "42274af584abb95d979f03a0f5dc63ee94d750546ba238d35464808757cc9447"
+  }
+}
