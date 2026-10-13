@@ -1,0 +1,116 @@
+{
+  "experiment_id": "NATIVE-SINGLE-ACTION-FULL-RETURN-001-RANK35",
+  "status": "frozen_before_outcomes",
+  "analysis_only_oracle": true,
+  "expected_event_count": 1,
+  "source_capture": "research/results/semantic_memory_alignment_smoke_001",
+  "endpoint_enum": "research/results/semantic_native_endpoint_enum_002",
+  "events": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "episode_id": "1624",
+      "high_level_step": 5,
+      "trajectory_id": "6523",
+      "baseline_index": 0,
+      "alternative_index": 14,
+      "target_index": 14,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "g1",
+        "g2",
+        "g3",
+        "g5",
+        "g6",
+        "g9",
+        "g11",
+        "g12",
+        "g13"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          6.932047367095947,
+          0.07521799951791763,
+          -1.8639634847640991
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 0,
+        "back_path": [],
+        "cur_vp": "5",
+        "stop_pos": {
+          "__array__": [
+            6.932047367095947,
+            0.07521799951791763,
+            -1.8639634847640991
+          ],
+          "dtype": "<f4"
+        },
+        "stop_vp": "5",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            6.932047367095947,
+            0.07521799951791763,
+            -1.8639634847640991
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            6.903215702127202,
+            0.07521799951791763,
+            -0.36424059866309344
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g12",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "5",
+        "front_pos": {
+          "__array__": [
+            6.932047367095947,
+            0.07521799951791763,
+            -1.8639634847640991
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "5",
+        "ghost_pos": {
+          "__array__": [
+            6.903215702127202,
+            0.07521799951791763,
+            -0.36424059866309344
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g12",
+        "tryout": false
+      },
+      "target_graph_id": "g12",
+      "endpoint_row_hash": "8c24182339db2f3554f39a8c3c00729e76632138fc0ea8730cf33f0ee772800e"
+    }
+  ],
+  "label_rule": "success, then nDTW, then SDTW, then path/primitive/collision cost; fixed deadband 1e-6/1e-5; no tuning",
+  "hashes": {
+    "source_graph": "b47f6b8e4f36cab0b53193e83f6b45fd4c3d070b1070bcd518ebf6fd1b7d6fcf",
+    "endpoint_options": "8c24182339db2f3554f39a8c3c00729e76632138fc0ea8730cf33f0ee772800e"
+  }
+}

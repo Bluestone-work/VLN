@@ -1,0 +1,278 @@
+{
+  "experiment_id": "NATIVE-SINGLE-ACTION-FULL-RETURN-001-RANK5",
+  "status": "frozen_before_outcomes",
+  "analysis_only_oracle": true,
+  "expected_event_count": 2,
+  "source_capture": "research/results/semantic_memory_alignment_smoke_001",
+  "endpoint_enum": "research/results/semantic_native_endpoint_enum_002",
+  "events": [
+    {
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "episode_id": "1624",
+      "high_level_step": 1,
+      "trajectory_id": "6523",
+      "baseline_index": 6,
+      "alternative_index": 3,
+      "target_index": 3,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          2.4359166622161865,
+          0.07521799951791763,
+          -1.3411808013916016
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            2.4359166622161865,
+            0.07521799951791763,
+            -1.3411808013916016
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            2.5817928848374567,
+            0.07521799951791763,
+            -2.1964978873954544
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.4118900299072266,
+                  0.07521799951791763,
+                  -0.09141170233488083
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            2.4118900299072266,
+            0.07521799951791763,
+            -0.09141170233488083
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            3.86797320487694,
+            0.07521799951791763,
+            -0.45171960895104
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.4118900299072266,
+                  0.07521799951791763,
+                  -0.09141170233488083
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            2.4118900299072266,
+            0.07521799951791763,
+            -0.09141170233488083
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            3.86797320487694,
+            0.07521799951791763,
+            -0.45171960895104
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g1",
+        "tryout": false
+      },
+      "target_graph_id": "g1",
+      "endpoint_row_hash": "8c24182339db2f3554f39a8c3c00729e76632138fc0ea8730cf33f0ee772800e"
+    },
+    {
+      "scene_id": "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+      "episode_id": "1778",
+      "high_level_step": 1,
+      "trajectory_id": "7042",
+      "baseline_index": 6,
+      "alternative_index": 3,
+      "target_index": 3,
+      "target_is_native": false,
+      "expected_graph_ids": [
+        null,
+        "0",
+        "1",
+        "g0",
+        "g1",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "expected_graph_position": {
+        "__array__": [
+          3.7034194469451904,
+          0.07521799951791763,
+          0.3247520923614502
+        ],
+        "dtype": "<f4"
+      },
+      "baseline_action": {
+        "act": 4,
+        "back_path": [],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            3.7034194469451904,
+            0.07521799951791763,
+            0.3247520923614502
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "1",
+        "ghost_pos": {
+          "__array__": [
+            5.186859406108267,
+            0.07521799951791763,
+            0.10247774035868529
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g4",
+        "tryout": false
+      },
+      "alternative_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.4858200550079346,
+                  0.07521799951791763,
+                  1.197890043258667
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            2.4858200550079346,
+            0.07521799951791763,
+            1.197890043258667
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            2.441823857269832,
+            0.07521799951791763,
+            0.19885834477028075
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "target_action": {
+        "act": 4,
+        "back_path": [
+          {
+            "__tuple__": [
+              "0",
+              {
+                "__array__": [
+                  2.4858200550079346,
+                  0.07521799951791763,
+                  1.197890043258667
+                ],
+                "dtype": "<f4"
+              }
+            ]
+          }
+        ],
+        "cur_vp": "1",
+        "front_pos": {
+          "__array__": [
+            2.4858200550079346,
+            0.07521799951791763,
+            1.197890043258667
+          ],
+          "dtype": "<f4"
+        },
+        "front_vp": "0",
+        "ghost_pos": {
+          "__array__": [
+            2.441823857269832,
+            0.07521799951791763,
+            0.19885834477028075
+          ],
+          "dtype": "<f8"
+        },
+        "ghost_vp": "g0",
+        "tryout": false
+      },
+      "target_graph_id": "g0",
+      "endpoint_row_hash": "8c24182339db2f3554f39a8c3c00729e76632138fc0ea8730cf33f0ee772800e"
+    }
+  ],
+  "label_rule": "success, then nDTW, then SDTW, then path/primitive/collision cost; fixed deadband 1e-6/1e-5; no tuning",
+  "hashes": {
+    "source_graph": "b47f6b8e4f36cab0b53193e83f6b45fd4c3d070b1070bcd518ebf6fd1b7d6fcf",
+    "endpoint_options": "8c24182339db2f3554f39a8c3c00729e76632138fc0ea8730cf33f0ee772800e"
+  }
+}
