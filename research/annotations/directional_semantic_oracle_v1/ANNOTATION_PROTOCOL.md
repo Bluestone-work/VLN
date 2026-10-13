@@ -1,6 +1,6 @@
 # Directional semantic oracle annotation protocol
 
-Protocol frozen: 2026-10-13T13:33:29.529366+00:00
+Protocol frozen: 2026-10-13T13:44:09.617944+00:00
 
 Scene split is frozen in `scene_split.json`; development is used only to test UI and join alignment. Formal test scenes are never used to change ontology.
 

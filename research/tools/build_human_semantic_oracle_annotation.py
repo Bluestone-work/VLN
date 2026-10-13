@@ -75,7 +75,9 @@ def main():
             for o in g['options']:
                 if not o['admissible'] or int(o['action']['act'])==0:continue
                 b=bearing(t['pre_pose'],arr(g['graph_position']),arr(o['action']['ghost_pos'])); sec=sector(b)
-                bysec.setdefault(sec,[]).append({'index':int(o['index']),'graph_id':o.get('graph_id'),'bearing_deg':b,'logit':float(o['logit'])})
+                # Native logits are intentionally omitted from the annotator
+                # artifact.  They are not needed to label visual evidence.
+                bysec.setdefault(sec,[]).append({'index':int(o['index']),'graph_id':o.get('graph_id'),'bearing_deg':b})
             files=g['semantic_visual']['files']
             for sec,actions in sorted(bysec.items()):
                 sensor='rgb' if sec==0 else 'rgb_'+str(sec); src=Path(files[sensor]); name=state_id+'__bearing{:03d}'.format(sec); png=out/'images'/(name+'.png')
