@@ -1,0 +1,12 @@
+{
+  "capture": "research/results/semantic_node_memory_multiview_001",
+  "capture_graph_sha256": "42274af584abb95d979f03a0f5dc63ee94d750546ba238d35464808757cc9447",
+  "capture_trace_sha256": "d5bd3e0678174c571804ac59cdca0bbb776eb2110ac59df71329ba6a9324efce",
+  "semantic_preannotation_source": "research/results/semantic_node_memory_features_004/semantic_node_memory.jsonl",
+  "states_per_scene": 12,
+  "selected_states": 48,
+  "unique_sectors": 241,
+  "selection_uses_outcomes": false,
+  "action_filter": "admissible native non-STOP options, one nearest 30-degree sector per state",
+  "scene_split_file": "scene_split.json"
+}

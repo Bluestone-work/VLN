@@ -1,0 +1,24 @@
+{
+  "development_scene": "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+  "test_scenes": [
+    "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+    "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+    "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb"
+  ],
+  "selection_rule": "Freeze before annotation: SHA-256 lexicographic order of scene_id; first four scenes only. No outcome, BENEFIT/HARM, evaluator metric, or semantic annotation was read.",
+  "selected_before_annotation": true,
+  "scene_order": [
+    "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+    "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+    "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+    "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+    "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+    "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+    "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+    "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+    "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+    "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb"
+  ],
+  "created_utc": "2026-10-13T13:33:18.357076+00:00"
+}
