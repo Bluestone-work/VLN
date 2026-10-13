@@ -1,0 +1,7 @@
+{
+  "endpoint_action_records": 80,
+  "causal_pair_records": 0,
+  "exact_join_records": 0,
+  "status": "BLOCKED_NO_EXACT_CAUSAL_PAIRS",
+  "reason": "endpoint branches contain native action identities, but the available single_override_pairs file is empty; no BENEFIT/HARM labels may be inferred"
+}
