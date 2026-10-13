@@ -1,0 +1,37 @@
+{
+  "experiment_id": "SEMANTIC-ACTION-CONDITIONED-SMOKE-001",
+  "capture_dir": "research/results/semantic_memory_alignment_smoke_001",
+  "episodes": 2,
+  "scenes": 1,
+  "modes": {
+    "isolated_branch": {
+      "options": 19,
+      "passed": 19,
+      "max_endpoint_error_m": 0.0,
+      "max_rotation_error_rad": 4.2146848510894035e-08,
+      "max_progress_error_m": 0.0,
+      "sensor_hash_matches": 19,
+      "primitive_events": 168,
+      "collision_events": 81,
+      "stop_options": 2,
+      "options_with_back_path": 3,
+      "tryout_options": 0
+    }
+  },
+  "selected_option_replay_gate_passed": true,
+  "baseline_noninterference_gate": "must be checked separately against untraced evaluation",
+  "all_action_counterfactual_validated": false,
+  "gates": {
+    "endpoint_tolerance_m": 1e-05,
+    "rotation_tolerance_rad": 1e-05,
+    "progress_tolerance_m": 1e-05,
+    "primitive_action_sequence_exact": true,
+    "per_primitive_collision_sequence_exact": true,
+    "rng_post_exact": true,
+    "terminal_flag_exact": true,
+    "baseline_episode_metrics_tolerance": 1e-06
+  },
+  "scope_limits": "Analysis-only isolated native controller branches from frozen pre-action states; endpoint RGB-D is not policy input.",
+  "capture_sha256": "8b06e7cee6190c3cf8d83c6e24765967c02d86afaeaf56dcb040f5b014a88ce1",
+  "replay_source_sha256": "787d986d8b14912eca01f22d7241e1fd0bcee39d3ad3d0212cc8219a163eac29"
+}

@@ -74,10 +74,17 @@ def main():
     parser.add_argument('--capture-dir', type=Path, required=True)
     parser.add_argument('--output-dir', type=Path, required=True)
     parser.add_argument('--max-episodes', type=int, default=-1)
+    parser.add_argument('--save-endpoint-observations', action='store_true',
+                        help='opt-in save post-controller RGB-D for isolated native branches')
+    parser.add_argument('--protocol', type=Path,
+                        help='optional protocol JSON override for captures made by another runner')
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=False)
+    endpoint_dir = args.output_dir / 'endpoint_observations'
+    if args.save_endpoint_observations:
+        endpoint_dir.mkdir(parents=True, exist_ok=True)
     manifest = json.loads((args.capture_dir / 'manifest.json').read_text())
-    protocol = manifest['config']
+    protocol = json.loads(args.protocol.read_text()) if args.protocol else manifest['config']
     traces = list((args.capture_dir / 'traces').glob('worker_seed*.jsonl'))
     if len(traces) != 1:
         raise ValueError('First calibration requires one capture worker')
@@ -132,6 +139,17 @@ def main():
                                    'back_path_nodes': len(action.get('back_path') or []),
                                    'tryout': bool(action['tryout']),
                                    'collided_primitives': sum(p['collided'] is True for p in expected['primitives'])})
+                    if args.save_endpoint_observations and mode == 'isolated_branch':
+                        observations = env.habitat_env.sim.get_sensor_observations()
+                        files = {}
+                        stem = '{}_step{:03d}_idx{}'.format(episode_id, int(expected['high_level_step']),
+                                                            int(expected['action'].get('act', 0)))
+                        for sensor in ('rgb', 'depth'):
+                            if sensor in observations:
+                                path = endpoint_dir / '{}_{}.npy'.format(stem, sensor)
+                                np.save(str(path), np.asarray(observations[sensor]), allow_pickle=False)
+                                files[sensor] = str(path)
+                        result['endpoint_observation_files'] = files
                     rows_output.append(result)
                     with (args.output_dir / 'comparisons.jsonl').open('a') as stream:
                         stream.write(json.dumps(result, sort_keys=True) + '\n')
