@@ -113,8 +113,8 @@ class OptionTraceEnv(VLNCEDaggerEnv):
         """Return the current base RGB-D sensors for opt-in semantic capture."""
         observations = self._env.sim.get_sensor_observations()
         result = {}
-        for key in ('rgb', 'depth'):
-            if key in observations:
+        for key in observations:
+            if key == 'rgb' or key == 'depth' or key.startswith('rgb_') or key.startswith('depth_'):
                 result[key] = np.asarray(observations[key])
         return result
 
