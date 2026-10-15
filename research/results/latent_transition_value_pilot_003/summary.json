@@ -1,0 +1,130 @@
+{
+  "status": "pilot",
+  "rows": 874,
+  "states": 84,
+  "scenes": 7,
+  "labels": {
+    "HARM": 842,
+    "BENEFIT": 32
+  },
+  "endpoint_target_only": true,
+  "models": {
+    "F0": {
+      "auroc": 0.5881457838479809,
+      "auprc": 0.1051805612600039,
+      "pairwise": 0.6944444444444444,
+      "predicted_benefit": 39,
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.3948454306904927,
+          0.9541429906743462
+        ],
+        "auprc": [
+          0.054663279261281436,
+          0.2204497169071079
+        ],
+        "pairwise": [
+          0.45934959349593496,
+          0.9682539682539683
+        ]
+      }
+    },
+    "F0+geometry": {
+      "auroc": 0.5779023159144894,
+      "auprc": 0.0988158871160023,
+      "pairwise": 0.6944444444444444,
+      "predicted_benefit": 39,
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.38468290542023253,
+          0.9531620487629894
+        ],
+        "auprc": [
+          0.05472687846599389,
+          0.20122979651475492
+        ],
+        "pairwise": [
+          0.43766937669376693,
+          0.9682539682539683
+        ]
+      }
+    },
+    "F0+predicted_transition": {
+      "auroc": 0.6042161520190024,
+      "auprc": 0.09452620090865702,
+      "pairwise": 0.75,
+      "predicted_benefit": 39,
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.392558235641452,
+          0.94304488270703
+        ],
+        "auprc": [
+          0.05054197075210259,
+          0.1966828975524046
+        ],
+        "pairwise": [
+          0.5174337517433751,
+          0.9682539682539683
+        ]
+      }
+    },
+    "F0+oracle_endpoint": {
+      "auroc": 0.5882200118764845,
+      "auprc": 0.10256526272557745,
+      "pairwise": 0.7083333333333334,
+      "predicted_benefit": 32,
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.38605944512682533,
+          0.9399413219308258
+        ],
+        "auprc": [
+          0.0505778154245766,
+          0.20578091786801678
+        ],
+        "pairwise": [
+          0.4742547425474255,
+          0.9682539682539683
+        ]
+      }
+    }
+  },
+  "protocol": {
+    "split": "leave-one-scene-out by scene",
+    "transition_input": "current pre-action RGB ResNet + action geometry + native logit summary",
+    "transition_target": "post-action endpoint RGB ResNet PCA-16 latent",
+    "online_endpoint_observation_used": false,
+    "value_labels_used_only_for_value_head": true
+  },
+  "paired_deltas": {
+    "F0+predicted_transition minus F0": {
+      "auroc": [
+        -0.02397769917338611,
+        0.02706767460247174
+      ],
+      "auprc": [
+        -0.05101559160031935,
+        0.006529560078249371
+      ],
+      "pairwise": [
+        0.0,
+        0.11379637712789174
+      ]
+    },
+    "F0+oracle_endpoint minus F0": {
+      "auroc": [
+        -0.022290311760584824,
+        0.011502393220681499
+      ],
+      "auprc": [
+        -0.03309280431109448,
+        0.016133813812653983
+      ],
+      "pairwise": [
+        0.0,
+        0.028449094281972957
+      ]
+    }
+  }
+}
