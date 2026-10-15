@@ -1,0 +1,9 @@
+{
+  "model": "torchvision resnet18 ImageNet pretrained, fc removed, frozen",
+  "rows": 3877,
+  "unique_sectors": 1616,
+  "valid_rows": 3548,
+  "device": "cuda",
+  "input": "current pre-action RGB sector only",
+  "future_endpoint_used": false
+}

@@ -1,0 +1,224 @@
+{
+  "dataset": "research/results/visual_waypoint_value_dataset_003",
+  "rows": 3877,
+  "states": 369,
+  "scenes": 11,
+  "labels": {
+    "HARM": 3447,
+    "BENEFIT": 430
+  },
+  "split": "leave-one-scene-out",
+  "weighting": "inverse candidate count per state then class balanced per train fold",
+  "models": {
+    "F0": {
+      "auroc": 0.7219483069200721,
+      "auprc": 0.21289189101528852,
+      "benefit_precision": 0.240625,
+      "benefit_recall": 0.3581395348837209,
+      "predicted_benefit": 640,
+      "brier": 0.13993773271983373,
+      "within_state_pairwise": 0.7791277258566979,
+      "rescue": {
+        "states": 369,
+        "native_wrong_states": 182,
+        "native_correct_states": 187,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 71,
+        "native_correct_model_wrong": 124,
+        "rescue_rate": 0.3901098901098901,
+        "destruction_rate": 0.6631016042780749
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.6703021450295346,
+          0.7791616699409141
+        ],
+        "auprc": [
+          0.14565955046210435,
+          0.3132334119430283
+        ],
+        "pairwise": [
+          0.7060433821053598,
+          0.8850406831080053
+        ]
+      }
+    },
+    "F0+geometry": {
+      "auroc": 0.7274711410663807,
+      "auprc": 0.21468200391390524,
+      "benefit_precision": 0.24382716049382716,
+      "benefit_recall": 0.3674418604651163,
+      "predicted_benefit": 648,
+      "brier": 0.13883016461778633,
+      "within_state_pairwise": 0.7831775700934579,
+      "rescue": {
+        "states": 369,
+        "native_wrong_states": 182,
+        "native_correct_states": 187,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 71,
+        "native_correct_model_wrong": 127,
+        "rescue_rate": 0.3901098901098901,
+        "destruction_rate": 0.679144385026738
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.6803682478087426,
+          0.7821195425006653
+        ],
+        "auprc": [
+          0.14709110509430726,
+          0.3156360460427767
+        ],
+        "pairwise": [
+          0.7075566606986072,
+          0.8896495678579427
+        ]
+      }
+    },
+    "F0+visual": {
+      "auroc": 0.6999952773223768,
+      "auprc": 0.20912494934582218,
+      "benefit_precision": 0.24736842105263157,
+      "benefit_recall": 0.32790697674418606,
+      "predicted_benefit": 570,
+      "brier": 0.1346060726569037,
+      "within_state_pairwise": 0.7638629283489097,
+      "rescue": {
+        "states": 369,
+        "native_wrong_states": 182,
+        "native_correct_states": 187,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 67,
+        "native_correct_model_wrong": 127,
+        "rescue_rate": 0.36813186813186816,
+        "destruction_rate": 0.679144385026738
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.6359847146696905,
+          0.7746463789120892
+        ],
+        "auprc": [
+          0.1398254252402572,
+          0.29512208394025297
+        ],
+        "pairwise": [
+          0.6950512580442656,
+          0.884933933687807
+        ]
+      }
+    },
+    "F0+geometry+visual": {
+      "auroc": 0.7039177984226257,
+      "auprc": 0.21070759259097274,
+      "benefit_precision": 0.25089605734767023,
+      "benefit_recall": 0.32558139534883723,
+      "predicted_benefit": 558,
+      "brier": 0.13370819270111367,
+      "within_state_pairwise": 0.7638629283489097,
+      "rescue": {
+        "states": 369,
+        "native_wrong_states": 182,
+        "native_correct_states": 187,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 67,
+        "native_correct_model_wrong": 126,
+        "rescue_rate": 0.36813186813186816,
+        "destruction_rate": 0.6737967914438503
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.6399812825699507,
+          0.7779731947380781
+        ],
+        "auprc": [
+          0.13978540953337973,
+          0.29782376953391004
+        ],
+        "pairwise": [
+          0.6889245796274469,
+          0.8852957141703899
+        ]
+      }
+    },
+    "visual-only": {
+      "auroc": 0.5685483163654272,
+      "auprc": 0.13433193076344124,
+      "benefit_precision": 0.13532934131736526,
+      "benefit_recall": 0.2627906976744186,
+      "predicted_benefit": 835,
+      "brier": 0.19658258788763938,
+      "within_state_pairwise": 0.5448598130841121,
+      "rescue": {
+        "states": 369,
+        "native_wrong_states": 182,
+        "native_correct_states": 187,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 42,
+        "native_correct_model_wrong": 96,
+        "rescue_rate": 0.23076923076923078,
+        "destruction_rate": 0.5133689839572193
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.502190872963808,
+          0.6275891693262045
+        ],
+        "auprc": [
+          0.08367904186529125,
+          0.1940175765869833
+        ],
+        "pairwise": [
+          0.4816448490855541,
+          0.6365570020483192
+        ]
+      }
+    }
+  },
+  "paired_deltas": {
+    "F0+visual minus F0": {
+      "auroc": [
+        -0.07356553294470754,
+        0.029794847760159733
+      ],
+      "auprc": [
+        -0.04320982323663551,
+        0.02704474636723905
+      ],
+      "pairwise": [
+        -0.05718413376545299,
+        0.014193254205691336
+      ]
+    },
+    "F0+geometry+visual minus F0+geometry": {
+      "auroc": [
+        -0.07465611490439124,
+        0.027095103897013185
+      ],
+      "auprc": [
+        -0.04116917241814222,
+        0.027209485321019185
+      ],
+      "pairwise": [
+        -0.07154893574105464,
+        0.014299890407550595
+      ]
+    },
+    "visual-only minus F0": {
+      "auroc": [
+        -0.24088025109614525,
+        -0.07662134514226648
+      ],
+      "auprc": [
+        -0.1511533523082154,
+        -0.016011481105091523
+      ],
+      "pairwise": [
+        -0.3166136938642633,
+        -0.18286936466620687
+      ]
+    }
+  },
+  "rescue": {}
+}
