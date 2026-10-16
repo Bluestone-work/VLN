@@ -1,0 +1,26 @@
+{
+  "cohort_status": "outcome-enriched development cohorts; not an unbiased benchmark",
+  "states": 440,
+  "episodes": 66,
+  "scenes": 11,
+  "episode_labels": {
+    "1": 44,
+    "0": 22
+  },
+  "models": {
+    "all_states": {
+      "auroc": 0.9614870796595291,
+      "auprc": 0.9890256834806732,
+      "predicted_failure_precision": 0.9720670391061452,
+      "predicted_failure_recall": 0.943089430894309,
+      "coverage": 0.8136363636363636
+    },
+    "early_step_le3": {
+      "auroc": 0.9285037878787878,
+      "auprc": 0.9936740549725316,
+      "predicted_failure_precision": 0.9829545454545454,
+      "predicted_failure_recall": 0.9829545454545454,
+      "coverage": 0.9361702127659575
+    }
+  }
+}
