@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "source_pairs": "research/results/native_single_action_full_return_44_002/directional_pairs_002/pairs.jsonl",
+  "rows": 3877,
+  "states": 369,
+  "scenes": 11,
+  "scene_ids": [
+    "data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+    "data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+    "data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+    "data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+    "data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+    "data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb",
+    "data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+    "data/scene_datasets/mp3d/pLe4wQe7qrG/pLe4wQe7qrG.glb",
+    "data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+    "data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb"
+  ],
+  "labels": {
+    "HARM": 3447,
+    "BENEFIT": 430
+  },
+  "mixed_states": 182,
+  "feature_dimensions": {
+    "graph": 18,
+    "native": 775,
+    "geometry": 4
+  },
+  "graph_feature_names": [
+    "visited_count",
+    "ghost_count",
+    "nonnull_graph_size",
+    "current_vp_index",
+    "high_level_step",
+    "back_path_length",
+    "state_candidate_count",
+    "action_index",
+    "action_index_fraction",
+    "candidate_is_stop",
+    "candidate_is_visited",
+    "candidate_is_current",
+    "candidate_is_backtrack",
+    "candidate_is_ghost",
+    "candidate_history_age",
+    "candidate_ghost_index",
+    "current_proposal",
+    "is_stop"
+  ],
+  "split": "leave-one-scene-out; states never split across folds",
+  "label_features_separation": "BENEFIT/HARM are targets only; no endpoint, goal, reference, or final outcome feature"
+}
