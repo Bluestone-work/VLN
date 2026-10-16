@@ -46,6 +46,20 @@ def save_case(out, row, pair, graph, title):
     canvas.save(path);return path.name
 
 
+def save_context_case(out, row, pair, graph, title):
+    """Show all pre-action sectors so apparent zoom is visibly separated from motion."""
+    files=graph['semantic_visual']['files']; sec=int(pair['features']['sector_deg'])
+    sheet=Image.new('RGB',(900,560),'#101a2b');d=ImageDraw.Draw(sheet)
+    d.text((20,16),title+'：相机没有缩放，机器人执行了 {:.2f} m 的候选位移'.format(pair['features']['distance']),font=font(25,True),fill='white')
+    for j,b in enumerate(range(0,360,30)):
+        key='rgb_{}'.format(b) if b else 'rgb'; im=load_rgb(files[key]).resize((210,145),Image.BICUBIC)
+        x=20+(j%4)*220;y=65+(j//4)*165
+        sheet.paste(im,(x,y)); color='#ffbd68' if b==sec else '#60758e';d.rectangle((x,y,x+210,y+145),outline=color,width=5 if b==sec else 2)
+        d.text((x+7,y+7),'bearing {}°{}'.format(b,'  ← candidate' if b==sec else ''),font=font(15,True if b==sec else False),fill='#ffbd68' if b==sec else 'white')
+    outp=out/'cases'/('{}__context.png'.format(pair['label'].lower()));sheet.save(outp)
+    return outp.name
+
+
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path,required=True);args=ap.parse_args();out=args.output.resolve();(out/'cases').mkdir(parents=True,exist_ok=True)
     summary=json.loads((ROOT/'research/results/latent_transition_value_full_001/summary.json').read_text())
@@ -58,7 +72,10 @@ def main():
         if p and er['action_type']==4 and p['label'] not in selected:selected[p['label']]=(er,p,graphs[(k[0],k[1])])
         if len(selected)==2:break
     cases=[]
-    for label,(er,p,g) in selected.items():cases.append(save_case(out,er,p,g,'{} example'.format(label)))
+    context_cases=[]
+    for label,(er,p,g) in selected.items():
+        cases.append(save_case(out,er,p,g,'{} example'.format(label)))
+        context_cases.append(save_context_case(out,er,p,g,'{} example'.format(label)))
 
     names=['F0','F0 + geometry','F0 + predicted\ntransition','F0 + oracle\nendpoint']
     keys=['F0','F0+geometry','F0+predicted_transition','F0+oracle_endpoint']; metrics=['auroc','auprc','pairwise'];
@@ -73,7 +90,7 @@ def main():
 <h1>原始 ETPNav：短期 latent transition/value probe</h1><div class="card"><p>这页展示的是“做了什么”，不是在线导航录像。原始 ETPNav policy、Graph Transformer、controller 和 STOP 都没有改变。</p><div class="flow"><div class="box">当前节点 pre-action RGB-D sector<br><small>线上可用</small></div><div class="arrow">＋</div><div class="box">candidate bearing / distance<br>native logit summary</div><div class="arrow">→</div><div class="box">预测下一时刻视觉 latent<br><small>PCA-16 ResNet latent</small></div><div class="arrow">→</div><div class="box">BENEFIT / HARM value probe</div></div><p class="warn">Endpoint 图像只用于训练 dynamics target，不能作为线上输入。右侧案例中的 endpoint 是“如果执行该 action 后看到的图像”，不是模型事先看到的输入。</p></div>
 <h2>1. 数据规模</h2><div class="card"><p>4,251 个 exact endpoint branches · 373 states · 44 episodes · 11 scenes · 3,877 个 causal alternatives。</p><p>BENEFIT: 430，HARM: 3,447；所有 native selected sentinel 373/373 精确通过。</p></div>
 <h2>2. 当前 sector 与 endpoint 对照</h2>'''
-    for c in cases:page+='<div class="card"><img src="cases/{}"></div>'.format(c)
+    for c,cc in zip(cases,context_cases):page+='<div class="card"><img src="cases/{}"><br><img src="cases/{}"></div>'.format(cc,c)
     page+='''<p>左图是 action 执行前对应 bearing 的当前 sector；右图是 exact replay 后的 endpoint RGB。它们用于说明 transition target 的含义。正式 value probe 不会读取右图。</p><h2>3. 指标对比</h2><div class="card"><img src="metrics.png"></div><table><tr><th>模型</th><th>AUROC</th><th>AUPRC</th><th>within-state pairwise</th></tr>'''
     for n,k in zip(names,keys):page+='<tr><td>{}</td><td>{:.3f}</td><td>{:.3f}</td><td>{:.3f}</td></tr>'.format(n.replace('\n',' '),summary['models'][k]['auroc'],summary['models'][k]['auprc'],summary['models'][k]['pairwise'])
     page+='''</table><h2>4. Transition 相对 native 的不确定性</h2><div class="card"><img src="paired_delta_ci.png"><p>横线穿过 0 表示 scene-bootstrap 没有证明 transition 分支稳定优于 F0。</p></div><h2>结论</h2><div class="card"><p><span class="warn">当前一步 endpoint RGB latent transition 没有通过 GO gate。</span> 它没有稳定提供 native ETPNav 之外的 waypoint value signal。下一步若继续，应预测 instruction-conditioned traversability 或 graph/history transition state，而不是继续生成未来 RGB。</p><p><a href="../LATENT_TRANSITION_VALUE_REPORT.md">打开完整报告</a></p></div></html>'''
