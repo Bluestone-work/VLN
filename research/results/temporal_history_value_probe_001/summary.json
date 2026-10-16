@@ -1,0 +1,226 @@
+{
+  "dataset": "research/results/temporal_history_value_dataset_001",
+  "rows": 3877,
+  "states": 369,
+  "scenes": 11,
+  "labels": {
+    "HARM": 3447,
+    "BENEFIT": 430
+  },
+  "split": "leave-one-scene-out",
+  "models": {
+    "F0_native": {
+      "auroc": 0.7219469575836083,
+      "auprc": 0.2128952894753781,
+      "within_state_pairwise": 0.7791277258566979,
+      "benefit_precision": 0.240625,
+      "benefit_recall": 0.3581395348837209,
+      "predicted_benefit": 640,
+      "brier": 0.13993700364273295,
+      "rescue": {
+        "states": 369,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 107,
+        "native_correct_model_wrong": 187,
+        "rescue_rate": 0.5879120879120879,
+        "destruction_rate": 1.0
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.6690245966219386,
+          0.7813014669036118
+        ],
+        "auprc": [
+          0.1466967246548719,
+          0.3105909456622972
+        ],
+        "pairwise": [
+          0.7045444045061058,
+          0.8793731452677257
+        ]
+      }
+    },
+    "F0_plus_geometry": {
+      "auroc": 0.7274664183887574,
+      "auprc": 0.21466917933938437,
+      "within_state_pairwise": 0.7831775700934579,
+      "benefit_precision": 0.24382716049382716,
+      "benefit_recall": 0.3674418604651163,
+      "predicted_benefit": 648,
+      "brier": 0.13883287564700353,
+      "rescue": {
+        "states": 369,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 106,
+        "native_correct_model_wrong": 187,
+        "rescue_rate": 0.5824175824175825,
+        "destruction_rate": 1.0
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.6787548171844687,
+          0.784390826192266
+        ],
+        "auprc": [
+          0.14840975109693383,
+          0.3118774975332319
+        ],
+        "pairwise": [
+          0.7061164901252185,
+          0.8806521909739654
+        ]
+      }
+    },
+    "graph_history_only": {
+      "auroc": 0.7328978349896438,
+      "auprc": 0.28459091432681644,
+      "within_state_pairwise": 0.7691588785046729,
+      "benefit_precision": 0.2274436090225564,
+      "benefit_recall": 0.5627906976744186,
+      "predicted_benefit": 1064,
+      "brier": 0.17717085336767083,
+      "rescue": {
+        "states": 369,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 93,
+        "native_correct_model_wrong": 187,
+        "rescue_rate": 0.510989010989011,
+        "destruction_rate": 1.0
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.6810064344711803,
+          0.7936777038190912
+        ],
+        "auprc": [
+          0.15515371134956404,
+          0.39644459708592217
+        ],
+        "pairwise": [
+          0.6937813173061548,
+          0.8613673210188697
+        ]
+      }
+    },
+    "F0_plus_graph_history": {
+      "auroc": 0.7160442852227418,
+      "auprc": 0.21178202591898576,
+      "within_state_pairwise": 0.7763239875389408,
+      "benefit_precision": 0.24528301886792453,
+      "benefit_recall": 0.3627906976744186,
+      "predicted_benefit": 636,
+      "brier": 0.13977381669379624,
+      "rescue": {
+        "states": 369,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 105,
+        "native_correct_model_wrong": 187,
+        "rescue_rate": 0.5769230769230769,
+        "destruction_rate": 1.0
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.6673308319482425,
+          0.7749511214282255
+        ],
+        "auprc": [
+          0.14857891800389686,
+          0.3041098867773868
+        ],
+        "pairwise": [
+          0.7020688158562949,
+          0.8784353818841968
+        ]
+      }
+    },
+    "F0_plus_geometry_plus_graph_history": {
+      "auroc": 0.7196024854777663,
+      "auprc": 0.2126173851140294,
+      "within_state_pairwise": 0.7791277258566979,
+      "benefit_precision": 0.24574961360123648,
+      "benefit_recall": 0.3697674418604651,
+      "predicted_benefit": 647,
+      "brier": 0.1391458590425413,
+      "rescue": {
+        "states": 369,
+        "rescue_opportunity_states": 182,
+        "native_wrong_model_correct": 106,
+        "native_correct_model_wrong": 187,
+        "rescue_rate": 0.5824175824175825,
+        "destruction_rate": 1.0
+      },
+      "scene_bootstrap_ci": {
+        "auroc": [
+          0.6731403014861665,
+          0.7773644009737193
+        ],
+        "auprc": [
+          0.14924346380493023,
+          0.3067831682982692
+        ],
+        "pairwise": [
+          0.7024406918282221,
+          0.8809804732266234
+        ]
+      }
+    }
+  },
+  "paired_deltas": {
+    "F0_plus_geometry minus F0_native": {
+      "auroc": [
+        -0.0010304358058848579,
+        0.012137834847376048
+      ],
+      "auprc": [
+        -0.0021107610906376554,
+        0.004662294265960654
+      ],
+      "pairwise": [
+        -0.005308732119345649,
+        0.016928277284350726
+      ]
+    },
+    "graph_history_only minus F0_native": {
+      "auroc": [
+        -0.057391259872111584,
+        0.08220922618407217
+      ],
+      "auprc": [
+        -0.03286743252700583,
+        0.1638849972537191
+      ],
+      "pairwise": [
+        -0.05427092820657899,
+        0.02652852552120467
+      ]
+    },
+    "F0_plus_graph_history minus F0_native": {
+      "auroc": [
+        -0.04173969809262938,
+        0.023799041726885774
+      ],
+      "auprc": [
+        -0.027938392652527577,
+        0.019572070809764686
+      ],
+      "pairwise": [
+        -0.011076839267035567,
+        0.00481053725819785
+      ]
+    },
+    "F0_plus_geometry_plus_graph_history minus F0_plus_geometry": {
+      "auroc": [
+        -0.040406029263944244,
+        0.019520606764779166
+      ],
+      "auprc": [
+        -0.02632985089595272,
+        0.0165109619324792
+      ],
+      "pairwise": [
+        -0.013214685737005596,
+        0.004802756915790597
+      ]
+    }
+  }
+}

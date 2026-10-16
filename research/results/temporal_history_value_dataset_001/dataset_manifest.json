@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "source_pairs": "research/results/native_single_action_full_return_44_002/directional_pairs_002/pairs.jsonl",
+  "rows": 3877,
+  "states": 369,
+  "scenes": 11,
+  "history": "previous one and two native pre-action state summaries; zero padded",
+  "feature_dimensions": {
+    "graph": 42,
+    "native": 775,
+    "geometry": 4
+  },
+  "label_features_separation": "outcomes and endpoint observations are targets only"
+}

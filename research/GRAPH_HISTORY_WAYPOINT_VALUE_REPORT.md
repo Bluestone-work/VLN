@@ -104,9 +104,33 @@ as separate targets. If that representation also has no residual signal, the
 local visual/semantic/world-model waypoint-value direction should be recorded
 as a negative result rather than tuned further.
 
+## Short temporal-history follow-up
+
+To check whether the negative result was caused only by using the current graph
+snapshot, a second probe appended summaries of the previous one and two native
+pre-action states: graph size, visited/ghost counts, back-path length, native
+selected logit and margin, selected action index/type, proposal and STOP flags.
+These summaries were zero-padded at the start of each episode and never used
+future outcomes.
+
+| Model | AUROC | AUPRC | Within-state pairwise |
+| --- | ---: | ---: | ---: |
+| F0 native | 0.7219 | 0.2129 | 0.7791 |
+| Temporal history only | 0.7329 | 0.2846 | 0.7692 |
+| F0 + temporal history | 0.7160 | 0.2118 | 0.7763 |
+| F0 + geometry + temporal history | 0.7196 | 0.2126 | 0.7791 |
+
+The F0 + temporal-history residual intervals are [-0.0417, +0.0238] for
+AUROC, [-0.0279, +0.0196] for AUPRC and [-0.0111, +0.0048] for within-state
+pairwise. The temporal history-only block has 93 rescue states versus 107 for
+F0. This follow-up also fails the candidate-level complementarity test.
+
 Artifacts:
 
 - `research/tools/prepare_graph_history_value_dataset.py`
 - `research/tools/probe_graph_history_value.py`
+- `research/tools/prepare_temporal_history_value_dataset.py`
 - `research/results/graph_history_value_dataset_001/`
 - `research/results/graph_history_value_probe_001/`
+- `research/results/temporal_history_value_dataset_001/`
+- `research/results/temporal_history_value_probe_001/`
