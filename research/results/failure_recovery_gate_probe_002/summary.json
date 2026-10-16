@@ -1,0 +1,35 @@
+{
+  "cohort_status": "outcome-enriched development diagnostic; not an unbiased benchmark",
+  "rows": 914,
+  "states": 64,
+  "scenes": 10,
+  "labels": {
+    "HARM": 639,
+    "BENEFIT": 275
+  },
+  "models": {
+    "native_margin_stop": {
+      "auroc": 0.5303741641769811,
+      "auprc": 0.40316634548706526,
+      "within_state_pairwise": 0.6497386109036595,
+      "state_rescue": {
+        "states": 64,
+        "opportunity_states": 50,
+        "top1_rescue": 40,
+        "top1_harm_on_no_opportunity": 14
+      }
+    },
+    "native_plus_graph_geometry": {
+      "auroc": 0.4941357234314981,
+      "auprc": 0.32936181636175865,
+      "within_state_pairwise": 0.544436146377894,
+      "state_rescue": {
+        "states": 64,
+        "opportunity_states": 50,
+        "top1_rescue": 40,
+        "top1_harm_on_no_opportunity": 14
+      }
+    }
+  },
+  "scene_split": "leave-one-scene-out"
+}
