@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "source_cases": "research/results/critical_causal_unseen/full_001/cases",
+  "cohort_status": "outcome-enriched development diagnostic; not an unbiased benchmark",
+  "states": 71,
+  "branches": 985,
+  "episodes": 22,
+  "scenes": 10,
+  "all_native_failure": true,
+  "branch_counts": {
+    "branches": 985,
+    "benefit_branches": 275,
+    "harm_branches": 639,
+    "tied_branches": 71
+  },
+  "states_with_benefit_alternative": 50,
+  "states_without_benefit_alternative": 21,
+  "states_with_success_rescue": 18,
+  "states_quality_only_opportunity": 32,
+  "opportunity_episodes": [
+    "1052",
+    "1126",
+    "1151",
+    "1238",
+    "1305",
+    "131",
+    "1584",
+    "1593",
+    "1702",
+    "221",
+    "350",
+    "397",
+    "429",
+    "442",
+    "540",
+    "548",
+    "603",
+    "724",
+    "73",
+    "793"
+  ],
+  "success_rescue_episodes": [
+    "1052",
+    "131",
+    "1593",
+    "350",
+    "429",
+    "603",
+    "73",
+    "793"
+  ],
+  "scene_summary": {
+    "8194nk5LbLH": {
+      "states": 11,
+      "opportunity_states": 10,
+      "success_rescue_states": 5
+    },
+    "EU6Fwq7SyZv": {
+      "states": 4,
+      "opportunity_states": 2,
+      "success_rescue_states": 0
+    },
+    "QUCTc6BB5sX": {
+      "states": 11,
+      "opportunity_states": 7,
+      "success_rescue_states": 3
+    },
+    "TbHJrupSAjP": {
+      "states": 8,
+      "opportunity_states": 7,
+      "success_rescue_states": 0
+    },
+    "X7HyMhZNoso": {
+      "states": 2,
+      "opportunity_states": 2,
+      "success_rescue_states": 2
+    },
+    "Z6MFQCViBuw": {
+      "states": 8,
+      "opportunity_states": 3,
+      "success_rescue_states": 0
+    },
+    "oLBMNvg9in8": {
+      "states": 18,
+      "opportunity_states": 12,
+      "success_rescue_states": 6
+    },
+    "pLe4wQe7qrG": {
+      "states": 5,
+      "opportunity_states": 4,
+      "success_rescue_states": 0
+    },
+    "x8F5xyUWy9e": {
+      "states": 2,
+      "opportunity_states": 2,
+      "success_rescue_states": 1
+    },
+    "zsNo4HB9uLZ": {
+      "states": 2,
+      "opportunity_states": 1,
+      "success_rescue_states": 1
+    }
+  },
+  "label_features_separation": "This is outcome analysis only; no model feature is fitted."
+}
