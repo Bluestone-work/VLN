@@ -54,6 +54,8 @@ PYTHONPATH=/home/wj/habitat-lab:/home/wj/VLN-CE/ETPNav \
 
 这是一轮 smoke continuation，指标未变化；不能据此声称 SR 提升。
 
+在此基础上又完成了 50-iteration baseline pilot（从 iter12001 到 iter12051，每 10 iteration 保存一次）：训练过程无 NaN/崩溃，最后一个 block 的 mean return 为 `7.556`、value loss 为 `16.245`。同一 4-episode cohort 的 iter12051 评估仍为 SR `1.000`、SPL `0.961482`、nDTW `0.893008`、distance-to-goal `1.703980`，与更新前相同；这说明当前 residual PPO 在该小 cohort 上没有测到可见提升。
+
 ## 当前结论
 
 CBR 的关键状态恢复机制已经有可重复的单元级验证，但还没有在 Habitat R2R 真实候选上完成 branch-return census，也没有接入 GRPO loss。官方 R1 训练的阻断原因是官方 joint checkpoint/extra files 缺失，而不是代码编译错误。当前可复现、可继续运行的是旧 ETPNav RL_TOPO continuation。
