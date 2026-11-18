@@ -13,6 +13,7 @@ import numpy as np
 import math
 import time
 import torch
+import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 from torch.nn.parallel import DistributedDataParallel as DDP
@@ -134,6 +135,34 @@ class RLTrainer(BaseVLNCETrainer):
             if self.tetp_enabled else None,
             rank=getattr(config, "local_rank", 0),
         )
+        self.tetp_query_passes = max(1, int(
+            getattr(abstraction_cfg, "TETP_QUERY_PASSES", 3)
+        )) if abstraction_cfg is not None else 1
+        self.tetp_query_dropout = bool(
+            getattr(abstraction_cfg, "TETP_QUERY_DROPOUT", True)
+        ) if abstraction_cfg is not None else False
+        self.tetp_native_drift_mode = str(
+            getattr(abstraction_cfg, "TETP_NATIVE_DRIFT_MODE", "hard")
+        ) if abstraction_cfg is not None else "hard"
+
+    def _tetp_navigation_dropout(self, enabled):
+        """Toggle dropout only in the global navigation query path."""
+        net = self.policy.net.module if isinstance(self.policy.net, DDP) else self.policy.net
+        states = []
+        for name, module in net.named_modules():
+            if not isinstance(module, nn.Dropout):
+                continue
+            if not (name.startswith("vln_bert.global_encoder") or
+                    name.startswith("vln_bert.global_sap_head")):
+                continue
+            states.append((module, module.training))
+            module.train(bool(enabled))
+        return states
+
+    @staticmethod
+    def _restore_tetp_dropout(states):
+        for module, was_training in states:
+            module.train(was_training)
 
     def set_diagnostic_case_context(self, context):
         """Set explicit driver-owned metadata for the current diagnostic case."""
@@ -1246,7 +1275,7 @@ class RLTrainer(BaseVLNCETrainer):
 
     def _tetp_action(self, env_index, stepk, nav_inputs, nav_logits,
                      nav_outs, native_nav_inputs, native_nav_outs,
-                     proposed_action):
+                     proposed_action, candidate_score_passes=None):
         """Gate query-graph candidates against a separately encoded native graph."""
         if not self.tetp_enabled:
             return proposed_action, None
@@ -1303,10 +1332,22 @@ class RLTrainer(BaseVLNCETrainer):
             'min_native_support': float(self.config.ACTION_ABSTRACTION.TETP_MIN_NATIVE_SUPPORT),
             'max_candidate_std': float(self.config.ACTION_ABSTRACTION.TETP_MAX_CANDIDATE_STD),
             'max_score_excess': float(self.config.ACTION_ABSTRACTION.TETP_MAX_SCORE_EXCESS),
+            'native_drift_mode': self.tetp_native_drift_mode,
         }
+        if candidate_score_passes is None:
+            candidate_score_passes = [nav_logits]
+        score_passes = []
+        for pass_logits in candidate_score_passes:
+            score_passes.append([
+                float(pass_logits[env_index, j].detach().cpu())
+                for j in candidate_indices
+            ])
         gate = admit_candidate(native_logits, native_emb, candidate_logits,
-                               candidate_emb, [candidate_logits], native_drift, cfg)
-        if not gate['native_memory_certificate']:
+                               candidate_emb, score_passes, native_drift, cfg)
+        record['query_pass_count'] = len(score_passes)
+        record['query_dropout'] = bool(self.tetp_query_dropout)
+        if (not gate['native_memory_certificate'] and
+                gate.get('native_drift_mode', 'hard') == 'hard'):
             # Fail closed to the separately encoded native policy action.
             native_choice = max(range(len(native_pairs)),
                                 key=lambda k: (native_logits[k], -native_indices[k]))
@@ -1931,7 +1972,9 @@ class RLTrainer(BaseVLNCETrainer):
                 if self.config.RL_TOPO.ENABLED else 0.0,
                 'action_abstraction': self.action_abstraction,
                 'dense_isolation_mode': (
-                    'off' if tetp_dual_graph else
+                    str(getattr(self.config.ACTION_ABSTRACTION,
+                                'TETP_QUERY_ISOLATION_MODE', 'off'))
+                    if tetp_dual_graph else
                     str(getattr(self.config.ACTION_ABSTRACTION, 'DENSE_ISOLATION_MODE', 'off'))
                 ),
             })
@@ -1964,6 +2007,23 @@ class RLTrainer(BaseVLNCETrainer):
                     if rl_topo_enabled else native_nav_outs['global_logits']
                 )
                 native_nav_probs = F.softmax(native_anchor_logits, 1)
+            tetp_query_score_passes = [
+                nav_outs['policy_logits'] if rl_topo_enabled
+                else nav_outs['global_logits']
+            ]
+            if tetp_dual_graph and self.tetp_query_passes > 1:
+                dropout_states = self._tetp_navigation_dropout(
+                    self.tetp_query_dropout
+                )
+                try:
+                    for _ in range(self.tetp_query_passes - 1):
+                        query_pass_outs = self.policy.net(**nav_inputs)
+                        tetp_query_score_passes.append(
+                            query_pass_outs['policy_logits'] if rl_topo_enabled
+                            else query_pass_outs['global_logits']
+                        )
+                finally:
+                    self._restore_tetp_dropout(dropout_states)
             il_logits = nav_outs['global_logits']
             nav_logits = (
                 nav_outs['policy_logits']
@@ -2030,7 +2090,8 @@ class RLTrainer(BaseVLNCETrainer):
                 for i in range(self.envs.num_envs):
                     cpu_a_t[i], tetp_records[i] = self._tetp_action(
                         i, stepk, nav_inputs, nav_logits, nav_outs,
-                        native_nav_inputs, native_nav_outs, cpu_a_t[i]
+                        native_nav_inputs, native_nav_outs, cpu_a_t[i],
+                        tetp_query_score_passes,
                     )
 
             # make equiv action

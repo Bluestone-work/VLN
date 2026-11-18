@@ -44,6 +44,19 @@ class NativeAnchorGateTest(unittest.TestCase):
         self.assertEqual(result["selected_source"], "native")
         self.assertIn("unstable_candidate_score", result["candidates"][0]["reasons"])
 
+    def test_audit_mode_keeps_other_conditions_executable(self):
+        result = admit_candidate(
+            self.native_logits, self.native_embeddings,
+            [1.2, 0.9], self.candidate_embeddings,
+            [[1.18, 0.9], [1.22, 0.9]], native_drift=1.0,
+            config={"native_drift_mode": "audit"},
+        )
+        self.assertEqual(result["native_drift_mode"], "audit")
+        self.assertFalse(result["native_memory_certificate"])
+        self.assertEqual(result["selected_source"], "candidate")
+        self.assertTrue(result["candidates"][0]["native_drift_advisory"])
+        self.assertNotIn("native_memory_drift", result["candidates"][0]["reasons"])
+
 
 if __name__ == "__main__":
     unittest.main()

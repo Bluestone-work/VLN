@@ -104,6 +104,9 @@ def admit_candidate(
     cfg = dict(DEFAULT_GATE)
     if config:
         cfg.update(config)
+    drift_mode = str(cfg.get("native_drift_mode", "hard"))
+    if drift_mode not in ("hard", "audit"):
+        raise ValueError("native_drift_mode must be 'hard' or 'audit'")
 
     native_index = _argmax(native_logits)
     native_top = float(native_logits[native_index])
@@ -116,7 +119,7 @@ def admit_candidate(
         std = _std(passes)
         excess = float(score) - native_top
         reasons = []
-        if not native_ok:
+        if not native_ok and drift_mode == "hard":
             reasons.append("native_memory_drift")
         if support < float(cfg["min_native_support"]):
             reasons.append("insufficient_native_support")
@@ -127,10 +130,16 @@ def admit_candidate(
         records.append({
             "candidate_index": i,
             "score": float(score),
+            "score_passes": passes,
             "score_mean": _mean(passes),
             "score_std": std,
             "native_support": support,
             "score_excess": excess,
+            "native_memory_pass": native_ok,
+            "native_drift_advisory": (not native_ok and drift_mode == "audit"),
+            "support_pass": support >= float(cfg["min_native_support"]),
+            "candidate_stability_pass": std <= float(cfg["max_candidate_std"]),
+            "score_envelope_pass": excess <= float(cfg["max_score_excess"]),
             "admissible": not reasons,
             "reasons": reasons,
         })
@@ -161,6 +170,8 @@ def admit_candidate(
         "native_top_score": native_top,
         "native_drift": float(native_drift),
         "native_memory_certificate": native_ok,
+        "native_drift_mode": drift_mode,
+        "native_drift_advisory": (not native_ok and drift_mode == "audit"),
         "candidates": records,
         "config": cfg,
     }
