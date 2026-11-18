@@ -1,0 +1,8 @@
+iteration_before 12000 iteration_after 12001
+trainable_key_count_after 6 new_trainable_keys_vs_release 6
+net.critic.state2value.0.weight max_abs 0.03618382662534714
+net.critic.state2value.0.bias max_abs 0.036129362881183624
+net.critic.state2value.2.weight max_abs 0.04406435415148735
+net.critic.state2value.2.bias max_abs 0.012454426847398281
+net.residual_sap_head.proj.weight max_abs 9.998007953981869e-06
+net.residual_sap_head.proj.bias max_abs 3.3030091994845634e-09

@@ -1,0 +1,27 @@
+You are using a model of type xlm-roberta to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+LANG EMBEDDING can be trained!!!!!!!!!!!!!!!!!!!!!!!!
+PANO EMBEDDING can be trained!!!!!!!!!!!!!!!!!!!!!!!!
+RuntimeError: Error(s) in loading state_dict for GlocalTextPathNavCMT:
+	size mismatch for bert.embeddings.word_embeddings.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([250002, 768]).
+	size mismatch for bert.embeddings.position_embeddings.weight: copying a param with shape torch.Size([512, 768]) from checkpoint, the shape in current model is torch.Size([514, 768]).
+	size mismatch for bert.global_sap_head.net.0.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1536, 1536]).
+	size mismatch for bert.global_sap_head.net.0.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1536]).
+	size mismatch for bert.global_sap_head.net.2.weight: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1536]).
+	size mismatch for bert.global_sap_head.net.2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1536]).
+	size mismatch for bert.global_sap_head.net.4.weight: copying a param with shape torch.Size([1, 768]) from checkpoint, the shape in current model is torch.Size([1, 1536]).
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/home/wj/VLN-CE/ETPNav/vlnce_baselines/models/etp/ETP_R1_vlnbert_init.py", line 68, in get_vlnbert_models
+    state_dict=new_ckpt_weights)
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/site-packages/transformers/modeling_utils.py", line 1429, in from_pretrained
+    _fast_init=_fast_init,
+  File "/home/wj/miniconda3/envs/etpnav_legacy/lib/python3.6/site-packages/transformers/modeling_utils.py", line 1576, in _load_state_dict_into_model
+    raise RuntimeError(f"Error(s) in loading state_dict for {model.__class__.__name__}:\n\t{error_msg}")
+RuntimeError: Error(s) in loading state_dict for GlocalTextPathNavCMT:
+	size mismatch for bert.embeddings.word_embeddings.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([250002, 768]).
+	size mismatch for bert.embeddings.position_embeddings.weight: copying a param with shape torch.Size([512, 768]) from checkpoint, the shape in current model is torch.Size([514, 768]).
+	size mismatch for bert.global_sap_head.net.0.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1536, 1536]).
+	size mismatch for bert.global_sap_head.net.0.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1536]).
+	size mismatch for bert.global_sap_head.net.2.weight: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1536]).
+	size mismatch for bert.global_sap_head.net.2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1536]).
+	size mismatch for bert.global_sap_head.net.4.weight: copying a param with shape torch.Size([1, 768]) from checkpoint, the shape in current model is torch.Size([1, 1536]).

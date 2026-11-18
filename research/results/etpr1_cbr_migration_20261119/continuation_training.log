@@ -1,0 +1,12 @@
+2026-11-19 00:48:54,299 Initializing dataset VLN-CE-v1
+2026-11-19 00:48:54,992 SPLTI: train, NUMBER OF SCENES: 61
+2026-11-19 00:49:10,457 LOCAL RANK: 0, ENV NUM: 1, DATASET LEN: 10819
+2026-11-19 00:49:23,488 RL_TOPO residual PPO parameters: critic=394241, residual_head=769, IL_head=frozen, alpha=0.100
+2026-11-19 00:49:25,555 Initialized RL_TOPO weights from checkpoint: data/logs/checkpoints/release_r2r/ckpt.iter12000.pth, iteration: 12000
+2026-11-19 00:49:25,557 Agent parameters: 299.54 MB. Trainable: 0.40 MB.
+2026-11-19 00:49:25,558 Finished setting up policy.
+2026-11-19 00:49:25,570 Traning Starts... GOOD LUCK!
+2026-11-19 00:49:28,348 RL_TOPO GAE: value mean -0.084540, return mean 7.432397, advantage mean 0.000000/std 1.000000
+2026-11-19 00:49:28,452 RL_TOPO PPO tensors: old_lp_finite=True new_lp_finite=True ratio_finite=True adv_finite=True
+2026-11-19 00:49:28,465 RL_TOPO PPO: policy_loss 0.000770, value_loss 60.794758, entropy 0.480825, approx_kl 0.000376, clip_fraction 0.000000
+2026-11-19 00:49:28,496 iter 12001: ppo/value_mean: -0.085, ppo/return_mean: 7.432, ppo/advantage_mean: 0.000, ppo/advantage_std: 1.000, ppo/mean_reward: 1.474, ppo/mean_return: 7.432, ppo/missing_bootstrap_count: 0.000, ppo/stop_selection_rate: 0.100, ppo/forced_stop_rate: 0.000, ppo/mean_high_level_actions: 10.000, ppo/il_rl_kl: 0.000, ppo/argmax_action_change_rate: 0.000, ppo/policy_loss: 0.001, ppo/value_loss: 60.795, ppo/entropy: 0.481, ppo/approx_kl: 0.000, ppo/clip_fraction: 0.000, ppo/residual_l2_before: 0.000, ppo/il_head_l2_change_before: 0.000, ppo/actor_grad_norm: 0.025, ppo/critic_grad_norm: 43.595, ppo/residual_l2: 0.000, ppo/il_head_l2_change: 0.000, 

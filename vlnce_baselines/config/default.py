@@ -21,6 +21,7 @@ _C.VIDEO_OPTION = []  # options: "disk", "tensorboard"
 _C.VIDEO_DIR = "videos/debug"
 _C.TENSORBOARD_DIR = "data/tensorboard_dirs/debug"
 _C.RESULTS_DIR = "data/checkpoints/pretrained/evals"
+_C.ONLY_LAST_SAVEALL = True
 
 _C.ACTION_ABSTRACTION = CN()
 _C.ACTION_ABSTRACTION.LEVEL = "default"
@@ -54,6 +55,8 @@ _C.EVAL = CN()
 # The split to evaluate on
 _C.EVAL.SPLIT = "val_seen"
 _C.EVAL.EPISODE_COUNT = -1
+_C.EVAL.CKPT_PATH_DIR = ""
+_C.EVAL.fast_eval = False
 _C.EVAL.LANGUAGES = ["en-US", "en-IN"]
 _C.EVAL.SAMPLE = False
 _C.EVAL.SAVE_RESULTS = True
@@ -176,6 +179,49 @@ _C.RL_TOPO.RESIDUAL_ALPHA = 0.1
 _C.RL_TOPO.ACTOR_LR = 1e-5
 _C.RL_TOPO.CRITIC_LR = 1e-4
 _C.RL_TOPO.MAX_GRAD_NORM = 0.5
+
+# ----------------------------------------------------------------------------
+# ETP-R1 / GRPO CONFIG
+# ----------------------------------------------------------------------------
+# Kept in the shared config so the official R1 trainer can be imported and
+# smoke-tested without replacing the existing IL/RL configuration.  CBR is an
+# opt-in research extension and is deliberately disabled by default.
+_C.GRPO = CN()
+_C.GRPO.iters = 5000
+_C.GRPO.log_every = 25
+_C.GRPO.lr = 1e-5
+_C.GRPO.batch_size = 1
+_C.GRPO.max_traj_len = 15
+_C.GRPO.max_text_len = 150
+_C.GRPO.loc_noise = 0.5
+_C.GRPO.waypoint_aug = False
+_C.GRPO.ghost_aug = 0.0
+_C.GRPO.back_algo = "teleport"
+_C.GRPO.tryout = True
+_C.GRPO.ckpt_to_load = "data/checkpoints/ckpt.0.pth"
+_C.GRPO.load_from_ckpt = True
+_C.GRPO.is_requeue = False
+_C.GRPO.warmup_iters = 1000
+_C.GRPO.min_lr_ratio = 0.1
+_C.GRPO.sample_num = 8
+_C.GRPO.grpo_epsilon = 0.2
+_C.GRPO.grpo_beta = 0.01
+_C.GRPO.max_grad_norm = 1.0
+_C.GRPO.update_epochs = 4
+_C.GRPO.dropout_rate = 0.1
+_C.GRPO.train_all = False
+_C.GRPO.enable_amp = False
+_C.GRPO.enable_all_dropouts = False
+_C.GRPO.dropout_in_sampling = False
+_C.GRPO.T_start = 2.0
+_C.GRPO.T_end = 1.0
+_C.GRPO.cf_enabled = False
+_C.GRPO.cf_topk = 3
+_C.GRPO.cf_max_states_per_episode = 1
+_C.GRPO.cf_rollouts_per_action = 1
+_C.GRPO.cf_loss_weight = 0.3
+_C.GRPO.cf_margin = 0.0
+_C.GRPO.cf_random_control_ratio = 0.2
 
 # -----------------------------------------------------------------------------
 # MODELING CONFIG

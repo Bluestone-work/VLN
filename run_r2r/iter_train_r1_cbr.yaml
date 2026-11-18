@@ -1,0 +1,78 @@
+BASE_TASK_CONFIG_PATH: run_r2r/r2r_vlnce_r1.yaml
+SIMULATOR_GPU_IDS: [0]
+TORCH_GPU_ID: 0
+TORCH_GPU_IDS: [0]
+TRAINER_NAME: CBR-GRPO-R1
+ENV_NAME: R1Env
+GPU_NUMBERS: 1
+NUM_ENVIRONMENTS: 1
+TENSORBOARD_DIR: data/logs/tensorboard_dirs/etpr1_cbr
+CHECKPOINT_FOLDER: data/logs/checkpoints/etpr1_cbr
+RESULTS_DIR: data/logs/checkpoints/etpr1_cbr
+ONLY_LAST_SAVEALL: True
+
+EVAL:
+  USE_CKPT_CONFIG: False
+  SPLIT: val_unseen
+  EPISODE_COUNT: 4
+
+GRPO:
+  iters: 1
+  log_every: 1
+  lr: 1e-5
+  batch_size: 1
+  max_traj_len: 15
+  max_text_len: 150
+  loc_noise: 0.5
+  waypoint_aug: False
+  ghost_aug: 0.0
+  back_algo: teleport
+  tryout: True
+  # The R1 joint XLM-R checkpoint is not present locally.  Keep this path as
+  # an explicit placeholder until the official extra files can be downloaded.
+  ckpt_to_load: data/pretrained/ETP/mlm.sap_r2r/ckpts/model_step_82500.pt
+  load_from_ckpt: False
+  is_requeue: False
+  warmup_iters: 0
+  min_lr_ratio: 0.1
+  sample_num: 2
+  grpo_epsilon: 0.2
+  grpo_beta: 0.0
+  max_grad_norm: 1.0
+  update_epochs: 1
+  dropout_rate: 0.1
+  train_all: False
+  enable_amp: False
+  enable_all_dropouts: False
+  dropout_in_sampling: False
+  T_start: 1.0
+  T_end: 1.0
+  cf_enabled: False
+  cf_topk: 3
+  cf_max_states_per_episode: 1
+  cf_rollouts_per_action: 1
+  cf_loss_weight: 0.3
+  cf_margin: 0.0
+  cf_random_control_ratio: 0.2
+
+MODEL:
+  task_type: r2r
+  policy_name: R1Policy
+  NUM_ANGLES: 12
+  pretrained_path: data/pretrained/ETP/mlm.sap_r2r/ckpts/model_step_82500.pt
+  fix_lang_embedding: False
+  fix_pano_embedding: False
+  use_depth_embedding: True
+  use_sprels: True
+  merge_ghost: True
+  consume_ghost: True
+  spatial_output: False
+  RGB_ENCODER:
+    output_size: 512
+  DEPTH_ENCODER:
+    output_size: 256
+  VISUAL_DIM:
+    vis_hidden: 768
+    directional: 128
+  INSTRUCTION_ENCODER:
+    bidirectional: True

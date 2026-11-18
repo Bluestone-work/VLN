@@ -11,6 +11,7 @@ def extract_instruction_tokens(
     tokens_uuid: str = "tokens",
     max_length: int = 512,
     pad_id: int = 0,
+    task_type: int = None,
 ):
     """Extracts instruction tokens from an instruction sensor if the tokens
     exist and are in a dict structure."""
@@ -22,9 +23,14 @@ def extract_instruction_tokens(
             and tokens_uuid in observations[i][instruction_sensor_uuid]
         ):
             token = observations[i][instruction_sensor_uuid]["tokens"][:max_length]
+            origin_token_len = len(token)
             if len(token) < max_length:
                 token += [pad_id] * (max_length - len(token))
             observations[i][instruction_sensor_uuid] = token
+            if task_type in (1, 2):
+                task_encoding = [task_type] * origin_token_len
+                task_encoding += [0] * (max_length - len(task_encoding))
+                observations[i]["txt_task_encoding"] = task_encoding
         else:
             break
     return observations
