@@ -1,4 +1,26 @@
-# VLN-CE 科研进展（2026-10-08）
+# VLN-CE 科研进展（更新至 2026-10-16）
+
+## 2026-10-16 — 候选集合一致性机制验证通过
+
+按用户指定的方向 1 完成一轮自动实验。16 个训练场景、16 条元数据选定路线的
+117 个状态精确重放成功；重复候选 1/4/16 次让原模型分别改变 1/3/4 次动作。
+从原始输入隔离、保护原记忆及重复候选质量修正均保持原动作，最大误差 <4.30e-6。
+完整导航中，两个保护臂逐项复现全部 117 个决策 trace、833 个原子动作、16 次
+STOP 和最终指标；普通复制改变三条路径，但四臂 SR 均为 16/16。
+
+已给出条件化证明并核查基础相关工作；这是机制证据，不是标准性能提升或已确立
+的新理论。旧 A2-ISO 存在二次编码混杂，相关报告已补充说明。首轮非 BERT 词表
+实验被标为无效，正式结果只使用保持同样路线的 cycle 002。
+详见[第一轮完整报告](CANDIDATE_CONSISTENCY_REPORT_CN.md)。
+
+## 2026-10-16 — 真实 dense 候选上游分解
+
+A0/A1 同一物理前缀的 heatmap 完全相同，但 dense union 使原生图 embedding 平均
+变化 4.45、logit 平均变化 1.18。新做的 directed native-query 隔离在 16 条训练
+路线中仍为 16/16 成功，却把 SPL/nDTW 降到 86.401/88.040%，说明只隔离 attention
+反馈不能还原被 ghost 聚合和位置特征改变的 native memory。当前不训练 ranker/PPO；
+下一门槛是逐项做 ghost、位置、pair distance 和 encoder 的单因素分解。
+详见[真实 dense 上游报告](DENSE_UPSTREAM_CONSISTENCY_REPORT_CN.md)。
 
 ## 2026-10-08 — Gate C 指令进度表征 NO-GO
 
@@ -593,3 +615,80 @@ waypoint predictor、PPO/RL、VLM 或 generic reranker；proposal expansion 分�
 关闭，除非未来先提出并独立验证安全 abstention 机制。报告见
 `GATE_A_NATIVE_POLICY_REPLICATION_REPORT.md`，结果见
 `results/gate_a_native_policy_replication_001/analysis_001/`。
+
+## 2026-10-16 — dense 上游单因素验证
+
+在 cycle 003 的 87 个真实 A1 dense graph 状态上做了固定输入、outcome-blind 单因素
+消融。把 dense 节点的 position feature 置零时，native embedding 平均漂移 5.664、
+logit 平均漂移 1.317、native argmax 变化 18/87；visual 替换的漂移为
+3.569--4.692 L2；pair-distance 置零仅 0.034 L2/0.008 logit；step id 本来就是
+0。`native context only` 与 directed native-query 完全一致，说明只改 attention
+mask 不能恢复候选扩展前的 native memory。
+
+当前最强的机制假设是 dense position/ghost-memory 构造污染 observed memory，visual
+aggregation 次之。该结果是固定输入归因线索，不能称为严格因果分解或性能提升。
+下一步实现真正的 observed-memory/action-query 分离，并用 A0 raw memory 做 native
+trace retention gate；通过前不做 rescue、ranker 或 RL 结论。报告见
+`research/DENSE_UPSTREAM_ABLATION_REPORT_CN.md`。
+
+## 2026-10-16 — observed-memory/action-query 分离验证
+
+实现了一个离线 memory/query probe：native graph 单独编码 observed memory；dense
+proposal 只作为 query 读取该 memory，native memory 每层只由 native key 更新。87 个
+真实 A1 状态上，native 相对 native-only 的最大 embedding 误差为 1.47e-5，最大
+logit 误差为 3.81e-6，native argmax 87/87 保持，STOP 平均误差 4.65e-7。说明该
+结构通过了固定输入 invariance gate；这比单纯 directed attention 更完整。
+
+dense query 相对 ordinary A1 的平均 logit 变化仍为 1.103，表明候选 query 尚未校准，
+不能宣称导航收益。下一步只做冻结 native-success control 的 trace/STOP/primitive
+保留测试；通过后再做 action measure 校准，不接入 RL、ranker 或事后 outcome 标签。
+
+## 2026-11-18 — 候选创新点：TETP 事务式证据拓扑规划
+
+基于上述两个已复现机制，冻结一个候选方法方向：将已执行、已观测的 native graph
+作为 **committed evidence graph**，将未执行 dense waypoint 保留在 **proposal
+buffer** 中，只允许其作为 query 读取 native memory，不能提前写入 persistent
+GraphMap。候选只有同时通过 native memory 不变性、native embedding 局部支持、等价
+query 分数稳定性和 native score envelope 才能替换 native action，否则 abstain。
+执行完成并取得真实观测后才 commit 新节点。
+
+该方向不是普通 ranker/PPO，也没有使用 goal/reference/outcome 标签；它直接针对
+当前 A1 的 native-memory 污染和 dense OOD logit 两个失败机制。已新增无 simulator
+依赖的原型 `vlnce_baselines/adaptive_action/native_anchor_gate.py`、4 个单元测试和
+冻结方案文档 `TETP_NATIVE_ANCHORED_ADMISSION.md`。当前仍是候选创新点，尚未完成闭环
+导航验证，也不宣称论文级 novelty 或性能提升。下一门槛是新 cohort 上先验证
+native-success trace/STOP/primitive 完整保留，再评估是否有 rescue。
+
+## 2026-11-18 — TETP smoke、闭环试跑与失败诊断
+
+先修复 fresh `RL_TOPO` run 在启动日志中无条件引用 `ckpt_path` 的问题；legacy
+环境补入本地 Habitat Lab 后，`tetp_smoke` 20 iteration 训练成功，生成
+`data/logs/checkpoints/tetp_smoke/ckpt.iter20.pth`。随后在同一 release checkpoint、
+同一 44 条 val_unseen control 上做 native 与 TETP 配对评估。native 为 SR 68.18%、
+SPL 63.58%、nDTW 77.23%；TETP trace-only 为 SR 56.82%、SPL 53.50%、nDTW
+72.72%。325/325（修复回退后 327/327）次证书记录都拒绝 dense candidate，native
+drift 中位数约 3.13，远高于预注册的 `1e-4` invariance 阈值；没有候选被准入。
+
+这次结果不能作为 TETP 性能提升，反而暴露了当前工程实现的关键缺口：即使拒绝
+candidate，dense graph 已经参与了 native 编码，之后再回滚 ghost 不能恢复 A0 的
+native memory/action trace。因而当前分支应视为 **trace-only failure diagnosis**，
+不能宣称安全 retention。下一步必须把 proposal buffer 做成真正的独立 query graph，
+在 native branch 完整保留后才允许 candidate commit；在此之前不调阈值、不做 rescue
+结论，也不启动新的 ranker/PPO。
+
+同日还做了训练时长校验。20 iteration 只是 smoke；一次从预训练权重 fresh start 的
+500 iteration 训练在 val_unseen control 上只有 9.09% SR，不能与 release navigation
+checkpoint 比较。随后从 `ckpt.iter12000.pth` 正确续训 500 step 到 `iter12500`，44
+条 control 的 SR/SPL/nDTW 为 68.18%/63.58%/77.23%，与 native baseline 完全一致；
+`argmax_action_change_rate=0`，说明当前 residual PPO 尚未改变离散动作。该结果验证
+了续训流程，但不是性能提升证据。
+
+随后实现了真正的 dual-GraphMap TETP 原型：committed native graph 单独编码，query
+graph 临时接收 dense proposals；native 拒绝后用 native graph 的完整结构替换 query
+graph，避免残留 dense edge/merge state。4 条 smoke 先发现并修复了 native action
+index 与 query index 不一致的问题。最终 44 条 control 上，native baseline 成功的
+30/30 条路线全部保留，TETP 总 SR 为 68.18%，没有 rescue；SPL 63.33%，nDTW
+78.47%。334 次 certificate 全部 abstain，native drift 中位数 1.20，仍高于
+`1e-4`。因此当前创新点已经通过 native-success retention gate，但还没有 candidate
+admission 或导航增益证据；下一步是只在 retention 已成立的前提下设计独立 query
+stability pass 和 outcome-blind rescue 分析。

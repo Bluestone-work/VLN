@@ -62,7 +62,19 @@ from vlnce_baselines.adaptive_action.action_generators import (
 )
 from vlnce_baselines.adaptive_action.oracle_selector import select_oracle_level
 from vlnce_baselines.adaptive_action.graph_oracle_controls import controlled_graph_action
+from vlnce_baselines.adaptive_action.native_anchor_gate import admit_candidate
 from torch.nn.utils.rnn import pad_sequence
+
+DIAGNOSTIC_CASE_ALLOWLIST = {
+    'interrupt_consume_9186_s1_event_p18': ('event', '9186', 1),
+    'interrupt_consume_9186_s1_20261011_p14': ('uniform', '9186', 1),
+    'interrupt_consume_9186_s1_20261012_p21': ('uniform', '9186', 1),
+    'interrupt_consume_9186_s1_20261013_p22': ('uniform', '9186', 1),
+    'interrupt_consume_5660_s1_event_p2': ('event', '5660', 1),
+    'interrupt_consume_5660_s1_20261013_p3': ('uniform', '5660', 1),
+    'interrupt_consume_5660_s1_20261011_p4': ('uniform', '5660', 1),
+    'interrupt_consume_5660_s1_20261012_p4': ('uniform', '5660', 1),
+}
 
 
 @baseline_registry.register_trainer(name="SS-ETP")
@@ -72,6 +84,7 @@ class RLTrainer(BaseVLNCETrainer):
         self.max_len = int(config.IL.max_traj_len) #  * 0.97 transfered gt path got 0.96 spl
         self._rl_topo_debug_transition_count = 0
         self._rl_topo_rollout_id = 0
+        self._diagnostic_case_context = None
         abstraction_cfg = getattr(config, "ACTION_ABSTRACTION", None)
         self.action_abstraction = (
             str(abstraction_cfg.LEVEL) if abstraction_cfg is not None else "default"
@@ -110,6 +123,38 @@ class RLTrainer(BaseVLNCETrainer):
             if self.graph_selection_oracle_enabled else None,
             rank=getattr(config, "local_rank", 0),
         )
+        self.tetp_enabled = bool(
+            abstraction_cfg is not None and getattr(abstraction_cfg, "TETP_ENABLED", False)
+        )
+        self.tetp_max_records = int(
+            getattr(abstraction_cfg, "TETP_MAX_RECORDS", -1)
+        ) if abstraction_cfg is not None else -1
+        self.tetp_logger = DecisionLogger(
+            getattr(abstraction_cfg, "TETP_PATH", "data/logs/tetp_admission.jsonl")
+            if self.tetp_enabled else None,
+            rank=getattr(config, "local_rank", 0),
+        )
+
+    def set_diagnostic_case_context(self, context):
+        """Set explicit driver-owned metadata for the current diagnostic case."""
+        if context is None:
+            self._diagnostic_case_context = None
+            return
+        required = ('case_id', 'mode', 'cut_primitive', 'case_kind',
+                    'episode_id', 'high_level_step')
+        if any(key not in context for key in required):
+            raise ValueError('Incomplete diagnostic case context')
+        self._diagnostic_case_context = {
+            'case_id': str(context['case_id']),
+            'mode': str(context['mode']),
+            'cut_primitive': context['cut_primitive'],
+            'case_kind': str(context['case_kind']),
+            'episode_id': str(context['episode_id']),
+            'high_level_step': context['high_level_step'],
+        }
+
+    def clear_diagnostic_case_context(self):
+        self._diagnostic_case_context = None
 
     def _make_dirs(self):
         if self.config.local_rank == 0:
@@ -285,6 +330,10 @@ class RLTrainer(BaseVLNCETrainer):
         self.num_recurrent_layers = self.policy.net.num_recurrent_layers
 
         rl_topo_enabled = bool(self.config.RL_TOPO.ENABLED)
+        # Keep the startup log valid for fresh runs as well as resumed runs.
+        # RL_TOPO used to reference ``ckpt_path`` unconditionally below,
+        # which made ``IL.load_from_ckpt=False`` fail before the first batch.
+        ckpt_path = None
         if rl_topo_enabled:
             # Keep the ETP encoder and IL SAP head frozen so replayed graph
             # embeddings remain exact. PPO learns only a zero-initialized
@@ -386,7 +435,11 @@ class RLTrainer(BaseVLNCETrainer):
                 name: param.detach().float().cpu().clone()
                 for name, param in self._il_actor_head_module().named_parameters()
             }
-            logger.info(f"Loaded weights from checkpoint: {ckpt_path}, iteration: {start_iter}")
+            logger.info(
+                "Initialized RL_TOPO weights from checkpoint: %s, iteration: %d",
+                ckpt_path if ckpt_path is not None else "fresh/pretrained model",
+                start_iter,
+            )
 			
         params = sum(param.numel() for param in self.policy.parameters())
         params_t = sum(
@@ -493,14 +546,15 @@ class RLTrainer(BaseVLNCETrainer):
             'nav_types': batch_nav_types, 'view_lens': batch_view_lens,
         }
         
-    def _nav_gmap_variable(self, cur_vp, cur_pos, cur_ori):
+    def _nav_gmap_variable(self, cur_vp, cur_pos, cur_ori, gmaps=None):
+        gmaps = self.gmaps if gmaps is None else gmaps
         batch_gmap_vp_ids, batch_gmap_step_ids, batch_gmap_lens = [], [], []
         batch_gmap_img_fts, batch_gmap_pos_fts = [], []
         batch_gmap_pair_dists, batch_gmap_visited_masks = [], []
         batch_gmap_native_masks = []
         batch_no_vp_left = []
 
-        for i, gmap in enumerate(self.gmaps):
+        for i, gmap in enumerate(gmaps):
             node_vp_ids = list(gmap.node_pos.keys())
             ghost_vp_ids = list(gmap.ghost_pos.keys())
             if len(ghost_vp_ids) == 0:
@@ -1061,7 +1115,8 @@ class RLTrainer(BaseVLNCETrainer):
                              selected_target, dist_before,
                              policy_action_index=None,
                              graph_oracle_record=None,
-                             gmap_embeds=None):
+                             gmap_embeds=None, mapping_capture=None,
+                             candidate_positions=None):
         """Build one pre-execution decision record.
 
         Scenario labels are deliberately geometric proxies. They are useful
@@ -1142,6 +1197,8 @@ class RLTrainer(BaseVLNCETrainer):
             instruction = getattr(instruction, "instruction_text", str(instruction))
         return {
             "episode_id": episode_id,
+            "diagnostic_case": dict(self._diagnostic_case_context)
+            if self._diagnostic_case_context is not None else None,
             "scene_id": str(episode.scene_id),
             "schema_version": 2,
             "privileged_analysis_only": ["distance_to_goal_before", "distance_to_goal_after", "distance_to_reference_path", "progress", "near_goal"],
@@ -1155,6 +1212,11 @@ class RLTrainer(BaseVLNCETrainer):
                  "score": float(scores[k]) if k < len(scores) else None}
                 for k, (a, d) in enumerate(zip(angles, distances))
             ],
+            "waypoint_candidate_positions": (
+                [list(p) for p in candidate_positions]
+                if candidate_positions is not None else None
+            ),
+            "graph_mapping": mapping_capture,
             "waypoint_candidate_count": cand_count,
             "candidate_angular_dispersion": float(angular_dispersion),
             "proposal_distribution_label": geometry_proxy,
@@ -1181,6 +1243,90 @@ class RLTrainer(BaseVLNCETrainer):
         if self.aaa_diagnostic_max_records >= 0 and self.aaa_logger.count >= self.aaa_diagnostic_max_records:
             return
         self.aaa_logger.write(record)
+
+    def _tetp_action(self, env_index, stepk, nav_inputs, nav_logits,
+                     nav_outs, native_nav_inputs, native_nav_outs,
+                     proposed_action):
+        """Gate query-graph candidates against a separately encoded native graph."""
+        if not self.tetp_enabled:
+            return proposed_action, None
+        native_mask = nav_inputs['gmap_native_masks'][env_index].detach().cpu().tolist()
+        valid_mask = nav_inputs['gmap_masks'][env_index].detach().cpu().tolist()
+        visited = nav_inputs['gmap_visited_masks'][env_index].detach().cpu().tolist()
+        full_logits = nav_logits[env_index]
+        native_logits_tensor = (
+            native_nav_outs.get('policy_logits') if self.config.RL_TOPO.ENABLED
+            else native_nav_outs.get('global_logits')
+        )
+        native_embeds_tensor = native_nav_outs.get('gmap_embeds')
+        embeds = nav_outs.get('gmap_embeds')
+        record = {
+            'step': int(stepk), 'env_index': int(env_index),
+            'proposed_action': int(proposed_action), 'status': 'dual_graph',
+        }
+        if native_logits_tensor is None or native_embeds_tensor is None or embeds is None:
+            record['status'] = 'missing_native_pass'
+            return proposed_action, record
+        query_ids = nav_inputs['gmap_vp_ids'][env_index]
+        native_ids = native_nav_inputs['gmap_vp_ids'][env_index]
+        native_id_to_index = {vp: j for j, vp in enumerate(native_ids)}
+        native_pairs = [
+            (qj, native_id_to_index[vp])
+            for qj, (vp, flag) in enumerate(zip(query_ids, native_mask))
+            if flag and valid_mask[qj] and not visited[qj]
+            and vp in native_id_to_index
+            and torch.isfinite(full_logits[qj])
+            and torch.isfinite(native_logits_tensor[env_index, native_id_to_index[vp]])
+        ]
+        candidate_indices = [
+            j for j, flag in enumerate(native_mask)
+            if not flag and valid_mask[j] and not visited[j]
+            and torch.isfinite(full_logits[j])
+        ]
+        if not native_pairs or not candidate_indices:
+            record['status'] = 'no_dense_candidate'
+            return proposed_action, record
+        native_indices = [qj for qj, _ in native_pairs]
+        native_logits = [float(native_logits_tensor[env_index, nj].detach().cpu())
+                         for _, nj in native_pairs]
+        native_emb = [native_embeds_tensor[env_index, nj].detach().cpu().tolist()
+                      for _, nj in native_pairs]
+        candidate_logits = [float(full_logits[j].detach().cpu()) for j in candidate_indices]
+        candidate_emb = [embeds[env_index, j].detach().cpu().tolist()
+                         for j in candidate_indices]
+        drift_values = [abs(float(full_logits[qj].detach().cpu()) -
+                            float(native_logits_tensor[env_index, nj].detach().cpu()))
+                        for qj, nj in native_pairs]
+        native_drift = max(drift_values) if drift_values else float('inf')
+        cfg = {
+            'max_native_drift': float(self.config.ACTION_ABSTRACTION.TETP_MAX_NATIVE_DRIFT),
+            'min_native_support': float(self.config.ACTION_ABSTRACTION.TETP_MIN_NATIVE_SUPPORT),
+            'max_candidate_std': float(self.config.ACTION_ABSTRACTION.TETP_MAX_CANDIDATE_STD),
+            'max_score_excess': float(self.config.ACTION_ABSTRACTION.TETP_MAX_SCORE_EXCESS),
+        }
+        gate = admit_candidate(native_logits, native_emb, candidate_logits,
+                               candidate_emb, [candidate_logits], native_drift, cfg)
+        if not gate['native_memory_certificate']:
+            # Fail closed to the separately encoded native policy action.
+            native_choice = max(range(len(native_pairs)),
+                                key=lambda k: (native_logits[k], -native_indices[k]))
+            selected = native_indices[native_choice]
+            selected_native_index = native_pairs[native_choice][1]
+        elif gate['selected_source'] == 'candidate':
+            selected = candidate_indices[int(gate['selected_index']) - len(native_pairs)]
+            selected_native_index = None
+        else:
+            native_choice = int(gate['selected_index'])
+            selected = native_indices[native_choice]
+            selected_native_index = native_pairs[native_choice][1]
+        record.update(gate)
+        record['selected_graph_index'] = int(selected)
+        record['selected_native_graph_index'] = (
+            int(selected_native_index) if selected_native_index is not None else None
+        )
+        record['native_graph_indices'] = native_indices
+        record['candidate_graph_indices'] = candidate_indices
+        return int(selected), record
 
     def _probe_aaa_oracle(self, env_index, stepk, wp_outputs):
         """Probe all fixed waypoint abstractions at the current simulator state.
@@ -1647,7 +1793,16 @@ class RLTrainer(BaseVLNCETrainer):
                                self.config.IL.loc_noise, 
                                self.config.MODEL.merge_ghost,
                                ghost_aug) for _ in range(self.envs.num_envs)]
+        tetp_dual_graph = bool(self.tetp_enabled and mode == 'eval')
+        if tetp_dual_graph:
+            self.tetp_native_gmaps = [GraphMap(
+                have_real_pos, self.config.IL.loc_noise,
+                self.config.MODEL.merge_ghost, ghost_aug
+            ) for _ in range(self.envs.num_envs)]
+        else:
+            self.tetp_native_gmaps = None
         prev_vp = [None] * self.envs.num_envs
+        tetp_native_prev_vp = [None] * self.envs.num_envs
         eval_action_stats = {}
         if mode == 'eval':
             eval_action_stats = {
@@ -1698,6 +1853,22 @@ class RLTrainer(BaseVLNCETrainer):
             # get vp_id, vp_pos of cur_node and cand_ndoe
             cur_pos, cur_ori = self.get_pos_ori()
             cur_vp, cand_vp, cand_pos = [], [], []
+            context = self._diagnostic_case_context
+            mapping_captures = None
+            context_allow = (DIAGNOSTIC_CASE_ALLOWLIST.get(context['case_id'])
+                             if context is not None else None)
+            if (context is not None and context_allow is not None
+                    and context_allow[0] == context['case_kind']
+                    and context_allow[1] == context['episode_id']
+                    and context_allow[2] == context['high_level_step']
+                    and stepk == context['high_level_step']):
+                mapping_captures = [None] * self.envs.num_envs
+                for i, episode in enumerate(self.envs.current_episodes()):
+                    if (context_allow[1] == str(episode.episode_id)
+                            and context_allow[2] == context['high_level_step']
+                            and str(episode.episode_id) == context['episode_id']
+                            and stepk == context['high_level_step']):
+                        mapping_captures[i] = {}
             for i in range(self.envs.num_envs):
                 cur_vp_i, cand_vp_i, cand_pos_i = self.gmaps[i].identify_node(
                     cur_pos[i], cur_ori[i], wp_outputs['cand_angles'][i], wp_outputs['cand_distances'][i]
@@ -1720,11 +1891,33 @@ class RLTrainer(BaseVLNCETrainer):
             for i in range(self.envs.num_envs):
                 cur_embeds = avg_pano_embeds[i]
                 cand_embeds = pano_embeds[i][vp_inputs['nav_types'][i]==1]
+                cand_native_mask_i = wp_outputs.get(
+                    'cand_native_masks', [None] * self.envs.num_envs
+                )[i]
                 self.gmaps[i].update_graph(prev_vp[i], stepk+1,
                                            cur_vp[i], cur_pos[i], cur_embeds,
                                            cand_vp[i], cand_pos[i], cand_embeds,
                                            cand_real_pos[i],
-                                           wp_outputs.get('cand_native_masks', [None] * self.envs.num_envs)[i])
+                                           cand_native_mask_i,
+                                           mapping_captures[i] if mapping_captures is not None else None)
+                if tetp_dual_graph:
+                    native_flags = ([True] * len(cand_vp[i])
+                                    if cand_native_mask_i is None else
+                                    [bool(x) for x in cand_native_mask_i])
+                    native_indices = [k for k, flag in enumerate(native_flags) if flag]
+                    native_cand_vp = [cand_vp[i][k] for k in native_indices]
+                    native_cand_pos = [cand_pos[i][k] for k in native_indices]
+                    native_cand_embeds = cand_embeds[native_indices]
+                    native_real_pos = (
+                        [cand_real_pos[i][k] for k in native_indices]
+                        if cand_real_pos[i] is not None else None
+                    )
+                    self.tetp_native_gmaps[i].update_graph(
+                        tetp_native_prev_vp[i], stepk + 1,
+                        cur_vp[i], cur_pos[i], cur_embeds,
+                        native_cand_vp, native_cand_pos, native_cand_embeds,
+                        native_real_pos, [True] * len(native_indices), None,
+                    )
 
             nav_inputs = self._nav_gmap_variable(cur_vp, cur_pos, cur_ori)
             nav_inputs.update({
@@ -1737,10 +1930,40 @@ class RLTrainer(BaseVLNCETrainer):
                 'residual_alpha': float(self.config.RL_TOPO.RESIDUAL_ALPHA)
                 if self.config.RL_TOPO.ENABLED else 0.0,
                 'action_abstraction': self.action_abstraction,
-                'dense_isolation_mode': str(getattr(self.config.ACTION_ABSTRACTION, 'DENSE_ISOLATION_MODE', 'off')),
+                'dense_isolation_mode': (
+                    'off' if tetp_dual_graph else
+                    str(getattr(self.config.ACTION_ABSTRACTION, 'DENSE_ISOLATION_MODE', 'off'))
+                ),
             })
             no_vp_left = nav_inputs.pop('no_vp_left')
             nav_outs = self.policy.net(**nav_inputs)
+            native_nav_inputs = None
+            native_nav_outs = None
+            native_no_vp_left = None
+            native_nav_probs = None
+            if tetp_dual_graph:
+                native_nav_inputs = self._nav_gmap_variable(
+                    cur_vp, cur_pos, cur_ori, gmaps=self.tetp_native_gmaps
+                )
+                native_nav_inputs.update({
+                    'mode': 'navigation',
+                    'txt_embeds': txt_embeds,
+                    'txt_masks': txt_masks,
+                    'rl_topo_debug': bool(
+                        self.config.RL_TOPO.ENABLED and self.config.RL_TOPO.DEBUG
+                    ),
+                    'residual_alpha': float(self.config.RL_TOPO.RESIDUAL_ALPHA)
+                    if self.config.RL_TOPO.ENABLED else 0.0,
+                    'action_abstraction': self.action_abstraction,
+                    'dense_isolation_mode': 'off',
+                })
+                native_no_vp_left = native_nav_inputs.pop('no_vp_left')
+                native_nav_outs = self.policy.net(**native_nav_inputs)
+                native_anchor_logits = (
+                    native_nav_outs['policy_logits']
+                    if rl_topo_enabled else native_nav_outs['global_logits']
+                )
+                native_nav_probs = F.softmax(native_anchor_logits, 1)
             il_logits = nav_outs['global_logits']
             nav_logits = (
                 nav_outs['policy_logits']
@@ -1761,6 +1984,10 @@ class RLTrainer(BaseVLNCETrainer):
                 break
             for i, gmap in enumerate(self.gmaps):
                 gmap.node_stop_scores[cur_vp[i]] = nav_probs[i, 0].data.item()
+                if tetp_dual_graph:
+                    self.tetp_native_gmaps[i].node_stop_scores[cur_vp[i]] = (
+                        native_nav_probs[i, 0].data.item()
+                    )
 
             # random sample demo
             # logits = torch.randn(nav_inputs['gmap_masks'].shape).cuda()
@@ -1798,6 +2025,14 @@ class RLTrainer(BaseVLNCETrainer):
                         i, stepk, wp_outputs, nav_inputs, policy_cpu_a_t[i], nav_logits
                     )
 
+            tetp_records = [None] * self.envs.num_envs
+            if mode == 'eval' and self.tetp_enabled:
+                for i in range(self.envs.num_envs):
+                    cpu_a_t[i], tetp_records[i] = self._tetp_action(
+                        i, stepk, nav_inputs, nav_logits, nav_outs,
+                        native_nav_inputs, native_nav_outs, cpu_a_t[i]
+                    )
+
             # make equiv action
             env_actions = []
             diagnostic_records = []
@@ -1823,9 +2058,24 @@ class RLTrainer(BaseVLNCETrainer):
                     isolated_native_logits=nav_outs.get('isolated_native_logits'),
                     full_logits=nav_outs.get('full_global_logits'))
             for i, gmap in enumerate(self.gmaps):
+                use_native_action = bool(
+                    tetp_dual_graph and tetp_records[i] is not None and
+                    tetp_records[i].get('selected_source') == 'native'
+                )
+                if use_native_action:
+                    gmap = self.tetp_native_gmaps[i]
+                    action_graph_ids = native_nav_inputs['gmap_vp_ids'][i]
+                    action_no_vp_left = native_no_vp_left[i]
+                    action_index = int(tetp_records[i].get(
+                        'selected_native_graph_index', cpu_a_t[i]
+                    ))
+                else:
+                    action_graph_ids = nav_inputs['gmap_vp_ids'][i]
+                    action_no_vp_left = no_vp_left[i]
+                    action_index = int(cpu_a_t[i])
                 policy_stop = int(cpu_a_t[i]) == 0
                 forced_by_max_len = (not policy_stop) and stepk == self.max_len - 1
-                forced_by_no_vp = (not policy_stop) and bool(no_vp_left[i])
+                forced_by_no_vp = (not policy_stop) and bool(action_no_vp_left)
                 forced_stop = forced_by_max_len or forced_by_no_vp
                 if mode == 'eval':
                     episode_id = self.envs.current_episodes()[i].episode_id
@@ -1870,7 +2120,7 @@ class RLTrainer(BaseVLNCETrainer):
                         }
                     )
                 else:
-                    ghost_vp = nav_inputs['gmap_vp_ids'][i][cpu_a_t[i]]
+                    ghost_vp = action_graph_ids[action_index]
                     ghost_pos = gmap.ghost_aug_pos[ghost_vp]
                     selected_target = {
                         "type": "ghost",
@@ -1884,7 +2134,7 @@ class RLTrainer(BaseVLNCETrainer):
                         if teacher_action_cpu in [0, -100]:
                             teacher_ghost = None
                         else:
-                            teacher_ghost = gmap.ghost_aug_pos[nav_inputs['gmap_vp_ids'][i][teacher_action_cpu]]
+                            teacher_ghost = gmap.ghost_aug_pos[action_graph_ids[teacher_action_cpu]]
                         vis_info = {
                             'nodes': list(gmap.node_pos.values()),
                             'ghosts': list(gmap.ghost_aug_pos.values()),
@@ -1915,6 +2165,10 @@ class RLTrainer(BaseVLNCETrainer):
                     prev_vp[i] = front_vp
                     if self.config.MODEL.consume_ghost:
                         gmap.delete_ghost(ghost_vp)
+                        if use_native_action and ghost_vp in self.gmaps[i].ghost_pos:
+                            # Keep the query graph's native subset aligned
+                            # with the committed graph after native execution.
+                            self.gmaps[i].delete_ghost(ghost_vp)
 
                 if self.aaa_diagnostics_enabled:
                     diagnostic_records.append(self._make_aaa_diagnostic(
@@ -1931,13 +2185,34 @@ class RLTrainer(BaseVLNCETrainer):
                         gmap_embeds=nav_outs.get('gmap_embeds'),
                         selected_target=selected_target,
                         dist_before=self.envs.call_at(i, "current_dist_to_goal"),
+                        mapping_capture=(mapping_captures[i]
+                                         if mapping_captures is not None else None),
+                        candidate_positions=cand_pos[i],
                     ))
 
                 if mode == 'eval' and graph_option_capture is not None:
                     graph_option_capture.commit(env_actions)
                     for i in range(self.envs.num_envs):
                         prev_vp[i] = graph_option_capture.override_prev_vp(i, prev_vp[i])
-                outputs = self.envs.step(env_actions)
+            if mode == 'eval' and self.tetp_enabled:
+                for record in tetp_records:
+                    if record is not None and (self.tetp_max_records < 0 or
+                                               self.tetp_logger.count < self.tetp_max_records):
+                        self.tetp_logger.write(record)
+                # Dense ghosts remain proposals until the environment has
+                # returned the post-action observation. Remove them from the
+                # persistent map before stepping; native ghosts are retained.
+                for gmap in self.gmaps:
+                    gmap.rollback_dense_proposals()
+                for i, record in enumerate(tetp_records):
+                    if record is not None and record.get('selected_source') == 'native':
+                        # A rejected query must leave the persistent query map
+                        # byte-for-byte equivalent in structure to committed
+                        # native memory; removing ghosts alone cannot undo
+                        # dense-induced graph edges or merge bookkeeping.
+                        self.gmaps[i] = deepcopy(self.tetp_native_gmaps[i])
+                tetp_native_prev_vp = list(prev_vp)
+            outputs = self.envs.step(env_actions)
             observations, _, dones, infos = [list(x) for x in zip(*outputs)]
 
             if self.aaa_diagnostics_enabled:

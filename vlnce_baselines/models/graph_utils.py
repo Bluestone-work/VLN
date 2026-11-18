@@ -197,10 +197,18 @@ class GraphMap(object):
             self.ghost_real_pos.pop(vp)
         self.native_ghosts.discard(vp)
 
+    def rollback_dense_proposals(self):
+        """Drop uncommitted dense ghosts after a transactional decision."""
+        for vp in list(self.ghost_pos.keys()):
+            if vp not in self.native_ghosts:
+                self.delete_ghost(vp)
+        self.ghost_aug_pos = deepcopy(self.ghost_mean_pos)
+
     def update_graph(self, prev_vp, step_id,
                            cur_vp, cur_pos, cur_embeds,
                            cand_vp, cand_pos, cand_embeds, 
-                           cand_real_pos, cand_native_mask=None):
+                           cand_real_pos, cand_native_mask=None,
+                           mapping_capture=None):
         self.last_candidate_vps = []
         # 1. connect prev_vp
         self.graph_nx.add_node(cur_vp)
@@ -221,13 +229,30 @@ class GraphMap(object):
         # dense proposals must not move their running means.
         preserve_native = any(cand_native_mask)
         protected_native_ghosts = set(self.ghost_pos.keys()) if preserve_native else set()
+        if mapping_capture is not None:
+            mapping_capture['candidate_count'] = len(cand_vp)
+            mapping_capture['candidates'] = []
         for i, (cvp, cpos, cembeds) in enumerate(zip(cand_vp, cand_pos, cand_embeds)):
+            capture = mapping_capture is not None
+            threshold = float(self.loc_noise) if capture else None
+            nearest_node_distance = None
+            if capture and self.node_pos:
+                nearest_node_distance = min(float(calc_position_distance(cpos, pos))
+                                             for pos in self.node_pos.values())
             localized_nvp = self._localize(cpos, self.node_pos)
             # cand overlap with node, connect cur_vp with localized_nvp
             if localized_nvp is not None :
                 dis = calc_position_distance(cur_pos, self.node_pos[localized_nvp])
                 self.graph_nx.add_edge(cur_vp, localized_nvp, weight=dis)
                 self.last_candidate_vps.append(localized_nvp)
+                if capture:
+                    mapping_capture['candidates'].append({
+                        'cand_index': i, 'status': 'localized',
+                        'mapped_graph_id': localized_nvp, 'merge_target': None,
+                        'nearest_node_distance': nearest_node_distance,
+                        'nearest_pool_distance': None, 'threshold': threshold,
+                        'filter_reason': None, 'forced_new_native': False,
+                    })
             # cand not overlap with node, create/update ghost
             else:
                 if self.merge_ghost:
@@ -244,13 +269,34 @@ class GraphMap(object):
                     # first and become protected identities. A newly added
                     # dense proposal may be nearby, but must not alter the
                     # native ghost mean or remove the A0 action from A1.
+                    merge_target = localized_gvp
+                    merge_pool_distance = None
+                    if capture and merge_pool:
+                        merge_pool_distance = min(
+                            float(calc_position_distance(cpos, pos))
+                            for pos in merge_pool.values()
+                        )
                     if (preserve_native and localized_gvp is not None and
                             not cand_native_mask[i] and localized_gvp in protected_native_ghosts):
                         # A dense proposal that falls inside a native ghost's
                         # merge radius is omitted. Keeping it as a separate
                         # ghost would change nearest-ghost localization for a
                         # later native proposal and violate A0 subsethood.
+                        if capture:
+                            mapping_capture['candidates'].append({
+                                'cand_index': i, 'status': 'filtered',
+                                'mapped_graph_id': None, 'merge_target': localized_gvp,
+                                'nearest_node_distance': nearest_node_distance,
+                                'nearest_pool_distance': merge_pool_distance,
+                                'threshold': threshold,
+                                'filter_reason': 'protected_native_ghost',
+                                'forced_new_native': False,
+                            })
                         continue
+                    forced_new_native = bool(
+                        preserve_native and localized_gvp is not None and
+                        cand_native_mask[i] and localized_gvp not in self.native_ghosts
+                    )
                     if (preserve_native and localized_gvp is not None and
                             cand_native_mask[i] and localized_gvp not in self.native_ghosts):
                         localized_gvp = None
@@ -275,6 +321,16 @@ class GraphMap(object):
                         if self.has_real_pos:
                             self.ghost_real_pos[gvp].append(cand_real_pos[i])
                     self.last_candidate_vps.append(gvp)
+                    if capture:
+                        mapping_capture['candidates'].append({
+                            'cand_index': i,
+                            'status': 'new_ghost' if merge_target is None or forced_new_native else 'merged_ghost',
+                            'mapped_graph_id': gvp, 'merge_target': merge_target,
+                            'nearest_node_distance': nearest_node_distance,
+                            'nearest_pool_distance': merge_pool_distance,
+                            'threshold': threshold,
+                            'filter_reason': None, 'forced_new_native': forced_new_native,
+                        })
                     if cand_native_mask[i]:
                         protected_native_ghosts.add(gvp)
                         self.native_ghosts.add(gvp)
@@ -288,6 +344,15 @@ class GraphMap(object):
                     if self.has_real_pos:
                         self.ghost_real_pos[gvp] = [cand_real_pos[i]]
                     self.last_candidate_vps.append(gvp)
+                    if capture:
+                        mapping_capture['candidates'].append({
+                            'cand_index': i, 'status': 'new_ghost',
+                            'mapped_graph_id': gvp, 'merge_target': None,
+                            'nearest_node_distance': nearest_node_distance,
+                            'nearest_pool_distance': None,
+                            'threshold': threshold,
+                            'filter_reason': None, 'forced_new_native': False,
+                        })
         
         self.ghost_aug_pos = deepcopy(self.ghost_mean_pos)
         if self.ghost_aug != 0:
